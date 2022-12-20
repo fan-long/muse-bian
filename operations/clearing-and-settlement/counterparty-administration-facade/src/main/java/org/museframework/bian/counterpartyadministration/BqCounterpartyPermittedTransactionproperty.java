@@ -1,0 +1,43 @@
+package org.museframework.bian.counterpartyadministration;
+
+import org.museframework.bian.counterpartyadministration.dto.ExecuteCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.ExecuteCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.bian.counterpartyadministration.dto.NotifyCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.NotifyCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.bian.counterpartyadministration.dto.RegisterCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.RegisterCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.bian.counterpartyadministration.dto.RequestCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.RequestCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.bian.counterpartyadministration.dto.RetrieveCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.RetrieveCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.bian.counterpartyadministration.dto.UpdateCounterpartyPermittedTransactionpropertyRequest;
+import org.museframework.bian.counterpartyadministration.dto.UpdateCounterpartyPermittedTransactionpropertyResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The Counterparty Entity Reference property properties that represent a discrete aspect of the Counterparty Entity Reference property")
+@GenericDomain(name="CounterpartyAdministration", group="CounterpartyPermittedTransactionproperty")
+public interface BqCounterpartyPermittedTransactionproperty {
+    @GenericDtxEndpoint
+    @Description("Execute Counterparty Permitted Transaction property")
+    ExecuteCounterpartyPermittedTransactionpropertyResponse executeCounterpartyPermittedTransactionproperty(ExecuteCounterpartyPermittedTransactionpropertyRequest req);
+
+    @Description("Notify Counterparty Permitted Transaction property")
+    NotifyCounterpartyPermittedTransactionpropertyResponse notifyCounterpartyPermittedTransactionproperty(NotifyCounterpartyPermittedTransactionpropertyRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Register Counterparty Permitted Transaction property")
+    RegisterCounterpartyPermittedTransactionpropertyResponse registerCounterpartyPermittedTransactionproperty(RegisterCounterpartyPermittedTransactionpropertyRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Counterparty Permitted Transaction property")
+    RequestCounterpartyPermittedTransactionpropertyResponse requestCounterpartyPermittedTransactionproperty(RequestCounterpartyPermittedTransactionpropertyRequest req);
+
+    @Description("Retrieve Counterparty Permitted Transaction property")
+    RetrieveCounterpartyPermittedTransactionpropertyResponse retrieveCounterpartyPermittedTransactionproperty(RetrieveCounterpartyPermittedTransactionpropertyRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Counterparty Permitted Transaction property")
+    UpdateCounterpartyPermittedTransactionpropertyResponse updateCounterpartyPermittedTransactionproperty(UpdateCounterpartyPermittedTransactionpropertyRequest req);
+}

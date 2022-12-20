@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>products</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>market-operations</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>credit-risk-operations-facade</module>
+<module>trade-confirmation-matching-facade</module>
+<module>financial-instrument-valuation-facade</module>
+<module>securities-fails-processing-facade</module>
+<module>corporate-action-facade</module>
+<module>trading-book-oversight-facade</module>
+<module>trade-clearing-facade</module>
+<module>trade-and-price-reporting-facade</module>
+<module>trade-settlement-facade</module>
+
+  </modules>
+</project>

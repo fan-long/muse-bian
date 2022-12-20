@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>business-development</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>marketing-and-development</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>market-analysis-facade</module>
+<module>customer-portfolio-facade</module>
+<module>market-research-facade</module>
+<module>competitor-analysis-facade</module>
+<module>business-development-facade</module>
+<module>sales-planning-facade</module>
+<module>prospect-campaign-management-facade</module>
+<module>contribution-analysis-facade</module>
+<module>customer-surveys-facade</module>
+<module>customer-campaign-design-facade</module>
+<module>advertising-facade</module>
+<module>segment-direction-facade</module>
+<module>brand-management-facade</module>
+<module>customer-campaign-management-facade</module>
+<module>promotional-events-facade</module>
+<module>prospect-campaign-design-facade</module>
+
+  </modules>
+</project>

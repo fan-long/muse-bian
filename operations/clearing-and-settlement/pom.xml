@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>operations</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>clearing-and-settlement</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>payment-rail-operations-facade</module>
+<module>payment-order-facade</module>
+<module>payment-execution-facade</module>
+<module>card-ecommerce-gateway-facade</module>
+<module>order-allocation-facade</module>
+<module>counterparty-administration-facade</module>
+<module>ach-operations-facade</module>
+<module>card-financial-settlement-facade</module>
+<module>correspondent-bank-operations-facade</module>
+<module>transaction-engine-facade</module>
+<module>correspondent-bank-directory-facade</module>
+<module>payment-instruction-facade</module>
+<module>cheque-processing-facade</module>
+<module>card-clearing-facade</module>
+
+  </modules>
+</project>

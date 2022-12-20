@@ -1,0 +1,104 @@
+/*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility  within Fiduciary Agreement. 
+Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
+package org.museframework.bian.fiduciaryagreement.dto.bq;
+
+public class Fulfillment {
+    /*The required status/situation prior to the implementation of the feature*/
+    private String fulfillmentPreconditions;
+
+    /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    private String fulfillmentFeatureSchedule;
+
+    /*The Fiduciary Relationship Arrangement specific Business Service*/
+    private org.museframework.bian.classes.BusinessService fiduciaryArrangementFulfillment;
+
+    /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    private String fulfillmentPostconditions;
+
+    /*Reference to the specific business service type*/
+    private String fulfillmentFiduciaryArrangementFulfillmentServiceType;
+
+    /*Description of the performed business service*/
+    private String fulfillmentFiduciaryArrangementFulfillmentServiceDescription;
+
+    /*Mandatory and optional inputs and output information for the business service*/
+    private String fulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs;
+
+    /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    private String fulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct;
+
+    /**/
+    private String fulfillmentFiduciaryArrangementFulfillmentServiceName;
+
+    public void setFulfillmentPreconditions(String fulfillmentPreconditions) {
+        this.fulfillmentPreconditions = fulfillmentPreconditions;
+    }
+
+    public String getFulfillmentPreconditions() {
+        return fulfillmentPreconditions;
+    }
+
+    public void setFulfillmentFeatureSchedule(String fulfillmentFeatureSchedule) {
+        this.fulfillmentFeatureSchedule = fulfillmentFeatureSchedule;
+    }
+
+    public String getFulfillmentFeatureSchedule() {
+        return fulfillmentFeatureSchedule;
+    }
+
+    public void setFiduciaryArrangementFulfillment(org.museframework.bian.classes.BusinessService fiduciaryArrangementFulfillment) {
+        this.fiduciaryArrangementFulfillment = fiduciaryArrangementFulfillment;
+    }
+
+    public org.museframework.bian.classes.BusinessService getFiduciaryArrangementFulfillment() {
+        return fiduciaryArrangementFulfillment;
+    }
+
+    public void setFulfillmentPostconditions(String fulfillmentPostconditions) {
+        this.fulfillmentPostconditions = fulfillmentPostconditions;
+    }
+
+    public String getFulfillmentPostconditions() {
+        return fulfillmentPostconditions;
+    }
+
+    public void setFulfillmentFiduciaryArrangementFulfillmentServiceType(String fulfillmentFiduciaryArrangementFulfillmentServiceType) {
+        this.fulfillmentFiduciaryArrangementFulfillmentServiceType = fulfillmentFiduciaryArrangementFulfillmentServiceType;
+    }
+
+    public String getFulfillmentFiduciaryArrangementFulfillmentServiceType() {
+        return fulfillmentFiduciaryArrangementFulfillmentServiceType;
+    }
+
+    public void setFulfillmentFiduciaryArrangementFulfillmentServiceDescription(String fulfillmentFiduciaryArrangementFulfillmentServiceDescription) {
+        this.fulfillmentFiduciaryArrangementFulfillmentServiceDescription = fulfillmentFiduciaryArrangementFulfillmentServiceDescription;
+    }
+
+    public String getFulfillmentFiduciaryArrangementFulfillmentServiceDescription() {
+        return fulfillmentFiduciaryArrangementFulfillmentServiceDescription;
+    }
+
+    public void setFulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs(String fulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs) {
+        this.fulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs = fulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs;
+    }
+
+    public String getFulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs() {
+        return fulfillmentFiduciaryArrangementFulfillmentServiceInputsandOuputs;
+    }
+
+    public void setFulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct(String fulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct) {
+        this.fulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct = fulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct;
+    }
+
+    public String getFulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct() {
+        return fulfillmentFiduciaryArrangementFulfillmentServiceWorkProduct;
+    }
+
+    public void setFulfillmentFiduciaryArrangementFulfillmentServiceName(String fulfillmentFiduciaryArrangementFulfillmentServiceName) {
+        this.fulfillmentFiduciaryArrangementFulfillmentServiceName = fulfillmentFiduciaryArrangementFulfillmentServiceName;
+    }
+
+    public String getFulfillmentFiduciaryArrangementFulfillmentServiceName() {
+        return fulfillmentFiduciaryArrangementFulfillmentServiceName;
+    }
+}

@@ -1,0 +1,49 @@
+package org.museframework.bian.publicoffering;
+
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementInstrumentRegistrationFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementInstrumentRegistrationFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Public Placement IPO and Underwriting Fulfillment arrangement within the Public Placement IPO and Underwriting Fulfillment")
+@GenericDomain(name="PublicOffering", group="PublicPlacementInstrumentRegistrationFulfillment")
+public interface BqPublicPlacementInstrumentRegistrationFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Public Placement Instrument Registration Fulfillment")
+    ExchangePublicPlacementInstrumentRegistrationFulfillmentResponse exchangePublicPlacementInstrumentRegistrationFulfillment(ExchangePublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Public Placement Instrument Registration Fulfillment")
+    ExecutePublicPlacementInstrumentRegistrationFulfillmentResponse executePublicPlacementInstrumentRegistrationFulfillment(ExecutePublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Public Placement Instrument Registration Fulfillment")
+    InitiatePublicPlacementInstrumentRegistrationFulfillmentResponse initiatePublicPlacementInstrumentRegistrationFulfillment(InitiatePublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @Description("Notify Public Placement Instrument Registration Fulfillment")
+    NotifyPublicPlacementInstrumentRegistrationFulfillmentResponse notifyPublicPlacementInstrumentRegistrationFulfillment(NotifyPublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Public Placement Instrument Registration Fulfillment")
+    RequestPublicPlacementInstrumentRegistrationFulfillmentResponse requestPublicPlacementInstrumentRegistrationFulfillment(RequestPublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @Description("Retrieve Public Placement Instrument Registration Fulfillment")
+    RetrievePublicPlacementInstrumentRegistrationFulfillmentResponse retrievePublicPlacementInstrumentRegistrationFulfillment(RetrievePublicPlacementInstrumentRegistrationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Public Placement Instrument Registration Fulfillment")
+    UpdatePublicPlacementInstrumentRegistrationFulfillmentResponse updatePublicPlacementInstrumentRegistrationFulfillment(UpdatePublicPlacementInstrumentRegistrationFulfillmentRequest req);
+}

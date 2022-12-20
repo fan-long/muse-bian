@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>customers</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>sales</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>special-pricing-conditions-facade</module>
+<module>product-matching-facade</module>
+<module>product-expert-sales-support-facade</module>
+<module>prospect-campaign-execution-facade</module>
+<module>lead-and-opportunity-management-facade</module>
+<module>customer-offer-facade</module>
+<module>product-sales-support-facade</module>
+<module>party-lifecycle-management-facade</module>
+<module>customer-campaign-execution-facade</module>
+
+  </modules>
+</project>

@@ -1,0 +1,35 @@
+package org.museframework.bian.merandacqadv;
+
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The M&A Candidate Selection and Evaluation Topic advice is one specific topic that can be included in providing M&A Candidate Selection and Evaluation Topic")
+@GenericDomain(name="MergersandAcquisitionsAdvisory", group="MACandidateSelectionandEvaluationTopic")
+public interface BqMACandidateSelectionandEvaluationTopic {
+    @GenericDtxEndpoint
+    @Description("Exchange M&A Candidate Selection and Evaluation Topic")
+    String exchangeMACandidateSelectionandEvaluationTopic(String req);
+
+    @GenericDtxEndpoint
+    @Description("Execute M&A Candidate Selection and Evaluation Topic")
+    String executeMACandidateSelectionandEvaluationTopic(String req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate M&A Candidate Selection and Evaluation Topic")
+    String initiateMACandidateSelectionandEvaluationTopic(String req);
+
+    @Description("Notify M&A Candidate Selection and Evaluation Topic")
+    String notifyMACandidateSelectionandEvaluationTopic(String req);
+
+    @GenericDtxEndpoint
+    @Description("Request M&A Candidate Selection and Evaluation Topic")
+    String requestMACandidateSelectionandEvaluationTopic(String req);
+
+    @Description("Retrieve M&A Candidate Selection and Evaluation Topic")
+    String retrieveMACandidateSelectionandEvaluationTopic(String req);
+
+    @GenericDtxEndpoint
+    @Description("Update M&A Candidate Selection and Evaluation Topic")
+    String updateMACandidateSelectionandEvaluationTopic(String req);
+}

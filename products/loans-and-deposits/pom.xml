@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>products</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>loans-and-deposits</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>term-deposit-facade</module>
+<module>mortgage-loan-facade</module>
+<module>underwriting-facade</module>
+<module>merchandising-loan-facade</module>
+<module>leasing-facade</module>
+<module>consumer-loan-facade</module>
+<module>fiduciary-agreement-facade</module>
+<module>savings-account-facade</module>
+<module>leasing-item-administration-facade</module>
+<module>corporate-loan-facade</module>
+<module>corporate-lease-facade</module>
+<module>syndicated-loan-facade</module>
+<module>loan-facade</module>
+<module>standing-order-facade</module>
+
+  </modules>
+</project>

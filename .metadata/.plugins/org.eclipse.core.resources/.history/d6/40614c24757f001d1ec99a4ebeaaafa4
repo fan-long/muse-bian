@@ -1,0 +1,8 @@
+/*An Instruction to fulfill the Repo Arrangement*/
+package org.museframework.bian.classes;
+
+import org.museframework.common.core.EmptyBianClass;
+
+@EmptyBianClass
+public class RepoInstruction {
+}

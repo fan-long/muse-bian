@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>loans-and-deposits</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>consumer-loan-facade</artifactId>
+  <dependencies>
+		<dependency>
+  		<groupId>org.museframework.bian</groupId>
+  		<artifactId>bom-template</artifactId>
+  		<version>11.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.museframework.resource</groupId>
+  		<artifactId>muse-core</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>

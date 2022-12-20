@@ -1,0 +1,49 @@
+package org.museframework.bian.tradeclearing;
+
+import org.museframework.bian.tradeclearing.dto.ExchangeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.ExchangeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.ExecuteMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.ExecuteMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.InitiateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.InitiateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.NotifyMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.NotifyMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.RequestMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.RequestMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.RetrieveMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.RetrieveMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.bian.tradeclearing.dto.UpdateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest;
+import org.museframework.bian.tradeclearing.dto.UpdateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("A course of action for doing Market Trade Settlement Initiation Workstep in the context of executing the Market Trade Settlement Initiation Workstep")
+@GenericDomain(name="TradeClearing", group="MarketTradeFundsandSecurityAvailabilityAssuranceWorkstep")
+public interface BqMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep {
+    @GenericDtxEndpoint
+    @Description("Exchange Market Trade Funds and Security Availability Assurance Workstep")
+    ExchangeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse exchangeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(ExchangeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Market Trade Funds and Security Availability Assurance Workstep")
+    ExecuteMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse executeMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(ExecuteMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Market Trade Funds and Security Availability Assurance Workstep")
+    InitiateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse initiateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(InitiateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @Description("Notify Market Trade Funds and Security Availability Assurance Workstep")
+    NotifyMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse notifyMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(NotifyMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Market Trade Funds and Security Availability Assurance Workstep")
+    RequestMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse requestMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(RequestMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @Description("Retrieve Market Trade Funds and Security Availability Assurance Workstep")
+    RetrieveMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse retrieveMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(RetrieveMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Market Trade Funds and Security Availability Assurance Workstep")
+    UpdateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepResponse updateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstep(UpdateMarketTradeFundsandSecurityAvailabilityAssuranceWorkstepRequest req);
+}

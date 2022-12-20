@@ -1,0 +1,49 @@
+package org.museframework.bian.publicoffering;
+
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementIPOandUnderwritingFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementIPOandUnderwritingFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Public Placement IPO and Underwriting Fulfillment arrangement within the Public Placement IPO and Underwriting Fulfillment")
+@GenericDomain(name="PublicOffering", group="PublicPlacementIPOandUnderwritingFulfillment")
+public interface BqPublicPlacementIPOandUnderwritingFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Public Placement IPO and Underwriting Fulfillment")
+    ExchangePublicPlacementIPOandUnderwritingFulfillmentResponse exchangePublicPlacementIPOandUnderwritingFulfillment(ExchangePublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Public Placement IPO and Underwriting Fulfillment")
+    ExecutePublicPlacementIPOandUnderwritingFulfillmentResponse executePublicPlacementIPOandUnderwritingFulfillment(ExecutePublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Public Placement IPO and Underwriting Fulfillment")
+    InitiatePublicPlacementIPOandUnderwritingFulfillmentResponse initiatePublicPlacementIPOandUnderwritingFulfillment(InitiatePublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @Description("Notify Public Placement IPO and Underwriting Fulfillment")
+    NotifyPublicPlacementIPOandUnderwritingFulfillmentResponse notifyPublicPlacementIPOandUnderwritingFulfillment(NotifyPublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Public Placement IPO and Underwriting Fulfillment")
+    RequestPublicPlacementIPOandUnderwritingFulfillmentResponse requestPublicPlacementIPOandUnderwritingFulfillment(RequestPublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @Description("Retrieve Public Placement IPO and Underwriting Fulfillment")
+    RetrievePublicPlacementIPOandUnderwritingFulfillmentResponse retrievePublicPlacementIPOandUnderwritingFulfillment(RetrievePublicPlacementIPOandUnderwritingFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Public Placement IPO and Underwriting Fulfillment")
+    UpdatePublicPlacementIPOandUnderwritingFulfillmentResponse updatePublicPlacementIPOandUnderwritingFulfillment(UpdatePublicPlacementIPOandUnderwritingFulfillmentRequest req);
+}

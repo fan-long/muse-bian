@@ -1,0 +1,49 @@
+package org.museframework.bian.marketmaking;
+
+import org.museframework.bian.marketmaking.dto.ExchangeMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.ExchangeMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.ExecuteMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.ExecuteMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.InitiateMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.InitiateMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.NotifyMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.NotifyMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.RequestMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.RequestMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.RetrieveMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.RetrieveMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.bian.marketmaking.dto.UpdateMarketMakingSecurityTradedPositionFulfillmentRequest;
+import org.museframework.bian.marketmaking.dto.UpdateMarketMakingSecurityTradedPositionFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Market Making Security Traded Position Fulfillment arrangement within the Market Making Security Traded Position Fulfillment")
+@GenericDomain(name="MarketMaking", group="MarketMakingSecurityTradedPositionFulfillment")
+public interface BqMarketMakingSecurityTradedPositionFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Market Making Security Traded Position Fulfillment")
+    ExchangeMarketMakingSecurityTradedPositionFulfillmentResponse exchangeMarketMakingSecurityTradedPositionFulfillment(ExchangeMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Market Making Security Traded Position Fulfillment")
+    ExecuteMarketMakingSecurityTradedPositionFulfillmentResponse executeMarketMakingSecurityTradedPositionFulfillment(ExecuteMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Market Making Security Traded Position Fulfillment")
+    InitiateMarketMakingSecurityTradedPositionFulfillmentResponse initiateMarketMakingSecurityTradedPositionFulfillment(InitiateMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @Description("Notify Market Making Security Traded Position Fulfillment")
+    NotifyMarketMakingSecurityTradedPositionFulfillmentResponse notifyMarketMakingSecurityTradedPositionFulfillment(NotifyMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Market Making Security Traded Position Fulfillment")
+    RequestMarketMakingSecurityTradedPositionFulfillmentResponse requestMarketMakingSecurityTradedPositionFulfillment(RequestMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @Description("Retrieve Market Making Security Traded Position Fulfillment")
+    RetrieveMarketMakingSecurityTradedPositionFulfillmentResponse retrieveMarketMakingSecurityTradedPositionFulfillment(RetrieveMarketMakingSecurityTradedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Market Making Security Traded Position Fulfillment")
+    UpdateMarketMakingSecurityTradedPositionFulfillmentResponse updateMarketMakingSecurityTradedPositionFulfillment(UpdateMarketMakingSecurityTradedPositionFulfillmentRequest req);
+}

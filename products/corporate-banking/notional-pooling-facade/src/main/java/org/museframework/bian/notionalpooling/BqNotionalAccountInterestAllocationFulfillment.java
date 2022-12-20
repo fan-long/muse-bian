@@ -1,0 +1,49 @@
+package org.museframework.bian.notionalpooling;
+
+import org.museframework.bian.notionalpooling.dto.ExchangeNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.ExchangeNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.ExecuteNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.ExecuteNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.InitiateNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.InitiateNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.NotifyNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.NotifyNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.RequestNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.RequestNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.RetrieveNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.RetrieveNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.UpdateNotionalAccountInterestAllocationFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.UpdateNotionalAccountInterestAllocationFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Notional Account Interest Allocation Fulfillment arrangement within the Notional Account Interest Allocation Fulfillment")
+@GenericDomain(name="NotionalPooling", group="NotionalAccountInterestAllocationFulfillment")
+public interface BqNotionalAccountInterestAllocationFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Notional Account Interest Allocation Fulfillment")
+    ExchangeNotionalAccountInterestAllocationFulfillmentResponse exchangeNotionalAccountInterestAllocationFulfillment(ExchangeNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Notional Account Interest Allocation Fulfillment")
+    ExecuteNotionalAccountInterestAllocationFulfillmentResponse executeNotionalAccountInterestAllocationFulfillment(ExecuteNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Notional Account Interest Allocation Fulfillment")
+    InitiateNotionalAccountInterestAllocationFulfillmentResponse initiateNotionalAccountInterestAllocationFulfillment(InitiateNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @Description("Notify Notional Account Interest Allocation Fulfillment")
+    NotifyNotionalAccountInterestAllocationFulfillmentResponse notifyNotionalAccountInterestAllocationFulfillment(NotifyNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Notional Account Interest Allocation Fulfillment")
+    RequestNotionalAccountInterestAllocationFulfillmentResponse requestNotionalAccountInterestAllocationFulfillment(RequestNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @Description("Retrieve Notional Account Interest Allocation Fulfillment")
+    RetrieveNotionalAccountInterestAllocationFulfillmentResponse retrieveNotionalAccountInterestAllocationFulfillment(RetrieveNotionalAccountInterestAllocationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Notional Account Interest Allocation Fulfillment")
+    UpdateNotionalAccountInterestAllocationFulfillmentResponse updateNotionalAccountInterestAllocationFulfillment(UpdateNotionalAccountInterestAllocationFulfillmentRequest req);
+}

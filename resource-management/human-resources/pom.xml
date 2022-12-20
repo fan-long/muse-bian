@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>resource-management</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>human-resources</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>employee-payroll-and-incentives-facade</module>
+<module>recruitment-facade</module>
+<module>employee-evaluation-facade</module>
+<module>workforce-training-facade</module>
+<module>employee-certification-facade</module>
+<module>employee-data-management-facade</module>
+<module>employee-benefits-facade</module>
+<module>employee-assignment-facade</module>
+<module>travel-and-expenses-facade</module>
+<module>employee-and-contractor-contract-facade</module>
+<module>employee-access-facade</module>
+
+  </modules>
+</project>

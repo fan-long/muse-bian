@@ -1,0 +1,49 @@
+package org.museframework.bian.traposope;
+
+import org.museframework.bian.traposope.dto.ExchangeTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.ExchangeTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.ExecuteTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.ExecuteTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.InitiateTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.InitiateTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.NotifyTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.NotifyTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.RequestTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.RequestTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.RetrieveTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.RetrieveTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.bian.traposope.dto.UpdateTraderSecurityPositionManagementandAnalysisFunctionRequest;
+import org.museframework.bian.traposope.dto.UpdateTraderSecurityPositionManagementandAnalysisFunctionResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("An operational service or function supported within the Trade Capture and Reporting Function for doing Trade Capture and Reporting Function")
+@GenericDomain(name="TraderPositionOperations", group="TraderSecurityPositionManagementandAnalysisFunction")
+public interface BqTraderSecurityPositionManagementandAnalysisFunction {
+    @GenericDtxEndpoint
+    @Description("Exchange Trader Security Position Management and Analysis Function")
+    ExchangeTraderSecurityPositionManagementandAnalysisFunctionResponse exchangeTraderSecurityPositionManagementandAnalysisFunction(ExchangeTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Trader Security Position Management and Analysis Function")
+    ExecuteTraderSecurityPositionManagementandAnalysisFunctionResponse executeTraderSecurityPositionManagementandAnalysisFunction(ExecuteTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Trader Security Position Management and Analysis Function")
+    InitiateTraderSecurityPositionManagementandAnalysisFunctionResponse initiateTraderSecurityPositionManagementandAnalysisFunction(InitiateTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @Description("Notify Trader Security Position Management and Analysis Function")
+    NotifyTraderSecurityPositionManagementandAnalysisFunctionResponse notifyTraderSecurityPositionManagementandAnalysisFunction(NotifyTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Trader Security Position Management and Analysis Function")
+    RequestTraderSecurityPositionManagementandAnalysisFunctionResponse requestTraderSecurityPositionManagementandAnalysisFunction(RequestTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @Description("Retrieve Trader Security Position Management and Analysis Function")
+    RetrieveTraderSecurityPositionManagementandAnalysisFunctionResponse retrieveTraderSecurityPositionManagementandAnalysisFunction(RetrieveTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Trader Security Position Management and Analysis Function")
+    UpdateTraderSecurityPositionManagementandAnalysisFunctionResponse updateTraderSecurityPositionManagementandAnalysisFunction(UpdateTraderSecurityPositionManagementandAnalysisFunctionRequest req);
+}

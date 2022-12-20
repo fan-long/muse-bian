@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>products</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>corporate-banking</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>project-finance-facade</module>
+<module>factoring-facade</module>
+<module>notional-pooling-facade</module>
+<module>cash-concentration-facade</module>
+<module>direct-debit-facade</module>
+<module>corporate-trust-services-facade</module>
+<module>cheque-lock-box-facade</module>
+<module>direct-debit-mandate-facade</module>
+<module>corporate-payroll-services-facade</module>
+<module>credit-facility-facade</module>
+<module>virtual-account-facade</module>
+<module>corporate-current-account-facade</module>
+<module>cash-management-and-account-services-facade</module>
+
+  </modules>
+</project>

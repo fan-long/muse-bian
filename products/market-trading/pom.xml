@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>products</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>market-trading</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>market-order-execution-facade</module>
+<module>market-making-facade</module>
+<module>quote-management-facade</module>
+<module>suitability-checking-facade</module>
+<module>stock-lending-and-repos-facade</module>
+<module>dealer-desk-facade</module>
+<module>trader-position-operations-facade</module>
+<module>program-trading-facade</module>
+<module>market-order-facade</module>
+
+  </modules>
+</project>

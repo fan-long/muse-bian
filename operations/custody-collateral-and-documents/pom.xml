@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>operations</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>custody-collateral-and-documents</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>document-directory-facade</module>
+<module>investment-account-facade</module>
+<module>collateral-asset-administration-facade</module>
+<module>archive-services-facade</module>
+<module>party-asset-directory-facade</module>
+<module>collections-facade</module>
+<module>custody-administration-facade</module>
+<module>collateral-allocation-management-facade</module>
+<module>document-services-facade</module>
+<module>account-recovery-facade</module>
+
+  </modules>
+</project>

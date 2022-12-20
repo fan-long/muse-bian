@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>resource-management</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>buildings-and-equipment</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>utilities-administration-facade</module>
+<module>fixed-asset-register-facade</module>
+<module>equipment-maintenance-facade</module>
+<module>procurement-facade</module>
+<module>site-operations-facade</module>
+<module>site-administration-facade</module>
+<module>building-maintenance-facade</module>
+<module>equipment-administration-facade</module>
+
+  </modules>
+</project>

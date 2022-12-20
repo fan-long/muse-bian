@@ -1,0 +1,39 @@
+package org.museframework.bian.merandacqadv;
+
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("Provide specialist advice and/or support as an ongoing service or for a specific task/event within Mergers and Acquisitions Advisory")
+@GenericDomain(name="MergersandAcquisitionsAdvisory", group="MergersAndAcquisitionAdvice")
+public interface CrMergersAndAcquisitionAdvice {
+    @GenericDtxEndpoint
+    @Description("Control Mergers And Acquisition Advice")
+    String controlMergersAndAcquisitionAdvice(String req);
+
+    @GenericDtxEndpoint
+    @Description("Exchange Mergers And Acquisition Advice")
+    String exchangeMergersAndAcquisitionAdvice(String req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Mergers And Acquisition Advice")
+    String executeMergersAndAcquisitionAdvice(String req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Mergers And Acquisition Advice")
+    String initiateMergersAndAcquisitionAdvice(String req);
+
+    @Description("Notify Mergers And Acquisition Advice")
+    String notifyMergersAndAcquisitionAdvice(String req);
+
+    @GenericDtxEndpoint
+    @Description("Request Mergers And Acquisition Advice")
+    String requestMergersAndAcquisitionAdvice(String req);
+
+    @Description("Retrieve Mergers And Acquisition Advice")
+    String retrieveMergersAndAcquisitionAdvice(String req);
+
+    @GenericDtxEndpoint
+    @Description("Update Mergers And Acquisition Advice")
+    String updateMergersAndAcquisitionAdvice(String req);
+}

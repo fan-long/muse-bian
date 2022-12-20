@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>business-management</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>business-direction</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>it-systems-direction-facade</module>
+<module>corporate-strategy-facade</module>
+<module>products-and-services-direction-facade</module>
+<module>asset-and-liability-management-facade</module>
+<module>corporate-policies-facade</module>
+<module>organization-direction-facade</module>
+<module>human-resources-direction-facade</module>
+<module>property-portfolio-facade</module>
+
+  </modules>
+</project>

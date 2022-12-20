@@ -1,0 +1,49 @@
+package org.museframework.bian.notionalpooling;
+
+import org.museframework.bian.notionalpooling.dto.ExchangeNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.ExchangeNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.ExecuteNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.ExecuteNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.InitiateNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.InitiateNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.NotifyNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.NotifyNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.RequestNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.RequestNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.RetrieveNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.RetrieveNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.bian.notionalpooling.dto.UpdateNotionalAccountConsolidatedPositionFulfillmentRequest;
+import org.museframework.bian.notionalpooling.dto.UpdateNotionalAccountConsolidatedPositionFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Notional Account Interest Allocation Fulfillment arrangement within the Notional Account Interest Allocation Fulfillment")
+@GenericDomain(name="NotionalPooling", group="NotionalAccountConsolidatedPositionFulfillment")
+public interface BqNotionalAccountConsolidatedPositionFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Notional Account Consolidated Position Fulfillment")
+    ExchangeNotionalAccountConsolidatedPositionFulfillmentResponse exchangeNotionalAccountConsolidatedPositionFulfillment(ExchangeNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Notional Account Consolidated Position Fulfillment")
+    ExecuteNotionalAccountConsolidatedPositionFulfillmentResponse executeNotionalAccountConsolidatedPositionFulfillment(ExecuteNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Notional Account Consolidated Position Fulfillment")
+    InitiateNotionalAccountConsolidatedPositionFulfillmentResponse initiateNotionalAccountConsolidatedPositionFulfillment(InitiateNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @Description("Notify Notional Account Consolidated Position Fulfillment")
+    NotifyNotionalAccountConsolidatedPositionFulfillmentResponse notifyNotionalAccountConsolidatedPositionFulfillment(NotifyNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Notional Account Consolidated Position Fulfillment")
+    RequestNotionalAccountConsolidatedPositionFulfillmentResponse requestNotionalAccountConsolidatedPositionFulfillment(RequestNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @Description("Retrieve Notional Account Consolidated Position Fulfillment")
+    RetrieveNotionalAccountConsolidatedPositionFulfillmentResponse retrieveNotionalAccountConsolidatedPositionFulfillment(RetrieveNotionalAccountConsolidatedPositionFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Notional Account Consolidated Position Fulfillment")
+    UpdateNotionalAccountConsolidatedPositionFulfillmentResponse updateNotionalAccountConsolidatedPositionFulfillment(UpdateNotionalAccountConsolidatedPositionFulfillmentRequest req);
+}

@@ -1,0 +1,49 @@
+package org.museframework.bian.cashconcentration;
+
+import org.museframework.bian.cashconcentration.dto.ExchangeCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.ExchangeCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.ExecuteCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.ExecuteCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.InitiateCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.InitiateCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.NotifyCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.NotifyCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.RequestCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.RequestCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.RetrieveCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.RetrieveCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.UpdateCashPositionMonitoringandTransferFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.UpdateCashPositionMonitoringandTransferFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Cash Position Monitoring and Transfer Fulfillment arrangement within the Cash Position Monitoring and Transfer Fulfillment")
+@GenericDomain(name="CashConcentration", group="CashPositionMonitoringandTransferFulfillment")
+public interface BqCashPositionMonitoringandTransferFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Cash Position Monitoring and Transfer Fulfillment")
+    ExchangeCashPositionMonitoringandTransferFulfillmentResponse exchangeCashPositionMonitoringandTransferFulfillment(ExchangeCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Cash Position Monitoring and Transfer Fulfillment")
+    ExecuteCashPositionMonitoringandTransferFulfillmentResponse executeCashPositionMonitoringandTransferFulfillment(ExecuteCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Cash Position Monitoring and Transfer Fulfillment")
+    InitiateCashPositionMonitoringandTransferFulfillmentResponse initiateCashPositionMonitoringandTransferFulfillment(InitiateCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @Description("Notify Cash Position Monitoring and Transfer Fulfillment")
+    NotifyCashPositionMonitoringandTransferFulfillmentResponse notifyCashPositionMonitoringandTransferFulfillment(NotifyCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Cash Position Monitoring and Transfer Fulfillment")
+    RequestCashPositionMonitoringandTransferFulfillmentResponse requestCashPositionMonitoringandTransferFulfillment(RequestCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @Description("Retrieve Cash Position Monitoring and Transfer Fulfillment")
+    RetrieveCashPositionMonitoringandTransferFulfillmentResponse retrieveCashPositionMonitoringandTransferFulfillment(RetrieveCashPositionMonitoringandTransferFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Cash Position Monitoring and Transfer Fulfillment")
+    UpdateCashPositionMonitoringandTransferFulfillmentResponse updateCashPositionMonitoringandTransferFulfillment(UpdateCashPositionMonitoringandTransferFulfillmentRequest req);
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework</groupId>
+    <artifactId>muse-framework</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.museframework.bian</groupId>
+  <artifactId>bom-template</artifactId>
+  <name>bom-template</name>
+  <version>11.0.0</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+  <dependency>
+  	<groupId>org.museframework.resources</groupId>
+  	<artifactId>muse-core</artifactId>
+  </dependency>
+  </dependencies>
+</project>

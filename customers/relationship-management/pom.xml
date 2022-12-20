@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.museframework.bian</groupId>
+    <artifactId>customers</artifactId>
+    <version>11.0.0</version>
+  </parent>
+  <artifactId>relationship-management</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+	<module>sales-product-agreement-facade</module>
+<module>customer-agreement-facade</module>
+<module>customer-proposition-facade</module>
+<module>customer-relationship-management-facade</module>
+<module>loan-syndication-facade</module>
+<module>customer-credit-rating-facade</module>
+<module>customer-behavior-insights-facade</module>
+<module>customer-product-and-service-eligibility-facade</module>
+<module>customer-event-history-facade</module>
+<module>customer-products-and-services-facade</module>
+
+  </modules>
+</project>

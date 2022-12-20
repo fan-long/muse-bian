@@ -1,0 +1,49 @@
+package org.museframework.bian.corpayser;
+
+import org.museframework.bian.corpayser.dto.ExchangeEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.ExchangeEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.ExecuteEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.ExecuteEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.InitiateEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.InitiateEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.NotifyEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.NotifyEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.RequestEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.RequestEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.RetrieveEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.RetrieveEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.bian.corpayser.dto.UpdateEmployeePayrollDetailsMaintenanceFulfillmentRequest;
+import org.museframework.bian.corpayser.dto.UpdateEmployeePayrollDetailsMaintenanceFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Employee Payroll Details Maintenance Fulfillment arrangement within the Employee Payroll Details Maintenance Fulfillment")
+@GenericDomain(name="CorporatePayrollServices", group="EmployeePayrollDetailsMaintenanceFulfillment")
+public interface BqEmployeePayrollDetailsMaintenanceFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Employee Payroll Details Maintenance Fulfillment")
+    ExchangeEmployeePayrollDetailsMaintenanceFulfillmentResponse exchangeEmployeePayrollDetailsMaintenanceFulfillment(ExchangeEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Employee Payroll Details Maintenance Fulfillment")
+    ExecuteEmployeePayrollDetailsMaintenanceFulfillmentResponse executeEmployeePayrollDetailsMaintenanceFulfillment(ExecuteEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Employee Payroll Details Maintenance Fulfillment")
+    InitiateEmployeePayrollDetailsMaintenanceFulfillmentResponse initiateEmployeePayrollDetailsMaintenanceFulfillment(InitiateEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @Description("Notify Employee Payroll Details Maintenance Fulfillment")
+    NotifyEmployeePayrollDetailsMaintenanceFulfillmentResponse notifyEmployeePayrollDetailsMaintenanceFulfillment(NotifyEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Employee Payroll Details Maintenance Fulfillment")
+    RequestEmployeePayrollDetailsMaintenanceFulfillmentResponse requestEmployeePayrollDetailsMaintenanceFulfillment(RequestEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @Description("Retrieve Employee Payroll Details Maintenance Fulfillment")
+    RetrieveEmployeePayrollDetailsMaintenanceFulfillmentResponse retrieveEmployeePayrollDetailsMaintenanceFulfillment(RetrieveEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Employee Payroll Details Maintenance Fulfillment")
+    UpdateEmployeePayrollDetailsMaintenanceFulfillmentResponse updateEmployeePayrollDetailsMaintenanceFulfillment(UpdateEmployeePayrollDetailsMaintenanceFulfillmentRequest req);
+}

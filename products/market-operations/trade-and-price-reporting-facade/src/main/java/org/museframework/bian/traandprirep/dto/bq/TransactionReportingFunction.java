@@ -1,0 +1,70 @@
+/*An operational service or function supported within the Transaction Reporting Function for doing Transaction Reporting Function*/
+package org.museframework.bian.traandprirep.dto.bq;
+
+public class TransactionReportingFunction {
+    /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    private org.museframework.bian.classes.Condition preconditions;
+
+    /*The schedule and timing of the function*/
+    private String schedule;
+
+    /*The Transaction Reporting Function specific Business Service*/
+    private org.museframework.bian.classes.BusinessService businessService;
+
+    /*Reference to Transaction Reporting Function*/
+    private org.museframework.bian.classes.Session marketTradeReportingOperatingSessionReference;
+
+    /*Reference to Transaction Reporting Function*/
+    private org.museframework.bian.classes.Function transactionReportingFunctionReference;
+
+    /*The type of Transaction Reporting Function*/
+    private String transactionReportingFunctionType;
+
+    public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {
+        this.preconditions = preconditions;
+    }
+
+    public org.museframework.bian.classes.Condition getPreconditions() {
+        return preconditions;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setBusinessService(org.museframework.bian.classes.BusinessService businessService) {
+        this.businessService = businessService;
+    }
+
+    public org.museframework.bian.classes.BusinessService getBusinessService() {
+        return businessService;
+    }
+
+    public void setMarketTradeReportingOperatingSessionReference(org.museframework.bian.classes.Session marketTradeReportingOperatingSessionReference) {
+        this.marketTradeReportingOperatingSessionReference = marketTradeReportingOperatingSessionReference;
+    }
+
+    public org.museframework.bian.classes.Session getMarketTradeReportingOperatingSessionReference() {
+        return marketTradeReportingOperatingSessionReference;
+    }
+
+    public void setTransactionReportingFunctionReference(org.museframework.bian.classes.Function transactionReportingFunctionReference) {
+        this.transactionReportingFunctionReference = transactionReportingFunctionReference;
+    }
+
+    public org.museframework.bian.classes.Function getTransactionReportingFunctionReference() {
+        return transactionReportingFunctionReference;
+    }
+
+    public void setTransactionReportingFunctionType(String transactionReportingFunctionType) {
+        this.transactionReportingFunctionType = transactionReportingFunctionType;
+    }
+
+    public String getTransactionReportingFunctionType() {
+        return transactionReportingFunctionType;
+    }
+}

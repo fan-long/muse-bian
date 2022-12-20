@@ -1,0 +1,49 @@
+package org.museframework.bian.cashconcentration;
+
+import org.museframework.bian.cashconcentration.dto.ExchangeCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.ExchangeCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.ExecuteCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.ExecuteCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.InitiateCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.InitiateCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.NotifyCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.NotifyCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.RequestCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.RequestCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.RetrieveCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.RetrieveCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.bian.cashconcentration.dto.UpdateCashConcentrationServiceConfigurationFulfillmentRequest;
+import org.museframework.bian.cashconcentration.dto.UpdateCashConcentrationServiceConfigurationFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Cash Position Monitoring and Transfer Fulfillment arrangement within the Cash Position Monitoring and Transfer Fulfillment")
+@GenericDomain(name="CashConcentration", group="CashConcentrationServiceConfigurationFulfillment")
+public interface BqCashConcentrationServiceConfigurationFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Cash Concentration Service Configuration Fulfillment")
+    ExchangeCashConcentrationServiceConfigurationFulfillmentResponse exchangeCashConcentrationServiceConfigurationFulfillment(ExchangeCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Cash Concentration Service Configuration Fulfillment")
+    ExecuteCashConcentrationServiceConfigurationFulfillmentResponse executeCashConcentrationServiceConfigurationFulfillment(ExecuteCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Cash Concentration Service Configuration Fulfillment")
+    InitiateCashConcentrationServiceConfigurationFulfillmentResponse initiateCashConcentrationServiceConfigurationFulfillment(InitiateCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @Description("Notify Cash Concentration Service Configuration Fulfillment")
+    NotifyCashConcentrationServiceConfigurationFulfillmentResponse notifyCashConcentrationServiceConfigurationFulfillment(NotifyCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Cash Concentration Service Configuration Fulfillment")
+    RequestCashConcentrationServiceConfigurationFulfillmentResponse requestCashConcentrationServiceConfigurationFulfillment(RequestCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @Description("Retrieve Cash Concentration Service Configuration Fulfillment")
+    RetrieveCashConcentrationServiceConfigurationFulfillmentResponse retrieveCashConcentrationServiceConfigurationFulfillment(RetrieveCashConcentrationServiceConfigurationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Cash Concentration Service Configuration Fulfillment")
+    UpdateCashConcentrationServiceConfigurationFulfillmentResponse updateCashConcentrationServiceConfigurationFulfillment(UpdateCashConcentrationServiceConfigurationFulfillmentRequest req);
+}

@@ -1,0 +1,49 @@
+package org.museframework.bian.publicoffering;
+
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExchangePublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.ExecutePublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.InitiatePublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.NotifyPublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RequestPublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.RetrievePublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementFinancialAssessmentandAuditFulfillmentRequest;
+import org.museframework.bian.publicoffering.dto.UpdatePublicPlacementFinancialAssessmentandAuditFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Public Placement IPO and Underwriting Fulfillment arrangement within the Public Placement IPO and Underwriting Fulfillment")
+@GenericDomain(name="PublicOffering", group="PublicPlacementFinancialAssessmentandAuditFulfillment")
+public interface BqPublicPlacementFinancialAssessmentandAuditFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Public Placement Financial Assessment and Audit Fulfillment")
+    ExchangePublicPlacementFinancialAssessmentandAuditFulfillmentResponse exchangePublicPlacementFinancialAssessmentandAuditFulfillment(ExchangePublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Public Placement Financial Assessment and Audit Fulfillment")
+    ExecutePublicPlacementFinancialAssessmentandAuditFulfillmentResponse executePublicPlacementFinancialAssessmentandAuditFulfillment(ExecutePublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Public Placement Financial Assessment and Audit Fulfillment")
+    InitiatePublicPlacementFinancialAssessmentandAuditFulfillmentResponse initiatePublicPlacementFinancialAssessmentandAuditFulfillment(InitiatePublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @Description("Notify Public Placement Financial Assessment and Audit Fulfillment")
+    NotifyPublicPlacementFinancialAssessmentandAuditFulfillmentResponse notifyPublicPlacementFinancialAssessmentandAuditFulfillment(NotifyPublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Public Placement Financial Assessment and Audit Fulfillment")
+    RequestPublicPlacementFinancialAssessmentandAuditFulfillmentResponse requestPublicPlacementFinancialAssessmentandAuditFulfillment(RequestPublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @Description("Retrieve Public Placement Financial Assessment and Audit Fulfillment")
+    RetrievePublicPlacementFinancialAssessmentandAuditFulfillmentResponse retrievePublicPlacementFinancialAssessmentandAuditFulfillment(RetrievePublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Public Placement Financial Assessment and Audit Fulfillment")
+    UpdatePublicPlacementFinancialAssessmentandAuditFulfillmentResponse updatePublicPlacementFinancialAssessmentandAuditFulfillment(UpdatePublicPlacementFinancialAssessmentandAuditFulfillmentRequest req);
+}

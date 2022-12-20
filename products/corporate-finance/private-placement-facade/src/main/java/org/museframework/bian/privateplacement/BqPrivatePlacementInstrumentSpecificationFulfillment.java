@@ -1,0 +1,49 @@
+package org.museframework.bian.privateplacement;
+
+import org.museframework.bian.privateplacement.dto.ExchangePrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.ExchangePrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.ExecutePrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.ExecutePrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.InitiatePrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.InitiatePrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.NotifyPrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.NotifyPrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.RequestPrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.RequestPrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.RetrievePrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.RetrievePrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.bian.privateplacement.dto.UpdatePrivatePlacementInstrumentSpecificationFulfillmentRequest;
+import org.museframework.bian.privateplacement.dto.UpdatePrivatePlacementInstrumentSpecificationFulfillmentResponse;
+import org.museframework.common.core.Description;
+import org.museframework.common.core.GenericDomain;
+import org.museframework.common.core.GenericDtxEndpoint;
+
+@Description("The configuration and execution of Private Placement Fulfillment arrangement within the Private Placement Fulfillment")
+@GenericDomain(name="PrivatePlacement", group="PrivatePlacementInstrumentSpecificationFulfillment")
+public interface BqPrivatePlacementInstrumentSpecificationFulfillment {
+    @GenericDtxEndpoint
+    @Description("Exchange Private Placement Instrument Specification Fulfillment")
+    ExchangePrivatePlacementInstrumentSpecificationFulfillmentResponse exchangePrivatePlacementInstrumentSpecificationFulfillment(ExchangePrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Execute Private Placement Instrument Specification Fulfillment")
+    ExecutePrivatePlacementInstrumentSpecificationFulfillmentResponse executePrivatePlacementInstrumentSpecificationFulfillment(ExecutePrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Initiate Private Placement Instrument Specification Fulfillment")
+    InitiatePrivatePlacementInstrumentSpecificationFulfillmentResponse initiatePrivatePlacementInstrumentSpecificationFulfillment(InitiatePrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @Description("Notify Private Placement Instrument Specification Fulfillment")
+    NotifyPrivatePlacementInstrumentSpecificationFulfillmentResponse notifyPrivatePlacementInstrumentSpecificationFulfillment(NotifyPrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Request Private Placement Instrument Specification Fulfillment")
+    RequestPrivatePlacementInstrumentSpecificationFulfillmentResponse requestPrivatePlacementInstrumentSpecificationFulfillment(RequestPrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @Description("Retrieve Private Placement Instrument Specification Fulfillment")
+    RetrievePrivatePlacementInstrumentSpecificationFulfillmentResponse retrievePrivatePlacementInstrumentSpecificationFulfillment(RetrievePrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+
+    @GenericDtxEndpoint
+    @Description("Update Private Placement Instrument Specification Fulfillment")
+    UpdatePrivatePlacementInstrumentSpecificationFulfillmentResponse updatePrivatePlacementInstrumentSpecificationFulfillment(UpdatePrivatePlacementInstrumentSpecificationFulfillmentRequest req);
+}

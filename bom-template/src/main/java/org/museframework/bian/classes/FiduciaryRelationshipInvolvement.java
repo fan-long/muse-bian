@@ -1,0 +1,8 @@
+/*A PartyRole involved in a FiduciaryRelationship*/
+package org.museframework.bian.classes;
+
+import org.museframework.common.core.EmptyBianClass;
+
+@EmptyBianClass
+public class FiduciaryRelationshipInvolvement {
+}
