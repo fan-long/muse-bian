@@ -9,7 +9,7 @@ public class FinancialStatementAssessment extends org.museframework.bian.classes
     private org.museframework.bian.classes.Service financialStatementAssessmentSelectedOption;
 
     /*The type of Financial Statement Assessment*/
-    private String financialStatementAssessmentType;
+//    private String financialStatementAssessmentType;
 
     /*An unique reference to an item or an occurrence of Financial Statement Assessment*/
     private org.museframework.bian.classes.Assessment financialStatementAssessmentReference;
@@ -51,13 +51,13 @@ public class FinancialStatementAssessment extends org.museframework.bian.classes
         return financialStatementAssessmentSelectedOption;
     }
 
-    public void setFinancialStatementAssessmentType(String financialStatementAssessmentType) {
-        this.financialStatementAssessmentType = financialStatementAssessmentType;
-    }
-
-    public String getFinancialStatementAssessmentType() {
-        return financialStatementAssessmentType;
-    }
+//    public void setFinancialStatementAssessmentType(String financialStatementAssessmentType) {
+//        this.financialStatementAssessmentType = financialStatementAssessmentType;
+//    }
+//
+//    public String getFinancialStatementAssessmentType() {
+//        return financialStatementAssessmentType;
+//    }
 
     public void setFinancialStatementAssessmentReference(org.museframework.bian.classes.Assessment financialStatementAssessmentReference) {
         this.financialStatementAssessmentReference = financialStatementAssessmentReference;
