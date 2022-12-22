@@ -3,7 +3,7 @@ package org.museframework.bian.investmentaccount.dto.bq;
 
 public class CorporateAction extends org.museframework.bian.classes.CorporateAction {
     /*The type of corporate action that can be applied*/
-//    private String corporateActionType;
+    private String corporateActionType;
 
     /*The processing schedule for applying the type of corporate action to the investment account*/
     private String corporateActionApplicationSchedule;
@@ -32,13 +32,13 @@ public class CorporateAction extends org.museframework.bian.classes.CorporateAct
     /*The date and time the corporate action was processed to the account*/
     private String corporateActionTransactionDate;
 
-//    public void setCorporateActionType(String corporateActionType) {
-//        this.corporateActionType = corporateActionType;
-//    }
-//
-//    public String getCorporateActionType() {
-//        return corporateActionType;
-//    }
+    public void setCorporateActionType(String corporateActionType) {
+        this.corporateActionType = corporateActionType;
+    }
+
+    public String getCorporateActionType() {
+        return corporateActionType;
+    }
 
     public void setCorporateActionApplicationSchedule(String corporateActionApplicationSchedule) {
         this.corporateActionApplicationSchedule = corporateActionApplicationSchedule;

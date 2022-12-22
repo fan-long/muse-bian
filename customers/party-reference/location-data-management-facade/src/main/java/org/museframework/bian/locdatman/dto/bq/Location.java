@@ -8,10 +8,10 @@ package org.museframework.bian.locdatman.dto.bq;
 
 public class Location extends org.museframework.bian.classes.Location {
     /*Type of location (e.g. building, point of interest, virtual location/device)*/
-//    private String locationType;
+    private String locationType;
 
     /*Reference address for the location (e.g. postal address, email, coordinates)*/
-//    private String locationAddress;
+    private String locationAddress;
 
     /*The coordinates in a form that can be used to match tracked parties to the location (e.g. for real-time marketing)*/
     private String locationCoordinates;
@@ -31,21 +31,21 @@ public class Location extends org.museframework.bian.classes.Location {
     /*The general purpose and neighborhood of the property  (e.g. residential, industrial, commercial)*/
     private String locationNeighborhoodType;
 
-//    public void setLocationType(String locationType) {
-//        this.locationType = locationType;
-//    }
-//
-//    public String getLocationType() {
-//        return locationType;
-//    }
-//
-//    public void setLocationAddress(String locationAddress) {
-//        this.locationAddress = locationAddress;
-//    }
-//
-//    public String getLocationAddress() {
-//        return locationAddress;
-//    }
+    public void setLocationType(String locationType) {
+        this.locationType = locationType;
+    }
+
+    public String getLocationType() {
+        return locationType;
+    }
+
+    public void setLocationAddress(String locationAddress) {
+        this.locationAddress = locationAddress;
+    }
+
+    public String getLocationAddress() {
+        return locationAddress;
+    }
 
     public void setLocationCoordinates(String locationCoordinates) {
         this.locationCoordinates = locationCoordinates;
