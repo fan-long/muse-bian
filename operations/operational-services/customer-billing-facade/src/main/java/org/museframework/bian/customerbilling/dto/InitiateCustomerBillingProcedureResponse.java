@@ -1,6 +1,12 @@
 package org.museframework.bian.customerbilling.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateCustomerBillingProcedureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.customerbilling.dto.cr.CustomerBillingProcedure customerBillingProcedure;
 
     public void setCustomerBillingProcedure(org.museframework.bian.customerbilling.dto.cr.CustomerBillingProcedure customerBillingProcedure) {

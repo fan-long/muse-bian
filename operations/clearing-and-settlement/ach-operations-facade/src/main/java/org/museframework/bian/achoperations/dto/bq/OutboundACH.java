@@ -3,8 +3,13 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.achoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class OutboundACH {
     /*Reference to the batch ACH record*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object outboundACHTransactionBatchReference;
 
     public void setOutboundACHTransactionBatchReference(org.museframework.bian.classes.Object outboundACHTransactionBatchReference) {

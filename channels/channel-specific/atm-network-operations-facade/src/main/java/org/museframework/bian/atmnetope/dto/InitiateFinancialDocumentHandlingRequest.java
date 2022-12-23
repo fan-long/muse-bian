@@ -1,10 +1,18 @@
 package org.museframework.bian.atmnetope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateFinancialDocumentHandlingRequest {
+    @MetaField
     private String atmnetworkoperationsid;
 
+    @MetaField
     private String financialdocumenthandlingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.atmnetope.dto.bq.FinancialDocumentHandling financialDocumentHandling;
 
     public void setAtmnetworkoperationsid(String atmnetworkoperationsid) {

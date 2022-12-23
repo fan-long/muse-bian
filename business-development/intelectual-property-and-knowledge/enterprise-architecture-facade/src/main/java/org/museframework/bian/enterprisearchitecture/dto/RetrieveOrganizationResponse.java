@@ -1,6 +1,12 @@
 package org.museframework.bian.enterprisearchitecture.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveOrganizationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.enterprisearchitecture.dto.bq.Organization organization;
 
     public void setOrganization(org.museframework.bian.enterprisearchitecture.dto.bq.Organization organization) {

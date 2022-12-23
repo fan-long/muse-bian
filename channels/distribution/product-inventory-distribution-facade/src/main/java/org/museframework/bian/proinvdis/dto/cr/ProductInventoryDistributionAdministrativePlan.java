@@ -2,20 +2,29 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.proinvdis.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductInventoryDistributionAdministrativePlan extends org.museframework.bian.classes.ProductInventoryDistributionAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Product Inventory Distribution AdministrativePlan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String productInventoryDistributionAdministrativePlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Product Inventory Distribution AdministrativePlan*/
+    @MetaField
     private String productInventoryDistributionAdministrativePlanBudget;
 
     /*The allocation of someone or something which is specified for Product Inventory Distribution AdministrativePlan*/
+    @MetaField
     private String productInventoryDistributionAdministrativePlanAssignment;
 
     /*A plan that defines clerical support for ProductInventoryDistribution*/
+    @MetaField
     private String productInventoryDistributionAdministrativePlanPlan;
 
     /*Party who is involved in  Product Inventory Distribution AdministrativePlan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInventoryDistributionAdministrativePlanReference;
 
     public void setProductInventoryDistributionAdministrativePlanBudgetType(String productInventoryDistributionAdministrativePlanBudgetType) {

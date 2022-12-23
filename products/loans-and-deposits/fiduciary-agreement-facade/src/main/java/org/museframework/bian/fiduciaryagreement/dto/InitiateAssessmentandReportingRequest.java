@@ -1,10 +1,18 @@
 package org.museframework.bian.fiduciaryagreement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateAssessmentandReportingRequest {
+    @MetaField
     private String fiduciaryagreementid;
 
+    @MetaField
     private String assessmentandreportingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.fiduciaryagreement.dto.bq.AssessmentandReporting assessmentandReporting;
 
     public void setFiduciaryagreementid(String fiduciaryagreementid) {

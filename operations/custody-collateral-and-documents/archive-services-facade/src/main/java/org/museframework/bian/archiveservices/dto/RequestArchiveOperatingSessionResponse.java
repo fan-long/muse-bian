@@ -1,6 +1,12 @@
 package org.museframework.bian.archiveservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestArchiveOperatingSessionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.archiveservices.dto.cr.ArchiveOperatingSession archiveOperatingSession;
 
     public void setArchiveOperatingSession(org.museframework.bian.archiveservices.dto.cr.ArchiveOperatingSession archiveOperatingSession) {

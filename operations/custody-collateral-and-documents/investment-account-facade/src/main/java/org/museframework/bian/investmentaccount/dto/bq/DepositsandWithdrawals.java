@@ -1,47 +1,65 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.investmentaccount.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DepositsandWithdrawals {
     /*The type of securities deposit transaction that can be applied to the investment account (e.g. immediate, scheduled, earmarked)*/
+    @MetaField
     private String securitiesDepositType;
 
     /*The type of securities withdrawal transaction that can be applied to the account (e.g. immediate, scheduled, earmarked)*/
+    @MetaField
     private String securitiesWithdrawalType;
 
     /*Details of the securities deposit transaction*/
+    @MetaField
     private String securitiesDepositTransaction;
 
     /*Identifies the source of the deposit*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object securitiesDepositTransactionSourceReference;
 
     /*The type of securities deposit made with the transaction*/
+    @MetaField
     private String securitiesDepositTransactionDepositType;
 
     /*Any necessary details describing the purpose or reference properties of the deposit*/
+    @MetaField
     private String securitiesDepositTransactionDescription;
 
     /*The volume or value of securities deposited*/
+    @MetaField
     private String securitiesDepositTransactionAmount;
 
     /*The date and time the deposit was initiated*/
+    @MetaField
     private String securitiesDepositTransactionDate;
 
     /*Details of the securities withdrawal transaction*/
+    @MetaField
     private String securitiesWithdrawalTransaction;
 
     /*Identifies the target for the withdrawal*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object securitiesWithdrawalTransactionSourceReference;
 
     /*The type of securities withdrawal made with the transaction*/
+    @MetaField
     private String securitiesWithdrawalTransactionWithdrawalType;
 
     /*Any necessary details describing the purpose or reference properties of the withdrawal*/
+    @MetaField
     private String securitiesWithdrawalTransactionDescription;
 
     /*The volume or value of the withdrawn securities*/
+    @MetaField
     private String securitiesWithdrawalTransactionAmount;
 
     /*The date and time the withdrawal was initiated*/
+    @MetaField
     private String securitiesWithdrawalTransactionDate;
 
     public void setSecuritiesDepositType(String securitiesDepositType) {

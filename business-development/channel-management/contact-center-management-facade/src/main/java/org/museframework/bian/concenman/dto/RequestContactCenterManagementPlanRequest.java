@@ -1,8 +1,15 @@
 package org.museframework.bian.concenman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestContactCenterManagementPlanRequest {
+    @MetaField
     private String contactcentermanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.concenman.dto.cr.ContactCenterManagementPlan contactCenterManagementPlan;
 
     public void setContactcentermanagementid(String contactcentermanagementid) {

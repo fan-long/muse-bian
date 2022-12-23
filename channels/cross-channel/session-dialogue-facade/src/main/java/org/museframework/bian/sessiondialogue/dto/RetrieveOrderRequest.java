@@ -1,8 +1,15 @@
 package org.museframework.bian.sessiondialogue.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveOrderRequest {
+    @MetaField
     private String sessiondialogueid;
 
+    @MetaField
     private String orderid;
 
     public void setSessiondialogueid(String sessiondialogueid) {

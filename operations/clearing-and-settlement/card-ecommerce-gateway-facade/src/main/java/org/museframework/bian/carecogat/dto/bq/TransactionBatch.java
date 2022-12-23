@@ -3,14 +3,21 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.carecogat.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TransactionBatch extends org.museframework.bian.classes.TransactionBatch {
     /*Significant dates and times associated with the batch transaction*/
+    @MetaField
     private String eCommerceBatchTransactionDateTime;
 
     /*Refers to the merchant initiating the batch*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionMerchantReference;
 
     /*Batch record contains multiple Card Transactions*/
+    @MetaField
     private String eCommerceBatchTransactionRecord;
 
     public void seteCommerceBatchTransactionDateTime(String eCommerceBatchTransactionDateTime) {

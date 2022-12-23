@@ -2,41 +2,57 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.cusbehmod.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerBehaviorModelSpecification {
     /*The type or category of behavior model (e.g. life event detection)*/
+    @MetaField
     private String customerBehaviorModelType;
 
     /*A description of the model that clarifies the intended analysis/insights provided*/
+    @MetaField
     private String customerBehaviorModelPurpose;
 
     /*Maintains the current deployment configuration of the model*/
+    @MetaField
     private String customerBehaviorModelDeployment;
 
     /*Reference to the business units where the model is deployed and in use*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment for reference*/
+    @MetaField
     private String customerBehaviorModelDeploymentConfiguration;
 
     /*Reference to deployment task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelDeploymentTaskReference;
 
     /*Recorded details of a deployment task*/
+    @MetaField
     private String customerBehaviorModelDeploymentTaskRecord;
 
     /*The operational and development status of the model (e.g. under development, available, under review)*/
+    @MetaField
     private String customerBehaviorModelStatus;
 
     /*Tracking deployment and usage frequency*/
+    @MetaField
     private String customerBehaviorModelUsage;
 
     /*Track reporting of the impact/accuracy of the model's insights*/
+    @MetaField
     private String customerBehaviorModelImpact;
 
     /*Release version of available model plus version history as appropriate*/
+    @MetaField
     private String customerBehaviorModelVersion;
 
     /*The deployable model in any appropriate form (including historical versions as appropriate)*/
+    @MetaField
     private String customerBehaviorModel;
 
     public void setCustomerBehaviorModelType(String customerBehaviorModelType) {

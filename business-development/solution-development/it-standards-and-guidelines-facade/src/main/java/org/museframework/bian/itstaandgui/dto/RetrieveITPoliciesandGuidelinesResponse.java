@@ -1,6 +1,12 @@
 package org.museframework.bian.itstaandgui.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveITPoliciesandGuidelinesResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.itstaandgui.dto.bq.ITPoliciesandGuidelines iTPoliciesandGuidelines;
 
     public void setiTPoliciesandGuidelines(org.museframework.bian.itstaandgui.dto.bq.ITPoliciesandGuidelines iTPoliciesandGuidelines) {

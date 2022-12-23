@@ -1,10 +1,18 @@
 package org.museframework.bian.corbanrelman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class GrantRelationshipDevelopmentDutyRequest {
+    @MetaField
     private String correspondentbankrelationshipmanagementid;
 
+    @MetaField
     private String relationshipdevelopmentdutyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corbanrelman.dto.bq.RelationshipDevelopmentDuty relationshipDevelopmentDuty;
 
     public void setCorrespondentbankrelationshipmanagementid(String correspondentbankrelationshipmanagementid) {

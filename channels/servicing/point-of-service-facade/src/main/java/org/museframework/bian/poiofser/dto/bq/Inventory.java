@@ -3,14 +3,21 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.poiofser.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Inventory {
     /*The type of non-cash inventory (e.g. documents/forms, brochures)*/
+    @MetaField
     private String servicingInventoryType;
 
     /*Used to track inventory holdings at the position*/
+    @MetaField
     private String servicingPositionInventoryRecord;
 
     /*Details of the transfer of inventory (e.g. documents issued)*/
+    @MetaField
     private String servicingInventoryTransactionRecord;
 
     public void setServicingInventoryType(String servicingInventoryType) {

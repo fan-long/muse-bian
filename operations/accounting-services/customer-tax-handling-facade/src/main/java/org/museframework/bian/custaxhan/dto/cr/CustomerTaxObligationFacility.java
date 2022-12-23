@@ -1,23 +1,33 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Customer Tax Handling. */
 package org.museframework.bian.custaxhan.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerTaxObligationFacility {
     /*Reference to the customer for whom the consolidated tax position is maintained*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The consolidated record of the customer tax reporting position - basis for generating tax reports*/
+    @MetaField
     private String customerTaxHandlingArrangementRecord;
 
     /*Reference to the applicable tax authority/jurisdiction that applies for the customer - can be multiple for the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxationJurisdictionReference;
 
     /*Tax handling and reporting regulation that is applied to this customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object applicableTaxationRuleReference;
 
     /*Covers all tax reporting guidelines, schedule and position reporting requirements for the customer*/
+    @MetaField
     private String applicableTaxationRuleDefinition;
 
     /*Defines the customer tax reporting obligations, recording target and actual dates*/
+    @MetaField
     private String customerTaxReportingSchedule;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

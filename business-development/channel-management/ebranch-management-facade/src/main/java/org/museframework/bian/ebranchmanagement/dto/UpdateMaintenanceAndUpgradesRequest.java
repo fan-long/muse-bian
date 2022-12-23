@@ -1,10 +1,18 @@
 package org.museframework.bian.ebranchmanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateMaintenanceAndUpgradesRequest {
+    @MetaField
     private String ebranchmanagementid;
 
+    @MetaField
     private String maintenanceandupgradesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.ebranchmanagement.dto.bq.MaintenanceAndUpgrades maintenanceAndUpgrades;
 
     public void setEbranchmanagementid(String ebranchmanagementid) {

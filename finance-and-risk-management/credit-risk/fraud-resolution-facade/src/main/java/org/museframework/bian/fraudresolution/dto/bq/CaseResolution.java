@@ -3,26 +3,37 @@
 Examples: Invoice generation*/
 package org.museframework.bian.fraudresolution.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CaseResolution extends org.museframework.bian.classes.CaseResolution {
     /*Record sets out, defines and assigns resolution tasks*/
+    @MetaField
     private String fraudCaseResolutionRecord;
 
     /*Employee and or business unit responsible for the resolution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to all correspondence (e.g. confirmation messages sent to involved parties, includes internal and external legal/law enforcement authorities)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceReference;
 
     /*Reference to any associated adjustment or chargeback transaction initiated by the resolution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object adjustmentChargebackReference;
 
     /*Reference to the consortia notification transaction for fraud resultion activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object consortiaReportingInstanceReference;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to any financial adjustments that are made during the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentOrderReference;
 
     public void setFraudCaseResolutionRecord(String fraudCaseResolutionRecord) {

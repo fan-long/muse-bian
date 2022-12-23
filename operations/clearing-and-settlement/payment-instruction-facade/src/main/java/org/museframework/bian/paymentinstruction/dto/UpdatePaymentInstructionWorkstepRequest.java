@@ -1,10 +1,18 @@
 package org.museframework.bian.paymentinstruction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdatePaymentInstructionWorkstepRequest {
+    @MetaField
     private String paymentinstructionid;
 
+    @MetaField
     private String paymentinstructionworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.paymentinstruction.dto.bq.PaymentInstructionWorkstep paymentInstructionWorkstep;
 
     public void setPaymentinstructionid(String paymentinstructionid) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.documentdirectory.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateDocumentArchivingPropertiesResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.documentdirectory.dto.bq.DocumentArchivingProperties documentArchivingProperties;
 
     public void setDocumentArchivingProperties(org.museframework.bian.documentdirectory.dto.bq.DocumentArchivingProperties documentArchivingProperties) {

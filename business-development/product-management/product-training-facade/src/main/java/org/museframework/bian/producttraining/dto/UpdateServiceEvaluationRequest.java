@@ -1,10 +1,18 @@
 package org.museframework.bian.producttraining.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateServiceEvaluationRequest {
+    @MetaField
     private String producttrainingid;
 
+    @MetaField
     private String serviceevaluationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.producttraining.dto.bq.ServiceEvaluation serviceEvaluation;
 
     public void setProducttrainingid(String producttrainingid) {

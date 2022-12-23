@@ -2,35 +2,49 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.colallman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CollateralAssetAllocation extends org.museframework.bian.classes.CollateralAssetAllocation {
     /*Reference to the title owner of the collateral asset*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of asset (e.g. building, machinery, inventory, financial instrument, art)*/
+    @MetaField
     private String collateralAssetType;
 
     /*Reference to the collateral item (e.g. address, account reference)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetReference;
 
     /*Description of significant details and properties of the asset*/
+    @MetaField
     private String collateralAssetDescription;
 
     /*Reference to the administration record of the asset item*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetAdministrationInstanceReference;
 
     /*A general status indicator for the asset (can cover multiple properties as needed)*/
+    @MetaField
     private String collateralAssetStatus;
 
     /*The current and historical valuation of the asset*/
+    @MetaField
     private String collateralAssetValuation;
 
     /*A record of past and current allocations of the collateral asset*/
+    @MetaField
     private String collateralAssetAllocationProfile;
 
     /*The date of the last valuation (and next planned valuation)*/
+    @MetaField
     private String collateralAssetValuationDate;
 
     /*The ratio of the valuation that can be used as collateral (depends on liquidity, title, etc.)*/
+    @MetaField
     private String collateralAssetLoantoValueRatio;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

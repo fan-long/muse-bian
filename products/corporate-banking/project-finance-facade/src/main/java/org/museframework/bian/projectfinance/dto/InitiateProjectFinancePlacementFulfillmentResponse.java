@@ -1,6 +1,12 @@
 package org.museframework.bian.projectfinance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateProjectFinancePlacementFulfillmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.projectfinance.dto.bq.ProjectFinancePlacementFulfillment projectFinancePlacementFulfillment;
 
     public void setProjectFinancePlacementFulfillment(org.museframework.bian.projectfinance.dto.bq.ProjectFinancePlacementFulfillment projectFinancePlacementFulfillment) {

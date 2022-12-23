@@ -6,14 +6,21 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.productdirectory.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Production {
     /*List and description of locations where the product or service is supported*/
+    @MetaField
     private String productandServiceLocationAvailability;
 
     /*The schedule for when the product or service can be accessed*/
+    @MetaField
     private String productandServiceTimeAvailability;
 
     /*The access channels and devices that are supported by the product or service*/
+    @MetaField
     private String productandServiceAccessAvailability;
 
     public void setProductandServiceLocationAvailability(String productandServiceLocationAvailability) {

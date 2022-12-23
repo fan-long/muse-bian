@@ -1,10 +1,18 @@
 package org.museframework.bian.customerbilling.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiatePaymentsRequest {
+    @MetaField
     private String customerbillingid;
 
+    @MetaField
     private String paymentsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerbilling.dto.bq.Payments payments;
 
     public void setCustomerbillingid(String customerbillingid) {

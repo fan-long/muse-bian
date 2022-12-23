@@ -3,35 +3,49 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcollections.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PaymentTerms {
     /*Reference to a contact established with the customer*/
+    @MetaField
     private String cardCollectionsPaymentTermsContactRecord;
 
     /*Content of the reminder message*/
+    @MetaField
     private String contactMessage;
 
     /*The date and time of the contact*/
+    @MetaField
     private String contactDate;
 
     /*Any response arising from the contact*/
+    @MetaField
     private String contactResult;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal documents created & referenced*/
+    @MetaField
     private String documentContent;
 
     /*Reference to the correspondence generated and received*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - repayment negotiation/payment request messages sent to involved parties*/
+    @MetaField
     private String correspondenceContent;
 
     /*The payment terms renegotiation decision, includes renegotiated terms and repayment schedule*/
+    @MetaField
     private String cardCollectionsPaymentTermsRenegotiationDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
+    @MetaField
     private String cardCollectionsPaymentTermsWorkProduct;
 
     public void setCardCollectionsPaymentTermsContactRecord(String cardCollectionsPaymentTermsContactRecord) {

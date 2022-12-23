@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Market Order Initiation Function for doing Market Order Initiation Function*/
 package org.museframework.bian.etradingworkbench.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InvestmentPortfolioValuationFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Investment Portfolio Valuation Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Investment Portfolio Valuation Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session eTradingWorkbenchOperatingSessionReference;
 
     /*Reference to Investment Portfolio Valuation Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function investmentPortfolioValuationFunctionReference;
 
     /*The type of Investment Portfolio Valuation Function*/
+    @MetaField
     private String investmentPortfolioValuationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

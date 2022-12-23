@@ -1,10 +1,18 @@
 package org.museframework.bian.directdebit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlPaymentTrackingRequest {
+    @MetaField
     private String directdebitid;
 
+    @MetaField
     private String paymenttrackingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.directdebit.dto.bq.PaymentTracking paymentTracking;
 
     public void setDirectdebitid(String directdebitid) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.bankdrafts.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateBearerDocumentCreationandRegistrationTaskRequest {
+    @MetaField
     private String bankdraftsid;
 
+    @MetaField
     private String bearerdocumentcreationandregistrationtaskid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.bankdrafts.dto.bq.BearerDocumentCreationandRegistrationTask bearerDocumentCreationandRegistrationTask;
 
     public void setBankdraftsid(String bankdraftsid) {

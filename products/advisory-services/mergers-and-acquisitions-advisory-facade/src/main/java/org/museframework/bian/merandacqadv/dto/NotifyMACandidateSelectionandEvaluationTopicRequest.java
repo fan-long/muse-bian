@@ -1,8 +1,15 @@
 package org.museframework.bian.merandacqadv.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyMACandidateSelectionandEvaluationTopicRequest {
+    @MetaField
     private String mergersandacquisitionsadvisoryid;
 
+    @MetaField
     private String macandidateselectionandevaluationtopicid;
 
     public void setMergersandacquisitionsadvisoryid(String mergersandacquisitionsadvisoryid) {

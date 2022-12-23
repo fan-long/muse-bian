@@ -1,26 +1,37 @@
 /*Capture and maintain reference information about some type of entitity  within Special Pricing Conditions.*/
 package org.museframework.bian.spepricon.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SpecialPricingConditionsDirectoryEntry {
     /*Documentation of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryDescription;
 
     /*The timetable of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntrySchedule;
 
     /*The version of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryVersion;
 
     /*The status of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryUpdateLog;
 
     /*The configuration of Special Pricing Conditions Directory Entry*/
+    @MetaField
     private String specialPricingConditionsDirectoryEntryServiceConfiguration;
 
     public void setSpecialPricingConditionsDirectoryEntryDescription(String specialPricingConditionsDirectoryEntryDescription) {

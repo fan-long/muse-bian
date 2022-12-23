@@ -3,20 +3,29 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.cuscamman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PerformanceAssessment {
     /*The type of work task (e.g. track competitor activity, track customer behaviors)*/
+    @MetaField
     private String performanceAssessmentWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research to reach specific insights*/
+    @MetaField
     private String performanceAssessmentWorkTask;
 
     /*File of consolidated notes, evaluations and findings for the work task*/
+    @MetaField
     private String performanceAssessmentWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - indication of the need to amend, redirect and/or expand customer campaign activity*/
+    @MetaField
     private String performanceAssessmentWorkTaskResult;
 
     /*The date-time the performance assessment task is performed*/
+    @MetaField
     private String performanceAssessmentWorkTaskDate_Time;
 
     public void setPerformanceAssessmentWorkTaskType(String performanceAssessmentWorkTaskType) {

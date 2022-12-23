@@ -1,6 +1,12 @@
 package org.museframework.bian.carnetparfac.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveParticipantAccountResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.carnetparfac.dto.bq.ParticipantAccount participantAccount;
 
     public void setParticipantAccount(org.museframework.bian.carnetparfac.dto.bq.ParticipantAccount participantAccount) {

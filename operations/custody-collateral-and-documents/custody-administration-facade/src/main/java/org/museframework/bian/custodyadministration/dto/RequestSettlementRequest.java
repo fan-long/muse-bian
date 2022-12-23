@@ -1,10 +1,18 @@
 package org.museframework.bian.custodyadministration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestSettlementRequest {
+    @MetaField
     private String custodyadministrationid;
 
+    @MetaField
     private String settlementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.custodyadministration.dto.bq.Settlement settlement;
 
     public void setCustodyadministrationid(String custodyadministrationid) {

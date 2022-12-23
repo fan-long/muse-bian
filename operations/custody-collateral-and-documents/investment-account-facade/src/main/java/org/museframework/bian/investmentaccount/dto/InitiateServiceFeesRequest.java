@@ -1,10 +1,18 @@
 package org.museframework.bian.investmentaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateServiceFeesRequest {
+    @MetaField
     private String investmentaccountid;
 
+    @MetaField
     private String servicefeesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.investmentaccount.dto.bq.ServiceFees serviceFees;
 
     public void setInvestmentaccountid(String investmentaccountid) {

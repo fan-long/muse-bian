@@ -3,29 +3,41 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.regulatoryreporting.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Enquiries {
     /*The description of the requested information for the regulatory enquiry*/
+    @MetaField
     private String regulatoryEnquiry;
 
     /*The business unit being assessed for enquiry if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object enquiryBusinessUnitReference;
 
     /*The instances of products/services being assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object enquiryProductandServiceReference;
 
     /*Reference to the customer being assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object enquiryCustomerReference;
 
     /*The possibly extensive collection of production transaction records assembled for the enquiry*/
+    @MetaField
     private String enquiryTransactionRecords;
 
     /*Work documentation, forms and schedules produced and referenced during the enquiry*/
+    @MetaField
     private String regulatoryEnquiryWorkProducts;
 
     /*The record or report that is the outcome/result of the enquiry*/
+    @MetaField
     private String regulatoryEnquiryResult;
 
     /*The document reference for all classified/archived documents from the enquiry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryEnquiryDocumentReference;
 
     public void setRegulatoryEnquiry(String regulatoryEnquiry) {

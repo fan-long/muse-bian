@@ -3,20 +3,29 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.frauddiagnosis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AnalystReview {
     /*Reference to the customer, extracted from the financial transaction details, used to access customer details*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to an outbound contact established with the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object outboundContactReference;
 
     /*The result of the economic model, including the recommended response*/
+    @MetaField
     private String analystReviewAnalysisResult;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
+    @MetaField
     private String analystReviewWorkProduct;
 
     /*The recommended action resulting from the analysts review*/
+    @MetaField
     private String analystReviewRecommendedAction;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

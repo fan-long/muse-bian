@@ -1,8 +1,15 @@
 package org.museframework.bian.suitabilitychecking.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateSuitabilityAssessmentRequest {
+    @MetaField
     private String suitabilitycheckingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.suitabilitychecking.dto.cr.SuitabilityAssessment suitabilityAssessment;
 
     public void setSuitabilitycheckingid(String suitabilitycheckingid) {

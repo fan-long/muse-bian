@@ -1,6 +1,12 @@
 package org.museframework.bian.pubrefdatman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ControlGlobalStandardSpecificationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.pubrefdatman.dto.cr.GlobalStandardSpecification globalStandardSpecification;
 
     public void setGlobalStandardSpecification(org.museframework.bian.pubrefdatman.dto.cr.GlobalStandardSpecification globalStandardSpecification) {

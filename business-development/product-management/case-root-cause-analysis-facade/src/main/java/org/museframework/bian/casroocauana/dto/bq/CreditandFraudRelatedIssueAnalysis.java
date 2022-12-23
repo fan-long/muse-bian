@@ -3,32 +3,45 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.casroocauana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditandFraudRelatedIssueAnalysis {
     /*The required status/situation before the algorithm can be applied*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisPreconditions;
 
     /*The schedule and timing of the analysis performed using the algorithm*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisAnalysisSchedule;
 
     /*The algorithm version employed in the analysis*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisVersionNumber;
 
     /*The Customer Case Root Cause Analysis specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService creditandFraudRelatedIssueAnalysis;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisServiceWorkProduct;
 
     /**/
+    @MetaField
     private String creditandFraudRelatedIssueAnalysisServiceName;
 
     public void setCreditandFraudRelatedIssueAnalysisPreconditions(String creditandFraudRelatedIssueAnalysisPreconditions) {

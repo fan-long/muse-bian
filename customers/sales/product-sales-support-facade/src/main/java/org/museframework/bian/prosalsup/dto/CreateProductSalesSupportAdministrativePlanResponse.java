@@ -1,6 +1,12 @@
 package org.museframework.bian.prosalsup.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class CreateProductSalesSupportAdministrativePlanResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.prosalsup.dto.cr.ProductSalesSupportAdministrativePlan productSalesSupportAdministrativePlan;
 
     public void setProductSalesSupportAdministrativePlan(org.museframework.bian.prosalsup.dto.cr.ProductSalesSupportAdministrativePlan productSalesSupportAdministrativePlan) {

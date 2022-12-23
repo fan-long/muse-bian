@@ -1,8 +1,15 @@
 package org.museframework.bian.legalcompliance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestLegalComplianceAssessmentRequest {
+    @MetaField
     private String legalcomplianceid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.legalcompliance.dto.cr.LegalComplianceAssessment legalComplianceAssessment;
 
     public void setLegalcomplianceid(String legalcomplianceid) {

@@ -3,23 +3,33 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.seractana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RootCauseAlgorithm {
     /*Defines the algorithm used and its intended analytical insights*/
+    @MetaField
     private String servicingActivityRootCauseAlgorithmSpecification;
 
     /*The type of work task (e.g. consolidate servicing activity history, apply pattern detection, refine/qualify detected servicing pattern definition)*/
+    @MetaField
     private String servicingActivityRootCauseAnalysisWorkTaskType;
 
     /*The make-up/schedule of the work task performed*/
+    @MetaField
     private String servicingActivityRootCauseAnalysisWorkTask;
 
     /*File of consolidated notes, evaluations and findings for the work task*/
+    @MetaField
     private String servicingActivityRootCauseAnalysisWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - indication of the nature of any identified servicing patterns and the associated root cause hypotheses*/
+    @MetaField
     private String servicingActivityRootCauseAnalysisWorkTaskResult;
 
     /*The date-time the specific work task is performed*/
+    @MetaField
     private String servicingActivityRootCauseAnalysisWorkTaskDate_Time;
 
     public void setServicingActivityRootCauseAlgorithmSpecification(String servicingActivityRootCauseAlgorithmSpecification) {

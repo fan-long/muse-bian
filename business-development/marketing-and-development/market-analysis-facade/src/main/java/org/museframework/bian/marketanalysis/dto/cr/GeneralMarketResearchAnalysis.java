@@ -4,41 +4,57 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.marketanalysis.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class GeneralMarketResearchAnalysis {
     /*The type of research view provided by the research (e.g. competitor analysis)*/
+    @MetaField
     private String generalMarketResearchAnalysisType;
 
     /*The definition of the analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisSpecification;
 
     /*Guidance on usage and interpretation of the analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisGuidance;
 
     /*Reference to the algorithm used to generate the analysis*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object generalMarketResearchAnalysisAlgorithmReference;
 
     /*Request record of the general market analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisRequestRecord;
 
     /*The specific details of the request*/
+    @MetaField
     private String generalMarketResearchAnalysisRequest;
 
     /*The employee/business unit requesting the analysis*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String marketAnalysisRequestWorkProducts;
 
     /*The output from performing the analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisRequestResult;
 
     /*Usage record of the general market analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisUsageRecord;
 
     /*A record of the usage of the analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisUsage;
 
     /*A record of reported impact/accuracy of the analysis*/
+    @MetaField
     private String generalMarketResearchAnalysisImpact;
 
     public void setGeneralMarketResearchAnalysisType(String generalMarketResearchAnalysisType) {

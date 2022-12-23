@@ -1,10 +1,18 @@
 package org.museframework.bian.chaactana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteCustomerBehaviorRequest {
+    @MetaField
     private String channelactivityanalysisid;
 
+    @MetaField
     private String customerbehaviorid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.chaactana.dto.bq.CustomerBehavior customerBehavior;
 
     public void setChannelactivityanalysisid(String channelactivityanalysisid) {

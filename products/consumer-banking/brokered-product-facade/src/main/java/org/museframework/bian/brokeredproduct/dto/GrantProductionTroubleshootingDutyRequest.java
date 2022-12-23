@@ -1,10 +1,18 @@
 package org.museframework.bian.brokeredproduct.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class GrantProductionTroubleshootingDutyRequest {
+    @MetaField
     private String brokeredproductid;
 
+    @MetaField
     private String productiontroubleshootingdutyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.brokeredproduct.dto.bq.ProductionTroubleshootingDuty productionTroubleshootingDuty;
 
     public void setBrokeredproductid(String brokeredproductid) {

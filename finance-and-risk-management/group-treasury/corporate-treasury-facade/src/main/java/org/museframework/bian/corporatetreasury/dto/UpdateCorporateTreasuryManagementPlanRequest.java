@@ -1,8 +1,15 @@
 package org.museframework.bian.corporatetreasury.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCorporateTreasuryManagementPlanRequest {
+    @MetaField
     private String corporatetreasuryid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatetreasury.dto.cr.CorporateTreasuryManagementPlan corporateTreasuryManagementPlan;
 
     public void setCorporatetreasuryid(String corporatetreasuryid) {

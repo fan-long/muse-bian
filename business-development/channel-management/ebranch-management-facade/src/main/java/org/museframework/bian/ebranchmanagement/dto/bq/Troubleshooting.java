@@ -3,11 +3,17 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.ebranchmanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Troubleshooting extends org.museframework.bian.classes.Troubleshooting {
     /*A record of any production issues arising during the session (see E-Branch Operations for detailed content)*/
+    @MetaField
     private String eBranchChannelProductionIssueRecord;
 
     /*A record of the root cause analysis for recurring issues and suggested remedial action*/
+    @MetaField
     private String eBranchChannelIssueAnalysisAndRecommendedResponse;
 
     public void seteBranchChannelProductionIssueRecord(String eBranchChannelProductionIssueRecord) {

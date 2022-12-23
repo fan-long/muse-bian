@@ -3,20 +3,29 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.ebranchoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Inbound {
     /*Reference to the device being used for access (captured for security and identification)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object EBranchDeviceReference;
 
     /*Property of the Device e.g. URL if available*/
+    @MetaField
     private String EBranchDevicePropertyValue;
 
     /*Log of the initial connection*/
+    @MetaField
     private String EBranchInboundConnectionStartTime;
 
     /*Connection duration for capacity planning purposes*/
+    @MetaField
     private String EBranchInboundConnectionDuration;
 
     /*This is returned by SD-Contact Handler for reference if the connection leads to a log-in session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object EBranchInboundConnectionContactRecordReference;
 
     public void setEBranchDeviceReference(org.museframework.bian.classes.Object EBranchDeviceReference) {

@@ -2,35 +2,49 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.regandlegaut.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RepresentBankInterests {
     /*The required status/situation before the duty/obligation can be met*/
+    @MetaField
     private String representBankInterestsPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object representBankInterestsBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
+    @MetaField
     private String representBankInterestsWorkSchedule;
 
     /*The Regulatory&Legal Authority Relationship ManagementPlan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
+    @MetaField
     private String representBankInterestsPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String representBankInterestsServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String representBankInterestsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String representBankInterestsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String representBankInterestsServiceWorkProduct;
 
     /**/
+    @MetaField
     private String representBankInterestsServiceName;
 
     public void setRepresentBankInterestsPreconditions(String representBankInterestsPreconditions) {

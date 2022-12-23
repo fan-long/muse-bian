@@ -1,17 +1,25 @@
 /*Handles the booking of the asset or liability to the appropriate unit*/
 package org.museframework.bian.customeroffer.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Disclosures {
     /*The type of disclosure (e.g. verbal, requiring signature)*/
+    @MetaField
     private String disclosureType;
 
     /*The presented disclosure for customer review in any suitable format*/
+    @MetaField
     private String disclosureTextDescription;
 
     /*An indicator that the disclosure has been accepted (indicates signature obtained as necessary)*/
+    @MetaField
     private String customerAcceptanceIndicator;
 
     /*The customer signature/acceptance record*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference_forcustomersignatureacceptancerecord_;
 
     public void setDisclosureType(String disclosureType) {

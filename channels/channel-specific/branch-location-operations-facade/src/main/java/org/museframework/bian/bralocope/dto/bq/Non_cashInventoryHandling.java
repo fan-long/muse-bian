@@ -2,29 +2,41 @@
 */
 package org.museframework.bian.bralocope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Non_cashInventoryHandling {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String schedule;
 
     /*The <BQ> specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Branch Location Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan branchLocationAdministrativePlanReference;
 
     /*Reference to the Non-cash Inventory Handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PlannedAction non_cashInventoryHandlingReference;
 
     /*The type of Non-cash Inventory Handling*/
+    @MetaField
     private String non_cashInventoryHandlingType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

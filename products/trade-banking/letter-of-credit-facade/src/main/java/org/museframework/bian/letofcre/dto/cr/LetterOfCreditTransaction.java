@@ -1,38 +1,53 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Letter of Credit. */
 package org.museframework.bian.letofcre.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LetterOfCreditTransaction extends org.museframework.bian.classes.LetterOfCreditTransaction {
     /*A Classification value that distinguishes between business service transaction within Letter Of Credit Transaction*/
+    @MetaField
     private String letterOfCreditTransactionParameterType;
 
     /*A selected optional business service as subject matter of Letter Of Credit Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Service letterOfCreditTransactionSelectedOption;
 
     /*The status of Letter Of Credit Transaction*/
+    @MetaField
     private String letterOfCreditTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Letter Of Credit Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Letterofcredittransactiontypevalues letterOfCreditTransactionType;
 
     /*An unique reference to an item or an occurrence of Letter Of Credit Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LetterOfCreditTransaction letterOfCreditTransactionReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Document letterOfCreditDocumentReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LetterOfCreditAgreement letterOfCreditAgreementReference;
 
     /**/
+    @MetaField
     private String letterOfCreditInvolvedPartyReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Letterofcreditinvolvementtypevalues letterOfCreditInvolvementType;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LetterOfCreditArrangement letterOfCreditArrangementReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LetterOfCredit letterofCreditFInancialInstrumentReference;
 
     public void setLetterOfCreditTransactionParameterType(String letterOfCreditTransactionParameterType) {

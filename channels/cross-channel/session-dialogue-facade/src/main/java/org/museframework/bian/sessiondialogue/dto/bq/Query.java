@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.sessiondialogue.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Query {
     /*The type of question/answer addressed in the session - e.g. branch location/hours*/
+    @MetaField
     private String queryType;
 
     /*Details the response and any customer reaction*/
+    @MetaField
     private String queryTaskResult;
 
     public void setQueryType(String queryType) {

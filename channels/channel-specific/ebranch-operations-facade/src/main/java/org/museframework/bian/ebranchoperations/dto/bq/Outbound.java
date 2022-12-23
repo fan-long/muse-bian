@@ -3,23 +3,33 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.ebranchoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Outbound {
     /*Reference to the source of outbound connection*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The outbound connection will be part of a customer contact to ensure all logging is performed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*This is the payload of the exchange - it is the specific session within the contact that handles the customer interaction. Content passes through the E-Branch facility transparently*/
+    @MetaField
     private String customerSessionDialogueRecord;
 
     /*Reference to the device being connected to*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object EBranchCustomerDeviceReference;
 
     /*Log of the initial connection*/
+    @MetaField
     private String EBranchOutboundConnectionStartTime;
 
     /*Connection duration for capacity planning purposes*/
+    @MetaField
     private String EBranchOutboundConnectionDuration;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

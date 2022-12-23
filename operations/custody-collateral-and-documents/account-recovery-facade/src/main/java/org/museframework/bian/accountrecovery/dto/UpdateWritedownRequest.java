@@ -1,10 +1,18 @@
 package org.museframework.bian.accountrecovery.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateWritedownRequest {
+    @MetaField
     private String accountrecoveryid;
 
+    @MetaField
     private String writedownid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.accountrecovery.dto.bq.Writedown writedown;
 
     public void setAccountrecoveryid(String accountrecoveryid) {

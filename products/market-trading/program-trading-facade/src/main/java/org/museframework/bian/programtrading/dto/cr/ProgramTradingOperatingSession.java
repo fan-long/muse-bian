@@ -1,35 +1,49 @@
 /*Operate equipment and/or a largely automated facility within Program Trading. */
 package org.museframework.bian.programtrading.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProgramTradingOperatingSession extends org.museframework.bian.classes.ProgramTradingOperatingSession {
     /*Timetable to operate Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionSchedule;
 
     /*The status of Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Program Trading Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log programTradingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Program Trading Operating Session*/
+    @MetaField
     private String programTradingOperatingSessionServiceType;
 
     /*The configuration of Program Trading Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.SystemConfigurationOption programTradingOperatingSessionServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Program Trading Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session programTradingOperatingSessionReference;
 
     public void setProgramTradingOperatingSessionSchedule(String programTradingOperatingSessionSchedule) {

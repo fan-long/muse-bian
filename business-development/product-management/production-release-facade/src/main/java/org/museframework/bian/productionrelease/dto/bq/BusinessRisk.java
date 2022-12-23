@@ -3,17 +3,25 @@
 Examples: Password verification*/
 package org.museframework.bian.productionrelease.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BusinessRisk {
     /*The type of business risk test being performed (e.g. compliance, pricing, exposure)*/
+    @MetaField
     private String businessRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
+    @MetaField
     private String businessRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
+    @MetaField
     private String businessRiskTestWorkProduct;
 
     /*The result of the business risk test (including required remedial actions/fixes where appropriate)*/
+    @MetaField
     private String businessRiskTestResult;
 
     public void setBusinessRiskSystemTestType(String businessRiskSystemTestType) {

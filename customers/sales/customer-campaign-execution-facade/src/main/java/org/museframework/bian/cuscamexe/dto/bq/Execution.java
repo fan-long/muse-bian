@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cuscamexe.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Execution {
     /*The type of work task (e.g. execute campaign in contact center)*/
+    @MetaField
     private String customerCampaignProcedureWorkTaskType;
 
     /*Description of the task performed, includes summary of activities as necessary for reference*/
+    @MetaField
     private String customerCampaignProcedureWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents for the work task*/
+    @MetaField
     private String customerCampaignProcedureWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of the outcome or result of the work task - can be the identification of a lead/opportunity*/
+    @MetaField
     private String customerCampaignProcedureWorkTaskResult;
 
     /*The date-time the customer campaign execution task is processed*/
+    @MetaField
     private String customerCampaignProcedureWorkTaskDate_Time;
 
     public void setCustomerCampaignProcedureWorkTaskType(String customerCampaignProcedureWorkTaskType) {

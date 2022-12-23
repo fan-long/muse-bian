@@ -3,11 +3,17 @@
 Examples: Staff assignment, Facility allocation.*/
 package org.museframework.bian.cencashan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CentralCashHandlingOutcome {
     /**/
+    @MetaField
     private String centralCashHandlingAllocation;
 
     /**/
+    @MetaField
     private String centralCashHandlingWorkProduct;
 
     public void setCentralCashHandlingAllocation(String centralCashHandlingAllocation) {

@@ -1,11 +1,17 @@
 /*A course of action for doing Production Issue Resolution Workstep in the context of executing the Production Issue Resolution Workstep*/
 package org.museframework.bian.servicingissue.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServicingIssueOutcome {
     /**/
+    @MetaField
     private String servicingIssueWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure servicingIssueProcedure;
 
     public void setServicingIssueWorkProduct(String servicingIssueWorkProduct) {

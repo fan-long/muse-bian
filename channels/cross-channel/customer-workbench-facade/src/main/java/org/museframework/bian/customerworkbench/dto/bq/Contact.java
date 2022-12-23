@@ -3,11 +3,17 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.customerworkbench.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Contact {
     /*Logged duration of the contact*/
+    @MetaField
     private String contactStartEndTime;
 
     /*Local record of page/service access as appropriate*/
+    @MetaField
     private String contactActivityLog;
 
     public void setContactStartEndTime(String contactStartEndTime) {

@@ -2,23 +2,33 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.currencyexchange.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CurrencyExchangeTransaction extends org.museframework.bian.classes.CurrencyExchangeTransaction {
     /*A Classification value that distinguishes between business service transaction within Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionParameterType;
 
     /*A selected optional business service as subject matter of Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionSelectedOption;
 
     /*The status of Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionTransactionType;
 
     /*Reference to Currency Exchange Transaction*/
+    @MetaField
     private String currencyExchangeTransactionTransaction;
 
     public void setCurrencyExchangeTransactionParameterType(String currencyExchangeTransactionParameterType) {

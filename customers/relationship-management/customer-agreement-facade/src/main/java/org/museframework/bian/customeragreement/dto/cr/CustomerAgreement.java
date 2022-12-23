@@ -4,32 +4,45 @@
 */
 package org.museframework.bian.customeragreement.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerAgreement extends org.museframework.bian.classes.CustomerAgreement {
     /*Reference to the associated customer (can currently be a person or a company)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity that is the subject of the agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object legalEntityReference;
 
     /*The type of customer agreement (e.g. individual, corporate)*/
+    @MetaField
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
+    @MetaField
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
+    @MetaField
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
+    @MetaField
     private String agreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to product specific T&Cs maintained elsewhere but subordinate to this agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object salesProductAgreementReference;
 
     /*Reference to KYC/Regulatory assessments maintained elsewhere for the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyLife_cycleManagementReference;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

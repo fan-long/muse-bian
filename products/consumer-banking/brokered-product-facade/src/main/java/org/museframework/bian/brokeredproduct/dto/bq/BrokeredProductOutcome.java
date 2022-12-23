@@ -1,17 +1,25 @@
 /*The Production Performance Assessment Duty is a specific role or responsibility that is one aspect of Production Performance Assessment Duty*/
 package org.museframework.bian.brokeredproduct.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BrokeredProductOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis brokeredProductPerformanceAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis brokeredProductActivityAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan brokeredProductCharter;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Project brokeredProductProject;
 
     public void setBrokeredProductPerformanceAnalysis(org.museframework.bian.classes.Analysis brokeredProductPerformanceAnalysis) {

@@ -1,35 +1,49 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Customer Case. */
 package org.museframework.bian.customercase.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerCaseProcedure extends org.museframework.bian.classes.CustomerCaseProcedure {
     /*The type of case being processed including any supporting narrative (e.g. disputed charges, suspected account fraud, stolen device, change of status)*/
+    @MetaField
     private String customerCaseType;
 
     /*Reference to a specific product instance associated with the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The customer raising the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the complete contact record assembled during the contact where the case was raised if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*Reference to one or more product transactions associated with the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*The complete transaction record for transactions associated with the case (detailed attribute breakdown not included)*/
+    @MetaField
     private String productTransactionRecord;
 
     /*Reference to the physical address or electronic venue the customer case was detected*/
+    @MetaField
     private String caseLocation;
 
     /*The date and time when the case was initiated*/
+    @MetaField
     private String date;
 
     /*Employees involved in capturing the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The case processing schedule including key tasks and dates for resolution (target and actual dates/times )*/
+    @MetaField
     private String customerCaseResolutionSchedule;
 
     public void setCustomerCaseType(String customerCaseType) {

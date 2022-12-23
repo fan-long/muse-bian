@@ -1,38 +1,53 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Merchant Acquiring Facility. */
 package org.museframework.bian.meracqfac.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MerchantAcquiringFacility {
     /*Reference to the merchant facility product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the merchant primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity (typically the customer)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*Bank branch associated with the merchant account for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*The billing currency for the merchant acquiring facility account*/
+    @MetaField
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*Operational terms governing the merchant facility*/
+    @MetaField
     private String merchantAcquiringFacilityOperationalTerms;
 
     /*Merchant acquiring facility limits (e.g. spend limits and credit limits for the merchant facility)*/
+    @MetaField
     private String merchantAcquiringFacilityPositionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
+    @MetaField
     private String merchantPositionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String merchantPositionLimitSettings;
 
     /*The savings calculated position*/
+    @MetaField
     private String merchantPositionLimitValue;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

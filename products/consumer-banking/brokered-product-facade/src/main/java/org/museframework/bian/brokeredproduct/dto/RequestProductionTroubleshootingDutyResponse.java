@@ -1,6 +1,12 @@
 package org.museframework.bian.brokeredproduct.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestProductionTroubleshootingDutyResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.brokeredproduct.dto.bq.ProductionTroubleshootingDuty productionTroubleshootingDuty;
 
     public void setProductionTroubleshootingDuty(org.museframework.bian.brokeredproduct.dto.bq.ProductionTroubleshootingDuty productionTroubleshootingDuty) {

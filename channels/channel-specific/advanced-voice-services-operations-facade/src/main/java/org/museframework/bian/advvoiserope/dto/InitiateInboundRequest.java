@@ -1,10 +1,18 @@
 package org.museframework.bian.advvoiserope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateInboundRequest {
+    @MetaField
     private String advancedvoiceservicesoperationsid;
 
+    @MetaField
     private String inboundid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.advvoiserope.dto.bq.Inbound inbound;
 
     public void setAdvancedvoiceservicesoperationsid(String advancedvoiceservicesoperationsid) {

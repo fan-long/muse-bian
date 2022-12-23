@@ -1,6 +1,12 @@
 package org.museframework.bian.stolenandrep.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeRepoTransactionCashTransferTaskResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.stolenandrep.dto.bq.RepoTransactionCashTransferTask repoTransactionCashTransferTask;
 
     public void setRepoTransactionCashTransferTask(org.museframework.bian.stolenandrep.dto.bq.RepoTransactionCashTransferTask repoTransactionCashTransferTask) {

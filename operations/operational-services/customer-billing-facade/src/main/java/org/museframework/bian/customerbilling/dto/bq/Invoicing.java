@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.customerbilling.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Invoicing {
     /*The customer invoice record*/
+    @MetaField
     private String customerInvoiceRecord;
 
     /*The date the invoice is issued*/
+    @MetaField
     private String invoiceDate;
 
     /*The document reference for the sent invoice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the correspondence that generated the dispatch*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*The content of the invoice (in any suitable media of format)*/
+    @MetaField
     private String invoice;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
+    @MetaField
     private String invoicingWorkProduct;
 
     public void setCustomerInvoiceRecord(String customerInvoiceRecord) {

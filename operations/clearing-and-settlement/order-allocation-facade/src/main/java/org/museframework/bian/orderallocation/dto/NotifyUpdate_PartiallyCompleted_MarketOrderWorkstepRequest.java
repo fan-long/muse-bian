@@ -1,8 +1,15 @@
 package org.museframework.bian.orderallocation.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyUpdate_PartiallyCompleted_MarketOrderWorkstepRequest {
+    @MetaField
     private String orderallocationid;
 
+    @MetaField
     private String update_partiallycompleted_marketorderworkstepid;
 
     public void setOrderallocationid(String orderallocationid) {

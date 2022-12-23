@@ -1,11 +1,17 @@
 /*An operational service or function supported within the Document Capture Function for doing Document Capture Function*/
 package org.museframework.bian.archiveservices.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ArchiveServicesOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Event archiveServicesIncident;
 
     /**/
+    @MetaField
     private String archiveServicesProvision;
 
     public void setArchiveServicesIncident(org.museframework.bian.classes.Event archiveServicesIncident) {

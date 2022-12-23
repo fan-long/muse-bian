@@ -1,10 +1,18 @@
 package org.museframework.bian.knowledgeexchange.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeReview_RefinementandEditingRequest {
+    @MetaField
     private String knowledgeexchangeid;
 
+    @MetaField
     private String review_refinementandeditingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.knowledgeexchange.dto.bq.Review_RefinementandEditing review_RefinementandEditing;
 
     public void setKnowledgeexchangeid(String knowledgeexchangeid) {

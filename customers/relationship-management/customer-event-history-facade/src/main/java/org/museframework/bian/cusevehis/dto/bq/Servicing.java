@@ -3,32 +3,45 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.cusevehis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Servicing {
     /*The type of event (e.g. self-service, assisted)*/
+    @MetaField
     private String customerServicingEventType;
 
     /*Reference to a contact event log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*Reference to the types or instances of products/services being serviced if provided*/
+    @MetaField
     private String accessedProductandService;
 
     /*The channel and device used in the servicing event*/
+    @MetaField
     private String channelDeviceType;
 
     /*The given purpose for the customer servicing action*/
+    @MetaField
     private String contactPurpose;
 
     /*The captured result of the servicing event*/
+    @MetaField
     private String contactResult;
 
     /*Employees involved in recording the event*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /*The details of the event (in a suitable format)*/
+    @MetaField
     private String customerServicingEventRecord;
 
     /*Date and time and the location the event was captured*/
+    @MetaField
     private String dateTimeLocation;
 
     public void setCustomerServicingEventType(String customerServicingEventType) {

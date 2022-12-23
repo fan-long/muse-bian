@@ -1,10 +1,18 @@
 package org.museframework.bian.corporatefinance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateStrategicFundingTopicRequest {
+    @MetaField
     private String corporatefinanceid;
 
+    @MetaField
     private String strategicfundingtopicid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatefinance.dto.bq.StrategicFundingTopic strategicFundingTopic;
 
     public void setCorporatefinanceid(String corporatefinanceid) {

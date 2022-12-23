@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.bracurdis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchCurrencyDistributionOutcome {
     /**/
+    @MetaField
     private String branchCurrencyDistributionWorkProduct;
 
     /**/
+    @MetaField
     private String branchCurrencyDistributionProcedure;
 
     public void setBranchCurrencyDistributionWorkProduct(String branchCurrencyDistributionWorkProduct) {

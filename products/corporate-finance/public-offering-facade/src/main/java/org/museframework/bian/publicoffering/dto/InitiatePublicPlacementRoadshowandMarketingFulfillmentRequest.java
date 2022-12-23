@@ -1,10 +1,18 @@
 package org.museframework.bian.publicoffering.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiatePublicPlacementRoadshowandMarketingFulfillmentRequest {
+    @MetaField
     private String publicofferingid;
 
+    @MetaField
     private String publicplacementroadshowandmarketingfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.publicoffering.dto.bq.PublicPlacementRoadshowandMarketingFulfillment publicPlacementRoadshowandMarketingFulfillment;
 
     public void setPublicofferingid(String publicofferingid) {

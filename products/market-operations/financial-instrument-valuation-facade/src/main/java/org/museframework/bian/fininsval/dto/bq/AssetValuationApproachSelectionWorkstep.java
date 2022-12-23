@@ -1,29 +1,41 @@
 /*A course of action for doing Asset Valuation Workstep in the context of executing the Asset Valuation Workstep*/
 package org.museframework.bian.fininsval.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AssetValuationApproachSelectionWorkstep {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String schedule;
 
     /*The Asset Valuation Approach Selection Workstep specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Asset Valuation Approach Selection Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure marketAssetValuationProcedureReference;
 
     /*Reference to Asset Valuation Approach Selection Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Workstep assetValuationApproachSelectionWorkstepReference;
 
     /*The type of Asset Valuation Approach Selection Workstep*/
+    @MetaField
     private String assetValuationApproachSelectionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

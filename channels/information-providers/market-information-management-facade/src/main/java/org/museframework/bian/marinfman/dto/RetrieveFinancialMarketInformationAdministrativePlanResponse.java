@@ -1,6 +1,12 @@
 package org.museframework.bian.marinfman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveFinancialMarketInformationAdministrativePlanResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.marinfman.dto.cr.FinancialMarketInformationAdministrativePlan financialMarketInformationAdministrativePlan;
 
     public void setFinancialMarketInformationAdministrativePlan(org.museframework.bian.marinfman.dto.cr.FinancialMarketInformationAdministrativePlan financialMarketInformationAdministrativePlan) {

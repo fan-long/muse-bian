@@ -3,23 +3,33 @@
 Examples: Business Requirements*/
 package org.museframework.bian.cusbehmod.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FunctionalRequirements {
     /*Reference to a type of functional requirements specification activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelDesignTaskReference;
 
     /*The record of work products used for the design task*/
+    @MetaField
     private String customerBehaviorModelDesignTaskRecord;
 
     /*Reference to external service information provider used to obtain example production data for design*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerMarketDataServiceReference;
 
     /*Record of example production data file*/
+    @MetaField
     private String customerMarketDataRecord;
 
     /*User provided and solicited feedback, suggestions for model refinement*/
+    @MetaField
     private String customerBehaviorModelFeedbackRecord;
 
     /*The model functional requirements specification (with versioning as appropriate)*/
+    @MetaField
     private String customerBehaviorModelRequirementsSpecification;
 
     public void setCustomerBehaviorModelDesignTaskReference(org.museframework.bian.classes.Object customerBehaviorModelDesignTaskReference) {

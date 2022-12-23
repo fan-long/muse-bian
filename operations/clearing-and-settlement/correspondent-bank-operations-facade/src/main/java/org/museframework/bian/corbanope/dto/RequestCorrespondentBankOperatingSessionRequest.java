@@ -1,8 +1,15 @@
 package org.museframework.bian.corbanope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestCorrespondentBankOperatingSessionRequest {
+    @MetaField
     private String correspondentbankoperationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corbanope.dto.cr.CorrespondentBankOperatingSession correspondentBankOperatingSession;
 
     public void setCorrespondentbankoperationsid(String correspondentbankoperationsid) {

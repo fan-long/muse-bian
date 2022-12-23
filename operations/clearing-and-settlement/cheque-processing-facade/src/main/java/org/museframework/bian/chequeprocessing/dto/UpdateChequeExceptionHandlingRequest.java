@@ -1,10 +1,18 @@
 package org.museframework.bian.chequeprocessing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateChequeExceptionHandlingRequest {
+    @MetaField
     private String chequeprocessingid;
 
+    @MetaField
     private String chequeexceptionhandlingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.chequeprocessing.dto.bq.ChequeExceptionHandling chequeExceptionHandling;
 
     public void setChequeprocessingid(String chequeprocessingid) {

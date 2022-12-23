@@ -3,17 +3,25 @@
 Examples: Functional module specification*/
 package org.museframework.bian.systemdevelopment.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TestingSpecification {
     /*Details the testing tasks and deliverables of system development project*/
+    @MetaField
     private String testingSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the testing of the developed system*/
+    @MetaField
     private String testingSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The testing specification and results as a suitably structured and formatted document*/
+    @MetaField
     private String systemTestingSpecification;
 
     public void setTestingSpecificationTaskDefinition(String testingSpecificationTaskDefinition) {

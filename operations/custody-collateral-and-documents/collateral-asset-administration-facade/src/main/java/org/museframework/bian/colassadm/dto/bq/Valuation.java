@@ -3,20 +3,29 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.colassadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Valuation {
     /*The type of valuation applied (e.g. mark to market, book value, agency)*/
+    @MetaField
     private String collateralAssetValuationType;
 
     /*Reference to 3rd party valuation service provider (e.g. property, art specialist)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetValuationServiceReference;
 
     /*The applied loan to value ratio used in determining collateral value*/
+    @MetaField
     private String collateralAssetLoantoValueRatio;
 
     /*The result of a valuation*/
+    @MetaField
     private String collateralAssetValuation;
 
     /*The date of a valuation*/
+    @MetaField
     private String collateralAssetValuationDate;
 
     public void setCollateralAssetValuationType(String collateralAssetValuationType) {

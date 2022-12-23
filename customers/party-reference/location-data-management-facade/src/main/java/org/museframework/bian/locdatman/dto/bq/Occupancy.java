@@ -6,26 +6,37 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.locdatman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Occupancy {
     /*Reference to the bank customer (if they are owner and/or occupier of the property at the location)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Registered owner or title holder(s) of the property*/
+    @MetaField
     private String locationOwnerTitle;
 
     /*The estimated (book) value of the property at the location - rental and purchase as appropriate*/
+    @MetaField
     private String locationValue;
 
     /*The type of occupancy (e.g. residency, business, retail, entertainment)*/
+    @MetaField
     private String locationOccupierType;
 
     /*Known contact reference details of occupier (e.g. family name, company, retailer)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object locationOccupierReference;
 
     /*Nature of the access terms or entitlement of the occupier (e.g. leasehold, rental, public access)*/
+    @MetaField
     private String locationOccupierTerms;
 
     /*Reference to a bank alliance partner with some kind of link association to the location (used for location based marketing)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object alliancePartnerReference;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

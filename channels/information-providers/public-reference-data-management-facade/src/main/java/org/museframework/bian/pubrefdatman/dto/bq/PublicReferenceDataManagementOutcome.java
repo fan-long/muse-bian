@@ -2,17 +2,25 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.pubrefdatman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PublicReferenceDataManagementOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicReferenceDataManagementTask;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicReferenceDataManagementDesign;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicReferenceDataManagementWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicReferenceDataManagementImpactAnalysis;
 
     public void setPublicReferenceDataManagementTask(org.museframework.bian.classes.Object publicReferenceDataManagementTask) {

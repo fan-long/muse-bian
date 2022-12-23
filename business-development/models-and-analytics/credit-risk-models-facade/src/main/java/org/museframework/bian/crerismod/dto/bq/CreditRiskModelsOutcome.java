@@ -3,17 +3,25 @@
 Examples: Business Requirements*/
 package org.museframework.bian.crerismod.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditRiskModelsOutcome {
     /**/
+    @MetaField
     private String creditRiskModelsTask;
 
     /**/
+    @MetaField
     private String creditRiskModelsDesign;
 
     /**/
+    @MetaField
     private String creditRiskModelsWorkProduct;
 
     /**/
+    @MetaField
     private String creditRiskModelsImpactAnalysis;
 
     public void setCreditRiskModelsTask(String creditRiskModelsTask) {

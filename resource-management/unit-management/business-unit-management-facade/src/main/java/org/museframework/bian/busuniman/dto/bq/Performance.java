@@ -3,26 +3,37 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.busuniman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Performance {
     /*Record of the business unit employee target and actual utilization/productivity*/
+    @MetaField
     private String businessUnitResourceUtilization;
 
     /*Estimated projected business unit product/service delivery and work volume targets as appropriate for the type of unit*/
+    @MetaField
     private String businessUnitOutputWorkProjections;
 
     /*Tracked business unit activity and performance statistics used to manage the business unit*/
+    @MetaField
     private String businessUnitPerformanceStatistics;
 
     /*The type of activity that is tracked and analyzed (e.g. delivery rate, utilization)*/
+    @MetaField
     private String businessUnitPerformanceStatisticType;
 
     /*The statistical analysis that can include historical and trended views of the activity*/
+    @MetaField
     private String businessUnitPerformanceStatisticValue;
 
     /*Narrative that might explain any divergence from expected performance/delivery*/
+    @MetaField
     private String businessUnitPerformanceStatisticInterpretation;
 
     /*Proposed operational changes/recommendations arising from the performance tracking and analysis*/
+    @MetaField
     private String businessUnitPerformanceStatisticRecommendation;
 
     public void setBusinessUnitResourceUtilization(String businessUnitResourceUtilization) {

@@ -3,23 +3,33 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.advertising.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketTracking {
     /*The type of work task (e.g. track advertising activity, assess advertising impact)*/
+    @MetaField
     private String marketTrackingWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research to assess competitor advertising activity and impact of advertising campaigns*/
+    @MetaField
     private String marketTrackingWorkTask;
 
     /*Reference to an internally maintained market research viewpoint*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object generalMarketResearchDirectoryEntryInstanceReference;
 
     /*File of consolidated notes, evaluations and findings for the market tracking work task*/
+    @MetaField
     private String marketTrackingWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - typically points of view drawn from the market research*/
+    @MetaField
     private String marketTrackingWorkTaskResult;
 
     /*The date-time the market tracking task is performed*/
+    @MetaField
     private String marketTrackingWorkTaskDate_Time;
 
     public void setMarketTrackingWorkTaskType(String marketTrackingWorkTaskType) {

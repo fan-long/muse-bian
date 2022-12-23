@@ -1,6 +1,12 @@
 package org.museframework.bian.subcusagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeLegalTermResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.subcusagr.dto.bq.LegalTerm legalTerm;
 
     public void setLegalTerm(org.museframework.bian.subcusagr.dto.bq.LegalTerm legalTerm) {

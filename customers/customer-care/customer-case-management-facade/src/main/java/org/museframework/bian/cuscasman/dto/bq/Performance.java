@@ -3,26 +3,37 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.cuscasman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Performance {
     /*Record of the customer case resolution resource utilization (target and actual)*/
+    @MetaField
     private String customerCaseResourceUtilization;
 
     /*Estimated projected customer case resource requirements and utilization and loading based on historical patterns and anticipated activity*/
+    @MetaField
     private String customerCaseLoadingProjections;
 
     /*Tracked activity and performance statistics used to manage the case resolution business function*/
+    @MetaField
     private String customerCaseResolutionServiceStatistics;
 
     /*The type of activity that is tracked and analyzed (e.g. case resolution throughput, time/effort per case, customer acceptance/appeal rate, merchant acceptance/appeal rate, customer/merchant retention, case resolution profit/loss)*/
+    @MetaField
     private String customerCaseServiceStatisticType;
 
     /*The statistical analysis that can include historical and trended views of the activity*/
+    @MetaField
     private String customerCaseServiceStatisticValue;
 
     /*The evaluation of the root cause or comparative assessments of the analysis*/
+    @MetaField
     private String customerCaseServiceStatisticInterpretation;
 
     /*Service/configuration amendment recommendations arising from the statistical analysis*/
+    @MetaField
     private String customerCaseServiceStatisticRecommendation;
 
     public void setCustomerCaseResourceUtilization(String customerCaseResourceUtilization) {

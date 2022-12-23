@@ -1,6 +1,12 @@
 package org.museframework.bian.issdevadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateDeviceAssignmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.issdevadm.dto.bq.DeviceAssignment deviceAssignment;
 
     public void setDeviceAssignment(org.museframework.bian.issdevadm.dto.bq.DeviceAssignment deviceAssignment) {

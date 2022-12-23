@@ -1,8 +1,15 @@
 package org.museframework.bian.colassadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveValuationRequest {
+    @MetaField
     private String collateralassetadministrationid;
 
+    @MetaField
     private String valuationid;
 
     public void setCollateralassetadministrationid(String collateralassetadministrationid) {

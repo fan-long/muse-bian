@@ -1,6 +1,12 @@
 package org.museframework.bian.productcombination.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteProductCombinationFacilityResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.productcombination.dto.cr.ProductCombinationFacility productCombinationFacility;
 
     public void setProductCombinationFacility(org.museframework.bian.productcombination.dto.cr.ProductCombinationFacility productCombinationFacility) {

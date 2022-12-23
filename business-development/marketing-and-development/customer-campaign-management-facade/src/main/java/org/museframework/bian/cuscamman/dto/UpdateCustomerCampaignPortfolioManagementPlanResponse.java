@@ -1,6 +1,12 @@
 package org.museframework.bian.cuscamman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateCustomerCampaignPortfolioManagementPlanResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cuscamman.dto.cr.CustomerCampaignPortfolioManagementPlan customerCampaignPortfolioManagementPlan;
 
     public void setCustomerCampaignPortfolioManagementPlan(org.museframework.bian.cuscamman.dto.cr.CustomerCampaignPortfolioManagementPlan customerCampaignPortfolioManagementPlan) {

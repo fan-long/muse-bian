@@ -1,10 +1,18 @@
 package org.museframework.bian.corporatefinance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteTaxOptimizationTopicRequest {
+    @MetaField
     private String corporatefinanceid;
 
+    @MetaField
     private String taxoptimizationtopicid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatefinance.dto.bq.TaxOptimizationTopic taxOptimizationTopic;
 
     public void setCorporatefinanceid(String corporatefinanceid) {

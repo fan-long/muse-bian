@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.customercase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Resolution {
     /*Reference to the correspondence generated and received*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
+    @MetaField
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
+    @MetaField
     private String documentContent;
 
     /*Business unit responsible for the customer case resolution actions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the resolution payment order when financial adjustments are required to resolve the customer case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentOrderReference;
 
     public void setCorrespondenceInstanceReference(org.museframework.bian.classes.Object correspondenceInstanceReference) {

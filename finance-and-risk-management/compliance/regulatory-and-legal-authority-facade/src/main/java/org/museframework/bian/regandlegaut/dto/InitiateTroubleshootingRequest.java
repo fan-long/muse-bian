@@ -1,10 +1,18 @@
 package org.museframework.bian.regandlegaut.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTroubleshootingRequest {
+    @MetaField
     private String regulatoryandlegalauthorityid;
 
+    @MetaField
     private String troubleshootingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.regandlegaut.dto.bq.Troubleshooting troubleshooting;
 
     public void setRegulatoryandlegalauthorityid(String regulatoryandlegalauthorityid) {

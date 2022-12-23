@@ -1,10 +1,18 @@
 package org.museframework.bian.bracurdis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDistributionVehicleAdministrationRequest {
+    @MetaField
     private String branchcurrencydistributionid;
 
+    @MetaField
     private String distributionvehicleadministrationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.bracurdis.dto.bq.DistributionVehicleAdministration distributionVehicleAdministration;
 
     public void setBranchcurrencydistributionid(String branchcurrencydistributionid) {

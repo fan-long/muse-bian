@@ -4,38 +4,53 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.invporana.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ManagedInvestmentPortfolioAnalysis {
     /*Reference to the investment portfolio product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The employee/business unit with the relationship management responsibilities for the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the investment portfolio record of all holdings*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*The schedule for performing investment portfolio analysis for the account*/
+    @MetaField
     private String investmentPortfolioAnalysisSchedule;
 
     /*Reference to the underlying investment account*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentAccountArrangementInstanceReference;
 
     /*A consolidated report containing the results of performance analyses applied to the investment portfolio*/
+    @MetaField
     private String investmentPortfolioAnalysisReport;
 
     /*Defines a type of performance analysis performed (e.g. standard regular scheduled review, specialist review, customer requested review)*/
+    @MetaField
     private String investmentPortfolioAnalysisType;
 
     /*The consolidated report of the performance evaluation and comparisons from the analysis*/
+    @MetaField
     private String investmentPortfolioAnalysisResult;
 
     /*The date/time the performance report was completed*/
+    @MetaField
     private String investmentPortfolioAnalysisReportingDate;
 
     /*Reference to associated performance analysis reporting documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

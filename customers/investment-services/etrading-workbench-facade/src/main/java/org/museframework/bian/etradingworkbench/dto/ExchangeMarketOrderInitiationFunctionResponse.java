@@ -1,6 +1,12 @@
 package org.museframework.bian.etradingworkbench.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeMarketOrderInitiationFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.etradingworkbench.dto.bq.MarketOrderInitiationFunction marketOrderInitiationFunction;
 
     public void setMarketOrderInitiationFunction(org.museframework.bian.etradingworkbench.dto.bq.MarketOrderInitiationFunction marketOrderInitiationFunction) {

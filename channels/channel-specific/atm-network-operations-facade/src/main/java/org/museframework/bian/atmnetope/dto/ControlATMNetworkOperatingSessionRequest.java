@@ -1,8 +1,15 @@
 package org.museframework.bian.atmnetope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlATMNetworkOperatingSessionRequest {
+    @MetaField
     private String atmnetworkoperationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.atmnetope.dto.cr.ATMNetworkOperatingSession aTMNetworkOperatingSession;
 
     public void setAtmnetworkoperationsid(String atmnetworkoperationsid) {

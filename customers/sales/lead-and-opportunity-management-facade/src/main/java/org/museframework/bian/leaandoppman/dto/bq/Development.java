@@ -3,32 +3,45 @@
 Examples: Invoice generation*/
 package org.museframework.bian.leaandoppman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Development {
     /*Employees involved in progressing the lead/opportunity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to a contact event log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*Reference to the correspondence generated and received*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
+    @MetaField
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
+    @MetaField
     private String documentContent;
 
     /*Work documentation, forms and schedules produced and referenced during the lead development*/
+    @MetaField
     private String leadDevelopmentWorkProducts;
 
     /*The outcome of the lead development workstep*/
+    @MetaField
     private String leadDevelopmentTaskResult;
 
     /*Date and time and the location the lead/opportunity was developed*/
+    @MetaField
     private String dateTimeLocation;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

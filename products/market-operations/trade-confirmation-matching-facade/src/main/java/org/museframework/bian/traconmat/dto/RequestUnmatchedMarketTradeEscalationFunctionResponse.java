@@ -1,6 +1,12 @@
 package org.museframework.bian.traconmat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestUnmatchedMarketTradeEscalationFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.traconmat.dto.bq.UnmatchedMarketTradeEscalationFunction unmatchedMarketTradeEscalationFunction;
 
     public void setUnmatchedMarketTradeEscalationFunction(org.museframework.bian.traconmat.dto.bq.UnmatchedMarketTradeEscalationFunction unmatchedMarketTradeEscalationFunction) {

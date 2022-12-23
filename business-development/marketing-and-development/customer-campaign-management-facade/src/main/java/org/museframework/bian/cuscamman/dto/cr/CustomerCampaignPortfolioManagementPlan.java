@@ -1,41 +1,57 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Customer Campaign Management.*/
 package org.museframework.bian.cuscamman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerCampaignPortfolioManagementPlan {
     /*The collection/portfolio of available customer campaigns. The details are used to assess performance and coverage and direct development and execution activity*/
+    @MetaField
     private String customerCampaignPortfolio;
 
     /*The type or category of customer campaign (e.g. cross-sell, up-sell, retention)*/
+    @MetaField
     private String customerCampaignType;
 
     /*A description of the campaign that clarifies the intended context/use of the campaign, the mechanisms employed and the intended/anticipated response/impact*/
+    @MetaField
     private String customerCampaignDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the campaign*/
+    @MetaField
     private String customerCampaignMetrics;
 
     /*A description of the metric, defining how it is to be measured in deployment*/
+    @MetaField
     private String customerCampaignMetricDefinition;
 
     /*A description of the target performance for the metric that can be defined for different usage scenarios as appropriate*/
+    @MetaField
     private String customerCampaignMetricGoal;
 
     /*Maintains a record of the use and impact of customer campaign versions over the life of the campaign*/
+    @MetaField
     private String customerCampaignPerformanceRecord;
 
     /*Reference to the customer campaign execution event*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerCampaignProcedureInstanceReference;
 
     /*Reference to the business unit responsible for the campaign execution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment set-up/configuration of the campaign for reference*/
+    @MetaField
     private String customerCampaignProcedureSet_up;
 
     /*The customer campaign version number used in the event*/
+    @MetaField
     private String customerCampaignProcedureVersionNumber;
 
     /*The result/impact of the overall customer campaign event (that can include multiple identified leads/opportunities)*/
+    @MetaField
     private String customerCampaignProcedureResult;
 
     public void setCustomerCampaignPortfolio(String customerCampaignPortfolio) {

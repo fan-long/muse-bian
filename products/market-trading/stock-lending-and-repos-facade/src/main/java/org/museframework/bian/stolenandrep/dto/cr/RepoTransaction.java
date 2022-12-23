@@ -1,32 +1,45 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Stock Lending and Repos. */
 package org.museframework.bian.stolenandrep.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RepoTransaction extends org.museframework.bian.classes.RepoTransaction {
     /*A Classification value that distinguishes between business service transaction within Repo Transaction*/
+    @MetaField
     private String repoTransactionParameterType;
 
     /*A selected optional business service as subject matter of Repo Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Service repoTransactionSelectedOption;
 
     /*The status of Repo Transaction*/
+    @MetaField
     private String repoTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Repo Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Repurchasetypevalues repoTransactionType;
 
     /*An unique reference to an item or an occurrence of Repo Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RepoTransaction repoTransactionReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RepurchaseAgreement repurchaseAgreementReference;
 
     /**/
+    @MetaField
     private String repurchaseAgreementInvolvedPartyReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Repurchaseagreementinvolvementtypevalues repurchaseAgreementInvolvementType;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RepoArrangement repurchaseArrangementReference;
 
     public void setRepoTransactionParameterType(String repoTransactionParameterType) {

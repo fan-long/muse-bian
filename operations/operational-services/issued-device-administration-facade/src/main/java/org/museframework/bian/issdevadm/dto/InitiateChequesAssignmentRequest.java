@@ -1,10 +1,18 @@
 package org.museframework.bian.issdevadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateChequesAssignmentRequest {
+    @MetaField
     private String issueddeviceadministrationid;
 
+    @MetaField
     private String chequesassignmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.issdevadm.dto.bq.ChequesAssignment chequesAssignment;
 
     public void setIssueddeviceadministrationid(String issueddeviceadministrationid) {

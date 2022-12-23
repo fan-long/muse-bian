@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.productmatching.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankandCampaignAlignment {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String bankandCampaignAlignmentPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String bankandCampaignAlignmentAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String bankandCampaignAlignmentVersionNumber;
 
     /*The Product/Customer Combination Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService bankandCampaignAlignment;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String bankandCampaignAlignmentServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String bankandCampaignAlignmentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String bankandCampaignAlignmentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String bankandCampaignAlignmentServiceWorkProduct;
 
     /**/
+    @MetaField
     private String bankandCampaignAlignmentServiceName;
 
     public void setBankandCampaignAlignmentPreconditions(String bankandCampaignAlignmentPreconditions) {

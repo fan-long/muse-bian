@@ -1,35 +1,49 @@
 /*Capture and maintain reference information about some type of entitity within Market Research.*/
 package org.museframework.bian.marketresearch.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class GeneralMarketResearchDirectoryEntry {
     /*The type of research view provided by the research (e.g. competitor research)*/
+    @MetaField
     private String generalMarketResearchViewpointType;
 
     /*A description of the available market research consolidated for this maintained viewpoint*/
+    @MetaField
     private String generalMarketResearchViewpointDescription;
 
     /*The externally sourced reports that are used to assemble the research viewpoint*/
+    @MetaField
     private String referencedMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
+    @MetaField
     private String marketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
+    @MetaField
     private String marketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
+    @MetaField
     private String marketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
+    @MetaField
     private String marketResearchReport;
 
     /*Usage record of the research viewpoint*/
+    @MetaField
     private String generalMarketResearchViewpointUsage;
 
     /*Details of the research request*/
+    @MetaField
     private String marketResearchReportRequest;
 
     /*The employee/business unit requesting the research*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     public void setGeneralMarketResearchViewpointType(String generalMarketResearchViewpointType) {

@@ -3,64 +3,86 @@
 */
 package org.museframework.bian.proserage.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServiceProviderAgreement extends org.museframework.bian.classes.ServiceProviderAgreement {
     /*A Classification value that distinguishes between Options defined within Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature serviceProviderAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Agreementtypevalues serviceProviderAgreementType;
 
     /*An unique reference to an item or an occurrence of Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement serviceProviderAgreementReference;
 
     /*Request to discharge Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction serviceProviderAgreementDischargeRequest;
 
     /*Timetable to discharge Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementDischargeSchedule;
 
     /*The status of Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementStatus;
 
     /*Party who is involved in Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement serviceProviderAgreementObligation;
 
     /*Right to do something under the terms of Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement serviceProviderAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet serviceProviderAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Service Provider Agreement*/
+    @MetaField
     private String serviceProviderAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Service Provider Agreement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction serviceProviderAgreementJurisdiction;
 
     /*Reference to the account which is linked to Service Provider Agreement
 
 A characteristic of agreement which refers to its involved account to specify the account that will be used to register for the transactions in position keeping management.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account serviceProviderAgreementAccountReference;
 
     /*The subject matter of  Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object serviceProviderAgreementSubjectMatter;
 
     /*Reference to the product which is linked to Service Provider Agreement
 
 Comment: 
 A characteristic of agreement which refers to its related products that are sold by agreement.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct serviceProviderAgreementProductReference;
 
     /*Reference to the agreement that is related to Service Provider Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement serviceProviderAgreementAssociatedAgreementReference;
 
     public void setServiceProviderAgreementParameterType(String serviceProviderAgreementParameterType) {

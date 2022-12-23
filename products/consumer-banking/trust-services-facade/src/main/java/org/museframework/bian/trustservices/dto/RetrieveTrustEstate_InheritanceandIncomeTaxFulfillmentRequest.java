@@ -1,8 +1,15 @@
 package org.museframework.bian.trustservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveTrustEstate_InheritanceandIncomeTaxFulfillmentRequest {
+    @MetaField
     private String trustservicesid;
 
+    @MetaField
     private String trustestate_inheritanceandincometaxfulfillmentid;
 
     public void setTrustservicesid(String trustservicesid) {

@@ -1,20 +1,29 @@
 /*Handles the booking of the asset or liability to the appropriate unit*/
 package org.museframework.bian.customeroffer.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Compliance {
     /*The required check*/
+    @MetaField
     private String regulatoryComplianceCheckType;
 
     /*Description of the compliance requirements*/
+    @MetaField
     private String regulatoryComplianceCheckRequirement;
 
     /*The submitted offer related materials*/
+    @MetaField
     private String regulatoryComplianceCheckSubmission;
 
     /*Any required changes to the offer needed to comply*/
+    @MetaField
     private String regulatoryComplianceAdjustmentRequirement;
 
     /*The result of the compliance assessment*/
+    @MetaField
     private String regulatoryComplianceCheckAssessment;
 
     public void setRegulatoryComplianceCheckType(String regulatoryComplianceCheckType) {

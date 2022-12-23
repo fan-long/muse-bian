@@ -1,26 +1,37 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Interbank Relationship Management.*/
 package org.museframework.bian.intrelman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankRelationshipManagementPlan extends org.museframework.bian.classes.BankRelationshipManagementPlan {
     /*Reference to the associated bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankReference;
 
     /*Key features and details of the bank (e.g. business/segment profile)*/
+    @MetaField
     private String bankDetails;
 
     /*The assigned individual or business unit for the relationship*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The type of relationship with the bank (e.g. trading partner, joint venture partner)*/
+    @MetaField
     private String bankRelationshipType;
 
     /*A description of the relationship, outlining roles and expectations as appropriate*/
+    @MetaField
     private String bankRelationshipDescription;
 
     /*The target and actual budget covering expenditures and reciprocal business activity as appropriate*/
+    @MetaField
     private String bankRelationshipBudget;
 
     /*Defines the role and contact details for bank representatives*/
+    @MetaField
     private String bankContactDetails;
 
     public void setBankReference(org.museframework.bian.classes.Object bankReference) {

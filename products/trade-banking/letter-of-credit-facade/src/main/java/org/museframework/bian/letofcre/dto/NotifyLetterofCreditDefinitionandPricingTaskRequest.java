@@ -1,8 +1,15 @@
 package org.museframework.bian.letofcre.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyLetterofCreditDefinitionandPricingTaskRequest {
+    @MetaField
     private String letterofcreditid;
 
+    @MetaField
     private String letterofcreditdefinitionandpricingtaskid;
 
     public void setLetterofcreditid(String letterofcreditid) {

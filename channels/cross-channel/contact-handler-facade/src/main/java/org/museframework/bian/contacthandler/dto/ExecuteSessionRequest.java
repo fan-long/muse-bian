@@ -1,10 +1,18 @@
 package org.museframework.bian.contacthandler.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteSessionRequest {
+    @MetaField
     private String contacthandlerid;
 
+    @MetaField
     private String sessionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.contacthandler.dto.bq.Session session;
 
     public void setContacthandlerid(String contacthandlerid) {

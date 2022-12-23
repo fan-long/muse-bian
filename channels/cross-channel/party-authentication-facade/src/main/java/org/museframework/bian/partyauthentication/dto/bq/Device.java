@@ -3,20 +3,29 @@
 Examples: Password verification*/
 package org.museframework.bian.partyauthentication.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Device extends org.museframework.bian.classes.Device {
     /*Reference to the device being used for authentication*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object authenticationDeviceReference;
 
     /*Property of the device being used to authenticate (e.g. phone number, URL)*/
+    @MetaField
     private String authenticationDevicePropertyValue;
 
     /*Reference to the customer issued device*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object issuedDeviceInstanceReference;
 
     /*The registered customer device properties - maintained by SD-Issued Device Administration*/
+    @MetaField
     private String issuedDevicePropertyValue;
 
     /*The result of the device check*/
+    @MetaField
     private String deviceTestResult;
 
     public void setAuthenticationDeviceReference(org.museframework.bian.classes.Object authenticationDeviceReference) {

@@ -2,17 +2,25 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.managementmanual.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ManagementManualOutcome {
     /**/
+    @MetaField
     private String managementManualTask;
 
     /**/
+    @MetaField
     private String managementManualDesign;
 
     /**/
+    @MetaField
     private String managementManualWorkProduct;
 
     /**/
+    @MetaField
     private String managementManualImpactAnalysis;
 
     public void setManagementManualTask(String managementManualTask) {

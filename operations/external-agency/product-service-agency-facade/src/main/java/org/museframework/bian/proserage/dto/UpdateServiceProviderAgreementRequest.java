@@ -1,8 +1,15 @@
 package org.museframework.bian.proserage.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateServiceProviderAgreementRequest {
+    @MetaField
     private String productserviceagencyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.proserage.dto.cr.ServiceProviderAgreement serviceProviderAgreement;
 
     public void setProductserviceagencyid(String productserviceagencyid) {

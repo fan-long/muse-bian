@@ -3,17 +3,25 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.financialaccounting.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LedgerPosting {
     /*Defines the posting location in the account ledger according to the chart of accounts (e.g. based on customer, transaction type)*/
+    @MetaField
     private String postingDirection;
 
     /*The posting amount as a credit-debit pair*/
+    @MetaField
     private String postingAmount_creditdebitpair_;
 
     /*The date and time of the posting*/
+    @MetaField
     private String postingValueDate;
 
     /*Any confirmation notification*/
+    @MetaField
     private String postingResult;
 
     public void setPostingDirection(String postingDirection) {

@@ -1,35 +1,49 @@
 /*Capture and maintain reference information about some type of entitity within Correspondent Bank Data Management.*/
 package org.museframework.bian.corbandir.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorrespondentBankDirectoryEntry extends org.museframework.bian.classes.CorrespondentBankDirectoryEntry {
     /*Reference to the correspondent bank (e.g. BIC Codes)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankReference;
 
     /*Clearing and sorting code used in payment processing*/
+    @MetaField
     private String clearingSortCodes;
 
     /*Contact details for key parties at the bank*/
+    @MetaField
     private String contactAddresses;
 
     /*One or more associated legal entity references associated with the bank*/
+    @MetaField
     private String legalEntityIdentifiers;
 
     /*A description of the legal entity hierarchy at the bank*/
+    @MetaField
     private String bankHierarchy;
 
     /*A reference to the bank calendar details for payment processing*/
+    @MetaField
     private String holidayTimezoneSchedule;
 
     /*Reference to associated vostro account (your money at our bank)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object vostroAccountReference;
 
     /*Reference to associated nostro account (our money at your bank)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object nostroMirrorAccountReference;
 
     /*Reference to the bank agreement (that will detail limits, fees, preferred payments mechanism)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankAgreementReference;
 
     /*The correspondent bank agreement (details agreed limits, fees, preferred payments mechanism, etc.)*/
+    @MetaField
     private String correspondentBankAgreement;
 
     public void setCorrespondentBankReference(org.museframework.bian.classes.Object correspondentBankReference) {

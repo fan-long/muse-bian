@@ -1,6 +1,12 @@
 package org.museframework.bian.merchantrelations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveOperationalTermResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.merchantrelations.dto.bq.OperationalTerm operationalTerm;
 
     public void setOperationalTerm(org.museframework.bian.merchantrelations.dto.bq.OperationalTerm operationalTerm) {

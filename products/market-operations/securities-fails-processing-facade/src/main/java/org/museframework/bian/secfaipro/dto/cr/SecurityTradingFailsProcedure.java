@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Securities Fails Processing. */
 package org.museframework.bian.secfaipro.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SecurityTradingFailsProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureParameterType;
 
     /*A selected optional business service as subject matter of Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature securityTradingFailsProcedureSelectedOption;
 
     /*Request to process Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction securityTradingFailsProcedureRequest;
 
     /*Timetable to process Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureSchedule;
 
     /*The status of Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureStatus;
 
     /*Reference to the party who is involved in Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility securityTradingFailsProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureType;
 
     /*The schedule according to which the service provider will process the Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Security Trading Fails Procedure*/
+    @MetaField
     private String securityTradingFailsProcedureServiceType;
 
     /*Reference to the product or service that is related to Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct securityTradingFailsProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction securityTradingFailsProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement securityTradingFailsProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement securityTradingFailsProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Security Trading Fails Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure securityTradingFailsProcedureReference;
 
     public void setSecurityTradingFailsProcedureParameterType(String securityTradingFailsProcedureParameterType) {

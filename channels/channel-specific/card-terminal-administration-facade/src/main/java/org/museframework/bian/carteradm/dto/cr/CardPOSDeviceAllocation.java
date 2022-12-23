@@ -2,35 +2,49 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.carteradm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardPOSDeviceAllocation extends org.museframework.bian.classes.CardPOSDeviceAllocation {
     /*Reference identification for the POS device*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardPOSDeviceReference;
 
     /*Any unique identification properties (e.g. serial number)*/
+    @MetaField
     private String cardPOSDeviceIdentifier;
 
     /*The specific make and type of device*/
+    @MetaField
     private String cardPOSDeviceType;
 
     /*The type of software running on the device*/
+    @MetaField
     private String cardPOSDeviceSoftwareType;
 
     /*The version of the software on the device*/
+    @MetaField
     private String cardPOSDeviceSoftwareVersion;
 
     /*Date device first obtained, used for maintenance and amortization*/
+    @MetaField
     private String cardPOSDeviceAcquiredDate;
 
     /*Record of the maintenance/repair history of the device*/
+    @MetaField
     private String cardPOSRepairRecord;
 
     /*Description of the repair or maintenance work done (includes costs as appropriate)*/
+    @MetaField
     private String cardPOSRepairDetails;
 
     /*Key dates and times relating to the repair (e.g. reported, scheduled, effort, returned to service)*/
+    @MetaField
     private String cardPOSRepairDates;
 
     /*The status of the POS device (e.g. testing, in production, help inventory, under repair, replaced/terminated)*/
+    @MetaField
     private String cardPOSDeviceStatus;
 
     public void setCardPOSDeviceReference(org.museframework.bian.classes.Object cardPOSDeviceReference) {

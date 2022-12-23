@@ -2,17 +2,25 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.systemsadministration.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SystemsAdministrationOutcome {
     /**/
+    @MetaField
     private String systemsAdministrationPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String systemsAdministrationActivityAnalysis;
 
     /**/
+    @MetaField
     private String systemsAdministrationAdministrativePlan;
 
     /**/
+    @MetaField
     private String systemsAdministrationAdministrationTask;
 
     public void setSystemsAdministrationPerformanceAnalysis(String systemsAdministrationPerformanceAnalysis) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.chelocbox.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyPaperCheckProcessingFulfillmentRequest {
+    @MetaField
     private String chequelockboxid;
 
+    @MetaField
     private String papercheckprocessingfulfillmentid;
 
     public void setChequelockboxid(String chequelockboxid) {

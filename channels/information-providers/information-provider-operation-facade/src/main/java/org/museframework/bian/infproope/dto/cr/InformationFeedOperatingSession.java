@@ -1,35 +1,49 @@
 /*Operate equipment and/or a largely automated facility within Information Provider Operation. */
 package org.museframework.bian.infproope.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InformationFeedOperatingSession {
     /*Timetable to operate Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionSchedule;
 
     /*The status of Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Information Feed Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log informationFeedOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Information Feed Operating Session*/
+    @MetaField
     private String informationFeedOperatingSessionServiceType;
 
     /*The configuration of Information Feed Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.SystemConfigurationOption informationFeedOperatingSessionServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Information Feed Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session informationFeedOperatingSessionReference;
 
     public void setInformationFeedOperatingSessionSchedule(String informationFeedOperatingSessionSchedule) {

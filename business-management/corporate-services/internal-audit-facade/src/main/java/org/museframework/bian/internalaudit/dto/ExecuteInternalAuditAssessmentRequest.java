@@ -1,8 +1,15 @@
 package org.museframework.bian.internalaudit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteInternalAuditAssessmentRequest {
+    @MetaField
     private String internalauditid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.internalaudit.dto.cr.InternalAuditAssessment internalAuditAssessment;
 
     public void setInternalauditid(String internalauditid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.regulatoryreporting.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveConsolidationRequest {
+    @MetaField
     private String regulatoryreportingid;
 
+    @MetaField
     private String consolidationid;
 
     public void setRegulatoryreportingid(String regulatoryreportingid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.stolenandrep.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyRepoTransactionInitiationTaskRequest {
+    @MetaField
     private String stocklendingandreposid;
 
+    @MetaField
     private String repotransactioninitiationtaskid;
 
     public void setStocklendingandreposid(String stocklendingandreposid) {

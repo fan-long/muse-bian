@@ -2,56 +2,77 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.cencashan.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CentralCashAllocation {
     /*A Classification value that distinguishes between allocation Options according to the optional business services defined within Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationParameterType;
 
     /*A selected optional business service for which resources are allocated*/
+    @MetaField
     private String centralCashAllocationSelectedOption;
 
     /*A Classification value, that distinguishes between the the type of resource allocated withing the Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationType;
 
     /*Documentation of Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationDescription;
 
     /*Request to allocate CentralCash*/
+    @MetaField
     private String centralCashAllocationRequest;
 
     /*Timetable to allocate CentralCash*/
+    @MetaField
     private String centralCashAllocationSchedule;
 
     /*The status of Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationStatus;
 
     /*Reference to the party who is involved in Central Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object centralCashAllocationReference;
 
     /*Reference to the customer who is involved in Central Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object centralCashAllocationCustomerReference;
 
     /*The curreny which is arranged/used for Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationCurrency;
 
     /*Reference to the regulation which is defined for Central Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object centralCashAllocationRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Central Cash Allocation in case of legal dispute.*/
+    @MetaField
     private String centralCashAllocationJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement, are entered.*/
+    @MetaField
     private String centralCashAllocationBookingLocation;
 
     /*The type of account which is linked to Central Cash Allocation*/
+    @MetaField
     private String centralCashAllocationAccountType;
 
     /*Reference to the account which is linked to Central Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object centralCashAllocationAccountReference;
 
     /*Reference to Central Cash Allocation Instance*/
+    @MetaField
     private String centralCashAllocationInstance;
 
     public void setCentralCashAllocationParameterType(String centralCashAllocationParameterType) {

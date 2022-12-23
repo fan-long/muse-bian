@@ -2,59 +2,81 @@
 */
 package org.museframework.bian.colassadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CollateralAssetAdministrativePlan extends org.museframework.bian.classes.CollateralAssetAdministrativePlan {
     /*Reference to the collateral asset item*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetReference;
 
     /*The details maintained for the asset*/
+    @MetaField
     private String collateralAssetRecord;
 
     /*The type of asset (e.g. building, machinery, inventory, financial instrument, art)*/
+    @MetaField
     private String collateralAssetType;
 
     /*Key properties of the asset that might influence administration and maintenance (e.g. rarity)*/
+    @MetaField
     private String collateralAssetProperties;
 
     /*Description of significant details and properties of the asset*/
+    @MetaField
     private String collateralAssetDescription;
 
     /*Details of title*/
+    @MetaField
     private String collateralAssetTitle;
 
     /*Breakdown of ownership where an asset has multiple owners with different entitlements*/
+    @MetaField
     private String collateralAssetOwnership;
 
     /*Parties with same for of interest (e.g. custodian, insurer, user)*/
+    @MetaField
     private String collateralAssetInterestedParties;
 
     /*The location the asset is stored*/
+    @MetaField
     private String collateralAssetLocation;
 
     /*The jurisdiction that governs title and access to the asset*/
+    @MetaField
     private String collateralAssetJurisdiction;
 
     /*Reference to supporting documentation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetDocumentReference;
 
     /*The type of document relating to the asset*/
+    @MetaField
     private String collateralAssetDocumentType;
 
     /*Details of insurance arrangements covering the asset, including duration and renewal*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetInsuranceReference;
 
     /*When the asset was provided as collateral*/
+    @MetaField
     private String collateralAssetPledgedDate;
 
     /*Historical and current valuation, including loan to value ratios/qualifiers*/
+    @MetaField
     private String collateralAssetValuationHistory;
 
     /*The schedule for maintaining an up to date valuation*/
+    @MetaField
     private String collateralAssetValuationSchedule;
 
     /*The schedule planned and actual for undertaking asset maintenance checks)*/
+    @MetaField
     private String collateralAssetMaintenanceSchedule;
 
     /*A general status indicator for the asset (can cover multiple properties as necessary)*/
+    @MetaField
     private String collateralAssetStatus;
 
     public void setCollateralAssetReference(org.museframework.bian.classes.Object collateralAssetReference) {

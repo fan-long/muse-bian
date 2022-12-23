@@ -1,38 +1,53 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Bank Guarantee. */
 package org.museframework.bian.bankguarantee.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankGuaranteeTransaction extends org.museframework.bian.classes.BankGuaranteeTransaction {
     /*A Classification value that distinguishes between business service transaction within Bank Guarantee Transaction*/
+    @MetaField
     private String bankGuaranteeTransactionParameterType;
 
     /*A selected optional business service as subject matter of Bank Guarantee Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Service bankGuaranteeTransactionSelectedOption;
 
     /*The status of Bank Guarantee Transaction*/
+    @MetaField
     private String bankGuaranteeTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Bank Guarantee Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Bankguaranteetransactiontypevalues bankGuaranteeTransactionType;
 
     /*An unique reference to an item or an occurrence of Bank Guarantee Transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankGuaranteeTransaction bankGuaranteeTransactionReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Document bankGuaranteeDocumentReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankGuaranteeAgreement bankGuaranteeAgreementReference;
 
     /**/
+    @MetaField
     private String bankGuaranteeInvolvedPartyReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Bankguaranteeinvolvementtypevalues bankGuaranteeInvolvementType;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankGuaranteeArrangement bankGuaranteeArrangementReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankGuarantee bankGuaranteeFinancialInstrument;
 
     public void setBankGuaranteeTransactionParameterType(String bankGuaranteeTransactionParameterType) {

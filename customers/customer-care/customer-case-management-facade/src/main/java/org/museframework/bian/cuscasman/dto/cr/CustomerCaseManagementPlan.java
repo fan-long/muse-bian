@@ -1,26 +1,37 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Customer Case Management.*/
 package org.museframework.bian.cuscasman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerCaseManagementPlan extends org.museframework.bian.classes.CustomerCaseManagementPlan {
     /*The time period addressed by the management plan. This may define required actions and target performance over a fixed period or can be a 'rolling' plan that is continually refined based on experience*/
+    @MetaField
     private String customerCaseManagementPlanPeriod;
 
     /*The specific policies and guidelines for case resolution employees*/
+    @MetaField
     private String customerCasePoliciesAndGuidelines;
 
     /*The target and actual service performance goals that are tracked by customer case management*/
+    @MetaField
     private String customerCaseServicePerformanceGoals;
 
     /*The target and actual customer case service schedule - recording planned and actual service availability and expected throughput/productivity*/
+    @MetaField
     private String customerCaseServiceSchedule;
 
     /*The set-up/organization for the customer case business function (covers operational and management/oversight roles and responsibilities)*/
+    @MetaField
     private String customerCaseServiceOperatingConfiguration;
 
     /*Details the number and skill/qualification profile of the customer case handling staff (target and actual)*/
+    @MetaField
     private String customerCaseResourcePlan;
 
     /*Details of staff training and certification activity (planned and actual)*/
+    @MetaField
     private String customerCaseTrainingPlan;
 
     public void setCustomerCaseManagementPlanPeriod(String customerCaseManagementPlanPeriod) {

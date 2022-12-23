@@ -1,6 +1,12 @@
 package org.museframework.bian.accountreconciliation.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveAccountReconciliationProcedureRequest {
+    @MetaField
     private String accountreconciliationid;
 
     public void setAccountreconciliationid(String accountreconciliationid) {

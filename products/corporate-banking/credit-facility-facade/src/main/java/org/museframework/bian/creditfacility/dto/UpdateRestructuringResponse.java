@@ -1,6 +1,12 @@
 package org.museframework.bian.creditfacility.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateRestructuringResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.creditfacility.dto.bq.Restructuring restructuring;
 
     public void setRestructuring(org.museframework.bian.creditfacility.dto.bq.Restructuring restructuring) {

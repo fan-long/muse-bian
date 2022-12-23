@@ -3,14 +3,21 @@
 Examples: Business Requirements*/
 package org.museframework.bian.fraudmodel.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Production {
     /*Specification of the operational and technical requirements*/
+    @MetaField
     private String fraudModelOperationalRequirements;
 
     /*Defines rules and suitability for model usage*/
+    @MetaField
     private String fraudModelAllowedUsage;
 
     /*Provides guidance on the use of the model*/
+    @MetaField
     private String fraudModelUsageGuidelines;
 
     public void setFraudModelOperationalRequirements(String fraudModelOperationalRequirements) {

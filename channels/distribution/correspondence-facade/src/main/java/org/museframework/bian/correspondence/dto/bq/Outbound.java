@@ -3,56 +3,77 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.correspondence.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Outbound {
     /*Internal source reference to the correspondence item passed for delivery (can be used to match responses)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceSourceReference;
 
     /*The correspondence message*/
+    @MetaField
     private String correspondenceRecord;
 
     /*The type of correspondence (e.g. confirmation note, mail shot)*/
+    @MetaField
     private String correspondenceType;
 
     /*Reference to a template used to assemble standard format correspondence (can be supplied with the correspondence or maintained within the Correspondence service domain as appropriate)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceTemplateReference;
 
     /*The template definition used in correspondence assembly*/
+    @MetaField
     private String correspondenceTemplateRecord;
 
     /*The message content (aligned to template as appropriate)*/
+    @MetaField
     private String correspondenceContent;
 
     /*Identifies the preferred media and channel for delivery of the message*/
+    @MetaField
     private String correspondenceMediaChannel;
 
     /*The address for message delivery (needs to match channel selection)*/
+    @MetaField
     private String correspondenceAddressee;
 
     /*If addressee is identified as a customer with channel preferences for correspondence*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*???*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object channelAccessPreferenceReference;
 
     /*The channel usage profile applied for the correspondence*/
+    @MetaField
     private String channelAccessPreferenceProfile;
 
     /*The target device defines the format to be used (e.g. email)*/
+    @MetaField
     private String channelAccessChannelDeviceType;
 
     /*A description of the customer's delivery preferences applied to the message (e.g. no paper correspondence, stuffing and batching allowed)*/
+    @MetaField
     private String channelAccessChannelDeviceTypePreference;
 
     /*The associated product/service if applicable*/
+    @MetaField
     private String productandServiceType;
 
     /*The sending entity within the bank (can be used for responses)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Key dates used for tracking delivery (e.g. generation date, mailing date, receipt confirmation date, re-send date)*/
+    @MetaField
     private String dateType;
 
     /*The value of the date and time*/
+    @MetaField
     private String date;
 
     public void setCorrespondenceSourceReference(org.museframework.bian.classes.Object correspondenceSourceReference) {

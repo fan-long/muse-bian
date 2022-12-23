@@ -1,26 +1,37 @@
 /*The configuration and execution of Cash Position Monitoring and Transfer Fulfillment arrangement within the Cash Position Monitoring and Transfer Fulfillment*/
 package org.museframework.bian.cashconcentration.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CashPositionMonitoringandTransferFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Cash Position Monitoring and Transfer Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Cash Position Monitoring and Transfer Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility accountBalanceSweepingFacilityReference;
 
     /*Reference to Cash Position Monitoring and Transfer Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashPositionMonitoringandTransferFulfillmentReference;
 
     /*The type of Cash Position Monitoring and Transfer Fulfillment*/
+    @MetaField
     private String cashPositionMonitoringandTransferFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

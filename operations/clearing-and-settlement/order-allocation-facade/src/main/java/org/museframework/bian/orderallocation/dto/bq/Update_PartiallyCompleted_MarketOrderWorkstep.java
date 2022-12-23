@@ -1,29 +1,41 @@
 /*A course of action for doing Apply Order Allocation Rules Workstep in the context of executing the Apply Order Allocation Rules Workstep*/
 package org.museframework.bian.orderallocation.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Update_PartiallyCompleted_MarketOrderWorkstep {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String schedule;
 
     /*The Update (Partially Completed) Market Order Workstep specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Update (Partially Completed) Market Order Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure securitiesAllocationProcedureReference;
 
     /*Reference to Update (Partially Completed) Market Order Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Workstep update_PartiallyCompleted_MarketOrderWorkstepReference;
 
     /*The type of Update (Partially Completed) Market Order Workstep*/
+    @MetaField
     private String update_PartiallyCompleted_MarketOrderWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

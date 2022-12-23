@@ -1,23 +1,33 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.cortaxadv.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TaxOptimization {
     /*Reference to the corporate tax advisory service (used to access guidance materials)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*A record of engaging a product tax specialist to liaise with the customer*/
+    @MetaField
     private String specialistSupportTask;
 
     /*Business unit and or employee reference for the product specialist engaged*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object specialistEmployeeBusinessUnitReference;
 
     /*General description of the product specialist advice provided*/
+    @MetaField
     private String specialistAdviceDescription;
 
     /*The service charge to be made to the customer for the specialist support*/
+    @MetaField
     private String specialistAdviceCharge;
 
     /*Summary recommendations arising from the advice that is added to the consolidated tax advice record*/
+    @MetaField
     private String taxOptimizationGuidanceAdviceResult;
 
     public void setProductandServiceReference(org.museframework.bian.classes.Object productandServiceReference) {

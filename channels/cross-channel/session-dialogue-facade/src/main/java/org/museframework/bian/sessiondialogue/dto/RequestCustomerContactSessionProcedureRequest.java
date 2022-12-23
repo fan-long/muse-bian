@@ -1,8 +1,15 @@
 package org.museframework.bian.sessiondialogue.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestCustomerContactSessionProcedureRequest {
+    @MetaField
     private String sessiondialogueid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.sessiondialogue.dto.cr.CustomerContactSessionProcedure customerContactSessionProcedure;
 
     public void setSessiondialogueid(String sessiondialogueid) {

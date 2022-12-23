@@ -1,10 +1,18 @@
 package org.museframework.bian.cashconcentration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeCashPositionMonitoringandTransferFulfillmentRequest {
+    @MetaField
     private String cashconcentrationid;
 
+    @MetaField
     private String cashpositionmonitoringandtransferfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cashconcentration.dto.bq.CashPositionMonitoringandTransferFulfillment cashPositionMonitoringandTransferFulfillment;
 
     public void setCashconcentrationid(String cashconcentrationid) {

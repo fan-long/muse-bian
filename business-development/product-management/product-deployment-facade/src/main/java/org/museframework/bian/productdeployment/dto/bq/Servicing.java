@@ -3,17 +3,25 @@
 Examples: Functional module specification*/
 package org.museframework.bian.productdeployment.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Servicing {
     /*The consolidated aspects of the servicing deployment tasks*/
+    @MetaField
     private String productandServiceDeploymentServicingRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
+    @MetaField
     private String productandServiceDeploymentServicingRequirementsWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the servicing needs of the deployment*/
+    @MetaField
     private String productandServiceDeploymentServicingRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentServicingRequirements(String productandServiceDeploymentServicingRequirements) {

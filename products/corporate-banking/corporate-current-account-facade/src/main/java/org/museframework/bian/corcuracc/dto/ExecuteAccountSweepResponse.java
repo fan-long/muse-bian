@@ -1,6 +1,12 @@
 package org.museframework.bian.corcuracc.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteAccountSweepResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.corcuracc.dto.bq.AccountSweep accountSweep;
 
     public void setAccountSweep(org.museframework.bian.corcuracc.dto.bq.AccountSweep accountSweep) {

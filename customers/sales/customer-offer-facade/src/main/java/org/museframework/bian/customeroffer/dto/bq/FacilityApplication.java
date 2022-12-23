@@ -1,29 +1,41 @@
 /*Handles the booking of the asset or liability to the appropriate unit*/
 package org.museframework.bian.customeroffer.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FacilityApplication {
     /*Product feature selected in the customer offering*/
+    @MetaField
     private String facilityOption;
 
     /*Description of the facility option*/
+    @MetaField
     private String facilityOptionDescription;
 
     /*The option setting as agreed/defined with the customer*/
+    @MetaField
     private String facilityOptionSetting;
 
     /*The allowed pricing includes ranges by customer measures e.g. credit grade*/
+    @MetaField
     private String facilityPricing;
 
     /*Guidelines for the allowed situation-based pricing adjustments (to maximize margins)*/
+    @MetaField
     private String negotiationGuidelinesRules;
 
     /*The agreed pricing  (covers all negotiable prices/fees/penalties as necessary)*/
+    @MetaField
     private String agreedPricing;
 
     /**/
+    @MetaField
     private String pricingAdjustments;
 
     /*Duration of facility e.g., duration of loan*/
+    @MetaField
     private String facilitySchedule;
 
     public void setFacilityOption(String facilityOption) {

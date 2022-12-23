@@ -1,10 +1,18 @@
 package org.museframework.bian.mardatswiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateFeedUploadRequest {
+    @MetaField
     private String marketdataswitchoperationid;
 
+    @MetaField
     private String feeduploadid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.mardatswiope.dto.bq.FeedUpload feedUpload;
 
     public void setMarketdataswitchoperationid(String marketdataswitchoperationid) {

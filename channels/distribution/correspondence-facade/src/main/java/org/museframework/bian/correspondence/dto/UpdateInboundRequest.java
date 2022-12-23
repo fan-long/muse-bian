@@ -1,10 +1,18 @@
 package org.museframework.bian.correspondence.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateInboundRequest {
+    @MetaField
     private String correspondenceid;
 
+    @MetaField
     private String inboundid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.correspondence.dto.bq.Inbound inbound;
 
     public void setCorrespondenceid(String correspondenceid) {

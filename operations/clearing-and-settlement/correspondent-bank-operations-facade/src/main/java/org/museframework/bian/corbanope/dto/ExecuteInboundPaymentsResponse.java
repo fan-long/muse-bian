@@ -1,6 +1,12 @@
 package org.museframework.bian.corbanope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteInboundPaymentsResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.corbanope.dto.bq.InboundPayments inboundPayments;
 
     public void setInboundPayments(org.museframework.bian.corbanope.dto.bq.InboundPayments inboundPayments) {

@@ -3,20 +3,29 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.achoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ClearingandSettlement {
     /*Reference to the correspondent bank referenced in the ACH transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankReference;
 
     /*Reference to the clearing agreement between bank and clearing house - includes schedule, limits*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankClearingAgreementReference;
 
     /*Customer specific default clearing instructions*/
+    @MetaField
     private String correspondentBankClearingAgreementClearingInstructions;
 
     /*Customer specific default settlement instruction e.g. to handle netting arrangements*/
+    @MetaField
     private String correspondentBankClearingAgreementSettlementInstructions;
 
     /*Account used central bank clearing reconciliations*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object mirrorNostroAccountReference;
 
     public void setCorrespondentBankReference(org.museframework.bian.classes.Object correspondentBankReference) {

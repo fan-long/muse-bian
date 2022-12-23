@@ -1,8 +1,15 @@
 package org.museframework.bian.cardauthorization.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCreditCardAuthorizationAssessmentRequest {
+    @MetaField
     private String cardauthorizationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardauthorization.dto.cr.CreditCardAuthorizationAssessment creditCardAuthorizationAssessment;
 
     public void setCardauthorizationid(String cardauthorizationid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.corporatefinance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteCorporateFinanceServicesAdviceRequest {
+    @MetaField
     private String corporatefinanceid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatefinance.dto.cr.CorporateFinanceServicesAdvice corporateFinanceServicesAdvice;
 
     public void setCorporatefinanceid(String corporatefinanceid) {

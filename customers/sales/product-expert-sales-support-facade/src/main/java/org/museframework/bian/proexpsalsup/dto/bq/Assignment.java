@@ -3,29 +3,41 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.proexpsalsup.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Assignment {
     /*Defines the type of assignment (e.g. in person, phone conference)*/
+    @MetaField
     private String salesSpecialistSupportAssignmentRequestType;
 
     /*Contains details of the product specialist support request, in particular the product or service of interest and the specific topics to be covered*/
+    @MetaField
     private String salesSpecialistSupportAssignmentRequestRecord;
 
     /*File of any meeting notes, work products and administrative documentation generated during the assignment*/
+    @MetaField
     private String salesSpecialistSupportAssignmentSessionWorkProducts;
 
     /*The location of the customer interaction (e.g. branch, phone, customer site)*/
+    @MetaField
     private String salesSpecialistSupportAssignmentLocation;
 
     /*Details of time and expenses booked and fees associated with the assignment and if appropriate reference to charges made to the customer*/
+    @MetaField
     private String salesSpecialistSupportAssignmentFee;
 
     /*The result of the customer interaction, including any suggested follow-up tasks*/
+    @MetaField
     private String salesSpecialistSupportAssignmentResult;
 
     /*Key dates associated with the assignment (e.g. booking date, confirmation date, execution date, follow-up/evaluation date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date type*/
+    @MetaField
     private String date;
 
     public void setSalesSpecialistSupportAssignmentRequestType(String salesSpecialistSupportAssignmentRequestType) {

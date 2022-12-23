@@ -1,10 +1,18 @@
 package org.museframework.bian.fraudmodel.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTestingRequest {
+    @MetaField
     private String fraudmodelid;
 
+    @MetaField
     private String testingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.fraudmodel.dto.bq.Testing testing;
 
     public void setFraudmodelid(String fraudmodelid) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.cortruser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateCorporateTrustServicesFacilityResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cortruser.dto.cr.CorporateTrustServicesFacility corporateTrustServicesFacility;
 
     public void setCorporateTrustServicesFacility(org.museframework.bian.cortruser.dto.cr.CorporateTrustServicesFacility corporateTrustServicesFacility) {

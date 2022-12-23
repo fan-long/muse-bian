@@ -1,6 +1,12 @@
 package org.museframework.bian.transactionauthorization.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestInteractiveTransactionAssessmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.transactionauthorization.dto.cr.InteractiveTransactionAssessment interactiveTransactionAssessment;
 
     public void setInteractiveTransactionAssessment(org.museframework.bian.transactionauthorization.dto.cr.InteractiveTransactionAssessment interactiveTransactionAssessment) {

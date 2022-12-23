@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Cheque Lock Box. */
 package org.museframework.bian.chelocbox.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LockBoxFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature lockBoxFacilitySelectedOption;
 
     /*The status of Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityStatus;
 
     /*Reference to the party who is involved in Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityAssociatedParty;
 
     /*The curreny which is arranged in Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityCurrency;
 
     /*Reference to the regulation which is defined in Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet lockBoxFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Lock Box Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction lockBoxFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Lock Box Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit lockBoxFacilityBookingLocation;
 
     /*Reference to the account which is linked to Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account lockBoxFacilityAccountReference;
 
     /*Reference to the customer who is involved in Lock Box Facility*/
+    @MetaField
     private String lockBoxFacilityCustomerReference;
 
     /*The position of Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position lockBoxFacilityPosition;
 
     /*Reference to the product which is linked to Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct lockBoxFacilityProductReference;
 
     /*Reference to the limitation related to the position of Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement lockBoxFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Lock Box Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility lockBoxFacilityReference;
 
     public void setLockBoxFacilityParameterType(String lockBoxFacilityParameterType) {

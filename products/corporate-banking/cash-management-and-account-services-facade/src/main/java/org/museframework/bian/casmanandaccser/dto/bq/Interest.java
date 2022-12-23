@@ -1,41 +1,57 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.casmanandaccser.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Interest {
     /*Applicable rate type*/
+    @MetaField
     private String interestRateType;
 
     /*The processing schedule for applying interest rates to the account*/
+    @MetaField
     private String interestRateApplicationSchedule;
 
     /*The collection of applicable rates*/
+    @MetaField
     private String interestRateConfiguration;
 
     /*The rate value to be applied*/
+    @MetaField
     private String interestRate;
 
     /*The record of applied interest*/
+    @MetaField
     private String interestApplicationRecord;
 
     /*A record of applied interest*/
+    @MetaField
     private String interestTransaction;
 
     /*General description of the interest transaction*/
+    @MetaField
     private String transactionDescription;
 
     /*Applicable rate type*/
+    @MetaField
     private String transactionRateType;
 
     /*The derived interest amount to be applied*/
+    @MetaField
     private String transactionInterestCharge;
 
     /*Record of accrued interest*/
+    @MetaField
     private String interestAccrualAmount;
 
     /*The interest type being tracked*/
+    @MetaField
     private String interestAccrualType;
 
     /*The accrued amount of applied interest*/
+    @MetaField
     private String interestAccrualCharge;
 
     public void setInterestRateType(String interestRateType) {

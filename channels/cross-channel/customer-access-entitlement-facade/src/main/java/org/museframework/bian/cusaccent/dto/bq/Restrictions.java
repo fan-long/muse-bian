@@ -3,23 +3,33 @@
 Examples: Required disclosures*/
 package org.museframework.bian.cusaccent.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Restrictions {
     /*Assembles the array of channel access constraints*/
+    @MetaField
     private String channelAccessRestrictionsRecord;
 
     /*Details allowed products/services and associated features*/
+    @MetaField
     private String channelAccessProductandServiceTypeUsage;
 
     /*Details restrictions on allowed product/services by channel/device*/
+    @MetaField
     private String channelAccessProductandServiceChannelDeviceRestrictions;
 
     /*Details restrictions on allowed product/services by location*/
+    @MetaField
     private String channelAccessProductandServiceLocationRestrictions;
 
     /*Details restrictions on allowed product/services by frequency and cumulative amounts - can be cross-product*/
+    @MetaField
     private String channelAccessProductandServiceFrequencyLimitRestrictions;
 
     /*Details restrictions on allowed product/service by schedule and cumulative access duration*/
+    @MetaField
     private String channelAccessProductandServiceTimeDurationRestrictions;
 
     public void setChannelAccessRestrictionsRecord(String channelAccessRestrictionsRecord) {

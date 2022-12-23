@@ -1,8 +1,15 @@
 package org.museframework.bian.merandacqadv.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestMergersAndAcquisitionAdviceRequest {
+    @MetaField
     private String mergersandacquisitionsadvisoryid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.merandacqadv.dto.cr.MergersAndAcquisitionAdvice mergersAndAcquisitionAdvice;
 
     public void setMergersandacquisitionsadvisoryid(String mergersandacquisitionsadvisoryid) {

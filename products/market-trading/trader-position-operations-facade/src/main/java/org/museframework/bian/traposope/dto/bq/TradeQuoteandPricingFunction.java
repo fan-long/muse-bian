@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Trade Capture and Reporting Function for doing Trade Capture and Reporting Function*/
 package org.museframework.bian.traposope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradeQuoteandPricingFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Trade Quote and Pricing Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Trade Quote and Pricing Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session tradedPositionOperatingSessionReference;
 
     /*Reference to Trade Quote and Pricing Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function tradeQuoteandPricingFunctionReference;
 
     /*The type of Trade Quote and Pricing Function*/
+    @MetaField
     private String tradeQuoteandPricingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

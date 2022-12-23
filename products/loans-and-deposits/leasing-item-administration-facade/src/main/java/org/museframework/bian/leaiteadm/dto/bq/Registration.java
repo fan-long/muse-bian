@@ -3,35 +3,49 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.leaiteadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Registration {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField
     private String registrationPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object registrationBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String registrationWorkSchedule;
 
     /*The Leasing Item Administrative Plan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService collateralRegistration;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField
     private String registrationPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String registrationCollateralRegistrationServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String registrationCollateralRegistrationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String registrationCollateralRegistrationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String registrationCollateralRegistrationServiceWorkProduct;
 
     /**/
+    @MetaField
     private String registrationCollateralRegistrationServiceName;
 
     public void setRegistrationPreconditions(String registrationPreconditions) {

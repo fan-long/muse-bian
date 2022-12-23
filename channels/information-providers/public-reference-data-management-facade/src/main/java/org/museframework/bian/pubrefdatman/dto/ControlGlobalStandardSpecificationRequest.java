@@ -1,8 +1,15 @@
 package org.museframework.bian.pubrefdatman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlGlobalStandardSpecificationRequest {
+    @MetaField
     private String publicreferencedatamanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.pubrefdatman.dto.cr.GlobalStandardSpecification globalStandardSpecification;
 
     public void setPublicreferencedatamanagementid(String publicreferencedatamanagementid) {

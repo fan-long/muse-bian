@@ -3,29 +3,41 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.customerposition.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Cashflow {
     /*Reference to the one of more products and services in use for which transaction activity is to be obtained*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The types of product fulfillment reports available - in this case transaction details used for different measures or position analyses*/
+    @MetaField
     private String productArrangementInstanceReportType;
 
     /*The product/service activity report - transactional activity used for financial analysis*/
+    @MetaField
     private String productArrangementInstanceReport;
 
     /*Defines content/transaction types to be included in the report extract*/
+    @MetaField
     private String reportOptionsSelectionCriteria;
 
     /*The from-to dates covered by the report for analysis*/
+    @MetaField
     private String reportPeriod;
 
     /*Defines presentation format*/
+    @MetaField
     private String reportFormatTemplate;
 
     /*The requested product/service activity report used in the position measurements*/
+    @MetaField
     private String report;
 
     /*The customer cashflow analysis - past, current position and projected cash flows as derived from all active product/service activity reports*/
+    @MetaField
     private String customerCashflowPositionAnalysisRecord;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

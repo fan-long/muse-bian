@@ -1,10 +1,18 @@
 package org.museframework.bian.factoring.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAccountReceivableProcessingFulfillmentRequest {
+    @MetaField
     private String factoringid;
 
+    @MetaField
     private String accountreceivableprocessingfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.factoring.dto.bq.AccountReceivableProcessingFulfillment accountReceivableProcessingFulfillment;
 
     public void setFactoringid(String factoringid) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.productdirectory.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateOperationsRequest {
+    @MetaField
     private String productdirectoryid;
 
+    @MetaField
     private String operationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productdirectory.dto.bq.Operations operations;
 
     public void setProductdirectoryid(String productdirectoryid) {

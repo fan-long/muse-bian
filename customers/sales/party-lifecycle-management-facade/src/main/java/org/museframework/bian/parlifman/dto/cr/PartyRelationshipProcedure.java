@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.parlifman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PartyRelationshipProcedure {
     /*Reference to the associated customer (can currently be a person or a company)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity (typically the customer)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*Defines the nature of the bank association with the party (e.g. customer, supplier)*/
+    @MetaField
     private String partyRelationshipType;
 
     /*Defines scheduled update/review tasks covering all tracked properties*/
+    @MetaField
     private String partyLife_cycleMaintenanceSchedule;
 
     /*Tasks performed to maintain/verify the life-cycle status*/
+    @MetaField
     private String partyLife_cycleMaintenanceTask;
 
     /*The type of task performed (e.g. on-boarding check, periodic refresh)*/
+    @MetaField
     private String partyLife_cycleMaintenanceTaskType;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String partyLife_cycleMaintenanceWorkProducts;
 
     /*The outcome of the task  (will be used to update the Status and Status Record)*/
+    @MetaField
     private String partyLife_cycleMaintenanceTaskResult;
 
     /**/
+    @MetaField
     private String customerPrecedentProfileUpdateLog;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

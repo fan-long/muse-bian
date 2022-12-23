@@ -1,10 +1,18 @@
 package org.museframework.bian.cusrelman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateContactRequest {
+    @MetaField
     private String customerrelationshipmanagementid;
 
+    @MetaField
     private String contactid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusrelman.dto.bq.Contact contact;
 
     public void setCustomerrelationshipmanagementid(String customerrelationshipmanagementid) {

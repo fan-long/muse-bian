@@ -1,20 +1,29 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.custaxhan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Reporting {
     /*Reference to the customer tax report - sent to the customer or tax authority directly*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerTaxReportInstanceReference;
 
     /*The type of tax report, includes products/services covered and the tax jurisdiction/authority reference as necessary*/
+    @MetaField
     private String customerTaxReportType;
 
     /*The reporting period, detailing from-to dates covered by the tax report*/
+    @MetaField
     private String customerTaxReportPeriod;
 
     /*The customer's consolidated product/service tax report*/
+    @MetaField
     private String customerTaxReportReport;
 
     /*Work documentation, forms and schedules produced and referenced during the reporting task*/
+    @MetaField
     private String customerTaxHandlingReportingWorkProducts;
 
     public void setCustomerTaxReportInstanceReference(org.museframework.bian.classes.Object customerTaxReportInstanceReference) {

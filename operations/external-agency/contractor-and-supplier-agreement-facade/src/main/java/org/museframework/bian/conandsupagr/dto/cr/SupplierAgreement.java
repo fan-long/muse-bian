@@ -3,64 +3,86 @@
 */
 package org.museframework.bian.conandsupagr.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SupplierAgreement extends org.museframework.bian.classes.SupplierAgreement {
     /*A Classification value that distinguishes between Options defined within Supplier Agreement*/
+    @MetaField
     private String supplierAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature supplierAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Agreementtypevalues supplierAgreementType;
 
     /*An unique reference to an item or an occurrence of Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement supplierAgreementReference;
 
     /*Request to discharge Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction supplierAgreementDischargeRequest;
 
     /*Timetable to discharge Supplier Agreement*/
+    @MetaField
     private String supplierAgreementDischargeSchedule;
 
     /*The status of Supplier Agreement*/
+    @MetaField
     private String supplierAgreementStatus;
 
     /*Party who is involved in Supplier Agreement*/
+    @MetaField
     private String supplierAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Supplier Agreement*/
+    @MetaField
     private String supplierAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement supplierAgreementObligation;
 
     /*Right to do something under the terms of Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement supplierAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet supplierAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Supplier Agreement*/
+    @MetaField
     private String supplierAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Supplier Agreement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction supplierAgreementJurisdiction;
 
     /*Reference to the account which is linked to Supplier Agreement
 
 A characteristic of agreement which refers to its involved account to specify the account that will be used to register for the transactions in position keeping management.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account supplierAgreementAccountReference;
 
     /*The subject matter of  Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object supplierAgreementSubjectMatter;
 
     /*Reference to the product which is linked to Supplier Agreement
 
 Comment: 
 A characteristic of agreement which refers to its related products that are sold by agreement.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct supplierAgreementProductReference;
 
     /*Reference to the agreement that is related to Supplier Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement supplierAgreementAssociatedAgreementReference;
 
     public void setSupplierAgreementParameterType(String supplierAgreementParameterType) {

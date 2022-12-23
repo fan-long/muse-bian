@@ -1,32 +1,45 @@
 /*Handle and assign the day to day activities, capture time, costs and income for an operational unit within Mutual Fund Administration. */
 package org.museframework.bian.mutfunadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MutualFundAdministrativePlan extends org.museframework.bian.classes.MutualFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Mutual Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String mutualFundAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Mutual Fund Administrative Plan*/
+    @MetaField
     private String mutualFundAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Mutual Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement mutualFundAdministrativePlanDuty;
 
     /*Party who is involved in Mutual Fund Administrative Plan*/
+    @MetaField
     private String mutualFundAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Mutual Fund Administrative Plan*/
+    @MetaField
     private String mutualFundAdministrativePlanBudgetBalance;
 
     /*The subject matter of Mutual Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object mutualFundAdministrativePlanSubjectMatter;
 
     /*The type of Mutual Fund Administrative Plan*/
+    @MetaField
     private String mutualFundAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Mutual Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan mutualFundAdministrativePlanReference;
 
     /*Documentation of Mutual Fund Administrative Plan*/
+    @MetaField
     private String mutualFundAdministrativePlanDescription;
 
     public void setMutualFundAdministrativePlanBudgetType(String mutualFundAdministrativePlanBudgetType) {

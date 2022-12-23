@@ -1,10 +1,18 @@
 package org.museframework.bian.finstaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestRiskTestRequest {
+    @MetaField
     private String financialstatementassessmentid;
 
+    @MetaField
     private String risktestid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.finstaass.dto.bq.RiskTest riskTest;
 
     public void setFinancialstatementassessmentid(String financialstatementassessmentid) {

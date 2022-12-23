@@ -1,47 +1,65 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Legal Compliance. */
 package org.museframework.bian.legalcompliance.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LegalComplianceAssessment {
     /*The type of law that is applied by the assessment action*/
+    @MetaField
     private String legalAssessmentType;
 
     /*The business function or unit assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*The associated product/service being assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the customer assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Indication of the legal jurisdiction that applies*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object jurisdictionReference;
 
     /*Reference to the specific law*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object lawReference;
 
     /*A definition of the required behavior to remain within the law*/
+    @MetaField
     private String lawDefinition;
 
     /*Description of the measurements and reporting required to demonstrate legal compliance*/
+    @MetaField
     private String lawComplianceandReportingRequirements;
 
     /*Explanation of the business context, responsibility and accountability for legal compliance*/
+    @MetaField
     private String lawComplianceAccountability;
 
     /*Outline of the possible implications of breaking the law*/
+    @MetaField
     private String legalPenalties;
 
     /*Guidelines and requirements for following the law*/
+    @MetaField
     private String legalGuideline;
 
     /*Reference to any documentation classified/archived as appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the legal assessment action*/
+    @MetaField
     private String legalAssessmentWorkProducts;
 
     /*Outcome/result of the legal assessment, this can include remedial actions*/
+    @MetaField
     private String legalAssessmentResult;
 
     public void setLegalAssessmentType(String legalAssessmentType) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.trabooove.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class NotifyTradingBookAnalysisandReportingDutyResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.trabooove.dto.bq.TradingBookAnalysisandReportingDuty tradingBookAnalysisandReportingDuty;
 
     public void setTradingBookAnalysisandReportingDuty(org.museframework.bian.trabooove.dto.bq.TradingBookAnalysisandReportingDuty tradingBookAnalysisandReportingDuty) {

@@ -1,47 +1,65 @@
 /*The configuration and execution of Standing Order Fulfillment arrangement within the Standing Order Fulfillment*/
 package org.museframework.bian.standingorder.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StandingOrderPayment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition standingOrderPaymentPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String standingOrderPaymentFeatureSchedule;
 
     /*The Standing Order Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition standingOrderPaymentPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String standingOrderPaymentServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String standingOrderPaymentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String standingOrderPaymentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String standingOrderPaymentServiceWorkProduct;
 
     /**/
+    @MetaField
     private String standingOrderPaymentServiceName;
 
     /*Date on which a standing order is actually executed*/
+    @MetaField
     private String standingOrderExecutionDate;
 
     /*Result of the execition instruction, e.g. executed or not excuted*/
+    @MetaField
     private String standingOrderExecutionResultType;
 
     /*Description of the reason for not excuting a standing order, e.g. insufficient balance, account blocked, AML flag, ……*/
+    @MetaField
     private String standingOrderExecutionNotExecutedReasonDescription;
 
     /*Actual principal amount of the this execution of the standing order*/
+    @MetaField
     private String standingOrderExecutionPrincipalAmount;
 
     /*Actual fee amount of the this execution of the standing order*/
+    @MetaField
     private String standingOrderExecutionFeeAmount;
 
     public void setStandingOrderPaymentPreconditions(org.museframework.bian.classes.Condition standingOrderPaymentPreconditions) {

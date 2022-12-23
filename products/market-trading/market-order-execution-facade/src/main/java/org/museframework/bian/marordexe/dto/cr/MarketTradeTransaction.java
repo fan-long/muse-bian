@@ -1,44 +1,61 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Market Order Execution. */
 package org.museframework.bian.marordexe.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketTradeTransaction {
     /*Reference to the market order that is to be executed in the markets*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object marketOrderTransactionInstanceReference;
 
     /*Reference to the account primary party/owner for the market order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The employee/business unit placing the market order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Any customer specific processing preferences or requirements*/
+    @MetaField
     private String customerMarketOrderProcessingInstruction;
 
     /*The details of the market order transaction*/
+    @MetaField
     private String marketOrderTransaction;
 
     /*Reference to the underlying investment account supporting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentAccountArrangementInstanceReference;
 
     /*Reference to the underlying cash account supporting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object currentAccountArrangementInstanceReference;
 
     /*The type of market order (e.g. Day Order. Order on Open/Close, Fill or Kill, Limit Order)*/
+    @MetaField
     private String marketOrderType;
 
     /*The security to be traded*/
+    @MetaField
     private String securityType;
 
     /*The volume of shares to be bought or sold. This can include different amount types - quoted/committed, traded etc.)*/
+    @MetaField
     private String amount;
 
     /*Key dates associated with the transaction (e.g. order capture, trade execution, order completion)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date type*/
+    @MetaField
     private String date;
 
     /*Reference to the associated market trade if the order is executed in the market directly*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object marketOrderTradeInitiationInstanceReference;
 
     public void setMarketOrderTransactionInstanceReference(org.museframework.bian.classes.Object marketOrderTransactionInstanceReference) {

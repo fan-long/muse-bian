@@ -2,11 +2,17 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.accountsreceivable.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AccountsReceivableOutcome {
     /**/
+    @MetaField
     private String accountsReceivableWorkProduct;
 
     /**/
+    @MetaField
     private String accountsReceivableProcedure;
 
     public void setAccountsReceivableWorkProduct(String accountsReceivableWorkProduct) {

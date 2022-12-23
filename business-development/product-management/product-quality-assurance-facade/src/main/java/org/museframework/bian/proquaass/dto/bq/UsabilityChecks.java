@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.proquaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class UsabilityChecks {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String usabilityChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String usabilityChecksAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String usabilityChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService usabilityChecks;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String usabilityChecksServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String usabilityChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String usabilityChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String usabilityChecksServiceWorkProduct;
 
     /**/
+    @MetaField
     private String usabilityChecksServiceName;
 
     public void setUsabilityChecksPreconditions(String usabilityChecksPreconditions) {

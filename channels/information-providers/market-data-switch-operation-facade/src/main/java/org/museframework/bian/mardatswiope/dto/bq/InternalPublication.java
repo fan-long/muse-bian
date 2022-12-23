@@ -3,17 +3,25 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.mardatswiope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InternalPublication {
     /*Reference to internal sources of published information (e.g. bank rates)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object internalInformationFeedServiceReference;
 
     /*Defines the range of internally published information services/pages*/
+    @MetaField
     private String internalInformationFeedServiceProfile;
 
     /*Reference to 'live' internal pages of information that is published*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object internalInformationFeedServiceRecordReference;
 
     /*This is the internally generated information that is distributed over the switch*/
+    @MetaField
     private String internalInformationFeedServiceRecord;
 
     public void setInternalInformationFeedServiceReference(org.museframework.bian.classes.Object internalInformationFeedServiceReference) {

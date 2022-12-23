@@ -1,14 +1,21 @@
 /*Capture and maintain reference information about some type of entitity within Party Reference Data Directory.*/
 package org.museframework.bian.parrefdatdir.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PartyReferenceDataDirectoryEntry extends org.museframework.bian.classes.PartyReferenceDataDirectoryEntry {
     /*Reference to the associated customer (can currently be a person or a company)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Party partyReference;
 
     /*Key dates associated with the directory entry (e.g. open date, refresh date)*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Directoryentrydatetypevalues directoryEntryDateType;
 
     /*Value of the date type*/
+    @MetaField
     private String directoryEntryDate;
 
     public void setPartyReference(org.museframework.bian.classes.Party partyReference) {

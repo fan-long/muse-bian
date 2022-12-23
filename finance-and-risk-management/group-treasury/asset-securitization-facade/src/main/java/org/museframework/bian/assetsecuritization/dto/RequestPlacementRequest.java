@@ -1,10 +1,18 @@
 package org.museframework.bian.assetsecuritization.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestPlacementRequest {
+    @MetaField
     private String assetsecuritizationid;
 
+    @MetaField
     private String placementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.assetsecuritization.dto.bq.Placement placement;
 
     public void setAssetsecuritizationid(String assetsecuritizationid) {

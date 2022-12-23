@@ -1,38 +1,53 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.casmanandaccser.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AccountSweep {
     /*The type of sweep (e.g. periodic, threshold)*/
+    @MetaField
     private String accountSweepType;
 
     /*Definition of the type of sweep*/
+    @MetaField
     private String accountSweepDefinition;
 
     /*Sweep processing guidelines and scheduling rules*/
+    @MetaField
     private String accountSweepApplicationSchedule;
 
     /*The set-up of the sweep facility*/
+    @MetaField
     private String accountSweepConfiguration;
 
     /*The facility that the sweep is made to/from*/
+    @MetaField
     private String targetAccount;
 
     /*Confirmation that the sweep processing is sanctioned as necessary*/
+    @MetaField
     private String sweepMandate;
 
     /*Timing and or triggers for initiating sweep transaction*/
+    @MetaField
     private String sweepProcessingSchedule;
 
     /*The transaction record for an applied sweep*/
+    @MetaField
     private String sweepApplicationRecord;
 
     /*The facility that the sweep is made to/from*/
+    @MetaField
     private String accountSweepTargetAccount;
 
     /*The amount transferred to or from the account*/
+    @MetaField
     private String accountSweepAmount;
 
     /*The date and time the sweep is initiated*/
+    @MetaField
     private String accountSweepExecutionDate;
 
     public void setAccountSweepType(String accountSweepType) {

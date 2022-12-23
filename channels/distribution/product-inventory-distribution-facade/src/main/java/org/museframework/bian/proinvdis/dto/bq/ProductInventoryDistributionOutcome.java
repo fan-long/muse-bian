@@ -2,17 +2,25 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.proinvdis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductInventoryDistributionOutcome {
     /**/
+    @MetaField
     private String productInventoryDistributionPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String productInventoryDistributionActivityAnalysis;
 
     /**/
+    @MetaField
     private String productInventoryDistributionAdministrativePlan;
 
     /**/
+    @MetaField
     private String productInventoryDistributionAdministrationTask;
 
     public void setProductInventoryDistributionPerformanceAnalysis(String productInventoryDistributionPerformanceAnalysis) {

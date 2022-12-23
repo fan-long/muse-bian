@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.accountrecovery.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Restructuring {
     /*Target dates for account restructuring/set-up added to the Account Recovery Case Resolution Schedule*/
+    @MetaField
     private String accountRecoveryRestructuringSchedule;
 
     /*Processing record for the restructuring task within the account recovery process*/
+    @MetaField
     private String accountRecoveryCaseRestructuringTaskRecord;
 
     public void setAccountRecoveryRestructuringSchedule(String accountRecoveryRestructuringSchedule) {

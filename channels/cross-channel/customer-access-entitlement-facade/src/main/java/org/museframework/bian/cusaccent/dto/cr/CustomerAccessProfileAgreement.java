@@ -4,20 +4,29 @@
 */
 package org.museframework.bian.cusaccent.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerAccessProfileAgreement {
     /*Reference to the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The overall access profile, combining the restrictions and preferences from subordinate qualifiers*/
+    @MetaField
     private String customerChannelAccessProfileRecord;
 
     /*The duration that the agreement is in force*/
+    @MetaField
     private String customerAccessAgreementValidFromToDate;
 
     /*Reference to signatories as appropriate*/
+    @MetaField
     private String customerAccessAgreementSignaturesResponsibleParties;
 
     /*Reference to any associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

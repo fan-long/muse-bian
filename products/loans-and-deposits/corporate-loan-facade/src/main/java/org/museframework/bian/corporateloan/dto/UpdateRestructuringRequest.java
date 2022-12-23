@@ -1,10 +1,18 @@
 package org.museframework.bian.corporateloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateRestructuringRequest {
+    @MetaField
     private String corporateloanid;
 
+    @MetaField
     private String restructuringid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporateloan.dto.bq.Restructuring restructuring;
 
     public void setCorporateloanid(String corporateloanid) {

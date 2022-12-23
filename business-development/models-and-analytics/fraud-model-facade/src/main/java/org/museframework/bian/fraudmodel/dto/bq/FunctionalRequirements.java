@@ -3,23 +3,33 @@
 Examples: Business Requirements*/
 package org.museframework.bian.fraudmodel.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FunctionalRequirements {
     /*Reference to a type of functional requirements specification activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object fraudModelDesignTaskReference;
 
     /*The record of work products used for the design task*/
+    @MetaField
     private String fraudModelDesignTaskRecord;
 
     /*Reference to external service information provider used to obtain example production data for design*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerMarketDataServiceReference;
 
     /*Record of example production data file*/
+    @MetaField
     private String customerMarketDataRecord;
 
     /*User provided and solicited feedback, suggestions for model refinement*/
+    @MetaField
     private String fraudModelFeedbackRecord;
 
     /*The model functional requirements specification (with versioning as appropriate)*/
+    @MetaField
     private String fraudModelRequirementsSpecification;
 
     public void setFraudModelDesignTaskReference(org.museframework.bian.classes.Object fraudModelDesignTaskReference) {

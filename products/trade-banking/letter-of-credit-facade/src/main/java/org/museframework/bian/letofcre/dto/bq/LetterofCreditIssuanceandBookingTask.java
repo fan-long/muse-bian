@@ -1,23 +1,33 @@
 /*The Customer Collateral Allocation Task is a discrete action or task that is required in the execution of the Customer Collateral Allocation Task*/
 package org.museframework.bian.letofcre.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LetterofCreditIssuanceandBookingTask {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String schedule;
 
     /*The Letter of Credit Issuance and Booking Task specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Letter of Credit Issuance and Booking Task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction letterOfCreditTransactionReference;
 
     /*The type of Letter of Credit Issuance and Booking Task*/
+    @MetaField
     private String letterofCreditIssuanceandBookingTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

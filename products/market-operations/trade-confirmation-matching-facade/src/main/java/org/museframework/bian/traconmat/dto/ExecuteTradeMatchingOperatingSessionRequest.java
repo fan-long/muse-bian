@@ -1,8 +1,15 @@
 package org.museframework.bian.traconmat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteTradeMatchingOperatingSessionRequest {
+    @MetaField
     private String tradeconfirmationmatchingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traconmat.dto.cr.TradeMatchingOperatingSession tradeMatchingOperatingSession;
 
     public void setTradeconfirmationmatchingid(String tradeconfirmationmatchingid) {

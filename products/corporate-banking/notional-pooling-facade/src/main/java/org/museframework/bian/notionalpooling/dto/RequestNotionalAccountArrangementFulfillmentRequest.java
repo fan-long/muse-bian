@@ -1,10 +1,18 @@
 package org.museframework.bian.notionalpooling.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestNotionalAccountArrangementFulfillmentRequest {
+    @MetaField
     private String notionalpoolingid;
 
+    @MetaField
     private String notionalaccountarrangementfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.notionalpooling.dto.bq.NotionalAccountArrangementFulfillment notionalAccountArrangementFulfillment;
 
     public void setNotionalpoolingid(String notionalpoolingid) {

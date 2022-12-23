@@ -1,10 +1,18 @@
 package org.museframework.bian.proinvdis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateOversightRequest {
+    @MetaField
     private String productinventorydistributionid;
 
+    @MetaField
     private String oversightid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.proinvdis.dto.bq.Oversight oversight;
 
     public void setProductinventorydistributionid(String productinventorydistributionid) {

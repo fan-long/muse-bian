@@ -1,26 +1,37 @@
 /*The In-force Product property properties that represent a discrete aspect of the In-force Product property*/
 package org.museframework.bian.cusproandser.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class In_forceProductproperty {
     /*The required status/situation before the property is valid/meaningful*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
+    @MetaField
     private String schedule;
 
     /*The version reference for the property value*/
+    @MetaField
     private String versionNumber;
 
     /*The In-force Product property specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to In-force Product property*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry customerProductsAndServicesDirectoryEntryReference;
 
     /*Reference to In-force Product property*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object in_forceProductpropertyReference;
 
     /*The type of In-force Product property*/
+    @MetaField
     private String in_forceProductpropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

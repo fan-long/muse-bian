@@ -1,8 +1,15 @@
 package org.museframework.bian.fraudevaluation.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveRuleSetsandDecisionTreesRequest {
+    @MetaField
     private String fraudevaluationid;
 
+    @MetaField
     private String rulesetsanddecisiontreesid;
 
     public void setFraudevaluationid(String fraudevaluationid) {

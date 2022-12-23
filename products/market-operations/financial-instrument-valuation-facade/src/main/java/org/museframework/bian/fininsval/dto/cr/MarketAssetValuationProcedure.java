@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Financial Instrument Valuation. */
 package org.museframework.bian.fininsval.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketAssetValuationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature marketAssetValuationProcedureSelectedOption;
 
     /*Request to process Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction marketAssetValuationProcedureRequest;
 
     /*Timetable to process Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureSchedule;
 
     /*The status of Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureStatus;
 
     /*Reference to the party who is involved in Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility marketAssetValuationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureType;
 
     /*The schedule according to which the service provider will process the Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Market Asset Valuation Procedure*/
+    @MetaField
     private String marketAssetValuationProcedureServiceType;
 
     /*Reference to the product or service that is related to Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct marketAssetValuationProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction marketAssetValuationProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement marketAssetValuationProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement marketAssetValuationProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Market Asset Valuation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure marketAssetValuationProcedureReference;
 
     public void setMarketAssetValuationProcedureParameterType(String marketAssetValuationProcedureParameterType) {

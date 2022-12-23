@@ -1,8 +1,15 @@
 package org.museframework.bian.dealerdesk.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteDealerDeskOperatingSessionRequest {
+    @MetaField
     private String dealerdeskid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.dealerdesk.dto.cr.DealerDeskOperatingSession dealerDeskOperatingSession;
 
     public void setDealerdeskid(String dealerdeskid) {

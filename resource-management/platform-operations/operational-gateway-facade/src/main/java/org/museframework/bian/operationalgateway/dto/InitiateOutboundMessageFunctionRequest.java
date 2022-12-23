@@ -1,10 +1,18 @@
 package org.museframework.bian.operationalgateway.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateOutboundMessageFunctionRequest {
+    @MetaField
     private String operationalgatewayid;
 
+    @MetaField
     private String outboundmessagefunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.operationalgateway.dto.bq.OutboundMessageFunction outboundMessageFunction;
 
     public void setOperationalgatewayid(String operationalgatewayid) {

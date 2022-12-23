@@ -1,10 +1,18 @@
 package org.museframework.bian.colallman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAllocationRequest {
+    @MetaField
     private String collateralallocationmanagementid;
 
+    @MetaField
     private String allocationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.colallman.dto.bq.Allocation allocation;
 
     public void setCollateralallocationmanagementid(String collateralallocationmanagementid) {

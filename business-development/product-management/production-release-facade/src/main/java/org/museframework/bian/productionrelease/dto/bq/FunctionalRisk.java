@@ -3,17 +3,25 @@
 Examples: Password verification*/
 package org.museframework.bian.productionrelease.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FunctionalRisk {
     /*The type of functional test being performed (e.g. functional coverage/integrity, usability, application integration)*/
+    @MetaField
     private String functionalRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
+    @MetaField
     private String functionalRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
+    @MetaField
     private String functionalRiskSystemTestWorkProduct;
 
     /*The result of the functional risk test (including required remedial actions/fixes where appropriate)*/
+    @MetaField
     private String functionalRiskSystemTestResult;
 
     public void setFunctionalRiskSystemTestType(String functionalRiskSystemTestType) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.cashconcentration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateCashPositionMonitoringandTransferFulfillmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cashconcentration.dto.bq.CashPositionMonitoringandTransferFulfillment cashPositionMonitoringandTransferFulfillment;
 
     public void setCashPositionMonitoringandTransferFulfillment(org.museframework.bian.cashconcentration.dto.bq.CashPositionMonitoringandTransferFulfillment cashPositionMonitoringandTransferFulfillment) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.collections.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDebtFactoringRequest {
+    @MetaField
     private String collectionsid;
 
+    @MetaField
     private String debtfactoringid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.collections.dto.bq.DebtFactoring debtFactoring;
 
     public void setCollectionsid(String collectionsid) {

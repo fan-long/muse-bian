@@ -2,26 +2,37 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.regandlegaut.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryAndLegalAuthorityRelationshipManagementPlan {
     /*The type of Regulatory&Legal Authority Relationship ManagementPlan*/
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanType;
 
     /*Reference to Regulatory&Legal Authority Relationship ManagementPlan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryAndLegalAuthorityRelationshipManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Regulatory&Legal Authority Relationship ManagementPlan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Regulatory&Legal Authority Relationship ManagementPlan*/
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanBudget;
 
     /*The allocation of someone or something which is specified for Regulatory&Legal Authority Relationship ManagementPlan*/
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanAssignment;
 
     /*Reference to  Regulatory&Legal Authority Relationship ManagementPlan */
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanPlan;
 
     /*Documentation of Regulatory&Legal Authority Relationship ManagementPlan*/
+    @MetaField
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanDescription;
 
     public void setRegulatoryAndLegalAuthorityRelationshipManagementPlanType(String regulatoryAndLegalAuthorityRelationshipManagementPlanType) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.businessdevelopment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateBusinessDevelopmentStrategyRequest {
+    @MetaField
     private String businessdevelopmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.businessdevelopment.dto.cr.BusinessDevelopmentStrategy businessDevelopmentStrategy;
 
     public void setBusinessdevelopmentid(String businessdevelopmentid) {

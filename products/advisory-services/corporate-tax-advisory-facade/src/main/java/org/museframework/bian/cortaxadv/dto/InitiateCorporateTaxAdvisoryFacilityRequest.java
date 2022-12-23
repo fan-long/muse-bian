@@ -1,6 +1,12 @@
 package org.museframework.bian.cortaxadv.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateCorporateTaxAdvisoryFacilityRequest {
+    @MetaField(ref=true)
     private org.museframework.bian.cortaxadv.dto.cr.CorporateTaxAdvisoryFacility corporateTaxAdvisoryFacility;
 
     public void setCorporateTaxAdvisoryFacility(org.museframework.bian.cortaxadv.dto.cr.CorporateTaxAdvisoryFacility corporateTaxAdvisoryFacility) {

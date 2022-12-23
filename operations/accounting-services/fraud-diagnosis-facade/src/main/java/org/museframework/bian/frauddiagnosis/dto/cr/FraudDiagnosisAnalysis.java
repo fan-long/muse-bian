@@ -4,26 +4,37 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.frauddiagnosis.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FraudDiagnosisAnalysis {
     /*Reference to the product fulfillment production session for which fraud diagnosis is performed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productProductionSessionReference;
 
     /*Details the types of fraud diagnosis algorithms and tests are applied*/
+    @MetaField
     private String fraudDiagnosisEvaluationProfile;
 
     /*The production transaction details that are submitted for fraud diagnosis*/
+    @MetaField
     private String fraudDiagnosisTransactionConsolidationRecord;
 
     /*Details of detected out of pattern production activity that could be fraud highlighted by Fraud Evaluation*/
+    @MetaField
     private String fraudEvaluationProductionAnomalyRecord;
 
     /*Reference to the one or more production transactions isolated by the fraud evaluation tests identified by Fraud Evaluation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object fraudEvaluationProductionAnomalyProductionTransactionReference;
 
     /*Details the conclusion of the analysis and determination (e.g. diagnosis of likely fraud)*/
+    @MetaField
     private String fraudDiagnosisDetermination;
 
     /*Details the recommended action in response to the analysis (e.g. accept or reject the transaction, flag account for fraud)*/
+    @MetaField
     private String fraudDiagnosisRecommendation;
 
     public void setProductProductionSessionReference(org.museframework.bian.classes.Object productProductionSessionReference) {

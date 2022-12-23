@@ -1,10 +1,18 @@
 package org.museframework.bian.leasing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeFeesRequest {
+    @MetaField
     private String leasingid;
 
+    @MetaField
     private String feesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.leasing.dto.bq.Fees fees;
 
     public void setLeasingid(String leasingid) {

@@ -1,44 +1,61 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within ECM And DCM. */
 package org.museframework.bian.ecmanddcm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ECMAndDCMFacility {
     /*Reference to the advisory service session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the customer receiving the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the customer account/relationship for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Business unit and or employee reference to the source of the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*The document reference for associated documents such as disclosures and acceptance records*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Definition of the involved parties or associations to the issuance project*/
+    @MetaField
     private String associations;
 
     /*The type of association (e.g. co-investor, legal)*/
+    @MetaField
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
+    @MetaField
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object associationReference;
 
     /*The schedule for work tasks performed and to be performed through the issuing process*/
+    @MetaField
     private String ECMAndDCMFulfillmentSchedule;
 
     /*Key dates associated with the issuance process (e.g. engagement date, prospectus date, offering date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     /*The consolidated record of the developed investment vehicle. Combines the output of the development and issuance activities, participant details, investment transaction records as appropriate (details not included at this time)*/
+    @MetaField
     private String ECMAndDCMInstrumentRecord;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

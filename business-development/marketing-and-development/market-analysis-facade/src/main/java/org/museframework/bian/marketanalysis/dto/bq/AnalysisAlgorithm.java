@@ -3,53 +3,73 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.marketanalysis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AnalysisAlgorithm {
     /*Defines the type of algorithm (e.g. regression)*/
+    @MetaField
     private String analysisAlgorithmType;
 
     /*The definition of the algorithm, in particular required inputs, the internal data, calculations and outputs*/
+    @MetaField
     private String analysisAlgorithmSpecification;
 
     /*Guidance on usage of the algorithm*/
+    @MetaField
     private String analysisAlgorithmGuidance;
 
     /*The externally sourced general market research and bank maintained research viewpoints used in the analysis*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object analysisAlgorithmReferencedMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
+    @MetaField
     private String marketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
+    @MetaField
     private String marketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
+    @MetaField
     private String marketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
+    @MetaField
     private String marketResearchReport;
 
     /*Reference to an internally maintained market research viewpoint*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object generalMarketResearchDirectoryEntryInstanceReference;
 
     /*Request record of the analysis algorithm execution*/
+    @MetaField
     private String analysisAlgorithmRequestRecord;
 
     /*The specific details of the request*/
+    @MetaField
     private String analysisAlgorithmRequest;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String analysisAlgorithmWorkProducts;
 
     /*The output from executing the algorithm*/
+    @MetaField
     private String analysisAlgorithmRequestResult;
 
     /*The record of the use of general market research analysis algorithm*/
+    @MetaField
     private String analysisAlgorithmUsageRecord;
 
     /*A record of the usage of the algorithm*/
+    @MetaField
     private String analysisAlgorithmUsage;
 
     /*A record of reported impact/accuracy of the algorithm*/
+    @MetaField
     private String analysisAlgorithmImpact;
 
     public void setAnalysisAlgorithmType(String analysisAlgorithmType) {

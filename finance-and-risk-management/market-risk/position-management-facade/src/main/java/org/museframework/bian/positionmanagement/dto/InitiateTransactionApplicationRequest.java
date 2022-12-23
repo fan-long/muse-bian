@@ -1,10 +1,18 @@
 package org.museframework.bian.positionmanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTransactionApplicationRequest {
+    @MetaField
     private String positionmanagementid;
 
+    @MetaField
     private String transactionapplicationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.positionmanagement.dto.bq.TransactionApplication transactionApplication;
 
     public void setPositionmanagementid(String positionmanagementid) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.corbanope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeInboundPaymentsRequest {
+    @MetaField
     private String correspondentbankoperationsid;
 
+    @MetaField
     private String inboundpaymentsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corbanope.dto.bq.InboundPayments inboundPayments;
 
     public void setCorrespondentbankoperationsid(String correspondentbankoperationsid) {

@@ -1,50 +1,69 @@
 /**/
 package org.museframework.bian.savingsaccount.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DepositsandWithdrawals {
     /*The type of deposit transaction that can be applied to the account (e.g. customer deposit, internal credit)*/
+    @MetaField
     private String depositType;
 
     /*The type of withdrawal transaction that can be applied to the account (e.g. customer withdrawal, internal service charge, disbursement)*/
+    @MetaField
     private String withdrawalType;
 
     /*The handling options if a withdrawal results in a breach of an account limit*/
+    @MetaField
     private String accountLimitBreachResponse;
 
     /*The collection of applicable rates*/
+    @MetaField
     private String depositTransaction;
 
     /*Identifies the source of the deposit*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object depositTransactionSourceReference;
 
     /*The type of deposit made with the transaction*/
+    @MetaField
     private String depositTransactionDepositType;
 
     /*Any necessary details describing the purpose or reference properties of the deposit*/
+    @MetaField
     private String depositTransactionDescription;
 
     /*The deposited amount*/
+    @MetaField
     private String depositTransactionAmount;
 
     /*The date and time the deposit was initiated*/
+    @MetaField
     private String depositTransactionDate;
 
     /*The record of applied interest*/
+    @MetaField
     private String withdrawalTransaction;
 
     /*Identifies the target for the withdrawal*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object withdrawalTransactionSourceReference;
 
     /*The type of withdrawal made with the transaction*/
+    @MetaField
     private String withdrawalTransactionWithdrawalType;
 
     /*Any necessary details describing the purpose or reference properties of the withdrawal*/
+    @MetaField
     private String withdrawalTransactionDescription;
 
     /*The withdrawn amount*/
+    @MetaField
     private String withdrawalTransactionAmount;
 
     /*The date and time the withdrawal was initiated*/
+    @MetaField
     private String withdrawalTransactionDate;
 
     public void setDepositType(String depositType) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.fininsrefdatman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateFuturesInstrumentpropertyRequest {
+    @MetaField
     private String financialinstrumentreferencedatamanagementid;
 
+    @MetaField
     private String futuresinstrumentpropertyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.fininsrefdatman.dto.bq.FuturesInstrumentproperty futuresInstrumentproperty;
 
     public void setFinancialinstrumentreferencedatamanagementid(String financialinstrumentreferencedatamanagementid) {

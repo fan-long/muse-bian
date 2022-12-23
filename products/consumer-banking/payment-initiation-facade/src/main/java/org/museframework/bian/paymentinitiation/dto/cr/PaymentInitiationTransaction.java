@@ -1,68 +1,93 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Payment Initiation. */
 package org.museframework.bian.paymentinitiation.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PaymentInitiationTransaction {
     /*The type of payment transaction (e.g. over the counter-OTC, intra-account, overseas)*/
+    @MetaField
     private String paymentTransactionType;
 
     /*Details of the recurring payment. Can be used to pre-populate the payment request*/
+    @MetaField
     private String recurringPaymentRecord;
 
     /*Reference for a customer that uses recurring payments facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object recurringPaymentCustomerReference;
 
     /*Reference used by the customer to identify a past payment transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object recurringPaymentReference;
 
     /*Reference to the customer initiating the payment transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The details of the payment transaction*/
+    @MetaField
     private String paymentTransaction;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerBankReference;
 
     /*Reference to the payer's account (the source of funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerProductInstanceReference;
 
     /*The target for the payment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the payee's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Reference to the payee's account (the target for the funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
+    @MetaField
     private String amount;
 
     /*Currency for the amounts*/
+    @MetaField
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date*/
+    @MetaField
     private String date;
 
     /*Processing and exchange fees as appropriate*/
+    @MetaField
     private String paymentFeesCharges;
 
     /*Selection of the preferred mechanism (e.g. SWIFT, ACH, Intra account)*/
+    @MetaField
     private String paymentMechanism;
 
     /*Details captured for reference and compliance reporting purposes*/
+    @MetaField
     private String paymentPurpose;
 
     /*Payer identification document for OTC payment transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The copy of the identification document used*/
+    @MetaField
     private String documentContent;
 
     public void setPaymentTransactionType(String paymentTransactionType) {

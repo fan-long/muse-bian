@@ -1,10 +1,18 @@
 package org.museframework.bian.leaiteadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateRegistrationRequest {
+    @MetaField
     private String leasingitemadministrationid;
 
+    @MetaField
     private String registrationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.leaiteadm.dto.bq.Registration registration;
 
     public void setLeasingitemadministrationid(String leasingitemadministrationid) {

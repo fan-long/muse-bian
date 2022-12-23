@@ -1,10 +1,18 @@
 package org.museframework.bian.sessiondialogue.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateQueryRequest {
+    @MetaField
     private String sessiondialogueid;
 
+    @MetaField
     private String queryid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.sessiondialogue.dto.bq.Query query;
 
     public void setSessiondialogueid(String sessiondialogueid) {

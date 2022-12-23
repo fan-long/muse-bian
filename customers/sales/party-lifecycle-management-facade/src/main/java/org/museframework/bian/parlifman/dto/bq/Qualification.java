@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.parlifman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Qualification {
     /*The type of qualification check  (e.g. PEP/watch list checks, credit worthiness, legal jeopardy)*/
+    @MetaField
     private String qualificationType;
 
     /*Reference to an external verification source (e.g. for registered address/location verification)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicDirectoryReference;
 
     /*Reference to an external verification service (e.g. to perform background verification checks)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object specialistAgencyServiceReference;
 
     /*The record of a specific qualification task*/
+    @MetaField
     private String qualificationTaskRecord;
 
     /*Description of the approach taken*/
+    @MetaField
     private String qualificationTaskDescription;
 
     /*Result from the qualification service request*/
+    @MetaField
     private String specialistAgencyRegulatorServiceRequestResult;
 
     /*Reference to documents used for authentication*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String qualificationTaskWorkProducts;
 
     /*The outcome of the qualification workstep*/
+    @MetaField
     private String qualificationTaskResult;
 
     public void setQualificationType(String qualificationType) {

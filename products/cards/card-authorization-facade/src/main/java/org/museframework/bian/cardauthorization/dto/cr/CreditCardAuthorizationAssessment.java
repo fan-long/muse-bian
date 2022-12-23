@@ -1,68 +1,93 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Card Authorization. */
 package org.museframework.bian.cardauthorization.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditCardAuthorizationAssessment {
     /*Reference to the network the authentication is processed through*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object networkReference;
 
     /*Reference to the Acquiring bank requesting authorization*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Reference to the Issuing bank providing authorization*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*The card transaction submitted for authorization by the merchant*/
+    @MetaField
     private String cardTransactionRecord;
 
     /*The account number associated with the card transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductInstanceReference;
 
     /*The identity of the account holder submitting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardHolderReference;
 
     /*Reference to the issued device submitted to authorize the transaction (e.g. card number)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionIssuedDeviceReference;
 
     /*Reference to the network the card transaction is handled by as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionNetworkReference;
 
     /*Refers to the card holder's issuing bank as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionIssuingBankReference;
 
     /*Refers to the merchant's acquiring bank as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantAcquiringBankReference;
 
     /*The type of transaction (purchase, cash advance, etc.)*/
+    @MetaField
     private String cardTransactionType;
 
     /*The currency that the transaction is made in*/
+    @MetaField
     private String cardTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
+    @MetaField
     private String cardTransactionAmountType;
 
     /*The amount corresponding to the type*/
+    @MetaField
     private String cardTransactionAmount;
 
     /*Refers to the merchant initiating settlement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantReference;
 
     /*Refers to the point of sale location*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionLocationReference;
 
     /*Details of the transaction (e.g. purchased service/product, purpose)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
+    @MetaField
     private String cardTransactionDateTime;
 
     /*The applied currency conversion charge*/
+    @MetaField
     private String cardTransactionFXConversionCharge;
 
     /*The applied intercharge fee*/
+    @MetaField
     private String cardTransactionInterchargeFee;
 
     /*Details the reference, amount, timestamp of the transaction authorization*/
+    @MetaField
     private String cardTransactionAuthorizationRecord;
 
     public void setNetworkReference(org.museframework.bian.classes.Object networkReference) {

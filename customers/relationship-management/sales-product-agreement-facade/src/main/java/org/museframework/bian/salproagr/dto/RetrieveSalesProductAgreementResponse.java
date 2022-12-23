@@ -1,6 +1,12 @@
 package org.museframework.bian.salproagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveSalesProductAgreementResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.salproagr.dto.cr.SalesProductAgreement salesProductAgreement;
 
     public void setSalesProductAgreement(org.museframework.bian.salproagr.dto.cr.SalesProductAgreement salesProductAgreement) {

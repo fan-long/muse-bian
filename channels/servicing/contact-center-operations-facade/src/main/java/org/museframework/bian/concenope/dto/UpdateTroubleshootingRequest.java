@@ -1,10 +1,18 @@
 package org.museframework.bian.concenope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTroubleshootingRequest {
+    @MetaField
     private String contactcenteroperationsid;
 
+    @MetaField
     private String troubleshootingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.concenope.dto.bq.Troubleshooting troubleshooting;
 
     public void setContactcenteroperationsid(String contactcenteroperationsid) {

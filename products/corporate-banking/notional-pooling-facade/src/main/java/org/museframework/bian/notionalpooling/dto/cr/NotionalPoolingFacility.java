@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Notional Pooling. */
 package org.museframework.bian.notionalpooling.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class NotionalPoolingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature notionalPoolingFacilitySelectedOption;
 
     /*The status of Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityStatus;
 
     /*Reference to the party who is involved in Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet notionalPoolingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Notional Pooling Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction notionalPoolingFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Notional Pooling Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit notionalPoolingFacilityBookingLocation;
 
     /*Reference to the account which is linked to Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account notionalPoolingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Notional Pooling Facility*/
+    @MetaField
     private String notionalPoolingFacilityCustomerReference;
 
     /*The position of Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position notionalPoolingFacilityPosition;
 
     /*Reference to the product which is linked to Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct notionalPoolingFacilityProductReference;
 
     /*Reference to the limitation related to the position of Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement notionalPoolingFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Notional Pooling Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility notionalPoolingFacilityReference;
 
     public void setNotionalPoolingFacilityParameterType(String notionalPoolingFacilityParameterType) {

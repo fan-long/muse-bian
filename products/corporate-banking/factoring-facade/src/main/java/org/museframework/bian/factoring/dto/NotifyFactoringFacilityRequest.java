@@ -1,6 +1,12 @@
 package org.museframework.bian.factoring.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyFactoringFacilityRequest {
+    @MetaField
     private String factoringid;
 
     public void setFactoringid(String factoringid) {

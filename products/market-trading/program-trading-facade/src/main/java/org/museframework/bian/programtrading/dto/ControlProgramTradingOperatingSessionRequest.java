@@ -1,8 +1,15 @@
 package org.museframework.bian.programtrading.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlProgramTradingOperatingSessionRequest {
+    @MetaField
     private String programtradingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.programtrading.dto.cr.ProgramTradingOperatingSession programTradingOperatingSession;
 
     public void setProgramtradingid(String programtradingid) {

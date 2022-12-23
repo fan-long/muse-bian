@@ -2,32 +2,45 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.chequeprocessing.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ChequeProcessingOperatingSession extends org.museframework.bian.classes.ChequeProcessingOperatingSession {
     /*The timetable of Cheque Processing Operating Session*/
+    @MetaField
     private String chequeProcessingOperatingSessionSchedule;
 
     /*The status of Cheque Processing Operating Session*/
+    @MetaField
     private String chequeProcessingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Cheque Processing Operating Session*/
+    @MetaField
     private String chequeProcessingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Cheque Processing Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object chequeProcessingOperatingSessionReference;
 
     /*Reference to the party who provides the services of Cheque Processing Operating Session */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object chequeProcessingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Cheque Processing Operating Session */
+    @MetaField
     private String chequeProcessingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Cheque Processing Operating Session*/
+    @MetaField
     private String chequeProcessingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Cheque Processing Operating Session */
+    @MetaField
     private String chequeProcessingOperatingSessionServiceType;
 
     /*The configuration of Cheque Processing Operating Session*/
+    @MetaField
     private String chequeProcessingOperatingSessionServiceConfiguration;
 
     public void setChequeProcessingOperatingSessionSchedule(String chequeProcessingOperatingSessionSchedule) {

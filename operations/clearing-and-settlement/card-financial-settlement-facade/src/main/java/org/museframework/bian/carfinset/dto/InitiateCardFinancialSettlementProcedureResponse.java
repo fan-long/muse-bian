@@ -1,6 +1,12 @@
 package org.museframework.bian.carfinset.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateCardFinancialSettlementProcedureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.carfinset.dto.cr.CardFinancialSettlementProcedure cardFinancialSettlementProcedure;
 
     public void setCardFinancialSettlementProcedure(org.museframework.bian.carfinset.dto.cr.CardFinancialSettlementProcedure cardFinancialSettlementProcedure) {

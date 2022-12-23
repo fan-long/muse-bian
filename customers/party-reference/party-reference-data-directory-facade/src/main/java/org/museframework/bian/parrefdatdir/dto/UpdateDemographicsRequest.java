@@ -1,10 +1,18 @@
 package org.museframework.bian.parrefdatdir.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDemographicsRequest {
+    @MetaField
     private String partyreferencedatadirectoryid;
 
+    @MetaField
     private String demographicsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.parrefdatdir.dto.bq.Demographics demographics;
 
     public void setPartyreferencedatadirectoryid(String partyreferencedatadirectoryid) {

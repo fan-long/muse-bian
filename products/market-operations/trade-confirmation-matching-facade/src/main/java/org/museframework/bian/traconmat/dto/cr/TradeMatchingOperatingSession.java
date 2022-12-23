@@ -1,35 +1,49 @@
 /*Operate equipment and/or a largely automated facility within Trade Confirmation Matching. */
 package org.museframework.bian.traconmat.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradeMatchingOperatingSession extends org.museframework.bian.classes.TradeMatchingOperatingSession {
     /*Timetable to operate Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionSchedule;
 
     /*The status of Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Trade Matching Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log tradeMatchingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Trade Matching Operating Session*/
+    @MetaField
     private String tradeMatchingOperatingSessionServiceType;
 
     /*The configuration of Trade Matching Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.SystemConfigurationOption tradeMatchingOperatingSessionServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Trade Matching Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session tradeMatchingOperatingSessionReference;
 
     public void setTradeMatchingOperatingSessionSchedule(String tradeMatchingOperatingSessionSchedule) {

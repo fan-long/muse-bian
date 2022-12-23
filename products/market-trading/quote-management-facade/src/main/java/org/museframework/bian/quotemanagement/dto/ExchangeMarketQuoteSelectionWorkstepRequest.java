@@ -1,10 +1,18 @@
 package org.museframework.bian.quotemanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeMarketQuoteSelectionWorkstepRequest {
+    @MetaField
     private String quotemanagementid;
 
+    @MetaField
     private String marketquoteselectionworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.quotemanagement.dto.bq.MarketQuoteSelectionWorkstep marketQuoteSelectionWorkstep;
 
     public void setQuotemanagementid(String quotemanagementid) {

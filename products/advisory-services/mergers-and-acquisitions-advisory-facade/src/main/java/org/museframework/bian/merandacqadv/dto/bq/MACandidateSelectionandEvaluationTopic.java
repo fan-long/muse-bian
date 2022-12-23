@@ -1,29 +1,41 @@
 /*The M&A Candidate Selection and Evaluation Topic advice is one specific topic that can be included in providing M&A Candidate Selection and Evaluation Topic*/
 package org.museframework.bian.merandacqadv.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MACandidateSelectionandEvaluationTopic {
     /*Reference to M&A Candidate Selection and Evaluation Topic*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object mergersAndAcquisitionAdviceReference;
 
     /*Reference to M&A Candidate Selection and Evaluation Topic*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object MACandidateSelectionandEvaluationTopicReference;
 
     /*The type of M&A Candidate Selection and Evaluation Topic*/
+    @MetaField
     private String MACandidateSelectionandEvaluationTopicType;
 
     /*The M&A Candidate Selection and Evaluation Topic specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for providing the advice/recommendation*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The completion status once the advice/recommendation has been provided*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*The required status/situation before the advice/recommendation can be provided*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in providing the advice/recommendation*/
+    @MetaField
     private String schedule;
 
     public void setMergersAndAcquisitionAdviceReference(org.museframework.bian.classes.Object mergersAndAcquisitionAdviceReference) {

@@ -3,44 +3,61 @@
 Examples: Invoice generation*/
 package org.museframework.bian.carfinset.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Consolidation {
     /*Refers to the card transaction as recorded by issuer and/or acquirer - these are consolidated for the settlement period/window*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionRecordReference;
 
     /*Card transaction details referenced in settlement processing*/
+    @MetaField
     private String cardTransactionRecord;
 
     /*The account number associated with the card transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductInstanceReference;
 
     /*Refers to the card holder's issuing bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionIssuingBankReference;
 
     /*Refers to the merchant's acquiring bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantAcquiringBankReference;
 
     /*The type of transaction (purchase, cash advance, etc.)*/
+    @MetaField
     private String cardTransactionType;
 
     /*The currency that the transaction is made in*/
+    @MetaField
     private String cardTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
+    @MetaField
     private String cardTransactionAmountType;
 
     /*The amount corresponding to the type*/
+    @MetaField
     private String cardTransactionAmount;
 
     /*Refers to the merchant initiating settlement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantReference;
 
     /*Refers to the point of sale location*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionLocationReference;
 
     /*Details of the transaction (e.g. purchased service/product, purpose)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
+    @MetaField
     private String cardTransactionDateTime;
 
     public void setCardTransactionRecordReference(org.museframework.bian.classes.Object cardTransactionRecordReference) {

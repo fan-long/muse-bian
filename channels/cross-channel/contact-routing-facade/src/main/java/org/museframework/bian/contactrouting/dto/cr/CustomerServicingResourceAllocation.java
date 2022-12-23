@@ -2,29 +2,41 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.contactrouting.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerServicingResourceAllocation {
     /*Maintains the allocation status of available service resources. Can include future booking commitments*/
+    @MetaField
     private String servicingResourceAllocationServiceSchedule;
 
     /*Reference to a servicing resource*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingResourceReference;
 
     /*Details about a registered servicing resource/specialist*/
+    @MetaField
     private String servicingResourceRecord;
 
     /*Details the qualification, expertise and level of experience of a servicing specialist*/
+    @MetaField
     private String servicingResourceQualificationProfile;
 
     /*Reference to the assigned servicing position for the resource for the current session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingPositionReference;
 
     /*Details the time the resource plans to be and is actually available for allocations*/
+    @MetaField
     private String servicingResourceAvailabilitySchedule;
 
     /*Tracks the current status indicating availability for assignment*/
+    @MetaField
     private String servicingResourceStatus;
 
     /*Reference to a servicing session assignments made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingSessionReference;
 
     public void setServicingResourceAllocationServiceSchedule(String servicingResourceAllocationServiceSchedule) {

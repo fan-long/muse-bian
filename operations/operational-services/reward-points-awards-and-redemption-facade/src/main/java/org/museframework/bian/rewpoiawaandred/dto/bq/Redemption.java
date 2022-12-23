@@ -2,32 +2,45 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.rewpoiawaandred.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Redemption {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField
     private String redemptionPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String redemptionTaskSchedule;
 
     /*The Reward Points Transaction specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService awardsRedemption;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField
     private String redemptionPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String redemptionAwardsRedemptionServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String redemptionAwardsRedemptionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String redemptionAwardsRedemptionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String redemptionAwardsRedemptionServiceWorkProduct;
 
     /**/
+    @MetaField
     private String redemptionAwardsRedemptionServiceName;
 
     public void setRedemptionPreconditions(String redemptionPreconditions) {

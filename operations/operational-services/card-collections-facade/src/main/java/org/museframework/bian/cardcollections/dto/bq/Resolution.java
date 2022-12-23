@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcollections.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Resolution {
     /*Details of the resolution decision*/
+    @MetaField
     private String cardCollectionsResolutionDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
+    @MetaField
     private String cardCollectionsResolutionWorkProduct;
 
     public void setCardCollectionsResolutionDecision(String cardCollectionsResolutionDecision) {

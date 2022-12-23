@@ -2,17 +2,25 @@
 */
 package org.museframework.bian.bralocope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchLocationOperationsOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis branchLocationOperationsPerformanceAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis branchLocationOperationsActivityAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan branchLocationOperationsAdministrativePlan;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement branchLocationOperationsAdministrationTask;
 
     public void setBranchLocationOperationsPerformanceAnalysis(org.museframework.bian.classes.Analysis branchLocationOperationsPerformanceAnalysis) {

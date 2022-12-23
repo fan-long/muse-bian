@@ -3,26 +3,37 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.cusrelman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Development {
     /*A specific task undertaken to develop the relationship*/
+    @MetaField
     private String relationshipDevelopmentTask;
 
     /*The type of relationship development activity (e.g. sales, product explanation, financial advice)*/
+    @MetaField
     private String customerDevelopmentTaskType;
 
     /*A description of the task, including any intelligence gathered and follow up actions agreed*/
+    @MetaField
     private String customerDevelopmentTaskDescription;
 
     /*A plan outlining longer term relationship goals and performance/profitability both target and actual*/
+    @MetaField
     private String customerRelationshipDevelopmentPlan;
 
     /*Reference to relationship managers and product specialists linked to the plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
+    @MetaField
     private String customerDevelopmentWorkProduct;
 
     /*The outcomes of customer development activity*/
+    @MetaField
     private String customerDevelopmentTaskResult;
 
     public void setRelationshipDevelopmentTask(String relationshipDevelopmentTask) {

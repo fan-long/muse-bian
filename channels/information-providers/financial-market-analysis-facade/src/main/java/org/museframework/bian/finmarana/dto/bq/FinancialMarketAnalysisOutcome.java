@@ -4,11 +4,17 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.finmarana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialMarketAnalysisOutcome {
     /**/
+    @MetaField
     private String financialMarketAnalysisWorkProduct;
 
     /**/
+    @MetaField
     private String financialMarketAnalysisAnalysisType;
 
     public void setFinancialMarketAnalysisWorkProduct(String financialMarketAnalysisWorkProduct) {

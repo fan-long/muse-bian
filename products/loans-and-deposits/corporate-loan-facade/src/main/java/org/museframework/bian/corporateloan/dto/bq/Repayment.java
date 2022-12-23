@@ -1,26 +1,37 @@
 /**/
 package org.museframework.bian.corporateloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Repayment {
     /*The type of repayment (e.g. scheduled repayment, balloon/early termination)*/
+    @MetaField
     private String repaymentTransactionType;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerReference;
 
     /*Reference to the account where the payment is made from*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerProductInstanceReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerBankReference;
 
     /*The amount of the repayment*/
+    @MetaField
     private String repaymentTransactionAmount;
 
     /*The currency used for the repayment*/
+    @MetaField
     private String repaymentTransactionCurrency;
 
     /*The value date for the repayment transaction*/
+    @MetaField
     private String repaymentTransactionValueDate;
 
     public void setRepaymentTransactionType(String repaymentTransactionType) {

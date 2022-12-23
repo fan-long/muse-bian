@@ -1,6 +1,12 @@
 package org.museframework.bian.traposope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteTradeQuoteandPricingFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.traposope.dto.bq.TradeQuoteandPricingFunction tradeQuoteandPricingFunction;
 
     public void setTradeQuoteandPricingFunction(org.museframework.bian.traposope.dto.bq.TradeQuoteandPricingFunction tradeQuoteandPricingFunction) {

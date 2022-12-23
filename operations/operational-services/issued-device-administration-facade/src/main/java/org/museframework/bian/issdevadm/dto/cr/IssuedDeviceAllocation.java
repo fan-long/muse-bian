@@ -2,23 +2,33 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.issdevadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class IssuedDeviceAllocation extends org.museframework.bian.classes.IssuedDeviceAllocation {
     /*Reference to the holder of the issued device*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Linked products and services, there can be many*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of device allocated (used to reference assignment type)*/
+    @MetaField
     private String issuedDeviceType;
 
     /*Access/usage entitlements, can be by product instance (e.g. value, location, frequency and duration access constraints)*/
+    @MetaField
     private String associatedPermissions;
 
     /*The date the issued device is registered*/
+    @MetaField
     private String issueDate;
 
     /*The refresh period for the issued device*/
+    @MetaField
     private String validFrom_ToDate;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

@@ -3,11 +3,17 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.cuscamman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CampaignDirection {
     /*Schedule of planned and actual customer campaign design development and refinement activity*/
+    @MetaField
     private String customerCampaignDevelopmentSchedule;
 
     /*Schedule of planned and actual customer campaign execution activities*/
+    @MetaField
     private String customerCampaignExecutionSchedule;
 
     public void setCustomerCampaignDevelopmentSchedule(String customerCampaignDevelopmentSchedule) {

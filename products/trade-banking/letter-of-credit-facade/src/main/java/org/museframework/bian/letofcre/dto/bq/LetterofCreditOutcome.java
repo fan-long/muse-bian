@@ -1,35 +1,49 @@
 /*The Customer Collateral Allocation Task is a discrete action or task that is required in the execution of the Customer Collateral Allocation Task*/
 package org.museframework.bian.letofcre.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LetterofCreditOutcome {
     /**/
+    @MetaField
     private String letterofCreditCounterparty;
 
     /**/
+    @MetaField
     private String letterofCreditDividend;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FeeTransaction letterofCreditFees;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.InterestTransaction letterofCreditInterest;
 
     /**/
+    @MetaField
     private String letterofCreditMargining;
 
     /**/
+    @MetaField
     private String letterofCreditNotionalPrincipal;
 
     /**/
+    @MetaField
     private String letterofCreditOptions;
 
     /**/
+    @MetaField
     private String letterofCreditRates;
 
     /**/
+    @MetaField
     private String letterofCreditSettlement;
 
     /**/
+    @MetaField
     private String letterofCreditWorkProduct;
 
     public void setLetterofCreditCounterparty(String letterofCreditCounterparty) {

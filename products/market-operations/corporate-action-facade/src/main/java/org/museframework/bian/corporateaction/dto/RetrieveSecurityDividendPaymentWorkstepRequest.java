@@ -1,8 +1,15 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveSecurityDividendPaymentWorkstepRequest {
+    @MetaField
     private String corporateactionid;
 
+    @MetaField
     private String securitydividendpaymentworkstepid;
 
     public void setCorporateactionid(String corporateactionid) {

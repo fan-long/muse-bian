@@ -1,11 +1,17 @@
 /*A course of action for doing Market Quote Request Workstep in the context of executing the Market Quote Request Workstep*/
 package org.museframework.bian.quotemanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class QuoteManagementOutcome {
     /**/
+    @MetaField
     private String quoteManagementWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure quoteManagementProcedure;
 
     public void setQuoteManagementWorkProduct(String quoteManagementWorkProduct) {

@@ -1,26 +1,37 @@
 /**/
 package org.museframework.bian.currentaccount.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class IssuedDevice extends org.museframework.bian.classes.IssuedDevice {
     /*A property of the issued device/inventory (e.g. card, checkbook, pay-in slip)*/
+    @MetaField
     private String issuedInventoryType;
 
     /*Definition of the inventory item, including processing and handling guidelines and rules*/
+    @MetaField
     private String issuedInventoryDescription;
 
     /*Definition of the processing option and impact (e.g. lost check handling)*/
+    @MetaField
     private String issuedInventoryOptionDefinition;
 
     /*The processing option setting*/
+    @MetaField
     private String issuedInventoryOptionSetting;
 
     /*Tracked property of the issued device/inventory (e.g. issued check numbers)*/
+    @MetaField
     private String issuedInventoryPropertyType;
 
     /*The tracked values associated with an issued device/inventory item*/
+    @MetaField
     private String issuedInventoryPropertyValue;
 
     /*The tracked status of the device/inventory item (e.g. active, suspended, cancelled)*/
+    @MetaField
     private String issuedInventoryStatus;
 
     public void setIssuedInventoryType(String issuedInventoryType) {

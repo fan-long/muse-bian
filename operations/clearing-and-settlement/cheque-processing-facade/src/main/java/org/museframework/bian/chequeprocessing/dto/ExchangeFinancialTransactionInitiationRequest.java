@@ -1,10 +1,18 @@
 package org.museframework.bian.chequeprocessing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeFinancialTransactionInitiationRequest {
+    @MetaField
     private String chequeprocessingid;
 
+    @MetaField
     private String financialtransactioninitiationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.chequeprocessing.dto.bq.FinancialTransactionInitiation financialTransactionInitiation;
 
     public void setChequeprocessingid(String chequeprocessingid) {

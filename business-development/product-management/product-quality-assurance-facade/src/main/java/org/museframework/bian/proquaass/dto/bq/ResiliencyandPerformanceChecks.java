@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.proquaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ResiliencyandPerformanceChecks {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String resiliencyandPerformanceChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String resiliencyandPerformanceChecksAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String resiliencyandPerformanceChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService resiliencyandPerformanceChecks;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String resiliencyandPerformanceChecksServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String resiliencyandPerformanceChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String resiliencyandPerformanceChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String resiliencyandPerformanceChecksServiceWorkProduct;
 
     /**/
+    @MetaField
     private String resiliencyandPerformanceChecksServiceName;
 
     public void setResiliencyandPerformanceChecksPreconditions(String resiliencyandPerformanceChecksPreconditions) {

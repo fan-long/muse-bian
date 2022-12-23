@@ -1,10 +1,18 @@
 package org.museframework.bian.ebranchmanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTroubleshootingRequest {
+    @MetaField
     private String ebranchmanagementid;
 
+    @MetaField
     private String troubleshootingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.ebranchmanagement.dto.bq.Troubleshooting troubleshooting;
 
     public void setEbranchmanagementid(String ebranchmanagementid) {

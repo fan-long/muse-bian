@@ -2,35 +2,49 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.regandlegaut.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Troubleshooting extends org.museframework.bian.classes.Troubleshooting {
     /*The required status/situation before the duty/obligation can be met*/
+    @MetaField
     private String troubleshootingPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object troubleshootingBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
+    @MetaField
     private String troubleshootingWorkSchedule;
 
     /*The Regulatory&Legal Authority Relationship ManagementPlan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
+    @MetaField
     private String troubleshootingPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String troubleshootingServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String troubleshootingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String troubleshootingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String troubleshootingServiceWorkProduct;
 
     /**/
+    @MetaField
     private String troubleshootingServiceName;
 
     public void setTroubleshootingPreconditions(String troubleshootingPreconditions) {

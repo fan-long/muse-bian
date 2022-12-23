@@ -1,14 +1,21 @@
 /*Capture and maintain reference information about some type of entitity within Location Data Management.*/
 package org.museframework.bian.locdatman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LocationDirectoryEntry extends org.museframework.bian.classes.LocationDirectoryEntry {
     /*Reference to associated location (can be a physical or electronic location)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Location locationReference;
 
     /*Key dates associated with the directory entry (e.g. open date, refresh date)*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Directoryentrydatetypevalues directoryEntryDateType;
 
     /*Value of the date type*/
+    @MetaField
     private String directoryEntryDate;
 
     public void setLocationReference(org.museframework.bian.classes.Location locationReference) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.customerbilling.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTrackingandRemindersRequest {
+    @MetaField
     private String customerbillingid;
 
+    @MetaField
     private String trackingandremindersid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerbilling.dto.bq.TrackingandReminders trackingandReminders;
 
     public void setCustomerbillingid(String customerbillingid) {

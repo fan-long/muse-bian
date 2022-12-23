@@ -2,32 +2,45 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.knowledgeexchange.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class IntellectualPropertyExchangeOperatingSession {
     /*The timetable of Intellectual Property Exchange Operating Session*/
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionSchedule;
 
     /*The status of Intellectual Property Exchange Operating Session*/
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Intellectual Property Exchange Operating Session*/
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Intellectual Property Exchange Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object intellectualPropertyExchangeOperatingSessionReference;
 
     /*Reference to the party who provides the services of Intellectual Property Exchange Operating Session */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object intellectualPropertyExchangeOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Intellectual Property Exchange Operating Session */
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Intellectual Property Exchange Operating Session*/
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Intellectual Property Exchange Operating Session */
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionServiceType;
 
     /*The configuration of Intellectual Property Exchange Operating Session*/
+    @MetaField
     private String intellectualPropertyExchangeOperatingSessionServiceConfiguration;
 
     public void setIntellectualPropertyExchangeOperatingSessionSchedule(String intellectualPropertyExchangeOperatingSessionSchedule) {

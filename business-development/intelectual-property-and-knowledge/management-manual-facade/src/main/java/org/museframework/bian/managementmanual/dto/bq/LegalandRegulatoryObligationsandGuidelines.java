@@ -2,32 +2,45 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.managementmanual.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LegalandRegulatoryObligationsandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesVersionNumber;
 
     /*The Management Manual Specification specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService legalandRegulatoryObligationsandGuidelines;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesServiceWorkProduct;
 
     /**/
+    @MetaField
     private String legalandRegulatoryObligationsandGuidelinesServiceName;
 
     public void setLegalandRegulatoryObligationsandGuidelinesPreconditions(String legalandRegulatoryObligationsandGuidelinesPreconditions) {

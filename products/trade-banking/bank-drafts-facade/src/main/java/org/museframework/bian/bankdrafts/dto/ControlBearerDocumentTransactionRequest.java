@@ -1,8 +1,15 @@
 package org.museframework.bian.bankdrafts.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlBearerDocumentTransactionRequest {
+    @MetaField
     private String bankdraftsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.bankdrafts.dto.cr.BearerDocumentTransaction bearerDocumentTransaction;
 
     public void setBankdraftsid(String bankdraftsid) {

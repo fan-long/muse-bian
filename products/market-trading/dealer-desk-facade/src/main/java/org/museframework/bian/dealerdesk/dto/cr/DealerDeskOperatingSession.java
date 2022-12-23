@@ -1,35 +1,49 @@
 /*Operate equipment and/or a largely automated facility within Dealer Desk. */
 package org.museframework.bian.dealerdesk.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DealerDeskOperatingSession {
     /*Timetable to operate Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionSchedule;
 
     /*The status of Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Dealer Desk Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log dealerDeskOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Dealer Desk Operating Session*/
+    @MetaField
     private String dealerDeskOperatingSessionServiceType;
 
     /*The configuration of Dealer Desk Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.SystemConfigurationOption dealerDeskOperatingSessionServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Dealer Desk Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session dealerDeskOperatingSessionReference;
 
     public void setDealerDeskOperatingSessionSchedule(String dealerDeskOperatingSessionSchedule) {

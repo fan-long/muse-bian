@@ -1,6 +1,12 @@
 package org.museframework.bian.serevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateServicingEventLogRequest {
+    @MetaField(ref=true)
     private org.museframework.bian.serevehis.dto.cr.ServicingEventLog servicingEventLog;
 
     public void setServicingEventLog(org.museframework.bian.serevehis.dto.cr.ServicingEventLog servicingEventLog) {

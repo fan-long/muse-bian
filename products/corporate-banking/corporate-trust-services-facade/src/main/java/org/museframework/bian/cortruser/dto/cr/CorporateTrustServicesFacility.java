@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Corporate Trust Services. */
 package org.museframework.bian.cortruser.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateTrustServicesFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature corporateTrustServicesFacilitySelectedOption;
 
     /*The status of Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityStatus;
 
     /*Reference to the party who is involved in Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityAssociatedParty;
 
     /*The curreny which is arranged in Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityCurrency;
 
     /*Reference to the regulation which is defined in Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet corporateTrustServicesFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Corporate Trust Services Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction corporateTrustServicesFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Corporate Trust Services Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit corporateTrustServicesFacilityBookingLocation;
 
     /*Reference to the account which is linked to Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account corporateTrustServicesFacilityAccountReference;
 
     /*Reference to the customer who is involved in Corporate Trust Services Facility*/
+    @MetaField
     private String corporateTrustServicesFacilityCustomerReference;
 
     /*The position of Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position corporateTrustServicesFacilityPosition;
 
     /*Reference to the product which is linked to Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct corporateTrustServicesFacilityProductReference;
 
     /*Reference to the limitation related to the position of Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement corporateTrustServicesFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Corporate Trust Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility corporateTrustServicesFacilityReference;
 
     public void setCorporateTrustServicesFacilityParameterType(String corporateTrustServicesFacilityParameterType) {

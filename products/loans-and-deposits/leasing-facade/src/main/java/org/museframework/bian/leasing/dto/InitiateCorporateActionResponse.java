@@ -1,6 +1,12 @@
 package org.museframework.bian.leasing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateCorporateActionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.leasing.dto.bq.CorporateAction corporateAction;
 
     public void setCorporateAction(org.museframework.bian.leasing.dto.bq.CorporateAction corporateAction) {

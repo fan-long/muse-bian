@@ -1,6 +1,12 @@
 package org.museframework.bian.parroupro.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveStatusResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.parroupro.dto.bq.Status status;
 
     public void setStatus(org.museframework.bian.parroupro.dto.bq.Status status) {

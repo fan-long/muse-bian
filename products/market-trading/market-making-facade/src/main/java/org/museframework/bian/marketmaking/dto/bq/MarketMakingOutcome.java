@@ -1,11 +1,17 @@
 /*The configuration and execution of Market Making Security Traded Position Fulfillment arrangement within the Market Making Security Traded Position Fulfillment*/
 package org.museframework.bian.marketmaking.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketMakingOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility marketMakingFinancialFacility;
 
     /**/
+    @MetaField
     private String marketMakingWorkProduct;
 
     public void setMarketMakingFinancialFacility(org.museframework.bian.classes.FinancialFacility marketMakingFinancialFacility) {

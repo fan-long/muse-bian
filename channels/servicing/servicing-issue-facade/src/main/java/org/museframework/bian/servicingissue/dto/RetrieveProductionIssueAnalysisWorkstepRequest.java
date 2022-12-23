@@ -1,8 +1,15 @@
 package org.museframework.bian.servicingissue.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveProductionIssueAnalysisWorkstepRequest {
+    @MetaField
     private String servicingissueid;
 
+    @MetaField
     private String productionissueanalysisworkstepid;
 
     public void setServicingissueid(String servicingissueid) {

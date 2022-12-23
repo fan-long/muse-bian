@@ -1,8 +1,15 @@
 package org.museframework.bian.quotemanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestQuotationProcedureRequest {
+    @MetaField
     private String quotemanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.quotemanagement.dto.cr.QuotationProcedure quotationProcedure;
 
     public void setQuotemanagementid(String quotemanagementid) {

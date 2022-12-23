@@ -1,6 +1,12 @@
 package org.museframework.bian.advvoiserman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveTroubleshootingResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.advvoiserman.dto.bq.Troubleshooting troubleshooting;
 
     public void setTroubleshooting(org.museframework.bian.advvoiserman.dto.bq.Troubleshooting troubleshooting) {

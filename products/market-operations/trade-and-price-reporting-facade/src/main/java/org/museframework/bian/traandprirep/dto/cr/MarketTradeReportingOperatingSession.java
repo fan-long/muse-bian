@@ -1,35 +1,49 @@
 /*Operate equipment and/or a largely automated facility within Trade and Price Reporting. */
 package org.museframework.bian.traandprirep.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketTradeReportingOperatingSession extends org.museframework.bian.classes.MarketTradeReportingOperatingSession {
     /*Timetable to operate Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionSchedule;
 
     /*The status of Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Market Trade Reporting Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log marketTradeReportingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Market Trade Reporting Operating Session*/
+    @MetaField
     private String marketTradeReportingOperatingSessionServiceType;
 
     /*The configuration of Market Trade Reporting Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.SystemConfigurationOption marketTradeReportingOperatingSessionServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Market Trade Reporting Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session marketTradeReportingOperatingSessionReference;
 
     public void setMarketTradeReportingOperatingSessionSchedule(String marketTradeReportingOperatingSessionSchedule) {

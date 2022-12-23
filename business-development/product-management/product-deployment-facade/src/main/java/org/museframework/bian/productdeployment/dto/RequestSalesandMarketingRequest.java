@@ -1,10 +1,18 @@
 package org.museframework.bian.productdeployment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestSalesandMarketingRequest {
+    @MetaField
     private String productdeploymentid;
 
+    @MetaField
     private String salesandmarketingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productdeployment.dto.bq.SalesandMarketing salesandMarketing;
 
     public void setProductdeploymentid(String productdeploymentid) {

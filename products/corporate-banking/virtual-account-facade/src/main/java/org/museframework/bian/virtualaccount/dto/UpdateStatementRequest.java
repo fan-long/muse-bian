@@ -1,10 +1,18 @@
 package org.museframework.bian.virtualaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateStatementRequest {
+    @MetaField
     private String virtualaccountid;
 
+    @MetaField
     private String statementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.virtualaccount.dto.bq.Statement statement;
 
     public void setVirtualaccountid(String virtualaccountid) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.conadvser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateProductGuidanceResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.conadvser.dto.bq.ProductGuidance productGuidance;
 
     public void setProductGuidance(org.museframework.bian.conadvser.dto.bq.ProductGuidance productGuidance) {

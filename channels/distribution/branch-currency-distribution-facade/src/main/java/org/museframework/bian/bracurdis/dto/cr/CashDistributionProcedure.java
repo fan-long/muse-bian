@@ -2,65 +2,89 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.bracurdis.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CashDistributionProcedure extends org.museframework.bian.classes.CashDistributionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureParameterType;
 
     /*A selected optional business service as subject matter of Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureSelectedOption;
 
     /*Request to process CashDistribution*/
+    @MetaField
     private String cashDistributionProcedureRequest;
 
     /*Timetable to process CashDistribution*/
+    @MetaField
     private String cashDistributionProcedureSchedule;
 
     /*The status of Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureStatus;
 
     /*Reference to the party who is involved in Cash Distribution Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureReference;
 
     /*Reference to the business unit which is involved in Cash Distribution Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Cash Distribution Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to  Cash Distribution Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Cash Distribution Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Cash Distribution Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureType;
 
     /*The schedule according to which the service provider will process the Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Cash Distribution Procedure */
+    @MetaField
     private String cashDistributionProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Cash Distribution Procedure */
+    @MetaField
     private String cashDistributionProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Cash Distribution Procedure*/
+    @MetaField
     private String cashDistributionProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Cash Distribution Procedure */
+    @MetaField
     private String cashDistributionProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Cash Distribution Procedure */
+    @MetaField
     private String cashDistributionProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Cash Distribution Procedure */
+    @MetaField
     private String cashDistributionProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Cash Distribution Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cashDistributionProcedureCustomerAgreementReference;
 
     public void setCashDistributionProcedureParameterType(String cashDistributionProcedureParameterType) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.customeroffer.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCorrespondenceandDocumentsRequest {
+    @MetaField
     private String customerofferid;
 
+    @MetaField
     private String correspondenceanddocumentsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customeroffer.dto.bq.CorrespondenceandDocuments correspondenceandDocuments;
 
     public void setCustomerofferid(String customerofferid) {

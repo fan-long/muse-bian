@@ -3,32 +3,45 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.intpropor.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Maintenance {
     /*The schedule for maintenance tasks performed and to be performed (e.g. patent renewals)*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceSchedule;
 
     /*Reference to the intellectual property protection mechanism employed (e.g. copyright, trademark or patent reference number)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object intellectualPropertyAssetProtectionReference;
 
     /*Reference to the registration entity for the intellectual property protection mechanism (e.g. U.S. Patent Office)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object intellectualPropertyAssetRegistrationReference;
 
     /*A record of payments and other actions taken to maintain the asset*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceTaskRecord;
 
     /*The type of maintenance task (e.g. annual renewal)*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceTaskType;
 
     /*Description of the task performed*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceTaskDescription;
 
     /*File of consolidated notes, forms and documents for the maintenance task*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceTaskWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of any payments made as part of maintenance*/
+    @MetaField
     private String intellectualPropertyAssetMaintenanceTransaction;
 
     public void setIntellectualPropertyAssetMaintenanceSchedule(String intellectualPropertyAssetMaintenanceSchedule) {

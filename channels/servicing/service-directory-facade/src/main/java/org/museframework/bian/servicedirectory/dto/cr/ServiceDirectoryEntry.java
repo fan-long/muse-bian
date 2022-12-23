@@ -1,29 +1,41 @@
 /*Capture and maintain reference information about some type of entitity within Service Directory.*/
 package org.museframework.bian.servicedirectory.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServiceDirectoryEntry {
     /*Documentation of Service Directory Entry*/
+    @MetaField
     private String serviceDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Service Directory Entry*/
+    @MetaField
     private String serviceDirectoryEntrySchedule;
 
     /*The version of Service Directory Entry*/
+    @MetaField
     private String serviceDirectoryEntryVersion;
 
     /*The status of Service Directory Entry*/
+    @MetaField
     private String serviceDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Service Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log serviceDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Service Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log serviceDirectoryEntryUpdateLog;
 
     /*The configuration of Service Directory Entry*/
+    @MetaField
     private String serviceDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Service Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry serviceDirectoryEntryReference;
 
     public void setServiceDirectoryEntryDescription(String serviceDirectoryEntryDescription) {

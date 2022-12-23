@@ -1,10 +1,18 @@
 package org.museframework.bian.traconmat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTransactionConfirmationAffirmationFunctionRequest {
+    @MetaField
     private String tradeconfirmationmatchingid;
 
+    @MetaField
     private String transactionconfirmationaffirmationfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traconmat.dto.bq.TransactionConfirmationAffirmationFunction transactionConfirmationAffirmationFunction;
 
     public void setTradeconfirmationmatchingid(String tradeconfirmationmatchingid) {

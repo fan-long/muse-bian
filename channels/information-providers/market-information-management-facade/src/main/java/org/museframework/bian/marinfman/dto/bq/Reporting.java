@@ -3,20 +3,29 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.marinfman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Reporting {
     /*Is the report itself, including historical versions as appropriate*/
+    @MetaField
     private String financialMarketInformationReport;
 
     /*The report represents a specific managed information view of the scrubbed financial market information*/
+    @MetaField
     private String financialMarketInformationReportType;
 
     /*Is a detailed definition of the report contents, including properties that clarify the quality/integrity and timeliness of the content*/
+    @MetaField
     private String financialMarketInformationReportDescription;
 
     /*Is the schedule for maintaining the report content*/
+    @MetaField
     private String financialMarketInformationReportSchedule;
 
     /*Is a log/record of access made to the report by bank users*/
+    @MetaField
     private String financialMarketInformationReportAccessHistory;
 
     public void setFinancialMarketInformationReport(String financialMarketInformationReport) {

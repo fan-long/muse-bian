@@ -2,38 +2,53 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.cardcapture.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardCaptureOutcome {
     /**/
+    @MetaField
     private String cardCaptureCalendar;
 
     /**/
+    @MetaField
     private String cardCaptureCounterparty;
 
     /**/
+    @MetaField
     private String cardCaptureDividend;
 
     /**/
+    @MetaField
     private String cardCaptureFees;
 
     /**/
+    @MetaField
     private String cardCaptureInterest;
 
     /**/
+    @MetaField
     private String cardCaptureMargining;
 
     /**/
+    @MetaField
     private String cardCaptureNotionalPrincipal;
 
     /**/
+    @MetaField
     private String cardCaptureOptions;
 
     /**/
+    @MetaField
     private String cardCaptureRates;
 
     /**/
+    @MetaField
     private String cardCaptureSettlement;
 
     /**/
+    @MetaField
     private String cardCaptureWorkProduct;
 
     public void setCardCaptureCalendar(String cardCaptureCalendar) {

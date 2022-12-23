@@ -1,8 +1,15 @@
 package org.museframework.bian.customerportfolio.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestCustomerSegmentAnalysisRequest {
+    @MetaField
     private String customerportfolioid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerportfolio.dto.cr.CustomerSegmentAnalysis customerSegmentAnalysis;
 
     public void setCustomerportfolioid(String customerportfolioid) {

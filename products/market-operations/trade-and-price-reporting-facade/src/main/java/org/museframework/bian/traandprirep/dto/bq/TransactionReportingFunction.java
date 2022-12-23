@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Transaction Reporting Function for doing Transaction Reporting Function*/
 package org.museframework.bian.traandprirep.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TransactionReportingFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Transaction Reporting Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Transaction Reporting Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session marketTradeReportingOperatingSessionReference;
 
     /*Reference to Transaction Reporting Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function transactionReportingFunctionReference;
 
     /*The type of Transaction Reporting Function*/
+    @MetaField
     private String transactionReportingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

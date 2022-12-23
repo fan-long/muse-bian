@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Factoring. */
 package org.museframework.bian.factoring.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FactoringFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Factoring Facility*/
+    @MetaField
     private String factoringFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature factoringFacilitySelectedOption;
 
     /*The status of Factoring Facility*/
+    @MetaField
     private String factoringFacilityStatus;
 
     /*Reference to the party who is involved in Factoring Facility*/
+    @MetaField
     private String factoringFacilityAssociatedParty;
 
     /*The curreny which is arranged in Factoring Facility*/
+    @MetaField
     private String factoringFacilityCurrency;
 
     /*Reference to the regulation which is defined in Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet factoringFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Factoring Facility*/
+    @MetaField
     private String factoringFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Factoring Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction factoringFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Factoring Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit factoringFacilityBookingLocation;
 
     /*Reference to the account which is linked to Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account factoringFacilityAccountReference;
 
     /*Reference to the customer who is involved in Factoring Facility*/
+    @MetaField
     private String factoringFacilityCustomerReference;
 
     /*The position of Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position factoringFacilityPosition;
 
     /*Reference to the product which is linked to Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct factoringFacilityProductReference;
 
     /*Reference to the limitation related to the position of Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement factoringFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Factoring Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility factoringFacilityReference;
 
     public void setFactoringFacilityParameterType(String factoringFacilityParameterType) {

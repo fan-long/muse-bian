@@ -1,10 +1,18 @@
 package org.museframework.bian.marordexe.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateQuoteRequest {
+    @MetaField
     private String marketorderexecutionid;
 
+    @MetaField
     private String quoteid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.marordexe.dto.bq.Quote quote;
 
     public void setMarketorderexecutionid(String marketorderexecutionid) {

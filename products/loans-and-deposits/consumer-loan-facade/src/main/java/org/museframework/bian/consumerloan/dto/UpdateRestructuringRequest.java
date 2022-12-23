@@ -1,10 +1,18 @@
 package org.museframework.bian.consumerloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateRestructuringRequest {
+    @MetaField
     private String consumerloanid;
 
+    @MetaField
     private String restructuringid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.consumerloan.dto.bq.Restructuring restructuring;
 
     public void setConsumerloanid(String consumerloanid) {

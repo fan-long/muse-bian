@@ -3,14 +3,21 @@
 Examples: Business Requirements*/
 package org.museframework.bian.cusbehmod.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Production {
     /*Specification of the operational and technical requirements*/
+    @MetaField
     private String customerBehaviorModelOperationalRequirements;
 
     /*Defines rules and suitability for model usage*/
+    @MetaField
     private String customerBehaviorModelAllowedUsage;
 
     /*Provides guidance on the use of the model*/
+    @MetaField
     private String customerBehaviorModelUsageGuidelines;
 
     public void setCustomerBehaviorModelOperationalRequirements(String customerBehaviorModelOperationalRequirements) {

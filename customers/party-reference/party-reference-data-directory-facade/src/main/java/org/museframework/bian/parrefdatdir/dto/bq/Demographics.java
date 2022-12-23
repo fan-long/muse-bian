@@ -6,23 +6,33 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.parrefdatdir.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Demographics {
     /*A bank defined classification of the socio-economic rating and prospect*/
+    @MetaField
     private String socio_EconomicClassification;
 
     /*Where needed to ensure the bank's handling of the relationship follows legal and regulatory requirements*/
+    @MetaField
     private String ethnicityReligion;
 
     /*Reference to the customer's employer (company name)*/
+    @MetaField
     private String employment;
 
     /*Details of the customer's employment history (e.g. employer, dates, job position, salary)*/
+    @MetaField
     private String employmentHistory;
 
     /*Customer's education (e.g. academic institutions attended, duration, qualifications and certifications)*/
+    @MetaField
     private String educationHistory;
 
     /*Description of any known constraints on servicing the customer (sight, hearing, religious considerations)*/
+    @MetaField
     private String servicingConstraints;
 
     public void setSocio_EconomicClassification(String socio_EconomicClassification) {

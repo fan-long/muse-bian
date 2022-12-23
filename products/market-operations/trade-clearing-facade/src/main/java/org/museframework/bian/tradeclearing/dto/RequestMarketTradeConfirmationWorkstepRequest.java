@@ -1,10 +1,18 @@
 package org.museframework.bian.tradeclearing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestMarketTradeConfirmationWorkstepRequest {
+    @MetaField
     private String tradeclearingid;
 
+    @MetaField
     private String markettradeconfirmationworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.tradeclearing.dto.bq.MarketTradeConfirmationWorkstep marketTradeConfirmationWorkstep;
 
     public void setTradeclearingid(String tradeclearingid) {

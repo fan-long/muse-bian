@@ -2,11 +2,17 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.collections.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CollectionsOutcome {
     /**/
+    @MetaField
     private String collectionsWorkProduct;
 
     /**/
+    @MetaField
     private String collectionsProcedure;
 
     public void setCollectionsWorkProduct(String collectionsWorkProduct) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.cusbehins.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestInsightRequest {
+    @MetaField
     private String customerbehaviorinsightsid;
 
+    @MetaField
     private String insightid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusbehins.dto.bq.Insight insight;
 
     public void setCustomerbehaviorinsightsid(String customerbehaviorinsightsid) {

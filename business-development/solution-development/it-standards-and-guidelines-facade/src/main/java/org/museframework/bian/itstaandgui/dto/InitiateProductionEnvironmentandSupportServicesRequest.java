@@ -1,10 +1,18 @@
 package org.museframework.bian.itstaandgui.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateProductionEnvironmentandSupportServicesRequest {
+    @MetaField
     private String itstandardsandguidelinesid;
 
+    @MetaField
     private String productionenvironmentandsupportservicesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.itstaandgui.dto.bq.ProductionEnvironmentandSupportServices productionEnvironmentandSupportServices;
 
     public void setItstandardsandguidelinesid(String itstandardsandguidelinesid) {

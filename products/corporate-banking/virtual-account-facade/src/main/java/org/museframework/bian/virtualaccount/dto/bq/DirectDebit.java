@@ -1,32 +1,45 @@
 /*The configuration and execution of Virtual Account Configuration Fulfillment arrangement within the Virtual Account Configuration Fulfillment*/
 package org.museframework.bian.virtualaccount.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DirectDebit {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String directDebitPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String directDebitFeatureSchedule;
 
     /*The Direct Debit specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String directDebitPostconditions;
 
     /*Reference to the specific [BS] business service type*/
+    @MetaField
     private String directDebitServiceType;
 
     /*Description of the performed [BS] business service*/
+    @MetaField
     private String directDebitServiceDescription;
 
     /*Mandatory and optional inputs and output information for the BS business service*/
+    @MetaField
     private String directDebitServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the [BS] business service*/
+    @MetaField
     private String directDebitServiceWorkProduct;
 
     /**/
+    @MetaField
     private String directDebitServiceName;
 
     public void setDirectDebitPreconditions(String directDebitPreconditions) {

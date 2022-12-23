@@ -1,50 +1,69 @@
 /*The configuration and execution of Project Finance SPV Fulfillment arrangement within the Project Finance SPV Fulfillment*/
 package org.museframework.bian.projectfinance.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProjectFinanceRepaymentFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Project Finance Repayment Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Project Finance Repayment Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility projectFinanceFacilityReference;
 
     /*Reference to Project Finance Repayment Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object projectFinanceRepaymentFulfillmentReference;
 
     /*The type of Project Finance Repayment Fulfillment*/
+    @MetaField
     private String projectFinanceRepaymentFulfillmentType;
 
     /*An unique reference to an item or an occurance (data type is Object)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object reaymentFulfillmentInstanceReference;
 
     /*The type of repayment (e.g. scheduled repayment, balloon/early termination)*/
+    @MetaField
     private String repaymentTransactionType;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerReference;
 
     /*Reference to the account where the payment is made from*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerProductInstanceReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object repaymentTransactionPayerBankReference;
 
     /*The amount of the repayment*/
+    @MetaField
     private String repaymentTransactionAmount;
 
     /*The currency used for the repayment*/
+    @MetaField
     private String repaymentTransactionCurrency;
 
     /*The value date for the repayment transaction*/
+    @MetaField
     private String repaymentTransactionValueDate;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

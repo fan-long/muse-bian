@@ -1,10 +1,18 @@
 package org.museframework.bian.parrefdatdir.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateBankRelationsRequest {
+    @MetaField
     private String partyreferencedatadirectoryid;
 
+    @MetaField
     private String bankrelationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.parrefdatdir.dto.bq.BankRelations bankRelations;
 
     public void setPartyreferencedatadirectoryid(String partyreferencedatadirectoryid) {

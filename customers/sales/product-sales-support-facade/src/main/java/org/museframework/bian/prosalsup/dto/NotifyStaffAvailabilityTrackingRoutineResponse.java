@@ -1,6 +1,12 @@
 package org.museframework.bian.prosalsup.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class NotifyStaffAvailabilityTrackingRoutineResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.prosalsup.dto.bq.StaffAvailabilityTrackingRoutine staffAvailabilityTrackingRoutine;
 
     public void setStaffAvailabilityTrackingRoutine(org.museframework.bian.prosalsup.dto.bq.StaffAvailabilityTrackingRoutine staffAvailabilityTrackingRoutine) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.letofcre.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeSellerObligationConfirmationTaskResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.letofcre.dto.bq.SellerObligationConfirmationTask sellerObligationConfirmationTask;
 
     public void setSellerObligationConfirmationTask(org.museframework.bian.letofcre.dto.bq.SellerObligationConfirmationTask sellerObligationConfirmationTask) {

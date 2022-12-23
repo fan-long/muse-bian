@@ -1,10 +1,18 @@
 package org.museframework.bian.dealerdesk.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteDealerDeskConsolidatedPositionTrackingFunctionRequest {
+    @MetaField
     private String dealerdeskid;
 
+    @MetaField
     private String dealerdeskconsolidatedpositiontrackingfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.dealerdesk.dto.bq.DealerDeskConsolidatedPositionTrackingFunction dealerDeskConsolidatedPositionTrackingFunction;
 
     public void setDealerdeskid(String dealerdeskid) {

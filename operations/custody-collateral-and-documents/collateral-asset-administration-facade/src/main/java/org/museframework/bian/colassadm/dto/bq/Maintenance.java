@@ -3,17 +3,25 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.colassadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Maintenance {
     /*The type of action or check performed to oversee maintenance (e.g. insurance coverage, upkeep review)*/
+    @MetaField
     private String collateralAssetMaintenanceTaskType;
 
     /*Reference to 3rd party maintenance service provider (e.g. insurer, custodian)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetMaintenanceServiceProviderReference_3rdpartyserviceprovider_;
 
     /*A record of the verification checks performed against the schedule*/
+    @MetaField
     private String collateralAssetVerificationandComplianceRecord;
 
     /*Record of any fees incurred in the collateral asset maintenance (e.g. 3rd party fees)*/
+    @MetaField
     private String collateralAssetMaintenanceSafekeepingFees;
 
     public void setCollateralAssetMaintenanceTaskType(String collateralAssetMaintenanceTaskType) {

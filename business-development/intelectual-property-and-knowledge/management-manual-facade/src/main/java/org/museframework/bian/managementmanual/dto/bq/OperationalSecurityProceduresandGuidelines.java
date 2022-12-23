@@ -2,32 +2,45 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.managementmanual.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class OperationalSecurityProceduresandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesVersionNumber;
 
     /*The Management Manual Specification specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService operationalSecurityProceduresandGuidelines;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesServiceWorkProduct;
 
     /**/
+    @MetaField
     private String operationalSecurityProceduresandGuidelinesServiceName;
 
     public void setOperationalSecurityProceduresandGuidelinesPreconditions(String operationalSecurityProceduresandGuidelinesPreconditions) {

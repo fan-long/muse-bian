@@ -1,8 +1,15 @@
 package org.museframework.bian.subcusagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyPolicyTermRequest {
+    @MetaField
     private String subcustodianagreementid;
 
+    @MetaField
     private String policytermid;
 
     public void setSubcustodianagreementid(String subcustodianagreementid) {

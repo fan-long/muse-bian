@@ -1,29 +1,41 @@
 /*The Syndicate Eligibility Clauses defines a particular clause or consideration that is applied to determine eligibility for Syndicate Eligibility Clauses*/
 package org.museframework.bian.syndicatemanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SyndicateComplianceClauses {
     /*Reference to Syndicate Compliance Clauses*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicateMembershipReference;
 
     /*Reference to Syndicate Compliance Clauses*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicateComplianceClausesReference;
 
     /*The type of Syndicate Compliance Clauses*/
+    @MetaField
     private String syndicateComplianceClausesType;
 
     /*The Syndicate Compliance Clauses specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for governing Syndicate Compliance Clauses by applying the Syndicate Compliance Clauses clause*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The completion status once Syndicate Compliance Clauses has been governed by applying the Syndicate Compliance Clauses clause*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*The required status/situation before Syndicate Compliance Clauses can be governed by applying the Syndicate Compliance Clauses clause*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in governing Syndicate Compliance Clauses by applying the Syndicate Compliance Clauses clause*/
+    @MetaField
     private String schedule;
 
     public void setSyndicateMembershipReference(org.museframework.bian.classes.Object syndicateMembershipReference) {

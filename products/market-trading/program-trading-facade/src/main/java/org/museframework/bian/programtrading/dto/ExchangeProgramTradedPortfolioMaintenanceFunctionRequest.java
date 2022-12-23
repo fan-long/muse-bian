@@ -1,10 +1,18 @@
 package org.museframework.bian.programtrading.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeProgramTradedPortfolioMaintenanceFunctionRequest {
+    @MetaField
     private String programtradingid;
 
+    @MetaField
     private String programtradedportfoliomaintenancefunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.programtrading.dto.bq.ProgramTradedPortfolioMaintenanceFunction programTradedPortfolioMaintenanceFunction;
 
     public void setProgramtradingid(String programtradingid) {

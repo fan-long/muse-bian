@@ -1,6 +1,12 @@
 package org.museframework.bian.cusevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class CaptureLifeResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cusevehis.dto.bq.Life life;
 
     public void setLife(org.museframework.bian.cusevehis.dto.bq.Life life) {

@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.carfinset.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Processing {
     /*Defines the card settlement fees/terms in force*/
+    @MetaField
     private String participantAcquirerBankSettlementTerms;
 
     /*Defines card settlement fees/terms in force*/
+    @MetaField
     private String participantIssuerBankSettlementTerms;
 
     public void setParticipantAcquirerBankSettlementTerms(String participantAcquirerBankSettlementTerms) {

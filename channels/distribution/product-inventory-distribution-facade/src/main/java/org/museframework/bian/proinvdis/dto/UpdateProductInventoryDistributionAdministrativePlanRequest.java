@@ -1,8 +1,15 @@
 package org.museframework.bian.proinvdis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateProductInventoryDistributionAdministrativePlanRequest {
+    @MetaField
     private String productinventorydistributionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.proinvdis.dto.cr.ProductInventoryDistributionAdministrativePlan productInventoryDistributionAdministrativePlan;
 
     public void setProductinventorydistributionid(String productinventorydistributionid) {

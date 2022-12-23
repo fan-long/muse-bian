@@ -1,8 +1,15 @@
 package org.museframework.bian.cardcase.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCardCaseProcedureRequest {
+    @MetaField
     private String cardcaseid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardcase.dto.cr.CardCaseProcedure cardCaseProcedure;
 
     public void setCardcaseid(String cardcaseid) {

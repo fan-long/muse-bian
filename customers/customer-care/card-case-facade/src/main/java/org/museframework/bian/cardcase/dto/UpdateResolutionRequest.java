@@ -1,10 +1,18 @@
 package org.museframework.bian.cardcase.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateResolutionRequest {
+    @MetaField
     private String cardcaseid;
 
+    @MetaField
     private String resolutionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardcase.dto.bq.Resolution resolution;
 
     public void setCardcaseid(String cardcaseid) {

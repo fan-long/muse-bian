@@ -1,35 +1,49 @@
 /*Capture and maintain reference information about some type of entitity within Financial Instrument Reference Data Management.*/
 package org.museframework.bian.fininsrefdatman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialInstrumentDirectoryEntry extends org.museframework.bian.classes.FinancialInstrumentDirectoryEntry {
     /*Documentation of Financial Instrument Directory Entry*/
+    @MetaField
     private String financialInstrumentDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Financial Instrument Directory Entry*/
+    @MetaField
     private String financialInstrumentDirectoryEntrySchedule;
 
     /*The version of Financial Instrument Directory Entry*/
+    @MetaField
     private String financialInstrumentDirectoryEntryVersion;
 
     /*The status of Financial Instrument Directory Entry*/
+    @MetaField
     private String financialInstrumentDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Financial Instrument Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log financialInstrumentDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Financial Instrument Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log financialInstrumentDirectoryEntryUpdateLog;
 
     /*The configuration of Financial Instrument Directory Entry*/
+    @MetaField
     private String financialInstrumentDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Financial Instrument Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry financialInstrumentDirectoryEntryReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialInstrument financialInstrumentReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialMarket financialMarketReference;
 
     public void setFinancialInstrumentDirectoryEntryDescription(String financialInstrumentDirectoryEntryDescription) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.cusproandsereli.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateCustomerEligibilityAssessmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cusproandsereli.dto.cr.CustomerEligibilityAssessment customerEligibilityAssessment;
 
     public void setCustomerEligibilityAssessment(org.museframework.bian.cusproandsereli.dto.cr.CustomerEligibilityAssessment customerEligibilityAssessment) {

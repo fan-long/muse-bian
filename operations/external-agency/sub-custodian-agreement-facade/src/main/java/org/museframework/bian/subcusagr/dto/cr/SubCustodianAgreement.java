@@ -3,64 +3,86 @@
 */
 package org.museframework.bian.subcusagr.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SubCustodianAgreement extends org.museframework.bian.classes.SubCustodianAgreement {
     /*A Classification value that distinguishes between Options defined within Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature subCustodianAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Agreementtypevalues subCustodianAgreementType;
 
     /*An unique reference to an item or an occurrence of Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement subCustodianAgreementReference;
 
     /*Request to discharge Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction subCustodianAgreementDischargeRequest;
 
     /*Timetable to discharge Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementDischargeSchedule;
 
     /*The status of Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementStatus;
 
     /*Party who is involved in Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement subCustodianAgreementObligation;
 
     /*Right to do something under the terms of Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement subCustodianAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet subCustodianAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Sub Custodian Agreement*/
+    @MetaField
     private String subCustodianAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Sub Custodian Agreement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction subCustodianAgreementJurisdiction;
 
     /*Reference to the account which is linked to Sub Custodian Agreement
 
 A characteristic of agreement which refers to its involved account to specify the account that will be used to register for the transactions in position keeping management.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account subCustodianAgreementAccountReference;
 
     /*The subject matter of  Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object subCustodianAgreementSubjectMatter;
 
     /*Reference to the product which is linked to Sub Custodian Agreement
 
 Comment: 
 A characteristic of agreement which refers to its related products that are sold by agreement.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct subCustodianAgreementProductReference;
 
     /*Reference to the agreement that is related to Sub Custodian Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement subCustodianAgreementAssociatedAgreementReference;
 
     public void setSubCustodianAgreementParameterType(String subCustodianAgreementParameterType) {

@@ -3,32 +3,45 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.correspondence.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Inbound {
     /*Reference to the inbound correspondence item*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object inboundCorrespondenceInstanceReference;
 
     /*The inbound correspondence message*/
+    @MetaField
     private String inboundCorrespondenceRecord;
 
     /*The interpreted type of correspondence (e.g. unsolicited message, product/service related, complaint)*/
+    @MetaField
     private String inboundCorrespondenceType_eDotgDotunsolicitedmessage_productservicerelated_complaint_;
 
     /*The inbound message content in whatever format appropriate*/
+    @MetaField
     private String inboundCorrespondenceContent;
 
     /*The identified source of inbound message (extracted from the content)*/
+    @MetaField
     private String inboundCorrespondenceAddressee;
 
     /*Matched bank customer (from reference details extracted from the content where possible)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object inboundCorrespondenceCustomerReference;
 
     /*Identified internal addressee (from reference details extracted from the content where possible)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object inboundCorrespondenceEmployeeBusinessUnitReference;
 
     /*Key dates used for tracking internal delivery (e.g. receipt date, internal distribution, receipt confirmation date, re-route date)*/
+    @MetaField
     private String dateType;
 
     /*The value of the date and time*/
+    @MetaField
     private String date;
 
     public void setInboundCorrespondenceInstanceReference(org.museframework.bian.classes.Object inboundCorrespondenceInstanceReference) {

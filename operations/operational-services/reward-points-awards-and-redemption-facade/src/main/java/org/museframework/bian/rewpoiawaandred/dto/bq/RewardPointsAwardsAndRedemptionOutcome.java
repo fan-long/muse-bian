@@ -2,38 +2,53 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.rewpoiawaandred.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RewardPointsAwardsAndRedemptionOutcome {
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionCalendar;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionCounterparty;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionDividend;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionFees;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionInterest;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionMargining;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionNotionalPrincipal;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionOptions;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionRates;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionSettlement;
 
     /**/
+    @MetaField
     private String rewardPointsAwardsAndRedemptionWorkProduct;
 
     public void setRewardPointsAwardsAndRedemptionCalendar(String rewardPointsAwardsAndRedemptionCalendar) {

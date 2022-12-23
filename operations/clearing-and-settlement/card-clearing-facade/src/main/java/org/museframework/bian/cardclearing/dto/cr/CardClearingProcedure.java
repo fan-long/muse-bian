@@ -1,29 +1,41 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Card Clearing. */
 package org.museframework.bian.cardclearing.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardClearingProcedure extends org.museframework.bian.classes.CardClearingProcedure {
     /*Refers to the card network*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object networkReference;
 
     /*Reference to the Acquiring bank for which the Network orchestrates clearing processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines card clearing fees/terms in force - referenced by Network*/
+    @MetaField
     private String participantAcquirerBankClearingandSettlementTerms;
 
     /*Reference to the Issuing bank for which the Network orchestrates clearing processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines card clearing fees/terms in force - referenced by Network*/
+    @MetaField
     private String participantIssuerBankClearingandSettlementTerms;
 
     /*Defines the type of clearing process - e.g. capture, batch, chargeback between combinations of N,I&A*/
+    @MetaField
     private String cardClearingProcessType;
 
     /*The scheduled time for the process - likely initiation time*/
+    @MetaField
     private String cardClearingProcessDateTime;
 
     /*The schedule of activities for card clearing*/
+    @MetaField
     private String cardClearingServiceSchedule;
 
     public void setNetworkReference(org.museframework.bian.classes.Object networkReference) {

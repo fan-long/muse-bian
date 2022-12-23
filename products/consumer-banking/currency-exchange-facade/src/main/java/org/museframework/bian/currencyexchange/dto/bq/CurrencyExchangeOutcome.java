@@ -2,38 +2,53 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.currencyexchange.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CurrencyExchangeOutcome {
     /**/
+    @MetaField
     private String currencyExchangeCalendar;
 
     /**/
+    @MetaField
     private String currencyExchangeCounterparty;
 
     /**/
+    @MetaField
     private String currencyExchangeDividend;
 
     /**/
+    @MetaField
     private String currencyExchangeFees;
 
     /**/
+    @MetaField
     private String currencyExchangeInterest;
 
     /**/
+    @MetaField
     private String currencyExchangeMargining;
 
     /**/
+    @MetaField
     private String currencyExchangeNotionalPrincipal;
 
     /**/
+    @MetaField
     private String currencyExchangeOptions;
 
     /**/
+    @MetaField
     private String currencyExchangeRates;
 
     /**/
+    @MetaField
     private String currencyExchangeSettlement;
 
     /**/
+    @MetaField
     private String currencyExchangeWorkProduct;
 
     public void setCurrencyExchangeCalendar(String currencyExchangeCalendar) {

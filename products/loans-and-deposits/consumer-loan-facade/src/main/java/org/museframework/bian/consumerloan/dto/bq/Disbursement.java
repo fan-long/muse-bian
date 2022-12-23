@@ -1,23 +1,33 @@
 /**/
 package org.museframework.bian.consumerloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Disbursement {
     /*Reference to the party to whom the payment is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object disbursementPayeeReference;
 
     /*Reference to the account to which the payment is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object disbursementPayeeProductInstanceReference;
 
     /*Reference to the bank where the payee account is held*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object disbursementPayeeBankReference;
 
     /*The amount of the payment*/
+    @MetaField
     private String disbursementAmount;
 
     /*The currency of the payment*/
+    @MetaField
     private String disbursementCurrency;
 
     /*The value date for the payment transaction*/
+    @MetaField
     private String disbursementValueDate;
 
     public void setDisbursementPayeeReference(org.museframework.bian.classes.Object disbursementPayeeReference) {

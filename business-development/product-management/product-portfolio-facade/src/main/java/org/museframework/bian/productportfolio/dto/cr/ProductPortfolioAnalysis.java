@@ -4,35 +4,49 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.productportfolio.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductPortfolioAnalysis extends org.museframework.bian.classes.ProductPortfolioAnalysis {
     /*Definition of the product portfolio*/
+    @MetaField
     private String productPortfolioMake_up;
 
     /*The product type within the portfolio analysis*/
+    @MetaField
     private String productType;
 
     /*Specific properties and characteristics of the product that provide context for the performance analysis*/
+    @MetaField
     private String productTypeDefinition;
 
     /*Definition of the performance goals for products as defined by senior management functions (target/anticipated and actual as assessed).*/
+    @MetaField
     private String productPortfolioPerformanceGoals;
 
     /*The schedule for performing product portfolio analysis for the enterprise or division*/
+    @MetaField
     private String productPortfolioAnalysisSchedule;
 
     /*A consolidated report containing the results of performance analyses applied to the products making up the overall portfolio*/
+    @MetaField
     private String productPortfolioAnalysisReport;
 
     /*Defines a type of performance analysis performed to products in the portfolio (e.g. scheduled review, specialized analysis, sensitivity assessment/projection)*/
+    @MetaField
     private String productAnalysisType;
 
     /*The consolidated report of the performance evaluation and comparisons from the analysis*/
+    @MetaField
     private String productAnalysisResult;
 
     /*The date/time the performance report was completed*/
+    @MetaField
     private String productAnalysisReportingDate;
 
     /*Reference to associated performance analysis reporting documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     public void setProductPortfolioMake_up(String productPortfolioMake_up) {

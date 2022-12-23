@@ -1,6 +1,12 @@
 package org.museframework.bian.proserage.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class GrantServiceProviderAgreementResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.proserage.dto.cr.ServiceProviderAgreement serviceProviderAgreement;
 
     public void setServiceProviderAgreement(org.museframework.bian.proserage.dto.cr.ServiceProviderAgreement serviceProviderAgreement) {

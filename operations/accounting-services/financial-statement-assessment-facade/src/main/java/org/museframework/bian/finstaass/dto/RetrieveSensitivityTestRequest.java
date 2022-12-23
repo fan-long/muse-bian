@@ -1,8 +1,15 @@
 package org.museframework.bian.finstaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveSensitivityTestRequest {
+    @MetaField
     private String financialstatementassessmentid;
 
+    @MetaField
     private String sensitivitytestid;
 
     public void setFinancialstatementassessmentid(String financialstatementassessmentid) {

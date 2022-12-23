@@ -3,23 +3,33 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.intpropor.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Assignment {
     /*The schedule capturing assignments for use/deployment of the intellectual property asset. This can include internal use and external licensed agreements*/
+    @MetaField
     private String intellectualPropertyAssetAssignmentSchedule;
 
     /*A record of assignments of the intellectual property both for internal use and for 3rd party licensing*/
+    @MetaField
     private String intellectualPropertyAssetAssignmentRecord;
 
     /*The type of assignment (e.g. internal, external license)*/
+    @MetaField
     private String intellectualPropertyAssetAssignmentType;
 
     /*Description of the assignment (e.g. allowed use, terms)*/
+    @MetaField
     private String intellectualPropertyAssetAssignmentDescription;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of any charges levied and payments received made from licensing*/
+    @MetaField
     private String intellectualPropertyAssetAssignmentTransaction;
 
     public void setIntellectualPropertyAssetAssignmentSchedule(String intellectualPropertyAssetAssignmentSchedule) {

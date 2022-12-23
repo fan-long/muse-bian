@@ -1,10 +1,18 @@
 package org.museframework.bian.cusevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureRelationshipRequest {
+    @MetaField
     private String customereventhistoryid;
 
+    @MetaField
     private String relationshipid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusevehis.dto.bq.Relationship relationship;
 
     public void setCustomereventhistoryid(String customereventhistoryid) {

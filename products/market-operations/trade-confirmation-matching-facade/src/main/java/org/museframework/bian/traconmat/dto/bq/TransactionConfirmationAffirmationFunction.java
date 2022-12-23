@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Transaction Confirmation/Affirmation Function for doing Transaction Confirmation/Affirmation Function*/
 package org.museframework.bian.traconmat.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TransactionConfirmationAffirmationFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Transaction Confirmation/Affirmation Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Transaction Confirmation/Affirmation Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session tradeMatchingOperatingSessionReference;
 
     /*Reference to Transaction Confirmation/Affirmation Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function transactionConfirmationorAffirmationFunctionReference;
 
     /*The type of Transaction Confirmation/Affirmation Function*/
+    @MetaField
     private String transactionConfirmationorAffirmationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

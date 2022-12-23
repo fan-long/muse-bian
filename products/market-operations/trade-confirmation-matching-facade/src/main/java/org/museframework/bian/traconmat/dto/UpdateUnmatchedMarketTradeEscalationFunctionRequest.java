@@ -1,10 +1,18 @@
 package org.museframework.bian.traconmat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateUnmatchedMarketTradeEscalationFunctionRequest {
+    @MetaField
     private String tradeconfirmationmatchingid;
 
+    @MetaField
     private String unmatchedmarkettradeescalationfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traconmat.dto.bq.UnmatchedMarketTradeEscalationFunction unmatchedMarketTradeEscalationFunction;
 
     public void setTradeconfirmationmatchingid(String tradeconfirmationmatchingid) {

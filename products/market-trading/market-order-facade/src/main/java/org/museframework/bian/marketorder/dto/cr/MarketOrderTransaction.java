@@ -1,50 +1,69 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Market Order. */
 package org.museframework.bian.marketorder.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketOrderTransaction extends org.museframework.bian.classes.MarketOrderTransaction {
     /*The type of market order request (e.g. Managed Investment, Corporate Finance)*/
+    @MetaField
     private String marketOrderInstructionType;
 
     /*Reference to the account primary party/owner for the market order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The employee/business unit placing the market order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the associated investment portfolio record of all holdings (referenced to check securities availability if necessary)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*Any customer specific processing preferences or requirements*/
+    @MetaField
     private String customerMarketOrderProcessingInstruction;
 
     /*The document reference for the order confirmation notice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the correspondence generated for the order confirmation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*The details of the market order transaction*/
+    @MetaField
     private String marketOrderTransaction;
 
     /*Reference to the underlying investment account supporting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentAccountArrangementInstanceReference;
 
     /*Reference to the underlying cash account supporting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object currentAccountArrangementInstanceReference;
 
     /*The type of market order (e.g. Day Order. Order on Open/Close, Fill or Kill, Limit Order)*/
+    @MetaField
     private String marketOrderType;
 
     /*The security to be traded*/
+    @MetaField
     private String securityType;
 
     /*The volume of shares to be bought or sold*/
+    @MetaField
     private String amount;
 
     /*Key dates associated with the transaction (e.g. order capture, trade execution, order completion)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date type*/
+    @MetaField
     private String date;
 
     public void setMarketOrderInstructionType(String marketOrderInstructionType) {

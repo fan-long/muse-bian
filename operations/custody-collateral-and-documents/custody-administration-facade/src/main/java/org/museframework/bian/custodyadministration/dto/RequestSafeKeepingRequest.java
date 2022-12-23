@@ -1,10 +1,18 @@
 package org.museframework.bian.custodyadministration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestSafeKeepingRequest {
+    @MetaField
     private String custodyadministrationid;
 
+    @MetaField
     private String safekeepingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.custodyadministration.dto.bq.SafeKeeping safeKeeping;
 
     public void setCustodyadministrationid(String custodyadministrationid) {

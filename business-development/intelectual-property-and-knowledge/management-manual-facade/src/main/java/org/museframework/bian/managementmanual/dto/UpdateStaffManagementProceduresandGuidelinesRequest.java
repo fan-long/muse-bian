@@ -1,10 +1,18 @@
 package org.museframework.bian.managementmanual.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateStaffManagementProceduresandGuidelinesRequest {
+    @MetaField
     private String managementmanualid;
 
+    @MetaField
     private String staffmanagementproceduresandguidelinesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.managementmanual.dto.bq.StaffManagementProceduresandGuidelines staffManagementProceduresandGuidelines;
 
     public void setManagementmanualid(String managementmanualid) {

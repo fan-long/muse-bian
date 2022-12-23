@@ -1,6 +1,12 @@
 package org.museframework.bian.servicingorder.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestServicingOrderProcedureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.servicingorder.dto.cr.ServicingOrderProcedure servicingOrderProcedure;
 
     public void setServicingOrderProcedure(org.museframework.bian.servicingorder.dto.cr.ServicingOrderProcedure servicingOrderProcedure) {

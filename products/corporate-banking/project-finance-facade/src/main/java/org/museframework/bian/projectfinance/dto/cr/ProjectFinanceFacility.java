@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Project Finance. */
 package org.museframework.bian.projectfinance.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProjectFinanceFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature projectFinanceFacilitySelectedOption;
 
     /*The status of Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityStatus;
 
     /*Reference to the party who is involved in Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityAssociatedParty;
 
     /*The curreny which is arranged in Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityCurrency;
 
     /*Reference to the regulation which is defined in Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet projectFinanceFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Project Finance Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction projectFinanceFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Project Finance Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit projectFinanceFacilityBookingLocation;
 
     /*Reference to the account which is linked to Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account projectFinanceFacilityAccountReference;
 
     /*Reference to the customer who is involved in Project Finance Facility*/
+    @MetaField
     private String projectFinanceFacilityCustomerReference;
 
     /*The position of Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position projectFinanceFacilityPosition;
 
     /*Reference to the product which is linked to Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct projectFinanceFacilityProductReference;
 
     /*Reference to the limitation related to the position of Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement projectFinanceFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Project Finance Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility projectFinanceFacilityReference;
 
     public void setProjectFinanceFacilityParameterType(String projectFinanceFacilityParameterType) {

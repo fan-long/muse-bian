@@ -1,10 +1,18 @@
 package org.museframework.bian.termdeposit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAccountLienRequest {
+    @MetaField
     private String termdepositid;
 
+    @MetaField
     private String accountlienid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.termdeposit.dto.bq.AccountLien accountLien;
 
     public void setTermdepositid(String termdepositid) {

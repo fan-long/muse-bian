@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Corporate Action. */
 package org.museframework.bian.corporateaction.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateActionProcedure extends org.museframework.bian.classes.CorporateActionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureParameterType;
 
     /*A selected optional business service as subject matter of Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature corporateActionProcedureSelectedOption;
 
     /*Request to process Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction corporateActionProcedureRequest;
 
     /*Timetable to process Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureSchedule;
 
     /*The status of Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureStatus;
 
     /*Reference to the party who is involved in Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility corporateActionProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureType;
 
     /*The schedule according to which the service provider will process the Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Corporate Action Procedure*/
+    @MetaField
     private String corporateActionProcedureServiceType;
 
     /*Reference to the product or service that is related to Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct corporateActionProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction corporateActionProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement corporateActionProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement corporateActionProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Corporate Action Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure corporateActionProcedureReference;
 
     public void setCorporateActionProcedureParameterType(String corporateActionProcedureParameterType) {

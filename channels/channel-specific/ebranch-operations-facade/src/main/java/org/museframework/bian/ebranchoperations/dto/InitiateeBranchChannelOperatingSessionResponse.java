@@ -1,6 +1,12 @@
 package org.museframework.bian.ebranchoperations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateeBranchChannelOperatingSessionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.ebranchoperations.dto.cr.eBranchChannelOperatingSession eBranchChannelOperatingSession;
 
     public void seteBranchChannelOperatingSession(org.museframework.bian.ebranchoperations.dto.cr.eBranchChannelOperatingSession eBranchChannelOperatingSession) {

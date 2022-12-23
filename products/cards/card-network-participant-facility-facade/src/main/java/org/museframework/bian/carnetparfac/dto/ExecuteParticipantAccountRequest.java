@@ -1,10 +1,18 @@
 package org.museframework.bian.carnetparfac.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteParticipantAccountRequest {
+    @MetaField
     private String cardnetworkparticipantfacilityid;
 
+    @MetaField
     private String participantaccountid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.carnetparfac.dto.bq.ParticipantAccount participantAccount;
 
     public void setCardnetworkparticipantfacilityid(String cardnetworkparticipantfacilityid) {

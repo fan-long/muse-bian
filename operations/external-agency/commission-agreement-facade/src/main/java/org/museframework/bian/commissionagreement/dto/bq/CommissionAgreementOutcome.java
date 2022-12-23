@@ -3,11 +3,17 @@
 Examples: Required disclosures*/
 package org.museframework.bian.commissionagreement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CommissionAgreementOutcome {
     /**/
+    @MetaField
     private String commissionAgreementAgreement;
 
     /**/
+    @MetaField
     private String commissionAgreementWorkProduct;
 
     public void setCommissionAgreementAgreement(String commissionAgreementAgreement) {

@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Corporate Payroll Services. */
 package org.museframework.bian.corpayser.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class EmployeePaymentServicesFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature employeePaymentServicesFacilitySelectedOption;
 
     /*The status of Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityStatus;
 
     /*Reference to the party who is involved in Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityAssociatedParty;
 
     /*The curreny which is arranged in Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityCurrency;
 
     /*Reference to the regulation which is defined in Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet employeePaymentServicesFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Employee Payment Services Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction employeePaymentServicesFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Employee Payment Services Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit employeePaymentServicesFacilityBookingLocation;
 
     /*Reference to the account which is linked to Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account employeePaymentServicesFacilityAccountReference;
 
     /*Reference to the customer who is involved in Employee Payment Services Facility*/
+    @MetaField
     private String employeePaymentServicesFacilityCustomerReference;
 
     /*The position of Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position employeePaymentServicesFacilityPosition;
 
     /*Reference to the product which is linked to Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct employeePaymentServicesFacilityProductReference;
 
     /*Reference to the limitation related to the position of Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement employeePaymentServicesFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Employee Payment Services Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility employeePaymentServicesFacilityReference;
 
     public void setEmployeePaymentServicesFacilityParameterType(String employeePaymentServicesFacilityParameterType) {

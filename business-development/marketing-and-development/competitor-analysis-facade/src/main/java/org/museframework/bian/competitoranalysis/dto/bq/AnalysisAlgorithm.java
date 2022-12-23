@@ -3,47 +3,65 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.competitoranalysis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AnalysisAlgorithm {
     /*Defines the type of algorithm/approach employed (e.g. competitor reviews, public domain research)*/
+    @MetaField
     private String analysisAlgorithmType;
 
     /*Description of the specific algorithms used and the approach taken to develop the competitor analysis*/
+    @MetaField
     private String analysisAlgorithmSpecification;
 
     /*The externally sourced general market research sources and any internal intelligence used in the competitor analysis*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object analysisAlgorithmReferencedMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
+    @MetaField
     private String marketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
+    @MetaField
     private String marketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
+    @MetaField
     private String marketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
+    @MetaField
     private String marketResearchReport;
 
     /*Request record for the competitor analysis algorithm/approach execution. Note this is defined in the general competitor analysis request and interpreted internally as the specific approach/algorithm is selected as necessary*/
+    @MetaField
     private String analysisAlgorithmRequestRecord;
 
     /*The specific details of the request*/
+    @MetaField
     private String analysisAlgorithmRequest;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String analysisAlgorithmWorkProducts;
 
     /*The output from executing the algorithm*/
+    @MetaField
     private String analysisAlgorithmRequestResult;
 
     /*The record of the use of the specific competitor analysis algorithm/approach*/
+    @MetaField
     private String analysisAlgorithmUsageRecord;
 
     /*A record of the usage of the algorithm*/
+    @MetaField
     private String analysisAlgorithmUsage;
 
     /*A record of reported impact/accuracy of the competitor analysis algorithm/approach*/
+    @MetaField
     private String analysisAlgorithmImpact;
 
     public void setAnalysisAlgorithmType(String analysisAlgorithmType) {

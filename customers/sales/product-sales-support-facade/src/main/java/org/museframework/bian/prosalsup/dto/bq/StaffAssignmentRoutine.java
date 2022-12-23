@@ -1,29 +1,41 @@
 /*The Staff Availability Tracking Routine is an activity that is performed as one aspect of carrying out the Staff Availability Tracking Routine*/
 package org.museframework.bian.prosalsup.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StaffAssignmentRoutine {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String schedule;
 
     /*The Staff Assignment Routine specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Staff Assignment Routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan productSalesSupportAdministrativePlanReference;
 
     /*Reference to Staff Assignment Routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PlannedAction staffAssignmentRoutineReference;
 
     /*The type of Staff Assignment Routine*/
+    @MetaField
     private String staffAssignmentRoutineType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.merchandisingloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Deposits {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String depositsPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String depositsFeatureSchedule;
 
     /*The Merchandising Loan Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService depositProcessing;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String depositsPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String depositsDepositProcessingServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String depositsDepositProcessingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String depositsDepositProcessingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String depositsDepositProcessingServiceWorkProduct;
 
     /**/
+    @MetaField
     private String depositsDepositProcessingServiceName;
 
     public void setDepositsPreconditions(String depositsPreconditions) {

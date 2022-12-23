@@ -6,29 +6,41 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.productdirectory.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SalesandMarketing {
     /*Descriptive materials/brochures organized for selective access*/
+    @MetaField
     private String productandServiceSalesMaterial;
 
     /*Descriptions of product features and product options for review*/
+    @MetaField
     private String productandServicesFeaturesAndOptions;
 
     /*Allowed price/rate ranges by credit grade/customer type (can be reviewed through simulation)*/
+    @MetaField
     private String productandServicePricingTable;
 
     /*Applicable fees/penalties (can be reviewed through simulation)*/
+    @MetaField
     private String productandServiceFeesPenaltiesTable;
 
     /*Defines suitability requirements set by the bank*/
+    @MetaField
     private String productSuitabilityGuide;
 
     /*Applicable legal or regulatory requirements governing eligibility*/
+    @MetaField
     private String productandServiceEligibilityType;
 
     /*Description/explanation of eligibility requirements, can include required disclosures*/
+    @MetaField
     private String productandServiceEligibilityDescription;
 
     /*Details the tasks required to complete a customer offer*/
+    @MetaField
     private String productandServiceOfferProcessingRequirements;
 
     public void setProductandServiceSalesMaterial(String productandServiceSalesMaterial) {

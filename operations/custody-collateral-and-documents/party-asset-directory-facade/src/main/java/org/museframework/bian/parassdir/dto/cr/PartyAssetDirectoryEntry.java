@@ -1,32 +1,45 @@
 /*Capture and maintain reference information about some type of entitity within Party Asset Directory Entry*/
 package org.museframework.bian.parassdir.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PartyAssetDirectoryEntry {
     /*Documentation of Party Asset Directory Entry*/
+    @MetaField
     private String partyAssetDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Party Asset Directory Entry*/
+    @MetaField
     private String partyAssetDirectoryEntrySchedule;
 
     /*The version of Party Asset Directory Entry*/
+    @MetaField
     private String partyAssetDirectoryEntryVersion;
 
     /*The status of Party Asset Directory Entry*/
+    @MetaField
     private String partyAssetDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Party Asset Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log partyAssetDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Party Asset Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log partyAssetDirectoryEntryUpdateLog;
 
     /*The configuration of Party Asset Directory Entry*/
+    @MetaField
     private String partyAssetDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Party Asset Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry partyAssetDirectoryEntryReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Asset partyAssetReference;
 
     public void setPartyAssetDirectoryEntryDescription(String partyAssetDirectoryEntryDescription) {

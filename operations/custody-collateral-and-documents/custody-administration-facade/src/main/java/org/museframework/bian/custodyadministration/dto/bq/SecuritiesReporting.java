@@ -2,32 +2,45 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.custodyadministration.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SecuritiesReporting {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String securitiesReportingPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String securitiesReportingFeatureSchedule;
 
     /*The Custody Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService custodySecuritiesReporting;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String securitiesReportingPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String securitiesReportingCustodySecuritiesReportingServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String securitiesReportingCustodySecuritiesReportingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String securitiesReportingCustodySecuritiesReportingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String securitiesReportingCustodySecuritiesReportingServiceWorkProduct;
 
     /**/
+    @MetaField
     private String securitiesReportingCustodySecuritiesReportingServiceName;
 
     public void setSecuritiesReportingPreconditions(String securitiesReportingPreconditions) {

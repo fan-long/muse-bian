@@ -1,10 +1,18 @@
 package org.museframework.bian.creditcard.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteBillingRequest {
+    @MetaField
     private String creditcardid;
 
+    @MetaField
     private String billingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.creditcard.dto.bq.Billing billing;
 
     public void setCreditcardid(String creditcardid) {

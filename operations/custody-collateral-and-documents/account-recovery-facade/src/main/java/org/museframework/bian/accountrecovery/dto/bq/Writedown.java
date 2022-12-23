@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.accountrecovery.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Writedown {
     /*Booking to the appropriate asset/liability account required to reflect anticipated loss*/
+    @MetaField
     private String accountwrite_downtransaction;
 
     /*Processing record for the write-down task within the account recovery process*/
+    @MetaField
     private String accountRecoveryCaseWrite_downTaskRecord;
 
     public void setAccountwrite_downtransaction(String accountwrite_downtransaction) {

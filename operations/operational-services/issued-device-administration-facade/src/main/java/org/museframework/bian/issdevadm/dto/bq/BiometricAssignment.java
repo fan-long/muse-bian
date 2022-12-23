@@ -1,11 +1,17 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BiometricAssignment {
     /*Type of biometric record being used (e.g. face, fingerprint, signature)*/
+    @MetaField
     private String biometricType;
 
     /*The stored biometric value possibly in suitably encrypted form*/
+    @MetaField
     private String biometricRegisteredDetail;
 
     public void setBiometricType(String biometricType) {

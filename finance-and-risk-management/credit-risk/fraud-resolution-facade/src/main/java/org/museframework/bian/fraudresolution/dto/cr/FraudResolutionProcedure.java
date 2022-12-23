@@ -1,47 +1,65 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Fraud Resolution. */
 package org.museframework.bian.fraudresolution.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FraudResolutionProcedure {
     /*Type of case (e.g.  disputed charge, merchant fraud, stolen/fake device)*/
+    @MetaField
     private String fraudCaseType;
 
     /*Reference to the product/service associated with case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the customer associated with case if applicable*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the merchant associated with case if applicable*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object merchantReference;
 
     /*Reference to any other interested parties (such as intermediaries)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object interstedPartyReference;
 
     /*Customer contact reference if the case was raised during a customer contact*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object contactReference;
 
     /*Reference to one or more product transactions associated with the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionReference;
 
     /*Record contains all details of the transaction (not itemized)*/
+    @MetaField
     private String transactionRecord;
 
     /*Record of a physical address or electronic venue the fraud was detected*/
+    @MetaField
     private String caseLocation;
 
     /*Specific dates and ties of significance to the case*/
+    @MetaField
     private String date;
 
     /*Business unit and or employee reference where the case was raised*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the case*/
+    @MetaField
     private String fraudCaseWorkProducts;
 
     /*Target and actual dates for case processing/resolution*/
+    @MetaField
     private String fraudCaseResolutionSchedule;
 
     /*The processing status for the case*/
+    @MetaField
     private String fraudCaseStatus;
 
     public void setFraudCaseType(String fraudCaseType) {

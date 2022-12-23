@@ -1,10 +1,18 @@
 package org.museframework.bian.corporatetreasury.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureLiquidityRequest {
+    @MetaField
     private String corporatetreasuryid;
 
+    @MetaField
     private String liquidityid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatetreasury.dto.bq.Liquidity liquidity;
 
     public void setCorporatetreasuryid(String corporatetreasuryid) {

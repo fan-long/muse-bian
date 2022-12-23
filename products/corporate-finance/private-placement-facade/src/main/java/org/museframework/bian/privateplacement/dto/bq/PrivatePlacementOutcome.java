@@ -1,11 +1,17 @@
 /*The configuration and execution of Private Placement Fulfillment arrangement within the Private Placement Fulfillment*/
 package org.museframework.bian.privateplacement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PrivatePlacementOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility privatePlacementFinancialFacility;
 
     /**/
+    @MetaField
     private String privatePlacementWorkProduct;
 
     public void setPrivatePlacementFinancialFacility(org.museframework.bian.classes.FinancialFacility privatePlacementFinancialFacility) {

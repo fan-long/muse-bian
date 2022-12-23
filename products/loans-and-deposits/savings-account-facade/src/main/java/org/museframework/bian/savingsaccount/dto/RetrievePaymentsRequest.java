@@ -1,8 +1,15 @@
 package org.museframework.bian.savingsaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrievePaymentsRequest {
+    @MetaField
     private String savingsaccountid;
 
+    @MetaField
     private String paymentsid;
 
     public void setSavingsaccountid(String savingsaccountid) {

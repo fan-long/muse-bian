@@ -1,41 +1,57 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Prospect Campaign Management.*/
 package org.museframework.bian.procamman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProspectCampaignPortfolioManagementPlan {
     /*The collection/portfolio of available prospect campaigns. The details are used to assess performance and coverage and direct development and execution activity*/
+    @MetaField
     private String prospectCampaignPortfolio;
 
     /*The type or category of prospect campaign (e.g. mailshot, targeted solicitation, discounted product incentive)*/
+    @MetaField
     private String prospectCampaignType;
 
     /*A description of the campaign that clarifies the intended context/use of the campaign, the mechanisms employed and the intended/anticipated response/impact*/
+    @MetaField
     private String prospectCampaignDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the campaign*/
+    @MetaField
     private String prospectCampaignMetrics;
 
     /*A description of the metric, defining how it is to be measured in deployment*/
+    @MetaField
     private String prospectCampaignMetricDefinition;
 
     /*A description of the target performance for the metric that can be defined for different usage scenarios as appropriate*/
+    @MetaField
     private String prospectCampaignMetricGoal;
 
     /*Maintains a record of the use and impact of prospect campaign versions over the life of the campaign*/
+    @MetaField
     private String prospectCampaignPerformanceRecord;
 
     /*Reference to the prospect campaign execution event*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object prospectCampaignProcedureInstanceReference;
 
     /*Reference to the business unit responsible for the campaign execution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment set-up/configuration of the campaign for reference*/
+    @MetaField
     private String prospectCampaignProcedureSet_up;
 
     /*The prospect campaign version number used in the event*/
+    @MetaField
     private String prospectCampaignProcedureVersionNumber;
 
     /*The result/impact of the overall prospect campaign event (that can include multiple identified prospects)*/
+    @MetaField
     private String prospectCampaignProcedureResult;
 
     public void setProspectCampaignPortfolio(String prospectCampaignPortfolio) {

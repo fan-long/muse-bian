@@ -1,47 +1,65 @@
 /*The configuration and execution of Check Clearing and Settlement Fulfillment arrangement within the Check Clearing and Settlement Fulfillment*/
 package org.museframework.bian.chelocbox.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CheckClearingandSettlementFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Check Clearing and Settlement Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Check Clearing and Settlement Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility lockBoxFacilityReference;
 
     /*Reference to Check Clearing and Settlement Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object checkClearingandSettlementFulfillmentReference;
 
     /*The type of Check Clearing and Settlement Fulfillment*/
+    @MetaField
     private String checkClearingandSettlementFulfillmentType;
 
     /*An unique reference to an item or an occurance (data type is Object)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object clearingandSettlementInstanceReference;
 
     /*The clearing arrangement between the bank and clearing house - includes schedule, limits*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankClearingArrangementReference;
 
     /*Customer specific default clearing instructions*/
+    @MetaField
     private String correspondentBankClearingArrangementClearingInstructions;
 
     /*Customer specific default settlement instructions (e.g. to handle netting arrangements)*/
+    @MetaField
     private String correspondentBankClearingArrangementSettlementInstructions;
 
     /*Used for central bank clearing reconciliations*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object mirrorNostroAccountReference;
 
     /*A record of a clearing transaction*/
+    @MetaField
     private String clearingTransaction;
 
     /*A record of a settlement transaction*/
+    @MetaField
     private String settlementTransaction;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Document Services. */
 package org.museframework.bian.documentservices.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DocumentServiceProcedure extends org.museframework.bian.classes.DocumentServiceProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureParameterType;
 
     /*A selected optional business service as subject matter of Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature documentServiceProcedureSelectedOption;
 
     /*Request to process Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction documentServiceProcedureRequest;
 
     /*Timetable to process Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureSchedule;
 
     /*The status of Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureStatus;
 
     /*Reference to the party who is involved in Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility documentServiceProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureType;
 
     /*The schedule according to which the service provider will process the Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Document Service Procedure*/
+    @MetaField
     private String documentServiceProcedureServiceType;
 
     /*Reference to the product or service that is related to Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct documentServiceProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction documentServiceProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement documentServiceProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement documentServiceProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Document Service Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure documentServiceProcedureReference;
 
     public void setDocumentServiceProcedureParameterType(String documentServiceProcedureParameterType) {

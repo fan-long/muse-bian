@@ -1,29 +1,41 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Investment Portfolio Management. */
 package org.museframework.bian.invporman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ManagedInvestmentPortfolioFacility {
     /*Interpretation of the investment portfolio policies as they impact securities selection and investment decisioning*/
+    @MetaField
     private String investmentPortfolioTradingPolicies;
 
     /*The type of policy applied to the portfolio (e.g. risk appetite, allowed sectors/instrument types, timeframes)*/
+    @MetaField
     private String investmentPortfolioPolicyType;
 
     /*A narrative explaining the interpretation of the portfolio policies as they govern trading decisions*/
+    @MetaField
     private String investmentPortfolioPolicyDescription;
 
     /*Specific trading constraints (e.g. stocks or sectors that are out of bounds and acceptable risk levels)*/
+    @MetaField
     private String investmentPortfolioPolicyLimitsandConstraints;
 
     /*Reference to the investment portfolio record of all holdings*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*Maintains the current security holdings*/
+    @MetaField
     private String investmentPortfolioHoldings;
 
     /*The type of security held in the portfolio*/
+    @MetaField
     private String investmentPortfolioSecurityType;
 
     /*Record of past and projected and current holding for the security*/
+    @MetaField
     private String investmentPortfolioSecurityHolding;
 
     public void setInvestmentPortfolioTradingPolicies(String investmentPortfolioTradingPolicies) {

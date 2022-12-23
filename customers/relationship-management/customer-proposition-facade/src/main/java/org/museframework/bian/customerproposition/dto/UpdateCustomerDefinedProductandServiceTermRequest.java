@@ -1,10 +1,18 @@
 package org.museframework.bian.customerproposition.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCustomerDefinedProductandServiceTermRequest {
+    @MetaField
     private String customerpropositionid;
 
+    @MetaField
     private String customerdefinedproductandservicetermid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerproposition.dto.bq.CustomerDefinedProductandServiceTerm customerDefinedProductandServiceTerm;
 
     public void setCustomerpropositionid(String customerpropositionid) {

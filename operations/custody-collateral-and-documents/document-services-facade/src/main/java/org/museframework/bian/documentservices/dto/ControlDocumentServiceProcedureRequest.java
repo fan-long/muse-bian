@@ -1,8 +1,15 @@
 package org.museframework.bian.documentservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlDocumentServiceProcedureRequest {
+    @MetaField
     private String documentservicesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.documentservices.dto.cr.DocumentServiceProcedure documentServiceProcedure;
 
     public void setDocumentservicesid(String documentservicesid) {

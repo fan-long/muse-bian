@@ -1,10 +1,18 @@
 package org.museframework.bian.cusproandser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateIn_forceServicepropertyRequest {
+    @MetaField
     private String customerproductsandservicesid;
 
+    @MetaField
     private String in_forceservicepropertyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusproandser.dto.bq.In_forceServiceproperty in_forceServiceproperty;
 
     public void setCustomerproductsandservicesid(String customerproductsandservicesid) {

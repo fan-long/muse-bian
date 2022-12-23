@@ -1,6 +1,12 @@
 package org.museframework.bian.positionkeeping.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveFinancialTransactionCaptureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.positionkeeping.dto.bq.FinancialTransactionCapture financialTransactionCapture;
 
     public void setFinancialTransactionCapture(org.museframework.bian.positionkeeping.dto.bq.FinancialTransactionCapture financialTransactionCapture) {

@@ -2,29 +2,41 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.crerismod.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditRiskModelSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Credit Risk Model Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
+    @MetaField
     private String creditRiskModelSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
+    @MetaField
     private String creditRiskModelSpecificationSelectedOption;
 
     /*Documentation of Credit Risk Model Specification*/
+    @MetaField
     private String creditRiskModelSpecificationDescription;
 
     /*The version of Credit Risk Model Specification*/
+    @MetaField
     private String creditRiskModelSpecificationVersion;
 
     /*The status of Credit Risk Model Specification*/
+    @MetaField
     private String creditRiskModelSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Credit Risk Model Specification*/
+    @MetaField
     private String creditRiskModelSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Credit Risk Model Specification.*/
+    @MetaField
     private String creditRiskModelSpecificationFeedback;
 
     /*Reference to the party who has provided Credit Risk Model Specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object creditRiskModelSpecificationServiceProviderReference;
 
     public void setCreditRiskModelSpecificationParameterType(String creditRiskModelSpecificationParameterType) {

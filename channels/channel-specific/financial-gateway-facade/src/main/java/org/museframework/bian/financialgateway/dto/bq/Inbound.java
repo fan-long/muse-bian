@@ -3,17 +3,25 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.financialgateway.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Inbound {
     /*Reference to the type of message (defines format)*/
+    @MetaField
     private String financialGatewayInboundMessageType;
 
     /*The message content in any suitable format*/
+    @MetaField
     private String financialGatewayInboundMessageRecord;
 
     /*Employee/Business unit addressed by the message*/
+    @MetaField
     private String financialGatewayInboundMessageReceiver;
 
     /*Used to track delivery  (e.g. pending, delivered, possible duplicate, error)*/
+    @MetaField
     private String financialGatewayInboundMessageStatus;
 
     public void setFinancialGatewayInboundMessageType(String financialGatewayInboundMessageType) {

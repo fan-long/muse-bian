@@ -1,14 +1,21 @@
 /*The sub-tasks involved in the execution of the financial transaction*/
 package org.museframework.bian.paymentinitiation.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Compliance {
     /*The type of compliance check performed (e.g. AML, Watchlists)*/
+    @MetaField
     private String paymentTransactionComplianceCheckType;
 
     /*The outcome of the compliance check*/
+    @MetaField
     private String paymentTransactionComplianceCheckResult;
 
     /*Details of the overall compliance checking process*/
+    @MetaField
     private String paymentTransactionComplianceTaskResult;
 
     public void setPaymentTransactionComplianceCheckType(String paymentTransactionComplianceCheckType) {

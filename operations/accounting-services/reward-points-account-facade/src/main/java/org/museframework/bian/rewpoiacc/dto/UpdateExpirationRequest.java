@@ -1,10 +1,18 @@
 package org.museframework.bian.rewpoiacc.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateExpirationRequest {
+    @MetaField
     private String rewardpointsaccountid;
 
+    @MetaField
     private String expirationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.rewpoiacc.dto.bq.Expiration expiration;
 
     public void setRewardpointsaccountid(String rewardpointsaccountid) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.leaandoppman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateDevelopmentRequest {
+    @MetaField
     private String leadandopportunitymanagementid;
 
+    @MetaField
     private String developmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.leaandoppman.dto.bq.Development development;
 
     public void setLeadandopportunitymanagementid(String leadandopportunitymanagementid) {

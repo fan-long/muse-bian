@@ -3,8 +3,13 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardclearing.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Addressing {
     /*Details of the transaction addressing*/
+    @MetaField
     private String addressingTaskResult;
 
     public void setAddressingTaskResult(String addressingTaskResult) {

@@ -1,47 +1,65 @@
 /*Monitor and define the status/rating of some entity within Credit Risk Operations. */
 package org.museframework.bian.crerisope.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradingCreditPositionMeasurement {
     /*A Classification value that distinguishes between states according to the type of business services and/or type of concern defined within Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementParameterType;
 
     /*A selected optional business service as subject matter of Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService tradingCreditPositionMeasurementSelectedOption;
 
     /*The type of Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementType;
 
     /*An unique reference to an item or an occurrence of Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object tradingCreditPositionMeasurementReference;
 
     /*Documentation of Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementDescription;
 
     /*Timetable to monitor Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementSchedule;
 
     /*The status of Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementStatus;
 
     /*Reference to the log of (usage) ativities/events  of Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log tradingCreditPositionMeasurementUsageLog;
 
     /*Reference to the log of (update) ativities/events of Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log tradingCreditPositionMeasurementUpdateLog;
 
     /*Reference to the customer who is involved in Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementCustomerReference;
 
     /*Reference to the product which is the subject matter of Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct tradingCreditPositionMeasurementProductReference;
 
     /*The configuration of Trading Credit Position Measurement*/
+    @MetaField
     private String tradingCreditPositionMeasurementServiceConfiguration;
 
     /*Reference to Tresholds and Limits for monitoring Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement tradingCreditPositionMeasurementServiceConfigurationTresholdsandLimits;
 
     /*Reference to Notification Arrangements for monitoring Trading Credit Position Measurement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement tradingCreditPositionMeasurementServiceConfigurationNotificationArrangements;
 
     public void setTradingCreditPositionMeasurementParameterType(String tradingCreditPositionMeasurementParameterType) {

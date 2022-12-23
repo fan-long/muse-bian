@@ -1,10 +1,18 @@
 package org.museframework.bian.trabooove.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTradingBookRiskMitigationDutyRequest {
+    @MetaField
     private String tradingbookoversightid;
 
+    @MetaField
     private String tradingbookriskmitigationdutyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.trabooove.dto.bq.TradingBookRiskMitigationDuty tradingBookRiskMitigationDuty;
 
     public void setTradingbookoversightid(String tradingbookoversightid) {

@@ -3,14 +3,21 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcollections.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Payment {
     /*Reference to the received payment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Payment transaction details*/
+    @MetaField
     private String paymentTransaction;
 
     /*Processing record received for payments made against the collections account*/
+    @MetaField
     private String cardCollectionsPaymentNotificationRecord;
 
     public void setPaymentTransactionReference(org.museframework.bian.classes.Object paymentTransactionReference) {

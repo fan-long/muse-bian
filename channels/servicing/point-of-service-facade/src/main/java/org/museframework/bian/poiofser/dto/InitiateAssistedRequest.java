@@ -1,10 +1,18 @@
 package org.museframework.bian.poiofser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateAssistedRequest {
+    @MetaField
     private String pointofserviceid;
 
+    @MetaField
     private String assistedid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.poiofser.dto.bq.Assisted assisted;
 
     public void setPointofserviceid(String pointofserviceid) {

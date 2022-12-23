@@ -1,23 +1,33 @@
 /*Maintain a log of transactions or activity, typically a financial account/journal or a log of activity to support behavioral analysis within Financial Accounting. */
 package org.museframework.bian.financialaccounting.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialBookingLog {
     /*The type of accounting facility (e.g. journal, sub-ledger)*/
+    @MetaField
     private String financialAccountType;
 
     /*Reference to the associated product or service for which this is the underlying accounting*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the owning business unit and associated business activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*Reference to applicable account booking rules*/
+    @MetaField
     private String chartofAccountBookingRules;
 
     /*The currency for the postings*/
+    @MetaField
     private String baseCurrency;
 
     /*Status of the financial log (e.g. active, in-suspense)*/
+    @MetaField
     private String status;
 
     public void setFinancialAccountType(String financialAccountType) {

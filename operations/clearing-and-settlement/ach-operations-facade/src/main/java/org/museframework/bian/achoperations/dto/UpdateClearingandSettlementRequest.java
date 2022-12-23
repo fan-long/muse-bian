@@ -1,10 +1,18 @@
 package org.museframework.bian.achoperations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateClearingandSettlementRequest {
+    @MetaField
     private String achoperationsid;
 
+    @MetaField
     private String clearingandsettlementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.achoperations.dto.bq.ClearingandSettlement clearingandSettlement;
 
     public void setAchoperationsid(String achoperationsid) {

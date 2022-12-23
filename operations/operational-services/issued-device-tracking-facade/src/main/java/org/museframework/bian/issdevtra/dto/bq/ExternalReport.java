@@ -3,29 +3,41 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.issdevtra.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ExternalReport {
     /*Is the record of the information notified by the IP that can reference a single device notification or a batch file covering multiple devices*/
+    @MetaField
     private String informationFeedServiceContentRecord;
 
     /*Provided reference to the target issued device in the form defined by the IP*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object issuedDeviceReference;
 
     /*Type of issued device being notified in the form defined by the IP*/
+    @MetaField
     private String issuedDeviceType;
 
     /*Reference to the associated customer in the form defined by the IP*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the associated product instance in the form defined by the IP*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The details of the status update (e.g. reported lost or stolen device, device broken)*/
+    @MetaField
     private String statusUpdateDetails;
 
     /*The response to the status update request (e.g. update processed)*/
+    @MetaField
     private String statusUpdateResult;
 
     /*Key dates and times associated with the external notification*/
+    @MetaField
     private String date;
 
     public void setInformationFeedServiceContentRecord(String informationFeedServiceContentRecord) {

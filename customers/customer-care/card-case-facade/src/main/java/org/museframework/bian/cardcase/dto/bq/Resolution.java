@@ -3,35 +3,49 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Resolution {
     /*Reference to the card transaction for the resolution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object resolutionCardTransactionRecordReference;
 
     /*The record of a specific resolution task*/
+    @MetaField
     private String resolutionTaskRecord;
 
     /*Reference to the correspondence generated and received*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
+    @MetaField
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
+    @MetaField
     private String documentContent;
 
     /*Business unit responsible for the card case resolution actions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the resolution payment order when financial adjustments are required to resolve the card case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentOrderReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String resolutionTaskWorkProducts;
 
     /*The outcome of the authentication workstep*/
+    @MetaField
     private String resolutionTaskResult;
 
     public void setResolutionCardTransactionRecordReference(org.museframework.bian.classes.Object resolutionCardTransactionRecordReference) {

@@ -3,26 +3,37 @@
 Examples: Password verification*/
 package org.museframework.bian.cardauthorization.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Authorization {
     /*The required status/situation before the test can be applied*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String schedule;
 
     /*The test version employed*/
+    @MetaField
     private String versionNumber;
 
     /*The <BQ> specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the Credit Card Authorization Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Assessment creditCardAuthorizationAssessmentReference;
 
     /*Reference to Authorization*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Test authorizationReference;
 
     /*The type of Authorization*/
+    @MetaField
     private String authorizationType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

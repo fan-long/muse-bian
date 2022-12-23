@@ -1,26 +1,37 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.ecmanddcm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Prospectus {
     /*Business unit and or employee responsible for the prospectus development*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*A record of the work done to develop the prospectus for the issuance (covers both private and public placements)*/
+    @MetaField
     private String prospectusWorkTaskRecord;
 
     /*The type of work task (e.g. financial analysis/comparison development, pricing negotiation, presentation development, legal/tax/compliance assurance)*/
+    @MetaField
     private String prospectusWorkTaskType;
 
     /*Description of the task performed*/
+    @MetaField
     private String prospectusWorkTaskDescription;
 
     /*File of consolidated notes, algorithms, financial market research, forms and documents for the work task*/
+    @MetaField
     private String prospectusWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The developed prospectus for the ECM/DCM instrument, including agreed pricing strategy*/
+    @MetaField
     private String prospectus;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

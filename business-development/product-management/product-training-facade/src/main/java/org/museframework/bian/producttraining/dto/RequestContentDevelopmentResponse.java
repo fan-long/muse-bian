@@ -1,6 +1,12 @@
 package org.museframework.bian.producttraining.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestContentDevelopmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.producttraining.dto.bq.ContentDevelopment contentDevelopment;
 
     public void setContentDevelopment(org.museframework.bian.producttraining.dto.bq.ContentDevelopment contentDevelopment) {

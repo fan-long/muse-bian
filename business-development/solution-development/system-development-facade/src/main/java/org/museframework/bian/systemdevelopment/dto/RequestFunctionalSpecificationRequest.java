@@ -1,10 +1,18 @@
 package org.museframework.bian.systemdevelopment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestFunctionalSpecificationRequest {
+    @MetaField
     private String systemdevelopmentid;
 
+    @MetaField
     private String functionalspecificationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.systemdevelopment.dto.bq.FunctionalSpecification functionalSpecification;
 
     public void setSystemdevelopmentid(String systemdevelopmentid) {

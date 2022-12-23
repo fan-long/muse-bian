@@ -3,20 +3,29 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.cuscrerat.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Alerts {
     /*The product/service instance that generated the alert*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The individual source of the alert - if not automated by production*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The type of alert (e.g. missed payment, limit breach)*/
+    @MetaField
     private String customerCreditAlertType;
 
     /*Details of the event behind the notification*/
+    @MetaField
     private String customerCreditAlertDescription;
 
     /*The date and time of the notification*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

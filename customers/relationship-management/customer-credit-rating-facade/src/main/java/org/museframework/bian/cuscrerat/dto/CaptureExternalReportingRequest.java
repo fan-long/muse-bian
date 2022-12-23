@@ -1,10 +1,18 @@
 package org.museframework.bian.cuscrerat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureExternalReportingRequest {
+    @MetaField
     private String customercreditratingid;
 
+    @MetaField
     private String externalreportingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cuscrerat.dto.bq.ExternalReporting externalReporting;
 
     public void setCustomercreditratingid(String customercreditratingid) {

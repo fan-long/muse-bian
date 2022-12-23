@@ -1,8 +1,15 @@
 package org.museframework.bian.carecogat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveTransactionBatchRequest {
+    @MetaField
     private String cardecommercegatewayid;
 
+    @MetaField
     private String transactionbatchid;
 
     public void setCardecommercegatewayid(String cardecommercegatewayid) {

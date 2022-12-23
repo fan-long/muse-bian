@@ -1,10 +1,18 @@
 package org.museframework.bian.termdeposit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteAccountSweepRequest {
+    @MetaField
     private String termdepositid;
 
+    @MetaField
     private String accountsweepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.termdeposit.dto.bq.AccountSweep accountSweep;
 
     public void setTermdepositid(String termdepositid) {

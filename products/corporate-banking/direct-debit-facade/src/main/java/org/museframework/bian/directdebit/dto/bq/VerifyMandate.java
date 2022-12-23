@@ -1,32 +1,45 @@
 /*The configuration and execution of Batch Debit arrangement within the Direct Debit Facility*/
 package org.museframework.bian.directdebit.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class VerifyMandate {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String verifyMandatePreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String verifyMandateFeatureSchedule;
 
     /*The Direct Debit Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService directDebitMandateCheck;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String verifyMandatePostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String verifyMandateDirectDebitMandateCheckServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String verifyMandateDirectDebitMandateCheckServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String verifyMandateDirectDebitMandateCheckServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String verifyMandateDirectDebitMandateCheckServiceWorkProduct;
 
     /**/
+    @MetaField
     private String verifyMandateDirectDebitMandateCheckServiceName;
 
     public void setVerifyMandatePreconditions(String verifyMandatePreconditions) {

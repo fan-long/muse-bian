@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.customerbilling.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TrackingandReminders {
     /*Reference to an outbound contact established with the customer*/
+    @MetaField
     private String customerReminderContactRecord;
 
     /*Content of the reminder message*/
+    @MetaField
     private String contactMessage;
 
     /*The date and time of the contact*/
+    @MetaField
     private String contactDate;
 
     /*Any response arising from the contact*/
+    @MetaField
     private String contactResult;
 
     /*The result of the tracking and reminder activity*/
+    @MetaField
     private String trackingandRemindersResult;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
+    @MetaField
     private String trackingandRemindersWorkProduct;
 
     public void setCustomerReminderContactRecord(String customerReminderContactRecord) {

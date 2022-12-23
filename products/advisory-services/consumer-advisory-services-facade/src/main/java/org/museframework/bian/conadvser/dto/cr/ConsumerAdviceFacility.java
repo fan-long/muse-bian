@@ -1,41 +1,57 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Consumer Advisory Services. */
 package org.museframework.bian.conadvser.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ConsumerAdviceFacility {
     /*Reference to the advisory service session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the customer receiving the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the customer account/relationship for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Business unit and or employee reference to the source of the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the advisory session*/
+    @MetaField
     private String consumerAdviceWorkProducts;
 
     /*The document reference for associated documents such as disclosures and acceptance records*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Target and actual dates for tasks performed (includes any specialist sessions)*/
+    @MetaField
     private String consumerAdviceSessionSchedule;
 
     /*Details the types of consumer advice that are combined into the overall evaluation*/
+    @MetaField
     private String consumerAdviceProfile;
 
     /*Reference to the different types of advice*/
+    @MetaField
     private String adviceType;
 
     /*The combination of the different customer advisory assessments provided to the customer*/
+    @MetaField
     private String consumerAdviceConsolidationRecord;
 
     /*Key dates and times associated with the advisory session (e.g. booking date, start date/time)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

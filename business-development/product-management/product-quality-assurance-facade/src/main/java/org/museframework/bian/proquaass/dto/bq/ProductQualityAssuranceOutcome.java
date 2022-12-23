@@ -3,11 +3,17 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.proquaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductQualityAssuranceOutcome {
     /**/
+    @MetaField
     private String productQualityAssuranceWorkProduct;
 
     /**/
+    @MetaField
     private String productQualityAssuranceAssessmentType;
 
     public void setProductQualityAssuranceWorkProduct(String productQualityAssuranceWorkProduct) {

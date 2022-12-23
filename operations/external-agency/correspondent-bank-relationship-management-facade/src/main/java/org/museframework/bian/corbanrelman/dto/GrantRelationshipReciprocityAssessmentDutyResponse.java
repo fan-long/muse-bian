@@ -1,6 +1,12 @@
 package org.museframework.bian.corbanrelman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class GrantRelationshipReciprocityAssessmentDutyResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.corbanrelman.dto.bq.RelationshipReciprocityAssessmentDuty relationshipReciprocityAssessmentDuty;
 
     public void setRelationshipReciprocityAssessmentDuty(org.museframework.bian.corbanrelman.dto.bq.RelationshipReciprocityAssessmentDuty relationshipReciprocityAssessmentDuty) {

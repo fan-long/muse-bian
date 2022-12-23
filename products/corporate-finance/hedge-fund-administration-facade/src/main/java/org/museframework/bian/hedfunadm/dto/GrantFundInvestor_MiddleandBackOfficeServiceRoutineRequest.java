@@ -1,10 +1,18 @@
 package org.museframework.bian.hedfunadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class GrantFundInvestor_MiddleandBackOfficeServiceRoutineRequest {
+    @MetaField
     private String hedgefundadministrationid;
 
+    @MetaField
     private String fundinvestor_middleandbackofficeserviceroutineid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.hedfunadm.dto.bq.FundInvestor_MiddleandBackOfficeServiceRoutine fundInvestor_MiddleandBackOfficeServiceRoutine;
 
     public void setHedgefundadministrationid(String hedgefundadministrationid) {

@@ -1,26 +1,37 @@
 /*The configuration and execution of Trust Estate, Inheritance and Income Tax Fulfillment arrangement within the Trust Estate, Inheritance and Income Tax Fulfillment*/
 package org.museframework.bian.trustservices.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TrustEstate_InheritanceandIncomeTaxFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Trust Estate, Inheritance and Income Tax Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Trust Estate, Inheritance and Income Tax Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility corporateTrustServicesFacilityReference;
 
     /*Reference to Trust Estate, Inheritance and Income Tax Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object trustEstate_InheritanceandIncomeTaxFulfillmentReference;
 
     /*The type of Trust Estate, Inheritance and Income Tax Fulfillment*/
+    @MetaField
     private String trustEstate_InheritanceandIncomeTaxFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

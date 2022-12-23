@@ -2,32 +2,45 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.atmnetope.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ATMNetworkOperatingSession {
     /*The timetable of ATMNetwork Operating Session*/
+    @MetaField
     private String ATMNetworkOperatingSessionSchedule;
 
     /*The status of ATMNetwork Operating Session*/
+    @MetaField
     private String ATMNetworkOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of ATMNetwork Operating Session*/
+    @MetaField
     private String ATMNetworkOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in ATMNetwork Operating Session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object ATMNetworkOperatingSessionReference;
 
     /*Reference to the party who provides the services of ATMNetwork Operating Session */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object ATMNetworkOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within ATMNetwork Operating Session */
+    @MetaField
     private String ATMNetworkOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the ATMNetwork Operating Session*/
+    @MetaField
     private String ATMNetworkOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within ATMNetwork Operating Session */
+    @MetaField
     private String ATMNetworkOperatingSessionServiceType;
 
     /*The configuration of ATMNetwork Operating Session*/
+    @MetaField
     private String ATMNetworkOperatingSessionServiceConfiguration;
 
     public void setATMNetworkOperatingSessionSchedule(String ATMNetworkOperatingSessionSchedule) {

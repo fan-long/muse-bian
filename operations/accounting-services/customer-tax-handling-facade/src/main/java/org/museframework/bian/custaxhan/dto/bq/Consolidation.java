@@ -1,29 +1,41 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.custaxhan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Consolidation {
     /*Reference to the one of more products and services in use for which tax related activity is to be obtained*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The types of product fulfillment reports available - in this case transaction details used for tax obligations and reporting*/
+    @MetaField
     private String productArrangementInstanceReportType;
 
     /*The product/service activity report - transactional activity used for taxation and reporting*/
+    @MetaField
     private String productArrangementInstanceReport;
 
     /*Defines content/transaction types to be included in the report extract*/
+    @MetaField
     private String reportOptionsSelectionCriteria;
 
     /*The from-to dates covered by the report for tax reporting*/
+    @MetaField
     private String reportPeriod;
 
     /*Defines presentation format*/
+    @MetaField
     private String reportFormatTemplate;
 
     /*The requested product/service activity report used in the taxation consolidation task*/
+    @MetaField
     private String report;
 
     /*Work documentation, forms and schedules produced and referenced during the consolidation*/
+    @MetaField
     private String customerTaxHandlingConsolidationWorkProducts;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

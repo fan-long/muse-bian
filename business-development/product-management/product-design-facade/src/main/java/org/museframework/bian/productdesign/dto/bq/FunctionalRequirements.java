@@ -3,23 +3,33 @@
 Examples: Business Requirements*/
 package org.museframework.bian.productdesign.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FunctionalRequirements {
     /*Reference to a type of functional requirements specification activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationDesignTaskReference;
 
     /*The record of work products used for the design task*/
+    @MetaField
     private String productandServiceSpecificationDesignTaskRecord;
 
     /*Reference to external service information provider used to obtain product or service related market research as input to the design*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object marketResearchDataServiceReference;
 
     /*Record of the product or service related market research*/
+    @MetaField
     private String marketResearchDataRecord;
 
     /*User provided and solicited feedback, suggestions for product or service refinement*/
+    @MetaField
     private String productandServiceFeedbackRecord;
 
     /*The product or service detailed functional requirements specification (with versioning as appropriate)*/
+    @MetaField
     private String productandServiceRequirementsSpecification;
 
     public void setProductandServiceSpecificationDesignTaskReference(org.museframework.bian.classes.Object productandServiceSpecificationDesignTaskReference) {

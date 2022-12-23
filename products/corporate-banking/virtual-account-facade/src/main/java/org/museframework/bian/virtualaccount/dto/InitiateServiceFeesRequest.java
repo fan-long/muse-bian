@@ -1,10 +1,18 @@
 package org.museframework.bian.virtualaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateServiceFeesRequest {
+    @MetaField
     private String virtualaccountid;
 
+    @MetaField
     private String servicefeesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.virtualaccount.dto.bq.ServiceFees serviceFees;
 
     public void setVirtualaccountid(String virtualaccountid) {

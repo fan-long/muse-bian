@@ -1,32 +1,45 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.ecmanddcm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Placement {
     /*Business unit and or employee responsible for the placement road show and issuance transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*List of target investors for private placement*/
+    @MetaField
     private String prospectList;
 
     /*The schedule and details of investor presentations*/
+    @MetaField
     private String placementRoadshowSchedule;
 
     /*A record of the work done to place the instrument in the private or public markets as appropriate*/
+    @MetaField
     private String placementWorkTaskRecord;
 
     /*The type of work task (e.g. prospect scheduling, presentation, negotiation)*/
+    @MetaField
     private String placementWorkTaskType;
 
     /*Description of the task performed*/
+    @MetaField
     private String placementWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents used and generated through the work task*/
+    @MetaField
     private String placementWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The consolidated details of the investments obtained for the issuance - details investor participation for private placement and primary market transaction references for public offerings*/
+    @MetaField
     private String placementTransaction;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

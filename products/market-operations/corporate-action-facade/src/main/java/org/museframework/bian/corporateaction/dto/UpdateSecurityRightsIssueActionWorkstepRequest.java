@@ -1,10 +1,18 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateSecurityRightsIssueActionWorkstepRequest {
+    @MetaField
     private String corporateactionid;
 
+    @MetaField
     private String securityrightsissueactionworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporateaction.dto.bq.SecurityRightsIssueActionWorkstep securityRightsIssueActionWorkstep;
 
     public void setCorporateactionid(String corporateactionid) {

@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.creditcard.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Billing {
     /*Defines the set-up for the billing processing (e.g. cycle date, type of billing, etc.)*/
+    @MetaField
     private String billingParameters;
 
     /*The billing/invoicing transaction details*/
+    @MetaField
     private String billingTransaction;
 
     /*The target for the invoice, typically the card holder*/
+    @MetaField
     private String billingTransactionParty;
 
     /*The billing address (can vary from the customer home address)*/
+    @MetaField
     private String billingTransactionAddress;
 
     /*The period (from-to) covered by the invoice*/
+    @MetaField
     private String billingTransactionPeriod;
 
     /*Reference to an associated statement (that is included in the generated invoice)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object billingTransactionStatementReference;
 
     /*The amount of the required repayment*/
+    @MetaField
     private String billingTransactionAmount;
 
     /*The minimum required payment (for partial payment)*/
+    @MetaField
     private String billingTransactionMinimumRequiredPayment;
 
     /*The due date for the payment*/
+    @MetaField
     private String billingTransactionPaymentDueDate;
 
     public void setBillingParameters(String billingParameters) {

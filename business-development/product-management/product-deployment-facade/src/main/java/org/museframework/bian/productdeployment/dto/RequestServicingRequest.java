@@ -1,10 +1,18 @@
 package org.museframework.bian.productdeployment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestServicingRequest {
+    @MetaField
     private String productdeploymentid;
 
+    @MetaField
     private String servicingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productdeployment.dto.bq.Servicing servicing;
 
     public void setProductdeploymentid(String productdeploymentid) {

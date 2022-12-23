@@ -1,8 +1,15 @@
 package org.museframework.bian.procamman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestProspectCampaignPortfolioManagementPlanRequest {
+    @MetaField
     private String prospectcampaignmanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.procamman.dto.cr.ProspectCampaignPortfolioManagementPlan prospectCampaignPortfolioManagementPlan;
 
     public void setProspectcampaignmanagementid(String prospectcampaignmanagementid) {

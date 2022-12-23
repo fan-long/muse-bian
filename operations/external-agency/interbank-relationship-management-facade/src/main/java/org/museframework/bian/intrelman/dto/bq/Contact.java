@@ -3,29 +3,41 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.intrelman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Contact {
     /*Records the timing, purpose, details and impact of customer contacts*/
+    @MetaField
     private String bankRelationshipContactHistory;
 
     /*The schedule of past and planned customer contacts*/
+    @MetaField
     private String bankRelationshipContactSchedule;
 
     /*The record of a customer contact*/
+    @MetaField
     private String bankRelationshipContactRecord;
 
     /*The date time and location of the contact*/
+    @MetaField
     private String bankRelationshipContactDate;
 
     /*Reference to the employee(s) in attendance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeReference;
 
     /*The reason and or purpose for the contact (e.g. review, issue, product sales, advice, customer enquiry)*/
+    @MetaField
     private String bankRelationshipContactType;
 
     /*The result of the contact, including follow up tasks*/
+    @MetaField
     private String bankRelationshipContactResult;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     public void setBankRelationshipContactHistory(String bankRelationshipContactHistory) {

@@ -2,35 +2,49 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.accountsreceivable.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ReceivablesEvaluation {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField
     private String receivablesEvaluationPreconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object receivablesEvaluationBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String receivablesEvaluationWorkSchedule;
 
     /*The Accounts Receivable Procedure specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService receivablesEvaluation;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField
     private String receivablesEvaluationPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String receivablesEvaluationReceivablesEvaluationServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String receivablesEvaluationReceivablesEvaluationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String receivablesEvaluationReceivablesEvaluationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String receivablesEvaluationReceivablesEvaluationServiceWorkProduct;
 
     /**/
+    @MetaField
     private String receivablesEvaluationReceivablesEvaluationServiceName;
 
     public void setReceivablesEvaluationPreconditions(String receivablesEvaluationPreconditions) {

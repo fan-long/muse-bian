@@ -1,10 +1,18 @@
 package org.museframework.bian.parroupro.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateRatingRequest {
+    @MetaField
     private String partyroutingprofileid;
 
+    @MetaField
     private String ratingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.parroupro.dto.bq.Rating rating;
 
     public void setPartyroutingprofileid(String partyroutingprofileid) {

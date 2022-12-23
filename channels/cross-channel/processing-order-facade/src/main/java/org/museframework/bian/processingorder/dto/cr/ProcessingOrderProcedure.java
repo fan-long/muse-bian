@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Processing Order.*/
 package org.museframework.bian.processingorder.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProcessingOrderProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureParameterType;
 
     /*A selected optional business service as subject matter of Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature processingOrderProcedureSelectedOption;
 
     /*Request to process the Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction processingOrderProcedureRequest;
 
     /*Timetable to process the Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureSchedule;
 
     /*The status of Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureStatus;
 
     /*Reference to the party who is involved in Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility processingOrderProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureType;
 
     /*The schedule according to which the service provider will process the Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Processing Order Procedure.*/
+    @MetaField
     private String processingOrderProcedureServiceType;
 
     /*Reference to the product or service that is related to Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct processingOrderProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction processingOrderProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement processingOrderProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Processing Order Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement processingOrderProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Processing Order Procedure. */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure processingOrderProcedureReference;
 
     public void setProcessingOrderProcedureParameterType(String processingOrderProcedureParameterType) {

@@ -1,86 +1,117 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Underwriting. */
 package org.museframework.bian.underwriting.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class UnderwritingAssessment extends org.museframework.bian.classes.UnderwritingAssessment {
     /*Guidelines provided for applying for an underwriting decision - list submission requirements*/
+    @MetaField
     private String underwritingGuidelines;
 
     /*Outlines the employment details required*/
+    @MetaField
     private String requiredCustomerEmploymentHistoryDetails;
 
     /*Outlines the type of debt/asset details required*/
+    @MetaField
     private String requiredCustomerDebtAssetStatement;
 
     /*Outlines the required credit assessment details required*/
+    @MetaField
     private String requiredCustomerCreditAssessment;
 
     /*Outlines the details of collateral required*/
+    @MetaField
     private String requiredCollateralCoverage;
 
     /*Outlines the extent of the product usage history required*/
+    @MetaField
     private String requiredCustomerProductandServicePaymentHistory;
 
     /*Lists required documentation (e.g. for proof of identity, assets, collateral)*/
+    @MetaField
     private String requiredCustomerDocuments;
 
     /*…*/
+    @MetaField
     private String proposedTransactionDetails;
 
     /*The associated product instance for the underwriting decision*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The proposed loan terms*/
+    @MetaField
     private String proposedLoanTerms;
 
     /*The proposed loan amount*/
+    @MetaField
     private String proposedLoanAmount;
 
     /*The purpose for the loan  (e.g. mortgage for primary residence/rental)*/
+    @MetaField
     private String loanPurpose;
 
     /*Reference to the applying customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference details known about the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReferenceDetails;
 
     /*Definition of the terms under which the customer eligible for the loan*/
+    @MetaField
     private String customerProductEligibilityTerms;
 
     /*The customer's employment record*/
+    @MetaField
     private String customerEmploymentHistory;
 
     /*The customers historical income statement (for individuals)*/
+    @MetaField
     private String customerIncomeStatement;
 
     /*Covers bank and known non-bank managed debts*/
+    @MetaField
     private String customerDebtStatement;
 
     /*Covers bank and known non-bank managed assets*/
+    @MetaField
     private String customerAssetStatement;
 
     /*Reference to the bank's credit assessment of the customer*/
+    @MetaField
     private String customerCreditAssessment;
 
     /*Reference to product reports covering payment history*/
+    @MetaField
     private String customerProductandServicePaymentHistory;
 
     /*Reference to the customers collateral holdings that are available*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralItemReference;
 
     /*The type of collateral*/
+    @MetaField
     private String collateralItemType;
 
     /*The valuation of the collateral (applying the required loan to asset ratio)*/
+    @MetaField
     private String collateralItemValuation;
 
     /*Reference to associated documents of significance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference;
 
     /*Details of the underwriting decision*/
+    @MetaField
     private String underwritingAssessmentDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
+    @MetaField
     private String underwritingAssessmentWorkProduct;
 
     public void setUnderwritingGuidelines(String underwritingGuidelines) {

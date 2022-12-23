@@ -1,17 +1,25 @@
 /*The Staff Availability Tracking Routine is an activity that is performed as one aspect of carrying out the Staff Availability Tracking Routine*/
 package org.museframework.bian.prosalsup.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductSalesSupportOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis productSalesSupportPerformanceAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis productSalesSupportActivityAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan productSalesSupportAdministrativePlan;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement productSalesSupportAdministrationTask;
 
     public void setProductSalesSupportPerformanceAnalysis(org.museframework.bian.classes.Analysis productSalesSupportPerformanceAnalysis) {

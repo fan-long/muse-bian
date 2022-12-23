@@ -1,8 +1,15 @@
 package org.museframework.bian.paymentinstruction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyAgreementConfirmationWorkstepRequest {
+    @MetaField
     private String paymentinstructionid;
 
+    @MetaField
     private String agreementconfirmationworkstepid;
 
     public void setPaymentinstructionid(String paymentinstructionid) {

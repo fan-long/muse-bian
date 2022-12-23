@@ -1,8 +1,15 @@
 package org.museframework.bian.termdeposit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTermDepositFacilityRequest {
+    @MetaField
     private String termdepositid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.termdeposit.dto.cr.TermDepositFacility termDepositFacility;
 
     public void setTermdepositid(String termdepositid) {

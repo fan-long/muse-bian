@@ -1,20 +1,29 @@
 /*Reference to the terms in force for a specific customer for this service provider*/
 package org.museframework.bian.servicingmandate.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerMandate {
     /*Reference to the individual customer be accessed through the servicing order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Details the specific customer access allowed under the mandate*/
+    @MetaField
     private String servicingMandateAgreementCustomerProductandServiceProfile;
 
     /*A type of product or service covered by the mandate*/
+    @MetaField
     private String productandServiceType;
 
     /*Defines if and under what terms a product/service can be accessed for this customer under the mandate*/
+    @MetaField
     private String servicingMandateAgreementCustomerProductandServiceTypeAccess;
 
     /*Records the usage of products/service under the mandate for control purposes*/
+    @MetaField
     private String servicingMandateAgreementCustomerProductandServiceTypeUsage;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

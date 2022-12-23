@@ -1,10 +1,18 @@
 package org.museframework.bian.locdatman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateUseRequest {
+    @MetaField
     private String locationdatamanagementid;
 
+    @MetaField
     private String useid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.locdatman.dto.bq.Use use;
 
     public void setLocationdatamanagementid(String locationdatamanagementid) {

@@ -2,50 +2,69 @@
 */
 package org.museframework.bian.terdepfraagr.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TermDepositFrameworkAgreementFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature termDepositFrameworkAgreementFacilitySelectedOption;
 
     /*The status of Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityStatus;
 
     /*Reference to the party who is involved in Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityAssociatedParty;
 
     /*The curreny which is arranged in Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityCurrency;
 
     /*Reference to the regulation which is defined in Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet termDepositFrameworkAgreementFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Term Deposit Framework Agreement Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction termDepositFrameworkAgreementFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Term Deposit Framework Agreement Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit termDepositFrameworkAgreementFacilityBookingLocation;
 
     /*Reference to the account which is linked to Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account termDepositFrameworkAgreementFacilityAccountReference;
 
     /*Reference to the customer who is involved in Term Deposit Framework Agreement Facility*/
+    @MetaField
     private String termDepositFrameworkAgreementFacilityCustomerReference;
 
     /*The position of Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position termDepositFrameworkAgreementFacilityPosition;
 
     /*Reference to the product which is linked to Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct termDepositFrameworkAgreementFacilityProductReference;
 
     /*Reference to the limitation related to the position of Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement termDepositFrameworkAgreementFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Term Deposit Framework Agreement Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility termDepositFrameworkAgreementFacilityReference;
 
     public void setTermDepositFrameworkAgreementFacilityParameterType(String termDepositFrameworkAgreementFacilityParameterType) {

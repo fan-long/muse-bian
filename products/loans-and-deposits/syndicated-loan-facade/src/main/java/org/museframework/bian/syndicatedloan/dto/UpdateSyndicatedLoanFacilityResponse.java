@@ -1,6 +1,12 @@
 package org.museframework.bian.syndicatedloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateSyndicatedLoanFacilityResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.syndicatedloan.dto.cr.SyndicatedLoanFacility syndicatedLoanFacility;
 
     public void setSyndicatedLoanFacility(org.museframework.bian.syndicatedloan.dto.cr.SyndicatedLoanFacility syndicatedLoanFacility) {

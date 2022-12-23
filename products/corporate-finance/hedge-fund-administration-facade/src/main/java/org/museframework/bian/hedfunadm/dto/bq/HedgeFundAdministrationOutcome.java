@@ -1,17 +1,25 @@
 /*The Fund Inflows and Outflow Routine is an activity that is performed as one aspect of carrying out the Fund Inflows and Outflow Routine*/
 package org.museframework.bian.hedfunadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class HedgeFundAdministrationOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis hedgeFundAdministrationPerformanceAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis hedgeFundAdministrationActivityAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan hedgeFundAdministrationAdministrativePlan;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement hedgeFundAdministrationAdministrationTask;
 
     public void setHedgeFundAdministrationPerformanceAnalysis(org.museframework.bian.classes.Analysis hedgeFundAdministrationPerformanceAnalysis) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.customeroffer.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateUnderwritingRequest {
+    @MetaField
     private String customerofferid;
 
+    @MetaField
     private String underwritingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customeroffer.dto.bq.Underwriting underwriting;
 
     public void setCustomerofferid(String customerofferid) {

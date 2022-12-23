@@ -1,10 +1,18 @@
 package org.museframework.bian.carfinset.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateConsolidationRequest {
+    @MetaField
     private String cardfinancialsettlementid;
 
+    @MetaField
     private String consolidationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.carfinset.dto.bq.Consolidation consolidation;
 
     public void setCardfinancialsettlementid(String cardfinancialsettlementid) {

@@ -1,29 +1,41 @@
 /*The Production Performance Assessment Duty is a specific role or responsibility that is one aspect of Production Performance Assessment Duty*/
 package org.museframework.bian.brokeredproduct.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductionPerformanceAssessmentDuty {
     /*The required status/situation before the duty/obligation can be met*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
+    @MetaField
     private String schedule;
 
     /*The Production Performance Assessment Duty specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Production Performance Assessment Duty*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan brokeredProductManagementPlanReference;
 
     /*Reference to Production Performance Assessment Duty*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PlannedAction productionPerformanceAssessmentDutyReference;
 
     /*The type of Production Performance Assessment Duty*/
+    @MetaField
     private String productionPerformanceAssessmentDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

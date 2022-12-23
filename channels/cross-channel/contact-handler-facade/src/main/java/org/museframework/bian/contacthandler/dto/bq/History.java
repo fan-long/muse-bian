@@ -3,8 +3,13 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.contacthandler.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class History {
     /*The task updates the channel activity history to reflect the contact*/
+    @MetaField
     private String historyTaskRecord;
 
     public void setHistoryTaskRecord(String historyTaskRecord) {

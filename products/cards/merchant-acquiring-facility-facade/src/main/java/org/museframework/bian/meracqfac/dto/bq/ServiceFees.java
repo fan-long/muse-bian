@@ -1,41 +1,57 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.meracqfac.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServiceFees {
     /*The profile of applicable fees and penalties*/
+    @MetaField
     private String merchantFeeConfigurationProfile;
 
     /*The fee or penalty type applied*/
+    @MetaField
     private String merchantFeeType;
 
     /*Definition of the fee or penalty including when and how to apply*/
+    @MetaField
     private String merchantFeeDefinition;
 
     /*The record of applied fees and penalties including transactions and accrued amounts*/
+    @MetaField
     private String merchantFeeApplicationRecord;
 
     /*A record of an applied fee or penalty*/
+    @MetaField
     private String merchantFeeTransaction;
 
     /*General description of the fee or penalty transaction*/
+    @MetaField
     private String transactionDescription;
 
     /*The fee or penalty type applied*/
+    @MetaField
     private String transactionFeeType;
 
     /*The derived fee or penalty amount applied*/
+    @MetaField
     private String transactionFeeCharge;
 
     /*A record of projected fees and penalties*/
+    @MetaField
     private String merchantFeeProjectionsandCommitments;
 
     /*General description of the projected fee or penalty*/
+    @MetaField
     private String projectedTransactionDescription;
 
     /*The fee or penalty type*/
+    @MetaField
     private String projectedTransactionFeeType;
 
     /*The anticipated fee or penalty amount*/
+    @MetaField
     private String projectedTransactionFeeCharge;
 
     public void setMerchantFeeConfigurationProfile(String merchantFeeConfigurationProfile) {

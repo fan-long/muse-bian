@@ -1,77 +1,105 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Cash Management And Account Services. */
 package org.museframework.bian.casmanandaccser.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CashManagementAndAccountServicesFacility {
     /*Reference to the cash management & account services product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated cash management & account services account number in any suitable format (e.g. IBAN)*/
+    @MetaField
     private String cashManagementAndAccountServicesAccountNumber;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the account for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*The type of cash management and account services account (e.g. corporate, small business)*/
+    @MetaField
     private String accountType;
 
     /*The primary account currency*/
+    @MetaField
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option*/
+    @MetaField
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
+    @MetaField
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
+    @MetaField
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
+    @MetaField
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
+    @MetaField
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
+    @MetaField
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object associationReference;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String linkedAccounts;
 
     /*The type and purpose for the link*/
+    @MetaField
     private String linkType;
 
     /*Details of the linked account*/
+    @MetaField
     private String accountDetails;
 
     /*Position limits that are maintained by the account*/
+    @MetaField
     private String positionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
+    @MetaField
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String positionLimitSettings;
 
     /*The current calculated position*/
+    @MetaField
     private String positionLimitValue;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

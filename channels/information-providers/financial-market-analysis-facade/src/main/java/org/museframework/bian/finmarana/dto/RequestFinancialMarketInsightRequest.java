@@ -1,10 +1,18 @@
 package org.museframework.bian.finmarana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestFinancialMarketInsightRequest {
+    @MetaField
     private String financialmarketanalysisid;
 
+    @MetaField
     private String financialmarketinsightid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.finmarana.dto.bq.FinancialMarketInsight financialMarketInsight;
 
     public void setFinancialmarketanalysisid(String financialmarketanalysisid) {

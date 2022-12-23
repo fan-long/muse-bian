@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.accountrecovery.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Negotiation {
     /*Defines bank's policies and guidelines for account recovery/write down handling*/
+    @MetaField
     private String accountRecoveryGuidelines;
 
     /*Reference to negotiation/confirmation messages sent to involved parties, includes internal and external legal/law enforcement authorities*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceReference;
 
     /*Copies of correspondence content as appropriate*/
+    @MetaField
     private String correspondenceContent;
 
     /*Reference to legal documents created & referenced during the account recovery negotiation process*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference;
 
     /*Copies of document copy/content as appropriate*/
+    @MetaField
     private String documentContent;
 
     /*Processing record for the negotiation task within the account recovery process*/
+    @MetaField
     private String accountRecoveryCaseNegotiationTaskRecord;
 
     public void setAccountRecoveryGuidelines(String accountRecoveryGuidelines) {

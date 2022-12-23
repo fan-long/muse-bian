@@ -3,17 +3,25 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.leaiteadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LeasingItemAdministrationOutcome {
     /**/
+    @MetaField
     private String leasingItemAdministrationPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String leasingItemAdministrationActivityAnalysis;
 
     /**/
+    @MetaField
     private String leasingItemAdministrationAdministrativePlan;
 
     /**/
+    @MetaField
     private String leasingItemAdministrationAdministrationTask;
 
     public void setLeasingItemAdministrationPerformanceAnalysis(String leasingItemAdministrationPerformanceAnalysis) {

@@ -1,26 +1,37 @@
 /*The Sensitivity Test test is one aspect that can be intergrated into the overall Sensitivity Test*/
 package org.museframework.bian.finstaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RiskTest {
     /*The required status/situation before the test can be applied*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String schedule;
 
     /*The test version employed*/
+    @MetaField
     private String versionNumber;
 
     /*The Risk Test specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Risk Test*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Assessment financialStatementAssessmentReference;
 
     /*Reference to Risk Test*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Test riskTestReference;
 
     /*The type of Risk Test*/
+    @MetaField
     private String riskTestType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateSecurityRightsIssueActionWorkstepResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.corporateaction.dto.bq.SecurityRightsIssueActionWorkstep securityRightsIssueActionWorkstep;
 
     public void setSecurityRightsIssueActionWorkstep(org.museframework.bian.corporateaction.dto.bq.SecurityRightsIssueActionWorkstep securityRightsIssueActionWorkstep) {

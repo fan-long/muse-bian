@@ -1,32 +1,45 @@
 /*Operate equipment and/or a largely automated facility within Customer Workbench. */
 package org.museframework.bian.customerworkbench.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerWorkbenchOperatingSession {
     /*The customer running the workbench device*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of user device (e.g. mobile, laptop, workstation )*/
+    @MetaField
     private String customerWorkbenchDeviceType;
 
     /*Reference to device properties used to identify the device  (e.g. URL, ANI, serial number)*/
+    @MetaField
     private String customerWorkbenchDeviceRegistration;
 
     /*The make of the device if known*/
+    @MetaField
     private String customerWorkbenchDeviceManufacturer;
 
     /*The operating system type and version (use to match downloaded software)*/
+    @MetaField
     private String customerWorkbenchDeviceOperatingSystemVersionNumber;
 
     /*The bank's access permissions (e.g. local storage access, administrator permissions, system download permission)*/
+    @MetaField
     private String customerWorkbenchDeviceAccessPermissions;
 
     /*Details of the local bank applications*/
+    @MetaField
     private String installedBankApplicationType;
 
     /*The version number(s) of device resident bank software*/
+    @MetaField
     private String installedBankApplicationVersionNumber;
 
     /*The last update date time stamp for local bank software*/
+    @MetaField
     private String lastUpdateDateTime;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

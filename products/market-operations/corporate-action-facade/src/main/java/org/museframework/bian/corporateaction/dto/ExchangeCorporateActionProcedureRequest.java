@@ -1,8 +1,15 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeCorporateActionProcedureRequest {
+    @MetaField
     private String corporateactionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporateaction.dto.cr.CorporateActionProcedure corporateActionProcedure;
 
     public void setCorporateactionid(String corporateactionid) {

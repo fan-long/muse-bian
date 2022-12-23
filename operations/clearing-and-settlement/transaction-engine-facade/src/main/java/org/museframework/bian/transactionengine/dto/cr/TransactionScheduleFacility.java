@@ -1,68 +1,93 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Transaction Engine. */
 package org.museframework.bian.transactionengine.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TransactionScheduleFacility {
     /*Reference to the product instance for which the transaction processing is being handled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type or category of product or service that is being supported (e.g. mortgage, term loan)*/
+    @MetaField
     private String productandServiceType;
 
     /*The processing schedule, covering reporting and financial transactions that are to be executed*/
+    @MetaField
     private String transactionScheduleFulfillmentSchedule;
 
     /*A record of an instance of the work tasks that can be performed by the service on behalf of the fulfillment product instance*/
+    @MetaField
     private String transactionScheduleWorkTaskRecord;
 
     /*The type of work task (e.g. generate report/notification)*/
+    @MetaField
     private String transactionScheduleWorkTaskType;
 
     /*Description of the task performed*/
+    @MetaField
     private String transactionScheduleWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents for the work task*/
+    @MetaField
     private String transactionScheduleWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of the outcome or result of the work task*/
+    @MetaField
     private String transactionScheduleWorkTaskResult;
 
     /*A record of an applied fee if applicable (this is charged to the parent product instance)*/
+    @MetaField
     private String transactionScheduleTaskFeeTransaction;
 
     /*General description of the fee*/
+    @MetaField
     private String transactionScheduleWorkTaskFeeTransactionDescription;
 
     /*The fee type applied*/
+    @MetaField
     private String transactionScheduleWorkTaskFeeTransactionType;
 
     /*The derived fee amount to be charged*/
+    @MetaField
     private String transactionScheduleWorkTaskFeeTransactionCharge;
 
     /*Details of the financial transactions that are executed on behalf of the fulfillment product instance*/
+    @MetaField
     private String transactionScheduleFinancialTransaction;
 
     /*Identifies the payment source of the transaction - usually a reference to the parent product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionScheduleFinancialTransactionProductInstanceReference;
 
     /*The sub-type of financial transaction*/
+    @MetaField
     private String transactionScheduleFinancialTransactionType;
 
     /*Any necessary details describing the purpose or reference properties of the transaction*/
+    @MetaField
     private String transactionScheduleFinancialTransactionDescription;
 
     /*The volume or value of the transaction*/
+    @MetaField
     private String transactionScheduleFinancialTransactionAmount;
 
     /*Reference to the correspondence generated for the transaction (e.g. confirmation note)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Key dates and times associated with the transaction schedule financial transaction (e.g. initiation date, confirmation date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

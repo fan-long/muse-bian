@@ -3,26 +3,37 @@
 Examples: Invoice generation*/
 package org.museframework.bian.opeiteman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Repayment {
     /*Reference to the payer of the funds*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionPayerReference;
 
     /*Reference to the source of the payment funds*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionPayerProductInstanceReference;
 
     /*Reference to the payers account holding bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionPayerBankReference;
 
     /*The type of repayment transaction (e.g. wire)*/
+    @MetaField
     private String transactionType;
 
     /*The amount of the repayment transaction (amount applied to the open item outstanding balance)*/
+    @MetaField
     private String transactionAmount;
 
     /*The currency of the payment*/
+    @MetaField
     private String transactionCurrency;
 
     /*Key dates associated with the transaction (e.g. value date)*/
+    @MetaField
     private String transactionDate;
 
     public void setTransactionPayerReference(org.museframework.bian.classes.Object transactionPayerReference) {

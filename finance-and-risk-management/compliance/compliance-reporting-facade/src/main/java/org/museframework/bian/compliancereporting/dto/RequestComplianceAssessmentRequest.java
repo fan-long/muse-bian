@@ -1,10 +1,18 @@
 package org.museframework.bian.compliancereporting.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestComplianceAssessmentRequest {
+    @MetaField
     private String compliancereportingid;
 
+    @MetaField
     private String complianceassessmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.compliancereporting.dto.bq.ComplianceAssessment complianceAssessment;
 
     public void setCompliancereportingid(String compliancereportingid) {

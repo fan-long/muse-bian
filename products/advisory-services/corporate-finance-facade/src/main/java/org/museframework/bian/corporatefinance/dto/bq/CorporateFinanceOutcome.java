@@ -1,14 +1,21 @@
 /*The Strategic Funding Topic advice is one specific topic that can be included in providing Strategic Funding Topic*/
 package org.museframework.bian.corporatefinance.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateFinanceOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Project corporateFinanceProject;
 
     /**/
+    @MetaField
     private String corporateFinanceWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis corporateFinanceWorkforceAnalysis;
 
     public void setCorporateFinanceProject(org.museframework.bian.classes.Project corporateFinanceProject) {

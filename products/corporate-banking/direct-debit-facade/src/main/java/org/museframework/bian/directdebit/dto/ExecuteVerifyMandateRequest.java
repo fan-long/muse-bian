@@ -1,10 +1,18 @@
 package org.museframework.bian.directdebit.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteVerifyMandateRequest {
+    @MetaField
     private String directdebitid;
 
+    @MetaField
     private String verifymandateid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.directdebit.dto.bq.VerifyMandate verifyMandate;
 
     public void setDirectdebitid(String directdebitid) {

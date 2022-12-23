@@ -2,38 +2,53 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.assetsecuritization.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AssetSecuritizationOutcome {
     /**/
+    @MetaField
     private String assetSecuritizationCalendar;
 
     /**/
+    @MetaField
     private String assetSecuritizationCounterparty;
 
     /**/
+    @MetaField
     private String assetSecuritizationDividend;
 
     /**/
+    @MetaField
     private String assetSecuritizationFees;
 
     /**/
+    @MetaField
     private String assetSecuritizationInterest;
 
     /**/
+    @MetaField
     private String assetSecuritizationMargining;
 
     /**/
+    @MetaField
     private String assetSecuritizationNotionalPrincipal;
 
     /**/
+    @MetaField
     private String assetSecuritizationOptions;
 
     /**/
+    @MetaField
     private String assetSecuritizationRates;
 
     /**/
+    @MetaField
     private String assetSecuritizationSettlement;
 
     /**/
+    @MetaField
     private String assetSecuritizationWorkProduct;
 
     public void setAssetSecuritizationCalendar(String assetSecuritizationCalendar) {

@@ -2,65 +2,89 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.producttraining.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductTrainingProcedure extends org.museframework.bian.classes.ProductTrainingProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureParameterType;
 
     /*A selected optional business service as subject matter of Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureSelectedOption;
 
     /*Request to process ProductTraining*/
+    @MetaField
     private String productTrainingProcedureRequest;
 
     /*Timetable to process ProductTraining*/
+    @MetaField
     private String productTrainingProcedureSchedule;
 
     /*The status of Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureStatus;
 
     /*Reference to the party who is involved in Product Training Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureReference;
 
     /*Reference to the business unit which is involved in Product Training Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Product Training Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to  Product Training Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Product Training Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Product Training Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureType;
 
     /*The schedule according to which the service provider will process the Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Product Training Procedure */
+    @MetaField
     private String productTrainingProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Product Training Procedure */
+    @MetaField
     private String productTrainingProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Product Training Procedure*/
+    @MetaField
     private String productTrainingProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Product Training Procedure */
+    @MetaField
     private String productTrainingProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Product Training Procedure */
+    @MetaField
     private String productTrainingProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Product Training Procedure */
+    @MetaField
     private String productTrainingProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Product Training Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTrainingProcedureCustomerAgreementReference;
 
     public void setProductTrainingProcedureParameterType(String productTrainingProcedureParameterType) {

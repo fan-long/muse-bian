@@ -2,44 +2,61 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.leasing.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LeasingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityParameterType;
 
     /*A selected optional business service as subject matter of Leasing Arrangement*/
+    @MetaField
     private String leasingFacilitySelectedOption;
 
     /*The type of Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityType;
 
     /*Reference to Leasing Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object leasingFacilityReference;
 
     /*Timetable to fulfill Leasing Arrangement*/
+    @MetaField
     private String leasingFacilitySchedule;
 
     /*The status of Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityStatus;
 
     /*The curreny which is arranged in Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Leasing Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object leasingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Leasing Arrangement in case of legal dispute.*/
+    @MetaField
     private String leasingFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Leasing Arrangement, are entered.*/
+    @MetaField
     private String leasingFacilityBookingLocation;
 
     /*The type of account which is linked to Leasing Arrangement*/
+    @MetaField
     private String leasingFacilityAccountType;
 
     /*Reference to the account which is linked to Leasing Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object leasingFacilityAccountReference;
 
     public void setLeasingFacilityParameterType(String leasingFacilityParameterType) {

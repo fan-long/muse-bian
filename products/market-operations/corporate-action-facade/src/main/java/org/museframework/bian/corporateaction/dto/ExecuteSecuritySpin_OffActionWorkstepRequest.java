@@ -1,10 +1,18 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteSecuritySpin_OffActionWorkstepRequest {
+    @MetaField
     private String corporateactionid;
 
+    @MetaField
     private String securityspin_offactionworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporateaction.dto.bq.SecuritySpin_OffActionWorkstep securitySpin_OffActionWorkstep;
 
     public void setCorporateactionid(String corporateactionid) {

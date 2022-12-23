@@ -1,11 +1,17 @@
 /*Covers the legal considerations of the agreement*/
 package org.museframework.bian.merchantrelations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MerchantRelationsOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement merchantRelationsAgreement;
 
     /**/
+    @MetaField
     private String merchantRelationsWorkProduct;
 
     public void setMerchantRelationsAgreement(org.museframework.bian.classes.Agreement merchantRelationsAgreement) {

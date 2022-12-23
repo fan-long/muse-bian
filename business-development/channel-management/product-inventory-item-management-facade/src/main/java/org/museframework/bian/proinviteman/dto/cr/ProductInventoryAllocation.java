@@ -2,32 +2,45 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.proinviteman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductInventoryAllocation extends org.museframework.bian.classes.ProductInventoryAllocation {
     /*Maintains the distribution schedule for all managed product inventory items. This includes all past distribution records and future scheduled deliveries*/
+    @MetaField
     private String productInventoryAllocationServiceSchedule;
 
     /*The collection of product inventory items*/
+    @MetaField
     private String productInventoryHoldings;
 
     /*The type or category of product or service for which inventory items are held (e.g. specialized consumer loan, relocation services)*/
+    @MetaField
     private String productandServiceType;
 
     /*Reference to a specific type of product inventory item*/
+    @MetaField
     private String productInventoryItemType;
 
     /*Details about a product inventory type holding*/
+    @MetaField
     private String productInventoryItemRecord;
 
     /*Description of the inventory item used for selection/reference purposes*/
+    @MetaField
     private String productInventoryItemDescription;
 
     /*Details as to the supplier details for obtaining additional items when required (includes ordering details, volumes and frequency, pricing, delivery timelines etc.)*/
+    @MetaField
     private String productInventoryItemSupplierDetails;
 
     /*Details the locations where the inventory item is distributed to and the minimum and maximum holding amounts and inventory renewal cycles (used to trigger/schedule renewal deliveries)*/
+    @MetaField
     private String productInventoryUsedLocations;
 
     /*The current and projected holding and holding targets/limits by location - taking into account scheduled distribution plans*/
+    @MetaField
     private String productInventoryHolding;
 
     public void setProductInventoryAllocationServiceSchedule(String productInventoryAllocationServiceSchedule) {

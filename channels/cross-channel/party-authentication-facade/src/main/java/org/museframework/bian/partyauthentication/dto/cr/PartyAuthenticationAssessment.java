@@ -1,23 +1,33 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Party Authentication. */
 package org.museframework.bian.partyauthentication.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PartyAuthenticationAssessment {
     /*Reference to the customer as the authentication subject*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the party or legal entity as the authentication subject*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*Details the types of authentication assessments that are combined into the overall evaluation*/
+    @MetaField
     private String partyAuthenticationAssessmentProfile;
 
     /*Reference to the different types of authentication assessment*/
+    @MetaField
     private String authenticationType;
 
     /*The combination of the different assessment results used in the authentication determination*/
+    @MetaField
     private String partyAuthenticationConsolidationRecord;
 
     /*The required value and value returned as a result of the authentication task, defining the level of identity assurance achieved - valid for the duration of the current contact*/
+    @MetaField
     private String customerContactAuthenticationLevel;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

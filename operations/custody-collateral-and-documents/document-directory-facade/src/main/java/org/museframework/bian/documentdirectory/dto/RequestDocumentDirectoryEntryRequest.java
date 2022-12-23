@@ -1,8 +1,15 @@
 package org.museframework.bian.documentdirectory.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestDocumentDirectoryEntryRequest {
+    @MetaField
     private String documentdirectoryid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.documentdirectory.dto.cr.DocumentDirectoryEntry documentDirectoryEntry;
 
     public void setDocumentdirectoryid(String documentdirectoryid) {

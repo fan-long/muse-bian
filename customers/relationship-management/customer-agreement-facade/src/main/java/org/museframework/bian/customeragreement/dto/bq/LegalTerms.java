@@ -3,14 +3,21 @@
 Examples: Required disclosures*/
 package org.museframework.bian.customeragreement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LegalTerms {
     /*The legal jurisdiction*/
+    @MetaField
     private String jurisdiction;
 
     /*Reference to any legal requirements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object applicableLawReference;
 
     /*Explanation or interpretation of the law as applied*/
+    @MetaField
     private String applicableLawInterpretation;
 
     public void setJurisdiction(String jurisdiction) {

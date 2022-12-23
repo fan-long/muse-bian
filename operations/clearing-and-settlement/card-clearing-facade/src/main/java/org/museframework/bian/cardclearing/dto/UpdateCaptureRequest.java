@@ -1,10 +1,18 @@
 package org.museframework.bian.cardclearing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCaptureRequest {
+    @MetaField
     private String cardclearingid;
 
+    @MetaField
     private String captureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardclearing.dto.bq.Capture capture;
 
     public void setCardclearingid(String cardclearingid) {

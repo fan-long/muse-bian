@@ -3,14 +3,21 @@
 Examples: Business Requirements*/
 package org.museframework.bian.productdesign.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Production {
     /*Specification of the operational and technical requirements*/
+    @MetaField
     private String productandServiceSpecificationOperationalRequirements;
 
     /*Defines rules and suitability for the product or service usage*/
+    @MetaField
     private String productandServiceSpecificationAllowedUsage;
 
     /*Provides guidance on the use of the product or service*/
+    @MetaField
     private String productandServiceSpecificationUsageGuidelines;
 
     public void setProductandServiceSpecificationOperationalRequirements(String productandServiceSpecificationOperationalRequirements) {

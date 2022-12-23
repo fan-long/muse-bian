@@ -1,71 +1,97 @@
 /*Maintain a log of transactions or activity, typically a financial account/journal or a log of activity to support behavioral analysis within Position Keeping. */
 package org.museframework.bian.positionkeeping.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialPositionLog {
     /*The type of financial transaction log (e.g. customer transactions)*/
+    @MetaField
     private String transactionLogType;
 
     /*The product/service for which this is a financial transaction log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the product or service account holder/customer for the log if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to a counterparty for the log if appropriate (e.g. merchant reference, card network reference)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object counterpartyReference;
 
     /*The currency for the logged  transactions*/
+    @MetaField
     private String baseCurrency;
 
     /*The record of applied interest if interest calculations are supported*/
+    @MetaField
     private String interestApplicationRecord;
 
     /*A record of applied interest*/
+    @MetaField
     private String interestTransaction;
 
     /*General description of the interest transaction*/
+    @MetaField
     private String transactionDescription;
 
     /*Applicable rate type*/
+    @MetaField
     private String transactionRateType;
 
     /*The derived interest amount to be applied*/
+    @MetaField
     private String transactionInterestCharge;
 
     /*Basic position limits that are maintained as an aspect of the log*/
+    @MetaField
     private String managedPositionLimits;
 
     /*The type of position maintained for the log (e.g. cumulative balance)*/
+    @MetaField
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String positionLimitSettings;
 
     /*The current calculated position*/
+    @MetaField
     private String positionLimitValue;
 
     /*Support for recording blocks on the log position (handling is by the associated fulfillment service domain)*/
+    @MetaField
     private String amountBlock;
 
     /*The type of block applied to the tracked position (e.g. pending, final)*/
+    @MetaField
     private String amountBlockType;
 
     /*Priority classification for the block*/
+    @MetaField
     private String priority;
 
     /*The amount of the block*/
+    @MetaField
     private String amount;
 
     /*The type of key dates associated with the block  (e.g. start, expiry)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date type*/
+    @MetaField
     private String date;
 
     /*The date and time the log was initiated. Note the log will have a complex internal calendar structure for extract and reporting*/
+    @MetaField
     private String initiationDate;
 
     /*The status of the log entry (e.g. active, in-suspense etc.)*/
+    @MetaField
     private String status;
 
     public void setTransactionLogType(String transactionLogType) {

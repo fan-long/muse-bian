@@ -1,32 +1,45 @@
 /*Handle and assign the day to day activities, capture time, costs and income for an operational unit within Product Sales Support. */
 package org.museframework.bian.prosalsup.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductSalesSupportAdministrativePlan extends org.museframework.bian.classes.ProductSalesSupportAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Product Sales Support Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String productSalesSupportAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Product Sales Support Administrative Plan*/
+    @MetaField
     private String productSalesSupportAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Product Sales Support Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement productSalesSupportAdministrativePlanDuty;
 
     /*Party who is involved in Product Sales Support Administrative Plan*/
+    @MetaField
     private String productSalesSupportAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Product Sales Support Administrative Plan*/
+    @MetaField
     private String productSalesSupportAdministrativePlanBudgetBalance;
 
     /*The subject matter of Product Sales Support Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productSalesSupportAdministrativePlanSubjectMatter;
 
     /*The type of Product Sales Support Administrative Plan*/
+    @MetaField
     private String productSalesSupportAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Product Sales Support Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan productSalesSupportAdministrativePlanReference;
 
     /*Documentation of Product Sales Support Administrative Plan*/
+    @MetaField
     private String productSalesSupportAdministrativePlanDescription;
 
     public void setProductSalesSupportAdministrativePlanBudgetType(String productSalesSupportAdministrativePlanBudgetType) {

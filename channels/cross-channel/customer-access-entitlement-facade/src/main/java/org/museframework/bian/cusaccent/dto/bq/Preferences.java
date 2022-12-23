@@ -3,26 +3,37 @@
 Examples: Required disclosures*/
 package org.museframework.bian.cusaccent.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Preferences {
     /*Assembles a number of channel access preferences*/
+    @MetaField
     private String channelAccessPreferencesRecord;
 
     /*Reference to one of possibly several preferences*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object channelAccessPreferenceReference;
 
     /*The type of preference (e.g. for correspondence)*/
+    @MetaField
     private String channelAccessPreferenceType;
 
     /*Consolidates details of the preference*/
+    @MetaField
     private String channelAccessPreferenceProfile;
 
     /*Details the specific device or channel with the preference*/
+    @MetaField
     private String channelAccessChannelDeviceType;
 
     /*Details the preference (e.g. no paper correspondence, no solicitations)*/
+    @MetaField
     private String channelAccessChannelDeviceTypePreference;
 
     /*The types of product and service to which this preference applies*/
+    @MetaField
     private String productandServiceType;
 
     public void setChannelAccessPreferencesRecord(String channelAccessPreferencesRecord) {

@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Dealer Desk Consolidated Position Tracking Function for doing Dealer Desk Consolidated Position Tracking Function*/
 package org.museframework.bian.dealerdesk.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DealerDeskTradingAssignmentandLimitsFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Dealer Desk Trading Assignment and Limits Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Dealer Desk Trading Assignment and Limits Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session dealerDeskOperatingSessionReference;
 
     /*Reference to Dealer Desk Trading Assignment and Limits Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function dealerDeskTradingAssignmentandLimitsFunctionReference;
 
     /*The type of Dealer Desk Trading Assignment and Limits Function*/
+    @MetaField
     private String dealerDeskTradingAssignmentandLimitsFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

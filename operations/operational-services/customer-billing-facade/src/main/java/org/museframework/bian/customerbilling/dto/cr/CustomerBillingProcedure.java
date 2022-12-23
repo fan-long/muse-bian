@@ -1,47 +1,65 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Customer Billing. */
 package org.museframework.bian.customerbilling.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerBillingProcedure {
     /*The type of customer billing (e.g. product fees, penalties)*/
+    @MetaField
     private String customerBillingTransactionType;
 
     /*Description that annotates the bill as appropriate*/
+    @MetaField
     private String customerBillingTransactionDescription;
 
     /*Reference to the customer for the billing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The product instance associated with the charge*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The agreement covering the product arrangement (referenced for any specific billing terms and conditions)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Breakdown and description of the billed service or activities*/
+    @MetaField
     private String customerBillingProductandServiceActionDescription;
 
     /*The legal entity being charged (will usually be the customer)*/
+    @MetaField
     private String customerBillingParty;
 
     /*The billing address (can be an electronic location*/
+    @MetaField
     private String customerBillingAddress;
 
     /*The billing period is appropriate (e.g. for an on-going service)*/
+    @MetaField
     private String customerBillingPeriod;
 
     /*The itemized breakdown of the charges with references*/
+    @MetaField
     private String customerBillingStatement;
 
     /*The total amount due*/
+    @MetaField
     private String customerBillingAmount;
 
     /*The due date for payment*/
+    @MetaField
     private String customerBillingPaymentDueDate;
 
     /*The payment details (e.g. payment account)*/
+    @MetaField
     private String customerBillingPaymentDetails;
 
     /*The target and actual billing activities and dates*/
+    @MetaField
     private String customerBillingPaymentSchedule;
 
     public void setCustomerBillingTransactionType(String customerBillingTransactionType) {

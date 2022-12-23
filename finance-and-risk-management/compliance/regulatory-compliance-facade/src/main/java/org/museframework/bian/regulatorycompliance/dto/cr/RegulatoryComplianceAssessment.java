@@ -1,47 +1,65 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Regulatory Compliance. */
 package org.museframework.bian.regulatorycompliance.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryComplianceAssessment {
     /*The type and make-up of regulatory tests referenced in the assessment*/
+    @MetaField
     private String regulatoryAssessmentType;
 
     /*The business function or unit assessed for compliance if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*The associated product/service being assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the customer assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Indication of the authority pertaining to the applied regulation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryAuthorityReference;
 
     /*Reference to the specific regulation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulationReference;
 
     /*A definition of the goals/required actions addressed by the regulation*/
+    @MetaField
     private String regulationDefinition;
 
     /*Description of the measurements and reporting required to demonstrate compliance*/
+    @MetaField
     private String regulationComplianceandReportingRequirements;
 
     /*Explanation of the business context, responsibility and accountability for compliance*/
+    @MetaField
     private String regulationAccountability;
 
     /*Outline of the possible implications of non-compliance*/
+    @MetaField
     private String regulationPenalties;
 
     /*Guidelines and requirements for compliance*/
+    @MetaField
     private String regulationGuideline;
 
     /*Reference to any documentation classified/archived as appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment*/
+    @MetaField
     private String regulatoryAssessmentWorkProducts;
 
     /*Outcome/result of the assessment, can include remedial actions*/
+    @MetaField
     private String regulatoryAssessmentResult;
 
     public void setRegulatoryAssessmentType(String regulatoryAssessmentType) {

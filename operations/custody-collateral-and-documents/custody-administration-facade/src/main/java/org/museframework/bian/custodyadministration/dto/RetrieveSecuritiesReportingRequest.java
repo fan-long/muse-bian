@@ -1,8 +1,15 @@
 package org.museframework.bian.custodyadministration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveSecuritiesReportingRequest {
+    @MetaField
     private String custodyadministrationid;
 
+    @MetaField
     private String securitiesreportingid;
 
     public void setCustodyadministrationid(String custodyadministrationid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.segmentdirection.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveInitiativeRequest {
+    @MetaField
     private String segmentdirectionid;
 
+    @MetaField
     private String initiativeid;
 
     public void setSegmentdirectionid(String segmentdirectionid) {

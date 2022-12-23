@@ -3,17 +3,25 @@
 Examples: Functional module specification*/
 package org.museframework.bian.systemdevelopment.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class UsageSpecification {
     /*Details the usage guidelines specification tasks and deliverables of the system development project*/
+    @MetaField
     private String usageSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the definition of usage guidelines etc.*/
+    @MetaField
     private String usageSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The usage guideline specification as a suitably structured and formatted document*/
+    @MetaField
     private String systemFunctionalSpecification;
 
     public void setUsageSpecificationTaskDefinition(String usageSpecificationTaskDefinition) {

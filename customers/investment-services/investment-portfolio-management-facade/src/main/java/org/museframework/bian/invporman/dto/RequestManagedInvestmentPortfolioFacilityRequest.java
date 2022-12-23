@@ -1,8 +1,15 @@
 package org.museframework.bian.invporman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestManagedInvestmentPortfolioFacilityRequest {
+    @MetaField
     private String investmentportfoliomanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.invporman.dto.cr.ManagedInvestmentPortfolioFacility managedInvestmentPortfolioFacility;
 
     public void setInvestmentportfoliomanagementid(String investmentportfoliomanagementid) {

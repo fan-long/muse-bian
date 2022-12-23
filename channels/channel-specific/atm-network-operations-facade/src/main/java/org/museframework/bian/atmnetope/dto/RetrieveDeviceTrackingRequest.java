@@ -1,8 +1,15 @@
 package org.museframework.bian.atmnetope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveDeviceTrackingRequest {
+    @MetaField
     private String atmnetworkoperationsid;
 
+    @MetaField
     private String devicetrackingid;
 
     public void setAtmnetworkoperationsid(String atmnetworkoperationsid) {

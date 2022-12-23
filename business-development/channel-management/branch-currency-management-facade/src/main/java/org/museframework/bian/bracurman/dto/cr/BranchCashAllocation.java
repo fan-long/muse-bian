@@ -2,56 +2,77 @@
 Example: Track the inventory and administer the distribution of central cash holdings throughout the branch & ATM network.*/
 package org.museframework.bian.bracurman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchCashAllocation {
     /*A Classification value that distinguishes between allocation Options according to the optional business services defined within Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationParameterType;
 
     /*A selected optional business service for which resources are allocated*/
+    @MetaField
     private String branchCashAllocationSelectedOption;
 
     /*A Classification value, that distinguishes between the the type of resource allocated withing the Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationType;
 
     /*Documentation of Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationDescription;
 
     /*Request to allocate BranchCash*/
+    @MetaField
     private String branchCashAllocationRequest;
 
     /*Timetable to allocate BranchCash*/
+    @MetaField
     private String branchCashAllocationSchedule;
 
     /*The status of Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationStatus;
 
     /*Reference to the party who is involved in Branch Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchCashAllocationReference;
 
     /*Reference to the customer who is involved in Branch Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchCashAllocationCustomerReference;
 
     /*The curreny which is arranged/used for Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationCurrency;
 
     /*Reference to the regulation which is defined for Branch Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchCashAllocationRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Branch Cash Allocation in case of legal dispute.*/
+    @MetaField
     private String branchCashAllocationJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement, are entered.*/
+    @MetaField
     private String branchCashAllocationBookingLocation;
 
     /*The type of account which is linked to Branch Cash Allocation*/
+    @MetaField
     private String branchCashAllocationAccountType;
 
     /*Reference to the account which is linked to Branch Cash Allocation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchCashAllocationAccountReference;
 
     /*Reference to Branch Cash Allocation Instance*/
+    @MetaField
     private String branchCashAllocationInstance;
 
     public void setBranchCashAllocationParameterType(String branchCashAllocationParameterType) {

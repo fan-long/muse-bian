@@ -3,17 +3,25 @@
 Examples: Password verification*/
 package org.museframework.bian.partyauthentication.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Behavior {
     /*The type of behavioral record being used for authentication*/
+    @MetaField
     private String authenticationBehaviorType;
 
     /*The behavioral record submitted for authentication*/
+    @MetaField
     private String authenticationBehaviorRecord;
 
     /*Reference to the registered customer behavioral record*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object registeredBehaviorInstanceReference;
 
     /*The result of the behavioral check*/
+    @MetaField
     private String behaviorTestResult;
 
     public void setAuthenticationBehaviorType(String authenticationBehaviorType) {

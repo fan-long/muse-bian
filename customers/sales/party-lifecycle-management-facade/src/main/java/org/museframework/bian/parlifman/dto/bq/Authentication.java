@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.parlifman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Authentication extends org.museframework.bian.classes.Authentication {
     /*The method used to authenticate (e.g. public directory, document, 3rd party service providers)*/
+    @MetaField
     private String authenticationType;
 
     /*Reference to an external verification source (e.g. for registered address/location verification)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object publicDirectoryReference;
 
     /*Reference to an external verification service (e.g. to perform background verification checks)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object specialistAgencyServiceReference;
 
     /*The record of a specific verification task*/
+    @MetaField
     private String authenticationTaskRecord;
 
     /*Description of the authentication procedure*/
+    @MetaField
     private String authenticationTaskDescription;
 
     /*Result from the authentication service request*/
+    @MetaField
     private String specialistAgencyServiceRequestResult;
 
     /*Reference to documents used for authentication*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String authenticationTaskWorkProducts;
 
     /*The outcome of the authentication workstep*/
+    @MetaField
     private String authenticationTaskResult;
 
     public void setAuthenticationType(String authenticationType) {

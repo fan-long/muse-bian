@@ -1,47 +1,65 @@
 /*Maintain a log of transactions or activity, typically a financial account/journal or a log of activity to support behavioral analysis within Credit Card Position Keeping. */
 package org.museframework.bian.crecarposkee.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditCardPositionLog {
     /*A Classification value that distinguishes between business service events logged within Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogParameterType;
 
     /*A selected optional business service as subject matter of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Service creditCardPositionLogSelectedOption;
 
     /*The type of Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogType;
 
     /*Timetable to track Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogSchedule;
 
     /*Reference to the log of (usage) ativities/events  of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log creditCardPositionLogUsageLog;
 
     /*Reference to the log of (update) ativities/events of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log creditCardPositionLogUpdateLog;
 
     /*Reference to the party who is involved in Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogAssociatedParty;
 
     /*Reference to the business unit which is involved in Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit creditCardPositionLogBusinessUnitReference;
 
     /*Reference to the customer who is involved in Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogCustomerReference;
 
     /*The configuration of Credit Card Position Log*/
+    @MetaField
     private String creditCardPositionLogServiceConfiguration;
 
     /*The position of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position creditCardPositionLogPosition;
 
     /*A classification value expressing the kind of position withing the Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PositionType creditCardPositionLogPositionType;
 
     /*Reference to the time limitation related to the position of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement creditCardPositionLogPositionLimitTime;
 
     /*An unique reference to an item or an occurrence of Credit Card Position Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log creditCardPositionLogReference;
 
     public void setCreditCardPositionLogParameterType(String creditCardPositionLogParameterType) {

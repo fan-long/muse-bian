@@ -3,20 +3,29 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.poiofser.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CashPosition {
     /*The currency being tracked*/
+    @MetaField
     private String servicingCurrency;
 
     /*The current holding by currency/instrument*/
+    @MetaField
     private String servicingCashHoldingRecord;
 
     /*Reference to a cash transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingCashTransactionReference;
 
     /*Details of the cash transaction (e.g. cash deposited to customer account)*/
+    @MetaField
     private String servicingCashTransactionRecord;
 
     /*The link to the account product instance used to effect payments from the position*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     public void setServicingCurrency(String servicingCurrency) {

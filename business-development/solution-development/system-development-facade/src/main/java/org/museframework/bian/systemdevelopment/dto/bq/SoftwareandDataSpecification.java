@@ -3,17 +3,25 @@
 Examples: Functional module specification*/
 package org.museframework.bian.systemdevelopment.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SoftwareandDataSpecification {
     /*Details the software and data specification/development tasks and deliverables of system development project*/
+    @MetaField
     private String softwareandDataSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the implementation of the software and data specification*/
+    @MetaField
     private String softwareandDataSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The developed software and data specification in a format suited for production deployment*/
+    @MetaField
     private String systemSoftwareandDataSpecification;
 
     public void setSoftwareandDataSpecificationTaskDefinition(String softwareandDataSpecificationTaskDefinition) {

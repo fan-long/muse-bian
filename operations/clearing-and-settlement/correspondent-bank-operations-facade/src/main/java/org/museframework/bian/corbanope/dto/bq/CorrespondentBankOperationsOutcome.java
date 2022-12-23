@@ -1,11 +1,17 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.corbanope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorrespondentBankOperationsOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Event correspondentBankOperationsIncident;
 
     /**/
+    @MetaField
     private String correspondentBankOperationsProvision;
 
     public void setCorrespondentBankOperationsIncident(org.museframework.bian.classes.Event correspondentBankOperationsIncident) {

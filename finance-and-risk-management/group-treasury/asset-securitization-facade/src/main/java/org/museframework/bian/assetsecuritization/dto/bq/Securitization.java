@@ -2,32 +2,45 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.assetsecuritization.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Securitization {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField
     private String securitizationPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String securitizationTaskSchedule;
 
     /*The Asset Securitization Transaction specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField
     private String securitizationPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String securitizationServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String securitizationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String securitizationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String securitizationServiceWorkProduct;
 
     /**/
+    @MetaField
     private String securitizationServiceName;
 
     public void setSecuritizationPreconditions(String securitizationPreconditions) {

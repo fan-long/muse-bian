@@ -3,38 +3,53 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.cusbehins.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Insight {
     /*The type of customer insight developed in this evaluation (e.g. retention candidate, cross-sell candidate)*/
+    @MetaField
     private String insightEvaluationCustomerInsightType;
 
     /*Record of a task to develop the customer insight*/
+    @MetaField
     private String insightEvaluationTask;
 
     /*The specific details of the analysis (can be a default/standard and scheduled refresh)*/
+    @MetaField
     private String insightEvaluationRequestSpecification;
 
     /*Reference to the behavior model used to develop the insight*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object insightEvaluationCustomerBehaviorModelReference;
 
     /*The data file, report of production activity used in the analysis*/
+    @MetaField
     private String insightEvaluationProductandServiceActivityReport;
 
     /*The Record containing the selected event records from the log*/
+    @MetaField
     private String insightEvaluationCustomerEventLogReport;
 
     /*The Record containing the selected event records from the log*/
+    @MetaField
     private String insightEvaluationServicingEventLogReport;
 
     /*The Record containing the selected event records from the log*/
+    @MetaField
     private String insightEvaluationChannelEventLogReport;
 
     /*The content of a specific market research report or database in any suitable form*/
+    @MetaField
     private String insightEvaluationMarketResearchReport;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String insightEvaluationWorkProducts;
 
     /*The output from executing the assessment*/
+    @MetaField
     private String insightEvaluationRequestResult;
 
     public void setInsightEvaluationCustomerInsightType(String insightEvaluationCustomerInsightType) {

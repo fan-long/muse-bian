@@ -1,10 +1,18 @@
 package org.museframework.bian.achoperations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateOutboundACHRequest {
+    @MetaField
     private String achoperationsid;
 
+    @MetaField
     private String outboundachid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.achoperations.dto.bq.OutboundACH outboundACH;
 
     public void setAchoperationsid(String achoperationsid) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.rewpoiacc.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateCaptureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.rewpoiacc.dto.bq.Capture capture;
 
     public void setCapture(org.museframework.bian.rewpoiacc.dto.bq.Capture capture) {

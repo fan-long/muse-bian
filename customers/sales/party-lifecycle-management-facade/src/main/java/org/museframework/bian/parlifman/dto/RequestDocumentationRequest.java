@@ -1,10 +1,18 @@
 package org.museframework.bian.parlifman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestDocumentationRequest {
+    @MetaField
     private String partylifecyclemanagementid;
 
+    @MetaField
     private String documentationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.parlifman.dto.bq.Documentation documentation;
 
     public void setPartylifecyclemanagementid(String partylifecyclemanagementid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.proquaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveResiliencyandPerformanceChecksRequest {
+    @MetaField
     private String productqualityassuranceid;
 
+    @MetaField
     private String resiliencyandperformancechecksid;
 
     public void setProductqualityassuranceid(String productqualityassuranceid) {

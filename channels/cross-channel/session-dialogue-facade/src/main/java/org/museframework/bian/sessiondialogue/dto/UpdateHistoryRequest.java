@@ -1,10 +1,18 @@
 package org.museframework.bian.sessiondialogue.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateHistoryRequest {
+    @MetaField
     private String sessiondialogueid;
 
+    @MetaField
     private String historyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.sessiondialogue.dto.bq.History history;
 
     public void setSessiondialogueid(String sessiondialogueid) {

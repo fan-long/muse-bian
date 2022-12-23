@@ -1,6 +1,12 @@
 package org.museframework.bian.cencashan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ControlCentralCashAllocationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cencashan.dto.cr.CentralCashAllocation centralCashAllocation;
 
     public void setCentralCashAllocation(org.museframework.bian.cencashan.dto.cr.CentralCashAllocation centralCashAllocation) {

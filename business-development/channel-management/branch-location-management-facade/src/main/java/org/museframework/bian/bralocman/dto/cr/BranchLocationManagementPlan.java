@@ -2,26 +2,37 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.bralocman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchLocationManagementPlan extends org.museframework.bian.classes.BranchLocationManagementPlan {
     /*The type of Branch Location Management Plan*/
+    @MetaField
     private String branchLocationManagementPlanType;
 
     /*Reference to Branch Location Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchLocationManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Branch Location Management Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String branchLocationManagementPlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Branch Location Management Plan*/
+    @MetaField
     private String branchLocationManagementPlanBudget;
 
     /*The allocation of someone or something which is specified for Branch Location Management Plan*/
+    @MetaField
     private String branchLocationManagementPlanAssignment;
 
     /*Reference to  Branch Location Management Plan */
+    @MetaField
     private String branchLocationManagementPlanPlan;
 
     /*Documentation of Branch Location Management Plan*/
+    @MetaField
     private String branchLocationManagementPlanDescription;
 
     public void setBranchLocationManagementPlanType(String branchLocationManagementPlanType) {

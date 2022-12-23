@@ -1,8 +1,15 @@
 package org.museframework.bian.meracqfac.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveClearingRequest {
+    @MetaField
     private String merchantacquiringfacilityid;
 
+    @MetaField
     private String clearingid;
 
     public void setMerchantacquiringfacilityid(String merchantacquiringfacilityid) {

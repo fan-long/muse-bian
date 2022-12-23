@@ -3,32 +3,45 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.rewpoiacc.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Expiration {
     /*The required status/situation before the event is captured*/
+    @MetaField
     private String expirationPreconditions;
 
     /*The timing and key actions/milestones involved in capturing the event*/
+    @MetaField
     private String expirationEventSchedule;
 
     /*The Reward Points Log specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService logEventExpiration;
 
     /*The completion status once the event has been captured*/
+    @MetaField
     private String expirationPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String expirationLogEventExpirationServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String expirationLogEventExpirationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String expirationLogEventExpirationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String expirationLogEventExpirationServiceWorkProduct;
 
     /**/
+    @MetaField
     private String expirationLogEventExpirationServiceName;
 
     public void setExpirationPreconditions(String expirationPreconditions) {

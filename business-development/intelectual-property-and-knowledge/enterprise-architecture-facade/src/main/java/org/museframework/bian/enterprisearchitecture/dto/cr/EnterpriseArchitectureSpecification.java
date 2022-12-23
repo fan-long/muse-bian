@@ -2,29 +2,41 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.enterprisearchitecture.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class EnterpriseArchitectureSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Business Architecture Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
+    @MetaField
     private String enterpriseArchitectureSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
+    @MetaField
     private String enterpriseArchitectureSpecificationSelectedOption;
 
     /*Documentation of Business Architecture Specification*/
+    @MetaField
     private String enterpriseArchitectureSpecificationDescription;
 
     /*The version of Business Architecture Specification*/
+    @MetaField
     private String enterpriseArchitectureSpecificationVersion;
 
     /*The status of Business Architecture Specification*/
+    @MetaField
     private String enterpriseArchitectureSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Business Architecture Specification*/
+    @MetaField
     private String enterpriseArchitectureSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Business Architecture Specification.*/
+    @MetaField
     private String enterpriseArchitectureSpecificationFeedback;
 
     /*Reference to the party who has provided Business Architecture Specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object enterpriseArchitectureSpecificationServiceProviderReference;
 
     public void setEnterpriseArchitectureSpecificationParameterType(String enterpriseArchitectureSpecificationParameterType) {

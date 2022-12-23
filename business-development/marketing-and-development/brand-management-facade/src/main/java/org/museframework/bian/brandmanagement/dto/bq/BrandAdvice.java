@@ -3,20 +3,29 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.brandmanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BrandAdvice extends org.museframework.bian.classes.BrandAdvice {
     /*The type of work task (e.g. assess brand exposure, incorporate brand in design)*/
+    @MetaField
     private String brandAdviceWorkTaskType;
 
     /*The make-up of the advice task performed, includes schedule of meetings/working sessions and provision of guidance materials*/
+    @MetaField
     private String brandAdviceWorkTask;
 
     /*File of consolidated notes, evaluations and recommendations for the work task*/
+    @MetaField
     private String brandAdviceWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - capturing any use of brand that might requires tracking*/
+    @MetaField
     private String brandAdviceWorkTaskResult;
 
     /*The date-time associated with the delivery of brand advice task*/
+    @MetaField
     private String brandAdviceWorkTaskDate_Time;
 
     public void setBrandAdviceWorkTaskType(String brandAdviceWorkTaskType) {

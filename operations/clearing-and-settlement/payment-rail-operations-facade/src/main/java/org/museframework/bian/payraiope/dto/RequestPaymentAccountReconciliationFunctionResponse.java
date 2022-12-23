@@ -1,6 +1,12 @@
 package org.museframework.bian.payraiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestPaymentAccountReconciliationFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.payraiope.dto.bq.PaymentAccountReconciliationFunction paymentAccountReconciliationFunction;
 
     public void setPaymentAccountReconciliationFunction(org.museframework.bian.payraiope.dto.bq.PaymentAccountReconciliationFunction paymentAccountReconciliationFunction) {

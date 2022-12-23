@@ -3,64 +3,86 @@
 */
 package org.museframework.bian.customerproposition.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerPropositionAgreement extends org.museframework.bian.classes.CustomerPropositionAgreement {
     /*A Classification value that distinguishes between Options defined within Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature customerPropositionAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Agreementtypevalues customerPropositionAgreementType;
 
     /*An unique reference to an item or an occurrence of Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement customerPropositionAgreementReference;
 
     /*Request to discharge Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction customerPropositionAgreementDischargeRequest;
 
     /*Timetable to discharge Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementDischargeSchedule;
 
     /*The status of Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementStatus;
 
     /*Party who is involved in Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement customerPropositionAgreementObligation;
 
     /*Right to do something under the terms of Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement customerPropositionAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet customerPropositionAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Customer Proposition Agreement*/
+    @MetaField
     private String customerPropositionAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Customer Proposition Agreement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction customerPropositionAgreementJurisdiction;
 
     /*Reference to the account which is linked to Customer Proposition Agreement
 
 A characteristic of agreement which refers to its involved account to specify the account that will be used to register for the transactions in position keeping management.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account customerPropositionAgreementAccountReference;
 
     /*The subject matter of  Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerPropositionAgreementSubjectMatter;
 
     /*Reference to the product which is linked to Customer Proposition Agreement
 
 Comment: 
 A characteristic of agreement which refers to its related products that are sold by agreement.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct customerPropositionAgreementProductReference;
 
     /*Reference to the agreement that is related to Customer Proposition Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement customerPropositionAgreementAssociatedAgreementReference;
 
     public void setCustomerPropositionAgreementParameterType(String customerPropositionAgreementParameterType) {

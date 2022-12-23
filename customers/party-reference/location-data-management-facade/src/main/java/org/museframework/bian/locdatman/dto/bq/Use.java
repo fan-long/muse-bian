@@ -6,11 +6,17 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.locdatman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Use {
     /*The planning or zoning status (e.g. residential, commercial, industrial)*/
+    @MetaField
     private String locationZoningType;
 
     /*The allowed usage for the property at the location (e.g. domestic residence, manufacturing, retail)*/
+    @MetaField
     private String locationUsage;
 
     public void setLocationZoningType(String locationZoningType) {

@@ -1,32 +1,45 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Brokered Product.*/
 package org.museframework.bian.brokeredproduct.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BrokeredProductManagementPlan extends org.museframework.bian.classes.BrokeredProductManagementPlan {
     /*The type of Brokered Product Management Plan*/
+    @MetaField
     private String brokeredProductManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Brokered Product Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan brokeredProductManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Brokered Product Management Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String brokeredProductManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Brokered Product Management Plan*/
+    @MetaField
     private String brokeredProductManagementPlanBudget;
 
     /*The set of management responsibilities defined in Brokered Product Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement brokeredProductManagementPlanDuty;
 
     /*Documentation of Brokered Product Management Plan*/
+    @MetaField
     private String brokeredProductManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Brokered Product Management Plan*/
+    @MetaField
     private String brokeredProductManagementPlanBudgetBalance;
 
     /*Party who is involved in Brokered Product Management Plan*/
+    @MetaField
     private String brokeredProductManagementPlanAssociatedParty;
 
     /*The subject matter of Brokered Product Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object brokeredProductManagementPlanSubjectMatter;
 
     public void setBrokeredProductManagementPlanType(String brokeredProductManagementPlanType) {

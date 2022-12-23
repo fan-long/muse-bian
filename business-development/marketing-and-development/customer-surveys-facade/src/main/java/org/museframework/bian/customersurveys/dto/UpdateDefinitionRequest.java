@@ -1,10 +1,18 @@
 package org.museframework.bian.customersurveys.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDefinitionRequest {
+    @MetaField
     private String customersurveysid;
 
+    @MetaField
     private String definitionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customersurveys.dto.bq.Definition definition;
 
     public void setCustomersurveysid(String customersurveysid) {

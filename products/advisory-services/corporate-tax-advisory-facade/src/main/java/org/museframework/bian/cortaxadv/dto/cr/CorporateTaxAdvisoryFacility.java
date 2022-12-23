@@ -1,35 +1,49 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Corporate Tax Advisory. */
 package org.museframework.bian.cortaxadv.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateTaxAdvisoryFacility {
     /*Reference to the collection of advisory service sessions underlying the service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the customer receiving the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the customer account/relationship for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Business unit and or employee reference to the source of the financial advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the advisory sessions*/
+    @MetaField
     private String corporateTaxAdvisoryWorkProducts;
 
     /*The document reference for associated documents such as disclosures and acceptance records*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Target and actual dates for tasks performed (includes any specialist sessions)*/
+    @MetaField
     private String corporateTaxAdviceSessionSchedule;
 
     /*The combination of the different tax advisory sessions and assessments provided to the customer*/
+    @MetaField
     private String corporateTaxAdviceConsolidationRecord;
 
     /*Key dates and times associated with the advisory sessions (e.g. booking date, start date/time)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

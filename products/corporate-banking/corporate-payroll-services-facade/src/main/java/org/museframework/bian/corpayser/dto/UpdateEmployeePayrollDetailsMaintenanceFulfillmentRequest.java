@@ -1,10 +1,18 @@
 package org.museframework.bian.corpayser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateEmployeePayrollDetailsMaintenanceFulfillmentRequest {
+    @MetaField
     private String corporatepayrollservicesid;
 
+    @MetaField
     private String employeepayrolldetailsmaintenancefulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corpayser.dto.bq.EmployeePayrollDetailsMaintenanceFulfillment employeePayrollDetailsMaintenanceFulfillment;
 
     public void setCorporatepayrollservicesid(String corporatepayrollservicesid) {

@@ -1,14 +1,21 @@
 /**/
 package org.museframework.bian.consumerloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Restructuring {
     /*Description of the restructuring required*/
+    @MetaField
     private String restructuringTask;
 
     /*Definition of issue to resolve and the restructuring solution with associated changes to loan terms and the assessed impact*/
+    @MetaField
     private String restructuringEvaluation;
 
     /*Calculated loss/costs of restructuring*/
+    @MetaField
     private String restructuringWriteDown;
 
     public void setRestructuringTask(String restructuringTask) {

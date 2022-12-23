@@ -1,6 +1,12 @@
 package org.museframework.bian.contactrouting.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateAllocationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.contactrouting.dto.bq.Allocation allocation;
 
     public void setAllocation(org.museframework.bian.contactrouting.dto.bq.Allocation allocation) {

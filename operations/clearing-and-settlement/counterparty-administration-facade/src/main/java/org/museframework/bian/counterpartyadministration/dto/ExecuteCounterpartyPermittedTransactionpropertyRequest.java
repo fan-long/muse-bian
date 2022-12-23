@@ -1,10 +1,18 @@
 package org.museframework.bian.counterpartyadministration.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteCounterpartyPermittedTransactionpropertyRequest {
+    @MetaField
     private String counterpartyadministrationid;
 
+    @MetaField
     private String counterpartypermittedtransactionpropertyid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.counterpartyadministration.dto.bq.CounterpartyPermittedTransactionproperty counterpartyPermittedTransactionproperty;
 
     public void setCounterpartyadministrationid(String counterpartyadministrationid) {

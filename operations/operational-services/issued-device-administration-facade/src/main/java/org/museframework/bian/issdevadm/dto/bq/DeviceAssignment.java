@@ -1,26 +1,37 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DeviceAssignment {
     /*Serial number or other unique identifier*/
+    @MetaField
     private String issuedDeviceSerialNumber;
 
     /*Operating system version for smart devices*/
+    @MetaField
     private String versionNumber;
 
     /*Used for device personalization*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerCustomizationReference;
 
     /*Details how device and replacements are distributed (e.g. mail, courier, collect at branch, kiosk)*/
+    @MetaField
     private String deliverymethod;
 
     /*The delivery address or tracked location if appropriate*/
+    @MetaField
     private String issueLocation;
 
     /*Device stored values such as mag strip/chip settings*/
+    @MetaField
     private String issuedDeviceConfiguration;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
+    @MetaField
     private String usageLog;
 
     public void setIssuedDeviceSerialNumber(String issuedDeviceSerialNumber) {

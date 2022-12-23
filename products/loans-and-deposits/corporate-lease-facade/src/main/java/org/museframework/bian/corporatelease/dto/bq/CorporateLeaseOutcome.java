@@ -2,11 +2,17 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.corporatelease.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateLeaseOutcome {
     /**/
+    @MetaField
     private String corporateLeaseFinancialFacility;
 
     /**/
+    @MetaField
     private String corporateLeaseWorkProduct;
 
     public void setCorporateLeaseFinancialFacility(String corporateLeaseFinancialFacility) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.cardcapture.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCreditChargeCardFinancialCaptureTransactionRequest {
+    @MetaField
     private String cardcaptureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardcapture.dto.cr.CreditChargeCardFinancialCaptureTransaction creditChargeCardFinancialCaptureTransaction;
 
     public void setCardcaptureid(String cardcaptureid) {

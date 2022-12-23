@@ -1,10 +1,18 @@
 package org.museframework.bian.bankguarantee.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateCustomerCollateralAllocationTaskRequest {
+    @MetaField
     private String bankguaranteeid;
 
+    @MetaField
     private String customercollateralallocationtaskid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.bankguarantee.dto.bq.CustomerCollateralAllocationTask customerCollateralAllocationTask;
 
     public void setBankguaranteeid(String bankguaranteeid) {

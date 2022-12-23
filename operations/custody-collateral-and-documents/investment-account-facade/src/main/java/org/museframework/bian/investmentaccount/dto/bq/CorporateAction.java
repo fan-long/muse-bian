@@ -1,35 +1,49 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.investmentaccount.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateAction extends org.museframework.bian.classes.CorporateAction {
     /*The type of corporate action that can be applied*/
+//    @MetaField
 //    private String corporateActionType;
 
     /*The processing schedule for applying the type of corporate action to the investment account*/
+    @MetaField
     private String corporateActionApplicationSchedule;
 
     /*The instrument type that the corporate action impacts (will be one that the investment account tracks)*/
+    @MetaField
     private String corporateActionInstrumentType;
 
     /*Details of the transaction and its impact on the securities holding in the investment account*/
+    @MetaField
     private String corporateActionTransaction;
 
     /*The type of corporate action applied to the securities holdings*/
+    @MetaField
     private String corporateActionTransactionType;
 
     /*Details describing the purpose and impact of processing the action*/
+    @MetaField
     private String corporateActionTransactionDescription;
 
     /*File of consolidated notes, forms and documents for the corporate action*/
+    @MetaField
     private String corporateActionWorkProducts;
 
     /*Reference to associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The outcome of applying the action to the account (can be simple confirmation)*/
+    @MetaField
     private String corporateActionTransactionResult;
 
     /*The date and time the corporate action was processed to the account*/
+    @MetaField
     private String corporateActionTransactionDate;
 
 //    public void setCorporateActionType(String corporateActionType) {

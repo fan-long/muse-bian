@@ -2,23 +2,33 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.rewpoiawaandred.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RewardPointsTransaction {
     /*A Classification value that distinguishes between business service transaction within Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionParameterType;
 
     /*A selected optional business service as subject matter of Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionSelectedOption;
 
     /*The status of Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionTransactionType;
 
     /*Reference to Reward Points Transaction*/
+    @MetaField
     private String rewardPointsTransactionTransaction;
 
     public void setRewardPointsTransactionParameterType(String rewardPointsTransactionParameterType) {

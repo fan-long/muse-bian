@@ -1,8 +1,15 @@
 package org.museframework.bian.conandsupagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveRegulatoryTermRequest {
+    @MetaField
     private String contractorandsupplieragreementid;
 
+    @MetaField
     private String regulatorytermid;
 
     public void setContractorandsupplieragreementid(String contractorandsupplieragreementid) {

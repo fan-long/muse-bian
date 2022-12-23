@@ -1,6 +1,12 @@
 package org.museframework.bian.savingsaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdatePaymentsResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.savingsaccount.dto.bq.Payments payments;
 
     public void setPayments(org.museframework.bian.savingsaccount.dto.bq.Payments payments) {

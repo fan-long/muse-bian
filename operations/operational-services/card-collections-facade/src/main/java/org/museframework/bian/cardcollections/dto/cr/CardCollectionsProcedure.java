@@ -1,56 +1,77 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Card Collections. */
 package org.museframework.bian.cardcollections.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardCollectionsProcedure {
     /*Reference to the associated product instance in collections*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of product*/
+    @MetaField
     private String productandServiceType;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of card*/
+    @MetaField
     private String cardType;
 
     /*The status of the account (e.g. active, cancelled, blocked, closed,...)*/
+    @MetaField
     private String cardAccountStatus;
 
     /*Card account limits (e.g. spend limits and credit limits for different access types, e.g. POS/ATM)*/
+    @MetaField
     private String cardAccountLimits;
 
     /*A wide range of processing options and rules that apply, including the applicable delinquency penalties…*/
+    @MetaField
     private String configurationOptions;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*Customer billing transactions (and associated payments)*/
+    @MetaField
     private String billingTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object billingTransactionReference;
 
     /*Payments deposited to the account - card account payment transaction history as required*/
+    @MetaField
     private String paymentTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Product execution transactions - account card use transaction history as required*/
+    @MetaField
     private String productTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*Statements issued for the account - statement history as required*/
+    @MetaField
     private String statements;
 
     /*Reference to individual statements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object statementsReference;
 
     /*The processing schedule for resolution of the collections process and final decision*/
+    @MetaField
     private String cardCollectionsProcessingSchedule;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

@@ -3,29 +3,41 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.procamman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketTracking {
     /*The type of work task (e.g. track competitor activity, track customer behaviors)*/
+    @MetaField
     private String marketTrackingWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research to reach specific insights*/
+    @MetaField
     private String marketTrackingWorkTask;
 
     /*Reference to an internally maintained market research viewpoint*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object generalMarketResearchDirectoryEntryInstanceReference;
 
     /*Reference to an internally maintained competitor analysis viewpoint*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object competitorAnalysisInstanceReference;
 
     /*Reference to internally maintained customer survey materials*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerSurveyProcedureInstanceReference;
 
     /*File of consolidated notes, evaluations and findings for the market tracking work task*/
+    @MetaField
     private String marketTrackingWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - typically points of view drawn from the market research, competitor research and customer surveys*/
+    @MetaField
     private String marketTrackingWorkTaskResult;
 
     /*The date-time the market tracking task is performed*/
+    @MetaField
     private String marketTrackingWorkTaskDate_Time;
 
     public void setMarketTrackingWorkTaskType(String marketTrackingWorkTaskType) {

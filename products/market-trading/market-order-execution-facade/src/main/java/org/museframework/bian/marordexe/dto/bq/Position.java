@@ -1,38 +1,53 @@
 /*The sub-tasks involved in the execution of the financial transaction*/
 package org.museframework.bian.marordexe.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Position extends org.museframework.bian.classes.Position {
     /*The security that the bank position is traded for*/
+    @MetaField
     private String bankSecurityPositionSecurityType;
 
     /*Reference to market trades impacting the position during the current trading period*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object positionMarketOrderTradeInitiationInstanceReference;
 
     /*The consolidated record of trading activity against the position during the trading period, including the derived position P&L*/
+    @MetaField
     private String bankSecurityPositionSecurityPAndLRecord;
 
     /*The record of trades made in the wholesale markets by the bank to manage its net security position. Note for larger market orders/trades there may be a corresponding wholesale transaction as appropriate)*/
+    @MetaField
     private String wholesaleTrade;
 
     /*The traded security*/
+    @MetaField
     private String wholesaleTradeSecurityType;
 
     /*The volume of share bought/sold*/
+    @MetaField
     private String wholesaleTradeVolume;
 
     /*The security and cash flow details of the trade*/
+    @MetaField
     private String wholesaleTradePrice;
 
     /*The terms covering the clearing and settlement of the trade*/
+    @MetaField
     private String wholesaleTradeClearingandSettlementTerms;
 
     /*The document reference for the trade confirmation notice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the correspondence generated for the trade confirmation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Status tracking for the wholesale trade*/
+    @MetaField
     private String wholesaleTradeStatus;
 
     public void setBankSecurityPositionSecurityType(String bankSecurityPositionSecurityType) {

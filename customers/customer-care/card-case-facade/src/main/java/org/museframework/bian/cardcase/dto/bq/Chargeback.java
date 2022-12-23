@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Chargeback {
     /*Reference to the card transaction for the consolidation*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object chargebackCardTransactionRecordReference;
 
     /*The instruction to book chargeback for the transaction - could be partial chargeback*/
+    @MetaField
     private String chargebackInstruction;
 
     public void setChargebackCardTransactionRecordReference(org.museframework.bian.classes.Object chargebackCardTransactionRecordReference) {

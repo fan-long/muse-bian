@@ -1,10 +1,18 @@
 package org.museframework.bian.productmatching.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateBankandCampaignAlignmentRequest {
+    @MetaField
     private String productmatchingid;
 
+    @MetaField
     private String bankandcampaignalignmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productmatching.dto.bq.BankandCampaignAlignment bankandCampaignAlignment;
 
     public void setProductmatchingid(String productmatchingid) {

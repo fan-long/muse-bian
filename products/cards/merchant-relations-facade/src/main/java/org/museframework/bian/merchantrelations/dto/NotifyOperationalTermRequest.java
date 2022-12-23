@@ -1,8 +1,15 @@
 package org.museframework.bian.merchantrelations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyOperationalTermRequest {
+    @MetaField
     private String merchantrelationsid;
 
+    @MetaField
     private String operationaltermid;
 
     public void setMerchantrelationsid(String merchantrelationsid) {

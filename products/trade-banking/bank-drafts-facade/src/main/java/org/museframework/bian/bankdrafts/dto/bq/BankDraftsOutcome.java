@@ -1,35 +1,49 @@
 /*The Customer Payment Task is a discrete action or task that is required in the execution of the Customer Payment Task*/
 package org.museframework.bian.bankdrafts.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankDraftsOutcome {
     /**/
+    @MetaField
     private String bankDraftsCounterparty;
 
     /**/
+    @MetaField
     private String bankDraftsDividend;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FeeTransaction bankDraftsFees;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.InterestTransaction bankDraftsInterest;
 
     /**/
+    @MetaField
     private String bankDraftsMargining;
 
     /**/
+    @MetaField
     private String bankDraftsNotionalPrincipal;
 
     /**/
+    @MetaField
     private String bankDraftsOptions;
 
     /**/
+    @MetaField
     private String bankDraftsRates;
 
     /**/
+    @MetaField
     private String bankDraftsSettlement;
 
     /**/
+    @MetaField
     private String bankDraftsWorkProduct;
 
     public void setBankDraftsCounterparty(String bankDraftsCounterparty) {

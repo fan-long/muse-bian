@@ -1,6 +1,12 @@
 package org.museframework.bian.finstaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class NotifyFinancialStatementAssessmentRequest {
+    @MetaField
     private String financialstatementassessmentid;
 
     public void setFinancialstatementassessmentid(String financialstatementassessmentid) {

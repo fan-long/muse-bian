@@ -1,6 +1,12 @@
 package org.museframework.bian.mardatswiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveInternalPublicationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.mardatswiope.dto.bq.InternalPublication internalPublication;
 
     public void setInternalPublication(org.museframework.bian.mardatswiope.dto.bq.InternalPublication internalPublication) {

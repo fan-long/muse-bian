@@ -1,32 +1,45 @@
 /*Handle and assign the day to day activities, capture time, costs and income for an operational unit within Hedge Fund Administration. */
 package org.museframework.bian.hedfunadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class HedgeFundAdministrativePlan extends org.museframework.bian.classes.HedgeFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Hedge Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String hedgeFundAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Hedge Fund Administrative Plan*/
+    @MetaField
     private String hedgeFundAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Hedge Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement hedgeFundAdministrativePlanDuty;
 
     /*Party who is involved in Hedge Fund Administrative Plan*/
+    @MetaField
     private String hedgeFundAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Hedge Fund Administrative Plan*/
+    @MetaField
     private String hedgeFundAdministrativePlanBudgetBalance;
 
     /*The subject matter of Hedge Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object hedgeFundAdministrativePlanSubjectMatter;
 
     /*The type of Hedge Fund Administrative Plan*/
+    @MetaField
     private String hedgeFundAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Hedge Fund Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan hedgeFundAdministrativePlanReference;
 
     /*Documentation of Hedge Fund Administrative Plan*/
+    @MetaField
     private String hedgeFundAdministrativePlanDescription;
 
     public void setHedgeFundAdministrativePlanBudgetType(String hedgeFundAdministrativePlanBudgetType) {

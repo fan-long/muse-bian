@@ -1,6 +1,12 @@
 package org.museframework.bian.cusevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveFraudResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cusevehis.dto.bq.Fraud fraud;
 
     public void setFraud(org.museframework.bian.cusevehis.dto.bq.Fraud fraud) {

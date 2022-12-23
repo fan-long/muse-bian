@@ -1,8 +1,15 @@
 package org.museframework.bian.itstaandgui.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureTechnologyStandardsSpecificationRequest {
+    @MetaField
     private String itstandardsandguidelinesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.itstaandgui.dto.cr.TechnologyStandardsSpecification technologyStandardsSpecification;
 
     public void setItstandardsandguidelinesid(String itstandardsandguidelinesid) {

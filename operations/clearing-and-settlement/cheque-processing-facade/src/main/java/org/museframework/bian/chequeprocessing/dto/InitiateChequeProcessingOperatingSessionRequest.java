@@ -1,6 +1,12 @@
 package org.museframework.bian.chequeprocessing.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateChequeProcessingOperatingSessionRequest {
+    @MetaField(ref=true)
     private org.museframework.bian.chequeprocessing.dto.cr.ChequeProcessingOperatingSession chequeProcessingOperatingSession;
 
     public void setChequeProcessingOperatingSession(org.museframework.bian.chequeprocessing.dto.cr.ChequeProcessingOperatingSession chequeProcessingOperatingSession) {

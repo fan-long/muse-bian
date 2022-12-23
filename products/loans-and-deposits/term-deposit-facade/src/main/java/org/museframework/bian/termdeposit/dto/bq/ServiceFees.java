@@ -1,50 +1,69 @@
 /**/
 package org.museframework.bian.termdeposit.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServiceFees {
     /*The profile of applicable fees and penalties*/
+    @MetaField
     private String feeConfigurationProfile;
 
     /*The fee or penalty type applied*/
+    @MetaField
     private String feeType;
 
     /*Definition of the fee or penalty including when and how to apply*/
+    @MetaField
     private String feeDefinition;
 
     /*The record of applied fees and penalties including transactions and accrued amounts*/
+    @MetaField
     private String feeApplicationRecord;
 
     /*A record of an applied fee or penalty*/
+    @MetaField
     private String feeTransaction;
 
     /*General description of the fee or penalty transaction*/
+    @MetaField
     private String transactionDescription;
 
     /*The fee or penalty type applied*/
+    @MetaField
     private String transactionFeeType;
 
     /*The derived fee or penalty amount applied*/
+    @MetaField
     private String transactionFeeCharge;
 
     /*A record of projected fees and penalties*/
+    @MetaField
     private String feeProjectionsandCommitments;
 
     /*General description of the projected fee or penalty*/
+    @MetaField
     private String projectedTransactionDescription;
 
     /*The fee or penalty type*/
+    @MetaField
     private String projectedTransactionFeeType;
 
     /*The anticipated fee or penalty amount*/
+    @MetaField
     private String projectedTransactionFeeCharge;
 
     /*Tracking of accumulated fees and penalties*/
+    @MetaField
     private String feeAccrualAmount;
 
     /*The fee or penalty type being tracked*/
+    @MetaField
     private String accrualFeeType;
 
     /*The accrued amount of fees and penalties*/
+    @MetaField
     private String accrualFeeCharge;
 
     public void setFeeConfigurationProfile(String feeConfigurationProfile) {

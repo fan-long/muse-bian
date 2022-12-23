@@ -3,26 +3,37 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.serevehis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Issue {
     /*Reference to the service position where issue arises*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingPositionReference;
 
     /*Reference to the servicing session*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingPositionSessionReference;
 
     /*Reference to the employee or unit raising the issue*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Defines the type of event/error being recorded (e.g. support facility failure)*/
+    @MetaField
     private String productionIssueType;
 
     /*Description of the issue and involved functions, parties*/
+    @MetaField
     private String productionIssueDescription;
 
     /*An evaluation of the event cause and impact*/
+    @MetaField
     private String productionIssueDiagnosis;
 
     /*Description of corrective actions and assigned parties*/
+    @MetaField
     private String productionIssueResolutionTask;
 
     public void setServicingPositionReference(org.museframework.bian.classes.Object servicingPositionReference) {

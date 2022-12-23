@@ -1,29 +1,41 @@
 /*A course of action for doing Production Issue Resolution Workstep in the context of executing the Production Issue Resolution Workstep*/
 package org.museframework.bian.servicingissue.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductionIssueResolutionWorkstep {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String schedule;
 
     /*The Production Issue Resolution Workstep specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Production Issue Resolution Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure servicingIssueProcedureReference;
 
     /*Reference to Production Issue Resolution Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Workstep productionIssueResolutionWorkstepReference;
 
     /*The type of Production Issue Resolution Workstep*/
+    @MetaField
     private String productionIssueResolutionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

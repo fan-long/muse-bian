@@ -1,10 +1,18 @@
 package org.museframework.bian.rewpoiawaandred.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeAwardRequest {
+    @MetaField
     private String rewardpointsawardsandredemptionid;
 
+    @MetaField
     private String awardid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.rewpoiawaandred.dto.bq.Award award;
 
     public void setRewardpointsawardsandredemptionid(String rewardpointsawardsandredemptionid) {

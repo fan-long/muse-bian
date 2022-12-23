@@ -3,50 +3,69 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.achoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InboundACH {
     /*Reference to an inbound ACH transaction batch*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object inboundACHTransactionBatchReference;
 
     /*Reference to a ACH payment transaction - included in the batch*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object ACHPaymentTransactionReference;
 
     /*Record of key transaction fields*/
+    @MetaField
     private String ACHPaymentTransactionRecord;
 
     /*Reference to the originator of the payment transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionInitiatorReference;
 
     /*Reference to the source of funds in the payment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerBankReference;
 
     /*Reference to the payer's account (source of funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerProductInstanceReference;
 
     /*Reference to the transaction payee*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the payee's account (target for funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Reference to the payee's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Transaction specific clearing and settlement instructions if appropriate*/
+    @MetaField
     private String specialInstructions;
 
     /*Key amounts from the transaction*/
+    @MetaField
     private String amount;
 
     /*Currencies of the amounts*/
+    @MetaField
     private String currency;
 
     /*Key date types included in the transaction (e.g. order, booking, execution, value date, interest bearing)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setInboundACHTransactionBatchReference(org.museframework.bian.classes.Object inboundACHTransactionBatchReference) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.commissionagreement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveCommissionTermsRequest {
+    @MetaField
     private String commissionagreementid;
 
+    @MetaField
     private String commissiontermsid;
 
     public void setCommissionagreementid(String commissionagreementid) {

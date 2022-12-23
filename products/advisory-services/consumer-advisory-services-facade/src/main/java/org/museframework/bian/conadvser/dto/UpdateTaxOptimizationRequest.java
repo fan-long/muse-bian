@@ -1,10 +1,18 @@
 package org.museframework.bian.conadvser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTaxOptimizationRequest {
+    @MetaField
     private String consumeradvisoryservicesid;
 
+    @MetaField
     private String taxoptimizationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.conadvser.dto.bq.TaxOptimization taxOptimization;
 
     public void setConsumeradvisoryservicesid(String consumeradvisoryservicesid) {

@@ -3,11 +3,17 @@
 Examples: Staff assignment, Facility allocation.*/
 package org.museframework.bian.bracurman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchCurrencyManagementOutcome {
     /**/
+    @MetaField
     private String branchCurrencyManagementAllocation;
 
     /**/
+    @MetaField
     private String branchCurrencyManagementWorkProduct;
 
     public void setBranchCurrencyManagementAllocation(String branchCurrencyManagementAllocation) {

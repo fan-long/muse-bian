@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.internalaudit.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Audit extends org.museframework.bian.classes.Audit {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String auditPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String auditAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String auditVersionNumber;
 
     /*The Internal Audit Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String serviceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String serviceWorkProduct;
 
     /**/
+    @MetaField
     private String serviceName;
 
     public void setAuditPreconditions(String auditPreconditions) {

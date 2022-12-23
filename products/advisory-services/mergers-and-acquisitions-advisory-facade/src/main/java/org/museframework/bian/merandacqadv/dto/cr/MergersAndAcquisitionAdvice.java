@@ -1,26 +1,37 @@
 /*Provide specialist advice and/or support as an ongoing service or for a specific task/event within Mergers and Acquisitions Advisory*/
 package org.museframework.bian.merandacqadv.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MergersAndAcquisitionAdvice {
     /*A Classification value that distinguishes between the subject matters of Mergers And Acquisition Advice*/
+    @MetaField
     private String mergersAndAcquisitionAdviceSubjectAreaType;
 
     /*A Classification value that distinguishes between Options defined within Mergers And Acquisition Advice*/
+    @MetaField
     private String mergersAndAcquisitionAdviceParameterType;
 
     /*A selected option, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature mergersAndAcquisitionAdviceSelectedOption;
 
     /*Request to advise*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction mergersAndAcquisitionAdviceRequest;
 
     /*Reference to the log of (usage) ativities/events of Mergers And Acquisition Advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log mergersAndAcquisitionAdviceUsageLog;
 
     /*Information about reactions to an Advise which is used as a basis for improvement for the Mergers And Acquisition Advice.*/
+    @MetaField
     private String mergersAndAcquisitionAdviceFeedback;
 
     /*An unique reference to an item or an occurrence of Mergers And Acquisition Advice*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object mergersAndAcquisitionAdviceReference;
 
     public void setMergersAndAcquisitionAdviceSubjectAreaType(String mergersAndAcquisitionAdviceSubjectAreaType) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.itstaandgui.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateProductTestingandDeploymentMechanismsRequest {
+    @MetaField
     private String itstandardsandguidelinesid;
 
+    @MetaField
     private String producttestinganddeploymentmechanismsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.itstaandgui.dto.bq.ProductTestingandDeploymentMechanisms productTestingandDeploymentMechanisms;
 
     public void setItstandardsandguidelinesid(String itstandardsandguidelinesid) {

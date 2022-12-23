@@ -3,11 +3,17 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.mardatswiope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FeedUpload {
     /*Reference to packets of information/records provided, perhaps with real-time updates*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object marketInformationFeedServiceRecordReference;
 
     /*This is the uploaded market information that is distributed over the switch - its content is updated dynamically during the operating session*/
+    @MetaField
     private String marketInformationFeedServiceRecord;
 
     public void setMarketInformationFeedServiceRecordReference(org.museframework.bian.classes.Object marketInformationFeedServiceRecordReference) {

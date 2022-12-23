@@ -2,80 +2,109 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.standingorder.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StandingOrderFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Standing Order Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature standingOrderFacilitySelectedOption;
 
     /*Timetable to fulfill Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityCalendar;
 
     /*The status of Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityStatus;
 
     /*Reference to the party who is involved in Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityAssociatedParty;
 
     /*The curreny which is arranged in Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityCurrency;
 
     /*Reference to the regulation which is defined in Standing Order Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet standingOrderFacilityRegulationReference;
 
     /*Reference to the jurisdiction that is assigned to Standing Order Arrangement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction standingOrderFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Standing Order Arrangement, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit standingOrderFacilityBookingLocation;
 
     /*Reference to the account which is linked to Standing Order Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account standingOrderFacilityAccountReference;
 
     /*Reference to the customer who is involved in Standing Order Arrangement*/
+    @MetaField
     private String standingOrderFacilityCustomerReference;
 
     /*The current calculated position*/
+    @MetaField
     private String standingOrderFacilityPosition;
 
     /*Reference to the product which is linked to Standing Order Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct standingOrderFacilityProductReference;
 
     /**/
+    @MetaField
     private String standingOrderFacilityPositionLimit;
 
     /*Reference to account that has to be debited for the standing order fee*/
+    @MetaField
     private String feeAccountReference;
 
     /*Reference to counterparty if this is a customer of the bank*/
+    @MetaField
     private String counterpartyCustomerReference;
 
     /*Reference to the counterparty account if it is in this bank*/
+    @MetaField
     private String counterpartyAccountReference;
 
     /*External number of the account (could be internal or external account) that has to be credited (credit transfer) of debited (request to pay) for the principal amount*/
+    @MetaField
     private String counterpartyExternalAccountCode;
 
     /*Principal amount of the standing order*/
+    @MetaField
     private String principalAmount;
 
     /*Fee amount charged for the execution of the standing order*/
+    @MetaField
     private String feeAmount;
 
     /*Payment details that will be added to the credit transfer or request to pay during execution of the standing order*/
+    @MetaField
     private String paymentDetailsDescription;
 
     /*First date on which the standing order will be executed*/
+    @MetaField
     private String startDate;
 
     /*Last date on which the standing order will be executed*/
+    @MetaField
     private String endDate;
 
     /*Periodicity with which the standing order will be executed, e.g. yearly, quarterly, monthly, weekly, every XX days,…….*/
+    @MetaField
     private String periodicityDescription;
 
     /*Day number within the periodicity interval on whch the standing order will be executed, e.g. First, Last, XX*/
+    @MetaField
     private String dayNumberInPeriodicityDescription;
 
     public void setStandingOrderFacilityParameterType(String standingOrderFacilityParameterType) {

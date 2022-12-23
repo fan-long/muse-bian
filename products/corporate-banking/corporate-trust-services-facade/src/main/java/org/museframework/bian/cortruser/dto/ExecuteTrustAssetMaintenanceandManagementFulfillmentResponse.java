@@ -1,6 +1,12 @@
 package org.museframework.bian.cortruser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteTrustAssetMaintenanceandManagementFulfillmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cortruser.dto.bq.TrustAssetMaintenanceandManagementFulfillment trustAssetMaintenanceandManagementFulfillment;
 
     public void setTrustAssetMaintenanceandManagementFulfillment(org.museframework.bian.cortruser.dto.bq.TrustAssetMaintenanceandManagementFulfillment trustAssetMaintenanceandManagementFulfillment) {

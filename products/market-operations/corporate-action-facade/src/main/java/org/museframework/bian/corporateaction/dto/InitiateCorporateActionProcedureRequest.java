@@ -1,6 +1,12 @@
 package org.museframework.bian.corporateaction.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateCorporateActionProcedureRequest {
+    @MetaField(ref=true)
     private org.museframework.bian.corporateaction.dto.cr.CorporateActionProcedure corporateActionProcedure;
 
     public void setCorporateActionProcedure(org.museframework.bian.corporateaction.dto.cr.CorporateActionProcedure corporateActionProcedure) {

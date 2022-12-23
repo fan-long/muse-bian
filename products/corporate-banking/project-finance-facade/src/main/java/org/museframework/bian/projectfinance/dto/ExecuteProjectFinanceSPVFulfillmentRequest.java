@@ -1,10 +1,18 @@
 package org.museframework.bian.projectfinance.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteProjectFinanceSPVFulfillmentRequest {
+    @MetaField
     private String projectfinanceid;
 
+    @MetaField
     private String projectfinancespvfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.projectfinance.dto.bq.ProjectFinanceSPVFulfillment projectFinanceSPVFulfillment;
 
     public void setProjectfinanceid(String projectfinanceid) {

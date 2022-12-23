@@ -1,8 +1,15 @@
 package org.museframework.bian.cortruser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveEscrowAccountFulfillmentRequest {
+    @MetaField
     private String corporatetrustservicesid;
 
+    @MetaField
     private String escrowaccountfulfillmentid;
 
     public void setCorporatetrustservicesid(String corporatetrustservicesid) {

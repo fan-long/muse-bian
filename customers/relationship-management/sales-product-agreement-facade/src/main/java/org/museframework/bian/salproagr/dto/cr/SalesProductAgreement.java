@@ -4,38 +4,53 @@
 */
 package org.museframework.bian.salproagr.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SalesProductAgreement {
     /*Reference to the associated customer (can currently be a person or a company)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity that is the subject of the agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object legalEntityReference;
 
     /*Reference to the type of product/service covered by the agreement*/
+    @MetaField
     private String productandServiceType;
 
     /*Reference to the specific product instance covered by the sales product agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of customer agreement (e.g. individual, corporate)*/
+    @MetaField
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
+    @MetaField
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
+    @MetaField
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
+    @MetaField
     private String agreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the customer master agreement that governs the product agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Reference to KYC/Regulatory assessments maintained elsewhere for the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyLife_cycleManagementReference;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

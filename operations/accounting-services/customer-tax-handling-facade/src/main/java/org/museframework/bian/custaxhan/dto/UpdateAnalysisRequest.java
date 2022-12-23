@@ -1,10 +1,18 @@
 package org.museframework.bian.custaxhan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAnalysisRequest {
+    @MetaField
     private String customertaxhandlingid;
 
+    @MetaField
     private String analysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.custaxhan.dto.bq.Analysis analysis;
 
     public void setCustomertaxhandlingid(String customertaxhandlingid) {

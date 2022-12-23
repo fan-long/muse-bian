@@ -1,10 +1,18 @@
 package org.museframework.bian.traandprirep.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTransactionReportingFunctionRequest {
+    @MetaField
     private String tradeandpricereportingid;
 
+    @MetaField
     private String transactionreportingfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traandprirep.dto.bq.TransactionReportingFunction transactionReportingFunction;
 
     public void setTradeandpricereportingid(String tradeandpricereportingid) {

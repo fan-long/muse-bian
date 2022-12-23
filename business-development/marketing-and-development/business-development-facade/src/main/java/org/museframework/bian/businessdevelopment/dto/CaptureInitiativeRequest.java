@@ -1,10 +1,18 @@
 package org.museframework.bian.businessdevelopment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureInitiativeRequest {
+    @MetaField
     private String businessdevelopmentid;
 
+    @MetaField
     private String initiativeid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.businessdevelopment.dto.bq.Initiative initiative;
 
     public void setBusinessdevelopmentid(String businessdevelopmentid) {

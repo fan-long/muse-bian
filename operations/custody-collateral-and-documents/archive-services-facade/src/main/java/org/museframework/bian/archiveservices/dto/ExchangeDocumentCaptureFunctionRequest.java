@@ -1,10 +1,18 @@
 package org.museframework.bian.archiveservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeDocumentCaptureFunctionRequest {
+    @MetaField
     private String archiveservicesid;
 
+    @MetaField
     private String documentcapturefunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.archiveservices.dto.bq.DocumentCaptureFunction documentCaptureFunction;
 
     public void setArchiveservicesid(String archiveservicesid) {

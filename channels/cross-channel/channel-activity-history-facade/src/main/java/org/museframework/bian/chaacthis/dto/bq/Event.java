@@ -3,77 +3,105 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.chaacthis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Event extends org.museframework.bian.classes.Event {
     /*The servicing resource for assisted customer exchanges*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeReference;
 
     /*The type of product involved*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productReference;
 
     /*Reference to the specific product accessed by the proposed transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the contact record for the active contact where the transaction is sourced*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*The contact record consolidates all aspects of the contact that is cross-referenced by all  contact functions and called servicing sessions that make up the contact*/
+    @MetaField
     private String customerContactRecord;
 
     /*The customer reference as provided by the contacting party and verified by the authentication function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordCustomerReference;
 
     /*The contact device can be determined by the channel operations facilities (e.g. URL/ANI-phone number)*/
+    @MetaField
     private String customerContactRecordContactDevice;
 
     /*The contact authentication level is determined by the authentication function and can be updated during the contact*/
+    @MetaField
     private String customerContactRecordAuthenticationStatus;
 
     /*The routing selections made through the contact*/
+    @MetaField
     private String customerContactRecordRoutingSelectionStatus;
 
     /*The requested service from a menu option can be indicated by the customer when initiating or during contact*/
+    @MetaField
     private String customerContactRecordMenuSelection;
 
     /*The customer may provide details of servicing resource request when initiating or during contact*/
+    @MetaField
     private String customerContactRecordServicingRequest;
 
     /*Contact Handler can reference recent servicing activity for routing, security and servicing purposes (obtained from Service Domain Channel Activity History)*/
+    @MetaField
     private String customerContactRecordServicingEventHistory;
 
     /*Reference to the servicing position - can be where an inbound contact is routed, or the source of an outbound contact request*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordServicingPositionReference;
 
     /*Reference to the servicing resource - can be to handle an inbound contact or the source of an outbound contact request*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordServicingResourceReference;
 
     /*Records the actions performed during contact, including all dialogue sessions*/
+    @MetaField
     private String customerContactRecordActivityRecord;
 
     /*Reference to any contact session dialogue records created during the contact - there can be several*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerSessionDialogueReference;
 
     /*The session dialogue log of actions is returned to SD-Contact Handler and added to the contact record*/
+    @MetaField
     private String customerSessionDialogueRecord;
 
     /*Records the start and end date times for the contact*/
+    @MetaField
     private String customerContactRecordDuration;
 
     /*Description of all actions performed during the contact, including all sessions*/
+    @MetaField
     private String customerContactActivityRecord;
 
     /*The interim result of the contact (subject to transaction approval)*/
+    @MetaField
     private String customerContactResult;
 
     /*Reference to a channel activity report extracted for the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object channelActivityHistoryReportReference;
 
     /*The period for the channel activity report*/
+    @MetaField
     private String channelActivityHistoryReportFromto;
 
     /*The content of the report extracting recent channel activity records to support the transaction authorization decision*/
+    @MetaField
     private String channelActivityHistoryReport;
 
     /*Indicates success or failure or required increased authentication level to be acquired for authorization*/
+    @MetaField
     private String transactionAuthorizationResult;
 
     public void setEmployeeReference(org.museframework.bian.classes.Object employeeReference) {

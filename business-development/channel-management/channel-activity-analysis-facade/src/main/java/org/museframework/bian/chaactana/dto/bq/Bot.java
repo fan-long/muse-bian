@@ -3,14 +3,21 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.chaactana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Bot {
     /*Defines the intended analytical insights and required input data and outputs*/
+    @MetaField
     private String channelActivityBotDetectionAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object channelActivityBotDetectionAnalysisReference;
 
     /*The output record from the analysis*/
+    @MetaField
     private String channelActivityBotDetectionAnalysisResult;
 
     public void setChannelActivityBotDetectionAnalysisAlgorithmSpecification(String channelActivityBotDetectionAnalysisAlgorithmSpecification) {

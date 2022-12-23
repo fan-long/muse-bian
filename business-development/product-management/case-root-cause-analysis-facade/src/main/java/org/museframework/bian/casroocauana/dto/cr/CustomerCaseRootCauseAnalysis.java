@@ -4,26 +4,37 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.casroocauana.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerCaseRootCauseAnalysis extends org.museframework.bian.classes.CustomerCaseRootCauseAnalysis {
     /*A Classification value that distinguishes between Analysis according to the type of business services and/or type of concern defined within Customer Case Root Cause Analysis . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
+    @MetaField
     private String customerCaseRootCauseAnalysisParameterType;
 
     /*A selected optional business service as subject matter of analysis*/
+    @MetaField
     private String customerCaseRootCauseAnalysisSelectedOption;
 
     /*Request to perform Customer Case Root Cause Analysis*/
+    @MetaField
     private String customerCaseRootCauseAnalysisRequest;
 
     /*Timetable to perform Customer Case Root Cause Analysis*/
+    @MetaField
     private String customerCaseRootCauseAnalysisSchedule;
 
     /*The status of Customer Case Root Cause Analysis*/
+    @MetaField
     private String customerCaseRootCauseAnalysisStatus;
 
     /*Reference to the log of (usage) ativities/events of Customer Case Root Cause Analysis*/
+    @MetaField
     private String customerCaseRootCauseAnalysisUsageLog;
 
     /*Reference to the party who has requested Customer Case Root Cause Analysis*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerCaseRootCauseAnalysisRequesterReference;
 
     public void setCustomerCaseRootCauseAnalysisParameterType(String customerCaseRootCauseAnalysisParameterType) {

@@ -3,17 +3,25 @@
 Examples: Business Requirements*/
 package org.museframework.bian.itstaandgui.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ITStandardsAndGuidelinesOutcome {
     /**/
+    @MetaField
     private String ITStandardsAndGuidelinesTask;
 
     /**/
+    @MetaField
     private String ITStandardsAndGuidelinesDesign;
 
     /**/
+    @MetaField
     private String ITStandardsAndGuidelinesWorkProduct;
 
     /**/
+    @MetaField
     private String ITStandardsAndGuidelinesImpactAnalysis;
 
     public void setITStandardsAndGuidelinesTask(String ITStandardsAndGuidelinesTask) {

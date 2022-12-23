@@ -1,6 +1,12 @@
 package org.museframework.bian.chelocbox.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateLockBoxFacilityRequest {
+    @MetaField(ref=true)
     private org.museframework.bian.chelocbox.dto.cr.LockBoxFacility lockBoxFacility;
 
     public void setLockBoxFacility(org.museframework.bian.chelocbox.dto.cr.LockBoxFacility lockBoxFacility) {

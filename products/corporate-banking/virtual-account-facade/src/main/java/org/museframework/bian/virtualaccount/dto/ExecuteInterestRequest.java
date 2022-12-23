@@ -1,10 +1,18 @@
 package org.museframework.bian.virtualaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteInterestRequest {
+    @MetaField
     private String virtualaccountid;
 
+    @MetaField
     private String interestid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.virtualaccount.dto.bq.Interest interest;
 
     public void setVirtualaccountid(String virtualaccountid) {

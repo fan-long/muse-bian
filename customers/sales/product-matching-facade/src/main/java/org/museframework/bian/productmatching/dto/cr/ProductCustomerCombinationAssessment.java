@@ -3,38 +3,53 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.productmatching.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductCustomerCombinationAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Product/Customer Combination Assessment . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
+    @MetaField
     private String productCustomerCombinationAssessmentParameterType;
 
     /*A selected optional business service as subject matter of assessment*/
+    @MetaField
     private String productCustomerCombinationAssessmentSelectedOption;
 
     /*The type of Product/Customer Combination Assessment*/
+    @MetaField
     private String productCustomerCombinationAssessmentType;
 
     /*Reference to Product/Customer Combination Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productCustomerCombinationAssessmentReference;
 
     /*Request to assess Product/CustomerCombination*/
+    @MetaField
     private String productCustomerCombinationAssessmentRequest;
 
     /*Timetable to assess Product/CustomerCombination*/
+    @MetaField
     private String productCustomerCombinationAssessmentSchedule;
 
     /*The status of Product/Customer Combination Assessment*/
+    @MetaField
     private String productCustomerCombinationAssessmentStatus;
 
     /*Reference to the log of (usage) ativities/events of Product/Customer Combination Assessment*/
+    @MetaField
     private String productCustomerCombinationAssessmentUsageLog;
 
     /*Party who is involved in Product/Customer Combination Assessment*/
+    @MetaField
     private String productCustomerCombinationAssessmentAssociatedParty;
 
     /*Reference to the party who has provided Product/Customer Combination Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productCustomerCombinationAssessmentServiceProviderReference;
 
     /*Reference to the party who has requested Product/Customer Combination Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productCustomerCombinationAssessmentRequesterReference;
 
     public void setProductCustomerCombinationAssessmentParameterType(String productCustomerCombinationAssessmentParameterType) {

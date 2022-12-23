@@ -1,86 +1,117 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Card Case. */
 package org.museframework.bian.cardcase.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardCaseProcedure extends org.museframework.bian.classes.CardCaseProcedure {
     /*The type of card dispute including any supporting narrative (e.g. disputed charges, merchant fraud)*/
+    @MetaField
     private String cardCaseType;
 
     /*Reference to a specific product instance associated with the card case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The customer raising the card case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the complete contact record assembled during the contact where the card case was raised if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*The physical address or electronic venue the card case was initiated*/
+    @MetaField
     private String caseLocation;
 
     /*The date and time the case was initiated*/
+    @MetaField
     private String date;
 
     /*The business unit where the customer case was reported*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to one or more card transactions associated with the case*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionReference;
 
     /*The card transaction for the customer case (can be multiple transactions)*/
+    @MetaField
     private String cardTransactionRecord;
 
     /*The account number associated with the card transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductInstanceReference;
 
     /*The identity of the account holder submitting the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardHolderReference;
 
     /*Reference to the issued device submitted to authorize the transaction (e.g. card number)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionIssuedDeviceReference;
 
     /*Reference to the network the card transaction is handled by as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionNetworkReference;
 
     /*Refers to the card holder's issuing bank as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionIssuingBankReference;
 
     /*Refers to the merchant's acquiring bank as recorded with the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantAcquiringBankReference;
 
     /*The type of transaction (purchase, cash advance, etc.)*/
+    @MetaField
     private String cardTransactionType;
 
     /*The currency that the transaction is made in*/
+    @MetaField
     private String cardTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
+    @MetaField
     private String cardTransactionAmountType;
 
     /*The amount corresponding to the type*/
+    @MetaField
     private String cardTransactionAmount;
 
     /*Refers to the merchant initiating settlement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionMerchantReference;
 
     /*Refers to the point of sale location*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionLocationReference;
 
     /*Details of the transaction (e.g. purchased service/product, purpose)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
+    @MetaField
     private String cardTransactionDateTime;
 
     /*The applied currency conversion charge*/
+    @MetaField
     private String cardTransactionFXConversionCharge;
 
     /*The applied intercharge fee*/
+    @MetaField
     private String cardTransactionInterchargeFee;
 
     /*Details the reference, amount, timestamp of the transaction authorization*/
+    @MetaField
     private String cardTransactionAuthorizationRecord;
 
     /*The card case processing schedule including key tasks and dates for resolution (target and actual dates/times )*/
+    @MetaField
     private String cardCaseResolutionSchedule;
 
     public void setCardCaseType(String cardCaseType) {

@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardcase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Arbitration {
     /*Reference to the card transaction for the arbitration*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object arbitrationCardTransactionRecordReference;
 
     /*Reference to participant's use of a Network service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object networkParticipantNetworkServiceRequestReference;
 
     /*The record for the network service delivery, includes charges, service activity log and results etc.*/
+    @MetaField
     private String networkParticipantNetworkServiceRequestRecord;
 
     /*The requested service type (e.g. merchant alert, chargeback arbitration, chargeback reduction, arbitration)*/
+    @MetaField
     private String networkParticipantServiceType;
 
     /*The time the service was requested*/
+    @MetaField
     private String networkParticipantServiceDateTime;
 
     /*The outcome of the arbitration service request*/
+    @MetaField
     private String networkParticipantServiceResult;
 
     public void setArbitrationCardTransactionRecordReference(org.museframework.bian.classes.Object arbitrationCardTransactionRecordReference) {

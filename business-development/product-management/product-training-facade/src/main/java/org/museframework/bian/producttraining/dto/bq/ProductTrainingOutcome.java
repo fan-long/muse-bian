@@ -2,11 +2,17 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.producttraining.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductTrainingOutcome {
     /**/
+    @MetaField
     private String productTrainingWorkProduct;
 
     /**/
+    @MetaField
     private String productTrainingProcedure;
 
     public void setProductTrainingWorkProduct(String productTrainingWorkProduct) {

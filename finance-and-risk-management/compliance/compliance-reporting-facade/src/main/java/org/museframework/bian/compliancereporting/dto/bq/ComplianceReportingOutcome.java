@@ -2,17 +2,25 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.compliancereporting.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ComplianceReportingOutcome {
     /**/
+    @MetaField
     private String complianceReportingPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String complianceReportingActivityAnalysis;
 
     /**/
+    @MetaField
     private String complianceReportingAdministrativePlan;
 
     /**/
+    @MetaField
     private String complianceReportingAdministrationTask;
 
     public void setComplianceReportingPerformanceAnalysis(String complianceReportingPerformanceAnalysis) {

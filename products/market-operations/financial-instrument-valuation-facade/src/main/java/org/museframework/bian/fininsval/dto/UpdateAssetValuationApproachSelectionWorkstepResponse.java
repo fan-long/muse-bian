@@ -1,6 +1,12 @@
 package org.museframework.bian.fininsval.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateAssetValuationApproachSelectionWorkstepResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.fininsval.dto.bq.AssetValuationApproachSelectionWorkstep assetValuationApproachSelectionWorkstep;
 
     public void setAssetValuationApproachSelectionWorkstep(org.museframework.bian.fininsval.dto.bq.AssetValuationApproachSelectionWorkstep assetValuationApproachSelectionWorkstep) {

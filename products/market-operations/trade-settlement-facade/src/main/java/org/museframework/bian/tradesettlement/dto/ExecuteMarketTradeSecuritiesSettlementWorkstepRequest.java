@@ -1,10 +1,18 @@
 package org.museframework.bian.tradesettlement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteMarketTradeSecuritiesSettlementWorkstepRequest {
+    @MetaField
     private String tradesettlementid;
 
+    @MetaField
     private String markettradesecuritiessettlementworkstepid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.tradesettlement.dto.bq.MarketTradeSecuritiesSettlementWorkstep marketTradeSecuritiesSettlementWorkstep;
 
     public void setTradesettlementid(String tradesettlementid) {

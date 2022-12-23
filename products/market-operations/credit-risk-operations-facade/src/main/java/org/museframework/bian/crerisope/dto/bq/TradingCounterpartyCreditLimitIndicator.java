@@ -1,29 +1,41 @@
 /*The Trading Counterparty Credit Limit Indicator is one integral indicator that can be included in Trading Counterparty Credit Limit Indicator monitoring */
 package org.museframework.bian.crerisope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradingCounterpartyCreditLimitIndicator {
     /*Reference to Trading Counterparty Credit Limit Indicator*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object tradingCreditPositionMeasurementReference;
 
     /*Reference to Trading Counterparty Credit Limit Indicator*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object tradingCounterpartyCreditLimitIndicatorReference;
 
     /*The type of Trading Counterparty Credit Limit Indicator*/
+    @MetaField
     private String tradingCounterpartyCreditLimitIndicatorType;
 
     /*The Trading Counterparty Credit Limit Indicator specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for monitoring Trading Counterparty Credit Limit Indicator by applying the Trading Counterparty Credit Limit Indicator indicator*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The completion status once Trading Counterparty Credit Limit Indicator has been monitored by applying the Trading Counterparty Credit Limit Indicator indicator*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*The required status/situation before Trading Counterparty Credit Limit Indicator can be monitored by applying the Trading Counterparty Credit Limit Indicator indicator*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in monitoring Trading Counterparty Credit Limit Indicator by applying the Trading Counterparty Credit Limit Indicator indicator*/
+    @MetaField
     private String schedule;
 
     public void setTradingCreditPositionMeasurementReference(org.museframework.bian.classes.Object tradingCreditPositionMeasurementReference) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.finmarres.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateFinancialMarketResearchDirectoryEntryRequest {
+    @MetaField
     private String financialmarketresearchid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.finmarres.dto.cr.FinancialMarketResearchDirectoryEntry financialMarketResearchDirectoryEntry;
 
     public void setFinancialmarketresearchid(String financialmarketresearchid) {

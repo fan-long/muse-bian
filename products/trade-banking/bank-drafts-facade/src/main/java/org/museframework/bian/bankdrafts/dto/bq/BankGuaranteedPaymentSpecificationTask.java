@@ -1,23 +1,33 @@
 /*The Customer Payment Task is a discrete action or task that is required in the execution of the Customer Payment Task*/
 package org.museframework.bian.bankdrafts.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankGuaranteedPaymentSpecificationTask {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String schedule;
 
     /*The Bank Guaranteed Payment Specification Task specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Bank Guaranteed Payment Specification Task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction bearerDocumentTransactionReference;
 
     /*The type of Bank Guaranteed Payment Specification Task*/
+    @MetaField
     private String bankGuaranteedPaymentSpecificationTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -3,14 +3,21 @@
 Examples: Invoice generation*/
 package org.museframework.bian.customercase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Analysis extends org.museframework.bian.classes.Analysis {
     /*The contact record contains all details of the initial case submission*/
+    @MetaField
     private String customerContactRecord;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String caseAnalysisWorkProduct;
 
     /*The outcome of the case root cause analysis*/
+    @MetaField
     private String caseAnalysisWorkTaskResult;
 
     public void setCustomerContactRecord(String customerContactRecord) {

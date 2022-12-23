@@ -1,10 +1,18 @@
 package org.museframework.bian.unitruadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestFundInvestor_MiddleandBackOfficeServiceRoutineRequest {
+    @MetaField
     private String unittrustadministrationid;
 
+    @MetaField
     private String fundinvestor_middleandbackofficeserviceroutineid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.unitruadm.dto.bq.FundInvestor_MiddleandBackOfficeServiceRoutine fundInvestor_MiddleandBackOfficeServiceRoutine;
 
     public void setUnittrustadministrationid(String unittrustadministrationid) {

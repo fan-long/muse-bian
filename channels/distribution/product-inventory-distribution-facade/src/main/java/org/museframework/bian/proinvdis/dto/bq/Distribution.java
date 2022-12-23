@@ -2,35 +2,49 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.proinvdis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Distribution {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField
     private String distributionPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object distributionBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String distributionWorkSchedule;
 
     /*The Product Inventory Distribution AdministrativePlan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField
     private String distributionPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String distributionServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String distributionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String distributionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String distributionServiceWorkProduct;
 
     /**/
+    @MetaField
     private String distributionServiceName;
 
     public void setDistributionPreconditions(String distributionPreconditions) {

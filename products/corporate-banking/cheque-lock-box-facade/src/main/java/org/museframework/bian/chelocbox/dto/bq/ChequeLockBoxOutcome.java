@@ -1,11 +1,17 @@
 /*The configuration and execution of Check Clearing and Settlement Fulfillment arrangement within the Check Clearing and Settlement Fulfillment*/
 package org.museframework.bian.chelocbox.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ChequeLockBoxOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility chequeLockBoxFinancialFacility;
 
     /**/
+    @MetaField
     private String chequeLockBoxWorkProduct;
 
     public void setChequeLockBoxFinancialFacility(org.museframework.bian.classes.FinancialFacility chequeLockBoxFinancialFacility) {

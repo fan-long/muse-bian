@@ -1,10 +1,18 @@
 package org.museframework.bian.customeragreement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdatePolicyTermsRequest {
+    @MetaField
     private String customeragreementid;
 
+    @MetaField
     private String policytermsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customeragreement.dto.bq.PolicyTerms policyTerms;
 
     public void setCustomeragreementid(String customeragreementid) {

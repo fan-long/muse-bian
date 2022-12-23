@@ -1,35 +1,49 @@
 /*The Repo Transaction Cash Transfer Task is a discrete action or task that is required in the execution of the Repo Transaction Cash Transfer Task*/
 package org.museframework.bian.stolenandrep.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StockLendingandReposOutcome {
     /**/
+    @MetaField
     private String stockLendingandReposCounterparty;
 
     /**/
+    @MetaField
     private String stockLendingandReposDividend;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FeeTransaction stockLendingandReposFees;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.InterestTransaction stockLendingandReposInterest;
 
     /**/
+    @MetaField
     private String stockLendingandReposMargining;
 
     /**/
+    @MetaField
     private String stockLendingandReposNotionalPrincipal;
 
     /**/
+    @MetaField
     private String stockLendingandReposOptions;
 
     /**/
+    @MetaField
     private String stockLendingandReposRates;
 
     /**/
+    @MetaField
     private String stockLendingandReposSettlement;
 
     /**/
+    @MetaField
     private String stockLendingandReposWorkProduct;
 
     public void setStockLendingandReposCounterparty(String stockLendingandReposCounterparty) {

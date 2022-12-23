@@ -1,10 +1,18 @@
 package org.museframework.bian.merchandisingloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangePaymentsRequest {
+    @MetaField
     private String merchandisingloanid;
 
+    @MetaField
     private String paymentsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.merchandisingloan.dto.bq.Payments payments;
 
     public void setMerchandisingloanid(String merchandisingloanid) {

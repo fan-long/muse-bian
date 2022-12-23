@@ -1,104 +1,141 @@
 /*Capture and maintain reference information about some type of entitity within Document Library.*/
 package org.museframework.bian.documentdirectory.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DocumentDirectoryEntry extends org.museframework.bian.classes.DocumentDirectoryEntry {
     /*Descriptive name of the document*/
+    @MetaField
     private String documentName;
 
     /*Location  within the bank  where the original document is created/captured*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object locationReference;
 
     /*Reference of unit or employee responsible for creating or capturing the original*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitEmployeeReference;
 
     /*Reference to the associated product or service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the associated product or service activity (clarifies why the document was captured)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceActionReference;
 
     /*The creation date of the original document*/
+    @MetaField
     private String documentCreationDate;
 
     /*Date the document was first created/captured at the bank (can be the same as creation date for bank generated documents)*/
+    @MetaField
     private String documentCaptureDateTime;
 
     /*General description of the type and outline content of the document*/
+    @MetaField
     private String documentTypeDescription;
 
     /*Retrievable document content in any suitable media and format*/
+    @MetaField
     private String documentContent;
 
     /*Tracks the movements of the document, from the original request for submission, through reference and access and eventual archiving*/
+    @MetaField
     private String documentProvisioningHistory;
 
     /*Details of the request to a holding party to provide access to a document*/
+    @MetaField
     private String documentProvisioningRequest;
 
     /*The planned and actual schedule for receipt and return as appropriate, including any time limits or deadlines*/
+    @MetaField
     private String documentProvisioningSchedule;
 
     /*The result of the provisioning action (e.g. document received, document not provided in time)*/
+    @MetaField
     private String documentProvisioningResult;
 
     /*Maintains links to earlier versions for a document with a replacement cycle*/
+    @MetaField
     private String documentVersionHistory;
 
     /*The version with overview as needed*/
+    @MetaField
     private String documentVersion;
 
     /*The valid from-to dates for the version*/
+    @MetaField
     private String documentVersionDate;
 
     /*Tracks any verification tasks performed against the document*/
+    @MetaField
     private String documentVerificationHistory;
 
     /*A description of the actions taken to verify the document*/
+    @MetaField
     private String documentVerificationTaskDescription;
 
     /*Reference to an external agency used to perform a verification service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentVerificationServiceProviderReference;
 
     /*The outcome of the verification assessment*/
+    @MetaField
     private String documentVerificationTaskResult;
 
     /*Tracks any amendments or corrections made to the document*/
+    @MetaField
     private String documentAmendmentHistory;
 
     /*Description of the amendment and the reason for the correction or change*/
+    @MetaField
     private String documentAmendmentDescription;
 
     /*The outcome of the amendment in terms of changes made*/
+    @MetaField
     private String documentAmendmentResult;
 
     /*Maintains an update log for a document with allowed updates*/
+    @MetaField
     private String documentUpdateHistory;
 
     /*Description of the update and reason for the change*/
+    @MetaField
     private String documentUpdateDescription;
 
     /*The outcome of the update in terms of changes made*/
+    @MetaField
     private String documentUpdateResult;
 
     /*Maintains a log of the physical and electronic archiving of a document including retrieval activity as appropriate*/
+    @MetaField
     private String documentArchivingHistory;
 
     /*Details of an action to archive or retrieve a document*/
+    @MetaField
     private String documentArchivingAction;
 
     /*The archive storage reference for a document*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentArchiveReference;
 
     /*The available media and format for storing and retrieving the document*/
+    @MetaField
     private String documentMediaFormat;
 
     /*Reference to associated parties  (e.g. source, custodian, subject, owner)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentSubjectReference;
 
     /*Tracked location of the physical document master version and any copies*/
+    @MetaField
     private String documentLocation;
 
     /*The status of the document  (e.g. on-file, authenticated, archived)*/
+    @MetaField
     private String documentStatus;
 
     public void setDocumentName(String documentName) {

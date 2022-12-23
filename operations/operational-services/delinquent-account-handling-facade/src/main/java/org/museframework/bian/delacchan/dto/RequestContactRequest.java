@@ -1,10 +1,18 @@
 package org.museframework.bian.delacchan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestContactRequest {
+    @MetaField
     private String delinquentaccounthandlingid;
 
+    @MetaField
     private String contactid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.delacchan.dto.bq.Contact contact;
 
     public void setDelinquentaccounthandlingid(String delinquentaccounthandlingid) {

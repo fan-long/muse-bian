@@ -2,38 +2,53 @@
 */
 package org.museframework.bian.marinfman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialMarketInformationAdministrativePlan {
     /*Reference to the external sources of financial market information. Can be an ongoing service or some form of report*/
+    @MetaField
     private String financialMarketInformationService;
 
     /*The external agency/source of financial market information*/
+    @MetaField
     private String financialMarketInformationProvider;
 
     /*Defines the scope/content of the financial market information*/
+    @MetaField
     private String financialMarketinformationDescription;
 
     /*Defines the type of information service (e.g. a regular feed, periodic report)*/
+    @MetaField
     private String financialMarketInformationServiceType;
 
     /*Sets out the delivery schedule for content*/
+    @MetaField
     private String financialMarketInformationServiceSchedule;
 
     /*Reference to any agreement covering access to the external service*/
+    @MetaField
     private String financialMarketInformationServiceAgreement;
 
     /*Refers to the consolidated financial market information that is enhanced/improved by the bank for internal reference. This is a collection of different subject areas for which a bank perspective is maintained*/
+    @MetaField
     private String financialMarketInformationDatabase;
 
     /*Refers to a maintained subject area*/
+    @MetaField
     private String financialMarketInformationSubjectArea;
 
     /*A description of the information content of the subject area*/
+    @MetaField
     private String financialMarketInformationSubjectAreaDescription;
 
     /*A record of the update history of the content*/
+    @MetaField
     private String financialMarketInformationSubjectAreaUpdateHistory;
 
     /*The consolidated improved information, includes current and past historical records as necessary*/
+    @MetaField
     private String financialMarketInformationSubjectAreaRecord;
 
     public void setFinancialMarketInformationService(String financialMarketInformationService) {

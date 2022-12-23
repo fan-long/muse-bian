@@ -1,6 +1,12 @@
 package org.museframework.bian.privateplacement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecutePrivatePlacementInstrumentMaintenanceFulfillmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.privateplacement.dto.bq.PrivatePlacementInstrumentMaintenanceFulfillment privatePlacementInstrumentMaintenanceFulfillment;
 
     public void setPrivatePlacementInstrumentMaintenanceFulfillment(org.museframework.bian.privateplacement.dto.bq.PrivatePlacementInstrumentMaintenanceFulfillment privatePlacementInstrumentMaintenanceFulfillment) {

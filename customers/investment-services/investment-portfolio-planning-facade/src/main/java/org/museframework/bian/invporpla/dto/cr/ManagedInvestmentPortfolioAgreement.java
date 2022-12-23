@@ -4,38 +4,53 @@
 */
 package org.museframework.bian.invporpla.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ManagedInvestmentPortfolioAgreement {
     /*Reference to the associated customer for the investment portfolio*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity that is the subject of the agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object legalEntityReference;
 
     /*Reference to the investment portfolio record of all holdings governed by this agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*The type of investment portfolio agreement (e.g. discretionary, trust )*/
+    @MetaField
     private String investmentPortfolioAgreementType;
 
     /*The contractual jurisdiction or coverage of the investment portfolio agreement (e.g. "governed by State")*/
+    @MetaField
     private String investmentPortfolioAgreementJurisdiction;
 
     /*The term of the agreement*/
+    @MetaField
     private String investmentPortfolioAgreementValidFromToDate;
 
     /*Reference to signatories*/
+    @MetaField
     private String investmentPortfolioAgreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents, (e.g. signed agreement document, disclosures)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the customer master agreement that governs the product agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementInstanceReference;
 
     /*Reference to KYC/Regulatory assessments maintained by the Party Life-Cycle Management Service Domain*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyRelationshipProcedureInstanceReference;
 
     /*The consolidated view of all of the constituent investment policy terms and conditions in any suitable format*/
+    @MetaField
     private String managedInvestmentPortfolioAgreement;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

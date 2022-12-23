@@ -1,10 +1,18 @@
 package org.museframework.bian.invporman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTradeInitiationRequest {
+    @MetaField
     private String investmentportfoliomanagementid;
 
+    @MetaField
     private String tradeinitiationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.invporman.dto.bq.TradeInitiation tradeInitiation;
 
     public void setInvestmentportfoliomanagementid(String investmentportfoliomanagementid) {

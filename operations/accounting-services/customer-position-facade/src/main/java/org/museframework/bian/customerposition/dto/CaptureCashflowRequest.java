@@ -1,10 +1,18 @@
 package org.museframework.bian.customerposition.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureCashflowRequest {
+    @MetaField
     private String customerpositionid;
 
+    @MetaField
     private String cashflowid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerposition.dto.bq.Cashflow cashflow;
 
     public void setCustomerpositionid(String customerpositionid) {

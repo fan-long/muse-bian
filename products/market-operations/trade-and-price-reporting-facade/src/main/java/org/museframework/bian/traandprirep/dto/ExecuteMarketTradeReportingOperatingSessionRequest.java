@@ -1,8 +1,15 @@
 package org.museframework.bian.traandprirep.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteMarketTradeReportingOperatingSessionRequest {
+    @MetaField
     private String tradeandpricereportingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traandprirep.dto.cr.MarketTradeReportingOperatingSession marketTradeReportingOperatingSession;
 
     public void setTradeandpricereportingid(String tradeandpricereportingid) {

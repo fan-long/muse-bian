@@ -2,29 +2,41 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.knowledgeexchange.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CaptureandClassification {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField
     private String captureandClassificationPreconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String captureandClassificationFunctionSchedule;
 
     /*The Intellectual Property Exchange Operating Session specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService contentCaptureandClassification;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String contentCaptureandClassificationServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String contentCaptureandClassificationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String contentCaptureandClassificationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String contentCaptureandClassificationServiceWorkProduct;
 
     /**/
+    @MetaField
     private String contentCaptureandClassificationServiceName;
 
     public void setCaptureandClassificationPreconditions(String captureandClassificationPreconditions) {

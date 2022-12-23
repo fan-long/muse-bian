@@ -1,10 +1,18 @@
 package org.museframework.bian.proserage.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class EvaluatePolicyTermRequest {
+    @MetaField
     private String productserviceagencyid;
 
+    @MetaField
     private String policytermid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.proserage.dto.bq.PolicyTerm policyTerm;
 
     public void setProductserviceagencyid(String productserviceagencyid) {

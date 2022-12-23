@@ -3,14 +3,21 @@
 Examples: Invoice generation*/
 package org.museframework.bian.paymentorder.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ExecutionInitiation {
     /*The reference to the payment execution processing task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentExecutionProcedureInstanceReference;
 
     /*The returned status of the payment execution processing*/
+    @MetaField
     private String paymentExecutionProcedureInstanceStatus;
 
     /*Details of the execution initiation task*/
+    @MetaField
     private String executionInitiationTaskResult;
 
     public void setPaymentExecutionProcedureInstanceReference(org.museframework.bian.classes.Object paymentExecutionProcedureInstanceReference) {

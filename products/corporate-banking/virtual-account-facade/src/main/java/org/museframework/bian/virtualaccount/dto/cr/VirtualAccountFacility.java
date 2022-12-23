@@ -1,44 +1,61 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Virtual Account. */
 package org.museframework.bian.virtualaccount.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class VirtualAccountFacility {
     /**/
+    @MetaField
     private String virtualAccountFacilityParameterType;
 
     /**/
+    @MetaField
     private String virtualAccountFacilitySelectedOption;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityType;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object virtualAccountFacilityReference;
 
     /**/
+    @MetaField
     private String virtualAccountFacilitySchedule;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityStatus;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityCurrency;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object virtualAccountFacilityRegulationReference;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityRegulationType;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityJurisdiction;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityBookingLocation;
 
     /**/
+    @MetaField
     private String virtualAccountFacilityAccountType;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object virtualAccountFacilityAccountReference;
 
     public void setVirtualAccountFacilityParameterType(String virtualAccountFacilityParameterType) {

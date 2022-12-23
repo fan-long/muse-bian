@@ -1,10 +1,18 @@
 package org.museframework.bian.mardatswiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateInternalPublicationRequest {
+    @MetaField
     private String marketdataswitchoperationid;
 
+    @MetaField
     private String internalpublicationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.mardatswiope.dto.bq.InternalPublication internalPublication;
 
     public void setMarketdataswitchoperationid(String marketdataswitchoperationid) {

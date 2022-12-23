@@ -1,8 +1,15 @@
 package org.museframework.bian.regandlegaut.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestRegulatoryAndLegalAuthorityRelationshipManagementPlanRequest {
+    @MetaField
     private String regulatoryandlegalauthorityid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.regandlegaut.dto.cr.RegulatoryAndLegalAuthorityRelationshipManagementPlan regulatoryAndLegalAuthorityRelationshipManagementPlan;
 
     public void setRegulatoryandlegalauthorityid(String regulatoryandlegalauthorityid) {

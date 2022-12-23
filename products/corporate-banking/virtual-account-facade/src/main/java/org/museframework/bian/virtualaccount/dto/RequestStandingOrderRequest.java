@@ -1,10 +1,18 @@
 package org.museframework.bian.virtualaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestStandingOrderRequest {
+    @MetaField
     private String virtualaccountid;
 
+    @MetaField
     private String standingorderid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.virtualaccount.dto.bq.StandingOrder standingOrder;
 
     public void setVirtualaccountid(String virtualaccountid) {

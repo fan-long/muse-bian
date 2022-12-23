@@ -1,8 +1,15 @@
 package org.museframework.bian.fraudmodel.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveProductionRequest {
+    @MetaField
     private String fraudmodelid;
 
+    @MetaField
     private String productionid;
 
     public void setFraudmodelid(String fraudmodelid) {

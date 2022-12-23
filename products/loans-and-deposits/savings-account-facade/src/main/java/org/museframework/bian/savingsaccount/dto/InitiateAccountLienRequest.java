@@ -1,10 +1,18 @@
 package org.museframework.bian.savingsaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateAccountLienRequest {
+    @MetaField
     private String savingsaccountid;
 
+    @MetaField
     private String accountlienid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.savingsaccount.dto.bq.AccountLien accountLien;
 
     public void setSavingsaccountid(String savingsaccountid) {

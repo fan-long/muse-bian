@@ -1,26 +1,37 @@
 /*The configuration and execution of Check Clearing and Settlement Fulfillment arrangement within the Check Clearing and Settlement Fulfillment*/
 package org.museframework.bian.chelocbox.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LockBoxReportingandIssueResolutionFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Lock Box Reporting and Issue Resolution Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Lock Box Reporting and Issue Resolution Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility lockBoxFacilityReference;
 
     /*Reference to Lock Box Reporting and Issue Resolution Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object lockBoxReportingandIssueResolutionFulfillmentReference;
 
     /*The type of Lock Box Reporting and Issue Resolution Fulfillment*/
+    @MetaField
     private String lockBoxReportingandIssueResolutionFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

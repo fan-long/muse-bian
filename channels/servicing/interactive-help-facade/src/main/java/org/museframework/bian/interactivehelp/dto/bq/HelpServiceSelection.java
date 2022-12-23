@@ -3,38 +3,53 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.interactivehelp.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class HelpServiceSelection {
     /*The type of session provides context for filtering content (e.g. employee, self-service customer)*/
+    @MetaField
     private String helpSelectionInteractionType;
 
     /*The type of product or service that is in context for the help request*/
+    @MetaField
     private String helpSelectionProductandServiceType;
 
     /*The specific product feature being accessed at the time of the help request*/
+    @MetaField
     private String helpSelectionProductFeatureType;
 
     /*The session dialogue log of actions during the contact to this point can be mined for key words that might improve the help selection*/
+    @MetaField
     private String sessionDialogueRecord;
 
     /*An interactive exchange can be supported where the service presents a menu of selection options or key words to narrow the search*/
+    @MetaField
     private String helpSelectionKeyWordMenu;
 
     /*The selected keyword or menu option*/
+    @MetaField
     private String helpSelectionKeyWordSelection;
 
     /*The returned interactive help in any suitable form*/
+    @MetaField
     private String interactiveHelp;
 
     /*The user provided result of the interactive help service, including interaction statistics such as exchange frequency and duration*/
+    @MetaField
     private String helpSelectionTaskResult;
 
     /*User provided commentary on the service provided*/
+    @MetaField
     private String helpSelectionFeedback;
 
     /*Reference to the employee, business unit providing service feedback*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The date, time (and duration) of the service usage*/
+    @MetaField
     private String dateTime;
 
     public void setHelpSelectionInteractionType(String helpSelectionInteractionType) {

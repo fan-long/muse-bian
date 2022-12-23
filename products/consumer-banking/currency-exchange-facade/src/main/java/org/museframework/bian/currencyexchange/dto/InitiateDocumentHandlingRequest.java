@@ -1,10 +1,18 @@
 package org.museframework.bian.currencyexchange.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateDocumentHandlingRequest {
+    @MetaField
     private String currencyexchangeid;
 
+    @MetaField
     private String documenthandlingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.currencyexchange.dto.bq.DocumentHandling documentHandling;
 
     public void setCurrencyexchangeid(String currencyexchangeid) {

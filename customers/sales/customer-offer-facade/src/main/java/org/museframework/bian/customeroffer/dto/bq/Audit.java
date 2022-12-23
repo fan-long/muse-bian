@@ -1,20 +1,29 @@
 /*Handles the booking of the asset or liability to the appropriate unit*/
 package org.museframework.bian.customeroffer.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Audit extends org.museframework.bian.classes.Audit {
     /*The required compliance check*/
+    @MetaField
     private String guidelineComplianceCheckType;
 
     /*Description of the compliance requirements*/
+    @MetaField
     private String guidelineComplianceCheckRequirement;
 
     /*The submitted offer related materials*/
+    @MetaField
     private String guidelineComplianceCheckSubmission;
 
     /*Any required changes to the offer needed to comply*/
+    @MetaField
     private String guidelineComplianceAdjustmentRequirement;
 
     /*The result of the compliance assessment*/
+    @MetaField
     private String guidelineComplianceCheckAssessment;
 
     public void setGuidelineComplianceCheckType(String guidelineComplianceCheckType) {

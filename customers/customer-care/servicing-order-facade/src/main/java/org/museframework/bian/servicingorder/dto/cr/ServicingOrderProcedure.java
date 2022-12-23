@@ -1,41 +1,57 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Servicing Order. */
 package org.museframework.bian.servicingorder.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServicingOrderProcedure extends org.museframework.bian.classes.ServicingOrderProcedure {
     /*Reference to a third party service provider that handles some aspect of customer servicing access with the bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object thirdPartyReference;
 
     /*Reference to a third party servicing mandate - used when a third party is requesting the service order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object thirdPartyServicingMandateReference;
 
     /*The servicing mandate for a third party defines the customers and service access allowed*/
+    @MetaField
     private String thirdPartyServicingMandate;
 
     /*The customer requesting the servicing order directly or the customer that is being serviced indirectly by the third party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the customer's active services and products record*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerEligibilityAssessmentInstanceReference;
 
     /*The type of servicing order being processed (e.g. change of address, change of employment…)*/
+    @MetaField
     private String servicingOrderType;
 
     /*The record for the servicing task*/
+    @MetaField
     private String servicingOrderTaskRecord;
 
     /*Defines the processing tasks and their sequencing followed by the servicing order*/
+    @MetaField
     private String servicingOrderDescription;
 
     /*The date and time that the servicing order is processed*/
+    @MetaField
     private String date;
 
     /*Employees involved in the servicing order*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String servicingOrderWorkProduct;
 
     /*The outcome of the servicing order*/
+    @MetaField
     private String servicingOrderWorkTaskResult;
 
     public void setThirdPartyReference(org.museframework.bian.classes.Object thirdPartyReference) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.achoperations.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveReconciliationRequest {
+    @MetaField
     private String achoperationsid;
 
+    @MetaField
     private String reconciliationid;
 
     public void setAchoperationsid(String achoperationsid) {

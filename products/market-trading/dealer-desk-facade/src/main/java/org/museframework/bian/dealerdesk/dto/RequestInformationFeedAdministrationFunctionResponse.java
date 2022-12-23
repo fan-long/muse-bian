@@ -1,6 +1,12 @@
 package org.museframework.bian.dealerdesk.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestInformationFeedAdministrationFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.dealerdesk.dto.bq.InformationFeedAdministrationFunction informationFeedAdministrationFunction;
 
     public void setInformationFeedAdministrationFunction(org.museframework.bian.dealerdesk.dto.bq.InformationFeedAdministrationFunction informationFeedAdministrationFunction) {

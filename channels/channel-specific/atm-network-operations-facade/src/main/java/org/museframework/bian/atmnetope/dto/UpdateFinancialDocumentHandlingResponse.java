@@ -1,6 +1,12 @@
 package org.museframework.bian.atmnetope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateFinancialDocumentHandlingResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.atmnetope.dto.bq.FinancialDocumentHandling financialDocumentHandling;
 
     public void setFinancialDocumentHandling(org.museframework.bian.atmnetope.dto.bq.FinancialDocumentHandling financialDocumentHandling) {

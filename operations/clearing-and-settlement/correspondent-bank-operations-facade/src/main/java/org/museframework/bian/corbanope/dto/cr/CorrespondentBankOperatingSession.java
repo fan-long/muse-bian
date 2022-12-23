@@ -1,23 +1,33 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Correspondent Bank. */
 package org.museframework.bian.corbanope.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorrespondentBankOperatingSession {
     /*Reference to the bank arrangement (that will detail limits, fees, preferred payments mechanism)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankFacilityReference;
 
     /*The correspondent bank arrangement (details agreed limits, fees, preferred payments mechanism, etc.)*/
+    @MetaField
     private String correspondentBankFacility;
 
     /*Details of the schedule for processing payments, clearing and settlement and reconciliations*/
+    @MetaField
     private String correspondentBankServicingSchedule;
 
     /*A reference to the bank calendar details for payment processing*/
+    @MetaField
     private String holidayTimezoneSchedule;
 
     /*Reference to associated vostro account (your money at our bank)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object vostroAccountReference;
 
     /*Reference to associated nostro account (our money at your bank)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object nostroMirrorAccountReference;
 
     public void setCorrespondentBankFacilityReference(org.museframework.bian.classes.Object correspondentBankFacilityReference) {

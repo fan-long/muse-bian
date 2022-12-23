@@ -1,10 +1,18 @@
 package org.museframework.bian.corporatelease.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAdministerRequest {
+    @MetaField
     private String corporateleaseid;
 
+    @MetaField
     private String administerid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporatelease.dto.bq.Administer administer;
 
     public void setCorporateleaseid(String corporateleaseid) {

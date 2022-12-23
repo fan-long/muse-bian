@@ -1,26 +1,37 @@
 /*The Counterparty Entity Reference property properties that represent a discrete aspect of the Counterparty Entity Reference property*/
 package org.museframework.bian.counterpartyadministration.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CounterpartyPermittedTransactionproperty {
     /*The required status/situation before the property is valid/meaningful*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
+    @MetaField
     private String schedule;
 
     /*The version reference for the property value*/
+    @MetaField
     private String versionNumber;
 
     /*The Counterparty Permitted Transaction property specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Counterparty Permitted Transaction property*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry counterpartyDirectoryEntryReference;
 
     /*Reference to Counterparty Permitted Transaction property*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object counterpartyPermittedTransactionpropertyReference;
 
     /*The type of Counterparty Permitted Transaction property*/
+    @MetaField
     private String counterpartyPermittedTransactionpropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

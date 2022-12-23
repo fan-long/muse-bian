@@ -1,32 +1,45 @@
 /*Covers the legal considerations of the agreement*/
 package org.museframework.bian.subcusagr.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PolicyTerm {
     /*The required status/situation for the terms to apply and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Policy Term*/
+    @MetaField
     private String schedule;
 
     /*The Policy Term specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Policy Term*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement subCustodianAgreementReference;
 
     /*Reference to Policy Term*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement policyTermReference;
 
     /*The type of Policy Term*/
+    @MetaField
     private String policyTermType;
 
     /*The type of bank policy referenced (e.g. staff certification)*/
+    @MetaField
     private String bankPolicy_RuleType;
 
     /*Reference to the bank's policies or rules*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object applicableBankPolicy_RuleReference;
 
     /*Explanation or interpretation of the policy or rule as applied*/
+    @MetaField
     private String applicableBankPolicy_RuleInterpretation;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

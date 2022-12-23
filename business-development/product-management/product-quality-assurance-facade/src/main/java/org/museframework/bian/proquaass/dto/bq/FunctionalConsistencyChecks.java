@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.proquaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FunctionalConsistencyChecks {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String functionalConsistencyChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String functionalConsistencyChecksAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String functionalConsistencyChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService functionalConsistencyChecks;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String functionalConsistencyChecksServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String functionalConsistencyChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String functionalConsistencyChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String functionalConsistencyChecksServiceWorkProduct;
 
     /**/
+    @MetaField
     private String functionalConsistencyChecksServiceName;
 
     public void setFunctionalConsistencyChecksPreconditions(String functionalConsistencyChecksPreconditions) {

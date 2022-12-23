@@ -3,29 +3,41 @@
 Examples: Staff assignment, Facility allocation.*/
 package org.museframework.bian.cencashan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProjectionandAllocation {
     /*The required status/situation before the allocation can be made*/
+    @MetaField
     private String projectionandAllocationPreconditions;
 
     /*The schedule and timing of allocation decisions*/
+    @MetaField
     private String projectionandAllocationAllocationSchedule;
 
     /*The Central Cash Allocation specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService cashInventoryProjection;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String cashInventoryProjectionServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String cashInventoryProjectionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String cashInventoryProjectionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String cashInventoryProjectionServiceWorkProduct;
 
     /**/
+    @MetaField
     private String cashInventoryProjectionServiceName;
 
     public void setProjectionandAllocationPreconditions(String projectionandAllocationPreconditions) {

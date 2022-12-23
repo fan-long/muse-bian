@@ -1,14 +1,21 @@
 /*The sub-tasks involved in the execution of the financial transaction*/
 package org.museframework.bian.paymentinitiation.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class OrderInitiation {
     /*The reference to the payment order processing task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentOrderProcedureInstanceReference;
 
     /*The returned status of the payment order processing*/
+    @MetaField
     private String paymentOrderProcedureInstanceStatus;
 
     /*Details of the payment order initiation task*/
+    @MetaField
     private String orderInitiationTaskResult;
 
     public void setPaymentOrderProcedureInstanceReference(org.museframework.bian.classes.Object paymentOrderProcedureInstanceReference) {

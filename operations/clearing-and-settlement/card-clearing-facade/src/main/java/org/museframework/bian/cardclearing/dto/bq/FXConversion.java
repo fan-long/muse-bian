@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.cardclearing.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FXConversion {
     /*The FX rates and fees that are applied to the transactions*/
+    @MetaField
     private String FXConversionRatesandFees;
 
     /*Details of the transaction FX conversion*/
+    @MetaField
     private String FXConversionTaskResult;
 
     public void setFXConversionRatesandFees(String FXConversionRatesandFees) {

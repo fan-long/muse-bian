@@ -3,26 +3,37 @@
 Examples: Invoice generation*/
 package org.museframework.bian.fraudresolution.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CaseDetermination {
     /*Reference to the involved customer's agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Customer agreement accessed to determine constraints on resolution approach*/
+    @MetaField
     private String customerAgreement;
 
     /*Reference to the involved merchant's agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object merchantAgreementReference;
 
     /*Merchant agreement accessed to determine constraints on resolution approach*/
+    @MetaField
     private String merchantAgreement;
 
     /*Reference to the interested party's agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object interestedPartyAgreementReference;
 
     /*Interested party agreement accessed to determine constraints on resolution approach*/
+    @MetaField
     private String interestedPartyAgreement;
 
     /*Record of rules and guidelines applied to determine fraud case resolution*/
+    @MetaField
     private String fraudCaseDeterminationRecord;
 
     public void setCustomerAgreementReference(org.museframework.bian.classes.Object customerAgreementReference) {

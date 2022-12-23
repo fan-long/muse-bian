@@ -1,10 +1,18 @@
 package org.museframework.bian.mortgageloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeBillingRequest {
+    @MetaField
     private String mortgageloanid;
 
+    @MetaField
     private String billingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.mortgageloan.dto.bq.Billing billing;
 
     public void setMortgageloanid(String mortgageloanid) {

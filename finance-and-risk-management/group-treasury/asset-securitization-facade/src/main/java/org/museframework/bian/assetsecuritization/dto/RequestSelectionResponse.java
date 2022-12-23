@@ -1,6 +1,12 @@
 package org.museframework.bian.assetsecuritization.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestSelectionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.assetsecuritization.dto.bq.Selection selection;
 
     public void setSelection(org.museframework.bian.assetsecuritization.dto.bq.Selection selection) {

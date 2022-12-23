@@ -1,10 +1,18 @@
 package org.museframework.bian.servicedirectory.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteProductAccessServicingPropertiesRequest {
+    @MetaField
     private String servicedirectoryid;
 
+    @MetaField
     private String productaccessservicingpropertiesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.servicedirectory.dto.bq.ProductAccessServicingProperties productAccessServicingProperties;
 
     public void setServicedirectoryid(String servicedirectoryid) {

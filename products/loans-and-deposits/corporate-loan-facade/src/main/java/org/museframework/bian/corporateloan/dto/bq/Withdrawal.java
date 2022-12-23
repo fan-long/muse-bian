@@ -1,44 +1,61 @@
 /**/
 package org.museframework.bian.corporateloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Withdrawal {
     /*The general payment transaction with all major attributes - some optional depending on type*/
+    @MetaField
     private String paymentTransaction;
 
     /*The type of payment transaction (e.g. customer payment, standing order, direct debit, bill pay)*/
+    @MetaField
     private String paymentTransactionType;
 
     /*Reference to the party to whom the payment is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionPayeeReference;
 
     /*Reference to the account to which the payment is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionPayeeAccountReference;
 
     /*Reference to the bank where the payee account is held*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionPayeeBankReference;
 
     /*The amount (and currency if applicable) of the payment*/
+    @MetaField
     private String paymentTransactionAmount;
 
     /*The fee type applied to the payment transaction*/
+    @MetaField
     private String paymentTransactionFeeType;
 
     /*The fee charge applied to the transaction*/
+    @MetaField
     private String paymentTransactionFeeCharge;
 
     /*The various key dates and times associated with the payment transaction*/
+    @MetaField
     private String paymentTransactionDate;
 
     /*Requested payment mechanism (e.g. Wire, ACH)*/
+    @MetaField
     private String paymentTransactionPaymentMechanism;
 
     /*Description of the purpose including any external reference to the transaction*/
+    @MetaField
     private String paymentTransactionPaymentPurpose;
 
     /*Reference to the location the payment transaction is initiated from*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionBankBranchLocationReference;
 
     /*The processing status of the transaction (e.g. captured, approved, initiated, confirmed, settled)*/
+    @MetaField
     private String paymentTransactionStatus;
 
     public void setPaymentTransaction(String paymentTransaction) {

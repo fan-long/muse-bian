@@ -2,44 +2,61 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.syndicatedloan.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SyndicatedLoanFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityParameterType;
 
     /*A selected optional business service as subject matter of Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilitySelectedOption;
 
     /*The type of Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityType;
 
     /*Reference to Syndicated Loan Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicatedLoanFacilityReference;
 
     /*Timetable to fulfill Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilitySchedule;
 
     /*The status of Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityStatus;
 
     /*The curreny which is arranged in Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityCurrency;
 
     /*Reference to the regulation which is defined in Syndicated Loan Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicatedLoanFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Syndicated Loan Arrangement in case of legal dispute.*/
+    @MetaField
     private String syndicatedLoanFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Syndicated Loan Arrangement, are entered.*/
+    @MetaField
     private String syndicatedLoanFacilityBookingLocation;
 
     /*The type of account which is linked to Syndicated Loan Arrangement*/
+    @MetaField
     private String syndicatedLoanFacilityAccountType;
 
     /*Reference to the account which is linked to Syndicated Loan Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicatedLoanFacilityAccountReference;
 
     public void setSyndicatedLoanFacilityParameterType(String syndicatedLoanFacilityParameterType) {

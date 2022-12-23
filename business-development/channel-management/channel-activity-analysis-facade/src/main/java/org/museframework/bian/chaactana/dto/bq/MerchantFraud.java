@@ -3,14 +3,21 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.chaactana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MerchantFraud {
     /*Defines the intended analytical insights and required input data and outputs*/
+    @MetaField
     private String channelActivityMerchantFraudAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object channelActivityMerchantFraudAnalysisReference;
 
     /*The output record from the analysis*/
+    @MetaField
     private String channelActivityMerchantFraudAnalysisResult;
 
     public void setChannelActivityMerchantFraudAnalysisAlgorithmSpecification(String channelActivityMerchantFraudAnalysisAlgorithmSpecification) {

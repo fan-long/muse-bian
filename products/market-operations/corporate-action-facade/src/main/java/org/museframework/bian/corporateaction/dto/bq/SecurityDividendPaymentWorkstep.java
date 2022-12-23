@@ -1,29 +1,41 @@
 /*A course of action for doing Security Spin-Off Action Workstep in the context of executing the Security Spin-Off Action Workstep*/
 package org.museframework.bian.corporateaction.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SecurityDividendPaymentWorkstep {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String schedule;
 
     /*The Security Dividend Payment Workstep specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Security Dividend Payment Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure corporateActionProcedureReference;
 
     /*Reference to Security Dividend Payment Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Workstep securityDividendPaymentWorkstepReference;
 
     /*The type of Security Dividend Payment Workstep*/
+    @MetaField
     private String securityDividendPaymentWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

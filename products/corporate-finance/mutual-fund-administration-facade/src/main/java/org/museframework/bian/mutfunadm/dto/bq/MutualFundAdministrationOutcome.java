@@ -1,17 +1,25 @@
 /*The Fund Investor, Middle and Back Office Service Routine is an activity that is performed as one aspect of carrying out the Fund Investor, Middle and Back Office Service Routine*/
 package org.museframework.bian.mutfunadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MutualFundAdministrationOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis mutualFundAdministrationPerformanceAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis mutualFundAdministrationActivityAnalysis;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan mutualFundAdministrationAdministrativePlan;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement mutualFundAdministrationAdministrationTask;
 
     public void setMutualFundAdministrationPerformanceAnalysis(org.museframework.bian.classes.Analysis mutualFundAdministrationPerformanceAnalysis) {

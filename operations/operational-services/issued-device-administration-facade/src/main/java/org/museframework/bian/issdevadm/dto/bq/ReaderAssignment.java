@@ -1,20 +1,29 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ReaderAssignment {
     /*Serial number or other unique identifier*/
+    @MetaField
     private String issuedReaderDeviceSerialNumber;
 
     /*Operating system version for smart devices*/
+    @MetaField
     private String versionNumber;
 
     /*The delivery address or tracked location if appropriate*/
+    @MetaField
     private String issueLocation;
 
     /*The reader configuration or set-up details as appropriate*/
+    @MetaField
     private String issuedDeviceConfiguration;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
+    @MetaField
     private String usageLog;
 
     public void setIssuedReaderDeviceSerialNumber(String issuedReaderDeviceSerialNumber) {

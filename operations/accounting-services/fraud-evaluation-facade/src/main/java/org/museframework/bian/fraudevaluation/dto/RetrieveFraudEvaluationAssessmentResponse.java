@@ -1,6 +1,12 @@
 package org.museframework.bian.fraudevaluation.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveFraudEvaluationAssessmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.fraudevaluation.dto.cr.FraudEvaluationAssessment fraudEvaluationAssessment;
 
     public void setFraudEvaluationAssessment(org.museframework.bian.fraudevaluation.dto.cr.FraudEvaluationAssessment fraudEvaluationAssessment) {

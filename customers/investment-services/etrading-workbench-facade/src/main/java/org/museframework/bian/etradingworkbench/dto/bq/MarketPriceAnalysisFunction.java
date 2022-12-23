@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Market Order Initiation Function for doing Market Order Initiation Function*/
 package org.museframework.bian.etradingworkbench.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MarketPriceAnalysisFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Market Price Analysis Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Market Price Analysis Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session eTradingWorkbenchOperatingSessionReference;
 
     /*Reference to Market Price Analysis Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function marketPriceAnalysisFunctionReference;
 
     /*The type of Market Price Analysis Function*/
+    @MetaField
     private String marketPriceAnalysisFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

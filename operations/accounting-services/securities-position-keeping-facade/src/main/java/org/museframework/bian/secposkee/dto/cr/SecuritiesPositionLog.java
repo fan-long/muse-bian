@@ -1,65 +1,89 @@
 /*Maintain a log of transactions or activity, typically a financial account/journal or a log of activity to support behavioral analysis within Securities Position Keeping. */
 package org.museframework.bian.secposkee.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SecuritiesPositionLog extends org.museframework.bian.classes.SecuritiesPositionLog {
     /*The type of securities transaction log (e.g. equities, derivatives, all)*/
+    @MetaField
     private String securitiesTransactionLogType;
 
     /*The product/service investment account for which this is the securities transaction log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the product or service account holder/customer for the log if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to a counterparty for the log if appropriate (e.g. merchant reference, corporate reference)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object counterpartyReference;
 
     /*Details the range of instruments that are tracked by the log (each instrument has its own transaction record/holding position*/
+    @MetaField
     private String securitiesPositionLogInstrumentProfile;
 
     /*Details for an individual tracked instrument type - (the log track transactions for multiple securities/instruments)*/
+    @MetaField
     private String securitiesPositionLogInstrumentRecord;
 
     /*Reference to the type of investment instrument being tracked (e.g. equity, commodity, FX/MM, derivative)*/
+    @MetaField
     private String securitiesInstrumentType;
 
     /*The specific instrument trading identifier (e.g. NASDAQ Id)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object securitiesInstrumentReference;
 
     /*Basic position limits that are maintained as an aspect of the log (these can include securities holdings and related instrument properties such as associated dividends entitlements)*/
+    @MetaField
     private String securitiesPositionLimits;
 
     /*The type of position maintained for the log (e.g. cumulative balance)*/
+    @MetaField
     private String securitiesPositionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String securitiesPositionLimitSettings;
 
     /*The current calculated position*/
+    @MetaField
     private String securitiesPositionLimitValue;
 
     /*Support for recording blocks on the log position (handling is by the associated investment account fulfillment service domain)*/
+    @MetaField
     private String securitiesAmountBlock;
 
     /*The type of block applied to the tracked securities position (e.g. pending, final)*/
+    @MetaField
     private String securitiesAmountBlockType;
 
     /*Priority classification for the block*/
+    @MetaField
     private String priority;
 
     /*The amount of the block*/
+    @MetaField
     private String amount;
 
     /*The type of key dates associated with the block  (e.g. start, expiry)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date type*/
+    @MetaField
     private String date;
 
     /*The date and time the log was initiated. Note the log will have a complex internal calendar structure for extract and reporting*/
+    @MetaField
     private String initiationDate;
 
     /*The status of the log entry (e.g. active, in-suspense etc.)*/
+    @MetaField
     private String status;
 
     public void setSecuritiesTransactionLogType(String securitiesTransactionLogType) {

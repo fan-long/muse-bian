@@ -1,29 +1,41 @@
 /*The Fund Inflows and Outflow Routine is an activity that is performed as one aspect of carrying out the Fund Inflows and Outflow Routine*/
 package org.museframework.bian.hedfunadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FundAccountingRoutine {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String schedule;
 
     /*The Fund Accounting Routine specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Fund Accounting Routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan hedgeFundAdministrativePlanReference;
 
     /*Reference to Fund Accounting Routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PlannedAction fundAccountingRoutineReference;
 
     /*The type of Fund Accounting Routine*/
+    @MetaField
     private String fundAccountingRoutineType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

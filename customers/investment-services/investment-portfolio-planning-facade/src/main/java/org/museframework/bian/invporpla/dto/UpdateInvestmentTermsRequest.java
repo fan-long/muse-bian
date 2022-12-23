@@ -1,10 +1,18 @@
 package org.museframework.bian.invporpla.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateInvestmentTermsRequest {
+    @MetaField
     private String investmentportfolioplanningid;
 
+    @MetaField
     private String investmenttermsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.invporpla.dto.bq.InvestmentTerms investmentTerms;
 
     public void setInvestmentportfolioplanningid(String investmentportfolioplanningid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.trustservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveTrustTaxandExpenseFulfillmentRequest {
+    @MetaField
     private String trustservicesid;
 
+    @MetaField
     private String trusttaxandexpensefulfillmentid;
 
     public void setTrustservicesid(String trustservicesid) {

@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TokenAssignment {
     /**/
+    @MetaField
     private String tokenIdentificationCode;
 
     /**/
+    @MetaField
     private String tokenServiceProviderReference;
 
     /**/
+    @MetaField
     private String requestorReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction requestReference;
 
     /**/
+    @MetaField
     private String requestReasonDescription;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account paymentAccountReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.PaymentCard cardReference;
 
     /*Enumeration: Active, Expired, Cancelled*/
+    @MetaField
     private String tokenStatus;
 
     /**/
+    @MetaField
     private String tokenStatusDate;
 
     public void setTokenIdentificationCode(String tokenIdentificationCode) {

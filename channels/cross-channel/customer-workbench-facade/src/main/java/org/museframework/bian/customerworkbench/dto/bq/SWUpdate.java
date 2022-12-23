@@ -3,17 +3,25 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.customerworkbench.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SWUpdate {
     /*The name of the bank application that is downloaded*/
+    @MetaField
     private String SWUpdateApplication;
 
     /*The version number downloaded*/
+    @MetaField
     private String SWUpdateVersion;
 
     /*The downloaded executable image*/
+    @MetaField
     private String SWUpdateImage;
 
     /*The date and time of the download*/
+    @MetaField
     private String date;
 
     public void setSWUpdateApplication(String SWUpdateApplication) {

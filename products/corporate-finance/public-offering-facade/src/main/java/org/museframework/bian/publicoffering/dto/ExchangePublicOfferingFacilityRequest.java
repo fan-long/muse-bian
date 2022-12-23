@@ -1,8 +1,15 @@
 package org.museframework.bian.publicoffering.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangePublicOfferingFacilityRequest {
+    @MetaField
     private String publicofferingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.publicoffering.dto.cr.PublicOfferingFacility publicOfferingFacility;
 
     public void setPublicofferingid(String publicofferingid) {

@@ -6,23 +6,33 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.legentdir.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Profile extends org.museframework.bian.classes.Profile {
     /*The estimated capitalization of the entity*/
+    @MetaField
     private String organizationCapitalization;
 
     /*The estimated debt level for the entity*/
+    @MetaField
     private String organizationDebtLevel;
 
     /*The projected economic performance for the entity*/
+    @MetaField
     private String organizationEconomicIntent;
 
     /*Past and projected growth rates*/
+    @MetaField
     private String organizationGrowthRate;
 
     /*Analysis of past performance  (a summary description)*/
+    @MetaField
     private String organizationProfitabilityStocks;
 
     /*Description of revenues, production volumes and staff turnover  a summary description)*/
+    @MetaField
     private String organizationRevenueTurnover;
 
     public void setOrganizationCapitalization(String organizationCapitalization) {

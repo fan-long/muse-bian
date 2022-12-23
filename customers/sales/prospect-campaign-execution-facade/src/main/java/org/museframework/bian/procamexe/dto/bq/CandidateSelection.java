@@ -3,14 +3,21 @@
 Examples: Invoice generation*/
 package org.museframework.bian.procamexe.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CandidateSelection {
     /*Details the selection criteria used to identify candidate prospects*/
+    @MetaField
     private String prospectCampaignSelectionCriteria;
 
     /*Reference to the employee or business unit that confirms eligibility of the prospect list (e.g. confirming not current customer checks)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object prospectCampaignCandidateEmployeeBusinessUnitReference;
 
     /*Reference to the prospects selected as a candidate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object prospectCampaignCandidateReference;
 
     public void setProspectCampaignSelectionCriteria(String prospectCampaignSelectionCriteria) {

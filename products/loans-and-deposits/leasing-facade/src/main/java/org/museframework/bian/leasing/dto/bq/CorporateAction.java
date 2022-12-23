@@ -2,32 +2,45 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.leasing.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateAction extends org.museframework.bian.classes.CorporateAction {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String corporateActionPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String corporateActionFeatureSchedule;
 
     /*The Leasing Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService BS_CorporateActionProcessing;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String corporateActionPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String corporateActionBS_CorporateActionProcessingServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String corporateActionBS_CorporateActionProcessingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String corporateActionBS_CorporateActionProcessingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String corporateActionBS_CorporateActionProcessingServiceWorkProduct;
 
     /**/
+    @MetaField
     private String corporateActionBS_CorporateActionProcessingServiceName;
 
     public void setCorporateActionPreconditions(String corporateActionPreconditions) {

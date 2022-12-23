@@ -2,41 +2,57 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.fraudmodel.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FraudModelSpecification {
     /*The type or category of behavior model (e.g. Decision tree, Bayesian Linear Regression, Logistic Regression, Neural Network))*/
+    @MetaField
     private String fraudModelType;
 
     /*A description of the model that clarifies the intended analysis/insights provided*/
+    @MetaField
     private String fraudModelPurpose;
 
     /*Maintains the current deployment configuration of the model*/
+    @MetaField
     private String fraudModelDeployment;
 
     /*Reference to the business units where the model is deployed and in use*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment for reference*/
+    @MetaField
     private String fraudModelDeploymentConfiguration;
 
     /*Reference to deployment task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object fraudModelDeploymentTaskReference;
 
     /*Recorded details of a deployment task*/
+    @MetaField
     private String fraudModelDeploymentTaskRecord;
 
     /*The operational and development status of the model (e.g. under development, available, under review)*/
+    @MetaField
     private String fraudModelStatus;
 
     /*Tracking deployment and usage frequency*/
+    @MetaField
     private String fraudModelUsage;
 
     /*Track reporting of the impact/accuracy of the model's insights*/
+    @MetaField
     private String fraudModelImpact;
 
     /*Release version of available model plus version history as appropriate*/
+    @MetaField
     private String fraudModelVersion;
 
     /*The deployable model in any appropriate form (including historical versions as appropriate)*/
+    @MetaField
     private String fraudModel;
 
     public void setFraudModelType(String fraudModelType) {

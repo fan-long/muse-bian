@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.proquaass.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProcessingErrorandIntegrityChecks {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String processingErrorandIntegrityChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String processingErrorandIntegrityChecksAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String processingErrorandIntegrityChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService processingErrorandIntegrityChecks;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String processingErrorandIntegrityChecksServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String processingErrorandIntegrityChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String processingErrorandIntegrityChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String processingErrorandIntegrityChecksServiceWorkProduct;
 
     /**/
+    @MetaField
     private String processingErrorandIntegrityChecksServiceName;
 
     public void setProcessingErrorandIntegrityChecksPreconditions(String processingErrorandIntegrityChecksPreconditions) {

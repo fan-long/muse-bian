@@ -3,26 +3,37 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.issdevtra.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InternalNotification {
     /*Provided reference to the target issued device*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object issuedDeviceReference;
 
     /*Type of issued device being notified*/
+    @MetaField
     private String issuedDeviceType;
 
     /*Reference to the associated customer if applicable*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the associated product instance if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The details of the status update (e.g. reported lost or stolen device, device broken)*/
+    @MetaField
     private String statusUpdateDetails;
 
     /*The response to the status update request (e.g. update processed)*/
+    @MetaField
     private String statusUpdateResult;
 
     /*Key dates and times associated with the notification*/
+    @MetaField
     private String date;
 
     public void setIssuedDeviceReference(org.museframework.bian.classes.Object issuedDeviceReference) {

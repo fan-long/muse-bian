@@ -1,6 +1,12 @@
 package org.museframework.bian.chaacthis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateChannelActivityLogResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.chaacthis.dto.cr.ChannelActivityLog channelActivityLog;
 
     public void setChannelActivityLog(org.museframework.bian.chaacthis.dto.cr.ChannelActivityLog channelActivityLog) {

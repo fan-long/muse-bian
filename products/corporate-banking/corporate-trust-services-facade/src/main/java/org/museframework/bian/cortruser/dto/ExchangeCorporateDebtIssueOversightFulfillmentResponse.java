@@ -1,6 +1,12 @@
 package org.museframework.bian.cortruser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeCorporateDebtIssueOversightFulfillmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cortruser.dto.bq.CorporateDebtIssueOversightFulfillment corporateDebtIssueOversightFulfillment;
 
     public void setCorporateDebtIssueOversightFulfillment(org.museframework.bian.cortruser.dto.bq.CorporateDebtIssueOversightFulfillment corporateDebtIssueOversightFulfillment) {

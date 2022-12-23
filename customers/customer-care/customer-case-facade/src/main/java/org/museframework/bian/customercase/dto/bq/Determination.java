@@ -3,17 +3,25 @@
 Examples: Invoice generation*/
 package org.museframework.bian.customercase.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Determination {
     /*Reference to the in-force customer master agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementInstanceReference;
 
     /*The agreement is accessed to support the determination of the resolution approach*/
+    @MetaField
     private String customerAgreement;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
+    @MetaField
     private String caseDeterminationWorkProduct;
 
     /*The outcome of the determination and resolution planning task*/
+    @MetaField
     private String caseDeterminationWorkTaskResult;
 
     public void setCustomerAgreementInstanceReference(org.museframework.bian.classes.Object customerAgreementInstanceReference) {

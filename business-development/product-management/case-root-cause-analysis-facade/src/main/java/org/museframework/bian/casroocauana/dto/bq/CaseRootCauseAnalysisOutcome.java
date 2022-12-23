@@ -3,11 +3,17 @@
 Examples: Average balance calculation, Propensity to buy*/
 package org.museframework.bian.casroocauana.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CaseRootCauseAnalysisOutcome {
     /**/
+    @MetaField
     private String caseRootCauseAnalysisWorkProduct;
 
     /**/
+    @MetaField
     private String caseRootCauseAnalysisAnalysisType;
 
     public void setCaseRootCauseAnalysisWorkProduct(String caseRootCauseAnalysisWorkProduct) {

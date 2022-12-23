@@ -3,26 +3,37 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.positionmanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TrialTransaction {
     /*A trial transaction that will impacts a managed position)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object trialTransactionReference;
 
     /*The type of transaction that would be applied to the managed position*/
+    @MetaField
     private String trialTransactionType;
 
     /*Key details of the trial transaction*/
+    @MetaField
     private String trialTransactionRecord;
 
     /*The make up of the values of the transaction*/
+    @MetaField
     private String trialTransactionAmount;
 
     /*Key dates and times associated with the trial transaction*/
+    @MetaField
     private String trialTransactionDate;
 
     /*The booking entity where the trial transaction would be made*/
+    @MetaField
     private String trialTransactionBookingEntity;
 
     /*The projected impact the trial transaction will have on the managed position*/
+    @MetaField
     private String trailTransactionPositionImpactAssessment;
 
     public void setTrialTransactionReference(org.museframework.bian.classes.Object trialTransactionReference) {

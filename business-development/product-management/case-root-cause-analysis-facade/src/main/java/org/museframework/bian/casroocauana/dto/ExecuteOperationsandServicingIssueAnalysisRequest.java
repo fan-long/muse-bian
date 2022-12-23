@@ -1,10 +1,18 @@
 package org.museframework.bian.casroocauana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteOperationsandServicingIssueAnalysisRequest {
+    @MetaField
     private String caserootcauseanalysisid;
 
+    @MetaField
     private String operationsandservicingissueanalysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.casroocauana.dto.bq.OperationsandServicingIssueAnalysis operationsandServicingIssueAnalysis;
 
     public void setCaserootcauseanalysisid(String caserootcauseanalysisid) {

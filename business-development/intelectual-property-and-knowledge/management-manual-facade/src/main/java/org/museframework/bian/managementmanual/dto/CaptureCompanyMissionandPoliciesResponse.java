@@ -1,6 +1,12 @@
 package org.museframework.bian.managementmanual.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class CaptureCompanyMissionandPoliciesResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.managementmanual.dto.bq.CompanyMissionandPolicies companyMissionandPolicies;
 
     public void setCompanyMissionandPolicies(org.museframework.bian.managementmanual.dto.bq.CompanyMissionandPolicies companyMissionandPolicies) {

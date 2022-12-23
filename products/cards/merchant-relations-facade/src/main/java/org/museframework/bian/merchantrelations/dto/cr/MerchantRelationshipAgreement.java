@@ -3,64 +3,86 @@
 */
 package org.museframework.bian.merchantrelations.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MerchantRelationshipAgreement extends org.museframework.bian.classes.MerchantRelationshipAgreement {
     /*A Classification value that distinguishes between Options defined within Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature merchantRelationshipAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.enumerations.Agreementtypevalues merchantRelationshipAgreementType;
 
     /*An unique reference to an item or an occurrence of Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement merchantRelationshipAgreementReference;
 
     /*Request to discharge Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction merchantRelationshipAgreementDischargeRequest;
 
     /*Timetable to discharge Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementDischargeSchedule;
 
     /*The status of Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementStatus;
 
     /*Party who is involved in Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement merchantRelationshipAgreementObligation;
 
     /*Right to do something under the terms of Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement merchantRelationshipAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet merchantRelationshipAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Merchant Relationship Agreement*/
+    @MetaField
     private String merchantRelationshipAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Merchant Relationship Agreement in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction merchantRelationshipAgreementJurisdiction;
 
     /*Reference to the account which is linked to Merchant Relationship Agreement
 
 A characteristic of agreement which refers to its involved account to specify the account that will be used to register for the transactions in position keeping management.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account merchantRelationshipAgreementAccountReference;
 
     /*The subject matter of  Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object merchantRelationshipAgreementSubjectMatter;
 
     /*Reference to the product which is linked to Merchant Relationship Agreement
 
 Comment: 
 A characteristic of agreement which refers to its related products that are sold by agreement.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct merchantRelationshipAgreementProductReference;
 
     /*Reference to the agreement that is related to Merchant Relationship Agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement merchantRelationshipAgreementAssociatedAgreementReference;
 
     public void setMerchantRelationshipAgreementParameterType(String merchantRelationshipAgreementParameterType) {

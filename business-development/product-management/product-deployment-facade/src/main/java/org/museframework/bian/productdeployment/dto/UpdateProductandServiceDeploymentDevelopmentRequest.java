@@ -1,8 +1,15 @@
 package org.museframework.bian.productdeployment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateProductandServiceDeploymentDevelopmentRequest {
+    @MetaField
     private String productdeploymentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productdeployment.dto.cr.ProductandServiceDeploymentDevelopment productandServiceDeploymentDevelopment;
 
     public void setProductdeploymentid(String productdeploymentid) {

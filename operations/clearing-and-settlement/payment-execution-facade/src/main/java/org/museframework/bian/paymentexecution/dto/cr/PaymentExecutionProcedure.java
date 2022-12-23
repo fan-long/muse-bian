@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Payment Execution. */
 package org.museframework.bian.paymentexecution.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PaymentExecutionProcedure extends org.museframework.bian.classes.PaymentExecutionProcedure {
     /*Reference to the ACH financial gateway service used to execute payments*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object ACHAccessServiceSessionReference;
 
     /*The published gateway service availability*/
+    @MetaField
     private String ACHAccessSchedule;
 
     /*Reference to the SWIFT gateway service used to execute correspondent payments*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentServiceSessionReference;
 
     /*The published gateway service availability*/
+    @MetaField
     private String correspondentServiceAccessSchedule;
 
     /*Reference to the initiator of the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionInitiatorReference;
 
     /*Reference to the payment order leading to the execution request*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentOrderReference;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerBankReference;
 
     /*Reference to the payer's account (the source of funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerProductInstanceReference;
 
     /*The target for the payment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the payee's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Reference to the payee's account (the target for the funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
+    @MetaField
     private String amount;
 
     /*Currency for the amounts*/
+    @MetaField
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
+    @MetaField
     private String dateType;
 
     /*….*/
+    @MetaField
     private String date;
 
     /*Reference to any internal accounts used in processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object washAccountReference;
 
     /*Reference to any external accounts used in processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object intermediaryAccountReference;
 
     /*Requested and actual payment mechanism used*/
+    @MetaField
     private String paymentMechanismType;
 
     public void setACHAccessServiceSessionReference(org.museframework.bian.classes.Object ACHAccessServiceSessionReference) {

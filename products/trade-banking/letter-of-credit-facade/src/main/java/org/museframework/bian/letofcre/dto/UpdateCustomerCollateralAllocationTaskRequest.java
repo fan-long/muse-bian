@@ -1,10 +1,18 @@
 package org.museframework.bian.letofcre.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCustomerCollateralAllocationTaskRequest {
+    @MetaField
     private String letterofcreditid;
 
+    @MetaField
     private String customercollateralallocationtaskid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.letofcre.dto.bq.CustomerCollateralAllocationTask customerCollateralAllocationTask;
 
     public void setLetterofcreditid(String letterofcreditid) {

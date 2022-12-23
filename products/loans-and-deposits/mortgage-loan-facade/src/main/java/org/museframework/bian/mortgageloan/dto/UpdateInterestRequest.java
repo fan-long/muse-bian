@@ -1,10 +1,18 @@
 package org.museframework.bian.mortgageloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateInterestRequest {
+    @MetaField
     private String mortgageloanid;
 
+    @MetaField
     private String interestid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.mortgageloan.dto.bq.Interest interest;
 
     public void setMortgageloanid(String mortgageloanid) {

@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Quote Management. */
 package org.museframework.bian.quotemanagement.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class QuotationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Quotation Procedure*/
+    @MetaField
     private String quotationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature quotationProcedureSelectedOption;
 
     /*Request to process Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction quotationProcedureRequest;
 
     /*Timetable to process Quotation Procedure*/
+    @MetaField
     private String quotationProcedureSchedule;
 
     /*The status of Quotation Procedure*/
+    @MetaField
     private String quotationProcedureStatus;
 
     /*Reference to the party who is involved in Quotation Procedure*/
+    @MetaField
     private String quotationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Quotation Procedure*/
+    @MetaField
     private String quotationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Quotation Procedure*/
+    @MetaField
     private String quotationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility quotationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Quotation Procedure*/
+    @MetaField
     private String quotationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Quotation Procedure*/
+    @MetaField
     private String quotationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Quotation Procedure*/
+    @MetaField
     private String quotationProcedureType;
 
     /*The schedule according to which the service provider will process the Quotation Procedure*/
+    @MetaField
     private String quotationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Quotation Procedure*/
+    @MetaField
     private String quotationProcedureServiceType;
 
     /*Reference to the product or service that is related to Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct quotationProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction quotationProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement quotationProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement quotationProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Quotation Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure quotationProcedureReference;
 
     public void setQuotationProcedureParameterType(String quotationProcedureParameterType) {

@@ -1,6 +1,12 @@
 package org.museframework.bian.finstaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class EvaluateAssetandLiabilityValuationTestResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.finstaass.dto.bq.AssetandLiabilityValuationTest assetandLiabilityValuationTest;
 
     public void setAssetandLiabilityValuationTest(org.museframework.bian.finstaass.dto.bq.AssetandLiabilityValuationTest assetandLiabilityValuationTest) {

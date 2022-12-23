@@ -1,53 +1,73 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Payment Order. */
 package org.museframework.bian.paymentorder.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PaymentOrderProcedure {
     /*Reference to the initiator of the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionInitiatorReference;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerReference;
 
     /*Reference to the payer's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerBankReference;
 
     /*Reference to the payer's account (the source of funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerProductInstanceReference;
 
     /*The target for the payment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the payee's bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Reference to the payee's account (the target for the funds)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
+    @MetaField
     private String amount;
 
     /*Currency for the amounts*/
+    @MetaField
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
+    @MetaField
     private String dateType;
 
     /*Value of the specific date*/
+    @MetaField
     private String date;
 
     /*Requested payment mechanism (e.g. ACH, SWIFT)*/
+    @MetaField
     private String paymentMechanismType;
 
     /*Any specific payment instructions as appropriate*/
+    @MetaField
     private String paymentInstructions;
 
     /*Where specific involved parties may impact order confirmation (e.g. presenting, authorizing, updating, joint account holder)*/
+    @MetaField
     private String interestedParties;
 
     /*Allows for a type of product to have specific default payment instructions*/
+    @MetaField
     private String productType;
 
     /*Requested settlement instructions, may be overridden by execution*/
+    @MetaField
     private String settlementInstructions;
 
     public void setPaymentTransactionInitiatorReference(org.museframework.bian.classes.Object paymentTransactionInitiatorReference) {

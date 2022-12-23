@@ -2,29 +2,41 @@
 */
 package org.museframework.bian.proexpsalsup.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SalesSpecialistSupportAdministrativePlan extends org.museframework.bian.classes.SalesSpecialistSupportAdministrativePlan {
     /*Maintains the allocation records of available sales specialist service resources. This includes all past and future booking commitments*/
+    @MetaField
     private String salesSpecialistSupportResourceAllocationServiceSchedule;
 
     /*Reference to a sales specialist support resource*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object salesSpecialistSupportResourceReference;
 
     /*Details about a registered sales specialist support resource*/
+    @MetaField
     private String salesSpecialistSupportResourceRecord;
 
     /*Details the qualification, expertise and level of experience of a servicing specialist*/
+    @MetaField
     private String salesSpecialistSupportResourceQualificationProfile;
 
     /*Reference to the locations service by the resource where face to face meetings are required*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object salesSpecialistSupportLocationReference;
 
     /*Details the time the resource plans to be and is actually available for assignments*/
+    @MetaField
     private String salesSpecialistSupportResourceAvailabilitySchedule;
 
     /*Tracks the current status indicating availability for assignment*/
+    @MetaField
     private String salesSpecialistSupportResourceStatus;
 
     /*Reference to a consolidated record of assignment instances handled by the support resource. This is used to track utilization and performance*/
+    @MetaField
     private String salesSpecialistSupportResourceAssignmentRecord;
 
     public void setSalesSpecialistSupportResourceAllocationServiceSchedule(String salesSpecialistSupportResourceAllocationServiceSchedule) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.correspondence.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateBlockMailingRequest {
+    @MetaField
     private String correspondenceid;
 
+    @MetaField
     private String blockmailingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.correspondence.dto.bq.BlockMailing blockMailing;
 
     public void setCorrespondenceid(String correspondenceid) {

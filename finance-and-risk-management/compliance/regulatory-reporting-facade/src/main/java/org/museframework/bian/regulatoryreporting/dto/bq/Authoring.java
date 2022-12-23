@@ -3,26 +3,37 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.regulatoryreporting.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Authoring {
     /*Details the production information/measurements required for reporting - includes reporting format*/
+    @MetaField
     private String regulatoryReportTypeComplianceReportingRequirements;
 
     /*The time period covered by a report*/
+    @MetaField
     private String reportingPeriod;
 
     /*Refers to the company group or subsidiary covered by the regulatory report*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object reportingBusinessLegalEntityReference;
 
     /*Refers to the responsible reporting business units for the report*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object reportingBusinessUnitReference;
 
     /*Refers to the regulatory report*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryReportReference;
 
     /*The regulatory report in any suitable format and media*/
+    @MetaField
     private String regulatoryReport;
 
     /*The document reference for the record of the report*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryReportDocumentReference;
 
     public void setRegulatoryReportTypeComplianceReportingRequirements(String regulatoryReportTypeComplianceReportingRequirements) {

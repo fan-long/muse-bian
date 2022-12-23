@@ -2,29 +2,41 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.atmnetope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialTransactionCapture {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField
     private String financialTransactionCapturePreconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String financialTransactionCaptureFunctionSchedule;
 
     /*The ATMNetwork Operating Session specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String serviceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String serviceWorkProduct;
 
     /**/
+    @MetaField
     private String serviceName;
 
     public void setFinancialTransactionCapturePreconditions(String financialTransactionCapturePreconditions) {

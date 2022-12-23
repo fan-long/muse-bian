@@ -3,11 +3,17 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.rewpoiacc.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RewardPointsAccountOutcome {
     /**/
+    @MetaField
     private String rewardPointsAccountIncident;
 
     /**/
+    @MetaField
     private String rewardPointsAccountLog;
 
     public void setRewardPointsAccountIncident(String rewardPointsAccountIncident) {

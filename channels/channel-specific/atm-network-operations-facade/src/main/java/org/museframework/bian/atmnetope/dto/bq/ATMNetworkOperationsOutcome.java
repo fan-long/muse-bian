@@ -2,11 +2,17 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.atmnetope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ATMNetworkOperationsOutcome {
     /**/
+    @MetaField
     private String ATMNetworkOperationsIncident;
 
     /**/
+    @MetaField
     private String ATMNetworkOperationsProvision;
 
     public void setATMNetworkOperationsIncident(String ATMNetworkOperationsIncident) {

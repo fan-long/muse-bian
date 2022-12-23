@@ -1,6 +1,12 @@
 package org.museframework.bian.marketorder.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveTradeInitiationResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.marketorder.dto.bq.TradeInitiation tradeInitiation;
 
     public void setTradeInitiation(org.museframework.bian.marketorder.dto.bq.TradeInitiation tradeInitiation) {

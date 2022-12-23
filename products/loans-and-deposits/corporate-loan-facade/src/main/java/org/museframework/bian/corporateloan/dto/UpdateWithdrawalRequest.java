@@ -1,10 +1,18 @@
 package org.museframework.bian.corporateloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateWithdrawalRequest {
+    @MetaField
     private String corporateloanid;
 
+    @MetaField
     private String withdrawalid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.corporateloan.dto.bq.Withdrawal withdrawal;
 
     public void setCorporateloanid(String corporateloanid) {

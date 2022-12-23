@@ -1,10 +1,18 @@
 package org.museframework.bian.prosalsup.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class GrantStaffAssignmentRoutineRequest {
+    @MetaField
     private String productsalessupportid;
 
+    @MetaField
     private String staffassignmentroutineid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.prosalsup.dto.bq.StaffAssignmentRoutine staffAssignmentRoutine;
 
     public void setProductsalessupportid(String productsalessupportid) {

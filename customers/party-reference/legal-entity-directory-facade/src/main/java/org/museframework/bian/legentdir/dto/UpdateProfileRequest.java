@@ -1,10 +1,18 @@
 package org.museframework.bian.legentdir.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateProfileRequest {
+    @MetaField
     private String legalentitydirectoryid;
 
+    @MetaField
     private String profileid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.legentdir.dto.bq.Profile profile;
 
     public void setLegalentitydirectoryid(String legalentitydirectoryid) {

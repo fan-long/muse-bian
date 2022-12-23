@@ -3,35 +3,49 @@
 Examples: Business Requirements*/
 package org.museframework.bian.productdesign.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Testing {
     /*Reference to a type of product or service specification test*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationTestReference;
 
     /*Defines the type of test (e.g. user/consumer checks, profitability simulations, business acceptance etc.)*/
+    @MetaField
     private String productandServiceSpecificationTestType;
 
     /*Reference to the testing environment used to apply the test (can include production events and transactions to simulate performance)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationTestHarnessReference;
 
     /*Record of testing applied to the product or service specification*/
+    @MetaField
     private String productandServiceSpecificationTestResult;
 
     /*Reference to a type of testing activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationTestingTaskReference;
 
     /*The record of work products used for this testing activity*/
+    @MetaField
     private String productandServiceSpecificationTestingTaskRecord;
 
     /*Reference to compliance conformance check for the specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationComplianceTaskReference;
 
     /*Record of the compliance conformance check for the specification*/
+    @MetaField
     private String productandServiceSpecificationComplianceTaskRecord;
 
     /*Reference to a compliance task performed against the specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationComplianceTestReference;
 
     /*Record of the compliance test applied to the specification*/
+    @MetaField
     private String productandServiceSpecificationComplianceTestType;
 
     public void setProductandServiceSpecificationTestReference(org.museframework.bian.classes.Object productandServiceSpecificationTestReference) {

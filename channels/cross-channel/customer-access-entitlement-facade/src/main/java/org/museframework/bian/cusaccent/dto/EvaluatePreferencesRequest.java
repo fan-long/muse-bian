@@ -1,10 +1,18 @@
 package org.museframework.bian.cusaccent.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class EvaluatePreferencesRequest {
+    @MetaField
     private String customeraccessentitlementid;
 
+    @MetaField
     private String preferencesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusaccent.dto.bq.Preferences preferences;
 
     public void setCustomeraccessentitlementid(String customeraccessentitlementid) {

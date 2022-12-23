@@ -1,32 +1,45 @@
 /**/
 package org.museframework.bian.mortgageloan.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialInstrument extends org.museframework.bian.classes.FinancialInstrument {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField
     private String financialInstrumentPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String financialInstrumentFeatureSchedule;
 
     /*The Mortgage Loan Arrangement specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService financialInstrument;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField
     private String financialInstrumentPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String financialInstrumentFinancialInstrumentServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String financialInstrumentFinancialInstrumentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String financialInstrumentFinancialInstrumentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String financialInstrumentFinancialInstrumentServiceWorkProduct;
 
     /**/
+    @MetaField
     private String financialInstrumentFinancialInstrumentServiceName;
 
     public void setFinancialInstrumentPreconditions(String financialInstrumentPreconditions) {

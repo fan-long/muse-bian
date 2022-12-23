@@ -1,92 +1,125 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Term Deposit. */
 package org.museframework.bian.termdeposit.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TermDepositFacility {
     /*Reference to the corporate deposit account product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated account number in any suitable format (e.g. IBAN)*/
+    @MetaField
     private String termDepositAccountNumber;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the account for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*The type of corporate deposit account (e.g. checking, student, small business)*/
+    @MetaField
     private String accountType;
 
     /*The primary account currency*/
+    @MetaField
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option*/
+    @MetaField
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
+    @MetaField
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
+    @MetaField
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
+    @MetaField
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
+    @MetaField
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
+    @MetaField
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object associationReference;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String linkedAccounts;
 
     /*The type and purpose for the link*/
+    @MetaField
     private String linkType;
 
     /*Details of the linked account*/
+    @MetaField
     private String accountDetails;
 
     /*Position limits that are maintained by the account*/
+    @MetaField
     private String positionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
+    @MetaField
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String positionLimitSettings;
 
     /*The corporate deposit calculated position*/
+    @MetaField
     private String positionLimitValue;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     /*The schedule for generating product statements to schedule*/
+    @MetaField
     private String statementsSchedule;
 
     /*The types of scheduled statement (e.g. balance/mini-statement/annual)*/
+    @MetaField
     private String statementType;
 
     /*The types of transactions and transaction details to be included*/
+    @MetaField
     private String statementTransactionType;
 
     /*The reporting period covered by the statement*/
+    @MetaField
     private String statementPeriod;
 
     /*The statement content*/
+    @MetaField
     private String statementReport;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

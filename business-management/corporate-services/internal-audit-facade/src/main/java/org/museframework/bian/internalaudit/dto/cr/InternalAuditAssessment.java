@@ -3,35 +3,49 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.internalaudit.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InternalAuditAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Internal Audit Assessment . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
+    @MetaField
     private String internalAuditAssessmentParameterType;
 
     /*A selected optional business service as subject matter of assessment*/
+    @MetaField
     private String internalAuditAssessmentSelectedOption;
 
     /*The type of Internal Audit Assessment*/
+    @MetaField
     private String internalAuditAssessmentType;
 
     /*Reference to Internal Audit Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object internalAuditAssessmentReference;
 
     /*Request to assess InternalAudit*/
+    @MetaField
     private String internalAuditAssessmentRequest;
 
     /*Timetable to assess InternalAudit*/
+    @MetaField
     private String internalAuditAssessmentSchedule;
 
     /*The status of Internal Audit Assessment*/
+    @MetaField
     private String internalAuditAssessmentStatus;
 
     /*Reference to the log of (usage) ativities/events of Internal Audit Assessment*/
+    @MetaField
     private String internalAuditAssessmentUsageLog;
 
     /*Reference to the party who has provided Internal Audit Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object internalAuditAssessmentServiceProviderReference;
 
     /*Reference to the party who has requested Internal Audit Assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object internalAuditAssessmentRequesterReference;
 
     public void setInternalAuditAssessmentParameterType(String internalAuditAssessmentParameterType) {

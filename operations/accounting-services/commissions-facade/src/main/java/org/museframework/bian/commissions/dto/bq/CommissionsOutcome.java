@@ -2,38 +2,53 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.commissions.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CommissionsOutcome {
     /**/
+    @MetaField
     private String commissionsCalendar;
 
     /**/
+    @MetaField
     private String commissionsCounterparty;
 
     /**/
+    @MetaField
     private String commissionsDividend;
 
     /**/
+    @MetaField
     private String commissionsFees;
 
     /**/
+    @MetaField
     private String commissionsInterest;
 
     /**/
+    @MetaField
     private String commissionsMargining;
 
     /**/
+    @MetaField
     private String commissionsNotionalPrincipal;
 
     /**/
+    @MetaField
     private String commissionsOptions;
 
     /**/
+    @MetaField
     private String commissionsRates;
 
     /**/
+    @MetaField
     private String commissionsSettlement;
 
     /**/
+    @MetaField
     private String commissionsWorkProduct;
 
     public void setCommissionsCalendar(String commissionsCalendar) {

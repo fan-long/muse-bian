@@ -1,11 +1,17 @@
 /*Operate equipment and/or a largely automated facility within ACH Fulfillment. */
 package org.museframework.bian.achoperations.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ACHFulfillmentOperatingSession {
     /*Reference to the ACH service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object ACHReference;
 
     /*Details the ACH service availability*/
+    @MetaField
     private String ACHAccessSchedule;
 
     public void setACHReference(org.museframework.bian.classes.Object ACHReference) {

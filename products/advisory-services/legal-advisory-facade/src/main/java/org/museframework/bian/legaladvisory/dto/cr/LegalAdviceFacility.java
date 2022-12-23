@@ -2,50 +2,69 @@
 */
 package org.museframework.bian.legaladvisory.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LegalAdviceFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature legalAdviceFacilitySelectedOption;
 
     /*The status of Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityStatus;
 
     /*Reference to the party who is involved in Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityAssociatedParty;
 
     /*The curreny which is arranged in Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityCurrency;
 
     /*Reference to the regulation which is defined in Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet legalAdviceFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Legal Advice Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction legalAdviceFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Legal Advice Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit legalAdviceFacilityBookingLocation;
 
     /*Reference to the account which is linked to Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account legalAdviceFacilityAccountReference;
 
     /*Reference to the customer who is involved in Legal Advice Facility.*/
+    @MetaField
     private String legalAdviceFacilityCustomerReference;
 
     /*The position of Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position legalAdviceFacilityPosition;
 
     /*Reference to the product which is linked to Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct legalAdviceFacilityProductReference;
 
     /*Reference to the limitation related to the position of Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement legalAdviceFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Legal Advice Facility.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility legalAdviceFacilityReference;
 
     public void setLegalAdviceFacilityParameterType(String legalAdviceFacilityParameterType) {

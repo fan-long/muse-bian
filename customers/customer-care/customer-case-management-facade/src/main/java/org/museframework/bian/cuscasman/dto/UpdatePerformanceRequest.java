@@ -1,10 +1,18 @@
 package org.museframework.bian.cuscasman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdatePerformanceRequest {
+    @MetaField
     private String customercasemanagementid;
 
+    @MetaField
     private String performanceid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cuscasman.dto.bq.Performance performance;
 
     public void setCustomercasemanagementid(String customercasemanagementid) {

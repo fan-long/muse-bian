@@ -1,10 +1,18 @@
 package org.museframework.bian.promotionalevents.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CreateParticipationRequest {
+    @MetaField
     private String promotionaleventsid;
 
+    @MetaField
     private String participationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.promotionalevents.dto.bq.Participation participation;
 
     public void setPromotionaleventsid(String promotionaleventsid) {

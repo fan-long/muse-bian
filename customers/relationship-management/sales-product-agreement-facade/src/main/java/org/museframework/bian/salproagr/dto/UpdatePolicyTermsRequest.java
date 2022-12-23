@@ -1,10 +1,18 @@
 package org.museframework.bian.salproagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdatePolicyTermsRequest {
+    @MetaField
     private String salesproductagreementid;
 
+    @MetaField
     private String policytermsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.salproagr.dto.bq.PolicyTerms policyTerms;
 
     public void setSalesproductagreementid(String salesproductagreementid) {

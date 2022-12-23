@@ -1,131 +1,177 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Credit Facility. */
 package org.museframework.bian.creditfacility.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditLineFacility {
     /*Reference to the credit facility product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated credit facility account number in any suitable format*/
+    @MetaField
     private String creditFacilityNumber;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The legal entity reference for the borrower, likely to be the same as the corporate customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*Reference to the associated customer agreement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Reference to an associated credit assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerCreditAssessmentReference;
 
     /*Reference to applicable insurance arrangements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object insuranceReference;
 
     /*Reference to collections/delinquency processing made against the credit facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object delinquencyCollectionReference;
 
     /*Bank branch associated with the facility for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Bank accounting unit associated with the facility for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankAccountingUnitReference;
 
     /*The specific type of credit facility (e.g. term, revolving, letter of credit, retail)*/
+    @MetaField
     private String creditFacilityType;
 
     /*The amount of the credit facility*/
+    @MetaField
     private String creditFacilityAmount;
 
     /*The currency for the facility*/
+    @MetaField
     private String creditFacilityCurrency;
 
     /*The rate type to be applied to the credit facility*/
+    @MetaField
     private String creditFacilityRateType;
 
     /*The applicable rate for the credit facility*/
+    @MetaField
     private String creditFacilityApplicableRate;
 
     /*The type of repayment arrangement in place (e.g. structured, revolving)*/
+    @MetaField
     private String repaymentType;
 
     /*The type of interest to be applied (e.g. prime plus)*/
+    @MetaField
     private String interestType;
 
     /*The accrual method applied to interest calculations*/
+    @MetaField
     private String interestAccrualMethod;
 
     /*The origination date for the credit facility*/
+    @MetaField
     private String creditFacilityOriginationDate;
 
     /*The planned maturity date of the credit facility*/
+    @MetaField
     private String creditFacilityMaturityDate;
 
     /*Reference to allocated collateral*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralReference;
 
     /*The collateral value applied to the credit facility loan*/
+    @MetaField
     private String collateralAllocation;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*Access terms that apply (e.g. allowed drawdown terms, repayment)*/
+    @MetaField
     private String creditFacilityAccessTerms;
 
     /*Details the one or more underlying loans made against the facility*/
+    @MetaField
     private String creditFacilityUnderlyingDrawdown;
 
     /*Reference to the underlying loan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object drawdownReference;
 
     /*Record of the underlying loan details*/
+    @MetaField
     private String drawdownRecord;
 
     /*The underlying loan transaction details*/
+    @MetaField
     private String drawdownLoanTransaction;
 
     /*The definition of an applicable entitlement option*/
+    @MetaField
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
+    @MetaField
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
+    @MetaField
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
+    @MetaField
     private String restrictionOptionSetting;
 
     /*Definition of the involved parties or associations to the facility*/
+    @MetaField
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
+    @MetaField
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
+    @MetaField
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object associationReference;
 
     /*The schedule for repayments*/
+    @MetaField
     private String creditFacilityRepaymentSchedule;
 
     /*A statement maintained tracking repayments*/
+    @MetaField
     private String stagedRepaymentStatement;
 
     /*A record of customer correspondence/feedback*/
+    @MetaField
     private String customerCommentary;
 
     /*The outstanding balance available for the credit facility*/
+    @MetaField
     private String creditFacilityOutstandingBalance;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.dirdebman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDirectDebitMandateDirectoryEntryRequest {
+    @MetaField
     private String directdebitmandateid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.dirdebman.dto.cr.DirectDebitMandateDirectoryEntry directDebitMandateDirectoryEntry;
 
     public void setDirectdebitmandateid(String directdebitmandateid) {

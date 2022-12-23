@@ -1,8 +1,15 @@
 package org.museframework.bian.conadvser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestConsumerAdviceFacilityRequest {
+    @MetaField
     private String consumeradvisoryservicesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.conadvser.dto.cr.ConsumerAdviceFacility consumerAdviceFacility;
 
     public void setConsumeradvisoryservicesid(String consumeradvisoryservicesid) {

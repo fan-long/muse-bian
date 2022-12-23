@@ -1,10 +1,18 @@
 package org.museframework.bian.cardauthorization.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDeviceCheckRequest {
+    @MetaField
     private String cardauthorizationid;
 
+    @MetaField
     private String devicecheckid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardauthorization.dto.bq.DeviceCheck deviceCheck;
 
     public void setCardauthorizationid(String cardauthorizationid) {

@@ -1,20 +1,29 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class QuestionAssignment {
     /*Defines the minimum requirements for answers*/
+    @MetaField
     private String formatRules;
 
     /*Recent values maintained to eliminate repeated values*/
+    @MetaField
     private String recentValues;
 
     /*Used to select secret questions and access prompts*/
+    @MetaField
     private String requestText;
 
     /*The stored response value possibly in suitably encrypted form*/
+    @MetaField
     private String responseText;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
+    @MetaField
     private String usageLog;
 
     public void setFormatRules(String formatRules) {

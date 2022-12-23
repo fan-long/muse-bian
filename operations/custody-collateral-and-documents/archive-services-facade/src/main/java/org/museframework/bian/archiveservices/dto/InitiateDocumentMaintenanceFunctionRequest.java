@@ -1,10 +1,18 @@
 package org.museframework.bian.archiveservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateDocumentMaintenanceFunctionRequest {
+    @MetaField
     private String archiveservicesid;
 
+    @MetaField
     private String documentmaintenancefunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.archiveservices.dto.bq.DocumentMaintenanceFunction documentMaintenanceFunction;
 
     public void setArchiveservicesid(String archiveservicesid) {

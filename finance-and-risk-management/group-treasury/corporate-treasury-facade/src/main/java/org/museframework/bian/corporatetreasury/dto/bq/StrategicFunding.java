@@ -3,20 +3,29 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.corporatetreasury.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StrategicFunding {
     /*Financial reports from multiple business units*/
+    @MetaField
     private String financialPerformanceandBalanceSheetProjections;
 
     /*Details of equity and debt transactions*/
+    @MetaField
     private String ECMAndDCMMarketTransactions;
 
     /*Details of major investment/divestment transactions*/
+    @MetaField
     private String strategicInvestmentHoldingsTransactions;
 
     /*Summary details and analysis of the balance sheet relevant to longer term planning*/
+    @MetaField
     private String enterpriseBalanceSheetPositions;
 
     /*Description of a response initiated by corporate treasury*/
+    @MetaField
     private String strategicFundingResolutionTask;
 
     public void setFinancialPerformanceandBalanceSheetProjections(String financialPerformanceandBalanceSheetProjections) {

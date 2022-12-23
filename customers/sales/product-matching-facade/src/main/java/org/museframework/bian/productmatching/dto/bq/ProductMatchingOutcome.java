@@ -3,11 +3,17 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.productmatching.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductMatchingOutcome {
     /**/
+    @MetaField
     private String productMatchingWorkProduct;
 
     /**/
+    @MetaField
     private String productMatchingAssessmentType;
 
     public void setProductMatchingWorkProduct(String productMatchingWorkProduct) {

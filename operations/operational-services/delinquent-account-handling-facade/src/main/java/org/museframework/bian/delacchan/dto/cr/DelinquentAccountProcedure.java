@@ -1,113 +1,153 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Delinquent Account Handling. */
 package org.museframework.bian.delacchan.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DelinquentAccountProcedure {
     /*The linked credit product reference*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated account number in any suitable format (e.g. IBAN)*/
+    @MetaField
     private String productAccountNumber;
 
     /*The type of product*/
+    @MetaField
     private String productandServiceType;
 
     /*Reference to the account primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the account for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Reference to an issued device associated with the facility (such as a card or key fob)*/
+    @MetaField
     private String issuedDevice;
 
     /*The primary account currency*/
+    @MetaField
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
+    @MetaField
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
+    @MetaField
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object associationReference;
 
     /*Definition of the associations to the account*/
+    @MetaField
     private String linkedAccounts;
 
     /*The type and purpose for the link*/
+    @MetaField
     private String linkType;
 
     /*Details of the linked account*/
+    @MetaField
     private String accountDetails;
 
     /*Position limits that are maintained by the account*/
+    @MetaField
     private String positionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
+    @MetaField
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String positionLimitSettings;
 
     /*The current calculated position*/
+    @MetaField
     private String positionLimitValue;
 
     /*Reference to the customer's collateral holdings and allocations*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object collateralAssetAllocationInstanceReference;
 
     /*Record of collateral applied to the customer products*/
+    @MetaField
     private String collateralAssetAllocationProfile;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     /*Customer billing transactions (and associated payments)*/
+    @MetaField
     private String billingTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object billingTransactionReference;
 
     /*Payments deposited to the account*/
+    @MetaField
     private String paymentTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Product execution transactions (payments)*/
+    @MetaField
     private String productTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*Interest accrued against the account*/
+    @MetaField
     private String interestTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object interestTransactionReference;
 
     /*Fees applied against the account*/
+    @MetaField
     private String feeTransactions;
 
     /*Reference to individual transactions*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object feeTransactionReference;
 
     /*Reference to a linked credit plan if applicable*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object creditPlanReference;
 
     /*The credit plan type (e.g. (Cash, Credit, Charge, Balance Transfer, Promotions, Securitized, etc.)*/
+    @MetaField
     private String creditPlanType;
 
     /*Details the schedule of actions to be applied to the delinquent account*/
+    @MetaField
     private String delinquentAccountProcessingSchedule;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

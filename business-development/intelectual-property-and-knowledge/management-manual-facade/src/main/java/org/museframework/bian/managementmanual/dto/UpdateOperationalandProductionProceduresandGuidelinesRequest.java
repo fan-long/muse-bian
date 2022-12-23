@@ -1,10 +1,18 @@
 package org.museframework.bian.managementmanual.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateOperationalandProductionProceduresandGuidelinesRequest {
+    @MetaField
     private String managementmanualid;
 
+    @MetaField
     private String operationalandproductionproceduresandguidelinesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.managementmanual.dto.bq.OperationalandProductionProceduresandGuidelines operationalandProductionProceduresandGuidelines;
 
     public void setManagementmanualid(String managementmanualid) {

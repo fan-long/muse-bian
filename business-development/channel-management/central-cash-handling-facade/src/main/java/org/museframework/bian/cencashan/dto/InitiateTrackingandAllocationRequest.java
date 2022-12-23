@@ -1,10 +1,18 @@
 package org.museframework.bian.cencashan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTrackingandAllocationRequest {
+    @MetaField
     private String centralcashhandlingid;
 
+    @MetaField
     private String trackingandallocationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cencashan.dto.bq.TrackingandAllocation trackingandAllocation;
 
     public void setCentralcashhandlingid(String centralcashhandlingid) {

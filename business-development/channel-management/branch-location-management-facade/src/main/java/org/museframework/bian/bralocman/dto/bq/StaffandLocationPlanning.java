@@ -2,35 +2,49 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.bralocman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class StaffandLocationPlanning {
     /*The required status/situation before the duty/obligation can be met*/
+    @MetaField
     private String staffandLocationPlanningPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object staffandLocationPlanningBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
+    @MetaField
     private String staffandLocationPlanningWorkSchedule;
 
     /*The Branch Location Management Plan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService staffandLocationPlanning;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
+    @MetaField
     private String staffandLocationPlanningPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String staffandLocationPlanningStaffandLocationPlanningServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String staffandLocationPlanningStaffandLocationPlanningServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String staffandLocationPlanningStaffandLocationPlanningServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String staffandLocationPlanningStaffandLocationPlanningServiceWorkProduct;
 
     /**/
+    @MetaField
     private String staffandLocationPlanningStaffandLocationPlanningServiceName;
 
     public void setStaffandLocationPlanningPreconditions(String staffandLocationPlanningPreconditions) {

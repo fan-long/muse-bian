@@ -1,29 +1,41 @@
 /*A course of action for doing Securities Fail Determination Workstep in the context of executing the Securities Fail Determination Workstep*/
 package org.museframework.bian.secfaipro.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SecuritiesFailAnalysisWorkstep {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
+    @MetaField
     private String schedule;
 
     /*The Securities Fail Analysis Workstep specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Securities Fail Analysis Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure securityTradingFailsProcedureReference;
 
     /*Reference to Securities Fail Analysis Workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Workstep securitiesFailAnalysisWorkstepReference;
 
     /*The type of Securities Fail Analysis Workstep*/
+    @MetaField
     private String securitiesFailAnalysisWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

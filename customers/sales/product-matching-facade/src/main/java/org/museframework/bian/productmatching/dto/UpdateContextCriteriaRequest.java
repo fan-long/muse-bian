@@ -1,10 +1,18 @@
 package org.museframework.bian.productmatching.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateContextCriteriaRequest {
+    @MetaField
     private String productmatchingid;
 
+    @MetaField
     private String contextcriteriaid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.productmatching.dto.bq.ContextCriteria contextCriteria;
 
     public void setProductmatchingid(String productmatchingid) {

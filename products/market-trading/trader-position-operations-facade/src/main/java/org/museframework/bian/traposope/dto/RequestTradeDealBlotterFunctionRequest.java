@@ -1,10 +1,18 @@
 package org.museframework.bian.traposope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTradeDealBlotterFunctionRequest {
+    @MetaField
     private String traderpositionoperationsid;
 
+    @MetaField
     private String tradedealblotterfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.traposope.dto.bq.TradeDealBlotterFunction tradeDealBlotterFunction;
 
     public void setTraderpositionoperationsid(String traderpositionoperationsid) {

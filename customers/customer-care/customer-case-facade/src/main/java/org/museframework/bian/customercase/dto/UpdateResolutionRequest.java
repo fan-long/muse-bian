@@ -1,10 +1,18 @@
 package org.museframework.bian.customercase.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateResolutionRequest {
+    @MetaField
     private String customercaseid;
 
+    @MetaField
     private String resolutionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customercase.dto.bq.Resolution resolution;
 
     public void setCustomercaseid(String customercaseid) {

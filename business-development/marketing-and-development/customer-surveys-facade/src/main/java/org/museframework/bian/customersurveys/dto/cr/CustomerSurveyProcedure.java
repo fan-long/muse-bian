@@ -1,41 +1,57 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Customer Surveys. */
 package org.museframework.bian.customersurveys.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerSurveyProcedure extends org.museframework.bian.classes.CustomerSurveyProcedure {
     /*The type or category of customer survey (e.g. questionnaire, in context solicitation, focus group)*/
+    @MetaField
     private String customerSurveyType;
 
     /*A description of the customer survey that clarifies the sought customer insights, survey mechanism and target reviewers*/
+    @MetaField
     private String customerSurveyDescription;
 
     /*Reference to the business unit responsible for the survey execution*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment set-up/configuration of the customer survey*/
+    @MetaField
     private String customerSurveyProcedureSet_up;
 
     /*The customer survey version number used*/
+    @MetaField
     private String customerSurveyProcedureVersionNumber;
 
     /*The customer survey processing schedule, covering survey definition, reviewer selection, survey execution and subsequent analysis. Note for some integrated surveys this can be an on-going activity that attempts provides a constant stream of feedback relating to specific activities/services rather than a specific event*/
+    @MetaField
     private String customerSurveySchedule;
 
     /*Inventory record of any consumables that are to be used in the execution of the customer survey*/
+    @MetaField
     private String customerSurveyConsumablesInventory;
 
     /*The type of consumable item associated with the customer survey (e.g. questionnaire, participation incentive gift)*/
+    @MetaField
     private String customerSurveyConsumableType;
 
     /*The tracked inventory of the consumable item*/
+    @MetaField
     private String customerSurveyConsumableHolding;
 
     /*Key dates associated with the customer survey process (e.g. initiation date, version revision date, completion date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     /*The result/impact of the customer survey (will include summary of customer survey activity, survey response data and survey findings presentation analysis)*/
+    @MetaField
     private String customerSurveyProcedureResult;
 
     public void setCustomerSurveyType(String customerSurveyType) {

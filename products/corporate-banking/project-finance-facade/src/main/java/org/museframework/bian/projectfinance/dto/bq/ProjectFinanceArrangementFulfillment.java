@@ -1,26 +1,37 @@
 /*The configuration and execution of Project Finance SPV Fulfillment arrangement within the Project Finance SPV Fulfillment*/
 package org.museframework.bian.projectfinance.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProjectFinanceArrangementFulfillment {
     /*The required status/situation prior to the implementation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
+    @MetaField
     private String schedule;
 
     /*The Project Finance Arrangement Fulfillment specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*Reference to Project Finance Arrangement Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility projectFinanceFacilityReference;
 
     /*Reference to Project Finance Arrangement Fulfillment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object projectFinanceArrangementFulfillmentReference;
 
     /*The type of Project Finance Arrangement Fulfillment*/
+    @MetaField
     private String projectFinanceArrangementFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

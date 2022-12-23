@@ -1,8 +1,15 @@
 package org.museframework.bian.concenope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateContactCenterAdministrativePlanRequest {
+    @MetaField
     private String contactcenteroperationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.concenope.dto.cr.ContactCenterAdministrativePlan contactCenterAdministrativePlan;
 
     public void setContactcenteroperationsid(String contactcenteroperationsid) {

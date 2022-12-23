@@ -1,11 +1,17 @@
 /*A course of action for doing Asset Valuation Workstep in the context of executing the Asset Valuation Workstep*/
 package org.museframework.bian.fininsval.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FinancialInstrumentValuationOutcome {
     /**/
+    @MetaField
     private String financialInstrumentValuationWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure financialInstrumentValuationProcedure;
 
     public void setFinancialInstrumentValuationWorkProduct(String financialInstrumentValuationWorkProduct) {

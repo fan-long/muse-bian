@@ -1,11 +1,17 @@
 /*The configuration and execution of Account Receivable Factoring Fulfillment arrangement within the Account Receivable Factoring Fulfillment*/
 package org.museframework.bian.factoring.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FactoringOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility factoringFinancialFacility;
 
     /**/
+    @MetaField
     private String factoringWorkProduct;
 
     public void setFactoringFinancialFacility(org.museframework.bian.classes.FinancialFacility factoringFinancialFacility) {

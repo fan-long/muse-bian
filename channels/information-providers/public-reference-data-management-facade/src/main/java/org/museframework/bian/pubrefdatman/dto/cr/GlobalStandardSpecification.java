@@ -2,29 +2,41 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.pubrefdatman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class GlobalStandardSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Global Standard Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
+    @MetaField
     private String globalStandardSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
+    @MetaField
     private String globalStandardSpecificationSelectedOption;
 
     /*Documentation of Global Standard Specification*/
+    @MetaField
     private String globalStandardSpecificationDescription;
 
     /*The version of Global Standard Specification*/
+    @MetaField
     private String globalStandardSpecificationVersion;
 
     /*The status of Global Standard Specification*/
+    @MetaField
     private String globalStandardSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Global Standard Specification*/
+    @MetaField
     private String globalStandardSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Global Standard Specification.*/
+    @MetaField
     private String globalStandardSpecificationFeedback;
 
     /*Reference to the party who has provided Global Standard Specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object globalStandardSpecificationServiceProviderReference;
 
     public void setGlobalStandardSpecificationParameterType(String globalStandardSpecificationParameterType) {

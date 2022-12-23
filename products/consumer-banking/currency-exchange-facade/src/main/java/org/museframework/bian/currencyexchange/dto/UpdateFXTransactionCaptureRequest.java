@@ -1,10 +1,18 @@
 package org.museframework.bian.currencyexchange.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateFXTransactionCaptureRequest {
+    @MetaField
     private String currencyexchangeid;
 
+    @MetaField
     private String fxtransactioncaptureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.currencyexchange.dto.bq.FXTransactionCapture fXTransactionCapture;
 
     public void setCurrencyexchangeid(String currencyexchangeid) {

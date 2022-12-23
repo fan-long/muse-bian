@@ -1,6 +1,12 @@
 package org.museframework.bian.productdeployment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestProductandServiceDeploymentDevelopmentResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.productdeployment.dto.cr.ProductandServiceDeploymentDevelopment productandServiceDeploymentDevelopment;
 
     public void setProductandServiceDeploymentDevelopment(org.museframework.bian.productdeployment.dto.cr.ProductandServiceDeploymentDevelopment productandServiceDeploymentDevelopment) {

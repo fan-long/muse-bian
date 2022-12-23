@@ -1,35 +1,49 @@
 /*Execute a well-bounded financial transaction/task, typically involving largely automated/structured fulfillment processing within Disbursement. */
 package org.museframework.bian.disbursement.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DisbursementTransaction extends org.museframework.bian.classes.DisbursementTransaction {
     /*Reference to the loan account for which the disbursement is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the authorizing employee*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object authorizingEmployeeReference;
 
     /*Reference to the customer owning the loan, used to obtain payment arrangements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the internal funding account for the disbursement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object fundingAccountReference;
 
     /*Reference to the target for the disbursement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the account to where the disbursement payment is made*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Reference to the payee account bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*The amount of the disbursement*/
+    @MetaField
     private String amount;
 
     /*The currency for the payment*/
+    @MetaField
     private String currency;
 
     /*The value date for the disbursement payment*/
+    @MetaField
     private String valueDate;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

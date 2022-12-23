@@ -1,10 +1,18 @@
 package org.museframework.bian.cencashan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateProjectionandAllocationRequest {
+    @MetaField
     private String centralcashhandlingid;
 
+    @MetaField
     private String projectionandallocationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cencashan.dto.bq.ProjectionandAllocation projectionandAllocation;
 
     public void setCentralcashhandlingid(String centralcashhandlingid) {

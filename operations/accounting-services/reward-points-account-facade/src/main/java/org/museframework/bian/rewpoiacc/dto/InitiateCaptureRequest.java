@@ -1,10 +1,18 @@
 package org.museframework.bian.rewpoiacc.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateCaptureRequest {
+    @MetaField
     private String rewardpointsaccountid;
 
+    @MetaField
     private String captureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.rewpoiacc.dto.bq.Capture capture;
 
     public void setRewardpointsaccountid(String rewardpointsaccountid) {

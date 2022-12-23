@@ -1,10 +1,18 @@
 package org.museframework.bian.customerportfolio.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestPerformanceAnalysisRequest {
+    @MetaField
     private String customerportfolioid;
 
+    @MetaField
     private String performanceanalysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerportfolio.dto.bq.PerformanceAnalysis performanceAnalysis;
 
     public void setCustomerportfolioid(String customerportfolioid) {

@@ -3,23 +3,33 @@
 Examples: Invoice generation*/
 package org.museframework.bian.opeiteman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Tracking {
     /*Reference to the associated customer billing transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBillingProcedureInstanceReference;
 
     /*The billed customer*/
+    @MetaField
     private String customerBillingParty;
 
     /*The address the bill was sent to (can be electronic)*/
+    @MetaField
     private String customerBillingAddress;
 
     /*The billing period is applicable*/
+    @MetaField
     private String customerBillingPeriod;
 
     /*The content of the billing statement used in the bill*/
+    @MetaField
     private String customerBillingStatement;
 
     /*The amount of the customer bill*/
+    @MetaField
     private String customerBillingAmount;
 
     public void setCustomerBillingProcedureInstanceReference(org.museframework.bian.classes.Object customerBillingProcedureInstanceReference) {

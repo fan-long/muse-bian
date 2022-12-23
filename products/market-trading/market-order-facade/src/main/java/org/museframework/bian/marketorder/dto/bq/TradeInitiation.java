@@ -1,14 +1,21 @@
 /*The sub-tasks involved in the execution of the financial transaction*/
 package org.museframework.bian.marketorder.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradeInitiation {
     /*The reference to the market trade. Note this can be the internal bank 'trade' against the bank's managed position and may not result in a matched trade in the wholesale markets*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object marketTradeTransactionInstanceReference;
 
     /*The returned status of the market trade*/
+    @MetaField
     private String marketTradeTransactionInstanceStatus;
 
     /*Details of the market trade initiation task*/
+    @MetaField
     private String marketTradeInitiationTaskResult;
 
     public void setMarketTradeTransactionInstanceReference(org.museframework.bian.classes.Object marketTradeTransactionInstanceReference) {

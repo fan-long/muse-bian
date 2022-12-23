@@ -3,8 +3,13 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.achoperations.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Reconciliation {
     /*Details of the reconciliation resolution*/
+    @MetaField
     private String ACHReconciliationTaskResult;
 
     public void setACHReconciliationTaskResult(String ACHReconciliationTaskResult) {

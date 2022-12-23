@@ -1,10 +1,18 @@
 package org.museframework.bian.customercase.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDeterminationRequest {
+    @MetaField
     private String customercaseid;
 
+    @MetaField
     private String determinationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customercase.dto.bq.Determination determination;
 
     public void setCustomercaseid(String customercaseid) {

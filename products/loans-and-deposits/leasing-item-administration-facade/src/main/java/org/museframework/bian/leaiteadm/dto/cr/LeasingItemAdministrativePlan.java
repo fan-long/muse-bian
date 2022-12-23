@@ -2,20 +2,29 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.leaiteadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class LeasingItemAdministrativePlan extends org.museframework.bian.classes.LeasingItemAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Leasing Item Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String leasingItemAdministrativePlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Leasing Item Administrative Plan*/
+    @MetaField
     private String leasingItemAdministrativePlanBudget;
 
     /*The allocation of someone or something which is specified for Leasing Item Administrative Plan*/
+    @MetaField
     private String leasingItemAdministrativePlanAssignment;
 
     /*A plan that defines clerical support for LeasingItem*/
+    @MetaField
     private String leasingItemAdministrativePlan;
 
     /*Party who is involved in  Leasing Item Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object leasingItemAdministrativePlanReference;
 
     public void setLeasingItemAdministrativePlanBudgetType(String leasingItemAdministrativePlanBudgetType) {

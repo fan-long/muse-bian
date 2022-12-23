@@ -1,10 +1,18 @@
 package org.museframework.bian.proquaass.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateProcessingErrorandIntegrityChecksRequest {
+    @MetaField
     private String productqualityassuranceid;
 
+    @MetaField
     private String processingerrorandintegritychecksid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.proquaass.dto.bq.ProcessingErrorandIntegrityChecks processingErrorandIntegrityChecks;
 
     public void setProductqualityassuranceid(String productqualityassuranceid) {

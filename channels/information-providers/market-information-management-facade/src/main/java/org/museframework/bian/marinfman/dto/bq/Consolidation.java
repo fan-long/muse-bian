@@ -3,11 +3,17 @@
 Examples: Time-sheet recording*/
 package org.museframework.bian.marinfman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Consolidation {
     /*Refers to the content record provided by the external service provider in whatever form suitable*/
+    @MetaField
     private String financialMarketInformationServiceReport;
 
     /*Key properties of the report used in its improvement (e.g. date created, qualifications of integrity)*/
+    @MetaField
     private String financialMarketInformationServiceReportProperties;
 
     public void setFinancialMarketInformationServiceReport(String financialMarketInformationServiceReport) {

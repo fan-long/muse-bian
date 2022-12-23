@@ -6,65 +6,89 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.parrefdatdir.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Reference {
     /*Reference to the legal entity - enables the assembly of the legal relationship structure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyLegalEntityReference;
 
     /*The preferred salutation to be used*/
+    @MetaField
     private String partyNameSalutation;
 
     /*Reference to government or agency issued identification (e.g. social security number)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object governmentIssuedIdentityReference;
 
     /*Details about and extracted from government issued documents (e.g. driving license/passport details)*/
+    @MetaField
     private String governmentIssuedDocumentDetails;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The residency status and history as appropriate*/
+    @MetaField
     private String residencyStatus;
 
     /*Give DoB*/
+    @MetaField
     private String dateofBirth;
 
     /*The customer nationality and history as appropriate*/
+    @MetaField
     private String nationality;
 
     /*Their given residential address*/
+    @MetaField
     private String residentialAddress;
 
     /*The given email address*/
+    @MetaField
     private String eMailAddress;
 
     /*Any given phone contact numbers*/
+    @MetaField
     private String cellPhoneNumber;
 
     /*Any given social network identifiers*/
+    @MetaField
     private String socialNetworkContacts;
 
     /*A politically exposed person indicator (PEP) (e.g. senior public figure, political position/exposure)*/
+    @MetaField
     private String politicalExposureType;
 
     /*Detail of the customer's political exposure*/
+    @MetaField
     private String politicalExposureDescriptionRecord;
 
     /*Reference to the corporate entity (Company for company customers)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object corporateCustomerReference;
 
     /*The legal entity reference (for company customers)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object corporateCustomerLegalEntityReference;
 
     /*The company registered address*/
+    @MetaField
     private String corporateAddress;
 
     /*Reference to one or more identified company officers for a corporate customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object companyOfficerReference;
 
     /*The specific role played by the identified officer/employee*/
+    @MetaField
     private String companyOfficerRole;
 
     /*The start date for the relationship*/
+    @MetaField
     private String customerSinceDate;
 
     public void setPartyLegalEntityReference(org.museframework.bian.classes.Object partyLegalEntityReference) {

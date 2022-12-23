@@ -1,6 +1,12 @@
 package org.museframework.bian.businessdevelopment.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class CaptureBusinessDevelopmentStrategyResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.businessdevelopment.dto.cr.BusinessDevelopmentStrategy businessDevelopmentStrategy;
 
     public void setBusinessDevelopmentStrategy(org.museframework.bian.businessdevelopment.dto.cr.BusinessDevelopmentStrategy businessDevelopmentStrategy) {

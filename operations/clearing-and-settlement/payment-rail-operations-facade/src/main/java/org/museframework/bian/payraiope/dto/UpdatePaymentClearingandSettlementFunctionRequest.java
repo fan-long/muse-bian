@@ -1,10 +1,18 @@
 package org.museframework.bian.payraiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdatePaymentClearingandSettlementFunctionRequest {
+    @MetaField
     private String paymentrailoperationsid;
 
+    @MetaField
     private String paymentclearingandsettlementfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.payraiope.dto.bq.PaymentClearingandSettlementFunction paymentClearingandSettlementFunction;
 
     public void setPaymentrailoperationsid(String paymentrailoperationsid) {

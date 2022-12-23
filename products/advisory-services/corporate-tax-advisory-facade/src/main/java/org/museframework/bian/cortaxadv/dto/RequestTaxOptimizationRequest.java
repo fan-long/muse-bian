@@ -1,10 +1,18 @@
 package org.museframework.bian.cortaxadv.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTaxOptimizationRequest {
+    @MetaField
     private String corporatetaxadvisoryid;
 
+    @MetaField
     private String taxoptimizationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cortaxadv.dto.bq.TaxOptimization taxOptimization;
 
     public void setCorporatetaxadvisoryid(String corporatetaxadvisoryid) {

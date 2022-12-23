@@ -1,6 +1,12 @@
 package org.museframework.bian.operationalgateway.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeOutboundWithResponseFunctionResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.operationalgateway.dto.bq.OutboundWithResponseFunction outboundWithResponseFunction;
 
     public void setOutboundWithResponseFunction(org.museframework.bian.operationalgateway.dto.bq.OutboundWithResponseFunction outboundWithResponseFunction) {

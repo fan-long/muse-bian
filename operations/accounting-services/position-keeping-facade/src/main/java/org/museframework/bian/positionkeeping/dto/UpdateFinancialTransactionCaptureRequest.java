@@ -1,10 +1,18 @@
 package org.museframework.bian.positionkeeping.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateFinancialTransactionCaptureRequest {
+    @MetaField
     private String positionkeepingid;
 
+    @MetaField
     private String financialtransactioncaptureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.positionkeeping.dto.bq.FinancialTransactionCapture financialTransactionCapture;
 
     public void setPositionkeepingid(String positionkeepingid) {

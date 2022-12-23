@@ -3,23 +3,33 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.advvoiserope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Outbound {
     /*The source of the outbound connection request*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the customer contact record used accessing outbound channel*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*The record used to handle the contact (see Service Domain-Contact Handler for complete definition)*/
+    @MetaField
     private String customerSessionDialogueRecord;
 
     /*The target device being accessed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object VChannelCustomerDeviceReference;
 
     /*Detail used for statistics*/
+    @MetaField
     private String VChannelOutboundConnectionStartTime;
 
     /*Detail used for statistics*/
+    @MetaField
     private String VChannelOutboundConnectionDuration;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

@@ -1,50 +1,69 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Cash Concentration. */
 package org.museframework.bian.cashconcentration.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AccountBalanceSweepingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature accountBalanceSweepingFacilitySelectedOption;
 
     /*The status of Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityStatus;
 
     /*Reference to the party who is involved in Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.RuleSet accountBalanceSweepingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Account Balance Sweeping Facility in case of legal dispute.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Jurisdiction accountBalanceSweepingFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Account Balance Sweeping Facility, are entered.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessUnit accountBalanceSweepingFacilityBookingLocation;
 
     /*Reference to the account which is linked to Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Account accountBalanceSweepingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Account Balance Sweeping Facility*/
+    @MetaField
     private String accountBalanceSweepingFacilityCustomerReference;
 
     /*The position of Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Position accountBalanceSweepingFacilityPosition;
 
     /*Reference to the product which is linked to Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct accountBalanceSweepingFacilityProductReference;
 
     /*Reference to the limitation related to the position of Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.LimitArrangement accountBalanceSweepingFacilityPositionLimit;
 
     /*An unique reference to an item or an occurrence of Account Balance Sweeping Facility*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility accountBalanceSweepingFacilityReference;
 
     public void setAccountBalanceSweepingFacilityParameterType(String accountBalanceSweepingFacilityParameterType) {

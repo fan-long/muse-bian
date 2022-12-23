@@ -3,26 +3,37 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.corporatetreasury.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BankRates {
     /*The type of bank interest or currency rate that is to be applied in production (e.g. bank's consumer mortgage rate)*/
+    @MetaField
     private String bankRateType;
 
     /*The current value (value range if appropriate) to apply*/
+    @MetaField
     private String bankRateValue;
 
     /*The key date and time values associated with the rate*/
+    @MetaField
     private String bankRateValueDate;
 
     /*Historical values (maintained for back testing, corrections etc.)*/
+    @MetaField
     private String bankRateValueHistory;
 
     /*Reference to the distributed record containing the prevailing bank rates*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankRateRecordReference;
 
     /*The record of the prevailing bank rates*/
+    @MetaField
     private String bankRateRecord;
 
     /*Date and time stamp for rate value record*/
+    @MetaField
     private String bankRateRecordDate;
 
     public void setBankRateType(String bankRateType) {

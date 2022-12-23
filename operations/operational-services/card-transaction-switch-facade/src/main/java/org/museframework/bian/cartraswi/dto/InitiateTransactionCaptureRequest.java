@@ -1,10 +1,18 @@
 package org.museframework.bian.cartraswi.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTransactionCaptureRequest {
+    @MetaField
     private String cardtransactionswitchid;
 
+    @MetaField
     private String transactioncaptureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cartraswi.dto.bq.TransactionCapture transactionCapture;
 
     public void setCardtransactionswitchid(String cardtransactionswitchid) {

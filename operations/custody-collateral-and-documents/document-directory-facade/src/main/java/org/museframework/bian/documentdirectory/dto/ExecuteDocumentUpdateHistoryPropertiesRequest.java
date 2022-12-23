@@ -1,10 +1,18 @@
 package org.museframework.bian.documentdirectory.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteDocumentUpdateHistoryPropertiesRequest {
+    @MetaField
     private String documentdirectoryid;
 
+    @MetaField
     private String documentupdatehistorypropertiesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.documentdirectory.dto.bq.DocumentUpdateHistoryProperties documentUpdateHistoryProperties;
 
     public void setDocumentdirectoryid(String documentdirectoryid) {

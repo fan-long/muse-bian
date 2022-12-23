@@ -1,23 +1,33 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.creditfacility.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Maintenance {
     /*The type of maintenance action and report processed (e.g. tax, regulatory, accounting)*/
+    @MetaField
     private String maintenanceReportType;
 
     /*A report summarizing tax considerations*/
+    @MetaField
     private String creditFacilityTaxReport;
 
     /*The type of fee applied*/
+    @MetaField
     private String creditFacilityFeeType;
 
     /*A report detailing fees applied to the loan account (range of fees possible for different actions)*/
+    @MetaField
     private String creditFacilityFees;
 
     /*A report detailing penalties incurred as booked against loan account*/
+    @MetaField
     private String creditFacilityPenalties;
 
     /*A report detailing the current applied collateral valuation (value confirmed as of date)*/
+    @MetaField
     private String creditFacilityCollateralValuation;
 
     public void setMaintenanceReportType(String maintenanceReportType) {

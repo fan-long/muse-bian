@@ -1,6 +1,12 @@
 package org.museframework.bian.cuscasman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestRulesResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.cuscasman.dto.bq.Rules rules;
 
     public void setRules(org.museframework.bian.cuscasman.dto.bq.Rules rules) {

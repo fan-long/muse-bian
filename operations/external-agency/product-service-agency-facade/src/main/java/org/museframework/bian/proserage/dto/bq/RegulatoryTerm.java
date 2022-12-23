@@ -1,32 +1,45 @@
 /*Covers the legal considerations of the agreement*/
 package org.museframework.bian.proserage.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryTerm {
     /*The required status/situation for the terms to apply and or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Regulatory Term*/
+    @MetaField
     private String schedule;
 
     /*The Regulatory Term specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Regulatory Term*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement serviceProviderAgreementReference;
 
     /*Reference to Regulatory Term*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement regulatoryTermReference;
 
     /*The type of Regulatory Term*/
+    @MetaField
     private String regulatoryTermType;
 
     /*The applicable regulatory authority*/
+    @MetaField
     private String regulatoryAuthority;
 
     /*Reference to any regulatory requirements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object applicableRegulationReference;
 
     /*Explanation or interpretation of the regulation as applied*/
+    @MetaField
     private String applicableRegulationInterpretation;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

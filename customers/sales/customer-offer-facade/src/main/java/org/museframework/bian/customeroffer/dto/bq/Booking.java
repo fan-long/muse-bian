@@ -1,14 +1,21 @@
 /*Handles the booking of the asset or liability to the appropriate unit*/
 package org.museframework.bian.customeroffer.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Booking {
     /*Defines the booking entity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*Defines the booking rules (e.g. booking  value ratios)*/
+    @MetaField
     private String assetLiabilityType;
 
     /*The principle amount for booking*/
+    @MetaField
     private String amount;
 
     public void setBusinessUnitReference(org.museframework.bian.classes.Object businessUnitReference) {

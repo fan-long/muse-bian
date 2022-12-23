@@ -1,10 +1,18 @@
 package org.museframework.bian.serevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateServicingFacilityRequest {
+    @MetaField
     private String servicingeventhistoryid;
 
+    @MetaField
     private String servicingfacilityid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.serevehis.dto.bq.ServicingFacility servicingFacility;
 
     public void setServicingeventhistoryid(String servicingeventhistoryid) {

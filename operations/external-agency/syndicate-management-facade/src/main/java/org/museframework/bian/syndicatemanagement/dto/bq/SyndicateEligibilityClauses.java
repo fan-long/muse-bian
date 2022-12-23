@@ -1,29 +1,41 @@
 /*The Syndicate Eligibility Clauses defines a particular clause or consideration that is applied to determine eligibility for Syndicate Eligibility Clauses*/
 package org.museframework.bian.syndicatemanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SyndicateEligibilityClauses {
     /*Reference to Syndicate Eligibility Clauses*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicateMembershipReference;
 
     /*Reference to Syndicate Eligibility Clauses*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object syndicateEligibilityClausesReference;
 
     /*The type of Syndicate Eligibility Clauses*/
+    @MetaField
     private String syndicateEligibilityClausesType;
 
     /*The Syndicate Eligibility Clauses specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for governing Syndicate Eligibility Clauses by applying the Syndicate Eligibility Clauses clause*/
+    @MetaField
     private String businessUnitEmployeeReference;
 
     /*The completion status once Syndicate Eligibility Clauses has been governed by applying the Syndicate Eligibility Clauses clause*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition postconditions;
 
     /*The required status/situation before Syndicate Eligibility Clauses can be governed by applying the Syndicate Eligibility Clauses clause*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in governing Syndicate Eligibility Clauses by applying the Syndicate Eligibility Clauses clause*/
+    @MetaField
     private String schedule;
 
     public void setSyndicateMembershipReference(org.museframework.bian.classes.Object syndicateMembershipReference) {

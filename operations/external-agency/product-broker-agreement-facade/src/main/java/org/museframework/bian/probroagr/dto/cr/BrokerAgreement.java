@@ -4,23 +4,33 @@
 */
 package org.museframework.bian.probroagr.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BrokerAgreement {
     /*Reference to the broker organization*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*The type of agreement (e.g. service provider, product alliance)*/
+    @MetaField
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
+    @MetaField
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
+    @MetaField
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
+    @MetaField
     private String agreementSignaturesResponsibleParties;
 
     /*Reference to any associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     public void setPartyReference(org.museframework.bian.classes.Object partyReference) {

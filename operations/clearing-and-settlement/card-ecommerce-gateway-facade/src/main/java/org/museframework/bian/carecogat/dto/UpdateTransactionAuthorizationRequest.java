@@ -1,10 +1,18 @@
 package org.museframework.bian.carecogat.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateTransactionAuthorizationRequest {
+    @MetaField
     private String cardecommercegatewayid;
 
+    @MetaField
     private String transactionauthorizationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.carecogat.dto.bq.TransactionAuthorization transactionAuthorization;
 
     public void setCardecommercegatewayid(String cardecommercegatewayid) {

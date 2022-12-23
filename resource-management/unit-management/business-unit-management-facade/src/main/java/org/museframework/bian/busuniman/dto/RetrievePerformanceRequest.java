@@ -1,8 +1,15 @@
 package org.museframework.bian.busuniman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrievePerformanceRequest {
+    @MetaField
     private String businessunitmanagementid;
 
+    @MetaField
     private String performanceid;
 
     public void setBusinessunitmanagementid(String businessunitmanagementid) {

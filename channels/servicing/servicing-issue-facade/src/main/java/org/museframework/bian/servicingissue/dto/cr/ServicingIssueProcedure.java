@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Servicing Issue. */
 package org.museframework.bian.servicingissue.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServicingIssueProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureParameterType;
 
     /*A selected optional business service as subject matter of Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature servicingIssueProcedureSelectedOption;
 
     /*Request to process Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction servicingIssueProcedureRequest;
 
     /*Timetable to process Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureSchedule;
 
     /*The status of Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureStatus;
 
     /*Reference to the party who is involved in Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility servicingIssueProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureType;
 
     /*The schedule according to which the service provider will process the Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Servicing Issue Procedure*/
+    @MetaField
     private String servicingIssueProcedureServiceType;
 
     /*Reference to the product or service that is related to Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct servicingIssueProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction servicingIssueProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement servicingIssueProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement servicingIssueProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Servicing Issue Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure servicingIssueProcedureReference;
 
     public void setServicingIssueProcedureParameterType(String servicingIssueProcedureParameterType) {

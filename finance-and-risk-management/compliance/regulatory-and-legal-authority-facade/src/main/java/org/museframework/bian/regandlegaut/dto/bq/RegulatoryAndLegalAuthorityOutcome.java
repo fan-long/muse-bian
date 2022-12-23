@@ -2,20 +2,29 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.regandlegaut.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryAndLegalAuthorityOutcome {
     /**/
+    @MetaField
     private String regulatoryAndLegalAuthorityPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String regulatoryAndLegalAuthorityActivityAnalysis;
 
     /**/
+    @MetaField
     private String regulatoryAndLegalAuthorityCharter;
 
     /**/
+    @MetaField
     private String regulatoryAndLegalAuthorityTask;
 
     /**/
+    @MetaField
     private String regulatoryAndLegalAuthorityProject;
 
     public void setRegulatoryAndLegalAuthorityPerformanceAnalysis(String regulatoryAndLegalAuthorityPerformanceAnalysis) {

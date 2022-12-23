@@ -1,6 +1,12 @@
 package org.museframework.bian.customeroffer.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteCustomerOfferProcedureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.customeroffer.dto.cr.CustomerOfferProcedure customerOfferProcedure;
 
     public void setCustomerOfferProcedure(org.museframework.bian.customeroffer.dto.cr.CustomerOfferProcedure customerOfferProcedure) {

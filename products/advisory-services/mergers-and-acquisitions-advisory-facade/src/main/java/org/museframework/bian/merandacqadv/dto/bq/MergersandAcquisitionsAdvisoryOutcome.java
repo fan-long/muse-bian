@@ -1,14 +1,21 @@
 /*The M&A Candidate Selection and Evaluation Topic advice is one specific topic that can be included in providing M&A Candidate Selection and Evaluation Topic*/
 package org.museframework.bian.merandacqadv.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MergersandAcquisitionsAdvisoryOutcome {
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Project mergersandAcquisitionsAdvisoryProject;
 
     /**/
+    @MetaField
     private String mergersandAcquisitionsAdvisoryWorkProduct;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Analysis mergersandAcquisitionsAdvisoryWorkforceAnalysis;
 
     public void setMergersandAcquisitionsAdvisoryProject(org.museframework.bian.classes.Project mergersandAcquisitionsAdvisoryProject) {

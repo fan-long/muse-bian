@@ -2,65 +2,89 @@
 Example: Process the evaluation and completion of customer offers.*/
 package org.museframework.bian.accountsreceivable.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class AccountsReceivableProcedure extends org.museframework.bian.classes.AccountsReceivableProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureParameterType;
 
     /*A selected optional business service as subject matter of Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureSelectedOption;
 
     /*Request to process AccountsReceivable*/
+    @MetaField
     private String accountsReceivableProcedureRequest;
 
     /*Timetable to process AccountsReceivable*/
+    @MetaField
     private String accountsReceivableProcedureSchedule;
 
     /*The status of Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureStatus;
 
     /*Reference to the party who is involved in Accounts Receivable Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureReference;
 
     /*Reference to the business unit which is involved in Accounts Receivable Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Accounts Receivable Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to  Accounts Receivable Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Accounts Receivable Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Accounts Receivable Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureType;
 
     /*The schedule according to which the service provider will process the Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Accounts Receivable Procedure */
+    @MetaField
     private String accountsReceivableProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Accounts Receivable Procedure */
+    @MetaField
     private String accountsReceivableProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Accounts Receivable Procedure*/
+    @MetaField
     private String accountsReceivableProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Accounts Receivable Procedure */
+    @MetaField
     private String accountsReceivableProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Accounts Receivable Procedure */
+    @MetaField
     private String accountsReceivableProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Accounts Receivable Procedure */
+    @MetaField
     private String accountsReceivableProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Accounts Receivable Procedure */
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object accountsReceivableProcedureCustomerAgreementReference;
 
     public void setAccountsReceivableProcedureParameterType(String accountsReceivableProcedureParameterType) {

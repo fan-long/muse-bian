@@ -1,10 +1,18 @@
 package org.museframework.bian.consumerloan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteServiceFeesRequest {
+    @MetaField
     private String consumerloanid;
 
+    @MetaField
     private String servicefeesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.consumerloan.dto.bq.ServiceFees serviceFees;
 
     public void setConsumerloanid(String consumerloanid) {

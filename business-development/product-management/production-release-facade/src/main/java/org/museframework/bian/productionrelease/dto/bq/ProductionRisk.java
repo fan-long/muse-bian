@@ -3,17 +3,25 @@
 Examples: Password verification*/
 package org.museframework.bian.productionrelease.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductionRisk {
     /*The type of production test being performed (e.g. division of responsibilities, access control, audit trail, back-up and recovery)*/
+    @MetaField
     private String productionRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
+    @MetaField
     private String productionRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
+    @MetaField
     private String productionRiskSystemTestWorkProduct;
 
     /*The result of the production risk test (including required remedial actions/fixes where appropriate)*/
+    @MetaField
     private String productionRiskSystemTestResult;
 
     public void setProductionRiskSystemTestType(String productionRiskSystemTestType) {

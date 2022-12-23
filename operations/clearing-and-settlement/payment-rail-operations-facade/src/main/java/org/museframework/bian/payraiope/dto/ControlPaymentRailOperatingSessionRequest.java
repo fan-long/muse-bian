@@ -1,8 +1,15 @@
 package org.museframework.bian.payraiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlPaymentRailOperatingSessionRequest {
+    @MetaField
     private String paymentrailoperationsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.payraiope.dto.cr.PaymentRailOperatingSession paymentRailOperatingSession;
 
     public void setPaymentrailoperationsid(String paymentrailoperationsid) {

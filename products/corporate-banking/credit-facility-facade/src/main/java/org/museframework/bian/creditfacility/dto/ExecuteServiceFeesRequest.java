@@ -1,10 +1,18 @@
 package org.museframework.bian.creditfacility.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteServiceFeesRequest {
+    @MetaField
     private String creditfacilityid;
 
+    @MetaField
     private String servicefeesid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.creditfacility.dto.bq.ServiceFees serviceFees;
 
     public void setCreditfacilityid(String creditfacilityid) {

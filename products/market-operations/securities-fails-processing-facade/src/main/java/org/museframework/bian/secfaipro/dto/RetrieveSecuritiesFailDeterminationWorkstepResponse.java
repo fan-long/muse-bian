@@ -1,6 +1,12 @@
 package org.museframework.bian.secfaipro.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RetrieveSecuritiesFailDeterminationWorkstepResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.secfaipro.dto.bq.SecuritiesFailDeterminationWorkstep securitiesFailDeterminationWorkstep;
 
     public void setSecuritiesFailDeterminationWorkstep(org.museframework.bian.secfaipro.dto.bq.SecuritiesFailDeterminationWorkstep securitiesFailDeterminationWorkstep) {

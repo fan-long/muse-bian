@@ -1,20 +1,29 @@
 /*Operate equipment and/or a largely automated facility within Card Transaction Switch. */
 package org.museframework.bian.cartraswi.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardTransactionSwitchOperatingSession {
     /*Refers to the card network*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object networkReference;
 
     /*Reference to the Acquiring bank for which the Network orchestrates transaction routing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines transaction routing details - referenced by the Network*/
+    @MetaField
     private String participantAcquirerBanktransactionRoutingDetails;
 
     /*Reference to the Issuing bank for which the Network orchestrates transaction routing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines transaction routing details - referenced by the Network*/
+    @MetaField
     private String participantIssuerBankTransactionRoutingDetails;
 
     public void setNetworkReference(org.museframework.bian.classes.Object networkReference) {

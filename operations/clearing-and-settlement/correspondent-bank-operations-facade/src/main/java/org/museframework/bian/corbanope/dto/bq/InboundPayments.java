@@ -1,47 +1,65 @@
 /*The product features/services available with a financical facility*/
 package org.museframework.bian.corbanope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InboundPayments {
     /*Inbound payment transaction details*/
+    @MetaField
     private String correspondentTransactionRecord;
 
     /*….*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object SWIFTTransactionReference;
 
     /*The  primary correspondent bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerBankReference;
 
     /*Reference to the payer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerReference;
 
     /*Intermediary correspondents if needed*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondedBankReference;
 
     /*Payer account reference or number*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payerProductInstanceReference;
 
     /*Reference to the payee*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeReference;
 
     /*Reference to the payee account as source of funds*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Refers to the payee's bank as the receiver of funds*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Transaction specific clearing and settlement instructions*/
+    @MetaField
     private String specialInstructions;
 
     /*Key amounts of the transaction*/
+    @MetaField
     private String amount;
 
     /*Currencies of the amounts*/
+    @MetaField
     private String currency;
 
     /*Transaction dates  (e.g. order, booking, execution, value date, interest bearing)*/
+    @MetaField
     private String dateType;
 
     /*Specific date type value*/
+    @MetaField
     private String date;
 
     public void setCorrespondentTransactionRecord(String correspondentTransactionRecord) {

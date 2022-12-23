@@ -1,10 +1,18 @@
 package org.museframework.bian.trustservices.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteTrustAssetMaintenanceandManagementFulfillmentRequest {
+    @MetaField
     private String trustservicesid;
 
+    @MetaField
     private String trustassetmaintenanceandmanagementfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.trustservices.dto.bq.TrustAssetMaintenanceandManagementFulfillment trustAssetMaintenanceandManagementFulfillment;
 
     public void setTrustservicesid(String trustservicesid) {

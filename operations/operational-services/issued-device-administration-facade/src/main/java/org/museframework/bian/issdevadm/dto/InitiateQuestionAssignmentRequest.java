@@ -1,10 +1,18 @@
 package org.museframework.bian.issdevadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateQuestionAssignmentRequest {
+    @MetaField
     private String issueddeviceadministrationid;
 
+    @MetaField
     private String questionassignmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.issdevadm.dto.bq.QuestionAssignment questionAssignment;
 
     public void setIssueddeviceadministrationid(String issueddeviceadministrationid) {

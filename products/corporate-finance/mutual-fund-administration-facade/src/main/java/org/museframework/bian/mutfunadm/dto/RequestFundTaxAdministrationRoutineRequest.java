@@ -1,10 +1,18 @@
 package org.museframework.bian.mutfunadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestFundTaxAdministrationRoutineRequest {
+    @MetaField
     private String mutualfundadministrationid;
 
+    @MetaField
     private String fundtaxadministrationroutineid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.mutfunadm.dto.bq.FundTaxAdministrationRoutine fundTaxAdministrationRoutine;
 
     public void setMutualfundadministrationid(String mutualfundadministrationid) {

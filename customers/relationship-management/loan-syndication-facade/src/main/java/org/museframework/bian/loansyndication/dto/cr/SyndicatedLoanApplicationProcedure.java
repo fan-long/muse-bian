@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Loan Syndication. */
 package org.museframework.bian.loansyndication.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class SyndicatedLoanApplicationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature syndicatedLoanApplicationProcedureSelectedOption;
 
     /*Request to process Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction syndicatedLoanApplicationProcedureRequest;
 
     /*Timetable to process Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureSchedule;
 
     /*The status of Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureStatus;
 
     /*Reference to the party who is involved in Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility syndicatedLoanApplicationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureType;
 
     /*The schedule according to which the service provider will process the Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Syndicated Loan Application Procedure.*/
+    @MetaField
     private String syndicatedLoanApplicationProcedureServiceType;
 
     /*Reference to the product or service that is related to Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct syndicatedLoanApplicationProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction syndicatedLoanApplicationProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement syndicatedLoanApplicationProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement syndicatedLoanApplicationProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Syndicated Loan Application Procedure.*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure syndicatedLoanApplicationProcedureReference;
 
     public void setSyndicatedLoanApplicationProcedureParameterType(String syndicatedLoanApplicationProcedureParameterType) {

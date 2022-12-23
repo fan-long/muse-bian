@@ -1,14 +1,21 @@
 /**/
 package org.museframework.bian.issdevadm.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ChequesAssignment {
     /*Cheque template (e.g. customer account/branch reference, print image/personalization)*/
+    @MetaField
     private String issuedDeviceTemplateValues;
 
     /*The delivery address for distribution*/
+    @MetaField
     private String issueLocation;
 
     /*The tracked sequence numbering (e.g. cheque number range issued)*/
+    @MetaField
     private String sequenceNumber;
 
     public void setIssuedDeviceTemplateValues(String issuedDeviceTemplateValues) {

@@ -3,20 +3,29 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.advvoiserope.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Inbound {
     /*Details of the device being used for access*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object VChannelDeviceReference;
 
     /*Property of the device that can be used in identification ( e.g. ANI phone number)*/
+    @MetaField
     private String VChannelDevicePropertyValue;
 
     /*Detail used for statistics*/
+    @MetaField
     private String VChannelInboundConnectionStartTime;
 
     /*Detain used for statistics*/
+    @MetaField
     private String VChannelInboundConnectionDuration;
 
     /*Internal reference retuned by Service Domain-Contact Handler for routing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object VChannelInboundConnectionContactReference;
 
     public void setVChannelDeviceReference(org.museframework.bian.classes.Object VChannelDeviceReference) {

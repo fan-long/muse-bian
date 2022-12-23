@@ -1,10 +1,18 @@
 package org.museframework.bian.bankdrafts.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteBankGuaranteedPaymentSpecificationTaskRequest {
+    @MetaField
     private String bankdraftsid;
 
+    @MetaField
     private String bankguaranteedpaymentspecificationtaskid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.bankdrafts.dto.bq.BankGuaranteedPaymentSpecificationTask bankGuaranteedPaymentSpecificationTask;
 
     public void setBankdraftsid(String bankdraftsid) {

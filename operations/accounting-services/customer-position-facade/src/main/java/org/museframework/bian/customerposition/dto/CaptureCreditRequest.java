@@ -1,10 +1,18 @@
 package org.museframework.bian.customerposition.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureCreditRequest {
+    @MetaField
     private String customerpositionid;
 
+    @MetaField
     private String creditid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerposition.dto.bq.Credit credit;
 
     public void setCustomerpositionid(String customerpositionid) {

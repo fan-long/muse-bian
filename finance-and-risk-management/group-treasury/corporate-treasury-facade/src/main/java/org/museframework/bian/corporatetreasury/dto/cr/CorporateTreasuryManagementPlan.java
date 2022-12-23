@@ -1,29 +1,41 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Corporate Treasury.*/
 package org.museframework.bian.corporatetreasury.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateTreasuryManagementPlan {
     /*The bank's treasury policies and guidelines reflected in the plan*/
+    @MetaField
     private String treasuryPlanningPoliciesAndGuidelines;
 
     /*The array of group treasury positions and limits to be met through the plan*/
+    @MetaField
     private String treasuryPlanOperatingParameters;
 
     /*Target financial performance goals set out in the bank's corporate treasury plan*/
+    @MetaField
     private String treasuryPlanGoals;
 
     /*The bank financial statements include the balance sheet, statement of cash flows, statement of retained earnings and the income statement*/
+    @MetaField
     private String enterpriseFinancialStatements;
 
     /*The balance sheet breakdown include individual assets/liabilities as necessary*/
+    @MetaField
     private String enterpriseBalanceSheetDetailedContent;
 
     /*Account records that cover booking, pooling and netting activities across all relevant bank activity*/
+    @MetaField
     private String enterpriseBankAccountingAndCashManagementRecords;
 
     /*Includes large transactions and net positions for smaller trade activity as appropriate*/
+    @MetaField
     private String capitalWholesaleMarketTransactions;
 
     /*Analytical views detailing exposure and sensitivity to currency and interest rate fluctuations*/
+    @MetaField
     private String currencyandRateRiskAnalysis;
 
     public void setTreasuryPlanningPoliciesAndGuidelines(String treasuryPlanningPoliciesAndGuidelines) {

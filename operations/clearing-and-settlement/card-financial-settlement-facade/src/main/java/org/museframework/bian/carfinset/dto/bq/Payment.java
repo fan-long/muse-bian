@@ -3,8 +3,13 @@
 Examples: Invoice generation*/
 package org.museframework.bian.carfinset.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Payment {
     /*Transaction details*/
+    @MetaField
     private String participantPaymentTransaction;
 
     public void setParticipantPaymentTransaction(String participantPaymentTransaction) {

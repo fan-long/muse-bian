@@ -1,35 +1,49 @@
 /*Fulfill any scheduled and ad-hoc obligations under a service arrangement, most typically for a financial product or facility within Card Network Participant Facility. */
 package org.museframework.bian.carnetparfac.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardNetworkParticipantFacility {
     /*Reference to the participant facility product instance*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the participant primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to the legal entity (typically the customer)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object partyReference;
 
     /*The operational configuration terms/options that govern the participant facility arrangement*/
+    @MetaField
     private String facilityTerms;
 
     /*Reference to the Acquiring bank for which the Network orchestrates clearing and settlement processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines the card clearing fees/terms in force*/
+    @MetaField
     private String participantAcquirerBankClearingandSettlementTerms;
 
     /*Defines the tasks and processing schedule for the participant*/
+    @MetaField
     private String participantAcquirerBankServiceSchedule;
 
     /*Reference to the Issuing bank for which the Network orchestrates clearing and settlement processing*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines the card clearing fees/terms in force*/
+    @MetaField
     private String participantIssuerBankClearingandSettlementTerms;
 
     /*Defines the tasks and processing schedule for the participant)*/
+    @MetaField
     private String participantIssuerBankServiceSchedule;
 
     public void setProductandServiceReference(org.museframework.bian.classes.Object productandServiceReference) {

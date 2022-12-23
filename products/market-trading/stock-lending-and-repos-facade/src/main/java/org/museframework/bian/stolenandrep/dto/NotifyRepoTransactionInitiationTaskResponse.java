@@ -1,6 +1,12 @@
 package org.museframework.bian.stolenandrep.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class NotifyRepoTransactionInitiationTaskResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.stolenandrep.dto.bq.RepoTransactionInitiationTask repoTransactionInitiationTask;
 
     public void setRepoTransactionInitiationTask(org.museframework.bian.stolenandrep.dto.bq.RepoTransactionInitiationTask repoTransactionInitiationTask) {

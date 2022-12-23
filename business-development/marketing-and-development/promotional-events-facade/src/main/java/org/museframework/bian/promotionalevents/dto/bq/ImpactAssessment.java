@@ -3,20 +3,29 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.promotionalevents.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ImpactAssessment {
     /*The type of work task (e.g. track market response to promotional event participation)*/
+    @MetaField
     private String impactAssessmentWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research*/
+    @MetaField
     private String impactAssessmentWorkTask;
 
     /*File of consolidated notes, evaluations and findings for the work task*/
+    @MetaField
     private String impactAssessmentWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - indication of the need to redirect and/or expand promotional event activity*/
+    @MetaField
     private String impactAssessmentWorkTaskResult;
 
     /*The date-time the performance assessment task is performed*/
+    @MetaField
     private String impactAssessmentWorkTaskDate_Time;
 
     public void setImpactAssessmentWorkTaskType(String impactAssessmentWorkTaskType) {

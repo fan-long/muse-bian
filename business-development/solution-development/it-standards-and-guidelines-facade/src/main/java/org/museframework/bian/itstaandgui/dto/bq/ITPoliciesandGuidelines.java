@@ -3,32 +3,45 @@
 Examples: Business Requirements*/
 package org.museframework.bian.itstaandgui.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ITPoliciesandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
+    @MetaField
     private String ITPoliciesandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
+    @MetaField
     private String ITPoliciesandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
+    @MetaField
     private String ITPoliciesandGuidelinesVersionNumber;
 
     /*The Technology Standards Specification specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService ITPoliciesandGuidelines;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String ITPoliciesandGuidelinesServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String ITPoliciesandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String ITPoliciesandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String ITPoliciesandGuidelinesServiceWorkProduct;
 
     /**/
+    @MetaField
     private String ITPoliciesandGuidelinesServiceName;
 
     public void setITPoliciesandGuidelinesPreconditions(String ITPoliciesandGuidelinesPreconditions) {

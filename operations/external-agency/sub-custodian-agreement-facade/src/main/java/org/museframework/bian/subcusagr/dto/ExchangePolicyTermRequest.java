@@ -1,10 +1,18 @@
 package org.museframework.bian.subcusagr.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangePolicyTermRequest {
+    @MetaField
     private String subcustodianagreementid;
 
+    @MetaField
     private String policytermid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.subcusagr.dto.bq.PolicyTerm policyTerm;
 
     public void setSubcustodianagreementid(String subcustodianagreementid) {

@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Document Capture Function for doing Document Capture Function*/
 package org.museframework.bian.archiveservices.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DocumentCaptureFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Document Capture Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Document Capture Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session archiveOperatingSessionReference;
 
     /*Reference to Document Capture Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function documentCaptureFunctionReference;
 
     /*The type of Document Capture Function*/
+    @MetaField
     private String documentCaptureFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

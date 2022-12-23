@@ -1,10 +1,18 @@
 package org.museframework.bian.standingorder.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateStandingOrderPaymentRequest {
+    @MetaField
     private String standingorderid;
 
+    @MetaField
     private String standingorderpaymentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.standingorder.dto.bq.StandingOrderPayment standingOrderPayment;
 
     public void setStandingorderid(String standingorderid) {

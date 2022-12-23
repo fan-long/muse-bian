@@ -1,8 +1,15 @@
 package org.museframework.bian.virtualaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteVirtualAccountFacilityRequest {
+    @MetaField
     private String virtualaccountid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.virtualaccount.dto.cr.VirtualAccountFacility virtualAccountFacility;
 
     public void setVirtualaccountid(String virtualaccountid) {

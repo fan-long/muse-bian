@@ -1,26 +1,37 @@
 /*To test or assess an entity, possibly against some formal qualification or certification requirement within Guideline Compliance. */
 package org.museframework.bian.guidelinecompliance.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class GuidelineComplianceAssessment {
     /*The type and make-up of guideline compliance tests referenced in the assessment*/
+    @MetaField
     private String guidelineComplianceAssessmentType;
 
     /*The business function or unit assessed for compliance if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*The associated product/service being assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Reference to the customer assessed if appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Reference to any documentation classified/archived as appropriate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment*/
+    @MetaField
     private String guidelineComplianceAssessmentWorkProducts;
 
     /*Outcome/result of the assessment, can include remedial actions*/
+    @MetaField
     private String guidelineComplianceAssessmentResult;
 
     public void setGuidelineComplianceAssessmentType(String guidelineComplianceAssessmentType) {

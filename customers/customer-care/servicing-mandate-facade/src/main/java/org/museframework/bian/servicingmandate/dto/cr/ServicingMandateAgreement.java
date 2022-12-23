@@ -4,35 +4,49 @@
 */
 package org.museframework.bian.servicingmandate.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ServicingMandateAgreement {
     /*Reference to the third party service provider with the servicing mandate (also a bank customer)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of third party mandates (e.g. PSD2)*/
+    @MetaField
     private String servicingMandateAgreementType;
 
     /*The defines any limitation on the geographic coverage/scope of the mandate*/
+    @MetaField
     private String servicingMandateAgreementJurisdiction;
 
     /*The term for the mandate to be in force*/
+    @MetaField
     private String servicingMandateAgreementValidFromToDate;
 
     /*Reference to any involved authorities and interested parties*/
+    @MetaField
     private String servicingMandateAgreementResponsibleParties;
 
     /*Reference to any supporting documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Reference to the record that defines allowed access*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingMandateAgreementProductandServiceProfileReference;
 
     /*The record of the overarching product/service access profile permitted under the servicing mandate*/
+    @MetaField
     private String servicingMandateAgreementProductandServiceProfile;
 
     /*A type of product or service covered by the mandate*/
+    @MetaField
     private String productandServiceType;
 
     /*Defines if and under what terms a product/service is accessible under the mandate*/
+    @MetaField
     private String servicingMandateAgreementProductandServiceTypeEligibility;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

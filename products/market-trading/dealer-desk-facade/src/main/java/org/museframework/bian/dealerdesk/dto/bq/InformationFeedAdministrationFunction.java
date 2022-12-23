@@ -1,23 +1,33 @@
 /*An operational service or function supported within the Dealer Desk Consolidated Position Tracking Function for doing Dealer Desk Consolidated Position Tracking Function*/
 package org.museframework.bian.dealerdesk.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InformationFeedAdministrationFunction {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
+    @MetaField
     private String schedule;
 
     /*The Information Feed Administration Function specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Information Feed Administration Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Session dealerDeskOperatingSessionReference;
 
     /*Reference to Information Feed Administration Function*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Function informationFeedAdministrationFunctionReference;
 
     /*The type of Information Feed Administration Function*/
+    @MetaField
     private String informationFeedAdministrationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

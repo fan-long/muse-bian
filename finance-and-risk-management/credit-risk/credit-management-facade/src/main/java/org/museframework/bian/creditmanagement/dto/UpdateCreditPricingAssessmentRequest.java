@@ -1,8 +1,15 @@
 package org.museframework.bian.creditmanagement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCreditPricingAssessmentRequest {
+    @MetaField
     private String creditmanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.creditmanagement.dto.cr.CreditPricingAssessment creditPricingAssessment;
 
     public void setCreditmanagementid(String creditmanagementid) {

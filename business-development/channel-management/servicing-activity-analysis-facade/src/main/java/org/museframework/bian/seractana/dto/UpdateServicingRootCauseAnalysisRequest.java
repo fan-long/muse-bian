@@ -1,8 +1,15 @@
 package org.museframework.bian.seractana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateServicingRootCauseAnalysisRequest {
+    @MetaField
     private String servicingactivityanalysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.seractana.dto.cr.ServicingRootCauseAnalysis servicingRootCauseAnalysis;
 
     public void setServicingactivityanalysisid(String servicingactivityanalysisid) {

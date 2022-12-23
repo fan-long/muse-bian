@@ -1,26 +1,37 @@
 /*The Document Update History Properties properties that represent a discrete aspect of the Document Update History Properties*/
 package org.museframework.bian.documentdirectory.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DocumentReferenceProperties {
     /*The required status/situation before the property is valid/meaningful*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
+    @MetaField
     private String schedule;
 
     /*The version reference for the property value*/
+    @MetaField
     private String versionNumber;
 
     /*The Document Reference Properties specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to Document Reference Properties*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry documentDirectoryEntryReference;
 
     /*Reference to Document Reference Properties*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentReferencePropertiesReference;
 
     /*The type of Document Reference Properties*/
+    @MetaField
     private String documentReferencePropertiesType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

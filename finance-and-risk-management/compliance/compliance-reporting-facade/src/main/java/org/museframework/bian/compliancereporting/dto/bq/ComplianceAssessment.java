@@ -2,35 +2,49 @@
 Example: Administer the time reporting and billing for the specialist sales support team.*/
 package org.museframework.bian.compliancereporting.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ComplianceAssessment {
     /*The required status/situation before the routine can be undertaken*/
+    @MetaField
     private String complianceAssessmentPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object complianceAssessmentBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
+    @MetaField
     private String complianceAssessmentWorkSchedule;
 
     /*The Compliance Reporting Administrative Plan specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService auditandReporting;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
+    @MetaField
     private String complianceAssessmentPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String complianceAssessmentAuditandReportingServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String complianceAssessmentAuditandReportingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String complianceAssessmentAuditandReportingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String complianceAssessmentAuditandReportingServiceWorkProduct;
 
     /**/
+    @MetaField
     private String complianceAssessmentAuditandReportingServiceName;
 
     public void setComplianceAssessmentPreconditions(String complianceAssessmentPreconditions) {

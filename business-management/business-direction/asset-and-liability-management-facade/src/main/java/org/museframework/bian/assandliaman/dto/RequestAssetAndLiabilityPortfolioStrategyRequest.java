@@ -1,8 +1,15 @@
 package org.museframework.bian.assandliaman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestAssetAndLiabilityPortfolioStrategyRequest {
+    @MetaField
     private String assetandliabilitymanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.assandliaman.dto.cr.AssetAndLiabilityPortfolioStrategy assetAndLiabilityPortfolioStrategy;
 
     public void setAssetandliabilitymanagementid(String assetandliabilitymanagementid) {

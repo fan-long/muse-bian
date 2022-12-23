@@ -3,11 +3,17 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.customerworkbench.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Broadcast {
     /*Text of the broadcast message*/
+    @MetaField
     private String customerWorkbenchBroadcastRecord;
 
     /*The timestamp for the broadcast*/
+    @MetaField
     private String customerWorkbenchBroadcastRecordDateTime;
 
     public void setCustomerWorkbenchBroadcastRecord(String customerWorkbenchBroadcastRecord) {

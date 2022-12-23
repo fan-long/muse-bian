@@ -3,14 +3,21 @@
 Examples: Required disclosures*/
 package org.museframework.bian.salproagr.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryTerms {
     /*The applicable regulatory authority*/
+    @MetaField
     private String regulatoryAuthority;
 
     /*Reference to any regulatory requirements*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object applicableRegulationReference;
 
     /*Explanation or interpretation of the regulation as applied*/
+    @MetaField
     private String applicableRegulationInterpretation;
 
     public void setRegulatoryAuthority(String regulatoryAuthority) {

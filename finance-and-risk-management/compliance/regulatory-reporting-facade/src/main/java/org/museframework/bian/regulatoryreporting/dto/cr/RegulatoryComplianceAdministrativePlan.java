@@ -2,17 +2,25 @@
 */
 package org.museframework.bian.regulatoryreporting.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RegulatoryComplianceAdministrativePlan extends org.museframework.bian.classes.RegulatoryComplianceAdministrativePlan {
     /*Reference to the interested regulatory reporting authority*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryAuthorityReference;
 
     /*The details of all regulatory reporting requirements and scheduled reporting tasks*/
+    @MetaField
     private String regulatoryReportingSchedule;
 
     /*Reference to the regulation for which content is being collected*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulationReference;
 
     /*The types of report, included in the reporting schedule*/
+    @MetaField
     private String regulatoryReportType;
 
     public void setRegulatoryAuthorityReference(org.museframework.bian.classes.Object regulatoryAuthorityReference) {

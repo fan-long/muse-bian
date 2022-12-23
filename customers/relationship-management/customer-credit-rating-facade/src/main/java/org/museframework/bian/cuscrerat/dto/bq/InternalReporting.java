@@ -3,14 +3,21 @@
 Examples: Composite position, Customer alert*/
 package org.museframework.bian.cuscrerat.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class InternalReporting {
     /*Reference to the internal bank product and service activity report that is used for the credit assessment*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceActivityReportReference;
 
     /*The schedule for the upload of the data file/report*/
+    @MetaField
     private String productandServiceActivityReportSchedule;
 
     /*The report data file/report of customer production activity*/
+    @MetaField
     private String productandServiceActivityReport;
 
     public void setProductandServiceActivityReportReference(org.museframework.bian.classes.Object productandServiceActivityReportReference) {

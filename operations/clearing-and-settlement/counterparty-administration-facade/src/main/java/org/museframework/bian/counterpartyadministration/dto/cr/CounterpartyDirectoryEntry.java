@@ -1,38 +1,53 @@
 /*Capture and maintain reference information about some type of entitity within Counterparty Administration.*/
 package org.museframework.bian.counterpartyadministration.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CounterpartyDirectoryEntry extends org.museframework.bian.classes.CounterpartyDirectoryEntry {
     /*Documentation of Counterparty Directory Entry*/
+    @MetaField
     private String counterpartyDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Counterparty Directory Entry*/
+    @MetaField
     private String counterpartyDirectoryEntrySchedule;
 
     /*The version of Counterparty Directory Entry*/
+    @MetaField
     private String counterpartyDirectoryEntryVersion;
 
     /*The status of Counterparty Directory Entry*/
+    @MetaField
     private String counterpartyDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Counterparty Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log counterpartyDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Counterparty Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log counterpartyDirectoryEntryUpdateLog;
 
     /*The configuration of Counterparty Directory Entry*/
+    @MetaField
     private String counterpartyDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Counterparty Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry counterpartyDirectoryEntryReference;
 
     /**/
+    @MetaField
     private String conterpartyReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement agreementReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialTransaction financialTransactionReference;
 
     public void setCounterpartyDirectoryEntryDescription(String counterpartyDirectoryEntryDescription) {

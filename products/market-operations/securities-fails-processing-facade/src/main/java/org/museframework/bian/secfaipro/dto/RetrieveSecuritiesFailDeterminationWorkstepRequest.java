@@ -1,8 +1,15 @@
 package org.museframework.bian.secfaipro.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveSecuritiesFailDeterminationWorkstepRequest {
+    @MetaField
     private String securitiesfailsprocessingid;
 
+    @MetaField
     private String securitiesfaildeterminationworkstepid;
 
     public void setSecuritiesfailsprocessingid(String securitiesfailsprocessingid) {

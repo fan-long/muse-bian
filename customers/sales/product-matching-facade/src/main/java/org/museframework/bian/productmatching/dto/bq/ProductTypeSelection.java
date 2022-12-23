@@ -3,32 +3,45 @@
 Examples: Perform regulatory tests on a proposed financial transaction and check a new offer conforms to an existing contractual agreement.*/
 package org.museframework.bian.productmatching.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductTypeSelection {
     /*The required status/situation before the test can be applied*/
+    @MetaField
     private String productTypeSelectionPreconditions;
 
     /*The schedule and timing of the testing performed*/
+    @MetaField
     private String productTypeSelectionAnalysisSchedule;
 
     /*The test version employed*/
+    @MetaField
     private String productTypeSelectionVersionNumber;
 
     /*The Product/Customer Combination Assessment specific  Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService productTypeSelection;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String productTypeSelectionServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String productTypeSelectionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String productTypeSelectionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String productTypeSelectionServiceWorkProduct;
 
     /**/
+    @MetaField
     private String productTypeSelectionServiceName;
 
     public void setProductTypeSelectionPreconditions(String productTypeSelectionPreconditions) {

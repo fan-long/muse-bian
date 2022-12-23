@@ -1,10 +1,18 @@
 package org.museframework.bian.cortruser.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTrustEstate_InheritanceandIncomeTaxFulfillmentRequest {
+    @MetaField
     private String corporatetrustservicesid;
 
+    @MetaField
     private String trustestate_inheritanceandincometaxfulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cortruser.dto.bq.TrustEstate_InheritanceandIncomeTaxFulfillment trustEstate_InheritanceandIncomeTaxFulfillment;
 
     public void setCorporatetrustservicesid(String corporatetrustservicesid) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.productdesign.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveProductionRequest {
+    @MetaField
     private String productdesignid;
 
+    @MetaField
     private String productionid;
 
     public void setProductdesignid(String productdesignid) {

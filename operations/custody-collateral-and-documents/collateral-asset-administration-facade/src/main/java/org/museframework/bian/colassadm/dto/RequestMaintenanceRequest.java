@@ -1,10 +1,18 @@
 package org.museframework.bian.colassadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestMaintenanceRequest {
+    @MetaField
     private String collateralassetadministrationid;
 
+    @MetaField
     private String maintenanceid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.colassadm.dto.bq.Maintenance maintenance;
 
     public void setCollateralassetadministrationid(String collateralassetadministrationid) {

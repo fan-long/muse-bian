@@ -1,6 +1,12 @@
 package org.museframework.bian.bankdrafts.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeCustomerPaymentTaskResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.bankdrafts.dto.bq.CustomerPaymentTask customerPaymentTask;
 
     public void setCustomerPaymentTask(org.museframework.bian.bankdrafts.dto.bq.CustomerPaymentTask customerPaymentTask) {

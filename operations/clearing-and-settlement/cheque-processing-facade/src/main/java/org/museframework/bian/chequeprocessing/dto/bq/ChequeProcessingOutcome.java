@@ -2,11 +2,17 @@
 Example: Operate the bank's internal intranet facility.*/
 package org.museframework.bian.chequeprocessing.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ChequeProcessingOutcome {
     /**/
+    @MetaField
     private String chequeProcessingIncident;
 
     /**/
+    @MetaField
     private String chequeProcessingProvision;
 
     public void setChequeProcessingIncident(String chequeProcessingIncident) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.marketmaking.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeMarketMakingQuoteFulfillmentRequest {
+    @MetaField
     private String marketmakingid;
 
+    @MetaField
     private String marketmakingquotefulfillmentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.marketmaking.dto.bq.MarketMakingQuoteFulfillment marketMakingQuoteFulfillment;
 
     public void setMarketmakingid(String marketmakingid) {

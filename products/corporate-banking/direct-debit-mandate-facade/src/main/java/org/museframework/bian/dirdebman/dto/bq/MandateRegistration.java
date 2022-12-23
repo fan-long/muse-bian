@@ -6,35 +6,49 @@ A descriptor can be atomic or composed."
 Prospect Management*/
 package org.museframework.bian.dirdebman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MandateRegistration {
     /*Reference to the customer providing the mandate to the corporate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object directDebitMandateCustomerReference;
 
     /*The reference used to identify the customer to the corporate subject of the mandate (maintains secrecy of bank's internal reference)*/
+    @MetaField
     private String directDebitMandateCustomerPseudonym;
 
     /*The bank holding the payer's account*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object directDebitMandateBankReference;
 
     /*Reference to the payer's account*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object directDebitMandateAccountReference;
 
     /*The period for which the customer mandate is in force*/
+    @MetaField
     private String directDebitMandateValidDates;
 
     /*Description of allowed usage details and restrictions that apply to use of the mandate (e.g. maximum amount and frequency)*/
+    @MetaField
     private String directDebitMandateTerms;
 
     /*Reference to the correspondence generated and received with the maintenance of the mandate*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - direct debit mandate agreement messages and forms sent and completed by involved parties*/
+    @MetaField
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document content - legal documents created & referenced for the mandate*/
+    @MetaField
     private String documentContent;
 
     public void setDirectDebitMandateCustomerReference(org.museframework.bian.classes.Object directDebitMandateCustomerReference) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.customerworkbench.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestBroadcastRequest {
+    @MetaField
     private String customerworkbenchid;
 
+    @MetaField
     private String broadcastid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerworkbench.dto.bq.Broadcast broadcast;
 
     public void setCustomerworkbenchid(String customerworkbenchid) {

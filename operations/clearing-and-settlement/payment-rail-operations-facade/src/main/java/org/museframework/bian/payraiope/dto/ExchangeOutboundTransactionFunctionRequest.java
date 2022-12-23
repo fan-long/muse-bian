@@ -1,10 +1,18 @@
 package org.museframework.bian.payraiope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExchangeOutboundTransactionFunctionRequest {
+    @MetaField
     private String paymentrailoperationsid;
 
+    @MetaField
     private String outboundtransactionfunctionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.payraiope.dto.bq.OutboundTransactionFunction outboundTransactionFunction;
 
     public void setPaymentrailoperationsid(String paymentrailoperationsid) {

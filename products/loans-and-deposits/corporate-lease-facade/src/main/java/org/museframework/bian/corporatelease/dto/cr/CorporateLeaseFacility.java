@@ -2,44 +2,61 @@
 Example: Perform the scheduled (e.g. statements, standing orders) and ad-hoc/requested (e.g. balance inquiries, fund transfers) fulfillment tasks for a customer current account facility.*/
 package org.museframework.bian.corporatelease.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorporateLeaseFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityParameterType;
 
     /*A selected optional business service as subject matter of Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilitySelectedOption;
 
     /*The type of Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityType;
 
     /*Timetable to fulfill Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilitySchedule;
 
     /*The status of Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityStatus;
 
     /*Reference to the party who is involved in Corporate Lease Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object corporateLeaseFacilityReference;
 
     /*The curreny which is arranged in Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityCurrency;
 
     /*Reference to the regulation which is defined in Corporate Lease Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object corporateLeaseFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Corporate Lease Arrangement in case of legal dispute.*/
+    @MetaField
     private String corporateLeaseFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Corporate Lease Arrangement, are entered.*/
+    @MetaField
     private String corporateLeaseFacilityBookingLocation;
 
     /*The type of account which is linked to Corporate Lease Arrangement*/
+    @MetaField
     private String corporateLeaseFacilityAccountType;
 
     /*Reference to the account which is linked to Corporate Lease Arrangement*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object corporateLeaseFacilityAccountReference;
 
     public void setCorporateLeaseFacilityParameterType(String corporateLeaseFacilityParameterType) {

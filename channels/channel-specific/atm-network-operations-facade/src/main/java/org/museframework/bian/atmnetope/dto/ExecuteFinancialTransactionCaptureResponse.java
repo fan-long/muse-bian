@@ -1,6 +1,12 @@
 package org.museframework.bian.atmnetope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExecuteFinancialTransactionCaptureResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.atmnetope.dto.bq.FinancialTransactionCapture financialTransactionCapture;
 
     public void setFinancialTransactionCapture(org.museframework.bian.atmnetope.dto.bq.FinancialTransactionCapture financialTransactionCapture) {

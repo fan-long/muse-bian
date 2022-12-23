@@ -1,32 +1,45 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Correspondent Bank Relationship Management.*/
 package org.museframework.bian.corbanrelman.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CorrepondentBankRelationshipManagementPlan {
     /*The type of Correpondent Bank Relationship Management Plan*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Correpondent Bank Relationship Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan correpondentBankRelationshipManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Correpondent Bank Relationship Management Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Correpondent Bank Relationship Management Plan*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanBudget;
 
     /*The set of management responsibilities defined in Correpondent Bank Relationship Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement correpondentBankRelationshipManagementPlanDuty;
 
     /*Documentation of Correpondent Bank Relationship Management Plan*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Correpondent Bank Relationship Management Plan*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanBudgetBalance;
 
     /*Party who is involved in Correpondent Bank Relationship Management Plan*/
+    @MetaField
     private String correpondentBankRelationshipManagementPlanAssociatedParty;
 
     /*The subject matter of Correpondent Bank Relationship Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object correpondentBankRelationshipManagementPlanSubjectMatter;
 
     public void setCorrepondentBankRelationshipManagementPlanType(String correpondentBankRelationshipManagementPlanType) {

@@ -4,23 +4,33 @@ Examples: Provide behavioral insights and analysis into customer behavior and an
 Analyze the performance or behavior of some on-going activity or entity. Examples: Provide behavioral insights and analysis into customer behavior and analyze financial market activity in order to identify opportunities, define pricing and evaluate risks.*/
 package org.museframework.bian.chaactana.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ChannelActivityAnalysis extends org.museframework.bian.classes.ChannelActivityAnalysis {
     /*The type of channel for which the analysis is performed*/
+    @MetaField
     private String channelType;
 
     /*The period covered by the analysis (from to date time)*/
+    @MetaField
     private String channelActivityAnalysisPeriod;
 
     /*The type of analysis, can combine multiple (e.g. customer fraud, merchant fraud)*/
+    @MetaField
     private String channelActivityAnalysisType;
 
     /*The result of the analysis*/
+    @MetaField
     private String channelActivityAnalysisResult;
 
     /*A report combining the results of the analysis in a consumable format*/
+    @MetaField
     private String channelActivityAnalysisRecord;
 
     /*The raw data used in the analysis (retrieved from Channel Activity History)*/
+    @MetaField
     private String channelActivityHistoryReport;
 
     public void setChannelType(String channelType) {

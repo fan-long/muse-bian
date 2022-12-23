@@ -1,8 +1,15 @@
 package org.museframework.bian.casroocauana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCustomerCaseRootCauseAnalysisRequest {
+    @MetaField
     private String caserootcauseanalysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.casroocauana.dto.cr.CustomerCaseRootCauseAnalysis customerCaseRootCauseAnalysis;
 
     public void setCaserootcauseanalysisid(String caserootcauseanalysisid) {

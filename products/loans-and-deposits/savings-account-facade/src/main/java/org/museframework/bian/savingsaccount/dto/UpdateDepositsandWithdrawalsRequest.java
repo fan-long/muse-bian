@@ -1,10 +1,18 @@
 package org.museframework.bian.savingsaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateDepositsandWithdrawalsRequest {
+    @MetaField
     private String savingsaccountid;
 
+    @MetaField
     private String depositsandwithdrawalsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.savingsaccount.dto.bq.DepositsandWithdrawals depositsandWithdrawals;
 
     public void setSavingsaccountid(String savingsaccountid) {

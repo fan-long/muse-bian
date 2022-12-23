@@ -1,6 +1,12 @@
 package org.museframework.bian.letofcre.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class InitiateLetterofCreditPayoutTaskResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.letofcre.dto.bq.LetterofCreditPayoutTask letterofCreditPayoutTask;
 
     public void setLetterofCreditPayoutTask(org.museframework.bian.letofcre.dto.bq.LetterofCreditPayoutTask letterofCreditPayoutTask) {

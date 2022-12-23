@@ -1,8 +1,15 @@
 package org.museframework.bian.cardcollections.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateCardCollectionsProcedureRequest {
+    @MetaField
     private String cardcollectionsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardcollections.dto.cr.CardCollectionsProcedure cardCollectionsProcedure;
 
     public void setCardcollectionsid(String cardcollectionsid) {

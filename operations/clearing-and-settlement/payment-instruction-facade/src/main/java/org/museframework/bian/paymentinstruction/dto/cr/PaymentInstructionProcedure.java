@@ -1,62 +1,85 @@
 /*Complete work tasks following a defined procedure in support of general office activities and product and service delivery within Payment Instruction. */
 package org.museframework.bian.paymentinstruction.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class PaymentInstructionProcedure extends org.museframework.bian.classes.PaymentInstructionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureParameterType;
 
     /*A selected optional business service as subject matter of Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Feature paymentInstructionProcedureSelectedOption;
 
     /*Request to process Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Instruction paymentInstructionProcedureRequest;
 
     /*Timetable to process Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureSchedule;
 
     /*The status of Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureStatus;
 
     /*Reference to the party who is involved in Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.FinancialFacility paymentInstructionProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureType;
 
     /*The schedule according to which the service provider will process the Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Payment Instruction Procedure*/
+    @MetaField
     private String paymentInstructionProcedureServiceType;
 
     /*Reference to the product or service that is related to Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct paymentInstructionProcedureProductandServiceInstance;
 
     /*Reference to the transaction that is related to Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Transaction paymentInstructionProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement paymentInstructionProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Agreement paymentInstructionProcedureCustomerAgreementReference;
 
     /*An unique reference to an item or an occurrence of Payment Instruction Procedure*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Procedure paymentInstructionProcedureReference;
 
     public void setPaymentInstructionProcedureParameterType(String paymentInstructionProcedureParameterType) {

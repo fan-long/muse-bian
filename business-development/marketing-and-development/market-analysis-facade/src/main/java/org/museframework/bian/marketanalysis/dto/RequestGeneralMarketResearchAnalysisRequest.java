@@ -1,8 +1,15 @@
 package org.museframework.bian.marketanalysis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestGeneralMarketResearchAnalysisRequest {
+    @MetaField
     private String marketanalysisid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.marketanalysis.dto.cr.GeneralMarketResearchAnalysis generalMarketResearchAnalysis;
 
     public void setMarketanalysisid(String marketanalysisid) {

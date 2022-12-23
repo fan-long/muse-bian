@@ -2,23 +2,33 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.cardcapture.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CreditChargeCardFinancialCaptureTransaction {
     /*A Classification value that distinguishes between business service transaction within Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionParameterType;
 
     /*A selected optional business service as subject matter of Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionSelectedOption;
 
     /*The status of Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionTransactionType;
 
     /*Reference to Credit/Charge Card Financial Capture Transaction*/
+    @MetaField
     private String creditChargeCardFinancialCaptureTransactionTransaction;
 
     public void setCreditChargeCardFinancialCaptureTransactionParameterType(String creditChargeCardFinancialCaptureTransactionParameterType) {

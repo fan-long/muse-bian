@@ -1,8 +1,15 @@
 package org.museframework.bian.leaandoppman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateLeadandOpportunityProcedureRequest {
+    @MetaField
     private String leadandopportunitymanagementid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.leaandoppman.dto.cr.LeadandOpportunityProcedure leadandOpportunityProcedure;
 
     public void setLeadandopportunitymanagementid(String leadandopportunitymanagementid) {

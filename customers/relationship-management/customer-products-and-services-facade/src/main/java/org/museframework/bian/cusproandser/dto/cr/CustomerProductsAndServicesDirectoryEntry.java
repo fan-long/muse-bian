@@ -1,38 +1,53 @@
 /*Capture and maintain reference information about some type of entitity within Customer Products and Services.*/
 package org.museframework.bian.cusproandser.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CustomerProductsAndServicesDirectoryEntry extends org.museframework.bian.classes.CustomerProductsAndServicesDirectoryEntry {
     /*Documentation of Customer Products And Services Directory Entry*/
+    @MetaField
     private String customerProductsAndServicesDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Customer Products And Services Directory Entry*/
+    @MetaField
     private String customerProductsAndServicesDirectoryEntrySchedule;
 
     /*The version of Customer Products And Services Directory Entry*/
+    @MetaField
     private String customerProductsAndServicesDirectoryEntryVersion;
 
     /*The status of Customer Products And Services Directory Entry*/
+    @MetaField
     private String customerProductsAndServicesDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Customer Products And Services Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log customerProductsAndServicesDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Customer Products And Services Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Log customerProductsAndServicesDirectoryEntryUpdateLog;
 
     /*The configuration of Customer Products And Services Directory Entry*/
+    @MetaField
     private String customerProductsAndServicesDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Customer Products And Services Directory Entry*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.DirectoryEntry customerProductsAndServicesDirectoryEntryReference;
 
     /**/
+    @MetaField
     private String customerReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct productReference;
 
     /**/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.ProductSalesAgreement productSalesAgreementReference;
 
     public void setCustomerProductsAndServicesDirectoryEntryDescription(String customerProductsAndServicesDirectoryEntryDescription) {

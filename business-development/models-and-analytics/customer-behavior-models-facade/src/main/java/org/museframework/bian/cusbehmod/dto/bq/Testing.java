@@ -3,35 +3,49 @@
 Examples: Business Requirements*/
 package org.museframework.bian.cusbehmod.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Testing {
     /*Reference to a type of test*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelTestReference;
 
     /*Defines the type of test (e.g. unit, integration, load, user acceptance etc.)*/
+    @MetaField
     private String customerBehaviorModelTestType;
 
     /*Reference to the testing environment used to apply the test*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelTestHarnessReference;
 
     /*Record of testing applied to the model*/
+    @MetaField
     private String customerBehaviorModelTestResult;
 
     /*Reference to a type of testing activity*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelTestingTaskReference;
 
     /*The record of work products used for this testing activity*/
+    @MetaField
     private String customerBehaviorModelTestingTaskRecord;
 
     /*Reference to compliance conformance check for the specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelComplianceTaskReference;
 
     /*Record of the compliance conformance check for the specification*/
+    @MetaField
     private String customerBehaviorModelComplianceTaskRecord;
 
     /*Reference to a compliance task performed against the specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerBehaviorModelComplianceTestReference;
 
     /*Record of the compliance test applied to the specification*/
+    @MetaField
     private String customerBehaviorModelComplianceTestType;
 
     public void setCustomerBehaviorModelTestReference(org.museframework.bian.classes.Object customerBehaviorModelTestReference) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.cusevehis.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveProductProcessingRequest {
+    @MetaField
     private String customereventhistoryid;
 
+    @MetaField
     private String productprocessingid;
 
     public void setCustomereventhistoryid(String customereventhistoryid) {

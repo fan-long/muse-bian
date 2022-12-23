@@ -1,10 +1,18 @@
 package org.museframework.bian.crerismod.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTestingRequest {
+    @MetaField
     private String creditriskmodelsid;
 
+    @MetaField
     private String testingid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.crerismod.dto.bq.Testing testing;
 
     public void setCreditriskmodelsid(String creditriskmodelsid) {

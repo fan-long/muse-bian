@@ -3,23 +3,33 @@
 Examples: Relationship development, Troubleshooting*/
 package org.museframework.bian.ebranchmanagement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class MaintenanceAndUpgrades {
     /*Planned platform maintenance and upgrade tasks (includes release and capacity upgrades)*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeSchedule;
 
     /*The type of work task (e.g. scheduled maintenance, version release, platform upgrade)*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeWorkTaskType;
 
     /*The make-up of the channel platform task performed, includes work plan, assignments, effort/expenditures and deliverables as appropriate*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeWorkTask;
 
     /*File of consolidated work notes, testing results, agreements etc. for the work task*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task (e.g. new version number installed, capacity upgrade in production)*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeWorkTaskResult;
 
     /*The key date-times associated with the work task (e.g. cutover date)*/
+    @MetaField
     private String eBranchChannelMaintenanceandUpgradeWorkTaskDate_Time;
 
     public void seteBranchChannelMaintenanceandUpgradeSchedule(String eBranchChannelMaintenanceandUpgradeSchedule) {

@@ -2,32 +2,45 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.currencyexchange.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class DocumentHandling {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField
     private String documentHandlingPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String documentHandlingTaskSchedule;
 
     /*The Currency Exchange Transaction specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService documentServices;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField
     private String documentHandlingPostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String documentHandlingDocumentServicesServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String documentHandlingDocumentServicesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String documentHandlingDocumentServicesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String documentHandlingDocumentServicesServiceWorkProduct;
 
     /**/
+    @MetaField
     private String documentHandlingDocumentServicesServiceName;
 
     public void setDocumentHandlingPreconditions(String documentHandlingPreconditions) {

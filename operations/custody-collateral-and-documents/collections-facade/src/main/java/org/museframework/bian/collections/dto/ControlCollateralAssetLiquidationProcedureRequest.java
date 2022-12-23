@@ -1,8 +1,15 @@
 package org.museframework.bian.collections.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlCollateralAssetLiquidationProcedureRequest {
+    @MetaField
     private String collectionsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.collections.dto.cr.CollateralAssetLiquidationProcedure collateralAssetLiquidationProcedure;
 
     public void setCollectionsid(String collectionsid) {

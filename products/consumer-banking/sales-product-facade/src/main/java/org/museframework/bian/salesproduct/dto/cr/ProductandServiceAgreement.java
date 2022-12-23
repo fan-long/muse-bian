@@ -4,59 +4,81 @@
 */
 package org.museframework.bian.salesproduct.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductandServiceAgreement {
     /*Reference to the sales product instance, i.e. the 'wrapped' product by its sold reference name*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*Reference to the underlying product instance - this is the fulfillment vehicle that has amended/augmented features to 'create' the sold product*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object underlyingProductInstanceReference;
 
     /*Reference to the product primary party/owner*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;
 
     /*Bank branch associated with the product for booking purposes*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Reference identifier linking the investment account to appropriate tax handling*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option  (note the corresponding attribute for the base product instance will cross reference the sales product instance for applicable entitlements terms)*/
+    @MetaField
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
+    @MetaField
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option (note the corresponding attribute for the base product instance will cross reference the sales product instance for applicable restrictions terms)*/
+    @MetaField
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
+    @MetaField
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the sales product - this is in addition to the base product if appropriate*/
+    @MetaField
     private String linkedAccounts;
 
     /*The type and purpose for the link (e.g. guarantor, sweep)*/
+    @MetaField
     private String linkType;
 
     /*Details of the linked account*/
+    @MetaField
     private String accountDetails;
 
     /*Position limits that are maintained for the sales product as an aspect of the operational terms*/
+    @MetaField
     private String positionLimits;
 
     /*The type of position maintained for the sales product (e.g. transaction credit/debit, netting, position)*/
+    @MetaField
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
+    @MetaField
     private String positionLimitSettings;
 
     /*The current calculated position*/
+    @MetaField
     private String positionLimitValue;
 
     /*Key dates associated with the sales product (e.g. opening date, closing date)*/
+    @MetaField
     private String dateType;
 
     /*Value of the date type*/
+    @MetaField
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

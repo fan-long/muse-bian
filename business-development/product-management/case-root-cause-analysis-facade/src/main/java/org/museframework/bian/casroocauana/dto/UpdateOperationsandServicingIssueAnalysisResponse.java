@@ -1,6 +1,12 @@
 package org.museframework.bian.casroocauana.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class UpdateOperationsandServicingIssueAnalysisResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.casroocauana.dto.bq.OperationsandServicingIssueAnalysis operationsandServicingIssueAnalysis;
 
     public void setOperationsandServicingIssueAnalysis(org.museframework.bian.casroocauana.dto.bq.OperationsandServicingIssueAnalysis operationsandServicingIssueAnalysis) {

@@ -1,8 +1,15 @@
 package org.museframework.bian.investmentaccount.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RetrieveDepositsandWithdrawalsRequest {
+    @MetaField
     private String investmentaccountid;
 
+    @MetaField
     private String depositsandwithdrawalsid;
 
     public void setInvestmentaccountid(String investmentaccountid) {

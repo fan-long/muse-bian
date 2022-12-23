@@ -1,32 +1,45 @@
 /*Handle and assign the day to day activities, capture time, costs and income for an operational unit within Branch Location Operations. */
 package org.museframework.bian.bralocope.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchLocationAdministrativePlan extends org.museframework.bian.classes.BranchLocationAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Branch Location Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String branchLocationAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Branch Location Administrative Plan*/
+    @MetaField
     private String branchLocationAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Branch Location Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement branchLocationAdministrativePlanDuty;
 
     /*Party who is involved in Branch Location Administrative Plan*/
+    @MetaField
     private String branchLocationAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Branch Location Administrative Plan*/
+    @MetaField
     private String branchLocationAdministrativePlanBudgetBalance;
 
     /*The subject matter of Branch Location Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object branchLocationAdministrativePlanSubjectMatter;
 
     /*The type of Branch Location Administrative Plan*/
+    @MetaField
     private String branchLocationAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Branch Location Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan branchLocationAdministrativePlanReference;
 
     /*Documentation of Branch Location Administrative Plan*/
+    @MetaField
     private String branchLocationAdministrativePlanDescription;
 
     public void setBranchLocationAdministrativePlanBudgetType(String branchLocationAdministrativePlanBudgetType) {

@@ -1,10 +1,18 @@
 package org.museframework.bian.delacchan.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateResolutionRequest {
+    @MetaField
     private String delinquentaccounthandlingid;
 
+    @MetaField
     private String resolutionid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.delacchan.dto.bq.Resolution resolution;
 
     public void setDelinquentaccounthandlingid(String delinquentaccounthandlingid) {

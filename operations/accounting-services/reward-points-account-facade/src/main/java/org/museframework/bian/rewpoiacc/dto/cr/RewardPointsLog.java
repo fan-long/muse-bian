@@ -2,44 +2,61 @@
 Examples: Maintain a financial journal of transactions processed for a product or service and maintain a log of customer events and activity for subsequent analysis.*/
 package org.museframework.bian.rewpoiacc.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class RewardPointsLog {
     /*A Classification value that distinguishes between business service events logged within Reward Points Log*/
+    @MetaField
     private String rewardPointsLogParameterType;
 
     /*A selected optional business service as subject matter of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogSelectedOption;
 
     /*The type of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogType;
 
     /*Timetable to track RewardPoints*/
+    @MetaField
     private String rewardPointsLogSchedule;
 
     /*Reference to the log of (usage) ativities/events  of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogUsageLog;
 
     /*Reference to the log of (update) ativities/events of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogUpdateLog;
 
     /*Reference to the party who is involved in Reward Points Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object rewardPointsLogReference;
 
     /*Reference to the business unit which is involved in Reward Points Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object rewardPointsLogBusinessUnitReference;
 
     /*Reference to the customer who is involved in Reward Points Log*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object rewardPointsLogCustomerReference;
 
     /*The configuration of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogServiceConfiguration;
 
     /*The position of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogPosition;
 
     /*A classification value expressing the kind of position withing the Reward Points Log*/
+    @MetaField
     private String rewardPointsLogPositionType;
 
     /*Reference to the time limitation related to the position  of Reward Points Log*/
+    @MetaField
     private String rewardPointsLogPositionLimitTime;
 
     public void setRewardPointsLogParameterType(String rewardPointsLogParameterType) {

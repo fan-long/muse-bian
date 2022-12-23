@@ -1,6 +1,12 @@
 package org.museframework.bian.mutfunadm.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class RequestFundTaxAdministrationRoutineResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.mutfunadm.dto.bq.FundTaxAdministrationRoutine fundTaxAdministrationRoutine;
 
     public void setFundTaxAdministrationRoutine(org.museframework.bian.mutfunadm.dto.bq.FundTaxAdministrationRoutine fundTaxAdministrationRoutine) {

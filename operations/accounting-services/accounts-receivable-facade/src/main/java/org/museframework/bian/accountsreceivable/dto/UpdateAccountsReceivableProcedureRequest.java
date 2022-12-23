@@ -1,8 +1,15 @@
 package org.museframework.bian.accountsreceivable.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class UpdateAccountsReceivableProcedureRequest {
+    @MetaField
     private String accountsreceivableid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.accountsreceivable.dto.cr.AccountsReceivableProcedure accountsReceivableProcedure;
 
     public void setAccountsreceivableid(String accountsreceivableid) {

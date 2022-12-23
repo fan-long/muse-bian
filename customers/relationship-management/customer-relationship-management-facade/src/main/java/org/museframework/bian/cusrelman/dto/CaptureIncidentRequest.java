@@ -1,10 +1,18 @@
 package org.museframework.bian.cusrelman.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class CaptureIncidentRequest {
+    @MetaField
     private String customerrelationshipmanagementid;
 
+    @MetaField
     private String incidentid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cusrelman.dto.bq.Incident incident;
 
     public void setCustomerrelationshipmanagementid(String customerrelationshipmanagementid) {

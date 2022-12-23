@@ -1,10 +1,18 @@
 package org.museframework.bian.carterope.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestCaptureRequest {
+    @MetaField
     private String cardterminaloperationid;
 
+    @MetaField
     private String captureid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.carterope.dto.bq.Capture capture;
 
     public void setCardterminaloperationid(String cardterminaloperationid) {

@@ -2,20 +2,29 @@
 Example: Manage the day to day activities at a bank branch location.*/
 package org.museframework.bian.bralocman.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class BranchLocationManagementOutcome {
     /**/
+    @MetaField
     private String branchLocationManagementPerformanceAnalysis;
 
     /**/
+    @MetaField
     private String branchLocationManagementActivityAnalysis;
 
     /**/
+    @MetaField
     private String branchLocationManagementCharter;
 
     /**/
+    @MetaField
     private String branchLocationManagementTask;
 
     /**/
+    @MetaField
     private String branchLocationManagementProject;
 
     public void setBranchLocationManagementPerformanceAnalysis(String branchLocationManagementPerformanceAnalysis) {

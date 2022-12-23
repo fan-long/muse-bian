@@ -3,30 +3,42 @@
 Examples: Required disclosures*/
 package org.museframework.bian.commissionagreement.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CommissionTerms {
     /*The required status/situation for the terms to applyand or tasks that need to be completed prior to the initiation of the workstep*/
+    @MetaField
     private String commissionTermsPreconditions;
 
     /*Any timing/duration considerations applying to the terms*/
+    @MetaField
     private String commissionTermsTermSchedule;
 
     /*The Employee Commission Agreement 
 specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService commissionTerms;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String commissionTermsServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String commissionTermsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String commissionTermsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String commissionTermsServiceWorkProduct;
 
     /**/
+    @MetaField
     private String commissionTermsServiceName;
 
     public void setCommissionTermsPreconditions(String commissionTermsPreconditions) {

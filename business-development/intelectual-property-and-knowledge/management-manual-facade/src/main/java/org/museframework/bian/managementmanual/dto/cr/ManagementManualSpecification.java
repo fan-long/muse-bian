@@ -2,29 +2,41 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.managementmanual.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ManagementManualSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Management Manual Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
+    @MetaField
     private String managementManualSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
+    @MetaField
     private String managementManualSpecificationSelectedOption;
 
     /*Documentation of Management Manual Specification*/
+    @MetaField
     private String managementManualSpecificationDescription;
 
     /*The version of Management Manual Specification*/
+    @MetaField
     private String managementManualSpecificationVersion;
 
     /*The status of Management Manual Specification*/
+    @MetaField
     private String managementManualSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Management Manual Specification*/
+    @MetaField
     private String managementManualSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Management Manual Specification.*/
+    @MetaField
     private String managementManualSpecificationFeedback;
 
     /*Reference to the party who has provided Management Manual Specification*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object managementManualSpecificationServiceProviderReference;
 
     public void setManagementManualSpecificationParameterType(String managementManualSpecificationParameterType) {

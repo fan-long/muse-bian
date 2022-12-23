@@ -1,10 +1,18 @@
 package org.museframework.bian.cardcapture.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTransactionReversalRequest {
+    @MetaField
     private String cardcaptureid;
 
+    @MetaField
     private String transactionreversalid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.cardcapture.dto.bq.TransactionReversal transactionReversal;
 
     public void setCardcaptureid(String cardcaptureid) {

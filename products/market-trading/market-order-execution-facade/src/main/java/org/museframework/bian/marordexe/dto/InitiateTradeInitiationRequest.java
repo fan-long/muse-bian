@@ -1,10 +1,18 @@
 package org.museframework.bian.marordexe.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class InitiateTradeInitiationRequest {
+    @MetaField
     private String marketorderexecutionid;
 
+    @MetaField
     private String tradeinitiationid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.marordexe.dto.bq.TradeInitiation tradeInitiation;
 
     public void setMarketorderexecutionid(String marketorderexecutionid) {

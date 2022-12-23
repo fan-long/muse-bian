@@ -1,32 +1,45 @@
 /*Handle and assign the day to day activities, capture time, costs and income for an operational unit within Unit Trust Administration. */
 package org.museframework.bian.unitruadm.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class UnitTrustAdministrativePlan extends org.museframework.bian.classes.UnitTrustAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Unit Trust Administrative Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String unitTrustAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Unit Trust Administrative Plan*/
+    @MetaField
     private String unitTrustAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Unit Trust Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement unitTrustAdministrativePlanDuty;
 
     /*Party who is involved in Unit Trust Administrative Plan*/
+    @MetaField
     private String unitTrustAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Unit Trust Administrative Plan*/
+    @MetaField
     private String unitTrustAdministrativePlanBudgetBalance;
 
     /*The subject matter of Unit Trust Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object unitTrustAdministrativePlanSubjectMatter;
 
     /*The type of Unit Trust Administrative Plan*/
+    @MetaField
     private String unitTrustAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Unit Trust Administrative Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan unitTrustAdministrativePlanReference;
 
     /*Documentation of Unit Trust Administrative Plan*/
+    @MetaField
     private String unitTrustAdministrativePlanDescription;
 
     public void setUnitTrustAdministrativePlanBudgetType(String unitTrustAdministrativePlanBudgetType) {

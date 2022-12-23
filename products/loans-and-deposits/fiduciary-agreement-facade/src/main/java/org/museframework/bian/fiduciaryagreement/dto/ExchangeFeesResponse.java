@@ -1,6 +1,12 @@
 package org.museframework.bian.fiduciaryagreement.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class ExchangeFeesResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.fiduciaryagreement.dto.bq.Fees fees;
 
     public void setFees(org.museframework.bian.fiduciaryagreement.dto.bq.Fees fees) {

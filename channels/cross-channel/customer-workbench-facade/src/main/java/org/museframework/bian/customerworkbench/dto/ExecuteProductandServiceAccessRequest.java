@@ -1,10 +1,18 @@
 package org.museframework.bian.customerworkbench.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ExecuteProductandServiceAccessRequest {
+    @MetaField
     private String customerworkbenchid;
 
+    @MetaField
     private String productandserviceaccessid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.customerworkbench.dto.bq.ProductandServiceAccess productandServiceAccess;
 
     public void setCustomerworkbenchid(String customerworkbenchid) {

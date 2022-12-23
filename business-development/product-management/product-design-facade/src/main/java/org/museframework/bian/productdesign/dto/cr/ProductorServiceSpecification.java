@@ -2,41 +2,57 @@
 Example: Create and maintain product designs and analytical models.*/
 package org.museframework.bian.productdesign.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductorServiceSpecification {
     /*The type or category of product or service (e.g. specialized consumer loan, relocation services)*/
+    @MetaField
     private String productandServiceType;
 
     /*A description of the product or service including its main features and target customer*/
+    @MetaField
     private String productandServiceDescription;
 
     /*Maintains the current production deployment configuration of the product or service*/
+    @MetaField
     private String productandServiceSpecificationDeployment;
 
     /*Reference to the business units where the product or service is in use or supported*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the product or service specification deployment for reference*/
+    @MetaField
     private String productandServiceSpecificationDeploymentConfiguration;
 
     /*Reference to the specification deployment task*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productandServiceSpecificationDeploymentTaskReference;
 
     /*Recorded details of a specification deployment task*/
+    @MetaField
     private String productandServiceSpecificationDeploymentTaskRecord;
 
     /*The operational and development status of the product or service specification (e.g. under development, available, in-use under review)*/
+    @MetaField
     private String productandServiceSpecificationStatus;
 
     /*Tracking deployment and product or service usage frequency*/
+    @MetaField
     private String productandServiceSpecificationUsage;
 
     /*Track reporting of the performance/profitability (of specific features ) of the product or service specification*/
+    @MetaField
     private String productandServiceSpecificationImpact;
 
     /*Release version of the available specification plus version history as appropriate*/
+    @MetaField
     private String productandServiceSpecificationVersion;
 
     /*The deployable product or service specification in any appropriate form (including historical versions as appropriate). Note supporting systems and production/operations facilities are handled in parallel as part of a broader deployment*/
+    @MetaField
     private String productandServiceSpecification;
 
     public void setProductandServiceType(String productandServiceType) {

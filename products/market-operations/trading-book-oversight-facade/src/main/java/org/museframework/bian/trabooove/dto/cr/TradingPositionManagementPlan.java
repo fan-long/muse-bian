@@ -1,32 +1,45 @@
 /*Oversee the working of a business unit, assign work, manage against a plan and troubleshoot issues within Trading Book Oversight.*/
 package org.museframework.bian.trabooove.dto.cr;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class TradingPositionManagementPlan extends org.museframework.bian.classes.TradingPositionManagementPlan {
     /*The type of Trading Position Management Plan*/
+    @MetaField
     private String tradingPositionManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Trading Position Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Plan tradingPositionManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Trading Position Management Plan according to the type of resource and/or activity that is budgetted*/
+    @MetaField
     private String tradingPositionManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Trading Position Management Plan*/
+    @MetaField
     private String tradingPositionManagementPlanBudget;
 
     /*The set of management responsibilities defined in Trading Position Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Arrangement tradingPositionManagementPlanDuty;
 
     /*Documentation of Trading Position Management Plan*/
+    @MetaField
     private String tradingPositionManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Trading Position Management Plan*/
+    @MetaField
     private String tradingPositionManagementPlanBudgetBalance;
 
     /*Party who is involved in Trading Position Management Plan*/
+    @MetaField
     private String tradingPositionManagementPlanAssociatedParty;
 
     /*The subject matter of Trading Position Management Plan*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object tradingPositionManagementPlanSubjectMatter;
 
     public void setTradingPositionManagementPlanType(String tradingPositionManagementPlanType) {

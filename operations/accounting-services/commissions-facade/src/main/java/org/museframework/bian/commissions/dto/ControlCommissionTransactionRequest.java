@@ -1,8 +1,15 @@
 package org.museframework.bian.commissions.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class ControlCommissionTransactionRequest {
+    @MetaField
     private String commissionsid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.commissions.dto.cr.CommissionTransaction commissionTransaction;
 
     public void setCommissionsid(String commissionsid) {

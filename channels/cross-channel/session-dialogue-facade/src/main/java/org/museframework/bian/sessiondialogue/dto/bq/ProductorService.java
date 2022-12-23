@@ -3,11 +3,17 @@
 Examples: Invoice generation*/
 package org.museframework.bian.sessiondialogue.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class ProductorService {
     /*Reference to a specific product instance provided by the customer*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The result of the invoked product or service fulfillment service domain (e.g. balance provided, payment initiated, reference details updated)*/
+    @MetaField
     private String productandServiceTaskResult;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

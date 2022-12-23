@@ -2,32 +2,45 @@
 Example: Execute a payment transaction.*/
 package org.museframework.bian.currencyexchange.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class FXTransactionCapture {
     /*The required status/situation prior to the execution of the task*/
+    @MetaField
     private String FXTransactionCapturePreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
+    @MetaField
     private String FXTransactionCaptureTaskSchedule;
 
     /*The Currency Exchange Transaction specific Business Service*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BusinessService FXTransactionCapture;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
+    @MetaField
     private String FXTransactionCapturePostconditions;
 
     /*Reference to the specific business service type*/
+    @MetaField
     private String FXTransactionCaptureFXTransactionCaptureServiceType;
 
     /*Description of the performed business service*/
+    @MetaField
     private String FXTransactionCaptureFXTransactionCaptureServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
+    @MetaField
     private String FXTransactionCaptureFXTransactionCaptureServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
+    @MetaField
     private String FXTransactionCaptureFXTransactionCaptureServiceWorkProduct;
 
     /**/
+    @MetaField
     private String FXTransactionCaptureFXTransactionCaptureServiceName;
 
     public void setFXTransactionCapturePreconditions(String FXTransactionCapturePreconditions) {

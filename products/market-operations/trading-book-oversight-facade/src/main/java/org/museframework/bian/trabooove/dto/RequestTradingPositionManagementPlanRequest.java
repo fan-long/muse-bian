@@ -1,8 +1,15 @@
 package org.museframework.bian.trabooove.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericRequest)
 public class RequestTradingPositionManagementPlanRequest {
+    @MetaField
     private String tradingbookoversightid;
 
+    @MetaField(ref=true)
     private org.museframework.bian.trabooove.dto.cr.TradingPositionManagementPlan tradingPositionManagementPlan;
 
     public void setTradingbookoversightid(String tradingbookoversightid) {

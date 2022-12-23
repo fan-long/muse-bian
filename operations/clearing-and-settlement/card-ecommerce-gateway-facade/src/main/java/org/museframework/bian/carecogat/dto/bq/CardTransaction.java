@@ -3,44 +3,61 @@
 Examples: messages, capture, routines*/
 package org.museframework.bian.carecogat.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class CardTransaction {
     /*Reference to the card product identifier/number*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.BankingProduct productInstanceReference;
 
     /*The card holder as detailed on the plastic*/
+    @MetaField
     private String customerReference;
 
     /*As detailed on the plastic/token*/
+    @MetaField
     private String cardexpirationdate;
 
     /*As detailed on the plastic/token*/
+    @MetaField
     private String cardCVV;
 
     /*Refers to the card holder's issuing bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardIssuingBankReference;
 
     /*Refers to the merchant's acquiring bank*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object merchantAcquiringBankReference;
 
     /*The currency that the transaction is made in*/
+    @MetaField
     private String eCommerceTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
+    @MetaField
     private String eCommerceTransactionAmountType;
 
     /*The amount corresponding to the type*/
+    @MetaField
     private String eCommerceTransactionAmount;
 
     /*Refers to the merchant initiating the transaction*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object eCommerceTransactionMerchantReference;
 
     /*Refers to the point of sale location*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object eCommerceTransactionLocationReference;
 
     /*Details of the transaction (e.g. purchased service/product, purpose)*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object eCommerceTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
+    @MetaField
     private String eCommerceTransactionDateTime;
 
     public void setProductInstanceReference(org.museframework.bian.classes.BankingProduct productInstanceReference) {

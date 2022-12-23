@@ -1,6 +1,12 @@
 package org.museframework.bian.invporpla.dto;
 
+import org.museframework.common.core.MetaDto.DtoType;
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto(DtoType.GenericResponse)
 public class EvaluateInvestmentTermsResponse {
+    @MetaField(ref=true)
     private org.museframework.bian.invporpla.dto.bq.InvestmentTerms investmentTerms;
 
     public void setInvestmentTerms(org.museframework.bian.invporpla.dto.bq.InvestmentTerms investmentTerms) {

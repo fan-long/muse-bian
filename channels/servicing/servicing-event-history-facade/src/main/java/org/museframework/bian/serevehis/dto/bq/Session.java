@@ -3,35 +3,49 @@
 Examples: Customer life event, Servicing event*/
 package org.museframework.bian.serevehis.dto.bq;
 
+import org.museframework.common.core.MetaDto;
+import org.museframework.common.core.MetaField;
+
+@MetaDto
 public class Session extends org.museframework.bian.classes.Session {
     /*The start and duration of the dialogue*/
+    @MetaField
     private String sessionStartEndTime;
 
     /*Reference to the complete contact record for the customer contact*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerContactReference;
 
     /*The type of channel device involved in the session exchange (e.g. web, phone, chat, video, VOIP, face to face at a branch - note there can be concurrent sessions within a single customer contact)*/
+    @MetaField
     private String sessionMechanism;
 
     /*Lists if a specific servicing facility is used during the session)*/
+    @MetaField
     private String servicingFacilityType;
 
     /*The session dialogue log of actions is returned to SD-Contact Handler and added to the contact record*/
+    @MetaField
     private String sessionDialogueRecord;
 
     /*The general type of customer exchange (e.g. verified customer, anonymous contact, topic - used to structure/script dialogue)*/
+    @MetaField
     private String sessionDialogueType;
 
     /*In cases a prompt or script can provided to structure the interaction for self-service and assisted interactions*/
+    @MetaField
     private String sessionDialogueScript;
 
     /*Reference to a dialogue log that is built up*/
+    @MetaField(ref=true)
     private org.museframework.bian.classes.Object sessionDialogueLogReference;
 
     /*The dialogue log, used for training and root cause analysis etc.  (e.g. click-stream, video/audio recording)*/
+    @MetaField
     private String sessionDialogueLog;
 
     /*The outcome of the dialogue (e.g. customer satisfied, on-ward routing, hang-up)*/
+    @MetaField
     private String sessionDialogueResult;
 
     public void setSessionStartEndTime(String sessionStartEndTime) {
