@@ -4,8 +4,9 @@ package org.museframework.bian.brandmanagement.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BrandManagementPlan
 @MetaDto
-public class BrandManagementPlan extends org.museframework.bian.classes.BrandManagementPlan {
+public class BrandManagementPlan {
     /*Definition of the brand, including how it is to be represented in different media and contexts*/
     @MetaField
     private String brandDefinition;

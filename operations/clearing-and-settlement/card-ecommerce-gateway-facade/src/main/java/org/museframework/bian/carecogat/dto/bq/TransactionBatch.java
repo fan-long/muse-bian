@@ -6,8 +6,9 @@ package org.museframework.bian.carecogat.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TransactionBatch
 @MetaDto
-public class TransactionBatch extends org.museframework.bian.classes.TransactionBatch {
+public class TransactionBatch {
     /*Significant dates and times associated with the batch transaction*/
     @MetaField
     private String eCommerceBatchTransactionDateTime;

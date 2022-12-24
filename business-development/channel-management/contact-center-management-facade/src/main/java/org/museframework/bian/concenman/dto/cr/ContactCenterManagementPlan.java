@@ -4,8 +4,9 @@ package org.museframework.bian.concenman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ContactCenterManagementPlan
 @MetaDto
-public class ContactCenterManagementPlan extends org.museframework.bian.classes.ContactCenterManagementPlan {
+public class ContactCenterManagementPlan {
     /*The time period addressed by the management plan (typically this will include setting the default daily operating goals and arrangements for the contact center that is periodically updated)*/
     @MetaField
     private String contactCenterManagementPlanPeriod;

@@ -5,8 +5,9 @@ package org.museframework.bian.proexpsalsup.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.SalesSpecialistSupportAdministrativePlan
 @MetaDto
-public class SalesSpecialistSupportAdministrativePlan extends org.museframework.bian.classes.SalesSpecialistSupportAdministrativePlan {
+public class SalesSpecialistSupportAdministrativePlan {
     /*Maintains the allocation records of available sales specialist service resources. This includes all past and future booking commitments*/
     @MetaField
     private String salesSpecialistSupportResourceAllocationServiceSchedule;

@@ -4,8 +4,9 @@ package org.museframework.bian.fininsrefdatman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialInstrumentDirectoryEntry
 @MetaDto
-public class FinancialInstrumentDirectoryEntry extends org.museframework.bian.classes.FinancialInstrumentDirectoryEntry {
+public class FinancialInstrumentDirectoryEntry {
     /*Documentation of Financial Instrument Directory Entry*/
     @MetaField
     private String financialInstrumentDirectoryEntryDescription;

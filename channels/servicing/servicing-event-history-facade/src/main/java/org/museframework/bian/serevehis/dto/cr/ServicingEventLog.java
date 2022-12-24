@@ -4,8 +4,9 @@ package org.museframework.bian.serevehis.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ServicingEventLog
 @MetaDto
-public class ServicingEventLog extends org.museframework.bian.classes.ServicingEventLog {
+public class ServicingEventLog {
     /*The servicing position for the log (if the log is organized to track specific positions)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object servicingPositionReference;

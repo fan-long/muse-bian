@@ -5,8 +5,9 @@ package org.museframework.bian.commissions.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CommissionTransaction
 @MetaDto
-public class CommissionTransaction extends org.museframework.bian.classes.CommissionTransaction {
+public class CommissionTransaction {
     /*A Classification value that distinguishes between business service transaction within Commission Transaction*/
     @MetaField
     private String commissionTransactionParameterType;

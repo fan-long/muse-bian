@@ -5,8 +5,9 @@ package org.museframework.bian.colallman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CollateralAssetAllocation
 @MetaDto
-public class CollateralAssetAllocation extends org.museframework.bian.classes.CollateralAssetAllocation {
+public class CollateralAssetAllocation {
     /*Reference to the title owner of the collateral asset*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

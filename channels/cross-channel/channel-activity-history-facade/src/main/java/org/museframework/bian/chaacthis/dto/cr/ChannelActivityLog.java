@@ -4,8 +4,9 @@ package org.museframework.bian.chaacthis.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ChannelActivityLog
 @MetaDto
-public class ChannelActivityLog extends org.museframework.bian.classes.ChannelActivityLog {
+public class ChannelActivityLog {
     /*Reference to the customer being logged*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

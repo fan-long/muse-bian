@@ -6,8 +6,9 @@ package org.museframework.bian.cusevehis.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Fraud
 @MetaDto
-public class Fraud extends org.museframework.bian.classes.Fraud {
+public class Fraud {
     /*The type of event  (e.g. stolen card, disputed transaction)*/
     @MetaField
     private String customerFraudCaseEventType;

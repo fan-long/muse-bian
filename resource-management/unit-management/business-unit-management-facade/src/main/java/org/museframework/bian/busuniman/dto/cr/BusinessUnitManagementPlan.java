@@ -4,8 +4,9 @@ package org.museframework.bian.busuniman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BusinessUnitManagementPlan
 @MetaDto
-public class BusinessUnitManagementPlan extends org.museframework.bian.classes.BusinessUnitManagementPlan {
+public class BusinessUnitManagementPlan {
     /*The time period addressed by the management plan (typically this will include setting the default daily operating goals and arrangements for the business unit that is periodically updated)*/
     @MetaField
     private String businessUnitManagementPlanPeriod;

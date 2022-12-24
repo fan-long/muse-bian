@@ -5,8 +5,9 @@ package org.museframework.bian.issdevadm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.IssuedDeviceAllocation
 @MetaDto
-public class IssuedDeviceAllocation extends org.museframework.bian.classes.IssuedDeviceAllocation {
+public class IssuedDeviceAllocation {
     /*Reference to the holder of the issued device*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

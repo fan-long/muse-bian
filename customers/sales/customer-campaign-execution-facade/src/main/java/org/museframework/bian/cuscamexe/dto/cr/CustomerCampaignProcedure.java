@@ -4,8 +4,9 @@ package org.museframework.bian.cuscamexe.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerCampaignProcedure
 @MetaDto
-public class CustomerCampaignProcedure extends org.museframework.bian.classes.CustomerCampaignProcedure {
+public class CustomerCampaignProcedure {
     /*The type or category of customer campaign (e.g. cross-sell, up-sell, retention)*/
     @MetaField
     private String customerCampaignType;

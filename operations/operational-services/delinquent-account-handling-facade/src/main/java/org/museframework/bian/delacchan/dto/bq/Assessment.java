@@ -6,8 +6,9 @@ package org.museframework.bian.delacchan.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Assessment
 @MetaDto
-public class Assessment extends org.museframework.bian.classes.Assessment {
+public class Assessment {
     /*The outcome of the assessment of the delinquent product account based on billing/payment and transaction history*/
     @MetaField
     private String delinquentAccountAssessmentWorkProduct;

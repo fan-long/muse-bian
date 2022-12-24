@@ -7,8 +7,9 @@ package org.museframework.bian.competitoranalysis.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CompetitorAnalysis
 @MetaDto
-public class CompetitorAnalysis extends org.museframework.bian.classes.CompetitorAnalysis {
+public class CompetitorAnalysis {
     /*The type of research view provided by the research (e.g. pricing comparison)*/
     @MetaField
     private String competitorAnalysisType;

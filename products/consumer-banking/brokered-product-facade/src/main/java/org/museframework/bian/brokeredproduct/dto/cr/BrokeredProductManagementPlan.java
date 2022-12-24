@@ -4,8 +4,9 @@ package org.museframework.bian.brokeredproduct.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BrokeredProductManagementPlan
 @MetaDto
-public class BrokeredProductManagementPlan extends org.museframework.bian.classes.BrokeredProductManagementPlan {
+public class BrokeredProductManagementPlan {
     /*The type of Brokered Product Management Plan*/
     @MetaField
     private String brokeredProductManagementPlanType;

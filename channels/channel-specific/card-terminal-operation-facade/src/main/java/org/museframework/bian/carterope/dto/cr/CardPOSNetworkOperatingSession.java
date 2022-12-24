@@ -4,8 +4,9 @@ package org.museframework.bian.carterope.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CardPOSNetworkOperatingSession
 @MetaDto
-public class CardPOSNetworkOperatingSession extends org.museframework.bian.classes.CardPOSNetworkOperatingSession {
+public class CardPOSNetworkOperatingSession {
     /*Defines the service availability through the session*/
     @MetaField
     private String cardPOSTerminalOperatingSchedule;

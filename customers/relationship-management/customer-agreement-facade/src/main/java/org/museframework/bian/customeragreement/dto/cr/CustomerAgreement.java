@@ -7,8 +7,9 @@ package org.museframework.bian.customeragreement.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerAgreement
 @MetaDto
-public class CustomerAgreement extends org.museframework.bian.classes.CustomerAgreement {
+public class CustomerAgreement {
     /*Reference to the associated customer (can currently be a person or a company)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

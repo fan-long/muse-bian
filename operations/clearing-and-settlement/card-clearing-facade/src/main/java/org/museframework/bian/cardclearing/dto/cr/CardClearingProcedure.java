@@ -4,8 +4,9 @@ package org.museframework.bian.cardclearing.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CardClearingProcedure
 @MetaDto
-public class CardClearingProcedure extends org.museframework.bian.classes.CardClearingProcedure {
+public class CardClearingProcedure {
     /*Refers to the card network*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object networkReference;

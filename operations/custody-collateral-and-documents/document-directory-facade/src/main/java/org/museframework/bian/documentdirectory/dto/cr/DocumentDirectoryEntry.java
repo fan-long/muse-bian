@@ -4,8 +4,9 @@ package org.museframework.bian.documentdirectory.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.DocumentDirectoryEntry
 @MetaDto
-public class DocumentDirectoryEntry extends org.museframework.bian.classes.DocumentDirectoryEntry {
+public class DocumentDirectoryEntry {
     /*Descriptive name of the document*/
     @MetaField
     private String documentName;

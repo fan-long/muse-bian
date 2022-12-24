@@ -4,8 +4,9 @@ package org.museframework.bian.secposkee.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.SecuritiesPositionLog
 @MetaDto
-public class SecuritiesPositionLog extends org.museframework.bian.classes.SecuritiesPositionLog {
+public class SecuritiesPositionLog {
     /*The type of securities transaction log (e.g. equities, derivatives, all)*/
     @MetaField
     private String securitiesTransactionLogType;

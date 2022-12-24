@@ -4,8 +4,9 @@ package org.museframework.bian.paymentinstruction.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PaymentInstructionProcedure
 @MetaDto
-public class PaymentInstructionProcedure extends org.museframework.bian.classes.PaymentInstructionProcedure {
+public class PaymentInstructionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Payment Instruction Procedure*/
     @MetaField
     private String paymentInstructionProcedureParameterType;

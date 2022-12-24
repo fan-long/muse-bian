@@ -4,8 +4,9 @@ package org.museframework.bian.operationalgateway.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.OperationalGatewayOperatingSession
 @MetaDto
-public class OperationalGatewayOperatingSession extends org.museframework.bian.classes.OperationalGatewayOperatingSession {
+public class OperationalGatewayOperatingSession {
     /*Timetable to operate Operational Gateway Operating Session*/
     @MetaField
     private String operationalGatewayOperatingSessionSchedule;

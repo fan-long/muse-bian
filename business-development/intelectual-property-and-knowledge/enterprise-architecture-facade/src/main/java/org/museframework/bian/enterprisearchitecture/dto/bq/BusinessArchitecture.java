@@ -5,8 +5,9 @@ package org.museframework.bian.enterprisearchitecture.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BusinessArchitecture
 @MetaDto
-public class BusinessArchitecture extends org.museframework.bian.classes.BusinessArchitecture {
+public class BusinessArchitecture {
     /*The required status/situation before the specification aspect can be defined*/
     @MetaField
     private String businessArchitecturePreconditions;

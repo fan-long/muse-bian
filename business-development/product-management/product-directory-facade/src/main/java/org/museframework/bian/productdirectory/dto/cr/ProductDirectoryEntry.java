@@ -4,8 +4,9 @@ package org.museframework.bian.productdirectory.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProductDirectoryEntry
 @MetaDto
-public class ProductDirectoryEntry extends org.museframework.bian.classes.ProductDirectoryEntry {
+public class ProductDirectoryEntry {
     /*The current version of the product referenced in the directory*/
     @MetaField
     private String productVersion;

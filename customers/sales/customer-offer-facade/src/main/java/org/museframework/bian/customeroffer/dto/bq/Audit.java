@@ -4,8 +4,9 @@ package org.museframework.bian.customeroffer.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Audit
 @MetaDto
-public class Audit extends org.museframework.bian.classes.Audit {
+public class Audit {
     /*The required compliance check*/
     @MetaField
     private String guidelineComplianceCheckType;

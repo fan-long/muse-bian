@@ -4,8 +4,9 @@ package org.museframework.bian.customersurveys.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerSurveyProcedure
 @MetaDto
-public class CustomerSurveyProcedure extends org.museframework.bian.classes.CustomerSurveyProcedure {
+public class CustomerSurveyProcedure {
     /*The type or category of customer survey (e.g. questionnaire, in context solicitation, focus group)*/
     @MetaField
     private String customerSurveyType;

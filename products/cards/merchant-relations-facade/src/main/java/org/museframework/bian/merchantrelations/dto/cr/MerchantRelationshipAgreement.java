@@ -6,8 +6,9 @@ package org.museframework.bian.merchantrelations.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.MerchantRelationshipAgreement
 @MetaDto
-public class MerchantRelationshipAgreement extends org.museframework.bian.classes.MerchantRelationshipAgreement {
+public class MerchantRelationshipAgreement {
     /*A Classification value that distinguishes between Options defined within Merchant Relationship Agreement*/
     @MetaField
     private String merchantRelationshipAgreementParameterType;

@@ -5,8 +5,9 @@ package org.museframework.bian.assandliaman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.AssetAndLiabilityPortfolioStrategy
 @MetaDto
-public class AssetAndLiabilityPortfolioStrategy extends org.museframework.bian.classes.AssetAndLiabilityPortfolioStrategy {
+public class AssetAndLiabilityPortfolioStrategy {
     /*The consolidated book of the bank's loans and deposits*/
     @MetaField
     private String assetAndLiabilityBalanceSheet;

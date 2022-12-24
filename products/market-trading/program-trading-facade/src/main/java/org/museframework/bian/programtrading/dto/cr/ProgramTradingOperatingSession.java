@@ -4,8 +4,9 @@ package org.museframework.bian.programtrading.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProgramTradingOperatingSession
 @MetaDto
-public class ProgramTradingOperatingSession extends org.museframework.bian.classes.ProgramTradingOperatingSession {
+public class ProgramTradingOperatingSession {
     /*Timetable to operate Program Trading Operating Session*/
     @MetaField
     private String programTradingOperatingSessionSchedule;

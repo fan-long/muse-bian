@@ -7,8 +7,9 @@ package org.museframework.bian.chaactana.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ChannelActivityAnalysis
 @MetaDto
-public class ChannelActivityAnalysis extends org.museframework.bian.classes.ChannelActivityAnalysis {
+public class ChannelActivityAnalysis {
     /*The type of channel for which the analysis is performed*/
     @MetaField
     private String channelType;

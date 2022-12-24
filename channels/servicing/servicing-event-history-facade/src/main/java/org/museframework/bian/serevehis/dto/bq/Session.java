@@ -6,8 +6,9 @@ package org.museframework.bian.serevehis.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Session
 @MetaDto
-public class Session extends org.museframework.bian.classes.Session {
+public class Session {
     /*The start and duration of the dialogue*/
     @MetaField
     private String sessionStartEndTime;

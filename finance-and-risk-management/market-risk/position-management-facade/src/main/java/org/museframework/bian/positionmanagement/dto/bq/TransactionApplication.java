@@ -6,8 +6,9 @@ package org.museframework.bian.positionmanagement.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TransactionApplication
 @MetaDto
-public class TransactionApplication extends org.museframework.bian.classes.TransactionApplication {
+public class TransactionApplication {
     /*A trial transaction that will impacts a managed position)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object transactionReference;

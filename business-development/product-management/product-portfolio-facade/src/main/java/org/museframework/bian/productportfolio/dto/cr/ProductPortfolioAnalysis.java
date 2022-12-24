@@ -7,8 +7,9 @@ package org.museframework.bian.productportfolio.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProductPortfolioAnalysis
 @MetaDto
-public class ProductPortfolioAnalysis extends org.museframework.bian.classes.ProductPortfolioAnalysis {
+public class ProductPortfolioAnalysis {
     /*Definition of the product portfolio*/
     @MetaField
     private String productPortfolioMake_up;

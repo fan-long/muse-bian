@@ -4,8 +4,9 @@ package org.museframework.bian.finmarres.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialMarketResearchDirectoryEntry
 @MetaDto
-public class FinancialMarketResearchDirectoryEntry extends org.museframework.bian.classes.FinancialMarketResearchDirectoryEntry {
+public class FinancialMarketResearchDirectoryEntry {
     /*The type of financial market research view provided by the research (e.g. common stock comparison)*/
     @MetaField
     private String financialMarketResearchViewpointType;

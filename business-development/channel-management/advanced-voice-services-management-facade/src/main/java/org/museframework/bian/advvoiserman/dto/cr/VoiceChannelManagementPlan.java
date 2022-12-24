@@ -4,8 +4,9 @@ package org.museframework.bian.advvoiserman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.VoiceChannelManagementPlan
 @MetaDto
-public class VoiceChannelManagementPlan extends org.museframework.bian.classes.VoiceChannelManagementPlan {
+public class VoiceChannelManagementPlan {
     /*The time period addressed by the management plan*/
     @MetaField
     private String VChannelManagementPlanPeriod;

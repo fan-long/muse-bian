@@ -4,11 +4,12 @@ package org.museframework.bian.investmentaccount.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CorporateAction
 @MetaDto
-public class CorporateAction extends org.museframework.bian.classes.CorporateAction {
+public class CorporateAction {
     /*The type of corporate action that can be applied*/
-//    @MetaField
-//    private String corporateActionType;
+    @MetaField
+    private String corporateActionType;
 
     /*The processing schedule for applying the type of corporate action to the investment account*/
     @MetaField
@@ -46,13 +47,13 @@ public class CorporateAction extends org.museframework.bian.classes.CorporateAct
     @MetaField
     private String corporateActionTransactionDate;
 
-//    public void setCorporateActionType(String corporateActionType) {
-//        this.corporateActionType = corporateActionType;
-//    }
-//
-//    public String getCorporateActionType() {
-//        return corporateActionType;
-//    }
+    public void setCorporateActionType(String corporateActionType) {
+        this.corporateActionType = corporateActionType;
+    }
+
+    public String getCorporateActionType() {
+        return corporateActionType;
+    }
 
     public void setCorporateActionApplicationSchedule(String corporateActionApplicationSchedule) {
         this.corporateActionApplicationSchedule = corporateActionApplicationSchedule;

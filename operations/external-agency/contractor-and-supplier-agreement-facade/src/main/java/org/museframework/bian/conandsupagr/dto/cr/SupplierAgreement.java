@@ -6,8 +6,9 @@ package org.museframework.bian.conandsupagr.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.SupplierAgreement
 @MetaDto
-public class SupplierAgreement extends org.museframework.bian.classes.SupplierAgreement {
+public class SupplierAgreement {
     /*A Classification value that distinguishes between Options defined within Supplier Agreement*/
     @MetaField
     private String supplierAgreementParameterType;

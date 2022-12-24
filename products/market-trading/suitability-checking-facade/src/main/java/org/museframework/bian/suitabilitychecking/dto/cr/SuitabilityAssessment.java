@@ -4,8 +4,9 @@ package org.museframework.bian.suitabilitychecking.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.SuitabilityAssessment
 @MetaDto
-public class SuitabilityAssessment extends org.museframework.bian.classes.SuitabilityAssessment {
+public class SuitabilityAssessment {
     /*Business unit submitting the proposed transaction for review*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;

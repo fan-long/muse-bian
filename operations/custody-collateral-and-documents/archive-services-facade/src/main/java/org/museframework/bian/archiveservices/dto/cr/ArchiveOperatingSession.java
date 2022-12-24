@@ -4,8 +4,9 @@ package org.museframework.bian.archiveservices.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ArchiveOperatingSession
 @MetaDto
-public class ArchiveOperatingSession extends org.museframework.bian.classes.ArchiveOperatingSession {
+public class ArchiveOperatingSession {
     /*Timetable to operate Archive Operating Session*/
     @MetaField
     private String archiveOperatingSessionSchedule;

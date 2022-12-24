@@ -4,8 +4,9 @@ package org.museframework.bian.dirdebman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.DirectDebitMandateDirectoryEntry
 @MetaDto
-public class DirectDebitMandateDirectoryEntry extends org.museframework.bian.classes.DirectDebitMandateDirectoryEntry {
+public class DirectDebitMandateDirectoryEntry {
     /*Refers to the corporate entity related to this specific collection of customer mandates*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object mandatedCustomerReference;

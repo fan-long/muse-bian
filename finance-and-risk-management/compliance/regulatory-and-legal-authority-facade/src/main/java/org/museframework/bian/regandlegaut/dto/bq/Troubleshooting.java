@@ -5,8 +5,9 @@ package org.museframework.bian.regandlegaut.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Troubleshooting
 @MetaDto
-public class Troubleshooting extends org.museframework.bian.classes.Troubleshooting {
+public class Troubleshooting {
     /*The required status/situation before the duty/obligation can be met*/
     @MetaField
     private String troubleshootingPreconditions;

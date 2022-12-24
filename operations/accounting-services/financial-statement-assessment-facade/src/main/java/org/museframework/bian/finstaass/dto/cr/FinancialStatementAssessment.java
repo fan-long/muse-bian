@@ -4,8 +4,9 @@ package org.museframework.bian.finstaass.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialStatementAssessment
 @MetaDto
-public class FinancialStatementAssessment extends org.museframework.bian.classes.FinancialStatementAssessment {
+public class FinancialStatementAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Financial Statement Assessment .*/
     @MetaField
     private String financialStatementAssessmentParameterType;
@@ -15,8 +16,8 @@ public class FinancialStatementAssessment extends org.museframework.bian.classes
     private org.museframework.bian.classes.Service financialStatementAssessmentSelectedOption;
 
     /*The type of Financial Statement Assessment*/
-//    @MetaField
-//    private String financialStatementAssessmentType;
+    @MetaField
+    private String financialStatementAssessmentType;
 
     /*An unique reference to an item or an occurrence of Financial Statement Assessment*/
     @MetaField(ref=true)
@@ -66,13 +67,13 @@ public class FinancialStatementAssessment extends org.museframework.bian.classes
         return financialStatementAssessmentSelectedOption;
     }
 
-//    public void setFinancialStatementAssessmentType(String financialStatementAssessmentType) {
-//        this.financialStatementAssessmentType = financialStatementAssessmentType;
-//    }
-//
-//    public String getFinancialStatementAssessmentType() {
-//        return financialStatementAssessmentType;
-//    }
+    public void setFinancialStatementAssessmentType(String financialStatementAssessmentType) {
+        this.financialStatementAssessmentType = financialStatementAssessmentType;
+    }
+
+    public String getFinancialStatementAssessmentType() {
+        return financialStatementAssessmentType;
+    }
 
     public void setFinancialStatementAssessmentReference(org.museframework.bian.classes.Assessment financialStatementAssessmentReference) {
         this.financialStatementAssessmentReference = financialStatementAssessmentReference;

@@ -4,8 +4,9 @@ package org.museframework.bian.payraiope.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PaymentRailOperatingSession
 @MetaDto
-public class PaymentRailOperatingSession extends org.museframework.bian.classes.PaymentRailOperatingSession {
+public class PaymentRailOperatingSession {
     /*Timetable to operate Payment Rail Operating Session*/
     @MetaField
     private String paymentRailOperatingSessionSchedule;

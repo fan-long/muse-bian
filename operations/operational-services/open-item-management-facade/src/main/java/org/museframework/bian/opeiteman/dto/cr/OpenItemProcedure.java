@@ -4,8 +4,9 @@ package org.museframework.bian.opeiteman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.OpenItemProcedure
 @MetaDto
-public class OpenItemProcedure extends org.museframework.bian.classes.OpenItemProcedure {
+public class OpenItemProcedure {
     /*The type of open item, typically an overdue payment*/
     @MetaField
     private String openItemType;

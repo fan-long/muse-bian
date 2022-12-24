@@ -4,8 +4,9 @@ package org.museframework.bian.corporateaction.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CorporateActionProcedure
 @MetaDto
-public class CorporateActionProcedure extends org.museframework.bian.classes.CorporateActionProcedure {
+public class CorporateActionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Corporate Action Procedure*/
     @MetaField
     private String corporateActionProcedureParameterType;

@@ -4,8 +4,9 @@ package org.museframework.bian.documentservices.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.DocumentServiceProcedure
 @MetaDto
-public class DocumentServiceProcedure extends org.museframework.bian.classes.DocumentServiceProcedure {
+public class DocumentServiceProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Document Service Procedure*/
     @MetaField
     private String documentServiceProcedureParameterType;

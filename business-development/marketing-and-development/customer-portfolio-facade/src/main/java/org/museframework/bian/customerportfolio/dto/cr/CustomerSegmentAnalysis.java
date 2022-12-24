@@ -7,8 +7,9 @@ package org.museframework.bian.customerportfolio.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerSegmentAnalysis
 @MetaDto
-public class CustomerSegmentAnalysis extends org.museframework.bian.classes.CustomerSegmentAnalysis {
+public class CustomerSegmentAnalysis {
     /*The descriptive name of the bank defined customer segment*/
     @MetaField
     private String customerSegmentType;

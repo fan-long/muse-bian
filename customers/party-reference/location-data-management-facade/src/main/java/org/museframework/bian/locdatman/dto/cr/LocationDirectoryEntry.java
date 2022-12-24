@@ -4,8 +4,9 @@ package org.museframework.bian.locdatman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.LocationDirectoryEntry
 @MetaDto
-public class LocationDirectoryEntry extends org.museframework.bian.classes.LocationDirectoryEntry {
+public class LocationDirectoryEntry {
     /*Reference to associated location (can be a physical or electronic location)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Location locationReference;

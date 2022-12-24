@@ -4,8 +4,9 @@ package org.museframework.bian.stolenandrep.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.RepoTransaction
 @MetaDto
-public class RepoTransaction extends org.museframework.bian.classes.RepoTransaction {
+public class RepoTransaction {
     /*A Classification value that distinguishes between business service transaction within Repo Transaction*/
     @MetaField
     private String repoTransactionParameterType;

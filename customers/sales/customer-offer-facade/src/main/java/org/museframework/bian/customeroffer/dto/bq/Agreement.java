@@ -4,8 +4,9 @@ package org.museframework.bian.customeroffer.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Agreement
 @MetaDto
-public class Agreement extends org.museframework.bian.classes.Agreement {
+public class Agreement {
     /*Reference to the associated master agreement that is accessed during the offer procedure*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerAgreementInstanceReference;

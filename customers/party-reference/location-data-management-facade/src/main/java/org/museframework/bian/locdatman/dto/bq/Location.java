@@ -9,15 +9,16 @@ package org.museframework.bian.locdatman.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Location
 @MetaDto
-public class Location extends org.museframework.bian.classes.Location {
+public class Location {
     /*Type of location (e.g. building, point of interest, virtual location/device)*/
-//    @MetaField
-//    private String locationType;
+    @MetaField
+    private String locationType;
 
     /*Reference address for the location (e.g. postal address, email, coordinates)*/
-//    @MetaField
-//    private String locationAddress;
+    @MetaField
+    private String locationAddress;
 
     /*The coordinates in a form that can be used to match tracked parties to the location (e.g. for real-time marketing)*/
     @MetaField
@@ -43,21 +44,21 @@ public class Location extends org.museframework.bian.classes.Location {
     @MetaField
     private String locationNeighborhoodType;
 
-//    public void setLocationType(String locationType) {
-//        this.locationType = locationType;
-//    }
-//
-//    public String getLocationType() {
-//        return locationType;
-//    }
+    public void setLocationType(String locationType) {
+        this.locationType = locationType;
+    }
 
-//    public void setLocationAddress(String locationAddress) {
-//        this.locationAddress = locationAddress;
-//    }
-//
-//    public String getLocationAddress() {
-//        return locationAddress;
-//    }
+    public String getLocationType() {
+        return locationType;
+    }
+
+    public void setLocationAddress(String locationAddress) {
+        this.locationAddress = locationAddress;
+    }
+
+    public String getLocationAddress() {
+        return locationAddress;
+    }
 
     public void setLocationCoordinates(String locationCoordinates) {
         this.locationCoordinates = locationCoordinates;

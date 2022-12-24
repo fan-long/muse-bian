@@ -5,8 +5,9 @@ package org.museframework.bian.chequeprocessing.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ChequeProcessingOperatingSession
 @MetaDto
-public class ChequeProcessingOperatingSession extends org.museframework.bian.classes.ChequeProcessingOperatingSession {
+public class ChequeProcessingOperatingSession {
     /*The timetable of Cheque Processing Operating Session*/
     @MetaField
     private String chequeProcessingOperatingSessionSchedule;

@@ -5,8 +5,9 @@ package org.museframework.bian.intpropor.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.IntellectualPropertyAdministrativePlan
 @MetaDto
-public class IntellectualPropertyAdministrativePlan extends org.museframework.bian.classes.IntellectualPropertyAdministrativePlan {
+public class IntellectualPropertyAdministrativePlan {
     /*Reference to the intellectual property asset item*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object intellectualPropertyAssetReference;

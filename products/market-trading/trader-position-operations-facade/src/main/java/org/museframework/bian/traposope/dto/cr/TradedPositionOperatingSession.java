@@ -4,8 +4,9 @@ package org.museframework.bian.traposope.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TradedPositionOperatingSession
 @MetaDto
-public class TradedPositionOperatingSession extends org.museframework.bian.classes.TradedPositionOperatingSession {
+public class TradedPositionOperatingSession {
     /*Timetable to operate Traded Position Operating Session*/
     @MetaField
     private String tradedPositionOperatingSessionSchedule;

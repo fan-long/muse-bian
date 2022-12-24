@@ -4,8 +4,9 @@ package org.museframework.bian.meracqfac.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Clearing
 @MetaDto
-public class Clearing extends org.museframework.bian.classes.Clearing {
+public class Clearing {
     /*Reference to the card transaction as recorded by issuer and/or acquirer*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionRecordReference;

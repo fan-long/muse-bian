@@ -5,8 +5,9 @@ package org.museframework.bian.compliancereporting.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ComplianceReportingAdministrativePlan
 @MetaDto
-public class ComplianceReportingAdministrativePlan extends org.museframework.bian.classes.ComplianceReportingAdministrativePlan {
+public class ComplianceReportingAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Compliance Reporting Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String complianceReportingAdministrativePlanBudgetType;

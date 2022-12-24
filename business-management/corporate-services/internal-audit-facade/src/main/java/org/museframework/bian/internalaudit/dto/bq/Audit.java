@@ -6,8 +6,9 @@ package org.museframework.bian.internalaudit.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Audit
 @MetaDto
-public class Audit extends org.museframework.bian.classes.Audit {
+public class Audit {
     /*The required status/situation before the test can be applied*/
     @MetaField
     private String auditPreconditions;

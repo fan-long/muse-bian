@@ -4,8 +4,9 @@ package org.museframework.bian.advertising.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.AdvertisingCampaignManagementPlan
 @MetaDto
-public class AdvertisingCampaignManagementPlan extends org.museframework.bian.classes.AdvertisingCampaignManagementPlan {
+public class AdvertisingCampaignManagementPlan {
     /*The collection of advertising campaigns that is used to assess performance and coverage and direct development and execution activity*/
     @MetaField
     private String advertisingCampaignPortfolio;

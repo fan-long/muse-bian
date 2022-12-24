@@ -6,8 +6,9 @@ package org.museframework.bian.cardauthorization.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Authentication
 @MetaDto
-public class Authentication extends org.museframework.bian.classes.Authentication {
+public class Authentication {
     /*The card account number/identification associated with the card transaction - matched to Issuer's card account instance*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardTransactionProductInstanceReference;

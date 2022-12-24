@@ -6,8 +6,9 @@ package org.museframework.bian.customercase.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Analysis
 @MetaDto
-public class Analysis extends org.museframework.bian.classes.Analysis {
+public class Analysis {
     /*The contact record contains all details of the initial case submission*/
     @MetaField
     private String customerContactRecord;

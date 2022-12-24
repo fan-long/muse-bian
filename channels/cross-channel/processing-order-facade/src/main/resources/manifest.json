@@ -1,1 +1,1 @@
-{"Facade":["org.museframework.bian.processingorder.CrProcessingOrderProcedure"],"OtherJava":["org.museframework.bian.processingorder.dto.cr.ProcessingOrderProcedure"]}
+{"Facade":["org.museframework.bian.processingorder.CrProcessingOrderProcedure"],"Dto":["org.museframework.bian.processingorder.dto.cr.ProcessingOrderProcedure"]}

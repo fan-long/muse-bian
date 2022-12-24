@@ -4,8 +4,9 @@ package org.museframework.bian.paymentexecution.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PaymentExecutionProcedure
 @MetaDto
-public class PaymentExecutionProcedure extends org.museframework.bian.classes.PaymentExecutionProcedure {
+public class PaymentExecutionProcedure {
     /*Reference to the ACH financial gateway service used to execute payments*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object ACHAccessServiceSessionReference;

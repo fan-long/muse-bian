@@ -5,8 +5,9 @@ package org.museframework.bian.accountsreceivable.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.AccountsReceivableProcedure
 @MetaDto
-public class AccountsReceivableProcedure extends org.museframework.bian.classes.AccountsReceivableProcedure {
+public class AccountsReceivableProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Accounts Receivable Procedure*/
     @MetaField
     private String accountsReceivableProcedureParameterType;

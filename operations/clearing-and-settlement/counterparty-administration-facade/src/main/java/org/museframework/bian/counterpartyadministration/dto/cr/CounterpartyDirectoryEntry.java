@@ -4,8 +4,9 @@ package org.museframework.bian.counterpartyadministration.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CounterpartyDirectoryEntry
 @MetaDto
-public class CounterpartyDirectoryEntry extends org.museframework.bian.classes.CounterpartyDirectoryEntry {
+public class CounterpartyDirectoryEntry {
     /*Documentation of Counterparty Directory Entry*/
     @MetaField
     private String counterpartyDirectoryEntryDescription;

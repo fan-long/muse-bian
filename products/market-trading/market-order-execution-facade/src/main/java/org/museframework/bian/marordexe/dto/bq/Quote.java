@@ -4,8 +4,9 @@ package org.museframework.bian.marordexe.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Quote
 @MetaDto
-public class Quote extends org.museframework.bian.classes.Quote {
+public class Quote {
     /*The security for which the quote is provided*/
     @MetaField
     private String quoteSecurityType;

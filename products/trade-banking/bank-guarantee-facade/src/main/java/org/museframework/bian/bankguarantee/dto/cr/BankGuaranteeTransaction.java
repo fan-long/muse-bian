@@ -4,8 +4,9 @@ package org.museframework.bian.bankguarantee.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BankGuaranteeTransaction
 @MetaDto
-public class BankGuaranteeTransaction extends org.museframework.bian.classes.BankGuaranteeTransaction {
+public class BankGuaranteeTransaction {
     /*A Classification value that distinguishes between business service transaction within Bank Guarantee Transaction*/
     @MetaField
     private String bankGuaranteeTransactionParameterType;

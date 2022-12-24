@@ -4,8 +4,9 @@ package org.museframework.bian.mutfunadm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.MutualFundAdministrativePlan
 @MetaDto
-public class MutualFundAdministrativePlan extends org.museframework.bian.classes.MutualFundAdministrativePlan {
+public class MutualFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Mutual Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String mutualFundAdministrativePlanBudgetType;

@@ -5,8 +5,9 @@ package org.museframework.bian.currencyexchange.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CurrencyExchangeTransaction
 @MetaDto
-public class CurrencyExchangeTransaction extends org.museframework.bian.classes.CurrencyExchangeTransaction {
+public class CurrencyExchangeTransaction {
     /*A Classification value that distinguishes between business service transaction within Currency Exchange Transaction*/
     @MetaField
     private String currencyExchangeTransactionParameterType;

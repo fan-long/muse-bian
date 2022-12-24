@@ -5,8 +5,9 @@ package org.museframework.bian.cardcapture.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TransactionAuthorization
 @MetaDto
-public class TransactionAuthorization extends org.museframework.bian.classes.TransactionAuthorization {
+public class TransactionAuthorization {
     /*The required status/situation prior to the execution of the task*/
     @MetaField
     private String transactionAuthorizationPreconditions;

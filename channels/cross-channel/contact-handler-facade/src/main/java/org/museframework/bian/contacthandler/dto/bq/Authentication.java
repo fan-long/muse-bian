@@ -6,8 +6,9 @@ package org.museframework.bian.contacthandler.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Authentication
 @MetaDto
-public class Authentication extends org.museframework.bian.classes.Authentication {
+public class Authentication {
     /*The task updates the contact record authentication status field and handles the interaction with the Party Authentication service domain to get the required level of authentication for the contact*/
     @MetaField
     private String authenticationTaskRecord;

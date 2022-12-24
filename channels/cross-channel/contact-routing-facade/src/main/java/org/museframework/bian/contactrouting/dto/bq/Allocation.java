@@ -6,8 +6,9 @@ package org.museframework.bian.contactrouting.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Allocation
 @MetaDto
-public class Allocation extends org.museframework.bian.classes.Allocation {
+public class Allocation {
     /*Defines the type of allocation (e.g. next available, qualification based, future reservation)*/
     @MetaField
     private String allocationRequestType;

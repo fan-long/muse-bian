@@ -4,8 +4,9 @@ package org.museframework.bian.unitruadm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.UnitTrustAdministrativePlan
 @MetaDto
-public class UnitTrustAdministrativePlan extends org.museframework.bian.classes.UnitTrustAdministrativePlan {
+public class UnitTrustAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Unit Trust Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String unitTrustAdministrativePlanBudgetType;

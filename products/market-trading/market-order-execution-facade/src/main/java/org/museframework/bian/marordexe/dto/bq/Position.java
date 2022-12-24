@@ -4,8 +4,9 @@ package org.museframework.bian.marordexe.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Position
 @MetaDto
-public class Position extends org.museframework.bian.classes.Position {
+public class Position {
     /*The security that the bank position is traded for*/
     @MetaField
     private String bankSecurityPositionSecurityType;

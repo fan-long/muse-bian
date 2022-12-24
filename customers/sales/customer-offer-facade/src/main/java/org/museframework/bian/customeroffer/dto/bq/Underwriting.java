@@ -4,8 +4,9 @@ package org.museframework.bian.customeroffer.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Underwriting
 @MetaDto
-public class Underwriting extends org.museframework.bian.classes.Underwriting {
+public class Underwriting {
     /*A statement of income over a required duration in a suitable format*/
     @MetaField
     private String customerIncomeStatement;

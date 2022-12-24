@@ -6,8 +6,9 @@ package org.museframework.bian.fraudresolution.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CaseResolution
 @MetaDto
-public class CaseResolution extends org.museframework.bian.classes.CaseResolution {
+public class CaseResolution {
     /*Record sets out, defines and assigns resolution tasks*/
     @MetaField
     private String fraudCaseResolutionRecord;

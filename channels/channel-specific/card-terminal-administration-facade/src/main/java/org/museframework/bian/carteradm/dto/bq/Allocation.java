@@ -6,8 +6,9 @@ package org.museframework.bian.carteradm.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Allocation
 @MetaDto
-public class Allocation extends org.museframework.bian.classes.Allocation {
+public class Allocation {
     /*Reference to the Card merchant registered with the device*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object merchantReference;

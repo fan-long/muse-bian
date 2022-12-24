@@ -4,8 +4,9 @@ package org.museframework.bian.parroupro.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PartyState
 @MetaDto
-public class PartyState extends org.museframework.bian.classes.PartyState {
+public class PartyState {
     /*Reference to the customer for the profile*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

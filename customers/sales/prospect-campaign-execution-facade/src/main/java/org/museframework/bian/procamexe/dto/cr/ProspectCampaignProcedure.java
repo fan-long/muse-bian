@@ -4,8 +4,9 @@ package org.museframework.bian.procamexe.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProspectCampaignProcedure
 @MetaDto
-public class ProspectCampaignProcedure extends org.museframework.bian.classes.ProspectCampaignProcedure {
+public class ProspectCampaignProcedure {
     /*The type or category of prospect campaign (e.g. acquisition, product discount incentive)*/
     @MetaField
     private String prospectCampaignType;

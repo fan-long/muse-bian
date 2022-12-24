@@ -5,8 +5,9 @@ package org.museframework.bian.carteradm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CardPOSDeviceAllocation
 @MetaDto
-public class CardPOSDeviceAllocation extends org.museframework.bian.classes.CardPOSDeviceAllocation {
+public class CardPOSDeviceAllocation {
     /*Reference identification for the POS device*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object cardPOSDeviceReference;

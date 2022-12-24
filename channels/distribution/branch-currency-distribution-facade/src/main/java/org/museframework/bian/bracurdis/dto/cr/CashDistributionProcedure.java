@@ -5,8 +5,9 @@ package org.museframework.bian.bracurdis.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CashDistributionProcedure
 @MetaDto
-public class CashDistributionProcedure extends org.museframework.bian.classes.CashDistributionProcedure {
+public class CashDistributionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Cash Distribution Procedure*/
     @MetaField
     private String cashDistributionProcedureParameterType;

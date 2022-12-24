@@ -7,8 +7,9 @@ package org.museframework.bian.casroocauana.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerCaseRootCauseAnalysis
 @MetaDto
-public class CustomerCaseRootCauseAnalysis extends org.museframework.bian.classes.CustomerCaseRootCauseAnalysis {
+public class CustomerCaseRootCauseAnalysis {
     /*A Classification value that distinguishes between Analysis according to the type of business services and/or type of concern defined within Customer Case Root Cause Analysis . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
     @MetaField
     private String customerCaseRootCauseAnalysisParameterType;

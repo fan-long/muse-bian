@@ -5,8 +5,9 @@ package org.museframework.bian.leaiteadm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.LeasingItemAdministrativePlan
 @MetaDto
-public class LeasingItemAdministrativePlan extends org.museframework.bian.classes.LeasingItemAdministrativePlan {
+public class LeasingItemAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Leasing Item Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String leasingItemAdministrativePlanBudgetType;

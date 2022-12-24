@@ -6,8 +6,9 @@ package org.museframework.bian.carfinset.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Instruction
 @MetaDto
-public class Instruction extends org.museframework.bian.classes.Instruction {
+public class Instruction {
     /*Settlement account statement for processing window - used to confirm payments*/
     @MetaField
     private String participantAcquirerBankSettlementAccountStatement;

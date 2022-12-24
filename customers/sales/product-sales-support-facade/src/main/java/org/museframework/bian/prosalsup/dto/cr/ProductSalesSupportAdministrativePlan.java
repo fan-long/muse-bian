@@ -4,8 +4,9 @@ package org.museframework.bian.prosalsup.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProductSalesSupportAdministrativePlan
 @MetaDto
-public class ProductSalesSupportAdministrativePlan extends org.museframework.bian.classes.ProductSalesSupportAdministrativePlan {
+public class ProductSalesSupportAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Product Sales Support Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String productSalesSupportAdministrativePlanBudgetType;

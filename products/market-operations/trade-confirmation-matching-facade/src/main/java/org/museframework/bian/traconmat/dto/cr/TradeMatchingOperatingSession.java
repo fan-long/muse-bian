@@ -4,8 +4,9 @@ package org.museframework.bian.traconmat.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TradeMatchingOperatingSession
 @MetaDto
-public class TradeMatchingOperatingSession extends org.museframework.bian.classes.TradeMatchingOperatingSession {
+public class TradeMatchingOperatingSession {
     /*Timetable to operate Trade Matching Operating Session*/
     @MetaField
     private String tradeMatchingOperatingSessionSchedule;

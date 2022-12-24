@@ -4,8 +4,9 @@ package org.museframework.bian.disbursement.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.DisbursementTransaction
 @MetaDto
-public class DisbursementTransaction extends org.museframework.bian.classes.DisbursementTransaction {
+public class DisbursementTransaction {
     /*Reference to the loan account for which the disbursement is made*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;

@@ -4,8 +4,9 @@ package org.museframework.bian.positionmanagement.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialPositionState
 @MetaDto
-public class FinancialPositionState extends org.museframework.bian.classes.FinancialPositionState {
+public class FinancialPositionState {
     /*The type of position being monitored (e.g. consolidated customer exposure, geographic/sector exposure)*/
     @MetaField
     private String positionType;

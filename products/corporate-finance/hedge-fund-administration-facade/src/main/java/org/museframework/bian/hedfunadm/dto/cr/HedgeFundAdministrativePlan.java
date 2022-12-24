@@ -4,8 +4,9 @@ package org.museframework.bian.hedfunadm.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.HedgeFundAdministrativePlan
 @MetaDto
-public class HedgeFundAdministrativePlan extends org.museframework.bian.classes.HedgeFundAdministrativePlan {
+public class HedgeFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Hedge Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String hedgeFundAdministrativePlanBudgetType;

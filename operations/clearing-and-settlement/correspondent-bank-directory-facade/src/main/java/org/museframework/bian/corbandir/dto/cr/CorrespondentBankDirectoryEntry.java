@@ -4,8 +4,9 @@ package org.museframework.bian.corbandir.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CorrespondentBankDirectoryEntry
 @MetaDto
-public class CorrespondentBankDirectoryEntry extends org.museframework.bian.classes.CorrespondentBankDirectoryEntry {
+public class CorrespondentBankDirectoryEntry {
     /*Reference to the correspondent bank (e.g. BIC Codes)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object correspondentBankReference;

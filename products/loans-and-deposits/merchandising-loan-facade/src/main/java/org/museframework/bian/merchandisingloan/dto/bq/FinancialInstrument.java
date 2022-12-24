@@ -4,8 +4,9 @@ package org.museframework.bian.merchandisingloan.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialInstrument
 @MetaDto
-public class FinancialInstrument extends org.museframework.bian.classes.FinancialInstrument {
+public class FinancialInstrument {
     /*The required status/situation prior to the implementation of the feature*/
     @MetaField
     private String financialInstrumentPreconditions;

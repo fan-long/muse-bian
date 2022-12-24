@@ -4,8 +4,9 @@ package org.museframework.bian.legentdir.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.LegalEntityDirectoryEntry
 @MetaDto
-public class LegalEntityDirectoryEntry extends org.museframework.bian.classes.LegalEntityDirectoryEntry {
+public class LegalEntityDirectoryEntry {
     /*Reference to the legal entity that is the subject of the entry*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object legalEntityReference;

@@ -6,8 +6,9 @@ package org.museframework.bian.carecogat.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TransactionAuthorization
 @MetaDto
-public class TransactionAuthorization extends org.museframework.bian.classes.TransactionAuthorization {
+public class TransactionAuthorization {
     /*Refers to the card transaction that is being authorized - note all fields may not be required*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object eCommerceTransactionInstanceReference;

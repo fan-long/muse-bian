@@ -4,8 +4,9 @@ package org.museframework.bian.customerposition.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerPositionState
 @MetaDto
-public class CustomerPositionState extends org.museframework.bian.classes.CustomerPositionState {
+public class CustomerPositionState {
     /*Reference to the customer that the consolidated financial position represents*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

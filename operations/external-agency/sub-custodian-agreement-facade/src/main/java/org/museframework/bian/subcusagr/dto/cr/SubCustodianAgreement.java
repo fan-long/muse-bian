@@ -6,8 +6,9 @@ package org.museframework.bian.subcusagr.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.SubCustodianAgreement
 @MetaDto
-public class SubCustodianAgreement extends org.museframework.bian.classes.SubCustodianAgreement {
+public class SubCustodianAgreement {
     /*A Classification value that distinguishes between Options defined within Sub Custodian Agreement*/
     @MetaField
     private String subCustodianAgreementParameterType;

@@ -5,8 +5,9 @@ package org.museframework.bian.concenope.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ContactCenterAdministrativePlan
 @MetaDto
-public class ContactCenterAdministrativePlan extends org.museframework.bian.classes.ContactCenterAdministrativePlan {
+public class ContactCenterAdministrativePlan {
     /*The default contact center operational configuration as defined by Contact Center Management (Note this can include some latitude for position assignment changes to be made during day to day operations by this service domain)*/
     @MetaField
     private String contactCenterServiceOperatingConfiguration;

@@ -7,8 +7,9 @@ package org.museframework.bian.seractana.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ServicingRootCauseAnalysis
 @MetaDto
-public class ServicingRootCauseAnalysis extends org.museframework.bian.classes.ServicingRootCauseAnalysis {
+public class ServicingRootCauseAnalysis {
     /*The type of servicing activity for which the analysis is performed (e.g. self service, contact center assisted,  ATM access)*/
     @MetaField
     private String servicingActivityType;

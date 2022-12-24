@@ -4,8 +4,9 @@ package org.museframework.bian.marketorder.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.MarketOrderTransaction
 @MetaDto
-public class MarketOrderTransaction extends org.museframework.bian.classes.MarketOrderTransaction {
+public class MarketOrderTransaction {
     /*The type of market order request (e.g. Managed Investment, Corporate Finance)*/
     @MetaField
     private String marketOrderInstructionType;

@@ -7,8 +7,9 @@ package org.museframework.bian.finmarana.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FinancialMarketAnalysis
 @MetaDto
-public class FinancialMarketAnalysis extends org.museframework.bian.classes.FinancialMarketAnalysis {
+public class FinancialMarketAnalysis {
     /*A Classification value that distinguishes between Analysis according to the type of business services and/or type of concern defined within Financial Market Analysis . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
     @MetaField
     private String financialMarketAnalysisParameterType;

@@ -6,8 +6,9 @@ package org.museframework.bian.brandmanagement.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Troubleshooting
 @MetaDto
-public class Troubleshooting extends org.museframework.bian.classes.Troubleshooting {
+public class Troubleshooting {
     /*The type of event that threatens the brand (e.g. production issue, legal issue, employee action, marketing conflict)*/
     @MetaField
     private String brandImpactEventType;

@@ -9,8 +9,9 @@ package org.museframework.bian.legentdir.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Profile
 @MetaDto
-public class Profile extends org.museframework.bian.classes.Profile {
+public class Profile {
     /*The estimated capitalization of the entity*/
     @MetaField
     private String organizationCapitalization;

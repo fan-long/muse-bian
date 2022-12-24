@@ -5,8 +5,9 @@ package org.museframework.bian.businessdevelopment.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BusinessDevelopmentStrategy
 @MetaDto
-public class BusinessDevelopmentStrategy extends org.museframework.bian.classes.BusinessDevelopmentStrategy {
+public class BusinessDevelopmentStrategy {
     /*The time period addressed by the business development strategy*/
     @MetaField
     private String businessDevelopmentStrategyPeriod;

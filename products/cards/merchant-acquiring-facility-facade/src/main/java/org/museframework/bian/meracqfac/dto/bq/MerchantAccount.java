@@ -4,8 +4,9 @@ package org.museframework.bian.meracqfac.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.MerchantAccount
 @MetaDto
-public class MerchantAccount extends org.museframework.bian.classes.MerchantAccount {
+public class MerchantAccount {
     /*Reference to the posting transaction against the merchant account*/
     @MetaField
     private String merchantAccountPostingTransaction;

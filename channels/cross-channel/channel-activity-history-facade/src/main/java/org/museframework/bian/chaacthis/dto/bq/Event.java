@@ -6,8 +6,9 @@ package org.museframework.bian.chaacthis.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Event
 @MetaDto
-public class Event extends org.museframework.bian.classes.Event {
+public class Event {
     /*The servicing resource for assisted customer exchanges*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object employeeReference;

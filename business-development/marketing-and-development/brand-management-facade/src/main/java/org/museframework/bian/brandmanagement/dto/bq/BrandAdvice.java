@@ -6,8 +6,9 @@ package org.museframework.bian.brandmanagement.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BrandAdvice
 @MetaDto
-public class BrandAdvice extends org.museframework.bian.classes.BrandAdvice {
+public class BrandAdvice {
     /*The type of work task (e.g. assess brand exposure, incorporate brand in design)*/
     @MetaField
     private String brandAdviceWorkTaskType;

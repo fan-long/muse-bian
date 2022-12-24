@@ -4,8 +4,9 @@ package org.museframework.bian.letofcre.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.LetterOfCreditTransaction
 @MetaDto
-public class LetterOfCreditTransaction extends org.museframework.bian.classes.LetterOfCreditTransaction {
+public class LetterOfCreditTransaction {
     /*A Classification value that distinguishes between business service transaction within Letter Of Credit Transaction*/
     @MetaField
     private String letterOfCreditTransactionParameterType;

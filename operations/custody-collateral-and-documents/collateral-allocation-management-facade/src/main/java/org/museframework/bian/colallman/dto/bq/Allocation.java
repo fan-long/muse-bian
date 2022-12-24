@@ -6,8 +6,9 @@ package org.museframework.bian.colallman.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Allocation
 @MetaDto
-public class Allocation extends org.museframework.bian.classes.Allocation {
+public class Allocation {
     /*Defines  the requested action (e.g. earmark for future allocation, allocate or recall an allocation of a collateral asset)*/
     @MetaField
     private String requestedAllocationRequestType;

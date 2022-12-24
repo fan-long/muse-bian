@@ -6,8 +6,9 @@ package org.museframework.bian.ebranchmanagement.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Troubleshooting
 @MetaDto
-public class Troubleshooting extends org.museframework.bian.classes.Troubleshooting {
+public class Troubleshooting {
     /*A record of any production issues arising during the session (see E-Branch Operations for detailed content)*/
     @MetaField
     private String eBranchChannelProductionIssueRecord;

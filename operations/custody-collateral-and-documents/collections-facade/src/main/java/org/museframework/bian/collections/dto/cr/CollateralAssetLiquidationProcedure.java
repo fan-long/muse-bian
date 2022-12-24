@@ -5,8 +5,9 @@ package org.museframework.bian.collections.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CollateralAssetLiquidationProcedure
 @MetaDto
-public class CollateralAssetLiquidationProcedure extends org.museframework.bian.classes.CollateralAssetLiquidationProcedure {
+public class CollateralAssetLiquidationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Collateral Asset Liquidation Procedure*/
     @MetaField
     private String collateralAssetLiquidationProcedureParameterType;

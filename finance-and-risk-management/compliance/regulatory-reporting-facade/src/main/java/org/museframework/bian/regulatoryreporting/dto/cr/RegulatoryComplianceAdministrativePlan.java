@@ -5,8 +5,9 @@ package org.museframework.bian.regulatoryreporting.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.RegulatoryComplianceAdministrativePlan
 @MetaDto
-public class RegulatoryComplianceAdministrativePlan extends org.museframework.bian.classes.RegulatoryComplianceAdministrativePlan {
+public class RegulatoryComplianceAdministrativePlan {
     /*Reference to the interested regulatory reporting authority*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object regulatoryAuthorityReference;

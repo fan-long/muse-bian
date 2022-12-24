@@ -4,8 +4,9 @@ package org.museframework.bian.cusproandser.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerProductsAndServicesDirectoryEntry
 @MetaDto
-public class CustomerProductsAndServicesDirectoryEntry extends org.museframework.bian.classes.CustomerProductsAndServicesDirectoryEntry {
+public class CustomerProductsAndServicesDirectoryEntry {
     /*Documentation of Customer Products And Services Directory Entry*/
     @MetaField
     private String customerProductsAndServicesDirectoryEntryDescription;

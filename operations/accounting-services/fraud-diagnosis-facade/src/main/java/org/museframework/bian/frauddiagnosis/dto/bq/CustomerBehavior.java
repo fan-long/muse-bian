@@ -6,8 +6,9 @@ package org.museframework.bian.frauddiagnosis.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerBehavior
 @MetaDto
-public class CustomerBehavior extends org.museframework.bian.classes.CustomerBehavior {
+public class CustomerBehavior {
     /*The production transaction customer behavior analysis results*/
     @MetaField
     private String customerBehaviorAnalysisResult;

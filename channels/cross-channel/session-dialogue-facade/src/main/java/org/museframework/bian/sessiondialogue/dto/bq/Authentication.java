@@ -6,8 +6,9 @@ package org.museframework.bian.sessiondialogue.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Authentication
 @MetaDto
-public class Authentication extends org.museframework.bian.classes.Authentication {
+public class Authentication {
     /*The target level of authentication required*/
     @MetaField
     private String requiredAuthenticationLevel;

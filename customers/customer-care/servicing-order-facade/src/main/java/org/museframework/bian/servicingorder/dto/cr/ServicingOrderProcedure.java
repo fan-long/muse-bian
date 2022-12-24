@@ -4,8 +4,9 @@ package org.museframework.bian.servicingorder.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ServicingOrderProcedure
 @MetaDto
-public class ServicingOrderProcedure extends org.museframework.bian.classes.ServicingOrderProcedure {
+public class ServicingOrderProcedure {
     /*Reference to a third party service provider that handles some aspect of customer servicing access with the bank*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object thirdPartyReference;

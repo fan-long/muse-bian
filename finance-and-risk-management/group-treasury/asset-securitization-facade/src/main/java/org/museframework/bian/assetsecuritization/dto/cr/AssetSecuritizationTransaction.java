@@ -5,8 +5,9 @@ package org.museframework.bian.assetsecuritization.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.AssetSecuritizationTransaction
 @MetaDto
-public class AssetSecuritizationTransaction extends org.museframework.bian.classes.AssetSecuritizationTransaction {
+public class AssetSecuritizationTransaction {
     /*A Classification value that distinguishes between business service transaction within Asset Securitization Transaction*/
     @MetaField
     private String assetSecuritizationTransactionParameterType;

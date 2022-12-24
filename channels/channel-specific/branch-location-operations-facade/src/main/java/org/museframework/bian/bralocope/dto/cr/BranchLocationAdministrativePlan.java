@@ -4,8 +4,9 @@ package org.museframework.bian.bralocope.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BranchLocationAdministrativePlan
 @MetaDto
-public class BranchLocationAdministrativePlan extends org.museframework.bian.classes.BranchLocationAdministrativePlan {
+public class BranchLocationAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Branch Location Administrative Plan according to the type of resource and/or activity that is budgetted*/
     @MetaField
     private String branchLocationAdministrativePlanBudgetType;

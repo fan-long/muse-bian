@@ -6,8 +6,9 @@ package org.museframework.bian.accountrecovery.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Assessment
 @MetaDto
-public class Assessment extends org.museframework.bian.classes.Assessment {
+public class Assessment {
     /*Processing record for the assessment task within the account recovery process*/
     @MetaField
     private String accountRecoveryCaseAssessmentTaskRecord;

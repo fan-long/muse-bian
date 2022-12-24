@@ -5,8 +5,9 @@ package org.museframework.bian.fiduciaryagreement.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Agreement
 @MetaDto
-public class Agreement extends org.museframework.bian.classes.Agreement {
+public class Agreement {
     /*The required status/situation prior to the implementation of the feature*/
     @MetaField
     private String agreementPreconditions;

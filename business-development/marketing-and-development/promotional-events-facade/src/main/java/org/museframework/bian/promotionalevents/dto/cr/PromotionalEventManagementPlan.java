@@ -4,8 +4,9 @@ package org.museframework.bian.promotionalevents.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PromotionalEventManagementPlan
 @MetaDto
-public class PromotionalEventManagementPlan extends org.museframework.bian.classes.PromotionalEventManagementPlan {
+public class PromotionalEventManagementPlan {
     /*The collection of promotional events that is used to assess performance and coverage and support promotional event sponsorship and participation decisions*/
     @MetaField
     private String promotionalEventPortfolio;

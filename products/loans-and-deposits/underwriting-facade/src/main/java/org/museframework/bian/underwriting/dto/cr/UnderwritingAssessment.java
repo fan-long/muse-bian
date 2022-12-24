@@ -4,8 +4,9 @@ package org.museframework.bian.underwriting.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.UnderwritingAssessment
 @MetaDto
-public class UnderwritingAssessment extends org.museframework.bian.classes.UnderwritingAssessment {
+public class UnderwritingAssessment {
     /*Guidelines provided for applying for an underwriting decision - list submission requirements*/
     @MetaField
     private String underwritingGuidelines;

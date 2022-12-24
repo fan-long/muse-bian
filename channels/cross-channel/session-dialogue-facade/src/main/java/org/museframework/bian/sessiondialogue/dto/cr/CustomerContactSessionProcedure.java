@@ -4,8 +4,9 @@ package org.museframework.bian.sessiondialogue.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerContactSessionProcedure
 @MetaDto
-public class CustomerContactSessionProcedure extends org.museframework.bian.classes.CustomerContactSessionProcedure {
+public class CustomerContactSessionProcedure {
     /*Reference to the customer (can be extracted from Contact Record or provided by customer)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

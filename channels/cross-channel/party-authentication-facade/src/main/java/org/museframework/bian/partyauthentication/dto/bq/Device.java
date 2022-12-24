@@ -6,8 +6,9 @@ package org.museframework.bian.partyauthentication.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Device
 @MetaDto
-public class Device extends org.museframework.bian.classes.Device {
+public class Device {
     /*Reference to the device being used for authentication*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object authenticationDeviceReference;

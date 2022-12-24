@@ -5,8 +5,9 @@ package org.museframework.bian.proinviteman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ProductInventoryAllocation
 @MetaDto
-public class ProductInventoryAllocation extends org.museframework.bian.classes.ProductInventoryAllocation {
+public class ProductInventoryAllocation {
     /*Maintains the distribution schedule for all managed product inventory items. This includes all past distribution records and future scheduled deliveries*/
     @MetaField
     private String productInventoryAllocationServiceSchedule;

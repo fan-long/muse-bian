@@ -5,8 +5,9 @@ package org.museframework.bian.bralocman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BranchLocationManagementPlan
 @MetaDto
-public class BranchLocationManagementPlan extends org.museframework.bian.classes.BranchLocationManagementPlan {
+public class BranchLocationManagementPlan {
     /*The type of Branch Location Management Plan*/
     @MetaField
     private String branchLocationManagementPlanType;

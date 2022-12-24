@@ -4,8 +4,9 @@ package org.museframework.bian.customercase.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerCaseProcedure
 @MetaDto
-public class CustomerCaseProcedure extends org.museframework.bian.classes.CustomerCaseProcedure {
+public class CustomerCaseProcedure {
     /*The type of case being processed including any supporting narrative (e.g. disputed charges, suspected account fraud, stolen device, change of status)*/
     @MetaField
     private String customerCaseType;

@@ -6,8 +6,9 @@ package org.museframework.bian.sessiondialogue.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Case
 @MetaDto
-public class Case extends org.museframework.bian.classes.Case {
+public class Case {
     /*Reference to a specific product instance provided by the customer*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object productInstanceReference;

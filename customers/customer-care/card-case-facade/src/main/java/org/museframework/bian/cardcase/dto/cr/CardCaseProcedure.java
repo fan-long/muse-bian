@@ -4,8 +4,9 @@ package org.museframework.bian.cardcase.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CardCaseProcedure
 @MetaDto
-public class CardCaseProcedure extends org.museframework.bian.classes.CardCaseProcedure {
+public class CardCaseProcedure {
     /*The type of card dispute including any supporting narrative (e.g. disputed charges, merchant fraud)*/
     @MetaField
     private String cardCaseType;

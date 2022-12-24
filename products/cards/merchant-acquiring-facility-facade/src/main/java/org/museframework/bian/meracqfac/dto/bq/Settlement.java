@@ -4,8 +4,9 @@ package org.museframework.bian.meracqfac.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Settlement
 @MetaDto
-public class Settlement extends org.museframework.bian.classes.Settlement {
+public class Settlement {
     /*Reference to the Merchant Acquiring bank for settlement processing*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object participantMerchantAcquirerBankReference;

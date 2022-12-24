@@ -6,8 +6,9 @@ package org.museframework.bian.proserage.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.ServiceProviderAgreement
 @MetaDto
-public class ServiceProviderAgreement extends org.museframework.bian.classes.ServiceProviderAgreement {
+public class ServiceProviderAgreement {
     /*A Classification value that distinguishes between Options defined within Service Provider Agreement*/
     @MetaField
     private String serviceProviderAgreementParameterType;

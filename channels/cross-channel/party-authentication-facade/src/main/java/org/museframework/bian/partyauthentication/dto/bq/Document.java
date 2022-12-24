@@ -6,8 +6,9 @@ package org.museframework.bian.partyauthentication.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.Document
 @MetaDto
-public class Document extends org.museframework.bian.classes.Document {
+public class Document {
     /*Reference to the document and document type being presented for authentication*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object authenticationDocumentReference;

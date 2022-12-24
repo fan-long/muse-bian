@@ -4,8 +4,9 @@ package org.museframework.bian.intrelman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.BankRelationshipManagementPlan
 @MetaDto
-public class BankRelationshipManagementPlan extends org.museframework.bian.classes.BankRelationshipManagementPlan {
+public class BankRelationshipManagementPlan {
     /*Reference to the associated bank*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object bankReference;

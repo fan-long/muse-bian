@@ -4,8 +4,9 @@ package org.museframework.bian.cuscasman.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerCaseManagementPlan
 @MetaDto
-public class CustomerCaseManagementPlan extends org.museframework.bian.classes.CustomerCaseManagementPlan {
+public class CustomerCaseManagementPlan {
     /*The time period addressed by the management plan. This may define required actions and target performance over a fixed period or can be a 'rolling' plan that is continually refined based on experience*/
     @MetaField
     private String customerCaseManagementPlanPeriod;

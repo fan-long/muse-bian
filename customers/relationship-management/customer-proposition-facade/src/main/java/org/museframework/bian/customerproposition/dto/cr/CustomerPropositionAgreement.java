@@ -6,8 +6,9 @@ package org.museframework.bian.customerproposition.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerPropositionAgreement
 @MetaDto
-public class CustomerPropositionAgreement extends org.museframework.bian.classes.CustomerPropositionAgreement {
+public class CustomerPropositionAgreement {
     /*A Classification value that distinguishes between Options defined within Customer Proposition Agreement*/
     @MetaField
     private String customerPropositionAgreementParameterType;

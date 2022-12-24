@@ -4,8 +4,9 @@ package org.museframework.bian.trabooove.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.TradingPositionManagementPlan
 @MetaDto
-public class TradingPositionManagementPlan extends org.museframework.bian.classes.TradingPositionManagementPlan {
+public class TradingPositionManagementPlan {
     /*The type of Trading Position Management Plan*/
     @MetaField
     private String tradingPositionManagementPlanType;

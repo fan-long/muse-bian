@@ -4,8 +4,9 @@ package org.museframework.bian.marketorder.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.FundingCheck
 @MetaDto
-public class FundingCheck extends org.museframework.bian.classes.FundingCheck {
+public class FundingCheck {
     /*The outcome of the funds available check*/
     @MetaField
     private String marketOrderTransactionFundingCheckResult;

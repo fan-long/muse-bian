@@ -4,8 +4,9 @@ package org.museframework.bian.customeroffer.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.CustomerOfferProcedure
 @MetaDto
-public class CustomerOfferProcedure extends org.museframework.bian.classes.CustomerOfferProcedure {
+public class CustomerOfferProcedure {
     /*Reference to the associated customer (can currently be a person or a company)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Object customerReference;

@@ -4,8 +4,9 @@ package org.museframework.bian.parrefdatdir.dto.cr;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.PartyReferenceDataDirectoryEntry
 @MetaDto
-public class PartyReferenceDataDirectoryEntry extends org.museframework.bian.classes.PartyReferenceDataDirectoryEntry {
+public class PartyReferenceDataDirectoryEntry {
     /*Reference to the associated customer (can currently be a person or a company)*/
     @MetaField(ref=true)
     private org.museframework.bian.classes.Party partyReference;

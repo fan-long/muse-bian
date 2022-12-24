@@ -4,8 +4,9 @@ package org.museframework.bian.currentaccount.dto.bq;
 import org.museframework.common.core.MetaDto;
 import org.museframework.common.core.MetaField;
 
+//refer to BOClass org.museframework.bian.classes.IssuedDevice
 @MetaDto
-public class IssuedDevice extends org.museframework.bian.classes.IssuedDevice {
+public class IssuedDevice {
     /*A property of the issued device/inventory (e.g. card, checkbook, pay-in slip)*/
     @MetaField
     private String issuedInventoryType;
