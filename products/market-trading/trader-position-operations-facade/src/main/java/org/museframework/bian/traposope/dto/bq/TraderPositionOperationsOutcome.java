@@ -11,7 +11,7 @@ public class TraderPositionOperationsOutcome {
     private org.museframework.bian.classes.Event traderPositionOperationsIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String traderPositionOperationsProvision;
 
     public void setTraderPositionOperationsIncident(org.museframework.bian.classes.Event traderPositionOperationsIncident) {

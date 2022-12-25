@@ -11,11 +11,11 @@ public class RiskTest {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Risk Test specific Business Service*/
@@ -31,7 +31,7 @@ public class RiskTest {
     private org.museframework.bian.classes.Test riskTestReference;
 
     /*The type of Risk Test*/
-    @MetaField
+    @MetaField(0)
     private String riskTestType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

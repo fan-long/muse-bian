@@ -8,23 +8,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BranchLocationManagementOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPerformanceAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementActivityAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementCharter;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementProject;
 
     public void setBranchLocationManagementPerformanceAnalysis(String branchLocationManagementPerformanceAnalysis) {

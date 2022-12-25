@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class VoiceChannelOperatingSession {
     /*Service Domain attribute referenced during the session covering the menu options*/
-    @MetaField
+    @MetaField(0)
     private String advancedVoiceServicesOperationsServiceMenu;
 
     /*Service activity statistics that are maintained during the session*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServiceSessionStatistics;
 
     /*Session reports that can be accessed during the session (e.g. real-time status, session statistics)*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServiceSessionReportType;
 
     /*The session activity report*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServiceSessionReport;
 
     /*A record of any production issues arising during the session*/
-    @MetaField
+    @MetaField(0)
     private String VChannelProductionIssueRecord;
 
     /*The source of the issue report if appropriate*/
@@ -35,23 +35,23 @@ public class VoiceChannelOperatingSession {
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*The type of network event or error being recorded (e.g. device failure)*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueType;
 
     /*The description of the event error*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDescription;
 
     /*Evaluation of the event cause and impact assessment*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDiagnosis;
 
     /*Description of corrective action proposed and taken*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueResolutionTask;
 
     /*Tracking the state of resolution of a reported issue during the session*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueStatus;
 
     public void setAdvancedVoiceServicesOperationsServiceMenu(String advancedVoiceServicesOperationsServiceMenu) {

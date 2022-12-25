@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Reconciliation {
     /*Details of the transaction matching processing*/
-    @MetaField
+    @MetaField(0)
     private String reconciliationTaskResult;
 
     public void setReconciliationTaskResult(String reconciliationTaskResult) {

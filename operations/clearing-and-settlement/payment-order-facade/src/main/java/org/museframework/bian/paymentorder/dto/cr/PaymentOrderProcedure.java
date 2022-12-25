@@ -35,39 +35,39 @@ public class PaymentOrderProcedure {
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Currency for the amounts*/
-    @MetaField
+    @MetaField(0)
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Requested payment mechanism (e.g. ACH, SWIFT)*/
-    @MetaField
+    @MetaField(0)
     private String paymentMechanismType;
 
     /*Any specific payment instructions as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String paymentInstructions;
 
     /*Where specific involved parties may impact order confirmation (e.g. presenting, authorizing, updating, joint account holder)*/
-    @MetaField
+    @MetaField(0)
     private String interestedParties;
 
     /*Allows for a type of product to have specific default payment instructions*/
-    @MetaField
+    @MetaField(0)
     private String productType;
 
     /*Requested settlement instructions, may be overridden by execution*/
-    @MetaField
+    @MetaField(0)
     private String settlementInstructions;
 
     public void setPaymentTransactionInitiatorReference(org.museframework.bian.classes.Object paymentTransactionInitiatorReference) {

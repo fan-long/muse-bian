@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ManagementManualOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String managementManualTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String managementManualDesign;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String managementManualWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String managementManualImpactAnalysis;
 
     public void setManagementManualTask(String managementManualTask) {

@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class VirtualAccountFacility {
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityParameterType;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilitySelectedOption;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityType;
 
     /**/
@@ -23,15 +23,15 @@ public class VirtualAccountFacility {
     private org.museframework.bian.classes.Object virtualAccountFacilityReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilitySchedule;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityStatus;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityCurrency;
 
     /**/
@@ -39,19 +39,19 @@ public class VirtualAccountFacility {
     private org.museframework.bian.classes.Object virtualAccountFacilityRegulationReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityRegulationType;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityJurisdiction;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityBookingLocation;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFacilityAccountType;
 
     /**/

@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Planning {
     /*Recovery tasks and targets added to the Account Recovery Case Resolution Schedule*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryPlan;
 
     /*Processing record for the planning task within the account recovery process*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCasePlanningTaskRecord;
 
     public void setAccountRecoveryPlan(String accountRecoveryPlan) {

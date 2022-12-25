@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Deposits {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String depositsPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String depositsFeatureSchedule;
 
     /*The Leasing Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class Deposits {
     private org.museframework.bian.classes.BusinessService depositProcessing;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String depositsPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String depositsDepositProcessingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String depositsDepositProcessingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String depositsDepositProcessingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String depositsDepositProcessingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String depositsDepositProcessingServiceName;
 
     public void setDepositsPreconditions(String depositsPreconditions) {

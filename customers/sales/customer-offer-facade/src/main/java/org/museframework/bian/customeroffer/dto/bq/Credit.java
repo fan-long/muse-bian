@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Credit {
     /*The customer's current credit rating*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRating;
 
     /*Reference to the authorization if an aspect of the offer procedure*/
@@ -15,7 +15,7 @@ public class Credit {
     private org.museframework.bian.classes.Object creditAuthorizationDecisionReference;
 
     /*The credit decision (indicates credit position is adequate for the offer)*/
-    @MetaField
+    @MetaField(0)
     private String creditAuthorizationDecision;
 
     public void setCustomerCreditRating(String customerCreditRating) {

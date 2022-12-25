@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Behavior {
     /*The type of behavioral record being used for authentication*/
-    @MetaField
+    @MetaField(0)
     private String authenticationBehaviorType;
 
     /*The behavioral record submitted for authentication*/
-    @MetaField
+    @MetaField(0)
     private String authenticationBehaviorRecord;
 
     /*Reference to the registered customer behavioral record*/
@@ -21,7 +21,7 @@ public class Behavior {
     private org.museframework.bian.classes.Object registeredBehaviorInstanceReference;
 
     /*The result of the behavioral check*/
-    @MetaField
+    @MetaField(0)
     private String behaviorTestResult;
 
     public void setAuthenticationBehaviorType(String authenticationBehaviorType) {

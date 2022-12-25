@@ -7,35 +7,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FacilityApplication {
     /*Product feature selected in the customer offering*/
-    @MetaField
+    @MetaField(0)
     private String facilityOption;
 
     /*Description of the facility option*/
-    @MetaField
+    @MetaField(0)
     private String facilityOptionDescription;
 
     /*The option setting as agreed/defined with the customer*/
-    @MetaField
+    @MetaField(0)
     private String facilityOptionSetting;
 
     /*The allowed pricing includes ranges by customer measures e.g. credit grade*/
-    @MetaField
+    @MetaField(0)
     private String facilityPricing;
 
     /*Guidelines for the allowed situation-based pricing adjustments (to maximize margins)*/
-    @MetaField
+    @MetaField(0)
     private String negotiationGuidelinesRules;
 
     /*The agreed pricing  (covers all negotiable prices/fees/penalties as necessary)*/
-    @MetaField
+    @MetaField(0)
     private String agreedPricing;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String pricingAdjustments;
 
     /*Duration of facility e.g., duration of loan*/
-    @MetaField
+    @MetaField(0)
     private String facilitySchedule;
 
     public void setFacilityOption(String facilityOption) {

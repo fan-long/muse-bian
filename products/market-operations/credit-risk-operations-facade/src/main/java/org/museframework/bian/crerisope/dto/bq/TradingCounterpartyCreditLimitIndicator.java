@@ -15,7 +15,7 @@ public class TradingCounterpartyCreditLimitIndicator {
     private org.museframework.bian.classes.Object tradingCounterpartyCreditLimitIndicatorReference;
 
     /*The type of Trading Counterparty Credit Limit Indicator*/
-    @MetaField
+    @MetaField(0)
     private String tradingCounterpartyCreditLimitIndicatorType;
 
     /*The Trading Counterparty Credit Limit Indicator specific Business Service*/
@@ -23,7 +23,7 @@ public class TradingCounterpartyCreditLimitIndicator {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for monitoring Trading Counterparty Credit Limit Indicator by applying the Trading Counterparty Credit Limit Indicator indicator*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The completion status once Trading Counterparty Credit Limit Indicator has been monitored by applying the Trading Counterparty Credit Limit Indicator indicator*/
@@ -35,7 +35,7 @@ public class TradingCounterpartyCreditLimitIndicator {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in monitoring Trading Counterparty Credit Limit Indicator by applying the Trading Counterparty Credit Limit Indicator indicator*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     public void setTradingCreditPositionMeasurementReference(org.museframework.bian.classes.Object tradingCreditPositionMeasurementReference) {

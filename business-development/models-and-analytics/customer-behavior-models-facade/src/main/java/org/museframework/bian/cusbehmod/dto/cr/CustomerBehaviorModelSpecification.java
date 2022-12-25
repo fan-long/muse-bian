@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerBehaviorModelSpecification {
     /*The type or category of behavior model (e.g. life event detection)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelType;
 
     /*A description of the model that clarifies the intended analysis/insights provided*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelPurpose;
 
     /*Maintains the current deployment configuration of the model*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelDeployment;
 
     /*Reference to the business units where the model is deployed and in use*/
@@ -24,7 +24,7 @@ public class CustomerBehaviorModelSpecification {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment for reference*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelDeploymentConfiguration;
 
     /*Reference to deployment task*/
@@ -32,27 +32,27 @@ public class CustomerBehaviorModelSpecification {
     private org.museframework.bian.classes.Object customerBehaviorModelDeploymentTaskReference;
 
     /*Recorded details of a deployment task*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelDeploymentTaskRecord;
 
     /*The operational and development status of the model (e.g. under development, available, under review)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelStatus;
 
     /*Tracking deployment and usage frequency*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelUsage;
 
     /*Track reporting of the impact/accuracy of the model's insights*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelImpact;
 
     /*Release version of available model plus version history as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelVersion;
 
     /*The deployable model in any appropriate form (including historical versions as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModel;
 
     public void setCustomerBehaviorModelType(String customerBehaviorModelType) {

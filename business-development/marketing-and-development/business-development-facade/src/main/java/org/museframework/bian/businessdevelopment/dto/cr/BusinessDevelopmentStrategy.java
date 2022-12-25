@@ -9,43 +9,43 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BusinessDevelopmentStrategy {
     /*The time period addressed by the business development strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentStrategyPeriod;
 
     /*Specific policies and guidelines that govern the application of the strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentStrategyPoliciesAndGuidelines;
 
     /*Roles and responsibilities for the oversight of implementation of the strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentStrategyOrganization;
 
     /*Target and actual financial budget for the strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentStrategyBudget;
 
     /*The target and actual strategy implementation schedule - recording planned and actual initiatives associated with the realization of the strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentStrategySchedule;
 
     /*The record of the goals making up the overall business development strategy*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentGoalRecord;
 
     /*The type of goal (e.g. market share, new business, relationship performance)*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentGoalType;
 
     /*A definition of the goal, including the intended actions required to achieve the goal*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentGoalDefinition;
 
     /*Identifies the interested parties and their roles and responsibilities for the specific actions supporting the achievement of the goal*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentGoalOrganization;
 
     /*Assessment of how the work is progressing towards achieving the goal, including projections of likely outcomes*/
-    @MetaField
+    @MetaField(0)
     private String businessDevelopmentGoalResult;
 
     public void setBusinessDevelopmentStrategyPeriod(String businessDevelopmentStrategyPeriod) {

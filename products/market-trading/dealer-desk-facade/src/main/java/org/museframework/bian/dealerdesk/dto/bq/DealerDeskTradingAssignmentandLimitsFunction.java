@@ -11,7 +11,7 @@ public class DealerDeskTradingAssignmentandLimitsFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Dealer Desk Trading Assignment and Limits Function specific Business Service*/
@@ -27,7 +27,7 @@ public class DealerDeskTradingAssignmentandLimitsFunction {
     private org.museframework.bian.classes.Function dealerDeskTradingAssignmentandLimitsFunctionReference;
 
     /*The type of Dealer Desk Trading Assignment and Limits Function*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskTradingAssignmentandLimitsFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

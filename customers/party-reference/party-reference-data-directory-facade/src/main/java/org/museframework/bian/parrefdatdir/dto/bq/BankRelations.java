@@ -12,7 +12,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankRelations {
     /*The type of relationship (e.g. relationship manager)*/
-    @MetaField
+    @MetaField(0)
     private String bankRelationType;
 
     /*Reference to the associated employee or unit*/

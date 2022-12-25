@@ -11,11 +11,11 @@ public class RelationshipReciprocityAssessmentDuty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Relationship Reciprocity Assessment Duty specific Business Service*/
@@ -35,7 +35,7 @@ public class RelationshipReciprocityAssessmentDuty {
     private org.museframework.bian.classes.PlannedAction relationshipReciprocityAssessmentDutyReference;
 
     /*The type of Relationship Reciprocity Assessment Duty*/
-    @MetaField
+    @MetaField(0)
     private String relationshipReciprocityAssessmentDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

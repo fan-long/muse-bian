@@ -20,7 +20,7 @@ public class LegalEntityDirectoryEntry {
     private org.museframework.bian.enumerations.Directoryentrydatetypevalues directoryEntryDateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String directoryEntryDate;
 
     public void setLegalEntityReference(org.museframework.bian.classes.Object legalEntityReference) {

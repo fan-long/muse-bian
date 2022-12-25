@@ -13,11 +13,11 @@ public class Consolidation {
     private org.museframework.bian.classes.Object consolidationCardTransactionRecordReference;
 
     /*The record of a specific verification task*/
-    @MetaField
+    @MetaField(0)
     private String consolidationTaskRecord;
 
     /*The instruction message to the merchant to provide card transaction related paperwork, includes issued device details, transaction identification information and the retrieval reason*/
-    @MetaField
+    @MetaField(0)
     private String consolidationInstruction;
 
     /*Reference to the document request messages sent to the merchant*/
@@ -29,11 +29,11 @@ public class Consolidation {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String consolidationTaskWorkProducts;
 
     /*The outcome of the consolidation workstep*/
-    @MetaField
+    @MetaField(0)
     private String consolidationTaskResult;
 
     public void setConsolidationCardTransactionRecordReference(org.museframework.bian.classes.Object consolidationCardTransactionRecordReference) {

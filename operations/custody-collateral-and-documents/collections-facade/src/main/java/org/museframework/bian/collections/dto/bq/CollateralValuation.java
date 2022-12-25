@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CollateralValuation {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationPreconditions;
 
     /*The operating unit/employee responsible for the workstep*/
@@ -16,7 +16,7 @@ public class CollateralValuation {
     private org.museframework.bian.classes.Object collateralValuationBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationWorkSchedule;
 
     /*The Collateral Asset Liquidation Procedure specific Business Service*/
@@ -24,27 +24,27 @@ public class CollateralValuation {
     private org.museframework.bian.classes.BusinessService collateralValuation;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationCollateralValuationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationCollateralValuationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationCollateralValuationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationCollateralValuationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String collateralValuationCollateralValuationServiceName;
 
     public void setCollateralValuationPreconditions(String collateralValuationPreconditions) {

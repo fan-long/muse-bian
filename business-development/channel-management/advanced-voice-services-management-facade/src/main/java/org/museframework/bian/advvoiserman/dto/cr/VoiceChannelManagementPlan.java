@@ -8,23 +8,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class VoiceChannelManagementPlan {
     /*The time period addressed by the management plan*/
-    @MetaField
+    @MetaField(0)
     private String VChannelManagementPlanPeriod;
 
     /*The channel policies and guidelines for service users*/
-    @MetaField
+    @MetaField(0)
     private String VChannelUsagePoliciesAndGuidelines;
 
     /*The default channel service configuration (Note this can be updated during operations with service calls to the channel operations service domain)*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServiceOperatingParameters;
 
     /*The Target and actual service performance goals that are tracked by channel management*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServicePerformanceGoals;
 
     /*The target and actual channel service schedule - recording planned and actual service availability and outages (includes any partial service access constraints or restrictions for a 24/7 service)*/
-    @MetaField
+    @MetaField(0)
     private String VChannelServiceSchedule;
 
     public void setVChannelManagementPlanPeriod(String VChannelManagementPlanPeriod) {

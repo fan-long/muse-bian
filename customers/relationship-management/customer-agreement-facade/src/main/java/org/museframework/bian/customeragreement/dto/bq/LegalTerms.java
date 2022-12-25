@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LegalTerms {
     /*The legal jurisdiction*/
-    @MetaField
+    @MetaField(0)
     private String jurisdiction;
 
     /*Reference to any legal requirements*/
@@ -17,7 +17,7 @@ public class LegalTerms {
     private org.museframework.bian.classes.Object applicableLawReference;
 
     /*Explanation or interpretation of the law as applied*/
-    @MetaField
+    @MetaField(0)
     private String applicableLawInterpretation;
 
     public void setJurisdiction(String jurisdiction) {

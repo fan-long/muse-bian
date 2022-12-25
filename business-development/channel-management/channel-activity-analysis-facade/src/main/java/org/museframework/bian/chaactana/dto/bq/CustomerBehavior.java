@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerBehavior {
     /*Defines the intended analytical insights and required input data and outputs*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityCustomerBehaviorAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
@@ -18,7 +18,7 @@ public class CustomerBehavior {
     private org.museframework.bian.classes.Object channelActivityCustomerBehaviorAnalysisReference;
 
     /*The output record from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityCustomerBehaviorAnalysisResult;
 
     public void setChannelActivityCustomerBehaviorAnalysisAlgorithmSpecification(String channelActivityCustomerBehaviorAnalysisAlgorithmSpecification) {

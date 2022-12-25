@@ -11,7 +11,7 @@ public class VirtualAccountConfigurationFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Virtual Account Configuration Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class VirtualAccountConfigurationFulfillment {
     private org.museframework.bian.classes.Object virtualAccountConfigurationFulfillmentReference;
 
     /*The type of Virtual Account Configuration Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountConfigurationFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

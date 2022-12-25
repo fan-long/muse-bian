@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CashPosition {
     /*The currency being tracked*/
-    @MetaField
+    @MetaField(0)
     private String servicingCurrency;
 
     /*The current holding by currency/instrument*/
-    @MetaField
+    @MetaField(0)
     private String servicingCashHoldingRecord;
 
     /*Reference to a cash transaction*/
@@ -21,7 +21,7 @@ public class CashPosition {
     private org.museframework.bian.classes.Object servicingCashTransactionReference;
 
     /*Details of the cash transaction (e.g. cash deposited to customer account)*/
-    @MetaField
+    @MetaField(0)
     private String servicingCashTransactionRecord;
 
     /*The link to the account product instance used to effect payments from the position*/

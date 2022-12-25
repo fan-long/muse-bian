@@ -11,7 +11,7 @@ public class BatchDebit {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Batch Debit specific Business Service*/
@@ -31,7 +31,7 @@ public class BatchDebit {
     private org.museframework.bian.classes.Object batchDebitReference;
 
     /*The type of Batch Debit*/
-    @MetaField
+    @MetaField(0)
     private String batchDebitType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

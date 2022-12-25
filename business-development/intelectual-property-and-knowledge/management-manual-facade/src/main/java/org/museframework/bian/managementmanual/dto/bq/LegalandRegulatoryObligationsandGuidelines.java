@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LegalandRegulatoryObligationsandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesVersionNumber;
 
     /*The Management Manual Specification specific  Business Service*/
@@ -24,23 +24,23 @@ public class LegalandRegulatoryObligationsandGuidelines {
     private org.museframework.bian.classes.BusinessService legalandRegulatoryObligationsandGuidelines;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String legalandRegulatoryObligationsandGuidelinesServiceName;
 
     public void setLegalandRegulatoryObligationsandGuidelinesPreconditions(String legalandRegulatoryObligationsandGuidelinesPreconditions) {

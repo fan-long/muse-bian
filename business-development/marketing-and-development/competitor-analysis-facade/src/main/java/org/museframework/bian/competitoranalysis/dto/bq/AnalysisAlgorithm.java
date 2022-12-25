@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AnalysisAlgorithm {
     /*Defines the type of algorithm/approach employed (e.g. competitor reviews, public domain research)*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmType;
 
     /*Description of the specific algorithms used and the approach taken to develop the competitor analysis*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmSpecification;
 
     /*The externally sourced general market research sources and any internal intelligence used in the competitor analysis*/
@@ -21,47 +21,47 @@ public class AnalysisAlgorithm {
     private org.museframework.bian.classes.Object analysisAlgorithmReferencedMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReport;
 
     /*Request record for the competitor analysis algorithm/approach execution. Note this is defined in the general competitor analysis request and interpreted internally as the specific approach/algorithm is selected as necessary*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmRequestRecord;
 
     /*The specific details of the request*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmRequest;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmWorkProducts;
 
     /*The output from executing the algorithm*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmRequestResult;
 
     /*The record of the use of the specific competitor analysis algorithm/approach*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmUsageRecord;
 
     /*A record of the usage of the algorithm*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmUsage;
 
     /*A record of reported impact/accuracy of the competitor analysis algorithm/approach*/
-    @MetaField
+    @MetaField(0)
     private String analysisAlgorithmImpact;
 
     public void setAnalysisAlgorithmType(String analysisAlgorithmType) {

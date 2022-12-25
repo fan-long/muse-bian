@@ -11,11 +11,11 @@ public class CounterpartyPermittedTransactionproperty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Counterparty Permitted Transaction property specific  Business Service*/
@@ -31,7 +31,7 @@ public class CounterpartyPermittedTransactionproperty {
     private org.museframework.bian.classes.Object counterpartyPermittedTransactionpropertyReference;
 
     /*The type of Counterparty Permitted Transaction property*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyPermittedTransactionpropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

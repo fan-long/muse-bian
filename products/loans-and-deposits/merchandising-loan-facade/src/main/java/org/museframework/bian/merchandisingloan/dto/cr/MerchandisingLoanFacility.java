@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MerchandisingLoanFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityParameterType;
 
     /*A selected optional business service as subject matter of Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilitySelectedOption;
 
     /*The type of Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityType;
 
     /*Reference to Merchandising Loan Arrangement*/
@@ -24,19 +24,19 @@ public class MerchandisingLoanFacility {
     private org.museframework.bian.classes.Object merchandisingLoanFacilityReference;
 
     /*Timetable to fulfill Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilitySchedule;
 
     /*The status of Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityStatus;
 
     /*Reference to the party who is involved in Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityAssociatedParty;
 
     /*The curreny which is arranged in Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityCurrency;
 
     /*Reference to the regulation which is defined in Merchandising Loan Arrangement*/
@@ -44,19 +44,19 @@ public class MerchandisingLoanFacility {
     private org.museframework.bian.classes.Object merchandisingLoanFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Merchandising Loan Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Merchandising Loan Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityBookingLocation;
 
     /*The type of account which is linked to Merchandising Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFacilityAccountType;
 
     /*Reference to the account which is linked to Merchandising Loan Arrangement*/

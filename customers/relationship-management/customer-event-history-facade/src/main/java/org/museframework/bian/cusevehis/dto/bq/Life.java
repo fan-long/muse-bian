@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Life {
     /*The type of event  (e.g. marriage/divorce, relocation, birth, graduation)*/
-    @MetaField
+    @MetaField(0)
     private String customerLifeEventType;
 
     /*Reference to a contact event log*/
@@ -21,11 +21,11 @@ public class Life {
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /*The details of the event (in a suitable format)*/
-    @MetaField
+    @MetaField(0)
     private String customerLifeEventRecord;
 
     /*Date and time and the location the event was captured*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setCustomerLifeEventType(String customerLifeEventType) {

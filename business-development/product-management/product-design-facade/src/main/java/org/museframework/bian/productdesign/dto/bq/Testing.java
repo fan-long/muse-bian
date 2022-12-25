@@ -13,7 +13,7 @@ public class Testing {
     private org.museframework.bian.classes.Object productandServiceSpecificationTestReference;
 
     /*Defines the type of test (e.g. user/consumer checks, profitability simulations, business acceptance etc.)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationTestType;
 
     /*Reference to the testing environment used to apply the test (can include production events and transactions to simulate performance)*/
@@ -21,7 +21,7 @@ public class Testing {
     private org.museframework.bian.classes.Object productandServiceSpecificationTestHarnessReference;
 
     /*Record of testing applied to the product or service specification*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationTestResult;
 
     /*Reference to a type of testing activity*/
@@ -29,7 +29,7 @@ public class Testing {
     private org.museframework.bian.classes.Object productandServiceSpecificationTestingTaskReference;
 
     /*The record of work products used for this testing activity*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationTestingTaskRecord;
 
     /*Reference to compliance conformance check for the specification*/
@@ -37,7 +37,7 @@ public class Testing {
     private org.museframework.bian.classes.Object productandServiceSpecificationComplianceTaskReference;
 
     /*Record of the compliance conformance check for the specification*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationComplianceTaskRecord;
 
     /*Reference to a compliance task performed against the specification*/
@@ -45,7 +45,7 @@ public class Testing {
     private org.museframework.bian.classes.Object productandServiceSpecificationComplianceTestReference;
 
     /*Record of the compliance test applied to the specification*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationComplianceTestType;
 
     public void setProductandServiceSpecificationTestReference(org.museframework.bian.classes.Object productandServiceSpecificationTestReference) {

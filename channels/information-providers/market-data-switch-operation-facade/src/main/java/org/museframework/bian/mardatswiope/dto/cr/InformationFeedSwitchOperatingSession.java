@@ -11,7 +11,7 @@ public class InformationFeedSwitchOperatingSession {
     private org.museframework.bian.classes.Object marketInformationFeedServiceReference;
 
     /*Sets out the range of information services/pages available - possibly with some form of selection menu*/
-    @MetaField
+    @MetaField(0)
     private String marketInformationFeedServiceProfile;
 
     public void setMarketInformationFeedServiceReference(org.museframework.bian.classes.Object marketInformationFeedServiceReference) {

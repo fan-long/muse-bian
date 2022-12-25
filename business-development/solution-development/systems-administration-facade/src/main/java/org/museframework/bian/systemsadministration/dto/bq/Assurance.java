@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assurance {
     /*The required status/situation before the routine can be undertaken*/
-    @MetaField
+    @MetaField(0)
     private String assurancePreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
@@ -16,7 +16,7 @@ public class Assurance {
     private org.museframework.bian.classes.Object assuranceBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String assuranceWorkSchedule;
 
     /*The ITSystem Administrative Plan specific Business Service*/
@@ -24,27 +24,27 @@ public class Assurance {
     private org.museframework.bian.classes.BusinessService collateralItemAssurance;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String assurancePostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String assuranceCollateralItemAssuranceServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String assuranceCollateralItemAssuranceServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String assuranceCollateralItemAssuranceServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String assuranceCollateralItemAssuranceServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assuranceCollateralItemAssuranceServiceName;
 
     public void setAssurancePreconditions(String assurancePreconditions) {

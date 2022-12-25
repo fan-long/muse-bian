@@ -11,7 +11,7 @@ public class EmployeePayrollDetailsMaintenanceFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Employee Payroll Details Maintenance Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class EmployeePayrollDetailsMaintenanceFulfillment {
     private org.museframework.bian.classes.Object employeePayrollDetailsMaintenanceFulfillmentReference;
 
     /*The type of Employee Payroll Details Maintenance Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String employeePayrollDetailsMaintenanceFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

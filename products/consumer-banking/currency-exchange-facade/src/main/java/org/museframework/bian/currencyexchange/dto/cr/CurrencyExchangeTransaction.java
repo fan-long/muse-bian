@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CurrencyExchangeTransaction {
     /*A Classification value that distinguishes between business service transaction within Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionParameterType;
 
     /*A selected optional business service as subject matter of Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionSelectedOption;
 
     /*The status of Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionTransactionType;
 
     /*Reference to Currency Exchange Transaction*/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeTransactionTransaction;
 
     public void setCurrencyExchangeTransactionParameterType(String currencyExchangeTransactionParameterType) {

@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SyndicatedLoanFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityParameterType;
 
     /*A selected optional business service as subject matter of Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilitySelectedOption;
 
     /*The type of Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityType;
 
     /*Reference to Syndicated Loan Arrangement*/
@@ -24,15 +24,15 @@ public class SyndicatedLoanFacility {
     private org.museframework.bian.classes.Object syndicatedLoanFacilityReference;
 
     /*Timetable to fulfill Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilitySchedule;
 
     /*The status of Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityStatus;
 
     /*The curreny which is arranged in Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityCurrency;
 
     /*Reference to the regulation which is defined in Syndicated Loan Arrangement*/
@@ -40,19 +40,19 @@ public class SyndicatedLoanFacility {
     private org.museframework.bian.classes.Object syndicatedLoanFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Syndicated Loan Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Syndicated Loan Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityBookingLocation;
 
     /*The type of account which is linked to Syndicated Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFacilityAccountType;
 
     /*Reference to the account which is linked to Syndicated Loan Arrangement*/

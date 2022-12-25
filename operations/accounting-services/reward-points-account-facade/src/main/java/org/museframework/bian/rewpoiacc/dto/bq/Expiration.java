@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Expiration {
     /*The required status/situation before the event is captured*/
-    @MetaField
+    @MetaField(0)
     private String expirationPreconditions;
 
     /*The timing and key actions/milestones involved in capturing the event*/
-    @MetaField
+    @MetaField(0)
     private String expirationEventSchedule;
 
     /*The Reward Points Log specific  Business Service*/
@@ -21,27 +21,27 @@ public class Expiration {
     private org.museframework.bian.classes.BusinessService logEventExpiration;
 
     /*The completion status once the event has been captured*/
-    @MetaField
+    @MetaField(0)
     private String expirationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String expirationLogEventExpirationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String expirationLogEventExpirationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String expirationLogEventExpirationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String expirationLogEventExpirationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String expirationLogEventExpirationServiceName;
 
     public void setExpirationPreconditions(String expirationPreconditions) {

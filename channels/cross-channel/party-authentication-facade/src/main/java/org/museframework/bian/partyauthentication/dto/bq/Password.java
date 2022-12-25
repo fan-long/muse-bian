@@ -13,7 +13,7 @@ public class Password {
     private org.museframework.bian.classes.Object authenticationReferenceDataReference;
 
     /*Defines reference data item type submitted for comparison*/
-    @MetaField
+    @MetaField(0)
     private String authenticationReferenceDataType;
 
     /*The customer provided value is matched to the bank's maintained value*/
@@ -25,23 +25,23 @@ public class Password {
     private org.museframework.bian.classes.Object authenticationPasswordReference;
 
     /*Defines allowed values/format for an issued password*/
-    @MetaField
+    @MetaField(0)
     private String authenticationPasswordTemplate;
 
     /*The bank maintained value (can be customer provided or a bank generated value - encryption applies)*/
-    @MetaField
+    @MetaField(0)
     private String authenticationPasswordStoredValue;
 
     /*The valid period for the stored password*/
-    @MetaField
+    @MetaField(0)
     private String authenticationPasswordValidFromToDate;
 
     /*The customer provided value is matched to the bank's maintained value*/
-    @MetaField
+    @MetaField(0)
     private String authenticationPasswordPresentedValue;
 
     /*The result of the reference data and password checks*/
-    @MetaField
+    @MetaField(0)
     private String authenticationPasswordTestResult;
 
     public void setAuthenticationReferenceDataReference(org.museframework.bian.classes.Object authenticationReferenceDataReference) {

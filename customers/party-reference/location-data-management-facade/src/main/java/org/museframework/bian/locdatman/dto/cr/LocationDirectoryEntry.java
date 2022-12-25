@@ -16,7 +16,7 @@ public class LocationDirectoryEntry {
     private org.museframework.bian.enumerations.Directoryentrydatetypevalues directoryEntryDateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String directoryEntryDate;
 
     public void setLocationReference(org.museframework.bian.classes.Location locationReference) {

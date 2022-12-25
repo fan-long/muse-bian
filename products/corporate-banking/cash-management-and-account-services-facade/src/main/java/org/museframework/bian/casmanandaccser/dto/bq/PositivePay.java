@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PositivePay {
     /*The schedule that defines when the corporate provides the list of issued checks for the bank to use to filter fraudulent checks*/
-    @MetaField
+    @MetaField(0)
     private String positivePayCheckRegisterReportingSchedule;
 
     /*The register of issued checks*/
-    @MetaField
+    @MetaField(0)
     private String checkRegister;
 
     /*The date range covered by the list of checks*/
-    @MetaField
+    @MetaField(0)
     private String dateRange;
 
     /*The payment details for an issued check (used to cross check all submitted checks and filter fraud)*/
-    @MetaField
+    @MetaField(0)
     private String checkDetails;
 
     public void setPositivePayCheckRegisterReportingSchedule(String positivePayCheckRegisterReportingSchedule) {

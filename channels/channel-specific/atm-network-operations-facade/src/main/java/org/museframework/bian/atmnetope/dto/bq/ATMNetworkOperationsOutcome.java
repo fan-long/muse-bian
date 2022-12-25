@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ATMNetworkOperationsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperationsIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperationsProvision;
 
     public void setATMNetworkOperationsIncident(String ATMNetworkOperationsIncident) {

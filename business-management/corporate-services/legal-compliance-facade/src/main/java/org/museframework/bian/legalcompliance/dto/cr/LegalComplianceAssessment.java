@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LegalComplianceAssessment {
     /*The type of law that is applied by the assessment action*/
-    @MetaField
+    @MetaField(0)
     private String legalAssessmentType;
 
     /*The business function or unit assessed if appropriate*/
@@ -31,23 +31,23 @@ public class LegalComplianceAssessment {
     private org.museframework.bian.classes.Object lawReference;
 
     /*A definition of the required behavior to remain within the law*/
-    @MetaField
+    @MetaField(0)
     private String lawDefinition;
 
     /*Description of the measurements and reporting required to demonstrate legal compliance*/
-    @MetaField
+    @MetaField(0)
     private String lawComplianceandReportingRequirements;
 
     /*Explanation of the business context, responsibility and accountability for legal compliance*/
-    @MetaField
+    @MetaField(0)
     private String lawComplianceAccountability;
 
     /*Outline of the possible implications of breaking the law*/
-    @MetaField
+    @MetaField(0)
     private String legalPenalties;
 
     /*Guidelines and requirements for following the law*/
-    @MetaField
+    @MetaField(0)
     private String legalGuideline;
 
     /*Reference to any documentation classified/archived as appropriate*/
@@ -55,11 +55,11 @@ public class LegalComplianceAssessment {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the legal assessment action*/
-    @MetaField
+    @MetaField(0)
     private String legalAssessmentWorkProducts;
 
     /*Outcome/result of the legal assessment, this can include remedial actions*/
-    @MetaField
+    @MetaField(0)
     private String legalAssessmentResult;
 
     public void setLegalAssessmentType(String legalAssessmentType) {

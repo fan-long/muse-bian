@@ -11,7 +11,7 @@ public class ProductGuidance {
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*A record of engaging a product specialist to liaise with the customer*/
-    @MetaField
+    @MetaField(0)
     private String specialistSupportTask;
 
     /*Business unit and or employee reference for the product specialist engaged*/
@@ -19,15 +19,15 @@ public class ProductGuidance {
     private org.museframework.bian.classes.Object specialistEmployeeBusinessUnitReference;
 
     /*General description of the product specialist advice provided*/
-    @MetaField
+    @MetaField(0)
     private String specialistAdviceDescription;
 
     /*The service charge to be made to the customer for the specialist support*/
-    @MetaField
+    @MetaField(0)
     private String specialistAdviceCharge;
 
     /*Summary recommendations arising from the advice that is added to the consolidated record*/
-    @MetaField
+    @MetaField(0)
     private String productGuidanceAdviceResult;
 
     public void setProductandServiceReference(org.museframework.bian.classes.Object productandServiceReference) {

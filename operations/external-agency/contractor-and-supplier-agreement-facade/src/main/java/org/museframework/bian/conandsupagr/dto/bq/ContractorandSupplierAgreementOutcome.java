@@ -11,7 +11,7 @@ public class ContractorandSupplierAgreementOutcome {
     private org.museframework.bian.classes.Agreement contractorandSupplierAgreementAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String contractorandSupplierAgreementWorkProduct;
 
     public void setContractorandSupplierAgreementAgreement(org.museframework.bian.classes.Agreement contractorandSupplierAgreementAgreement) {

@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerBehavior {
     /*The production transaction customer behavior analysis results*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorAnalysisResult;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorAnalysisWorkProduct;
 
     public void setCustomerBehaviorAnalysisResult(String customerBehaviorAnalysisResult) {

@@ -11,15 +11,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CompetitorAnalysis {
     /*The type of research view provided by the research (e.g. pricing comparison)*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisType;
 
     /*The definition of the specific competitor analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisSpecification;
 
     /*Guidance on usage and interpretation of the competitor analysis (e.g. qualifying the accuracy/confidence of any findings)*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisGuidance;
 
     /*Reference to the algorithm/approach used to generate the analysis*/
@@ -27,11 +27,11 @@ public class CompetitorAnalysis {
     private org.museframework.bian.classes.Object competitorAnalysisAlgorithmReference;
 
     /*Request record for the competitor analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisRequestRecord;
 
     /*The specific details of the request*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisRequest;
 
     /*The employee/business unit requesting the analysis*/
@@ -39,23 +39,23 @@ public class CompetitorAnalysis {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisRequestWorkProducts;
 
     /*The output from performing the analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisRequestResult;
 
     /*Usage record of the competitor analysis maintained/developed by the function*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisUsageRecord;
 
     /*A record of the usage of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisUsage;
 
     /*A record of reported impact/accuracy of the competitor analysis*/
-    @MetaField
+    @MetaField(0)
     private String competitorAnalysisImpact;
 
     public void setCompetitorAnalysisType(String competitorAnalysisType) {

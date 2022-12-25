@@ -21,19 +21,19 @@ public class Issue {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Defines the type of event/error being recorded (e.g. support facility failure)*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueType;
 
     /*Description of the issue and involved functions, parties*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDescription;
 
     /*An evaluation of the event cause and impact*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDiagnosis;
 
     /*Description of corrective actions and assigned parties*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueResolutionTask;
 
     public void setServicingPositionReference(org.museframework.bian.classes.Object servicingPositionReference) {

@@ -11,15 +11,15 @@ public class CorrespondentBankOperatingSession {
     private org.museframework.bian.classes.Object correspondentBankFacilityReference;
 
     /*The correspondent bank arrangement (details agreed limits, fees, preferred payments mechanism, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankFacility;
 
     /*Details of the schedule for processing payments, clearing and settlement and reconciliations*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankServicingSchedule;
 
     /*A reference to the bank calendar details for payment processing*/
-    @MetaField
+    @MetaField(0)
     private String holidayTimezoneSchedule;
 
     /*Reference to associated vostro account (your money at our bank)*/

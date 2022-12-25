@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankGuaranteeTransaction {
     /*A Classification value that distinguishes between business service transaction within Bank Guarantee Transaction*/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeTransactionParameterType;
 
     /*A selected optional business service as subject matter of Bank Guarantee Transaction*/
@@ -16,7 +16,7 @@ public class BankGuaranteeTransaction {
     private org.museframework.bian.classes.Service bankGuaranteeTransactionSelectedOption;
 
     /*The status of Bank Guarantee Transaction*/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Bank Guarantee Transaction*/
@@ -36,7 +36,7 @@ public class BankGuaranteeTransaction {
     private org.museframework.bian.classes.BankGuaranteeAgreement bankGuaranteeAgreementReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeInvolvedPartyReference;
 
     /**/

@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SWUpdate {
     /*The name of the bank application that is downloaded*/
-    @MetaField
+    @MetaField(0)
     private String SWUpdateApplication;
 
     /*The version number downloaded*/
-    @MetaField
+    @MetaField(0)
     private String SWUpdateVersion;
 
     /*The downloaded executable image*/
-    @MetaField
+    @MetaField(0)
     private String SWUpdateImage;
 
     /*The date and time of the download*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setSWUpdateApplication(String SWUpdateApplication) {

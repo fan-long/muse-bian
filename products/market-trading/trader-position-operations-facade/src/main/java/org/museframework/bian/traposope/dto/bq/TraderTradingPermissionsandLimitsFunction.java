@@ -11,7 +11,7 @@ public class TraderTradingPermissionsandLimitsFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trader Trading Permissions and Limits Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TraderTradingPermissionsandLimitsFunction {
     private org.museframework.bian.classes.Function traderTradingPermissionsandLimitsFunctionReference;
 
     /*The type of Trader Trading Permissions and Limits Function*/
-    @MetaField
+    @MetaField(0)
     private String traderTradingPermissionsandLimitsFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

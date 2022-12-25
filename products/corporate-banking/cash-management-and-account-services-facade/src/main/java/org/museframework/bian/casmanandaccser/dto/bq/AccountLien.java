@@ -7,43 +7,43 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountLien {
     /*The type of lien (e.g. final, pending)*/
-    @MetaField
+    @MetaField(0)
     private String lienType;
 
     /*Definition of the type of lien including processing guidelines*/
-    @MetaField
+    @MetaField(0)
     private String lienDefinition;
 
     /*The processing option applied to the lien*/
-    @MetaField
+    @MetaField(0)
     private String lienProcessingOption;
 
     /*The collection of applicable rates*/
-    @MetaField
+    @MetaField(0)
     private String lienRecord;
 
     /*The party requesting the lien*/
-    @MetaField
+    @MetaField(0)
     private String lienOriginator;
 
     /*The purpose or associated facility linked to the lien*/
-    @MetaField
+    @MetaField(0)
     private String lienPurpose;
 
     /*The amount being blocked*/
-    @MetaField
+    @MetaField(0)
     private String lienAmount;
 
     /*The date the lien is enforced*/
-    @MetaField
+    @MetaField(0)
     private String lienStartDate;
 
     /*The date the lien is removed*/
-    @MetaField
+    @MetaField(0)
     private String lienExpiryDate;
 
     /*The status on the lien*/
-    @MetaField
+    @MetaField(0)
     private String lienStatus;
 
     public void setLienType(String lienType) {

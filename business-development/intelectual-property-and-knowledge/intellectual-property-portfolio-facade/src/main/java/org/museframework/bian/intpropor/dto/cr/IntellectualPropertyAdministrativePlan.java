@@ -13,31 +13,31 @@ public class IntellectualPropertyAdministrativePlan {
     private org.museframework.bian.classes.Object intellectualPropertyAssetReference;
 
     /*The details maintained for the intellectual property asset*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetRecord;
 
     /*The type of asset (i.e. trade secrets, trademarks, copyrights, and patents.)*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetType;
 
     /*Description of significant details and properties of the intellectual property asset*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetDescription;
 
     /*Details of title ownership, including assigned usage rights*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetTitle;
 
     /*Details of scope of coverage of the intellectual property asset (e.g. geographic coverage, allowed usage type coverage)*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetJurisdiction;
 
     /*Reference to the original source of the intellectual property*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetCreator;
 
     /*An indication or description of the commercial value of the intellectual property asset. This can combine a 'replacement' valuation and an licensing/assignment income assessment. The value can be an estimate and include actual realized income*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetValuation;
 
     /*Reference to associated specification documents*/
@@ -45,11 +45,11 @@ public class IntellectualPropertyAdministrativePlan {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Key dates and times associated with the intellectual property asset (e.g. creation date, assignment date, valid until/expiry date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setIntellectualPropertyAssetReference(org.museframework.bian.classes.Object intellectualPropertyAssetReference) {

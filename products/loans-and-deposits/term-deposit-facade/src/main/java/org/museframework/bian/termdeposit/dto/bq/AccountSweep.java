@@ -7,47 +7,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountSweep {
     /*The type of sweep (e.g. periodic, threshold)*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepType;
 
     /*Definition of the type of sweep*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepDefinition;
 
     /*Sweep processing guidelines and scheduling rules*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepApplicationSchedule;
 
     /*The set-up of the sweep facility*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepConfiguration;
 
     /*The facility that the sweep is made to/from*/
-    @MetaField
+    @MetaField(0)
     private String targetAccount;
 
     /*Confirmation that the sweep processing is sanctioned as necessary*/
-    @MetaField
+    @MetaField(0)
     private String sweepMandate;
 
     /*Timing and or triggers for initiating sweep transaction*/
-    @MetaField
+    @MetaField(0)
     private String sweepProcessingSchedule;
 
     /*The transaction record for an applied sweep*/
-    @MetaField
+    @MetaField(0)
     private String sweepApplicationRecord;
 
     /*The facility that the sweep is made to/from*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepTargetAccount;
 
     /*The amount transferred to or from the account*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepAmount;
 
     /*The date and time the sweep is initiated*/
-    @MetaField
+    @MetaField(0)
     private String accountSweepExecutionDate;
 
     public void setAccountSweepType(String accountSweepType) {

@@ -8,47 +8,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CardCaptureOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureCalendar;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureDividend;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureFees;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cardCaptureWorkProduct;
 
     public void setCardCaptureCalendar(String cardCaptureCalendar) {

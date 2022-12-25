@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class NotionalPoolingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Notional Pooling Facility*/
@@ -15,15 +15,15 @@ public class NotionalPoolingFacility {
     private org.museframework.bian.classes.Feature notionalPoolingFacilitySelectedOption;
 
     /*The status of Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityStatus;
 
     /*Reference to the party who is involved in Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Notional Pooling Facility*/
@@ -31,7 +31,7 @@ public class NotionalPoolingFacility {
     private org.museframework.bian.classes.RuleSet notionalPoolingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Notional Pooling Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class NotionalPoolingFacility {
     private org.museframework.bian.classes.Account notionalPoolingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Notional Pooling Facility*/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingFacilityCustomerReference;
 
     /*The position of Notional Pooling Facility*/

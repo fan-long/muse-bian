@@ -13,11 +13,11 @@ public class Outbound {
     private org.museframework.bian.classes.Object correspondenceSourceReference;
 
     /*The correspondence message*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceRecord;
 
     /*The type of correspondence (e.g. confirmation note, mail shot)*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceType;
 
     /*Reference to a template used to assemble standard format correspondence (can be supplied with the correspondence or maintained within the Correspondence service domain as appropriate)*/
@@ -25,19 +25,19 @@ public class Outbound {
     private org.museframework.bian.classes.Object correspondenceTemplateReference;
 
     /*The template definition used in correspondence assembly*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceTemplateRecord;
 
     /*The message content (aligned to template as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*Identifies the preferred media and channel for delivery of the message*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceMediaChannel;
 
     /*The address for message delivery (needs to match channel selection)*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceAddressee;
 
     /*If addressee is identified as a customer with channel preferences for correspondence*/
@@ -49,19 +49,19 @@ public class Outbound {
     private org.museframework.bian.classes.Object channelAccessPreferenceReference;
 
     /*The channel usage profile applied for the correspondence*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessPreferenceProfile;
 
     /*The target device defines the format to be used (e.g. email)*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessChannelDeviceType;
 
     /*A description of the customer's delivery preferences applied to the message (e.g. no paper correspondence, stuffing and batching allowed)*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessChannelDeviceTypePreference;
 
     /*The associated product/service if applicable*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*The sending entity within the bank (can be used for responses)*/
@@ -69,11 +69,11 @@ public class Outbound {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Key dates used for tracking delivery (e.g. generation date, mailing date, receipt confirmation date, re-send date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*The value of the date and time*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setCorrespondenceSourceReference(org.museframework.bian.classes.Object correspondenceSourceReference) {

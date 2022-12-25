@@ -11,7 +11,7 @@ public class StandingOrderFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Standing Order Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class StandingOrderFulfillment {
     private org.museframework.bian.classes.Object standingOrderFulfillmentReference;
 
     /*The type of Standing Order Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

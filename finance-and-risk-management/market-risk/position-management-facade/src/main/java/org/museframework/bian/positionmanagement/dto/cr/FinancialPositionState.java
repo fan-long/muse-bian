@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialPositionState {
     /*The type of position being monitored (e.g. consolidated customer exposure, geographic/sector exposure)*/
-    @MetaField
+    @MetaField(0)
     private String positionType;
 
     /*The customer or customer type associated with the position if applicable*/
@@ -16,23 +16,23 @@ public class FinancialPositionState {
     private org.museframework.bian.classes.Object positionCustomerReference;
 
     /*The sector or segment associated with the position if applicable*/
-    @MetaField
+    @MetaField(0)
     private String positionSector;
 
     /*The product type or specific product associated with the position if applicable*/
-    @MetaField
+    @MetaField(0)
     private String positionProductType;
 
     /*Description of the specification and purpose position monitoring (e.g. real-time limit, trend)*/
-    @MetaField
+    @MetaField(0)
     private String positionDefinition;
 
     /*Thresholds limits associated with the position*/
-    @MetaField
+    @MetaField(0)
     private String positionThresholdsLimits;
 
     /*The current, historical and if applicable projected values of the monitored position*/
-    @MetaField
+    @MetaField(0)
     private String positionValue;
 
     /*Reference to a notification source requesting updates on position changes*/
@@ -40,7 +40,7 @@ public class FinancialPositionState {
     private org.museframework.bian.classes.Object positionNotificationArrangementReference;
 
     /*The details maintained for the notification service*/
-    @MetaField
+    @MetaField(0)
     private String positionNotificationArrangementRecord;
 
     /*Reference to the notified party*/
@@ -48,11 +48,11 @@ public class FinancialPositionState {
     private org.museframework.bian.classes.Object positionNotificationBusinessUnitReference;
 
     /*Details of the requirements/schedule for position notification*/
-    @MetaField
+    @MetaField(0)
     private String positionNotificationDetails;
 
     /*The position notification record generated as required*/
-    @MetaField
+    @MetaField(0)
     private String positionNotificationRecord;
 
     public void setPositionType(String positionType) {

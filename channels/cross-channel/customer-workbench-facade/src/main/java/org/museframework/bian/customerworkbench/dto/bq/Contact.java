@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Contact {
     /*Logged duration of the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactStartEndTime;
 
     /*Local record of page/service access as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String contactActivityLog;
 
     public void setContactStartEndTime(String contactStartEndTime) {

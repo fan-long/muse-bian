@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CentralCashHandlingOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String centralCashHandlingAllocation;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String centralCashHandlingWorkProduct;
 
     public void setCentralCashHandlingAllocation(String centralCashHandlingAllocation) {

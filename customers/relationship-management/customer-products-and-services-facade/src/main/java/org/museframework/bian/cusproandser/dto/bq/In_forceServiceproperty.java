@@ -11,11 +11,11 @@ public class In_forceServiceproperty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The In-force Service property specific  Business Service*/
@@ -31,7 +31,7 @@ public class In_forceServiceproperty {
     private org.museframework.bian.classes.Object in_forceServicepropertyReference;
 
     /*The type of In-force Service property*/
-    @MetaField
+    @MetaField(0)
     private String in_forceServicepropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

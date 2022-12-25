@@ -11,11 +11,11 @@ public class SecuritySpin_OffActionWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Security Spin-Off Action Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class SecuritySpin_OffActionWorkstep {
     private org.museframework.bian.classes.Workstep securitySpin_OffActionWorkstepReference;
 
     /*The type of Security Spin-Off Action Workstep*/
-    @MetaField
+    @MetaField(0)
     private String securitySpin_OffActionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

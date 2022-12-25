@@ -12,7 +12,7 @@ public class BankRelationshipManagementPlan {
     private org.museframework.bian.classes.Object bankReference;
 
     /*Key features and details of the bank (e.g. business/segment profile)*/
-    @MetaField
+    @MetaField(0)
     private String bankDetails;
 
     /*The assigned individual or business unit for the relationship*/
@@ -20,19 +20,19 @@ public class BankRelationshipManagementPlan {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The type of relationship with the bank (e.g. trading partner, joint venture partner)*/
-    @MetaField
+    @MetaField(0)
     private String bankRelationshipType;
 
     /*A description of the relationship, outlining roles and expectations as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String bankRelationshipDescription;
 
     /*The target and actual budget covering expenditures and reciprocal business activity as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String bankRelationshipBudget;
 
     /*Defines the role and contact details for bank representatives*/
-    @MetaField
+    @MetaField(0)
     private String bankContactDetails;
 
     public void setBankReference(org.museframework.bian.classes.Object bankReference) {

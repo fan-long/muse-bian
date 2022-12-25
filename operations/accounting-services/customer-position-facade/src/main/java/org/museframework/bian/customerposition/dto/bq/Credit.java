@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Credit {
     /*The internal bank credit rating/assessment*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingAssessment;
 
     /*Credit assessment type (e.g. consumer, small business, corporate)*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingAssessmentType;
 
     /*The structured report outlining basis for the bank's rating*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingNarrative;
 
     /*The customer credit position analysis - combines credit assessment with product/service available balance/utilized credit position analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditPositionAnalysisRecord;
 
     public void setCustomerCreditRatingAssessment(String customerCreditRatingAssessment) {

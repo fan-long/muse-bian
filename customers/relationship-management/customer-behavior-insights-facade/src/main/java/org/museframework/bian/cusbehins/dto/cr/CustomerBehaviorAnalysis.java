@@ -15,23 +15,23 @@ public class CustomerBehaviorAnalysis {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The schedule for refreshing the analyses for a customer*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightAnalysisSchedule;
 
     /*A record of the collection of behavioral insight analyses maintained for the customer*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorAnalysisInsightsRecord;
 
     /*Defines a type of maintained customer insight (e.g. retention candidate, cross-sell candidate)*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightType;
 
     /*The derived value of the specific insight for the customer and past values if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerInsight;
 
     /*The date/time the value was last refreshed, and past value dates if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightCalculationDate;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

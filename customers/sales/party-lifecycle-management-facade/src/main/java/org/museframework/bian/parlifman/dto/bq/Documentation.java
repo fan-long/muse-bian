@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Documentation {
     /*Describes documents that need to be available and evaluated*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleRequiredDocumentation;
 
     /*Describes and records timing required and actual for obtaining and evaluating documents*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleDocumentSchedule;
 
     /*Reference to specific documents used in the life-cycle check*/

@@ -20,23 +20,23 @@ public class CustomerContactSessionProcedure {
     private org.museframework.bian.classes.Object servicingPositionReference;
 
     /*The type of channel device involved in the session exchange (e.g. web, phone, chat, video, VOIP, face to face at a branch - note there can be concurrent sessions within a single customer contact)*/
-    @MetaField
+    @MetaField(0)
     private String sessionMechanism;
 
     /*The start and duration of the dialogue*/
-    @MetaField
+    @MetaField(0)
     private String sessionStartEndTime;
 
     /*The session dialogue log of actions is returned to SD-Contact Handler and added to the contact record*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueRecord;
 
     /*The general type of customer exchange (e.g. verified customer, anonymous contact, topic - used to structure/script dialogue)*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueType;
 
     /*In cases a prompt or script can provided to structure the interaction for self-service and assisted interactions*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueScript;
 
     /*Reference to a dialogue log that is built up*/
@@ -44,11 +44,11 @@ public class CustomerContactSessionProcedure {
     private org.museframework.bian.classes.Object sessionDialogueLogReference;
 
     /*The dialogue log, used for training and root cause analysis etc.  (e.g. click-stream, video/audio recording)*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueLog;
 
     /*The outcome of the dialogue (e.g. customer satisfied, on-ward routing, hang-up)*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueResult;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

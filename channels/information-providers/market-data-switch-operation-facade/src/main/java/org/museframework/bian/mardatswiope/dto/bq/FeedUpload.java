@@ -13,7 +13,7 @@ public class FeedUpload {
     private org.museframework.bian.classes.Object marketInformationFeedServiceRecordReference;
 
     /*This is the uploaded market information that is distributed over the switch - its content is updated dynamically during the operating session*/
-    @MetaField
+    @MetaField(0)
     private String marketInformationFeedServiceRecord;
 
     public void setMarketInformationFeedServiceRecordReference(org.museframework.bian.classes.Object marketInformationFeedServiceRecordReference) {

@@ -14,15 +14,15 @@ public class FraudDiagnosisAnalysis {
     private org.museframework.bian.classes.Object productProductionSessionReference;
 
     /*Details the types of fraud diagnosis algorithms and tests are applied*/
-    @MetaField
+    @MetaField(0)
     private String fraudDiagnosisEvaluationProfile;
 
     /*The production transaction details that are submitted for fraud diagnosis*/
-    @MetaField
+    @MetaField(0)
     private String fraudDiagnosisTransactionConsolidationRecord;
 
     /*Details of detected out of pattern production activity that could be fraud highlighted by Fraud Evaluation*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationProductionAnomalyRecord;
 
     /*Reference to the one or more production transactions isolated by the fraud evaluation tests identified by Fraud Evaluation*/
@@ -30,11 +30,11 @@ public class FraudDiagnosisAnalysis {
     private org.museframework.bian.classes.Object fraudEvaluationProductionAnomalyProductionTransactionReference;
 
     /*Details the conclusion of the analysis and determination (e.g. diagnosis of likely fraud)*/
-    @MetaField
+    @MetaField(0)
     private String fraudDiagnosisDetermination;
 
     /*Details the recommended action in response to the analysis (e.g. accept or reject the transaction, flag account for fraud)*/
-    @MetaField
+    @MetaField(0)
     private String fraudDiagnosisRecommendation;
 
     public void setProductProductionSessionReference(org.museframework.bian.classes.Object productProductionSessionReference) {

@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PartyAssetDirectoryEntry {
     /*Documentation of Party Asset Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String partyAssetDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Party Asset Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String partyAssetDirectoryEntrySchedule;
 
     /*The version of Party Asset Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String partyAssetDirectoryEntryVersion;
 
     /*The status of Party Asset Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String partyAssetDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Party Asset Directory Entry*/
@@ -31,7 +31,7 @@ public class PartyAssetDirectoryEntry {
     private org.museframework.bian.classes.Log partyAssetDirectoryEntryUpdateLog;
 
     /*The configuration of Party Asset Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String partyAssetDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Party Asset Directory Entry*/

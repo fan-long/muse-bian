@@ -11,15 +11,15 @@ public class CustomerCreditRatingState {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of credit status being monitored (e.g. consumer, small business, corporate)*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingStatusType;
 
     /*The schedule for refreshing the credit state and supporting analysis, and update history as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingSchedule;
 
     /*The record of the underlying credit assessment performed to support the credit rating state*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingAssessmentRecord;
 
     /*Reference to the customer behavior model(s) used to develop any underlying analysis for determining the credit state*/
@@ -27,39 +27,39 @@ public class CustomerCreditRatingState {
     private org.museframework.bian.classes.Object assessmentCustomerBehaviorModelReference;
 
     /*The type of analysis performed to support the credit state*/
-    @MetaField
+    @MetaField(0)
     private String creditRatingAssessmentType;
 
     /*The date and time the supporting credit assessment was developed*/
-    @MetaField
+    @MetaField(0)
     private String creditRatingAssessmentDate;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String creditRatingAssessmentWorkProducts;
 
     /*The resulting report from the credit rating assessment*/
-    @MetaField
+    @MetaField(0)
     private String creditRatingAssessmentResult;
 
     /*A record of the customers credit state*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingRecord;
 
     /*Is the current credit rating or score (typically a ranking value e.g. 1-10)*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingState;
 
     /*Any underlying analysis records and results that support the credit rating*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingAssessment;
 
     /*A structured report outlining basis for the credit rating*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingNarrative;
 
     /*The date/time the value was last refreshed*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingDate;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

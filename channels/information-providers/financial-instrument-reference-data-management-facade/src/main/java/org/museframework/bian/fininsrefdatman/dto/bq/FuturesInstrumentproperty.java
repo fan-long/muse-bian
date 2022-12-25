@@ -11,11 +11,11 @@ public class FuturesInstrumentproperty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Futures Instrument property specific  Business Service*/
@@ -31,7 +31,7 @@ public class FuturesInstrumentproperty {
     private org.museframework.bian.classes.Object futuresInstrumentpropertyReference;
 
     /*The type of Futures Instrument property*/
-    @MetaField
+    @MetaField(0)
     private String futuresInstrumentpropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

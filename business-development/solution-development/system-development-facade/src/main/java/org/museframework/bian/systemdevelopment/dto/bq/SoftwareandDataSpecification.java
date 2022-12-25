@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SoftwareandDataSpecification {
     /*Details the software and data specification/development tasks and deliverables of system development project*/
-    @MetaField
+    @MetaField(0)
     private String softwareandDataSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the implementation of the software and data specification*/
-    @MetaField
+    @MetaField(0)
     private String softwareandDataSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
@@ -21,7 +21,7 @@ public class SoftwareandDataSpecification {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The developed software and data specification in a format suited for production deployment*/
-    @MetaField
+    @MetaField(0)
     private String systemSoftwareandDataSpecification;
 
     public void setSoftwareandDataSpecificationTaskDefinition(String softwareandDataSpecificationTaskDefinition) {

@@ -12,35 +12,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SalesandMarketing {
     /*Descriptive materials/brochures organized for selective access*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSalesMaterial;
 
     /*Descriptions of product features and product options for review*/
-    @MetaField
+    @MetaField(0)
     private String productandServicesFeaturesAndOptions;
 
     /*Allowed price/rate ranges by credit grade/customer type (can be reviewed through simulation)*/
-    @MetaField
+    @MetaField(0)
     private String productandServicePricingTable;
 
     /*Applicable fees/penalties (can be reviewed through simulation)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeesPenaltiesTable;
 
     /*Defines suitability requirements set by the bank*/
-    @MetaField
+    @MetaField(0)
     private String productSuitabilityGuide;
 
     /*Applicable legal or regulatory requirements governing eligibility*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceEligibilityType;
 
     /*Description/explanation of eligibility requirements, can include required disclosures*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceEligibilityDescription;
 
     /*Details the tasks required to complete a customer offer*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceOfferProcessingRequirements;
 
     public void setProductandServiceSalesMaterial(String productandServiceSalesMaterial) {

@@ -11,11 +11,11 @@ public class TradingBookAnalysisandReportingDuty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trading Book Analysis and Reporting Duty specific Business Service*/
@@ -35,7 +35,7 @@ public class TradingBookAnalysisandReportingDuty {
     private org.museframework.bian.classes.PlannedAction tradingBookAnalysisandReportingDutyReference;
 
     /*The type of Trading Book Analysis and Reporting Duty*/
-    @MetaField
+    @MetaField(0)
     private String tradingBookAnalysisandReportingDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

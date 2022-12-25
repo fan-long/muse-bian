@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServiceDirectoryEntry {
     /*Documentation of Service Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Service Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryEntrySchedule;
 
     /*The version of Service Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryEntryVersion;
 
     /*The status of Service Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Service Directory Entry*/
@@ -31,7 +31,7 @@ public class ServiceDirectoryEntry {
     private org.museframework.bian.classes.Log serviceDirectoryEntryUpdateLog;
 
     /*The configuration of Service Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Service Directory Entry*/

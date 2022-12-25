@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductMatchingOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String productMatchingWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productMatchingAssessmentType;
 
     public void setProductMatchingWorkProduct(String productMatchingWorkProduct) {

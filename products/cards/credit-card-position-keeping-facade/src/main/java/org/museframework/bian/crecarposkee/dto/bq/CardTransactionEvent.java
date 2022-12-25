@@ -11,7 +11,7 @@ public class CardTransactionEvent {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in capturing the event*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Card Transaction Event specific Business Service*/
@@ -31,7 +31,7 @@ public class CardTransactionEvent {
     private org.museframework.bian.classes.Event cardTransactionEventReference;
 
     /*The type of Card Transaction Event*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionEventType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

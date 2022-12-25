@@ -13,11 +13,11 @@ public class InternalReporting {
     private org.museframework.bian.classes.Object productandServiceActivityReportReference;
 
     /*The schedule for the upload of the data file/report*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceActivityReportSchedule;
 
     /*The report data file/report of customer production activity*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceActivityReport;
 
     public void setProductandServiceActivityReportReference(org.museframework.bian.classes.Object productandServiceActivityReportReference) {

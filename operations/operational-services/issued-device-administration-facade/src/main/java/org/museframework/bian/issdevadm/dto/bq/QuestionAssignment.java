@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class QuestionAssignment {
     /*Defines the minimum requirements for answers*/
-    @MetaField
+    @MetaField(0)
     private String formatRules;
 
     /*Recent values maintained to eliminate repeated values*/
-    @MetaField
+    @MetaField(0)
     private String recentValues;
 
     /*Used to select secret questions and access prompts*/
-    @MetaField
+    @MetaField(0)
     private String requestText;
 
     /*The stored response value possibly in suitably encrypted form*/
-    @MetaField
+    @MetaField(0)
     private String responseText;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
-    @MetaField
+    @MetaField(0)
     private String usageLog;
 
     public void setFormatRules(String formatRules) {

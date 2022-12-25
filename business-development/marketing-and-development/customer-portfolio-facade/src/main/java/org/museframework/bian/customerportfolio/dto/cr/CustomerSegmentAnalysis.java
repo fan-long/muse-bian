@@ -11,35 +11,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerSegmentAnalysis {
     /*The descriptive name of the bank defined customer segment*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentType;
 
     /*Detailed properties and characteristics that define the customer segment*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentTypeDefinition;
 
     /*Definition of the performance goals for defined customer segments as defined by senior management functions (target/anticipated and actual as assessed).*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceGoals;
 
     /*The schedule for performing customer segment analysis for the enterprise or division*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentAnalysisSchedule;
 
     /*A consolidated report containing the results of performance analyses applied to the Customer Segment*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentAnalysisReport;
 
     /*Defines a type of performance analysis performed (e.g. scheduled review, specialized analysis, sensitivity assessment/projection)*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentAnalysisType;
 
     /*The consolidated report of the performance evaluation and comparisons from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentAnalysisResult;
 
     /*The date/time the performance report was completed*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentAnalysisReportingDate;
 
     /*Reference to associated performance analysis reporting documents*/

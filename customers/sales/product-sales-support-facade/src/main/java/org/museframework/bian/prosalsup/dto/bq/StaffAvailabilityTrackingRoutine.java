@@ -11,11 +11,11 @@ public class StaffAvailabilityTrackingRoutine {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Staff Availability Tracking Routine specific Business Service*/
@@ -35,7 +35,7 @@ public class StaffAvailabilityTrackingRoutine {
     private org.museframework.bian.classes.PlannedAction staffAvailabilityTrackingRoutineReference;
 
     /*The type of Staff Availability Tracking Routine*/
-    @MetaField
+    @MetaField(0)
     private String staffAvailabilityTrackingRoutineType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

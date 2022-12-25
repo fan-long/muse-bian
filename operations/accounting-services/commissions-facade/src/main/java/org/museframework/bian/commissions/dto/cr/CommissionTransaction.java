@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CommissionTransaction {
     /*A Classification value that distinguishes between business service transaction within Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionParameterType;
 
     /*A selected optional business service as subject matter of Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionSelectedOption;
 
     /*The status of Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionTransactionType;
 
     /*Reference to Commission Transaction*/
-    @MetaField
+    @MetaField(0)
     private String commissionTransactionTransaction;
 
     public void setCommissionTransactionParameterType(String commissionTransactionParameterType) {

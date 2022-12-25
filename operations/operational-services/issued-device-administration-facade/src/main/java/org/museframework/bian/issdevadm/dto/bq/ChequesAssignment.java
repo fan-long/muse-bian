@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ChequesAssignment {
     /*Cheque template (e.g. customer account/branch reference, print image/personalization)*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceTemplateValues;
 
     /*The delivery address for distribution*/
-    @MetaField
+    @MetaField(0)
     private String issueLocation;
 
     /*The tracked sequence numbering (e.g. cheque number range issued)*/
-    @MetaField
+    @MetaField(0)
     private String sequenceNumber;
 
     public void setIssuedDeviceTemplateValues(String issuedDeviceTemplateValues) {

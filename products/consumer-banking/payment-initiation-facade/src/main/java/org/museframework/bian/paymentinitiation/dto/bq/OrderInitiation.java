@@ -11,11 +11,11 @@ public class OrderInitiation {
     private org.museframework.bian.classes.Object paymentOrderProcedureInstanceReference;
 
     /*The returned status of the payment order processing*/
-    @MetaField
+    @MetaField(0)
     private String paymentOrderProcedureInstanceStatus;
 
     /*Details of the payment order initiation task*/
-    @MetaField
+    @MetaField(0)
     private String orderInitiationTaskResult;
 
     public void setPaymentOrderProcedureInstanceReference(org.museframework.bian.classes.Object paymentOrderProcedureInstanceReference) {

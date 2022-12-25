@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MutualFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Mutual Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Mutual Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Mutual Fund Administrative Plan*/
@@ -20,11 +20,11 @@ public class MutualFundAdministrativePlan {
     private org.museframework.bian.classes.Arrangement mutualFundAdministrativePlanDuty;
 
     /*Party who is involved in Mutual Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Mutual Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanBudgetBalance;
 
     /*The subject matter of Mutual Fund Administrative Plan*/
@@ -32,7 +32,7 @@ public class MutualFundAdministrativePlan {
     private org.museframework.bian.classes.Object mutualFundAdministrativePlanSubjectMatter;
 
     /*The type of Mutual Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Mutual Fund Administrative Plan*/
@@ -40,7 +40,7 @@ public class MutualFundAdministrativePlan {
     private org.museframework.bian.classes.Plan mutualFundAdministrativePlanReference;
 
     /*Documentation of Mutual Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String mutualFundAdministrativePlanDescription;
 
     public void setMutualFundAdministrativePlanBudgetType(String mutualFundAdministrativePlanBudgetType) {

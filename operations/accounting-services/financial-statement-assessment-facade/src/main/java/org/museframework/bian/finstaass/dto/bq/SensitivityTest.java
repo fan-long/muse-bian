@@ -11,11 +11,11 @@ public class SensitivityTest {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Sensitivity Test specific Business Service*/
@@ -31,7 +31,7 @@ public class SensitivityTest {
     private org.museframework.bian.classes.Test sensitivityTestReference;
 
     /*The type of Sensitivity Test*/
-    @MetaField
+    @MetaField(0)
     private String sensitivityTestType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

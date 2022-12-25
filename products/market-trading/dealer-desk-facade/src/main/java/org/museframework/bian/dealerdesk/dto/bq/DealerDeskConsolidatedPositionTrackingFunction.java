@@ -11,7 +11,7 @@ public class DealerDeskConsolidatedPositionTrackingFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Dealer Desk Consolidated Position Tracking Function specific Business Service*/
@@ -27,7 +27,7 @@ public class DealerDeskConsolidatedPositionTrackingFunction {
     private org.museframework.bian.classes.Function dealerDeskConsolidatedPositionTrackingFunctionReference;
 
     /*The type of Dealer Desk Consolidated Position Tracking Function*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskConsolidatedPositionTrackingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

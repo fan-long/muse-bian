@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TechnologyStandardsSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Technology Standards Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationSelectedOption;
 
     /*Documentation of Technology Standards Specification*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationDescription;
 
     /*The version of Technology Standards Specification*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationVersion;
 
     /*The status of Technology Standards Specification*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Technology Standards Specification*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Technology Standards Specification.*/
-    @MetaField
+    @MetaField(0)
     private String technologyStandardsSpecificationFeedback;
 
     /*Reference to the party who has provided Technology Standards Specification*/

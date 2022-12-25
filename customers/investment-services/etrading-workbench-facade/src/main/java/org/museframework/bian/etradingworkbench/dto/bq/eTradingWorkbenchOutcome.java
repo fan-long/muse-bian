@@ -11,7 +11,7 @@ public class eTradingWorkbenchOutcome {
     private org.museframework.bian.classes.Event eTradingWorkbenchIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchProvision;
 
     public void seteTradingWorkbenchIncident(org.museframework.bian.classes.Event eTradingWorkbenchIncident) {

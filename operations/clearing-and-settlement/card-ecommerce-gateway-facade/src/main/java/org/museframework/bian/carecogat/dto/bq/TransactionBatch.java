@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TransactionBatch {
     /*Significant dates and times associated with the batch transaction*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceBatchTransactionDateTime;
 
     /*Refers to the merchant initiating the batch*/
@@ -18,7 +18,7 @@ public class TransactionBatch {
     private org.museframework.bian.classes.Object transactionMerchantReference;
 
     /*Batch record contains multiple Card Transactions*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceBatchTransactionRecord;
 
     public void seteCommerceBatchTransactionDateTime(String eCommerceBatchTransactionDateTime) {

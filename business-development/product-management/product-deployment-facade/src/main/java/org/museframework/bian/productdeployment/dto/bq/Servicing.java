@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Servicing {
     /*The consolidated aspects of the servicing deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentServicingRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentServicingRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class Servicing {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the servicing needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentServicingRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentServicingRequirements(String productandServiceDeploymentServicingRequirements) {

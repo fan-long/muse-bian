@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TacticalFunding {
     /*Details the required capital holdings against which the current position is tracked and hedging, re-balancing activity initiated for compliance*/
-    @MetaField
+    @MetaField(0)
     private String capitalAdequacyRequirements;
 
     /*Breakdown of the treasury positions monitored and there current/projected ranges*/
-    @MetaField
+    @MetaField(0)
     private String bankPositionsandHedgingRequirements;
 
     /*Selected balance sheet views used to evaluate short term funding needs*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseBalanceSheetPositions;
 
     /*Description of a response initiated by corporate treasury*/
-    @MetaField
+    @MetaField(0)
     private String tacticalFundingResolutionTask;
 
     public void setCapitalAdequacyRequirements(String capitalAdequacyRequirements) {

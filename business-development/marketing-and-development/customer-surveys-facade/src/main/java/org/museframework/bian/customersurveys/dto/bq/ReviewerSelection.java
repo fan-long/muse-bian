@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ReviewerSelection {
     /*Details the selection criteria used to identify candidate customer reviewers*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveySelectionCriteria;
 
     /*Reference to the customer selected as a survey candidate*/

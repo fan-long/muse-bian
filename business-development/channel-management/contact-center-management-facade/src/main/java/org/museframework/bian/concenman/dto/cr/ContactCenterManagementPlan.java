@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ContactCenterManagementPlan {
     /*The time period addressed by the management plan (typically this will include setting the default daily operating goals and arrangements for the contact center that is periodically updated)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterManagementPlanPeriod;
 
     /*The policies and guidelines for contact center employees and service users*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterUsagePoliciesAndGuidelines;
 
     /*The target and actual service performance goals that are tracked by contact center management*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServicePerformanceGoals;
 
     /*The target and actual contact center service schedule - recording planned and actual service availability and outages (includes any partial service access constraints or restrictions for a 24/7 service)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceSchedule;
 
     /*The default contact center operational configuration (Note this can include some latitude for position assignment changes to be made during day to day operations with service calls to the Contact Center Operations service domain)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceOperatingConfiguration;
 
     /*Details the number and skill profile of the contact center staff (target and actual)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterResourcePlan;
 
     /*Details of staff training and certification activity*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterTrainingPlan;
 
     public void setContactCenterManagementPlanPeriod(String contactCenterManagementPlanPeriod) {

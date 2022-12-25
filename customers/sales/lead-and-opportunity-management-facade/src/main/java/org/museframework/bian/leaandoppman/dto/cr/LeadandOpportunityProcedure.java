@@ -15,15 +15,15 @@ public class LeadandOpportunityProcedure {
     private org.museframework.bian.classes.Object customerCampaignReference;
 
     /*The type of campaign (e.g. cross-sell, up-sell, retention)*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignType;
 
     /*The version number of the campaign (used to track campaign impact)*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignVersionNumber;
 
     /*The type of product or service identified in the lead/opportunity*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to a specific product instance if the lead is an up-sell to an existing product agreement*/
@@ -35,11 +35,11 @@ public class LeadandOpportunityProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Narrative/description of the opportunity if available*/
-    @MetaField
+    @MetaField(0)
     private String leadandOpportunityDescription;
 
     /*Date and time and the location the lead/opportunity was captured*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

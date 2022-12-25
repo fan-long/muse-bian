@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SyndicatedLoanApplicationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Syndicated Loan Application Procedure.*/
@@ -19,23 +19,23 @@ public class SyndicatedLoanApplicationProcedure {
     private org.museframework.bian.classes.Instruction syndicatedLoanApplicationProcedureRequest;
 
     /*Timetable to process Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureSchedule;
 
     /*The status of Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureStatus;
 
     /*Reference to the party who is involved in Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Syndicated Loan Application Procedure.*/
@@ -43,23 +43,23 @@ public class SyndicatedLoanApplicationProcedure {
     private org.museframework.bian.classes.FinancialFacility syndicatedLoanApplicationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureType;
 
     /*The schedule according to which the service provider will process the Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Syndicated Loan Application Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanApplicationProcedureServiceType;
 
     /*Reference to the product or service that is related to Syndicated Loan Application Procedure.*/

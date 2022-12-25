@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Underwriting {
     /*A statement of income over a required duration in a suitable format*/
-    @MetaField
+    @MetaField(0)
     private String customerIncomeStatement;
 
     /*The provided debt statements may combine bank and non-bank managed debt details*/
-    @MetaField
+    @MetaField(0)
     private String customerDebtStatement;
 
     /*The provided asset statement may combine bank and known non-bank managed assets*/
-    @MetaField
+    @MetaField(0)
     private String customerAssetStatement;
 
     /*The outcome of the underwriting assessment*/

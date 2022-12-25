@@ -13,7 +13,7 @@ public class InformationProviderOperationOutcome {
     private org.museframework.bian.classes.Event informationProviderOperationIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String informationProviderOperationProvision;
 
     public void setInformationProviderOperationIncident(org.museframework.bian.classes.Event informationProviderOperationIncident) {

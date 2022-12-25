@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CounterpartyDirectoryEntry {
     /*Documentation of Counterparty Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Counterparty Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyDirectoryEntrySchedule;
 
     /*The version of Counterparty Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyDirectoryEntryVersion;
 
     /*The status of Counterparty Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Counterparty Directory Entry*/
@@ -32,7 +32,7 @@ public class CounterpartyDirectoryEntry {
     private org.museframework.bian.classes.Log counterpartyDirectoryEntryUpdateLog;
 
     /*The configuration of Counterparty Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Counterparty Directory Entry*/
@@ -40,7 +40,7 @@ public class CounterpartyDirectoryEntry {
     private org.museframework.bian.classes.DirectoryEntry counterpartyDirectoryEntryReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String conterpartyReference;
 
     /**/

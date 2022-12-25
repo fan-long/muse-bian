@@ -17,19 +17,19 @@ public class TransactionAlignment {
     private org.museframework.bian.classes.Object proposedTransactionOriginatorReference;
 
     /*The type of financial transaction (e.g. project finance, acquisition)*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionType;
 
     /*Any necessary details describing the purpose or reference properties of the transaction*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionDescription;
 
     /*The overall volume or value of the transaction included projected cash flows over the intended duration*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionAmount;
 
     /*An analysis of the financial risks associated with the transaction (e.g. market scenario based impact on P&L)*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionRiskAssessment;
 
     /*Reference to associated documents*/
@@ -41,15 +41,15 @@ public class TransactionAlignment {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Key dates and times associated with the financial transaction (e.g. proposal, decision by/expiry)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*The decision as to whether the transaction is approved within policy including any required changes as may be needed to comply*/
-    @MetaField
+    @MetaField(0)
     private String assetAndLiabilityAlignmentAssessment;
 
     public void setBusinessUnitReference(org.museframework.bian.classes.Object businessUnitReference) {

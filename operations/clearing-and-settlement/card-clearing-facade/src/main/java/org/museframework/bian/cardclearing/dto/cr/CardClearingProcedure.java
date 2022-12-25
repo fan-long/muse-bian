@@ -16,7 +16,7 @@ public class CardClearingProcedure {
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines card clearing fees/terms in force - referenced by Network*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankClearingandSettlementTerms;
 
     /*Reference to the Issuing bank for which the Network orchestrates clearing processing*/
@@ -24,19 +24,19 @@ public class CardClearingProcedure {
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines card clearing fees/terms in force - referenced by Network*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankClearingandSettlementTerms;
 
     /*Defines the type of clearing process - e.g. capture, batch, chargeback between combinations of N,I&A*/
-    @MetaField
+    @MetaField(0)
     private String cardClearingProcessType;
 
     /*The scheduled time for the process - likely initiation time*/
-    @MetaField
+    @MetaField(0)
     private String cardClearingProcessDateTime;
 
     /*The schedule of activities for card clearing*/
-    @MetaField
+    @MetaField(0)
     private String cardClearingServiceSchedule;
 
     public void setNetworkReference(org.museframework.bian.classes.Object networkReference) {

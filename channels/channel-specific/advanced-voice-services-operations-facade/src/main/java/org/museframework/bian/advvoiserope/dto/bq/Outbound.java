@@ -17,7 +17,7 @@ public class Outbound {
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*The record used to handle the contact (see Service Domain-Contact Handler for complete definition)*/
-    @MetaField
+    @MetaField(0)
     private String customerSessionDialogueRecord;
 
     /*The target device being accessed*/
@@ -25,11 +25,11 @@ public class Outbound {
     private org.museframework.bian.classes.Object VChannelCustomerDeviceReference;
 
     /*Detail used for statistics*/
-    @MetaField
+    @MetaField(0)
     private String VChannelOutboundConnectionStartTime;
 
     /*Detail used for statistics*/
-    @MetaField
+    @MetaField(0)
     private String VChannelOutboundConnectionDuration;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

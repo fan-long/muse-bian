@@ -13,7 +13,7 @@ public class InternalPublication {
     private org.museframework.bian.classes.Object internalInformationFeedServiceReference;
 
     /*Defines the range of internally published information services/pages*/
-    @MetaField
+    @MetaField(0)
     private String internalInformationFeedServiceProfile;
 
     /*Reference to 'live' internal pages of information that is published*/
@@ -21,7 +21,7 @@ public class InternalPublication {
     private org.museframework.bian.classes.Object internalInformationFeedServiceRecordReference;
 
     /*This is the internally generated information that is distributed over the switch*/
-    @MetaField
+    @MetaField(0)
     private String internalInformationFeedServiceRecord;
 
     public void setInternalInformationFeedServiceReference(org.museframework.bian.classes.Object internalInformationFeedServiceReference) {

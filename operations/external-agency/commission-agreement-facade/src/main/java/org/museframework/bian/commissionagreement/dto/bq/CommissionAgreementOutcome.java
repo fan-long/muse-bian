@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CommissionAgreementOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionAgreementAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionAgreementWorkProduct;
 
     public void setCommissionAgreementAgreement(String commissionAgreementAgreement) {

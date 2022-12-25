@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorrespondenceandDocuments {
     /*Description of the required documents and time limits on receipt where appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferRequiredDocuments;
 
     /*Reference to the correspondence generated and received*/
@@ -15,7 +15,7 @@ public class CorrespondenceandDocuments {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
@@ -23,7 +23,7 @@ public class CorrespondenceandDocuments {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     public void setCustomerOfferRequiredDocuments(String customerOfferRequiredDocuments) {

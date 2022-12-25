@@ -11,11 +11,11 @@ public class DocumentVersionProperties {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Document Version Properties specific  Business Service*/
@@ -31,7 +31,7 @@ public class DocumentVersionProperties {
     private org.museframework.bian.classes.Object documentVersionPropertiesReference;
 
     /*The type of Document Version Properties*/
-    @MetaField
+    @MetaField(0)
     private String documentVersionPropertiesType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

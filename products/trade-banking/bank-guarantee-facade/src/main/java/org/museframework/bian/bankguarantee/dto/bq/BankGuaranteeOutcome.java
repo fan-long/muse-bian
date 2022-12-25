@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankGuaranteeOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeDividend;
 
     /**/
@@ -23,27 +23,27 @@ public class BankGuaranteeOutcome {
     private org.museframework.bian.classes.InterestTransaction bankGuaranteeInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeWorkProduct;
 
     public void setBankGuaranteeCounterparty(String bankGuaranteeCounterparty) {

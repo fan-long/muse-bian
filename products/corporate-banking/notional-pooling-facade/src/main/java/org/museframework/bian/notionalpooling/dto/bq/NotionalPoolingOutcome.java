@@ -11,7 +11,7 @@ public class NotionalPoolingOutcome {
     private org.museframework.bian.classes.FinancialFacility notionalPoolingFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String notionalPoolingWorkProduct;
 
     public void setNotionalPoolingFinancialFacility(org.museframework.bian.classes.FinancialFacility notionalPoolingFinancialFacility) {

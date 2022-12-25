@@ -11,7 +11,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of product*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to the account primary party/owner*/
@@ -19,19 +19,19 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of card*/
-    @MetaField
+    @MetaField(0)
     private String cardType;
 
     /*The status of the account (e.g. active, cancelled, blocked, closed,...)*/
-    @MetaField
+    @MetaField(0)
     private String cardAccountStatus;
 
     /*Card account limits (e.g. spend limits and credit limits for different access types, e.g. POS/ATM)*/
-    @MetaField
+    @MetaField(0)
     private String cardAccountLimits;
 
     /*A wide range of processing options and rules that apply, including the applicable delinquency penalties…*/
-    @MetaField
+    @MetaField(0)
     private String configurationOptions;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -39,7 +39,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Customer billing transactions (and associated payments)*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactions;
 
     /*Reference to individual transactions*/
@@ -47,7 +47,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object billingTransactionReference;
 
     /*Payments deposited to the account - card account payment transaction history as required*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactions;
 
     /*Reference to individual transactions*/
@@ -55,7 +55,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Product execution transactions - account card use transaction history as required*/
-    @MetaField
+    @MetaField(0)
     private String productTransactions;
 
     /*Reference to individual transactions*/
@@ -63,7 +63,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*Statements issued for the account - statement history as required*/
-    @MetaField
+    @MetaField(0)
     private String statements;
 
     /*Reference to individual statements*/
@@ -71,7 +71,7 @@ public class CardCollectionsProcedure {
     private org.museframework.bian.classes.Object statementsReference;
 
     /*The processing schedule for resolution of the collections process and final decision*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsProcessingSchedule;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

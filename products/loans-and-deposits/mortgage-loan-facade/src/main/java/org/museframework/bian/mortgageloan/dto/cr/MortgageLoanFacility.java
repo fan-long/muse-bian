@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MortgageLoanFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityParameterType;
 
     /*A selected optional business service as subject matter of Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilitySelectedOption;
 
     /*The type of Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityType;
 
     /*Reference to Mortgage Loan Arrangement*/
@@ -24,15 +24,15 @@ public class MortgageLoanFacility {
     private org.museframework.bian.classes.Object mortgageLoanFacilityReference;
 
     /*Timetable to fulfill Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilitySchedule;
 
     /*The status of Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityStatus;
 
     /*The curreny which is arranged in Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityCurrency;
 
     /*Reference to the regulation which is defined in Mortgage Loan Arrangement*/
@@ -40,19 +40,19 @@ public class MortgageLoanFacility {
     private org.museframework.bian.classes.Object mortgageLoanFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Mortgage Loan Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Mortgage Loan Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityBookingLocation;
 
     /*The type of account which is linked to Mortgage Loan Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String mortgageLoanFacilityAccountType;
 
     /*Reference to the account which is linked to Mortgage Loan Arrangement*/

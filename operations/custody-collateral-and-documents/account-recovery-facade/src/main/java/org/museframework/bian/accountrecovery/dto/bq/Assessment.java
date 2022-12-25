@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assessment {
     /*Processing record for the assessment task within the account recovery process*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseAssessmentTaskRecord;
 
     public void setAccountRecoveryCaseAssessmentTaskRecord(String accountRecoveryCaseAssessmentTaskRecord) {

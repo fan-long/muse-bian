@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CommissionTerms {
     /*The required status/situation for the terms to applyand or tasks that need to be completed prior to the initiation of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsPreconditions;
 
     /*Any timing/duration considerations applying to the terms*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsTermSchedule;
 
     /*The Employee Commission Agreement 
@@ -22,23 +22,23 @@ specific Business Service*/
     private org.museframework.bian.classes.BusinessService commissionTerms;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionTermsServiceName;
 
     public void setCommissionTermsPreconditions(String commissionTermsPreconditions) {

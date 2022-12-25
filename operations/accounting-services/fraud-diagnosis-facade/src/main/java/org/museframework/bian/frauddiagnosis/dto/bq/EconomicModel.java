@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EconomicModel {
     /*The result of the economic model, including the recommended response*/
-    @MetaField
+    @MetaField(0)
     private String economicModelAnalysisResult;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
-    @MetaField
+    @MetaField(0)
     private String economicModelWorkProduct;
 
     public void setEconomicModelAnalysisResult(String economicModelAnalysisResult) {

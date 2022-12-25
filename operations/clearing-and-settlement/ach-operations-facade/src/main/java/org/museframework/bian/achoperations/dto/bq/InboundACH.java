@@ -17,7 +17,7 @@ public class InboundACH {
     private org.museframework.bian.classes.Object ACHPaymentTransactionReference;
 
     /*Record of key transaction fields*/
-    @MetaField
+    @MetaField(0)
     private String ACHPaymentTransactionRecord;
 
     /*Reference to the originator of the payment transaction*/
@@ -49,23 +49,23 @@ public class InboundACH {
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Transaction specific clearing and settlement instructions if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String specialInstructions;
 
     /*Key amounts from the transaction*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Currencies of the amounts*/
-    @MetaField
+    @MetaField(0)
     private String currency;
 
     /*Key date types included in the transaction (e.g. order, booking, execution, value date, interest bearing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setInboundACHTransactionBatchReference(org.museframework.bian.classes.Object inboundACHTransactionBatchReference) {

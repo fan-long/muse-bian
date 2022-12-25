@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialTransactionCapture {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String financialTransactionCapturePreconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String financialTransactionCaptureFunctionSchedule;
 
     /*The ATMNetwork Operating Session specific Business Service*/
@@ -20,23 +20,23 @@ public class FinancialTransactionCapture {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String serviceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String serviceName;
 
     public void setFinancialTransactionCapturePreconditions(String financialTransactionCapturePreconditions) {

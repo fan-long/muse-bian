@@ -14,15 +14,15 @@ public class Allocation {
     private org.museframework.bian.classes.Object merchantReference;
 
     /*The type of merchant (e.g. retailer, hotel)*/
-    @MetaField
+    @MetaField(0)
     private String merchantType;
 
     /*The physical location/address of the retailer and the device*/
-    @MetaField
+    @MetaField(0)
     private String merchantLocation;
 
     /*The configuration defines its operational characteristics/capabilities e.g. (PIN pad, transaction capture, tip handling, transaction descriptive, manual entry, security keys, balancing, receipt options/text, communication options, card types, currencies, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceConfiguration;
 
     public void setMerchantReference(org.museframework.bian.classes.Object merchantReference) {

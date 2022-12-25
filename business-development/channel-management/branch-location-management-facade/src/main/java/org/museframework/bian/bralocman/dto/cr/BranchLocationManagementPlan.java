@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BranchLocationManagementPlan {
     /*The type of Branch Location Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanType;
 
     /*Reference to Branch Location Management Plan*/
@@ -17,23 +17,23 @@ public class BranchLocationManagementPlan {
     private org.museframework.bian.classes.Object branchLocationManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Branch Location Management Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Branch Location Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanBudget;
 
     /*The allocation of someone or something which is specified for Branch Location Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanAssignment;
 
     /*Reference to  Branch Location Management Plan */
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanPlan;
 
     /*Documentation of Branch Location Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String branchLocationManagementPlanDescription;
 
     public void setBranchLocationManagementPlanType(String branchLocationManagementPlanType) {

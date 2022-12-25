@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RegulatoryTerms {
     /*The applicable regulatory authority*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAuthority;
 
     /*Reference to any regulatory requirements*/
@@ -17,7 +17,7 @@ public class RegulatoryTerms {
     private org.museframework.bian.classes.Object applicableRegulationReference;
 
     /*Explanation or interpretation of the regulation as applied*/
-    @MetaField
+    @MetaField(0)
     private String applicableRegulationInterpretation;
 
     public void setRegulatoryAuthority(String regulatoryAuthority) {

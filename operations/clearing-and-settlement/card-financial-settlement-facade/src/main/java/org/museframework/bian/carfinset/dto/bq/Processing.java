@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Processing {
     /*Defines the card settlement fees/terms in force*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankSettlementTerms;
 
     /*Defines card settlement fees/terms in force*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankSettlementTerms;
 
     public void setParticipantAcquirerBankSettlementTerms(String participantAcquirerBankSettlementTerms) {

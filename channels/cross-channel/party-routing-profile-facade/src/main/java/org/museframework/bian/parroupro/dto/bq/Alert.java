@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Alert {
     /*Defines the type of alert (e.g. detected potential fraud)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipAlertType;
 
     /*The maintained alert value (historical values may be retained as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipAlert;
 
     /*Explanation/description for given alert value if necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipAlertNarrative;
 
     /*Indication when the alert value is updated and time until given value applies/is relevant as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipAlertValidFromToDate;
 
     public void setCustomerRelationshipAlertType(String customerRelationshipAlertType) {

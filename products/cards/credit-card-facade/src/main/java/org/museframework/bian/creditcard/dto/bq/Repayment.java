@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Repayment {
     /*The billing instance*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransaction;
 
     /*The type of repayment (e.g. scheduled repayment linked to associated billing record, ad-hoc repayment)*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionType;
 
     /*Reference to the associated bill for which this can be full or partial repayment)*/
@@ -31,15 +31,15 @@ public class Repayment {
     private org.museframework.bian.classes.Object repaymentTransactionPayerBankReference;
 
     /*The amount of the repayment*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionAmount;
 
     /*The currency used for the repayment*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionCurrency;
 
     /*The value date for the repayment transaction*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionValueDate;
 
     public void setRepaymentTransaction(String repaymentTransaction) {

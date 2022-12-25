@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountBalanceSweepingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Account Balance Sweeping Facility*/
@@ -15,15 +15,15 @@ public class AccountBalanceSweepingFacility {
     private org.museframework.bian.classes.Feature accountBalanceSweepingFacilitySelectedOption;
 
     /*The status of Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityStatus;
 
     /*Reference to the party who is involved in Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Account Balance Sweeping Facility*/
@@ -31,7 +31,7 @@ public class AccountBalanceSweepingFacility {
     private org.museframework.bian.classes.RuleSet accountBalanceSweepingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Account Balance Sweeping Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class AccountBalanceSweepingFacility {
     private org.museframework.bian.classes.Account accountBalanceSweepingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Account Balance Sweeping Facility*/
-    @MetaField
+    @MetaField(0)
     private String accountBalanceSweepingFacilityCustomerReference;
 
     /*The position of Account Balance Sweeping Facility*/

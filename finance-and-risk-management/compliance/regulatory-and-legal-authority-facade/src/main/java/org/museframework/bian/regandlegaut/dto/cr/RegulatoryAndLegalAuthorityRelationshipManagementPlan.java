@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RegulatoryAndLegalAuthorityRelationshipManagementPlan {
     /*The type of Regulatory&Legal Authority Relationship ManagementPlan*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanType;
 
     /*Reference to Regulatory&Legal Authority Relationship ManagementPlan*/
@@ -16,23 +16,23 @@ public class RegulatoryAndLegalAuthorityRelationshipManagementPlan {
     private org.museframework.bian.classes.Object regulatoryAndLegalAuthorityRelationshipManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Regulatory&Legal Authority Relationship ManagementPlan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Regulatory&Legal Authority Relationship ManagementPlan*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanBudget;
 
     /*The allocation of someone or something which is specified for Regulatory&Legal Authority Relationship ManagementPlan*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanAssignment;
 
     /*Reference to  Regulatory&Legal Authority Relationship ManagementPlan */
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanPlan;
 
     /*Documentation of Regulatory&Legal Authority Relationship ManagementPlan*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityRelationshipManagementPlanDescription;
 
     public void setRegulatoryAndLegalAuthorityRelationshipManagementPlanType(String regulatoryAndLegalAuthorityRelationshipManagementPlanType) {

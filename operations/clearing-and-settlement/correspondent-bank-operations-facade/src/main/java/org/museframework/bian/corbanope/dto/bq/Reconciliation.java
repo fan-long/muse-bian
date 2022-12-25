@@ -11,11 +11,11 @@ public class Reconciliation {
     private org.museframework.bian.classes.Object correspondentBankReconciliationTaskReference;
 
     /*Work documentation, accounts and transaction details produced and referenced during the reconciliation*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankReconciliationTaskWorkProducts;
 
     /*Description of the resolution tasks agreed to reconcile*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankReconciliationTaskResult;
 
     public void setCorrespondentBankReconciliationTaskReference(org.museframework.bian.classes.Object correspondentBankReconciliationTaskReference) {

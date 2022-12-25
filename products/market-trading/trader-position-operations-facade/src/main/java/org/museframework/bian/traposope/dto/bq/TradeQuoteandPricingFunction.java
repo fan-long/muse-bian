@@ -11,7 +11,7 @@ public class TradeQuoteandPricingFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trade Quote and Pricing Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TradeQuoteandPricingFunction {
     private org.museframework.bian.classes.Function tradeQuoteandPricingFunctionReference;
 
     /*The type of Trade Quote and Pricing Function*/
-    @MetaField
+    @MetaField(0)
     private String tradeQuoteandPricingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

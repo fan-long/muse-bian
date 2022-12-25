@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CollateralAssetLiquidationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureSelectedOption;
 
     /*Request to process CollateralAssetLiquidation*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureRequest;
 
     /*Timetable to process CollateralAssetLiquidation*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureSchedule;
 
     /*The status of Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureStatus;
 
     /*Reference to the party who is involved in Collateral Asset Liquidation Procedure*/
@@ -53,35 +53,35 @@ public class CollateralAssetLiquidationProcedure {
     private org.museframework.bian.classes.Object collateralAssetLiquidationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureType;
 
     /*The schedule according to which the service provider will process the Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Collateral Asset Liquidation Procedure */
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Collateral Asset Liquidation Procedure */
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Collateral Asset Liquidation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Collateral Asset Liquidation Procedure */
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Collateral Asset Liquidation Procedure */
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Collateral Asset Liquidation Procedure */
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLiquidationProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Collateral Asset Liquidation Procedure */

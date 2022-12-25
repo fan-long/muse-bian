@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Execution {
     /*The type of work task (e.g. host focus group session, issue questionnaire)*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyExecutionWorkTaskType;
 
     /*Description of the task performed, includes summary of activities as necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyExecutionWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents for the work task*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyExecutionWorkTaskWorkProducts;
 
     /*Reference to associated documents (e.g. required legal disclosures for participants)*/
@@ -25,11 +25,11 @@ public class Execution {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of the outcome or result of the work task - typically the captured survey response and any related feedback*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyExecutionWorkTaskResult;
 
     /*The date-time the customer survey execution*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyExecutionWorkTaskDate_Time;
 
     public void setCustomerSurveyExecutionWorkTaskType(String customerSurveyExecutionWorkTaskType) {

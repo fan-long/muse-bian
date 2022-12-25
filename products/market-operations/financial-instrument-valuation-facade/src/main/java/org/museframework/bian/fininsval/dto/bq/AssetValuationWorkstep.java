@@ -11,11 +11,11 @@ public class AssetValuationWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Asset Valuation Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class AssetValuationWorkstep {
     private org.museframework.bian.classes.Workstep assetValuationWorkstepReference;
 
     /*The type of Asset Valuation Workstep*/
-    @MetaField
+    @MetaField(0)
     private String assetValuationWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

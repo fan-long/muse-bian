@@ -11,7 +11,7 @@ public class NotionalAccountArrangementFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Notional Account Arrangement Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class NotionalAccountArrangementFulfillment {
     private org.museframework.bian.classes.Object notionalAccountArrangementFulfillmentReference;
 
     /*The type of Notional Account Arrangement Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String notionalAccountArrangementFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

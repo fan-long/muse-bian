@@ -12,11 +12,11 @@ public class ClearingandSettlement {
     private org.museframework.bian.classes.Object correspondentBankClearingArrangementReference;
 
     /*Customer specific default clearing instructions*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingArrangementClearingInstructions;
 
     /*Customer specific default settlement instructions (e.g. to handle netting arrangements)*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingArrangementSettlementInstructions;
 
     /*Used for central bank clearing reconciliations*/
@@ -24,11 +24,11 @@ public class ClearingandSettlement {
     private org.museframework.bian.classes.Object mirrorNostroAccountReference;
 
     /*A record of a clearing transaction*/
-    @MetaField
+    @MetaField(0)
     private String clearingTransaction;
 
     /*A record of a settlement transaction*/
-    @MetaField
+    @MetaField(0)
     private String settlementTransaction;
 
     public void setCorrespondentBankClearingArrangementReference(org.museframework.bian.classes.Object correspondentBankClearingArrangementReference) {

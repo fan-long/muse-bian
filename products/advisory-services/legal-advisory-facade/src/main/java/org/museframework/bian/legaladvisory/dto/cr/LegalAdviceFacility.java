@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LegalAdviceFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Legal Advice Facility.*/
@@ -16,15 +16,15 @@ public class LegalAdviceFacility {
     private org.museframework.bian.classes.Feature legalAdviceFacilitySelectedOption;
 
     /*The status of Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityStatus;
 
     /*Reference to the party who is involved in Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityAssociatedParty;
 
     /*The curreny which is arranged in Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityCurrency;
 
     /*Reference to the regulation which is defined in Legal Advice Facility.*/
@@ -32,7 +32,7 @@ public class LegalAdviceFacility {
     private org.museframework.bian.classes.RuleSet legalAdviceFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Legal Advice Facility in case of legal dispute.*/
@@ -48,7 +48,7 @@ public class LegalAdviceFacility {
     private org.museframework.bian.classes.Account legalAdviceFacilityAccountReference;
 
     /*Reference to the customer who is involved in Legal Advice Facility.*/
-    @MetaField
+    @MetaField(0)
     private String legalAdviceFacilityCustomerReference;
 
     /*The position of Legal Advice Facility.*/

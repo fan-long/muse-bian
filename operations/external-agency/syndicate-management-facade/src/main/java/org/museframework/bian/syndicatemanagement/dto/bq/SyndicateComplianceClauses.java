@@ -15,7 +15,7 @@ public class SyndicateComplianceClauses {
     private org.museframework.bian.classes.Object syndicateComplianceClausesReference;
 
     /*The type of Syndicate Compliance Clauses*/
-    @MetaField
+    @MetaField(0)
     private String syndicateComplianceClausesType;
 
     /*The Syndicate Compliance Clauses specific Business Service*/
@@ -23,7 +23,7 @@ public class SyndicateComplianceClauses {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for governing Syndicate Compliance Clauses by applying the Syndicate Compliance Clauses clause*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The completion status once Syndicate Compliance Clauses has been governed by applying the Syndicate Compliance Clauses clause*/
@@ -35,7 +35,7 @@ public class SyndicateComplianceClauses {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in governing Syndicate Compliance Clauses by applying the Syndicate Compliance Clauses clause*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     public void setSyndicateMembershipReference(org.museframework.bian.classes.Object syndicateMembershipReference) {

@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Reporting {
     /*Is the report itself, including historical versions as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationReport;
 
     /*The report represents a specific managed information view of the scrubbed financial market information*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationReportType;
 
     /*Is a detailed definition of the report contents, including properties that clarify the quality/integrity and timeliness of the content*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationReportDescription;
 
     /*Is the schedule for maintaining the report content*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationReportSchedule;
 
     /*Is a log/record of access made to the report by bank users*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationReportAccessHistory;
 
     public void setFinancialMarketInformationReport(String financialMarketInformationReport) {

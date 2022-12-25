@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Production {
     /*Specification of the operational and technical requirements*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelOperationalRequirements;
 
     /*Defines rules and suitability for model usage*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelAllowedUsage;
 
     /*Provides guidance on the use of the model*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelUsageGuidelines;
 
     public void setCustomerBehaviorModelOperationalRequirements(String customerBehaviorModelOperationalRequirements) {

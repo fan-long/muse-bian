@@ -11,7 +11,7 @@ public class OutboundTransactionFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Outbound Transaction Function specific Business Service*/
@@ -27,7 +27,7 @@ public class OutboundTransactionFunction {
     private org.museframework.bian.classes.Function outboundTransactionFunctionReference;
 
     /*The type of Outbound Transaction Function*/
-    @MetaField
+    @MetaField(0)
     private String outboundTransactionFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

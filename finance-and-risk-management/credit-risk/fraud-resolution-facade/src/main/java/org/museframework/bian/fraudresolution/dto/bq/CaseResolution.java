@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CaseResolution {
     /*Record sets out, defines and assigns resolution tasks*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseResolutionRecord;
 
     /*Employee and or business unit responsible for the resolution*/

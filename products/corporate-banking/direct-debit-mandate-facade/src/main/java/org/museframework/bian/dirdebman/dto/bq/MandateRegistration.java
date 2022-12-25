@@ -16,7 +16,7 @@ public class MandateRegistration {
     private org.museframework.bian.classes.Object directDebitMandateCustomerReference;
 
     /*The reference used to identify the customer to the corporate subject of the mandate (maintains secrecy of bank's internal reference)*/
-    @MetaField
+    @MetaField(0)
     private String directDebitMandateCustomerPseudonym;
 
     /*The bank holding the payer's account*/
@@ -28,11 +28,11 @@ public class MandateRegistration {
     private org.museframework.bian.classes.Object directDebitMandateAccountReference;
 
     /*The period for which the customer mandate is in force*/
-    @MetaField
+    @MetaField(0)
     private String directDebitMandateValidDates;
 
     /*Description of allowed usage details and restrictions that apply to use of the mandate (e.g. maximum amount and frequency)*/
-    @MetaField
+    @MetaField(0)
     private String directDebitMandateTerms;
 
     /*Reference to the correspondence generated and received with the maintenance of the mandate*/
@@ -40,7 +40,7 @@ public class MandateRegistration {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - direct debit mandate agreement messages and forms sent and completed by involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
@@ -48,7 +48,7 @@ public class MandateRegistration {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document content - legal documents created & referenced for the mandate*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     public void setDirectDebitMandateCustomerReference(org.museframework.bian.classes.Object directDebitMandateCustomerReference) {

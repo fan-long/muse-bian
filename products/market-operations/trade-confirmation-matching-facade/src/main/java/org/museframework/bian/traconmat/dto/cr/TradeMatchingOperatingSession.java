@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradeMatchingOperatingSession {
     /*Timetable to operate Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionSchedule;
 
     /*The status of Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Trade Matching Operating Session*/
@@ -20,23 +20,23 @@ public class TradeMatchingOperatingSession {
     private org.museframework.bian.classes.Log tradeMatchingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Trade Matching Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradeMatchingOperatingSessionServiceType;
 
     /*The configuration of Trade Matching Operating Session*/

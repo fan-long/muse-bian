@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Authentication {
     /*The target level of authentication required*/
-    @MetaField
+    @MetaField(0)
     private String requiredAuthenticationLevel;
 
     /*The result of the authentication request (the request is handles by Contact Handler  and Party Authentication service domains*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskResult;
 
     public void setRequiredAuthenticationLevel(String requiredAuthenticationLevel) {

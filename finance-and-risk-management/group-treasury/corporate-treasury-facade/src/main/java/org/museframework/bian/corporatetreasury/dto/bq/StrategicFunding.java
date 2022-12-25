@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class StrategicFunding {
     /*Financial reports from multiple business units*/
-    @MetaField
+    @MetaField(0)
     private String financialPerformanceandBalanceSheetProjections;
 
     /*Details of equity and debt transactions*/
-    @MetaField
+    @MetaField(0)
     private String ECMAndDCMMarketTransactions;
 
     /*Details of major investment/divestment transactions*/
-    @MetaField
+    @MetaField(0)
     private String strategicInvestmentHoldingsTransactions;
 
     /*Summary details and analysis of the balance sheet relevant to longer term planning*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseBalanceSheetPositions;
 
     /*Description of a response initiated by corporate treasury*/
-    @MetaField
+    @MetaField(0)
     private String strategicFundingResolutionTask;
 
     public void setFinancialPerformanceandBalanceSheetProjections(String financialPerformanceandBalanceSheetProjections) {

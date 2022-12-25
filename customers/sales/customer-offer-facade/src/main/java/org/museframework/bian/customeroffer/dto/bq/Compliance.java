@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Compliance {
     /*The required check*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryComplianceCheckType;
 
     /*Description of the compliance requirements*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryComplianceCheckRequirement;
 
     /*The submitted offer related materials*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryComplianceCheckSubmission;
 
     /*Any required changes to the offer needed to comply*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryComplianceAdjustmentRequirement;
 
     /*The result of the compliance assessment*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryComplianceCheckAssessment;
 
     public void setRegulatoryComplianceCheckType(String regulatoryComplianceCheckType) {

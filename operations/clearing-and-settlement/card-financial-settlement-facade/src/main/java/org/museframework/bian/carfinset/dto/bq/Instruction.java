@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Instruction {
     /*Settlement account statement for processing window - used to confirm payments*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankSettlementAccountStatement;
 
     /*Settlement account statement for processing window - used to confirm payments*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankSettlementAccountStatement;
 
     public void setParticipantAcquirerBankSettlementAccountStatement(String participantAcquirerBankSettlementAccountStatement) {

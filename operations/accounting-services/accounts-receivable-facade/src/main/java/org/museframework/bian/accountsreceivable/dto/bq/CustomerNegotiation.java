@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerNegotiation {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPreconditions;
 
     /*The operating unit/employee responsible for the workstep*/
@@ -16,7 +16,7 @@ public class CustomerNegotiation {
     private org.museframework.bian.classes.Object customerNegotiationBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationWorkSchedule;
 
     /*The Accounts Receivable Procedure specific Business Service*/
@@ -24,27 +24,27 @@ public class CustomerNegotiation {
     private org.museframework.bian.classes.BusinessService paymentNegotation;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPaymentNegotationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPaymentNegotationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPaymentNegotationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPaymentNegotationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerNegotiationPaymentNegotationServiceName;
 
     public void setCustomerNegotiationPreconditions(String customerNegotiationPreconditions) {

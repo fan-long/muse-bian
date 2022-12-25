@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class IssuedDevice {
     /*A property of the issued device/inventory (e.g. card, checkbook, pay-in slip)*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryType;
 
     /*Definition of the inventory item, including processing and handling guidelines and rules*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryDescription;
 
     /*Definition of the processing option and impact (e.g. lost check handling)*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryOptionDefinition;
 
     /*The processing option setting*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryOptionSetting;
 
     /*Tracked property of the issued device/inventory (e.g. issued check numbers)*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryPropertyType;
 
     /*The tracked values associated with an issued device/inventory item*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryPropertyValue;
 
     /*The tracked status of the device/inventory item (e.g. active, suspended, cancelled)*/
-    @MetaField
+    @MetaField(0)
     private String issuedInventoryStatus;
 
     public void setIssuedInventoryType(String issuedInventoryType) {

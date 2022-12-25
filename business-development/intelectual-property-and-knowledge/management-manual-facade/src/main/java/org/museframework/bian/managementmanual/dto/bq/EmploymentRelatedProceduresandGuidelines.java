@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EmploymentRelatedProceduresandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesVersionNumber;
 
     /*The Management Manual Specification specific  Business Service*/
@@ -24,23 +24,23 @@ public class EmploymentRelatedProceduresandGuidelines {
     private org.museframework.bian.classes.BusinessService employmentRelatedProceduresandGuidelines;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String employmentRelatedProceduresandGuidelinesServiceName;
 
     public void setEmploymentRelatedProceduresandGuidelinesPreconditions(String employmentRelatedProceduresandGuidelinesPreconditions) {

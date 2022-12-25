@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductQualityAssuranceOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String productQualityAssuranceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productQualityAssuranceAssessmentType;
 
     public void setProductQualityAssuranceWorkProduct(String productQualityAssuranceWorkProduct) {

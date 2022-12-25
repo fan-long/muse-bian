@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BrokeredProductManagementPlan {
     /*The type of Brokered Product Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Brokered Product Management Plan*/
@@ -16,11 +16,11 @@ public class BrokeredProductManagementPlan {
     private org.museframework.bian.classes.Plan brokeredProductManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Brokered Product Management Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Brokered Product Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanBudget;
 
     /*The set of management responsibilities defined in Brokered Product Management Plan*/
@@ -28,15 +28,15 @@ public class BrokeredProductManagementPlan {
     private org.museframework.bian.classes.Arrangement brokeredProductManagementPlanDuty;
 
     /*Documentation of Brokered Product Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Brokered Product Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanBudgetBalance;
 
     /*Party who is involved in Brokered Product Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String brokeredProductManagementPlanAssociatedParty;
 
     /*The subject matter of Brokered Product Management Plan*/

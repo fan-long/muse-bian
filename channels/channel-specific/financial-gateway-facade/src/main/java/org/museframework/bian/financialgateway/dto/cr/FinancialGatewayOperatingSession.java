@@ -7,27 +7,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialGatewayOperatingSession {
     /*The type of gateway (e.g. ACH, SWIFT)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceType;
 
     /*Service activity statistics that are maintained during the session*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceSessionStatistics;
 
     /*Session reports that can be accessed during the session (e.g. real-time status, session statistics)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceSessionReportType;
 
     /*The session activity report*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceSessionReport;
 
     /*Key dates and times for the session*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceSessionDate;
 
     /*A record of any production issues arising during the gateway session*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayServiceSessionIssueRecord;
 
     /*The source of the issue report if appropriate*/
@@ -39,27 +39,27 @@ public class FinancialGatewayOperatingSession {
     private org.museframework.bian.classes.Object messageReference;
 
     /*The type of network event or error being recorded (e.g. device failure)*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueType;
 
     /*The description of the event error*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDescription;
 
     /*Evaluation of the event cause and impact assessment*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueDiagnosis;
 
     /*Description of corrective action proposed and taken*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueResolutionTask;
 
     /*Details of the issue, response and interested parties logged for reference*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueRecord;
 
     /*Tracking the state of resolution of a reported issue during the session*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueStatus;
 
     public void setFinancialGatewayServiceType(String financialGatewayServiceType) {

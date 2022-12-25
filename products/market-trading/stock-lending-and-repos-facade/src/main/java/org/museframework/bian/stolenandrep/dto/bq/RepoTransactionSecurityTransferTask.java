@@ -11,7 +11,7 @@ public class RepoTransactionSecurityTransferTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Repo Transaction Security Transfer Task specific Business Service*/
@@ -27,7 +27,7 @@ public class RepoTransactionSecurityTransferTask {
     private org.museframework.bian.classes.Transaction repoTransactionReference;
 
     /*The type of Repo Transaction Security Transfer Task*/
-    @MetaField
+    @MetaField(0)
     private String repoTransactionSecurityTransferTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

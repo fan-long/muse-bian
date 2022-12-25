@@ -11,11 +11,11 @@ public class LiquidityandCashFlowTest {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Liquidity and Cash Flow Test specific Business Service*/
@@ -31,7 +31,7 @@ public class LiquidityandCashFlowTest {
     private org.museframework.bian.classes.Test liquidityandCashFlowTestReference;
 
     /*The type of Liquidity and Cash Flow Test*/
-    @MetaField
+    @MetaField(0)
     private String liquidityandCashFlowTestType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

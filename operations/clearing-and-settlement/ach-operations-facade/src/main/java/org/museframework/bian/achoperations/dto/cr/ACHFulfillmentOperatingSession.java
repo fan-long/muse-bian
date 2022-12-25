@@ -11,7 +11,7 @@ public class ACHFulfillmentOperatingSession {
     private org.museframework.bian.classes.Object ACHReference;
 
     /*Details the ACH service availability*/
-    @MetaField
+    @MetaField(0)
     private String ACHAccessSchedule;
 
     public void setACHReference(org.museframework.bian.classes.Object ACHReference) {

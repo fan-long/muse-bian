@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PaymentTerms {
     /*Reference to a contact established with the customer*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsPaymentTermsContactRecord;
 
     /*Content of the reminder message*/
-    @MetaField
+    @MetaField(0)
     private String contactMessage;
 
     /*The date and time of the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactDate;
 
     /*Any response arising from the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactResult;
 
     /*The document reference for associated documents*/
@@ -29,7 +29,7 @@ public class PaymentTerms {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal documents created & referenced*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Reference to the correspondence generated and received*/
@@ -37,15 +37,15 @@ public class PaymentTerms {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - repayment negotiation/payment request messages sent to involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The payment terms renegotiation decision, includes renegotiated terms and repayment schedule*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsPaymentTermsRenegotiationDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsPaymentTermsWorkProduct;
 
     public void setCardCollectionsPaymentTermsContactRecord(String cardCollectionsPaymentTermsContactRecord) {

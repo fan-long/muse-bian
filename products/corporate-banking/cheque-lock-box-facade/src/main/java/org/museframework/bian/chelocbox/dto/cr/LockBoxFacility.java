@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LockBoxFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Lock Box Facility*/
@@ -15,15 +15,15 @@ public class LockBoxFacility {
     private org.museframework.bian.classes.Feature lockBoxFacilitySelectedOption;
 
     /*The status of Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityStatus;
 
     /*Reference to the party who is involved in Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityAssociatedParty;
 
     /*The curreny which is arranged in Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityCurrency;
 
     /*Reference to the regulation which is defined in Lock Box Facility*/
@@ -31,7 +31,7 @@ public class LockBoxFacility {
     private org.museframework.bian.classes.RuleSet lockBoxFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Lock Box Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class LockBoxFacility {
     private org.museframework.bian.classes.Account lockBoxFacilityAccountReference;
 
     /*Reference to the customer who is involved in Lock Box Facility*/
-    @MetaField
+    @MetaField(0)
     private String lockBoxFacilityCustomerReference;
 
     /*The position of Lock Box Facility*/

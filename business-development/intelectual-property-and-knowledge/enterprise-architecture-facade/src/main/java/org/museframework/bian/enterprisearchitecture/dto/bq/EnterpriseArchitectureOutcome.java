@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EnterpriseArchitectureOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureDesign;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureImpactAnalysis;
 
     public void setEnterpriseArchitectureTask(String enterpriseArchitectureTask) {

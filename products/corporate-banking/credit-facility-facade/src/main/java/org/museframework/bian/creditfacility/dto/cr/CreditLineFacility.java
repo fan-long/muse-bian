@@ -11,7 +11,7 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated credit facility account number in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityNumber;
 
     /*Reference to the account primary party/owner*/
@@ -47,43 +47,43 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object bankAccountingUnitReference;
 
     /*The specific type of credit facility (e.g. term, revolving, letter of credit, retail)*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityType;
 
     /*The amount of the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityAmount;
 
     /*The currency for the facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityCurrency;
 
     /*The rate type to be applied to the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityRateType;
 
     /*The applicable rate for the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityApplicableRate;
 
     /*The type of repayment arrangement in place (e.g. structured, revolving)*/
-    @MetaField
+    @MetaField(0)
     private String repaymentType;
 
     /*The type of interest to be applied (e.g. prime plus)*/
-    @MetaField
+    @MetaField(0)
     private String interestType;
 
     /*The accrual method applied to interest calculations*/
-    @MetaField
+    @MetaField(0)
     private String interestAccrualMethod;
 
     /*The origination date for the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityOriginationDate;
 
     /*The planned maturity date of the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityMaturityDate;
 
     /*Reference to allocated collateral*/
@@ -91,7 +91,7 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object collateralReference;
 
     /*The collateral value applied to the credit facility loan*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocation;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -99,11 +99,11 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Access terms that apply (e.g. allowed drawdown terms, repayment)*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityAccessTerms;
 
     /*Details the one or more underlying loans made against the facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityUnderlyingDrawdown;
 
     /*Reference to the underlying loan*/
@@ -111,39 +111,39 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object drawdownReference;
 
     /*Record of the underlying loan details*/
-    @MetaField
+    @MetaField(0)
     private String drawdownRecord;
 
     /*The underlying loan transaction details*/
-    @MetaField
+    @MetaField(0)
     private String drawdownLoanTransaction;
 
     /*The definition of an applicable entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionSetting;
 
     /*Definition of the involved parties or associations to the facility*/
-    @MetaField
+    @MetaField(0)
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
-    @MetaField
+    @MetaField(0)
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
-    @MetaField
+    @MetaField(0)
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
@@ -151,27 +151,27 @@ public class CreditLineFacility {
     private org.museframework.bian.classes.Object associationReference;
 
     /*The schedule for repayments*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityRepaymentSchedule;
 
     /*A statement maintained tracking repayments*/
-    @MetaField
+    @MetaField(0)
     private String stagedRepaymentStatement;
 
     /*A record of customer correspondence/feedback*/
-    @MetaField
+    @MetaField(0)
     private String customerCommentary;
 
     /*The outstanding balance available for the credit facility*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityOutstandingBalance;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

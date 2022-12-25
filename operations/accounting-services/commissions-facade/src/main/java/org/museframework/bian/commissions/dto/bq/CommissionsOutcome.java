@@ -8,47 +8,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CommissionsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsCalendar;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsDividend;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsFees;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String commissionsWorkProduct;
 
     public void setCommissionsCalendar(String commissionsCalendar) {

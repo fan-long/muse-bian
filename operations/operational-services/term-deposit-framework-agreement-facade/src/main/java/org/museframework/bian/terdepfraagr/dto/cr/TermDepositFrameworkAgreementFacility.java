@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TermDepositFrameworkAgreementFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Term Deposit Framework Agreement Facility*/
@@ -16,15 +16,15 @@ public class TermDepositFrameworkAgreementFacility {
     private org.museframework.bian.classes.Feature termDepositFrameworkAgreementFacilitySelectedOption;
 
     /*The status of Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityStatus;
 
     /*Reference to the party who is involved in Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityAssociatedParty;
 
     /*The curreny which is arranged in Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityCurrency;
 
     /*Reference to the regulation which is defined in Term Deposit Framework Agreement Facility*/
@@ -32,7 +32,7 @@ public class TermDepositFrameworkAgreementFacility {
     private org.museframework.bian.classes.RuleSet termDepositFrameworkAgreementFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Term Deposit Framework Agreement Facility in case of legal dispute.*/
@@ -48,7 +48,7 @@ public class TermDepositFrameworkAgreementFacility {
     private org.museframework.bian.classes.Account termDepositFrameworkAgreementFacilityAccountReference;
 
     /*Reference to the customer who is involved in Term Deposit Framework Agreement Facility*/
-    @MetaField
+    @MetaField(0)
     private String termDepositFrameworkAgreementFacilityCustomerReference;
 
     /*The position of Term Deposit Framework Agreement Facility*/

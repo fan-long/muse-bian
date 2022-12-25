@@ -13,15 +13,15 @@ public class CardTransaction {
     private org.museframework.bian.classes.BankingProduct productInstanceReference;
 
     /*The card holder as detailed on the plastic*/
-    @MetaField
+    @MetaField(0)
     private String customerReference;
 
     /*As detailed on the plastic/token*/
-    @MetaField
+    @MetaField(0)
     private String cardexpirationdate;
 
     /*As detailed on the plastic/token*/
-    @MetaField
+    @MetaField(0)
     private String cardCVV;
 
     /*Refers to the card holder's issuing bank*/
@@ -33,15 +33,15 @@ public class CardTransaction {
     private org.museframework.bian.classes.Object merchantAcquiringBankReference;
 
     /*The currency that the transaction is made in*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionAmountType;
 
     /*The amount corresponding to the type*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionAmount;
 
     /*Refers to the merchant initiating the transaction*/
@@ -57,7 +57,7 @@ public class CardTransaction {
     private org.museframework.bian.classes.Object eCommerceTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionDateTime;
 
     public void setProductInstanceReference(org.museframework.bian.classes.BankingProduct productInstanceReference) {

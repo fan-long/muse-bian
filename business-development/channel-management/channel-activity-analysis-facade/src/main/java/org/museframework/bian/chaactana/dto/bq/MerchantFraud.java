@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MerchantFraud {
     /*Defines the intended analytical insights and required input data and outputs*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityMerchantFraudAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
@@ -17,7 +17,7 @@ public class MerchantFraud {
     private org.museframework.bian.classes.Object channelActivityMerchantFraudAnalysisReference;
 
     /*The output record from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityMerchantFraudAnalysisResult;
 
     public void setChannelActivityMerchantFraudAnalysisAlgorithmSpecification(String channelActivityMerchantFraudAnalysisAlgorithmSpecification) {

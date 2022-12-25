@@ -11,7 +11,7 @@ public class BankDefinedProductandServiceTerm {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Bank Defined Product and Service Term*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Bank Defined Product and Service Term specific Business Service*/
@@ -27,7 +27,7 @@ public class BankDefinedProductandServiceTerm {
     private org.museframework.bian.classes.Arrangement bankDefinedProductandServiceTermReference;
 
     /*The type of Bank Defined Product and Service Term*/
-    @MetaField
+    @MetaField(0)
     private String bankDefinedProductandServiceTermType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

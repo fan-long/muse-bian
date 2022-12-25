@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class History {
     /*The task updates the channel activity history to reflect the contact*/
-    @MetaField
+    @MetaField(0)
     private String historyTaskRecord;
 
     public void setHistoryTaskRecord(String historyTaskRecord) {

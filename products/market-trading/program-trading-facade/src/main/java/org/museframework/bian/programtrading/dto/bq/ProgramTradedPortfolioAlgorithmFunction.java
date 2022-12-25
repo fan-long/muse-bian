@@ -11,7 +11,7 @@ public class ProgramTradedPortfolioAlgorithmFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Program Traded Portfolio Algorithm Function specific Business Service*/
@@ -27,7 +27,7 @@ public class ProgramTradedPortfolioAlgorithmFunction {
     private org.museframework.bian.classes.Function programTradedPortfolioAlgorithmFunctionReference;
 
     /*The type of Program Traded Portfolio Algorithm Function*/
-    @MetaField
+    @MetaField(0)
     private String programTradedPortfolioAlgorithmFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductTestingandDeploymentMechanisms {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsVersionNumber;
 
     /*The Technology Standards Specification specific  Business Service*/
@@ -25,23 +25,23 @@ public class ProductTestingandDeploymentMechanisms {
     private org.museframework.bian.classes.BusinessService productTestingandDeploymentMechanisms;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productTestingandDeploymentMechanismsServiceName;
 
     public void setProductTestingandDeploymentMechanismsPreconditions(String productTestingandDeploymentMechanismsPreconditions) {

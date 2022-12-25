@@ -11,7 +11,7 @@ public class InformationFeedAdministrationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Information Feed Administration Function specific Business Service*/
@@ -27,7 +27,7 @@ public class InformationFeedAdministrationFunction {
     private org.museframework.bian.classes.Function informationFeedAdministrationFunctionReference;
 
     /*The type of Information Feed Administration Function*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedAdministrationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

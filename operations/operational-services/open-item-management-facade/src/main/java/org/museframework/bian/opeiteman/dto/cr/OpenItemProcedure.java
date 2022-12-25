@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class OpenItemProcedure {
     /*The type of open item, typically an overdue payment*/
-    @MetaField
+    @MetaField(0)
     private String openItemType;
 
     /*Specific detail of the open item for reference*/
-    @MetaField
+    @MetaField(0)
     private String openItemDescription;
 
     /*Reference to the associated loan account*/
@@ -24,19 +24,19 @@ public class OpenItemProcedure {
     private org.museframework.bian.classes.Object partyReference;
 
     /*Payment schedule used for staged payments*/
-    @MetaField
+    @MetaField(0)
     private String loanRepaymentSchedule;
 
     /*The outstanding balance*/
-    @MetaField
+    @MetaField(0)
     private String loanOutstandingBalance;
 
     /*The date the loan agreement is terminated*/
-    @MetaField
+    @MetaField(0)
     private String loanTerminationDate;
 
     /*A statement of repayment transactions made against the item*/
-    @MetaField
+    @MetaField(0)
     private String repaymentStatement;
 
     public void setOpenItemType(String openItemType) {

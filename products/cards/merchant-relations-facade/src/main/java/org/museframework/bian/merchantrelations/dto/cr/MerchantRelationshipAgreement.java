@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MerchantRelationshipAgreement {
     /*A Classification value that distinguishes between Options defined within Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
@@ -30,19 +30,19 @@ public class MerchantRelationshipAgreement {
     private org.museframework.bian.classes.Instruction merchantRelationshipAgreementDischargeRequest;
 
     /*Timetable to discharge Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementDischargeSchedule;
 
     /*The status of Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementStatus;
 
     /*Party who is involved in Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Merchant Relationship Agreement*/
@@ -58,7 +58,7 @@ public class MerchantRelationshipAgreement {
     private org.museframework.bian.classes.RuleSet merchantRelationshipAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Merchant Relationship Agreement*/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationshipAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Merchant Relationship Agreement in case of legal dispute.*/

@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PublicOfferingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Public Offering Facility*/
@@ -15,15 +15,15 @@ public class PublicOfferingFacility {
     private org.museframework.bian.classes.Feature publicOfferingFacilitySelectedOption;
 
     /*The status of Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityStatus;
 
     /*Reference to the party who is involved in Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Public Offering Facility*/
@@ -31,7 +31,7 @@ public class PublicOfferingFacility {
     private org.museframework.bian.classes.RuleSet publicOfferingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Public Offering Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class PublicOfferingFacility {
     private org.museframework.bian.classes.Account publicOfferingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Public Offering Facility*/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingFacilityCustomerReference;
 
     /*The position of Public Offering Facility*/

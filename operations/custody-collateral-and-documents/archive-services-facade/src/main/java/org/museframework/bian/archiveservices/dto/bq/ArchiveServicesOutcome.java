@@ -11,7 +11,7 @@ public class ArchiveServicesOutcome {
     private org.museframework.bian.classes.Event archiveServicesIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String archiveServicesProvision;
 
     public void setArchiveServicesIncident(org.museframework.bian.classes.Event archiveServicesIncident) {

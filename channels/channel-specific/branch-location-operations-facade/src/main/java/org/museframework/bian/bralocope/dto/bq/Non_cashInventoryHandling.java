@@ -12,11 +12,11 @@ public class Non_cashInventoryHandling {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The <BQ> specific Business Service*/
@@ -36,7 +36,7 @@ public class Non_cashInventoryHandling {
     private org.museframework.bian.classes.PlannedAction non_cashInventoryHandlingReference;
 
     /*The type of Non-cash Inventory Handling*/
-    @MetaField
+    @MetaField(0)
     private String non_cashInventoryHandlingType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

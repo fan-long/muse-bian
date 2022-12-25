@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankRates {
     /*The type of bank interest or currency rate that is to be applied in production (e.g. bank's consumer mortgage rate)*/
-    @MetaField
+    @MetaField(0)
     private String bankRateType;
 
     /*The current value (value range if appropriate) to apply*/
-    @MetaField
+    @MetaField(0)
     private String bankRateValue;
 
     /*The key date and time values associated with the rate*/
-    @MetaField
+    @MetaField(0)
     private String bankRateValueDate;
 
     /*Historical values (maintained for back testing, corrections etc.)*/
-    @MetaField
+    @MetaField(0)
     private String bankRateValueHistory;
 
     /*Reference to the distributed record containing the prevailing bank rates*/
@@ -29,11 +29,11 @@ public class BankRates {
     private org.museframework.bian.classes.Object bankRateRecordReference;
 
     /*The record of the prevailing bank rates*/
-    @MetaField
+    @MetaField(0)
     private String bankRateRecord;
 
     /*Date and time stamp for rate value record*/
-    @MetaField
+    @MetaField(0)
     private String bankRateRecordDate;
 
     public void setBankRateType(String bankRateType) {

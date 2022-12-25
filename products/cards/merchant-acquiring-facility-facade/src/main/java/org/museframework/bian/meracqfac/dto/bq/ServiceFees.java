@@ -7,51 +7,51 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServiceFees {
     /*The profile of applicable fees and penalties*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeConfigurationProfile;
 
     /*The fee or penalty type applied*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeType;
 
     /*Definition of the fee or penalty including when and how to apply*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeDefinition;
 
     /*The record of applied fees and penalties including transactions and accrued amounts*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeApplicationRecord;
 
     /*A record of an applied fee or penalty*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeTransaction;
 
     /*General description of the fee or penalty transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionDescription;
 
     /*The fee or penalty type applied*/
-    @MetaField
+    @MetaField(0)
     private String transactionFeeType;
 
     /*The derived fee or penalty amount applied*/
-    @MetaField
+    @MetaField(0)
     private String transactionFeeCharge;
 
     /*A record of projected fees and penalties*/
-    @MetaField
+    @MetaField(0)
     private String merchantFeeProjectionsandCommitments;
 
     /*General description of the projected fee or penalty*/
-    @MetaField
+    @MetaField(0)
     private String projectedTransactionDescription;
 
     /*The fee or penalty type*/
-    @MetaField
+    @MetaField(0)
     private String projectedTransactionFeeType;
 
     /*The anticipated fee or penalty amount*/
-    @MetaField
+    @MetaField(0)
     private String projectedTransactionFeeCharge;
 
     public void setMerchantFeeConfigurationProfile(String merchantFeeConfigurationProfile) {

@@ -10,19 +10,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Allocation {
     /*Defines the type of allocation (e.g. next available, qualification based, future reservation)*/
-    @MetaField
+    @MetaField(0)
     private String allocationRequestType;
 
     /*Contains details of servicing resource request. This can be simple for next available agent, or detail specific required qualifications and expertise*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRequestRecord;
 
     /*Extracts from the active contact can be used to support more advance selection logic to identify the best available servicing specialist resource*/
-    @MetaField
+    @MetaField(0)
     private String customerContactRecord;
 
     /*The result of the allocation task*/
-    @MetaField
+    @MetaField(0)
     private String allocationTaskResult;
 
     public void setAllocationRequestType(String allocationRequestType) {

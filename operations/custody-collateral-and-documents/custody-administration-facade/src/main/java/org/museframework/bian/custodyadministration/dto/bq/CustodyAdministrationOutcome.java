@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustodyAdministrationOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String custodyAdministrationFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String custodyAdministrationWorkProduct;
 
     public void setCustodyAdministrationFinancialFacility(String custodyAdministrationFinancialFacility) {

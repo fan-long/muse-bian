@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Collateral {
     /*The required collateral amount for the offer*/
-    @MetaField
+    @MetaField(0)
     private String collateralRequirement;
 
     /*Reference to earmarked collateral during the offer procedure*/

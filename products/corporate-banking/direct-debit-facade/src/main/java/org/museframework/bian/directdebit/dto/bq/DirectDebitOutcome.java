@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DirectDebitOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String directDebitFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String directDebitWorkProduct;
 
     public void setDirectDebitFinancialFacility(String directDebitFinancialFacility) {

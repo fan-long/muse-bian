@@ -7,31 +7,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProspectCampaignPortfolioManagementPlan {
     /*The collection/portfolio of available prospect campaigns. The details are used to assess performance and coverage and direct development and execution activity*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignPortfolio;
 
     /*The type or category of prospect campaign (e.g. mailshot, targeted solicitation, discounted product incentive)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignType;
 
     /*A description of the campaign that clarifies the intended context/use of the campaign, the mechanisms employed and the intended/anticipated response/impact*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetrics;
 
     /*A description of the metric, defining how it is to be measured in deployment*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetricDefinition;
 
     /*A description of the target performance for the metric that can be defined for different usage scenarios as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetricGoal;
 
     /*Maintains a record of the use and impact of prospect campaign versions over the life of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignPerformanceRecord;
 
     /*Reference to the prospect campaign execution event*/
@@ -43,15 +43,15 @@ public class ProspectCampaignPortfolioManagementPlan {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment set-up/configuration of the campaign for reference*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureSet_up;
 
     /*The prospect campaign version number used in the event*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureVersionNumber;
 
     /*The result/impact of the overall prospect campaign event (that can include multiple identified prospects)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureResult;
 
     public void setProspectCampaignPortfolio(String prospectCampaignPortfolio) {

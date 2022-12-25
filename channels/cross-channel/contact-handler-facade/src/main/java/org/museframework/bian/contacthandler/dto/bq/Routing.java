@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Routing {
     /*The task updates the contact record routing selection field and handles the interaction with the Contact Routing service domain to identify the servicing position/resource*/
-    @MetaField
+    @MetaField(0)
     private String routingTaskRecord;
 
     public void setRoutingTaskRecord(String routingTaskRecord) {

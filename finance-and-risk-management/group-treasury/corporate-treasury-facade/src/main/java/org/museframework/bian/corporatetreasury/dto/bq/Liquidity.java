@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Liquidity {
     /*Consolidated cashflow/liquidity reports*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseLiquidityCashManagementAnalysis;
 
     /*Details of large transactions that impact the treasury position that need to be considered individually*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseLargePaymentTransactionRecords;
 
     /*These unit reports include cost/income actual and projected values as required*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitFinancialReports;
 
     /*Description of a response initiated by corporate treasury*/
-    @MetaField
+    @MetaField(0)
     private String liquidityResolutionTask;
 
     public void setEnterpriseLiquidityCashManagementAnalysis(String enterpriseLiquidityCashManagementAnalysis) {

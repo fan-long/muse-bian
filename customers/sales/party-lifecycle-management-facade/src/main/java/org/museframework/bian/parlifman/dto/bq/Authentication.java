@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Authentication {
     /*The method used to authenticate (e.g. public directory, document, 3rd party service providers)*/
-    @MetaField
+    @MetaField(0)
     private String authenticationType;
 
     /*Reference to an external verification source (e.g. for registered address/location verification)*/
@@ -20,15 +20,15 @@ public class Authentication {
     private org.museframework.bian.classes.Object specialistAgencyServiceReference;
 
     /*The record of a specific verification task*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskRecord;
 
     /*Description of the authentication procedure*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskDescription;
 
     /*Result from the authentication service request*/
-    @MetaField
+    @MetaField(0)
     private String specialistAgencyServiceRequestResult;
 
     /*Reference to documents used for authentication*/
@@ -36,11 +36,11 @@ public class Authentication {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskWorkProducts;
 
     /*The outcome of the authentication workstep*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskResult;
 
     public void setAuthenticationType(String authenticationType) {

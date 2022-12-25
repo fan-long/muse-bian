@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TransferPricing {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingFeatureSchedule;
 
     /*The Product Combination Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class TransferPricing {
     private org.museframework.bian.classes.BusinessService productTransferPricing;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingProductTransferPricingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingProductTransferPricingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingProductTransferPricingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String transferPricingProductTransferPricingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String transferPricingProductTransferPricingServiceName;
 
     public void setTransferPricingPreconditions(String transferPricingPreconditions) {

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Servicing {
     /*The type of event (e.g. self-service, assisted)*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingEventType;
 
     /*Reference to a contact event log*/
@@ -17,19 +17,19 @@ public class Servicing {
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*Reference to the types or instances of products/services being serviced if provided*/
-    @MetaField
+    @MetaField(0)
     private String accessedProductandService;
 
     /*The channel and device used in the servicing event*/
-    @MetaField
+    @MetaField(0)
     private String channelDeviceType;
 
     /*The given purpose for the customer servicing action*/
-    @MetaField
+    @MetaField(0)
     private String contactPurpose;
 
     /*The captured result of the servicing event*/
-    @MetaField
+    @MetaField(0)
     private String contactResult;
 
     /*Employees involved in recording the event*/
@@ -37,11 +37,11 @@ public class Servicing {
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /*The details of the event (in a suitable format)*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingEventRecord;
 
     /*Date and time and the location the event was captured*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setCustomerServicingEventType(String customerServicingEventType) {

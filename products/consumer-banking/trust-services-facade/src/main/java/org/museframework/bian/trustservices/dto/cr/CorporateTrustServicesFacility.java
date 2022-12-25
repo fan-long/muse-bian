@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorporateTrustServicesFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Corporate Trust Services Facility*/
@@ -15,15 +15,15 @@ public class CorporateTrustServicesFacility {
     private org.museframework.bian.classes.Feature corporateTrustServicesFacilitySelectedOption;
 
     /*The status of Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityStatus;
 
     /*Reference to the party who is involved in Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityAssociatedParty;
 
     /*The curreny which is arranged in Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityCurrency;
 
     /*Reference to the regulation which is defined in Corporate Trust Services Facility*/
@@ -31,7 +31,7 @@ public class CorporateTrustServicesFacility {
     private org.museframework.bian.classes.RuleSet corporateTrustServicesFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Corporate Trust Services Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class CorporateTrustServicesFacility {
     private org.museframework.bian.classes.Account corporateTrustServicesFacilityAccountReference;
 
     /*Reference to the customer who is involved in Corporate Trust Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String corporateTrustServicesFacilityCustomerReference;
 
     /*The position of Corporate Trust Services Facility*/

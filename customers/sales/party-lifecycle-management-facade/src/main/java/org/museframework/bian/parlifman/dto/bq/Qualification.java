@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Qualification {
     /*The type of qualification check  (e.g. PEP/watch list checks, credit worthiness, legal jeopardy)*/
-    @MetaField
+    @MetaField(0)
     private String qualificationType;
 
     /*Reference to an external verification source (e.g. for registered address/location verification)*/
@@ -19,15 +19,15 @@ public class Qualification {
     private org.museframework.bian.classes.Object specialistAgencyServiceReference;
 
     /*The record of a specific qualification task*/
-    @MetaField
+    @MetaField(0)
     private String qualificationTaskRecord;
 
     /*Description of the approach taken*/
-    @MetaField
+    @MetaField(0)
     private String qualificationTaskDescription;
 
     /*Result from the qualification service request*/
-    @MetaField
+    @MetaField(0)
     private String specialistAgencyRegulatorServiceRequestResult;
 
     /*Reference to documents used for authentication*/
@@ -35,11 +35,11 @@ public class Qualification {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String qualificationTaskWorkProducts;
 
     /*The outcome of the qualification workstep*/
-    @MetaField
+    @MetaField(0)
     private String qualificationTaskResult;
 
     public void setQualificationType(String qualificationType) {

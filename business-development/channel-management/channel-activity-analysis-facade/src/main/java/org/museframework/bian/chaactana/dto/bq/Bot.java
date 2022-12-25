@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Bot {
     /*Defines the intended analytical insights and required input data and outputs*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityBotDetectionAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
@@ -17,7 +17,7 @@ public class Bot {
     private org.museframework.bian.classes.Object channelActivityBotDetectionAnalysisReference;
 
     /*The output record from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityBotDetectionAnalysisResult;
 
     public void setChannelActivityBotDetectionAnalysisAlgorithmSpecification(String channelActivityBotDetectionAnalysisAlgorithmSpecification) {

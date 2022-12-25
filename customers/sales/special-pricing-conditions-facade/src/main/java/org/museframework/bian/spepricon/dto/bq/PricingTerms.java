@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PricingTerms {
     /*The required status/situation before the property is valid/meaningful*/
-    @MetaField
+    @MetaField(0)
     private String pricingTermsPreconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String pricingTermsPropertySchedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String pricingTermsVersionNumber;
 
     /*The Special Pricing Conditions Directory Entry specific  Business Service*/
@@ -23,23 +23,23 @@ public class PricingTerms {
     private org.museframework.bian.classes.BusinessService specialPricingterms;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingtermsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingtermsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingtermsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingtermsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String specialPricingtermsServiceName;
 
     public void setPricingTermsPreconditions(String pricingTermsPreconditions) {

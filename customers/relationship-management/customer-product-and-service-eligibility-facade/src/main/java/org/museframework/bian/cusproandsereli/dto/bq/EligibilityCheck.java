@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EligibilityCheck {
     /*The result of the eligibility assessment for the requested product/service - details any eligibility considerations or requirements and the applicable terms*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServiceEligibilityAssessmentResult;
 
     public void setCustomerProductandServiceEligibilityAssessmentResult(String customerProductandServiceEligibilityAssessmentResult) {

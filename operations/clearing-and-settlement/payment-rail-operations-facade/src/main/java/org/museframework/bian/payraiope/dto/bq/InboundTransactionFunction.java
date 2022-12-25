@@ -11,7 +11,7 @@ public class InboundTransactionFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Inbound Transaction Function specific Business Service*/
@@ -27,7 +27,7 @@ public class InboundTransactionFunction {
     private org.museframework.bian.classes.Function inboundTransactionFunctionReference;
 
     /*The type of Inbound Transaction Function*/
-    @MetaField
+    @MetaField(0)
     private String inboundTransactionFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

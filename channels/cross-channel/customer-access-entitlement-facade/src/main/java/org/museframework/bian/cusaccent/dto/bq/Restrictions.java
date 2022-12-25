@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Restrictions {
     /*Assembles the array of channel access constraints*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessRestrictionsRecord;
 
     /*Details allowed products/services and associated features*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessProductandServiceTypeUsage;
 
     /*Details restrictions on allowed product/services by channel/device*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessProductandServiceChannelDeviceRestrictions;
 
     /*Details restrictions on allowed product/services by location*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessProductandServiceLocationRestrictions;
 
     /*Details restrictions on allowed product/services by frequency and cumulative amounts - can be cross-product*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessProductandServiceFrequencyLimitRestrictions;
 
     /*Details restrictions on allowed product/service by schedule and cumulative access duration*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessProductandServiceTimeDurationRestrictions;
 
     public void setChannelAccessRestrictionsRecord(String channelAccessRestrictionsRecord) {

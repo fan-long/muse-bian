@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Payment {
     /*Transaction details*/
-    @MetaField
+    @MetaField(0)
     private String participantPaymentTransaction;
 
     public void setParticipantPaymentTransaction(String participantPaymentTransaction) {

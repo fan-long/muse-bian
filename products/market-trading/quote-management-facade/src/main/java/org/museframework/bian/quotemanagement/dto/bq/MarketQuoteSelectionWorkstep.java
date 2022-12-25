@@ -11,11 +11,11 @@ public class MarketQuoteSelectionWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Market Quote Selection Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class MarketQuoteSelectionWorkstep {
     private org.museframework.bian.classes.Workstep marketQuoteSelectionWorkstepReference;
 
     /*The type of Market Quote Selection Workstep*/
-    @MetaField
+    @MetaField(0)
     private String marketQuoteSelectionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

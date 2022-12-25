@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ITOperations {
     /*The consolidated aspects of the IT operations deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentITOperationsRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentITOperationsRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class ITOperations {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the IT operations needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentITOperationsRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentITOperationsRequirements(String productandServiceDeploymentITOperationsRequirements) {

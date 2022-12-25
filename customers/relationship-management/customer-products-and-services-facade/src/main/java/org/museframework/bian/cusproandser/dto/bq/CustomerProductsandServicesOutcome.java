@@ -11,7 +11,7 @@ public class CustomerProductsandServicesOutcome {
     private org.museframework.bian.classes.DirectoryEntry customerProductsandServicesEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerProductsandServicesWorkProduct;
 
     public void setCustomerProductsandServicesEntry(org.museframework.bian.classes.DirectoryEntry customerProductsandServicesEntry) {

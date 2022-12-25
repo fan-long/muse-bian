@@ -26,7 +26,7 @@ public class ManagedInvestmentPortfolioAnalysis {
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*The schedule for performing investment portfolio analysis for the account*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAnalysisSchedule;
 
     /*Reference to the underlying investment account*/
@@ -34,19 +34,19 @@ public class ManagedInvestmentPortfolioAnalysis {
     private org.museframework.bian.classes.Object investmentAccountArrangementInstanceReference;
 
     /*A consolidated report containing the results of performance analyses applied to the investment portfolio*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAnalysisReport;
 
     /*Defines a type of performance analysis performed (e.g. standard regular scheduled review, specialist review, customer requested review)*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAnalysisType;
 
     /*The consolidated report of the performance evaluation and comparisons from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAnalysisResult;
 
     /*The date/time the performance report was completed*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAnalysisReportingDate;
 
     /*Reference to associated performance analysis reporting documents*/

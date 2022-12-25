@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Precedents {
     /*The type of party property tracked (e.g. residential status, marital status, military, in a disaster location, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String precedentType;
 
     /*Reference to the tracked value*/
@@ -15,11 +15,11 @@ public class Precedents {
     private org.museframework.bian.classes.Object customerPrecedentReference;
 
     /*Current (and historical) value of the precedent*/
-    @MetaField
+    @MetaField(0)
     private String customerPrecedentValue;
 
     /*The date when the value was last checked/confirmed*/
-    @MetaField
+    @MetaField(0)
     private String customerPrecedentValueDate;
 
     public void setPrecedentType(String precedentType) {

@@ -12,23 +12,23 @@ public class CorrespondentBankDirectoryEntry {
     private org.museframework.bian.classes.Object correspondentBankReference;
 
     /*Clearing and sorting code used in payment processing*/
-    @MetaField
+    @MetaField(0)
     private String clearingSortCodes;
 
     /*Contact details for key parties at the bank*/
-    @MetaField
+    @MetaField(0)
     private String contactAddresses;
 
     /*One or more associated legal entity references associated with the bank*/
-    @MetaField
+    @MetaField(0)
     private String legalEntityIdentifiers;
 
     /*A description of the legal entity hierarchy at the bank*/
-    @MetaField
+    @MetaField(0)
     private String bankHierarchy;
 
     /*A reference to the bank calendar details for payment processing*/
-    @MetaField
+    @MetaField(0)
     private String holidayTimezoneSchedule;
 
     /*Reference to associated vostro account (your money at our bank)*/
@@ -44,7 +44,7 @@ public class CorrespondentBankDirectoryEntry {
     private org.museframework.bian.classes.Object correspondentBankAgreementReference;
 
     /*The correspondent bank agreement (details agreed limits, fees, preferred payments mechanism, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankAgreement;
 
     public void setCorrespondentBankReference(org.museframework.bian.classes.Object correspondentBankReference) {

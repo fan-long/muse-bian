@@ -11,7 +11,7 @@ public class InvestmentPortfolioValuationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Investment Portfolio Valuation Function specific Business Service*/
@@ -27,7 +27,7 @@ public class InvestmentPortfolioValuationFunction {
     private org.museframework.bian.classes.Function investmentPortfolioValuationFunctionReference;
 
     /*The type of Investment Portfolio Valuation Function*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioValuationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

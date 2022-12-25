@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProjectionandAllocation {
     /*The required status/situation before the allocation can be made*/
-    @MetaField
+    @MetaField(0)
     private String projectionandAllocationPreconditions;
 
     /*The schedule and timing of allocation decisions*/
-    @MetaField
+    @MetaField(0)
     private String projectionandAllocationAllocationSchedule;
 
     /*The Central Cash Allocation specific  Business Service*/
@@ -21,23 +21,23 @@ public class ProjectionandAllocation {
     private org.museframework.bian.classes.BusinessService cashInventoryProjection;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryProjectionServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryProjectionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryProjectionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryProjectionServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryProjectionServiceName;
 
     public void setProjectionandAllocationPreconditions(String projectionandAllocationPreconditions) {

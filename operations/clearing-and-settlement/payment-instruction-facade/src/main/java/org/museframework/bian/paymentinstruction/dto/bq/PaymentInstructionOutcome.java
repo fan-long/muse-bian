@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PaymentInstructionOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String paymentInstructionWorkProduct;
 
     /**/

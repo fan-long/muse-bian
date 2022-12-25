@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TransactionReversal {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalTaskSchedule;
 
     /*The Credit/Charge Card Financial Capture Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class TransactionReversal {
     private org.museframework.bian.classes.BusinessService cardTransactionReversal;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalCardTransactionReversalServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalCardTransactionReversalServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalCardTransactionReversalServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalCardTransactionReversalServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String transactionReversalCardTransactionReversalServiceName;
 
     public void setTransactionReversalPreconditions(String transactionReversalPreconditions) {

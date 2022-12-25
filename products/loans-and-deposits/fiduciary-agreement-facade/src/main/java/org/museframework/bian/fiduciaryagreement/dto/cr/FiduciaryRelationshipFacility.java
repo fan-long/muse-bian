@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FiduciaryRelationshipFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityParameterType;
 
     /*A selected optional business service as subject matter of Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilitySelectedOption;
 
     /*The type of Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityType;
 
     /*Reference to Fiduciary Relationship Arrangement*/
@@ -24,15 +24,15 @@ public class FiduciaryRelationshipFacility {
     private org.museframework.bian.classes.Object fiduciaryRelationshipFacilityReference;
 
     /*Timetable to fulfill Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilitySchedule;
 
     /*The status of Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityStatus;
 
     /*The curreny which is arranged in Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityCurrency;
 
     /*Reference to the regulation which is defined in Fiduciary Relationship Arrangement*/
@@ -40,19 +40,19 @@ public class FiduciaryRelationshipFacility {
     private org.museframework.bian.classes.Object fiduciaryRelationshipFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Fiduciary Relationship Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Fiduciary Relationship Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityBookingLocation;
 
     /*The type of account which is linked to Fiduciary Relationship Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryRelationshipFacilityAccountType;
 
     /*Reference to the account which is linked to Fiduciary Relationship Arrangement*/

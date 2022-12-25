@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditandFraudRelatedIssueAnalysis {
     /*The required status/situation before the algorithm can be applied*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisPreconditions;
 
     /*The schedule and timing of the analysis performed using the algorithm*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisAnalysisSchedule;
 
     /*The algorithm version employed in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisVersionNumber;
 
     /*The Customer Case Root Cause Analysis specific  Business Service*/
@@ -25,23 +25,23 @@ public class CreditandFraudRelatedIssueAnalysis {
     private org.museframework.bian.classes.BusinessService creditandFraudRelatedIssueAnalysis;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditandFraudRelatedIssueAnalysisServiceName;
 
     public void setCreditandFraudRelatedIssueAnalysisPreconditions(String creditandFraudRelatedIssueAnalysisPreconditions) {

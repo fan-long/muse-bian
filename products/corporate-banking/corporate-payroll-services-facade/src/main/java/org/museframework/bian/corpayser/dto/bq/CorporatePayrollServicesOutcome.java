@@ -11,7 +11,7 @@ public class CorporatePayrollServicesOutcome {
     private org.museframework.bian.classes.FinancialFacility corporatePayrollServicesFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String corporatePayrollServicesWorkProduct;
 
     public void setCorporatePayrollServicesFinancialFacility(org.museframework.bian.classes.FinancialFacility corporatePayrollServicesFinancialFacility) {

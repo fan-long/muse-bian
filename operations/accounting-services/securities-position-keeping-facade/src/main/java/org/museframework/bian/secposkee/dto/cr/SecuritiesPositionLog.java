@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SecuritiesPositionLog {
     /*The type of securities transaction log (e.g. equities, derivatives, all)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesTransactionLogType;
 
     /*The product/service investment account for which this is the securities transaction log*/
@@ -24,15 +24,15 @@ public class SecuritiesPositionLog {
     private org.museframework.bian.classes.Object counterpartyReference;
 
     /*Details the range of instruments that are tracked by the log (each instrument has its own transaction record/holding position*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLogInstrumentProfile;
 
     /*Details for an individual tracked instrument type - (the log track transactions for multiple securities/instruments)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLogInstrumentRecord;
 
     /*Reference to the type of investment instrument being tracked (e.g. equity, commodity, FX/MM, derivative)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesInstrumentType;
 
     /*The specific instrument trading identifier (e.g. NASDAQ Id)*/
@@ -40,51 +40,51 @@ public class SecuritiesPositionLog {
     private org.museframework.bian.classes.Object securitiesInstrumentReference;
 
     /*Basic position limits that are maintained as an aspect of the log (these can include securities holdings and related instrument properties such as associated dividends entitlements)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLimits;
 
     /*The type of position maintained for the log (e.g. cumulative balance)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLimitSettings;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPositionLimitValue;
 
     /*Support for recording blocks on the log position (handling is by the associated investment account fulfillment service domain)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAmountBlock;
 
     /*The type of block applied to the tracked securities position (e.g. pending, final)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAmountBlockType;
 
     /*Priority classification for the block*/
-    @MetaField
+    @MetaField(0)
     private String priority;
 
     /*The amount of the block*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*The type of key dates associated with the block  (e.g. start, expiry)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*The date and time the log was initiated. Note the log will have a complex internal calendar structure for extract and reporting*/
-    @MetaField
+    @MetaField(0)
     private String initiationDate;
 
     /*The status of the log entry (e.g. active, in-suspense etc.)*/
-    @MetaField
+    @MetaField(0)
     private String status;
 
     public void setSecuritiesTransactionLogType(String securitiesTransactionLogType) {

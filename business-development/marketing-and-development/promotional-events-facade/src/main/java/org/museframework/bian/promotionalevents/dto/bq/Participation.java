@@ -13,7 +13,7 @@ public class Participation {
     private org.museframework.bian.classes.Object promotionalEventParticipationInstanceReference;
 
     /*The make-up of the sponsorship arrangements for participation in the event*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventSponsorshipBudget;
 
     /*Reference to the business unit responsible for coordinating with the promotional event*/
@@ -21,11 +21,11 @@ public class Participation {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The schedule for participation in the event*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventExecutionSchedule;
 
     /*The result/impact of the overall promotional event  (can refer to any detected up-tick in brand awareness and sales)*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventResult;
 
     public void setPromotionalEventParticipationInstanceReference(org.museframework.bian.classes.Object promotionalEventParticipationInstanceReference) {

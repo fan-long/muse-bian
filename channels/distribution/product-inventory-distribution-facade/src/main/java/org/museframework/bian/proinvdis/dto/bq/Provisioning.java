@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Provisioning {
     /*The required status/situation before the routine can be undertaken*/
-    @MetaField
+    @MetaField(0)
     private String provisioningPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
@@ -16,7 +16,7 @@ public class Provisioning {
     private org.museframework.bian.classes.Object provisioningBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String provisioningWorkSchedule;
 
     /*The Product Inventory Distribution AdministrativePlan specific Business Service*/
@@ -24,27 +24,27 @@ public class Provisioning {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String provisioningPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String provisioningServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String provisioningServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String provisioningServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String provisioningServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String provisioningServiceName;
 
     public void setProvisioningPreconditions(String provisioningPreconditions) {

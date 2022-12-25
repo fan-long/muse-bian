@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Authentication {
     /*The task updates the contact record authentication status field and handles the interaction with the Party Authentication service domain to get the required level of authentication for the contact*/
-    @MetaField
+    @MetaField(0)
     private String authenticationTaskRecord;
 
     public void setAuthenticationTaskRecord(String authenticationTaskRecord) {

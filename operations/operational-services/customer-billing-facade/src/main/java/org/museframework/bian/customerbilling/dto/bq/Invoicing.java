@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Invoicing {
     /*The customer invoice record*/
-    @MetaField
+    @MetaField(0)
     private String customerInvoiceRecord;
 
     /*The date the invoice is issued*/
-    @MetaField
+    @MetaField(0)
     private String invoiceDate;
 
     /*The document reference for the sent invoice*/
@@ -25,11 +25,11 @@ public class Invoicing {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*The content of the invoice (in any suitable media of format)*/
-    @MetaField
+    @MetaField(0)
     private String invoice;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
-    @MetaField
+    @MetaField(0)
     private String invoicingWorkProduct;
 
     public void setCustomerInvoiceRecord(String customerInvoiceRecord) {

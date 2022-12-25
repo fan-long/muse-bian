@@ -11,11 +11,11 @@ public class Update_PartiallyCompleted_MarketOrderWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Update (Partially Completed) Market Order Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class Update_PartiallyCompleted_MarketOrderWorkstep {
     private org.museframework.bian.classes.Workstep update_PartiallyCompleted_MarketOrderWorkstepReference;
 
     /*The type of Update (Partially Completed) Market Order Workstep*/
-    @MetaField
+    @MetaField(0)
     private String update_PartiallyCompleted_MarketOrderWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

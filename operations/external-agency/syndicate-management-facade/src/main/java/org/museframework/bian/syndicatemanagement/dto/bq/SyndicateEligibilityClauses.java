@@ -15,7 +15,7 @@ public class SyndicateEligibilityClauses {
     private org.museframework.bian.classes.Object syndicateEligibilityClausesReference;
 
     /*The type of Syndicate Eligibility Clauses*/
-    @MetaField
+    @MetaField(0)
     private String syndicateEligibilityClausesType;
 
     /*The Syndicate Eligibility Clauses specific Business Service*/
@@ -23,7 +23,7 @@ public class SyndicateEligibilityClauses {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for governing Syndicate Eligibility Clauses by applying the Syndicate Eligibility Clauses clause*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The completion status once Syndicate Eligibility Clauses has been governed by applying the Syndicate Eligibility Clauses clause*/
@@ -35,7 +35,7 @@ public class SyndicateEligibilityClauses {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in governing Syndicate Eligibility Clauses by applying the Syndicate Eligibility Clauses clause*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     public void setSyndicateMembershipReference(org.museframework.bian.classes.Object syndicateMembershipReference) {

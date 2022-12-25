@@ -15,31 +15,31 @@ public class PartyRelationshipProcedure {
     private org.museframework.bian.classes.Object partyReference;
 
     /*Defines the nature of the bank association with the party (e.g. customer, supplier)*/
-    @MetaField
+    @MetaField(0)
     private String partyRelationshipType;
 
     /*Defines scheduled update/review tasks covering all tracked properties*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleMaintenanceSchedule;
 
     /*Tasks performed to maintain/verify the life-cycle status*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleMaintenanceTask;
 
     /*The type of task performed (e.g. on-boarding check, periodic refresh)*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleMaintenanceTaskType;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleMaintenanceWorkProducts;
 
     /*The outcome of the task  (will be used to update the Status and Status Record)*/
-    @MetaField
+    @MetaField(0)
     private String partyLife_cycleMaintenanceTaskResult;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerPrecedentProfileUpdateLog;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

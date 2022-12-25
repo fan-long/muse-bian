@@ -11,7 +11,7 @@ public class ChequeLockBoxOutcome {
     private org.museframework.bian.classes.FinancialFacility chequeLockBoxFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String chequeLockBoxWorkProduct;
 
     public void setChequeLockBoxFinancialFacility(org.museframework.bian.classes.FinancialFacility chequeLockBoxFinancialFacility) {

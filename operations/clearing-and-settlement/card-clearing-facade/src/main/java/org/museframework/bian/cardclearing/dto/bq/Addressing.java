@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Addressing {
     /*Details of the transaction addressing*/
-    @MetaField
+    @MetaField(0)
     private String addressingTaskResult;
 
     public void setAddressingTaskResult(String addressingTaskResult) {

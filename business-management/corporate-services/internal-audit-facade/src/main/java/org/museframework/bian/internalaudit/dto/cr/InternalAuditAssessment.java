@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InternalAuditAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Internal Audit Assessment . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentParameterType;
 
     /*A selected optional business service as subject matter of assessment*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentSelectedOption;
 
     /*The type of Internal Audit Assessment*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentType;
 
     /*Reference to Internal Audit Assessment*/
@@ -25,19 +25,19 @@ public class InternalAuditAssessment {
     private org.museframework.bian.classes.Object internalAuditAssessmentReference;
 
     /*Request to assess InternalAudit*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentRequest;
 
     /*Timetable to assess InternalAudit*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentSchedule;
 
     /*The status of Internal Audit Assessment*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentStatus;
 
     /*Reference to the log of (usage) ativities/events of Internal Audit Assessment*/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentUsageLog;
 
     /*Reference to the party who has provided Internal Audit Assessment*/

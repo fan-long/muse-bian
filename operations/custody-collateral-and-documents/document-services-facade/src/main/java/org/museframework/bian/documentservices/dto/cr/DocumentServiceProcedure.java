@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DocumentServiceProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureParameterType;
 
     /*A selected optional business service as subject matter of Document Service Procedure*/
@@ -20,23 +20,23 @@ public class DocumentServiceProcedure {
     private org.museframework.bian.classes.Instruction documentServiceProcedureRequest;
 
     /*Timetable to process Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureSchedule;
 
     /*The status of Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureStatus;
 
     /*Reference to the party who is involved in Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Document Service Procedure*/
@@ -44,23 +44,23 @@ public class DocumentServiceProcedure {
     private org.museframework.bian.classes.FinancialFacility documentServiceProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureType;
 
     /*The schedule according to which the service provider will process the Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Document Service Procedure*/
-    @MetaField
+    @MetaField(0)
     private String documentServiceProcedureServiceType;
 
     /*Reference to the product or service that is related to Document Service Procedure*/

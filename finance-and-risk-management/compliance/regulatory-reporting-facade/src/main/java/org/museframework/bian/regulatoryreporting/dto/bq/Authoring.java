@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Authoring {
     /*Details the production information/measurements required for reporting - includes reporting format*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryReportTypeComplianceReportingRequirements;
 
     /*The time period covered by a report*/
-    @MetaField
+    @MetaField(0)
     private String reportingPeriod;
 
     /*Refers to the company group or subsidiary covered by the regulatory report*/
@@ -29,7 +29,7 @@ public class Authoring {
     private org.museframework.bian.classes.Object regulatoryReportReference;
 
     /*The regulatory report in any suitable format and media*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryReport;
 
     /*The document reference for the record of the report*/

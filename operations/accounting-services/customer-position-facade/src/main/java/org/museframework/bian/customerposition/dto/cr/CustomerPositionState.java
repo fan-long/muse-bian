@@ -12,7 +12,7 @@ public class CustomerPositionState {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The consolidated position state that is tracked for the customer - combines analysis from all  measures*/
-    @MetaField
+    @MetaField(0)
     private String customerPositionStateRecord;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

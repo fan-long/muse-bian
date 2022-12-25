@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerCaseProcedure {
     /*The type of case being processed including any supporting narrative (e.g. disputed charges, suspected account fraud, stolen device, change of status)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseType;
 
     /*Reference to a specific product instance associated with the case*/
@@ -28,15 +28,15 @@ public class CustomerCaseProcedure {
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*The complete transaction record for transactions associated with the case (detailed attribute breakdown not included)*/
-    @MetaField
+    @MetaField(0)
     private String productTransactionRecord;
 
     /*Reference to the physical address or electronic venue the customer case was detected*/
-    @MetaField
+    @MetaField(0)
     private String caseLocation;
 
     /*The date and time when the case was initiated*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Employees involved in capturing the case*/
@@ -44,7 +44,7 @@ public class CustomerCaseProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The case processing schedule including key tasks and dates for resolution (target and actual dates/times )*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseResolutionSchedule;
 
     public void setCustomerCaseType(String customerCaseType) {

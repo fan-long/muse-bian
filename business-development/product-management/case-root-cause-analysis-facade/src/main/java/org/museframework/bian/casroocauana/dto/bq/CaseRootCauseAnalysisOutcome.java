@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CaseRootCauseAnalysisOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String caseRootCauseAnalysisWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String caseRootCauseAnalysisAnalysisType;
 
     public void setCaseRootCauseAnalysisWorkProduct(String caseRootCauseAnalysisWorkProduct) {

@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Billing {
     /*Defines the set-up for the billing processing (e.g. cycle date, type of billing, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String billingParameters;
 
     /*The billing/invoicing transaction details*/
-    @MetaField
+    @MetaField(0)
     private String billingTransaction;
 
     /*The target for the invoice, typically the card holder*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionParty;
 
     /*The billing address (can vary from the customer home address)*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionAddress;
 
     /*The period (from-to) covered by the invoice*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionPeriod;
 
     /*Reference to an associated statement (that is included in the generated invoice)*/
@@ -31,15 +31,15 @@ public class Billing {
     private org.museframework.bian.classes.Object billingTransactionStatementReference;
 
     /*The amount of the required repayment*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionAmount;
 
     /*The minimum required payment (for partial payment)*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionMinimumRequiredPayment;
 
     /*The due date for the payment*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactionPaymentDueDate;
 
     public void setBillingParameters(String billingParameters) {

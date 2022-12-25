@@ -11,7 +11,7 @@ public class CorporateDebtIssueOversightFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Corporate Debt Issue Oversight Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class CorporateDebtIssueOversightFulfillment {
     private org.museframework.bian.classes.Object corporateDebtIssueOversightFulfillmentReference;
 
     /*The type of Corporate Debt Issue Oversight Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String corporateDebtIssueOversightFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EmployeeCommissionAgreement {
     /*A Classification  value that distinguishes between Options defined within Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementSelectedOption;
 
     /*A Classification value that distinguishes between the subject matters of Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementType;
 
     /*Reference to Employee Commission Agreement*/
@@ -24,19 +24,19 @@ public class EmployeeCommissionAgreement {
     private org.museframework.bian.classes.Object employeeCommissionAgreementReference;
 
     /*Request to discharge Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementRequest;
 
     /*Timetable to discharge Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementSchedule;
 
     /*The status of Employee Commission Agreement discharging*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementStatus;
 
     /*Reference to the party who is involved in Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Employee Commission Agreement*/
@@ -44,11 +44,11 @@ public class EmployeeCommissionAgreement {
     private org.museframework.bian.classes.Object employeeCommissionAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementObligation;
 
     /*Right to do something under the terms of Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementEntitlement;
 
     /*Reference to the regulation which is defined in Employee Commission Agreement*/
@@ -56,11 +56,11 @@ public class EmployeeCommissionAgreement {
     private org.museframework.bian.classes.Object employeeCommissionAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Employee Commission Agreement*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Employee Commission Agreement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String employeeCommissionAgreementJurisdiction;
 
     /*Reference to the account which is linked to Employee Commission Agreement*/

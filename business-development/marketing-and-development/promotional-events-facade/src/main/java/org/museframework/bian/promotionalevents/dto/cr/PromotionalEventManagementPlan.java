@@ -8,35 +8,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PromotionalEventManagementPlan {
     /*The collection of promotional events that is used to assess performance and coverage and support promotional event sponsorship and participation decisions*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventPortfolio;
 
     /*The type of promotional event (e.g. sports event, art/entertainment event, media event)*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventType;
 
     /*A description of the promotional event that clarifies the required sponsorship and participation and the anticipated marketing impact and target audience*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the promotional event*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventMetrics;
 
     /*A description of the metric, defining how it is to be measured during and after the event*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventMetricDefinition;
 
     /*A description of the target performance for the metric*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventMetricGoal;
 
     /*The schedule of involvement in the portfolio/collection of promotional events*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventSchedule;
 
     /*Maintains a consolidated record of the impact of the portfolio of promotional events*/
-    @MetaField
+    @MetaField(0)
     private String promotionalEventPerformanceRecord;
 
     public void setPromotionalEventPortfolio(String promotionalEventPortfolio) {

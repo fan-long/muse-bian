@@ -10,15 +10,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialMarketInsight {
     /*The required status/situation before the algorithm can be applied*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInsightPreconditions;
 
     /*The schedule and timing of the analysis performed using the algorithm*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInsightAnalysisSchedule;
 
     /*The algorithm version employed in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInsightVersionNumber;
 
     /*The Financial Market Analysis specific  Business Service*/
@@ -26,23 +26,23 @@ public class FinancialMarketInsight {
     private org.museframework.bian.classes.BusinessService financialMarketAnalysis;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisServiceName;
 
     public void setFinancialMarketInsightPreconditions(String financialMarketInsightPreconditions) {

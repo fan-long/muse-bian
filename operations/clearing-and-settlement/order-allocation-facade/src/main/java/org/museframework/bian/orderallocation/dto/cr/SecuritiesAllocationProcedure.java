@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SecuritiesAllocationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Securities Allocation Procedure*/
@@ -19,23 +19,23 @@ public class SecuritiesAllocationProcedure {
     private org.museframework.bian.classes.Instruction securitiesAllocationProcedureRequest;
 
     /*Timetable to process Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureSchedule;
 
     /*The status of Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureStatus;
 
     /*Reference to the party who is involved in Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Securities Allocation Procedure*/
@@ -43,23 +43,23 @@ public class SecuritiesAllocationProcedure {
     private org.museframework.bian.classes.FinancialFacility securitiesAllocationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureType;
 
     /*The schedule according to which the service provider will process the Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Securities Allocation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securitiesAllocationProcedureServiceType;
 
     /*Reference to the product or service that is related to Securities Allocation Procedure*/

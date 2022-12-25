@@ -11,7 +11,7 @@ public class BankGuaranteedPaymentRemittanceTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Bank Guaranteed Payment Remittance Task specific Business Service*/
@@ -27,7 +27,7 @@ public class BankGuaranteedPaymentRemittanceTask {
     private org.museframework.bian.classes.Transaction bearerDocumentTransactionReference;
 
     /*The type of Bank Guaranteed Payment Remittance Task*/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteedPaymentRemittanceTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductionEnvironmentandSupportServices {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesVersionNumber;
 
     /*The Technology Standards Specification specific  Business Service*/
@@ -25,23 +25,23 @@ public class ProductionEnvironmentandSupportServices {
     private org.museframework.bian.classes.BusinessService productionEnvironmentandSupportServices;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productionEnvironmentandSupportServicesServiceName;
 
     public void setProductionEnvironmentandSupportServicesPreconditions(String productionEnvironmentandSupportServicesPreconditions) {

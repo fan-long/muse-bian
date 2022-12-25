@@ -11,19 +11,19 @@ public class CustomerMandate {
     private org.museframework.bian.classes.Object customerReference;
 
     /*Details the specific customer access allowed under the mandate*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementCustomerProductandServiceProfile;
 
     /*A type of product or service covered by the mandate*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Defines if and under what terms a product/service can be accessed for this customer under the mandate*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementCustomerProductandServiceTypeAccess;
 
     /*Records the usage of products/service under the mandate for control purposes*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementCustomerProductandServiceTypeUsage;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

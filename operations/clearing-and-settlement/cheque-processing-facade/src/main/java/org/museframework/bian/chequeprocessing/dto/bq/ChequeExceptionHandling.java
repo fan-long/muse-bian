@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ChequeExceptionHandling {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingPreconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingFunctionSchedule;
 
     /*The Cheque Processing Operating Session specific Business Service*/
@@ -20,23 +20,23 @@ public class ChequeExceptionHandling {
     private org.museframework.bian.classes.BusinessService chequeExceptionHandling;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String chequeExceptionHandlingServiceName;
 
     public void setChequeExceptionHandlingPreconditions(String chequeExceptionHandlingPreconditions) {

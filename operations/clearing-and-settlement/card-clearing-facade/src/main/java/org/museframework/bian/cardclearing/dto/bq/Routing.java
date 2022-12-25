@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Routing {
     /*Details of the transaction routing processing*/
-    @MetaField
+    @MetaField(0)
     private String routingTaskResult;
 
     public void setRoutingTaskResult(String routingTaskResult) {

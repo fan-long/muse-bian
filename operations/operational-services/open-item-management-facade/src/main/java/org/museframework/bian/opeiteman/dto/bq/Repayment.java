@@ -21,19 +21,19 @@ public class Repayment {
     private org.museframework.bian.classes.Object transactionPayerBankReference;
 
     /*The type of repayment transaction (e.g. wire)*/
-    @MetaField
+    @MetaField(0)
     private String transactionType;
 
     /*The amount of the repayment transaction (amount applied to the open item outstanding balance)*/
-    @MetaField
+    @MetaField(0)
     private String transactionAmount;
 
     /*The currency of the payment*/
-    @MetaField
+    @MetaField(0)
     private String transactionCurrency;
 
     /*Key dates associated with the transaction (e.g. value date)*/
-    @MetaField
+    @MetaField(0)
     private String transactionDate;
 
     public void setTransactionPayerReference(org.museframework.bian.classes.Object transactionPayerReference) {

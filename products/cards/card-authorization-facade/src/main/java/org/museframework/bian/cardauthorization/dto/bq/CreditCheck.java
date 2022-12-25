@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditCheck {
     /*The returned available balance is used to perform credit check - uses product instance reference to identify account*/
-    @MetaField
+    @MetaField(0)
     private String cardAccountavailablebalancecheckresult;
 
     public void setCardAccountavailablebalancecheckresult(String cardAccountavailablebalancecheckresult) {

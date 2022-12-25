@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketMakingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Market Making Facility*/
@@ -15,15 +15,15 @@ public class MarketMakingFacility {
     private org.museframework.bian.classes.Feature marketMakingFacilitySelectedOption;
 
     /*The status of Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityStatus;
 
     /*Reference to the party who is involved in Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityAssociatedParty;
 
     /*The curreny which is arranged in Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Market Making Facility*/
@@ -31,7 +31,7 @@ public class MarketMakingFacility {
     private org.museframework.bian.classes.RuleSet marketMakingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Market Making Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class MarketMakingFacility {
     private org.museframework.bian.classes.Account marketMakingFacilityAccountReference;
 
     /*Reference to the customer who is involved in Market Making Facility*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingFacilityCustomerReference;
 
     /*The position of Market Making Facility*/

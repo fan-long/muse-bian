@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PerformanceAnalysis {
     /*Defines the type of analysis/algorithm used to evaluate and compare the investment portfolio performance to prevailing market measures*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioPerformanceAnalysisType;
 
     /*Record of a task to perform a selected type of performance analysis on an investment portfolio*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioPerformanceAnalysisTask;
 
     /*The specific details of the performance analysis (can be a default/standard analysis or a specialist/ad-hoc request)*/
-    @MetaField
+    @MetaField(0)
     private String investmentPerformanceRequestSpecification;
 
     /*Reference to the performance analysis model used*/
@@ -25,19 +25,19 @@ public class PerformanceAnalysis {
     private org.museframework.bian.classes.Object investmentPerformanceModelReference;
 
     /*The data file, report of investment transaction details used in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String investmentPerformanceProductandServiceActivityReport;
 
     /*The content of selected financial market research report or market transaction database in any suitable form used for comparisons*/
-    @MetaField
+    @MetaField(0)
     private String investmentPerformanceFinancialMarketResearchReport;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String investmentPerformanceWorkProducts;
 
     /*The output from executing the selected performance analysis*/
-    @MetaField
+    @MetaField(0)
     private String investmentPerformanceRequestResult;
 
     public void setInvestmentPortfolioPerformanceAnalysisType(String investmentPortfolioPerformanceAnalysisType) {

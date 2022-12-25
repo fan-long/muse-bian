@@ -13,7 +13,7 @@ public class FunctionalRequirements {
     private org.museframework.bian.classes.Object productandServiceSpecificationDesignTaskReference;
 
     /*The record of work products used for the design task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceSpecificationDesignTaskRecord;
 
     /*Reference to external service information provider used to obtain product or service related market research as input to the design*/
@@ -21,15 +21,15 @@ public class FunctionalRequirements {
     private org.museframework.bian.classes.Object marketResearchDataServiceReference;
 
     /*Record of the product or service related market research*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchDataRecord;
 
     /*User provided and solicited feedback, suggestions for product or service refinement*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeedbackRecord;
 
     /*The product or service detailed functional requirements specification (with versioning as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceRequirementsSpecification;
 
     public void setProductandServiceSpecificationDesignTaskReference(org.museframework.bian.classes.Object productandServiceSpecificationDesignTaskReference) {

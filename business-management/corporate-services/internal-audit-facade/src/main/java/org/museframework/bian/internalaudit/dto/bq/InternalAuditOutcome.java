@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InternalAuditOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String internalAuditWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String internalAuditAssessmentType;
 
     public void setInternalAuditWorkProduct(String internalAuditWorkProduct) {

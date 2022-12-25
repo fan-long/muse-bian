@@ -10,35 +10,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Troubleshooting {
     /*The type of event that threatens the brand (e.g. production issue, legal issue, employee action, marketing conflict)*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventType;
 
     /*The structured task/work plan followed to address the issue*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactTroubleshootingTask;
 
     /*Detailed description of the event and situation leading to the brand exposure*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventDescription;
 
     /*Schedule of actions taken to mitigate the event (plan and actual)*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventResponseSchedule;
 
     /*Actions taken to mitigate the event (e.g. press release, other communications, corrective/compensatory actions*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventResponseAction;
 
     /*File of consolidated notes, assessments, interview notes etc. and recommendations arising from the work*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventWorkProducts;
 
     /*Details of the outcome or result of the work task - assessing any lasting impact and evaluating the effectiveness of any mitigating actions*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventWorkTaskResult;
 
     /*Key dates associated with the troubleshooting activity*/
-    @MetaField
+    @MetaField(0)
     private String brandImpactEventWorkTaskDate_Time;
 
     public void setBrandImpactEventType(String brandImpactEventType) {

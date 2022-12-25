@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditCardPositionLog {
     /*A Classification value that distinguishes between business service events logged within Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogParameterType;
 
     /*A selected optional business service as subject matter of Credit Card Position Log*/
@@ -15,11 +15,11 @@ public class CreditCardPositionLog {
     private org.museframework.bian.classes.Service creditCardPositionLogSelectedOption;
 
     /*The type of Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogType;
 
     /*Timetable to track Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogSchedule;
 
     /*Reference to the log of (usage) ativities/events  of Credit Card Position Log*/
@@ -31,7 +31,7 @@ public class CreditCardPositionLog {
     private org.museframework.bian.classes.Log creditCardPositionLogUpdateLog;
 
     /*Reference to the party who is involved in Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogAssociatedParty;
 
     /*Reference to the business unit which is involved in Credit Card Position Log*/
@@ -39,11 +39,11 @@ public class CreditCardPositionLog {
     private org.museframework.bian.classes.BusinessUnit creditCardPositionLogBusinessUnitReference;
 
     /*Reference to the customer who is involved in Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogCustomerReference;
 
     /*The configuration of Credit Card Position Log*/
-    @MetaField
+    @MetaField(0)
     private String creditCardPositionLogServiceConfiguration;
 
     /*The position of Credit Card Position Log*/

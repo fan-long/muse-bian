@@ -11,19 +11,19 @@ public class InstrumentDefinition {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*A record of the work done to define and agree the structure of the equity or debt instrument*/
-    @MetaField
+    @MetaField(0)
     private String instrumentDefinitionWorkTaskRecord;
 
     /*The type of work task (e.g. financial engineering, tax optimization, regulatory compliance checks)*/
-    @MetaField
+    @MetaField(0)
     private String instrumentDefinitionWorkTaskType;
 
     /*Description of the task performed*/
-    @MetaField
+    @MetaField(0)
     private String instrumentDefinitionWorkTaskDescription;
 
     /*File of consolidated notes, algorithms, financial market research, forms and documents for the work task*/
-    @MetaField
+    @MetaField(0)
     private String instrumentDefinitionWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
@@ -31,7 +31,7 @@ public class InstrumentDefinition {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The specification of the developed ECM/DCM instrument*/
-    @MetaField
+    @MetaField(0)
     private String instrumentDefinitionSpecification;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

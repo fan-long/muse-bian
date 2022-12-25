@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketOrderTransaction {
     /*The type of market order request (e.g. Managed Investment, Corporate Finance)*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderInstructionType;
 
     /*Reference to the account primary party/owner for the market order*/
@@ -24,7 +24,7 @@ public class MarketOrderTransaction {
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*Any customer specific processing preferences or requirements*/
-    @MetaField
+    @MetaField(0)
     private String customerMarketOrderProcessingInstruction;
 
     /*The document reference for the order confirmation notice*/
@@ -36,7 +36,7 @@ public class MarketOrderTransaction {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*The details of the market order transaction*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderTransaction;
 
     /*Reference to the underlying investment account supporting the transaction*/
@@ -48,23 +48,23 @@ public class MarketOrderTransaction {
     private org.museframework.bian.classes.Object currentAccountArrangementInstanceReference;
 
     /*The type of market order (e.g. Day Order. Order on Open/Close, Fill or Kill, Limit Order)*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderType;
 
     /*The security to be traded*/
-    @MetaField
+    @MetaField(0)
     private String securityType;
 
     /*The volume of shares to be bought or sold*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Key dates associated with the transaction (e.g. order capture, trade execution, order completion)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setMarketOrderInstructionType(String marketOrderInstructionType) {

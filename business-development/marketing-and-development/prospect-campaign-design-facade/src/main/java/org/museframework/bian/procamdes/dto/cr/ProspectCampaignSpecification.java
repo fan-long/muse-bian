@@ -8,75 +8,75 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProspectCampaignSpecification {
     /*The type or category of prospect campaign (e.g. direct acquisition, product discount incentive)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignType;
 
     /*A description of the campaign that clarifies the intended context/use of the campaign, the mechanisms employed and the intended/anticipated response/impact*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetrics;
 
     /*A description of the metric, defining how it is to be measured in deployment*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetricDefinition;
 
     /*A description of the target performance for the metric that can be defined for different usage scenarios as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignMetricGoal;
 
     /*The precise make-up of the campaign. Note that all prospect campaign specifications are subject to versioning as the campaign is refined over time.*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignSpecification;
 
     /*Details how the campaign aligns with selected products and services, including pricing considerations*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProductandServiceUsage;
 
     /*The type or category of product or service included in the campaign (e.g. current account)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProductandServiceType;
 
     /*A description of how the product or service is adapted in the context of the campaign (e.g. discounted pricing/preferential rates, waived service fees, gifts or incentives)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceCampaignEngagementDescription;
 
     /*Describes how any discounted costs are to be accounted for by the product fulfillment function (e.g. borne by fulfillment business unit, compensated by campaign budget)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceCampaignTransferPricingArrangement;
 
     /*Guidelines for the execution of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignExecutionGuidelines;
 
     /*Defines the eligibility criteria that are to be applied to select suitable candidates for the prospect campaign. (Note candidate lists are developed by Campaign Execution)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignEligibility;
 
     /*Defines any qualifications or credentials required of the bank unit or employees to execute the campaign (e.g. product certified, sign-off authority level)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignQualifications;
 
     /*Provides the structured narrative and any pricing/negotiating frameworks that are used in the execution of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignInteractionGuide;
 
     /*Design specification of any consumables that are to be used in the execution of the campaign (e.g. brochures)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignConsumables;
 
     /*The type of consumable item associated with the campaign (e.g. gift, brochure)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignConsumableType;
 
     /*The specification of the consumable item in whatever form appropriate. Note sourcing/procurement of the item is handled by execution)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignConsumableDescription;
 
     /*Maintains a record of the use and impact of prospect campaign versions over the life of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignPerformanceRecord;
 
     /*Reference to the prospect campaign execution event*/
@@ -88,15 +88,15 @@ public class ProspectCampaignSpecification {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment set-up/configuration of the campaign for reference*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureSet_up;
 
     /*The prospect campaign version number used in the event*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureVersionNumber;
 
     /*The result/impact of the overall prospect campaign event (that can include multiple identified leads/opportunities)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureResult;
 
     public void setProspectCampaignType(String prospectCampaignType) {

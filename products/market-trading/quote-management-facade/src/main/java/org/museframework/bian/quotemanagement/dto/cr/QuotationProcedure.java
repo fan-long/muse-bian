@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class QuotationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Quotation Procedure*/
@@ -19,23 +19,23 @@ public class QuotationProcedure {
     private org.museframework.bian.classes.Instruction quotationProcedureRequest;
 
     /*Timetable to process Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureSchedule;
 
     /*The status of Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureStatus;
 
     /*Reference to the party who is involved in Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Quotation Procedure*/
@@ -43,23 +43,23 @@ public class QuotationProcedure {
     private org.museframework.bian.classes.FinancialFacility quotationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureType;
 
     /*The schedule according to which the service provider will process the Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Quotation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String quotationProcedureServiceType;
 
     /*Reference to the product or service that is related to Quotation Procedure*/

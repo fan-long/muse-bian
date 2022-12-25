@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Track {
     /*The sensitivity viewpoint for a held security position*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioSecuritySensitivity;
 
     /*The expected value movement*/
-    @MetaField
+    @MetaField(0)
     private String projectedValuation;
 
     /*An impact assessment of the projected movement on the investment portfolio - includes possible policy limit breaches*/
-    @MetaField
+    @MetaField(0)
     private String projectedPortfolioImpact;
 
     public void setInvestmentPortfolioSecuritySensitivity(String investmentPortfolioSecuritySensitivity) {

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Consolidation {
     /*Description of the source content required for a report type*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryReportTypeContentRequirements;
 
     /*Reference to the source of production information being assembled*/
@@ -25,7 +25,7 @@ public class Consolidation {
     private org.museframework.bian.classes.Object sourceCustomerReference;
 
     /*The possibly extensive collection of production transaction records assembled for reporting*/
-    @MetaField
+    @MetaField(0)
     private String sourceTransactionRecords;
 
     public void setRegulatoryReportTypeContentRequirements(String regulatoryReportTypeContentRequirements) {

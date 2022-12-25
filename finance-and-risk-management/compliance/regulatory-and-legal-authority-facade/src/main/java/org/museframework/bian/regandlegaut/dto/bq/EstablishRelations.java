@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EstablishRelations {
     /*The required status/situation before the duty/obligation can be met*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
@@ -16,7 +16,7 @@ public class EstablishRelations {
     private org.museframework.bian.classes.Object establishRelationsBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsWorkSchedule;
 
     /*The Regulatory&Legal Authority Relationship ManagementPlan specific Business Service*/
@@ -24,27 +24,27 @@ public class EstablishRelations {
     private org.museframework.bian.classes.BusinessService establishRelations;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsEstablishRelationsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsEstablishRelationsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsEstablishRelationsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsEstablishRelationsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String establishRelationsEstablishRelationsServiceName;
 
     public void setEstablishRelationsPreconditions(String establishRelationsPreconditions) {

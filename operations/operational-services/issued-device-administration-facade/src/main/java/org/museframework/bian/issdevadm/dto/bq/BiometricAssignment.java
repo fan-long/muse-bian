@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BiometricAssignment {
     /*Type of biometric record being used (e.g. face, fingerprint, signature)*/
-    @MetaField
+    @MetaField(0)
     private String biometricType;
 
     /*The stored biometric value possibly in suitably encrypted form*/
-    @MetaField
+    @MetaField(0)
     private String biometricRegisteredDetail;
 
     public void setBiometricType(String biometricType) {

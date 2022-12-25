@@ -11,7 +11,7 @@ public class DocumentDirectoryOutcome {
     private org.museframework.bian.classes.DirectoryEntry documentDirectoryEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String documentDirectoryWorkProduct;
 
     public void setDocumentDirectoryEntry(org.museframework.bian.classes.DirectoryEntry documentDirectoryEntry) {

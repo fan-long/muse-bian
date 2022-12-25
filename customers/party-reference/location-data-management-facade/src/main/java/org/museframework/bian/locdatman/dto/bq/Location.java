@@ -13,35 +13,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Location {
     /*Type of location (e.g. building, point of interest, virtual location/device)*/
-    @MetaField
+    @MetaField(0)
     private String locationType;
 
     /*Reference address for the location (e.g. postal address, email, coordinates)*/
-    @MetaField
+    @MetaField(0)
     private String locationAddress;
 
     /*The coordinates in a form that can be used to match tracked parties to the location (e.g. for real-time marketing)*/
-    @MetaField
+    @MetaField(0)
     private String locationCoordinates;
 
     /*A description of the property, particularly if it has landmark characteristics*/
-    @MetaField
+    @MetaField(0)
     private String locationDescription;
 
     /*The construction approach for a property at the location (e.g. era and architecture as might be used in valuation)*/
-    @MetaField
+    @MetaField(0)
     private String locationConstructionType;
 
     /*An indication of the size or scale of the property where appropriate (e.g. 4 bedroom, 600 seat auditorium, 40 cover restaurant)*/
-    @MetaField
+    @MetaField(0)
     private String locationCapacity;
 
     /*The tracked status (e.g. under construction or repair, inhabited, vacant)*/
-    @MetaField
+    @MetaField(0)
     private String locationStatus;
 
     /*The general purpose and neighborhood of the property  (e.g. residential, industrial, commercial)*/
-    @MetaField
+    @MetaField(0)
     private String locationNeighborhoodType;
 
     public void setLocationType(String locationType) {

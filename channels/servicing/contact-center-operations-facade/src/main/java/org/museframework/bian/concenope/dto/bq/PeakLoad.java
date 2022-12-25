@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PeakLoad {
     /*Tracked activity and performance statistics used to manage the contact center resource assignments and menu configuration*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatistics;
 
     /*The type of activity that is tracked and analyze (e.g. wait time, average handle time, dropped call ratio, resolution rate)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatisticType;
 
     /*The task undertaken to address a detected peak load condition*/
-    @MetaField
+    @MetaField(0)
     private String peakLoadResponseTask;
 
     /*The type of response (e.g. staff reassignment)*/
-    @MetaField
+    @MetaField(0)
     private String peakLoadResponseTaskType;
 
     /*Description of the action taken and impact to service performance*/
-    @MetaField
+    @MetaField(0)
     private String peakLoadResponseDescription;
 
     public void setContactCenterServiceStatistics(String contactCenterServiceStatistics) {

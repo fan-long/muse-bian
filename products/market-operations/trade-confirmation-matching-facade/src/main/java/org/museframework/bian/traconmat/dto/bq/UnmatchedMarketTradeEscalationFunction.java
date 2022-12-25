@@ -11,7 +11,7 @@ public class UnmatchedMarketTradeEscalationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Unmatched Market Trade Escalation Function specific Business Service*/
@@ -27,7 +27,7 @@ public class UnmatchedMarketTradeEscalationFunction {
     private org.museframework.bian.classes.Function unmatchedMarketTradeEscalationFunctionReference;
 
     /*The type of Unmatched Market Trade Escalation Function*/
-    @MetaField
+    @MetaField(0)
     private String unmatchedMarketTradeEscalationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

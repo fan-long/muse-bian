@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class IntellectualPropertyExchangeOperatingSession {
     /*The timetable of Intellectual Property Exchange Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionSchedule;
 
     /*The status of Intellectual Property Exchange Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Intellectual Property Exchange Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Intellectual Property Exchange Operating Session*/
@@ -28,19 +28,19 @@ public class IntellectualPropertyExchangeOperatingSession {
     private org.museframework.bian.classes.Object intellectualPropertyExchangeOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Intellectual Property Exchange Operating Session */
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Intellectual Property Exchange Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Intellectual Property Exchange Operating Session */
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionServiceType;
 
     /*The configuration of Intellectual Property Exchange Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyExchangeOperatingSessionServiceConfiguration;
 
     public void setIntellectualPropertyExchangeOperatingSessionSchedule(String intellectualPropertyExchangeOperatingSessionSchedule) {

@@ -11,23 +11,23 @@ public class FraudEvaluationAssessment {
     private org.museframework.bian.classes.Object productProductionSessionReference;
 
     /*Details the types of fraud evaluation tests applied*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationTestProfile;
 
     /*The type of technique use to combine results of the different tests used to detect out of pattern behavior*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationEnsembleTechniqueType;
 
     /*The definition of how the constituent rule set/decision tree and model test are combined to compete the assessment*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationEnsembleTechniqueDefinition;
 
     /*The production transaction details that are submitted for fraud evaluation - note this will typically be a real-time dataset*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationTransactionConsolidationRecord;
 
     /*Details of detected out of pattern production activity that could be fraud*/
-    @MetaField
+    @MetaField(0)
     private String fraudEvaluationProductionAnomalyRecord;
 
     /*Reference to the one or more production transactions isolated by the fraud evaluation tests*/

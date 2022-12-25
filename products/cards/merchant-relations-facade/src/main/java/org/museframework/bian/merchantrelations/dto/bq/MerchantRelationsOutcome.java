@@ -11,7 +11,7 @@ public class MerchantRelationsOutcome {
     private org.museframework.bian.classes.Agreement merchantRelationsAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String merchantRelationsWorkProduct;
 
     public void setMerchantRelationsAgreement(org.museframework.bian.classes.Agreement merchantRelationsAgreement) {

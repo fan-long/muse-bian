@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankandCampaignAlignment {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentVersionNumber;
 
     /*The Product/Customer Combination Assessment specific  Business Service*/
@@ -25,23 +25,23 @@ public class BankandCampaignAlignment {
     private org.museframework.bian.classes.BusinessService bankandCampaignAlignment;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankandCampaignAlignmentServiceName;
 
     public void setBankandCampaignAlignmentPreconditions(String bankandCampaignAlignmentPreconditions) {

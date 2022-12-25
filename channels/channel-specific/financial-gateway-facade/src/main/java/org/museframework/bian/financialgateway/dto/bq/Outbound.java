@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Outbound {
     /*Reference to the type of message (defines format)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayOutboundMessageType;
 
     /*The message content in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayOutboundMessageRecord;
 
     /*Employee/Business unit sending the message*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayOutboundMessageSender;
 
     /*The addressee of the message (identified by the financial gateway recognized party reference)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayOutboundMessageReceiver;
 
     /*Used to track delivery  (e.g. pending, delivered, possible duplicate, error)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayOutboundMessageStatus;
 
     public void setFinancialGatewayOutboundMessageType(String financialGatewayOutboundMessageType) {

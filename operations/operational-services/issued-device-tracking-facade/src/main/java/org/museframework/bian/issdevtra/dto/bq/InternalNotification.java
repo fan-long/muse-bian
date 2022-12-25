@@ -13,7 +13,7 @@ public class InternalNotification {
     private org.museframework.bian.classes.Object issuedDeviceReference;
 
     /*Type of issued device being notified*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceType;
 
     /*Reference to the associated customer if applicable*/
@@ -25,15 +25,15 @@ public class InternalNotification {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The details of the status update (e.g. reported lost or stolen device, device broken)*/
-    @MetaField
+    @MetaField(0)
     private String statusUpdateDetails;
 
     /*The response to the status update request (e.g. update processed)*/
-    @MetaField
+    @MetaField(0)
     private String statusUpdateResult;
 
     /*Key dates and times associated with the notification*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setIssuedDeviceReference(org.museframework.bian.classes.Object issuedDeviceReference) {

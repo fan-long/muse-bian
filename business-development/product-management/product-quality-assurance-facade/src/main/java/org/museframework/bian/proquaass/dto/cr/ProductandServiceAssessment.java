@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductandServiceAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Product and  Service Assessment . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentParameterType;
 
     /*A selected optional business service as subject matter of assessment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentSelectedOption;
 
     /*The type of Product and  Service Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentType;
 
     /*Reference to Product and  Service Assessment*/
@@ -25,23 +25,23 @@ public class ProductandServiceAssessment {
     private org.museframework.bian.classes.Object productandServiceAssessmentReference;
 
     /*Request to assess ProductandService*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentRequest;
 
     /*Timetable to assess ProductandService*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentSchedule;
 
     /*The status of Product and  Service Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentStatus;
 
     /*Reference to the log of (usage) ativities/events of Product and  Service Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentUsageLog;
 
     /*Party who is involved in Product and  Service Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAssessmentAssociatedParty;
 
     /*Reference to the party who has provided Product and  Service Assessment*/

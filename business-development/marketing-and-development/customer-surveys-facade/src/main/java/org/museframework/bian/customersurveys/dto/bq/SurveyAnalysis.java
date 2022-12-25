@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SurveyAnalysis {
     /*The result customer survey which combines response details/statistics and associated analysis, commentary and derived insights*/
-    @MetaField
+    @MetaField(0)
     private String customerSurveyProcedureSurveyAnalysisResult;
 
     public void setCustomerSurveyProcedureSurveyAnalysisResult(String customerSurveyProcedureSurveyAnalysisResult) {

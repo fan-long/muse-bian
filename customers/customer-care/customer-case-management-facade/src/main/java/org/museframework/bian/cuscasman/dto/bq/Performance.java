@@ -9,31 +9,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Performance {
     /*Record of the customer case resolution resource utilization (target and actual)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseResourceUtilization;
 
     /*Estimated projected customer case resource requirements and utilization and loading based on historical patterns and anticipated activity*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseLoadingProjections;
 
     /*Tracked activity and performance statistics used to manage the case resolution business function*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseResolutionServiceStatistics;
 
     /*The type of activity that is tracked and analyzed (e.g. case resolution throughput, time/effort per case, customer acceptance/appeal rate, merchant acceptance/appeal rate, customer/merchant retention, case resolution profit/loss)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceStatisticType;
 
     /*The statistical analysis that can include historical and trended views of the activity*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceStatisticValue;
 
     /*The evaluation of the root cause or comparative assessments of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceStatisticInterpretation;
 
     /*Service/configuration amendment recommendations arising from the statistical analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceStatisticRecommendation;
 
     public void setCustomerCaseResourceUtilization(String customerCaseResourceUtilization) {

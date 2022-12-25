@@ -11,11 +11,11 @@ public class TradeInitiation {
     private org.museframework.bian.classes.Object marketTradeTransactionInstanceReference;
 
     /*The returned status of the market trade*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeTransactionInstanceStatus;
 
     /*Details of the market trade initiation task*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeInitiationTaskResult;
 
     public void setMarketTradeTransactionInstanceReference(org.museframework.bian.classes.Object marketTradeTransactionInstanceReference) {

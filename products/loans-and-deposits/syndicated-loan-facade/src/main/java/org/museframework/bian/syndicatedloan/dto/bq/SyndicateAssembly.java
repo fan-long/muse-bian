@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SyndicateAssembly {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblyPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblyFeatureSchedule;
 
     /*The Syndicated Loan Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class SyndicateAssembly {
     private org.museframework.bian.classes.BusinessService syndicatedLoanOrganization;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblyPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblySyndicatedLoanOrganizationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblySyndicatedLoanOrganizationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblySyndicatedLoanOrganizationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblySyndicatedLoanOrganizationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String syndicateAssemblySyndicatedLoanOrganizationServiceName;
 
     public void setSyndicateAssemblyPreconditions(String syndicateAssemblyPreconditions) {

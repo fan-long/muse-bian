@@ -13,39 +13,39 @@ public class CardPOSDeviceAllocation {
     private org.museframework.bian.classes.Object cardPOSDeviceReference;
 
     /*Any unique identification properties (e.g. serial number)*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceIdentifier;
 
     /*The specific make and type of device*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceType;
 
     /*The type of software running on the device*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceSoftwareType;
 
     /*The version of the software on the device*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceSoftwareVersion;
 
     /*Date device first obtained, used for maintenance and amortization*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceAcquiredDate;
 
     /*Record of the maintenance/repair history of the device*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSRepairRecord;
 
     /*Description of the repair or maintenance work done (includes costs as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSRepairDetails;
 
     /*Key dates and times relating to the repair (e.g. reported, scheduled, effort, returned to service)*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSRepairDates;
 
     /*The status of the POS device (e.g. testing, in production, help inventory, under repair, replaced/terminated)*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSDeviceStatus;
 
     public void setCardPOSDeviceReference(org.museframework.bian.classes.Object cardPOSDeviceReference) {

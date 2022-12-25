@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductionSystemAssessment {
     /*The reference to and descriptive name of the production release system*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseName;
 
     /*Reference to the business units responsible for the testing and deployment*/
@@ -15,23 +15,23 @@ public class ProductionSystemAssessment {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The type of production release (e.g. production service update, new production system)*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseType;
 
     /*A description of the scope, goal and make-up of the production release*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseDescription;
 
     /*Details the types of production release tests to be and actually applied*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseTestProfile;
 
     /*The schedule for performing the range of release tests (planned and actual)*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseTestSchedule;
 
     /*The consolidated release evaluation combining the results of all underlying tests*/
-    @MetaField
+    @MetaField(0)
     private String productionReleaseConsolidationRecord;
 
     /*Reference to associated documents*/
@@ -39,11 +39,11 @@ public class ProductionSystemAssessment {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Key dates associated with the assessment (e.g. notification date, commencement  date, completion date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductionReleaseName(String productionReleaseName) {

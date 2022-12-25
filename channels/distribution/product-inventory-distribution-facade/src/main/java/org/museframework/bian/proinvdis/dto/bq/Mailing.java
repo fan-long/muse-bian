@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Mailing {
     /*The required status/situation before the routine can be undertaken*/
-    @MetaField
+    @MetaField(0)
     private String mailingPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
@@ -16,7 +16,7 @@ public class Mailing {
     private org.museframework.bian.classes.Object mailingBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String mailingWorkSchedule;
 
     /*The Product Inventory Distribution AdministrativePlan specific Business Service*/
@@ -24,27 +24,27 @@ public class Mailing {
     private org.museframework.bian.classes.BusinessService mailing;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String mailingPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String mailingMailingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String mailingMailingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String mailingMailingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String mailingMailingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String mailingMailingServiceName;
 
     public void setMailingPreconditions(String mailingPreconditions) {

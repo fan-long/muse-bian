@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InboundPayments {
     /*Inbound payment transaction details*/
-    @MetaField
+    @MetaField(0)
     private String correspondentTransactionRecord;
 
     /*….*/
@@ -43,23 +43,23 @@ public class InboundPayments {
     private org.museframework.bian.classes.Object payeeBankReference;
 
     /*Transaction specific clearing and settlement instructions*/
-    @MetaField
+    @MetaField(0)
     private String specialInstructions;
 
     /*Key amounts of the transaction*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Currencies of the amounts*/
-    @MetaField
+    @MetaField(0)
     private String currency;
 
     /*Transaction dates  (e.g. order, booking, execution, value date, interest bearing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Specific date type value*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setCorrespondentTransactionRecord(String correspondentTransactionRecord) {

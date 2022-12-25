@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FraudCheck {
     /*Result of the fraud check*/
-    @MetaField
+    @MetaField(0)
     private String fraudCheckResult;
 
     public void setFraudCheckResult(String fraudCheckResult) {

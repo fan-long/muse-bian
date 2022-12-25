@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DocumentHandling {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingTaskSchedule;
 
     /*The Currency Exchange Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class DocumentHandling {
     private org.museframework.bian.classes.BusinessService documentServices;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingDocumentServicesServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingDocumentServicesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingDocumentServicesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingDocumentServicesServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String documentHandlingDocumentServicesServiceName;
 
     public void setDocumentHandlingPreconditions(String documentHandlingPreconditions) {

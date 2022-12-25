@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RootCauseAlgorithm {
     /*Defines the algorithm used and its intended analytical insights*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAlgorithmSpecification;
 
     /*The type of work task (e.g. consolidate servicing activity history, apply pattern detection, refine/qualify detected servicing pattern definition)*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAnalysisWorkTaskType;
 
     /*The make-up/schedule of the work task performed*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAnalysisWorkTask;
 
     /*File of consolidated notes, evaluations and findings for the work task*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAnalysisWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - indication of the nature of any identified servicing patterns and the associated root cause hypotheses*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAnalysisWorkTaskResult;
 
     /*The date-time the specific work task is performed*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityRootCauseAnalysisWorkTaskDate_Time;
 
     public void setServicingActivityRootCauseAlgorithmSpecification(String servicingActivityRootCauseAlgorithmSpecification) {

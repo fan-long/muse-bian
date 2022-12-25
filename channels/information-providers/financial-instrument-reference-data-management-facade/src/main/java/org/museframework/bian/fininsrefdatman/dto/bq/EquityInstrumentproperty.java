@@ -11,11 +11,11 @@ public class EquityInstrumentproperty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Equity Instrument property specific  Business Service*/
@@ -31,7 +31,7 @@ public class EquityInstrumentproperty {
     private org.museframework.bian.classes.Object equityInstrumentpropertyReference;
 
     /*The type of Equity Instrument property*/
-    @MetaField
+    @MetaField(0)
     private String equityInstrumentpropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

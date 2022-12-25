@@ -13,7 +13,7 @@ public class Testing {
     private org.museframework.bian.classes.Object customerBehaviorModelTestReference;
 
     /*Defines the type of test (e.g. unit, integration, load, user acceptance etc.)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelTestType;
 
     /*Reference to the testing environment used to apply the test*/
@@ -21,7 +21,7 @@ public class Testing {
     private org.museframework.bian.classes.Object customerBehaviorModelTestHarnessReference;
 
     /*Record of testing applied to the model*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelTestResult;
 
     /*Reference to a type of testing activity*/
@@ -29,7 +29,7 @@ public class Testing {
     private org.museframework.bian.classes.Object customerBehaviorModelTestingTaskReference;
 
     /*The record of work products used for this testing activity*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelTestingTaskRecord;
 
     /*Reference to compliance conformance check for the specification*/
@@ -37,7 +37,7 @@ public class Testing {
     private org.museframework.bian.classes.Object customerBehaviorModelComplianceTaskReference;
 
     /*Record of the compliance conformance check for the specification*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelComplianceTaskRecord;
 
     /*Reference to a compliance task performed against the specification*/
@@ -45,7 +45,7 @@ public class Testing {
     private org.museframework.bian.classes.Object customerBehaviorModelComplianceTestReference;
 
     /*Record of the compliance test applied to the specification*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelComplianceTestType;
 
     public void setCustomerBehaviorModelTestReference(org.museframework.bian.classes.Object customerBehaviorModelTestReference) {

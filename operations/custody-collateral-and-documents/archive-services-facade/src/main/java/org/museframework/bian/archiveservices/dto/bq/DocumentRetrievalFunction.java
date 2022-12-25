@@ -11,7 +11,7 @@ public class DocumentRetrievalFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Document Retrieval Function specific Business Service*/
@@ -27,7 +27,7 @@ public class DocumentRetrievalFunction {
     private org.museframework.bian.classes.Function documentRetrievalFunctionReference;
 
     /*The type of Document Retrieval Function*/
-    @MetaField
+    @MetaField(0)
     private String documentRetrievalFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

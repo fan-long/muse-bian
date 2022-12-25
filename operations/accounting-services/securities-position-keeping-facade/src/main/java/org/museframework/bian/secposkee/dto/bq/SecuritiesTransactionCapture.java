@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SecuritiesTransactionCapture {
     /*The type of securities transaction (e.g. bought amount, sold amount, dividend payment)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPostingType;
 
     /*The logged securities transaction. Note the log can handle a range of transactions covering bought and sold amounts and securities instrument related transactions such as dividend payments*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPostingTransaction;
 
     /*The date of the securities transaction*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPostingValueDate;
 
     public void setSecuritiesPostingType(String securitiesPostingType) {

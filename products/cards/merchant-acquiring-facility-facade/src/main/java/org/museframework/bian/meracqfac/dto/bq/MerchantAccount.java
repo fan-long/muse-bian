@@ -8,23 +8,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MerchantAccount {
     /*Reference to the posting transaction against the merchant account*/
-    @MetaField
+    @MetaField(0)
     private String merchantAccountPostingTransaction;
 
     /*Annotation of the reason for the positing (e.g. posting for fees, chargebacks, settlement)*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringAccountPostingPurpose;
 
     /*Posted amount  (probably captured as a credit/debit pair)*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringAccountPostingAmount;
 
     /*The value date for the posting*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringAccountPostingValueDate;
 
     /*Confirmation of the posting action*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringAccountPostingResult;
 
     public void setMerchantAccountPostingTransaction(String merchantAccountPostingTransaction) {

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Valuation {
     /*The type of valuation applied (e.g. mark to market, book value, agency)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetValuationType;
 
     /*Reference to 3rd party valuation service provider (e.g. property, art specialist)*/
@@ -17,15 +17,15 @@ public class Valuation {
     private org.museframework.bian.classes.Object collateralAssetValuationServiceReference;
 
     /*The applied loan to value ratio used in determining collateral value*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLoantoValueRatio;
 
     /*The result of a valuation*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetValuation;
 
     /*The date of a valuation*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetValuationDate;
 
     public void setCollateralAssetValuationType(String collateralAssetValuationType) {

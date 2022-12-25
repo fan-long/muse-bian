@@ -11,11 +11,11 @@ public class CounterpartyEntityReferenceproperty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Counterparty Entity Reference property specific  Business Service*/
@@ -31,7 +31,7 @@ public class CounterpartyEntityReferenceproperty {
     private org.museframework.bian.classes.Object counterpartyEntityReferencepropertyReference;
 
     /*The type of Counterparty Entity Reference property*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyEntityReferencepropertyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

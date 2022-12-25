@@ -19,15 +19,15 @@ public class Disbursement {
     private org.museframework.bian.classes.Object disbursementPayeeBankReference;
 
     /*The amount of the payment*/
-    @MetaField
+    @MetaField(0)
     private String disbursementAmount;
 
     /*The currency of the payment*/
-    @MetaField
+    @MetaField(0)
     private String disbursementCurrency;
 
     /*The value date for the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String disbursementValueDate;
 
     public void setDisbursementPayeeReference(org.museframework.bian.classes.Object disbursementPayeeReference) {

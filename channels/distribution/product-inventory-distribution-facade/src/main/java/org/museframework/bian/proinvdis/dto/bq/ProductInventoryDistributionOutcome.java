@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductInventoryDistributionOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionPerformanceAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionActivityAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrativePlan;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrationTask;
 
     public void setProductInventoryDistributionPerformanceAnalysis(String productInventoryDistributionPerformanceAnalysis) {

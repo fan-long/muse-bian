@@ -11,7 +11,7 @@ public class CustomerPaymentTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Customer Payment Task specific Business Service*/
@@ -27,7 +27,7 @@ public class CustomerPaymentTask {
     private org.museframework.bian.classes.Transaction bearerDocumentTransactionReference;
 
     /*The type of Customer Payment Task*/
-    @MetaField
+    @MetaField(0)
     private String customerPaymentTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

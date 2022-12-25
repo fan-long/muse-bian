@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PolicyTerms {
     /*The type of bank policy referenced (e.g. staff certification)*/
-    @MetaField
+    @MetaField(0)
     private String bankPolicy_RuleType;
 
     /*Reference to the bank's policies or rules*/
@@ -17,7 +17,7 @@ public class PolicyTerms {
     private org.museframework.bian.classes.Object applicableBankPolicy_RuleReference;
 
     /*Explanation or interpretation of the policy or rule as applied*/
-    @MetaField
+    @MetaField(0)
     private String applicableBankPolicy_RuleInterpretation;
 
     public void setBankPolicy_RuleType(String bankPolicy_RuleType) {

@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductionRisk {
     /*The type of production test being performed (e.g. division of responsibilities, access control, audit trail, back-up and recovery)*/
-    @MetaField
+    @MetaField(0)
     private String productionRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
-    @MetaField
+    @MetaField(0)
     private String productionRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
-    @MetaField
+    @MetaField(0)
     private String productionRiskSystemTestWorkProduct;
 
     /*The result of the production risk test (including required remedial actions/fixes where appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String productionRiskSystemTestResult;
 
     public void setProductionRiskSystemTestType(String productionRiskSystemTestType) {

@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Quote {
     /*The prevailing bank buy/sell quote for the security*/
-    @MetaField
+    @MetaField(0)
     private String securitiesPrice;
 
     public void setSecuritiesPrice(String securitiesPrice) {

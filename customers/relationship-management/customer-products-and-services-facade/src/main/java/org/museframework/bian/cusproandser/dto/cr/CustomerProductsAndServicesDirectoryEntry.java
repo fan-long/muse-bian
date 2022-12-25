@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerProductsAndServicesDirectoryEntry {
     /*Documentation of Customer Products And Services Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String customerProductsAndServicesDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Customer Products And Services Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String customerProductsAndServicesDirectoryEntrySchedule;
 
     /*The version of Customer Products And Services Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String customerProductsAndServicesDirectoryEntryVersion;
 
     /*The status of Customer Products And Services Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String customerProductsAndServicesDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Customer Products And Services Directory Entry*/
@@ -32,7 +32,7 @@ public class CustomerProductsAndServicesDirectoryEntry {
     private org.museframework.bian.classes.Log customerProductsAndServicesDirectoryEntryUpdateLog;
 
     /*The configuration of Customer Products And Services Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String customerProductsAndServicesDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Customer Products And Services Directory Entry*/
@@ -40,7 +40,7 @@ public class CustomerProductsAndServicesDirectoryEntry {
     private org.museframework.bian.classes.DirectoryEntry customerProductsAndServicesDirectoryEntryReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerReference;
 
     /**/

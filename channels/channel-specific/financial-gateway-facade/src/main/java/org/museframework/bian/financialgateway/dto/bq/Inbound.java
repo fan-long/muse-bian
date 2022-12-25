@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Inbound {
     /*Reference to the type of message (defines format)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayInboundMessageType;
 
     /*The message content in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayInboundMessageRecord;
 
     /*Employee/Business unit addressed by the message*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayInboundMessageReceiver;
 
     /*Used to track delivery  (e.g. pending, delivered, possible duplicate, error)*/
-    @MetaField
+    @MetaField(0)
     private String financialGatewayInboundMessageStatus;
 
     public void setFinancialGatewayInboundMessageType(String financialGatewayInboundMessageType) {

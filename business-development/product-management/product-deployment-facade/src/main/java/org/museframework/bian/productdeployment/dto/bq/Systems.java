@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Systems {
     /*The consolidated aspects of the systems deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSystemsRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSystemsRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class Systems {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the systems needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSystemsRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentSystemsRequirements(String productandServiceDeploymentSystemsRequirements) {

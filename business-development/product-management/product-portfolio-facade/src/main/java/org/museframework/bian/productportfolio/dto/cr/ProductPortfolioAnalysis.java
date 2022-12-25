@@ -11,39 +11,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductPortfolioAnalysis {
     /*Definition of the product portfolio*/
-    @MetaField
+    @MetaField(0)
     private String productPortfolioMake_up;
 
     /*The product type within the portfolio analysis*/
-    @MetaField
+    @MetaField(0)
     private String productType;
 
     /*Specific properties and characteristics of the product that provide context for the performance analysis*/
-    @MetaField
+    @MetaField(0)
     private String productTypeDefinition;
 
     /*Definition of the performance goals for products as defined by senior management functions (target/anticipated and actual as assessed).*/
-    @MetaField
+    @MetaField(0)
     private String productPortfolioPerformanceGoals;
 
     /*The schedule for performing product portfolio analysis for the enterprise or division*/
-    @MetaField
+    @MetaField(0)
     private String productPortfolioAnalysisSchedule;
 
     /*A consolidated report containing the results of performance analyses applied to the products making up the overall portfolio*/
-    @MetaField
+    @MetaField(0)
     private String productPortfolioAnalysisReport;
 
     /*Defines a type of performance analysis performed to products in the portfolio (e.g. scheduled review, specialized analysis, sensitivity assessment/projection)*/
-    @MetaField
+    @MetaField(0)
     private String productAnalysisType;
 
     /*The consolidated report of the performance evaluation and comparisons from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String productAnalysisResult;
 
     /*The date/time the performance report was completed*/
-    @MetaField
+    @MetaField(0)
     private String productAnalysisReportingDate;
 
     /*Reference to associated performance analysis reporting documents*/

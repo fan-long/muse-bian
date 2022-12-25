@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Redemption {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String redemptionPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String redemptionTaskSchedule;
 
     /*The Reward Points Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class Redemption {
     private org.museframework.bian.classes.BusinessService awardsRedemption;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String redemptionPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String redemptionAwardsRedemptionServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String redemptionAwardsRedemptionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String redemptionAwardsRedemptionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String redemptionAwardsRedemptionServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String redemptionAwardsRedemptionServiceName;
 
     public void setRedemptionPreconditions(String redemptionPreconditions) {

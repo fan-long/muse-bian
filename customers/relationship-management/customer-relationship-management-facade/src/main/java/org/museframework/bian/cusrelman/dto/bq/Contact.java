@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Contact {
     /*Records the timing, purpose, details and impact of customer contacts*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactHistory;
 
     /*The schedule of past and planned customer contacts*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactSchedule;
 
     /*The record of a customer contact*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactRecord;
 
     /*The date time and location of the contact*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactDate;
 
     /*Reference to the employee(s) in attendance*/
@@ -29,11 +29,11 @@ public class Contact {
     private org.museframework.bian.classes.Object employeeReference;
 
     /*The reason and or purpose for the contact (e.g. review, issue, product sales, advice, customer enquiry)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactType;
 
     /*The result of the contact, including follow up tasks*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipContactResult;
 
     public void setCustomerRelationshipContactHistory(String customerRelationshipContactHistory) {

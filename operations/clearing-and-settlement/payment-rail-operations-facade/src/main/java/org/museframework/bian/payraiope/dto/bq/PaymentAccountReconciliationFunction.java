@@ -11,7 +11,7 @@ public class PaymentAccountReconciliationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Payment Account Reconciliation Function specific Business Service*/
@@ -27,7 +27,7 @@ public class PaymentAccountReconciliationFunction {
     private org.museframework.bian.classes.Function paymentAccountReconciliationFunctionReference;
 
     /*The type of Payment Account Reconciliation Function*/
-    @MetaField
+    @MetaField(0)
     private String paymentAccountReconciliationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

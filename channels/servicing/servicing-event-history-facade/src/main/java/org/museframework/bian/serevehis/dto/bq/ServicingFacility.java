@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServicingFacility {
     /*The type of service support facility engaged (e.g. commission tracking, on-line help, action logging)*/
-    @MetaField
+    @MetaField(0)
     private String servicingFacilityType;
 
     /*Reference to any record generated from he use of the facility*/

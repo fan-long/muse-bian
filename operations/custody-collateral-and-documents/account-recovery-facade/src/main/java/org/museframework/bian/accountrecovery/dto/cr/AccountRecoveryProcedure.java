@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountRecoveryProcedure {
     /*This is the type of recovery case (e.g. lapsed payment, collateral revaluation, credit)*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseType;
 
     /*Refers to the product instance associated with the account recovery case*/
@@ -27,7 +27,7 @@ public class AccountRecoveryProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Reference to the underlying account for the product instance being recovered*/
-    @MetaField
+    @MetaField(0)
     private String accountNumber;
 
     /*Location where the business is booked for reporting purposes*/
@@ -35,11 +35,11 @@ public class AccountRecoveryProcedure {
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Key dates associated with recovery (e.g. account open, account closing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Key date time vale*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Reference to involved and interested parties (e.g. guarantor/cosigner)*/
@@ -47,27 +47,27 @@ public class AccountRecoveryProcedure {
     private org.museframework.bian.classes.Object involvedPartyReference;
 
     /*Details the involved party's role/association with the account/account holder*/
-    @MetaField
+    @MetaField(0)
     private String involvedPartyObligationEntitlement;
 
     /*The type of account being recovered (e.g. checking, mortgage)*/
-    @MetaField
+    @MetaField(0)
     private String accountType;
 
     /*The currency for the account*/
-    @MetaField
+    @MetaField(0)
     private String accountCurrency;
 
     /*Limits that are applied to the account  (e.g. transaction credit/debit, netting, position)*/
-    @MetaField
+    @MetaField(0)
     private String accountLimitType;
 
     /*Current position against limits*/
-    @MetaField
+    @MetaField(0)
     private String accountLimit;
 
     /*Any additional parties given access to the account  (allowed roles and actions against the product)*/
-    @MetaField
+    @MetaField(0)
     private String allowedAccess;
 
     /*Reference to a tax identifier associated with the customer/account for tax reporting*/
@@ -75,27 +75,27 @@ public class AccountRecoveryProcedure {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Status of the recovery account  (e.g. pre-opened, active, dormant, pending for closing, blocked)*/
-    @MetaField
+    @MetaField(0)
     private String accountStatus;
 
     /*Lists the customer's collateral asset allocation status against different loan products known to the bank*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetAllocationProfile;
 
     /*The type of asset (e.g. building, machinery, inventory, financial instrument, art)*/
-    @MetaField
+    @MetaField(0)
     private String collateralType;
 
     /*Description of significant details and properties of the asset*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetDescription;
 
     /*Details of all transactions made against the account - not itemized here but referenced from fulfillment processing*/
-    @MetaField
+    @MetaField(0)
     private String transactionRecord;
 
     /*Work documentation, forms and schedules produced and referenced during the case*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseWorkProducts;
 
     /*Reference to documents referenced and generated through the case*/
@@ -103,15 +103,15 @@ public class AccountRecoveryProcedure {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Record of customer correspondence/feedback associated with the account recovery process*/
-    @MetaField
+    @MetaField(0)
     private String customerCommentary;
 
     /*Target and actual dates for processing/resolution*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseResolutionSchedule;
 
     /*The status of the recovery case (e.g. in assessment, write-down, planning, negotiation, restructuring)*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseStatus;
 
     public void setAccountRecoveryCaseType(String accountRecoveryCaseType) {

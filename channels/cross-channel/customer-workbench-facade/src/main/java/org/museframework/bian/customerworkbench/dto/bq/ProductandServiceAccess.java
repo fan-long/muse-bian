@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductandServiceAccess {
     /*Locally maintained values used for auto-fill and local validation*/
-    @MetaField
+    @MetaField(0)
     private String customerDetailsPreferences;
 
     /*Locally maintained structured dialogue to access bank services as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceMenu;
 
     /*Locally record of product/service screen access*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceMenuAccessLog;
 
     /*Logged time and duration spent on product/service screens*/
-    @MetaField
+    @MetaField(0)
     private String accessStartEndTime;
 
     /*Local copies of requested information, application forms etc.*/
-    @MetaField
+    @MetaField(0)
     private String customerResidentFiles;
 
     public void setCustomerDetailsPreferences(String customerDetailsPreferences) {

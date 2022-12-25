@@ -11,7 +11,7 @@ public class FinancialInstrumentReferenceDataManagementOutcome {
     private org.museframework.bian.classes.DirectoryEntry financialInstrumentReferenceDataManagementEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentReferenceDataManagementWorkProduct;
 
     public void setFinancialInstrumentReferenceDataManagementEntry(org.museframework.bian.classes.DirectoryEntry financialInstrumentReferenceDataManagementEntry) {

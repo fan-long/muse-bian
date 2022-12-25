@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DirectDebit {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String directDebitPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFeatureSchedule;
 
     /*The Direct Debit specific  Business Service*/
@@ -19,27 +19,27 @@ public class DirectDebit {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String directDebitPostconditions;
 
     /*Reference to the specific [BS] business service type*/
-    @MetaField
+    @MetaField(0)
     private String directDebitServiceType;
 
     /*Description of the performed [BS] business service*/
-    @MetaField
+    @MetaField(0)
     private String directDebitServiceDescription;
 
     /*Mandatory and optional inputs and output information for the BS business service*/
-    @MetaField
+    @MetaField(0)
     private String directDebitServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the [BS] business service*/
-    @MetaField
+    @MetaField(0)
     private String directDebitServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String directDebitServiceName;
 
     public void setDirectDebitPreconditions(String directDebitPreconditions) {

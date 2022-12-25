@@ -7,31 +7,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SpecialPricingConditionsDirectoryEntry {
     /*Documentation of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryDescription;
 
     /*The timetable of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntrySchedule;
 
     /*The version of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryVersion;
 
     /*The status of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryUsageLog;
 
     /*Reference to the log of (update) ativities/events of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryUpdateLog;
 
     /*The configuration of Special Pricing Conditions Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsDirectoryEntryServiceConfiguration;
 
     public void setSpecialPricingConditionsDirectoryEntryDescription(String specialPricingConditionsDirectoryEntryDescription) {

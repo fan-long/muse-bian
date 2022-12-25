@@ -23,7 +23,7 @@ public class ConsumerAdviceFacility {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the advisory session*/
-    @MetaField
+    @MetaField(0)
     private String consumerAdviceWorkProducts;
 
     /*The document reference for associated documents such as disclosures and acceptance records*/
@@ -31,27 +31,27 @@ public class ConsumerAdviceFacility {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Target and actual dates for tasks performed (includes any specialist sessions)*/
-    @MetaField
+    @MetaField(0)
     private String consumerAdviceSessionSchedule;
 
     /*Details the types of consumer advice that are combined into the overall evaluation*/
-    @MetaField
+    @MetaField(0)
     private String consumerAdviceProfile;
 
     /*Reference to the different types of advice*/
-    @MetaField
+    @MetaField(0)
     private String adviceType;
 
     /*The combination of the different customer advisory assessments provided to the customer*/
-    @MetaField
+    @MetaField(0)
     private String consumerAdviceConsolidationRecord;
 
     /*Key dates and times associated with the advisory session (e.g. booking date, start date/time)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

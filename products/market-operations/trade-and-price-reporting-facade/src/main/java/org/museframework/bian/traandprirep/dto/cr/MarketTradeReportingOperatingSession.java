@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketTradeReportingOperatingSession {
     /*Timetable to operate Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionSchedule;
 
     /*The status of Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Market Trade Reporting Operating Session*/
@@ -20,23 +20,23 @@ public class MarketTradeReportingOperatingSession {
     private org.museframework.bian.classes.Log marketTradeReportingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Market Trade Reporting Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeReportingOperatingSessionServiceType;
 
     /*The configuration of Market Trade Reporting Operating Session*/

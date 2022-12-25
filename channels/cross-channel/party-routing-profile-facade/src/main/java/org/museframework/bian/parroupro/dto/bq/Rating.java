@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Rating {
     /*Defines the type of rating (e.g. credit rating)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRatingType;
 
     /*The maintained rating value (historical values may be retained as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRating;
 
     /*Explanation/description for given rating value if necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRatingNarrative;
 
     /*Indication when the rate value is updated and time until given value applies/is relevant as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRatingValidFromToDate;
 
     public void setCustomerRelationshipRatingType(String customerRelationshipRatingType) {

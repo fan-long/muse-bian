@@ -11,7 +11,7 @@ public class RegulatoryTerm {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Regulatory Term*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Regulatory Term specific Business Service*/
@@ -27,11 +27,11 @@ public class RegulatoryTerm {
     private org.museframework.bian.classes.Arrangement regulatoryTermReference;
 
     /*The type of Regulatory Term*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryTermType;
 
     /*The applicable regulatory authority*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAuthority;
 
     /*Reference to any regulatory requirements*/
@@ -39,7 +39,7 @@ public class RegulatoryTerm {
     private org.museframework.bian.classes.Object applicableRegulationReference;
 
     /*Explanation or interpretation of the regulation as applied*/
-    @MetaField
+    @MetaField(0)
     private String applicableRegulationInterpretation;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

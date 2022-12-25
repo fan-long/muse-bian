@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EmployeePaymentServicesFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Employee Payment Services Facility*/
@@ -15,15 +15,15 @@ public class EmployeePaymentServicesFacility {
     private org.museframework.bian.classes.Feature employeePaymentServicesFacilitySelectedOption;
 
     /*The status of Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityStatus;
 
     /*Reference to the party who is involved in Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityAssociatedParty;
 
     /*The curreny which is arranged in Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityCurrency;
 
     /*Reference to the regulation which is defined in Employee Payment Services Facility*/
@@ -31,7 +31,7 @@ public class EmployeePaymentServicesFacility {
     private org.museframework.bian.classes.RuleSet employeePaymentServicesFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Employee Payment Services Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class EmployeePaymentServicesFacility {
     private org.museframework.bian.classes.Account employeePaymentServicesFacilityAccountReference;
 
     /*Reference to the customer who is involved in Employee Payment Services Facility*/
-    @MetaField
+    @MetaField(0)
     private String employeePaymentServicesFacilityCustomerReference;
 
     /*The position of Employee Payment Services Facility*/

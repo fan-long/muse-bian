@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FraudModelSpecification {
     /*The type or category of behavior model (e.g. Decision tree, Bayesian Linear Regression, Logistic Regression, Neural Network))*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelType;
 
     /*A description of the model that clarifies the intended analysis/insights provided*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelPurpose;
 
     /*Maintains the current deployment configuration of the model*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelDeployment;
 
     /*Reference to the business units where the model is deployed and in use*/
@@ -24,7 +24,7 @@ public class FraudModelSpecification {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Details of the deployment for reference*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelDeploymentConfiguration;
 
     /*Reference to deployment task*/
@@ -32,27 +32,27 @@ public class FraudModelSpecification {
     private org.museframework.bian.classes.Object fraudModelDeploymentTaskReference;
 
     /*Recorded details of a deployment task*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelDeploymentTaskRecord;
 
     /*The operational and development status of the model (e.g. under development, available, under review)*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelStatus;
 
     /*Tracking deployment and usage frequency*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelUsage;
 
     /*Track reporting of the impact/accuracy of the model's insights*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelImpact;
 
     /*Release version of available model plus version history as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelVersion;
 
     /*The deployable model in any appropriate form (including historical versions as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String fraudModel;
 
     public void setFraudModelType(String fraudModelType) {

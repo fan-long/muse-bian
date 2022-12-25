@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ChequeProcessingOperatingSession {
     /*The timetable of Cheque Processing Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionSchedule;
 
     /*The status of Cheque Processing Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Cheque Processing Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Cheque Processing Operating Session*/
@@ -29,19 +29,19 @@ public class ChequeProcessingOperatingSession {
     private org.museframework.bian.classes.Object chequeProcessingOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Cheque Processing Operating Session */
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Cheque Processing Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Cheque Processing Operating Session */
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionServiceType;
 
     /*The configuration of Cheque Processing Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingOperatingSessionServiceConfiguration;
 
     public void setChequeProcessingOperatingSessionSchedule(String chequeProcessingOperatingSessionSchedule) {

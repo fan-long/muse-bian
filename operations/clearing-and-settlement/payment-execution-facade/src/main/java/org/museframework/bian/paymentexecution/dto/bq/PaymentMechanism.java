@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PaymentMechanism {
     /*Details of the mechanism selection*/
-    @MetaField
+    @MetaField(0)
     private String paymentExecutionTaskResult;
 
     public void setPaymentExecutionTaskResult(String paymentExecutionTaskResult) {

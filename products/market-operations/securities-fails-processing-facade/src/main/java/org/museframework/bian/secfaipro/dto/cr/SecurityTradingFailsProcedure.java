@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SecurityTradingFailsProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureParameterType;
 
     /*A selected optional business service as subject matter of Security Trading Fails Procedure*/
@@ -19,23 +19,23 @@ public class SecurityTradingFailsProcedure {
     private org.museframework.bian.classes.Instruction securityTradingFailsProcedureRequest;
 
     /*Timetable to process Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureSchedule;
 
     /*The status of Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureStatus;
 
     /*Reference to the party who is involved in Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Security Trading Fails Procedure*/
@@ -43,23 +43,23 @@ public class SecurityTradingFailsProcedure {
     private org.museframework.bian.classes.FinancialFacility securityTradingFailsProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureType;
 
     /*The schedule according to which the service provider will process the Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Security Trading Fails Procedure*/
-    @MetaField
+    @MetaField(0)
     private String securityTradingFailsProcedureServiceType;
 
     /*Reference to the product or service that is related to Security Trading Fails Procedure*/

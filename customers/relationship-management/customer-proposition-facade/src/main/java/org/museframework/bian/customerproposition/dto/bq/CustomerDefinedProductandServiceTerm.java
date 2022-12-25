@@ -11,7 +11,7 @@ public class CustomerDefinedProductandServiceTerm {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Customer Defined Product and Service Term*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Customer Defined Product and Service Term specific Business Service*/
@@ -27,7 +27,7 @@ public class CustomerDefinedProductandServiceTerm {
     private org.museframework.bian.classes.Arrangement customerDefinedProductandServiceTermReference;
 
     /*The type of Customer Defined Product and Service Term*/
-    @MetaField
+    @MetaField(0)
     private String customerDefinedProductandServiceTermType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

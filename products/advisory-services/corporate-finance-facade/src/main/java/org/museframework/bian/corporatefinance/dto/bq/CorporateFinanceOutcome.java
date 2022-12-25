@@ -11,7 +11,7 @@ public class CorporateFinanceOutcome {
     private org.museframework.bian.classes.Project corporateFinanceProject;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String corporateFinanceWorkProduct;
 
     /**/

@@ -11,7 +11,7 @@ public class PaymentClearingandSettlementFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Payment Clearing and Settlement Function specific Business Service*/
@@ -27,7 +27,7 @@ public class PaymentClearingandSettlementFunction {
     private org.museframework.bian.classes.Function paymentClearingandSettlementFunctionReference;
 
     /*The type of Payment Clearing and Settlement Function*/
-    @MetaField
+    @MetaField(0)
     private String paymentClearingandSettlementFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

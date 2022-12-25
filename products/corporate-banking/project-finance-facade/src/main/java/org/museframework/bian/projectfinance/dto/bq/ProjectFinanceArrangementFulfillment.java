@@ -11,7 +11,7 @@ public class ProjectFinanceArrangementFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Project Finance Arrangement Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class ProjectFinanceArrangementFulfillment {
     private org.museframework.bian.classes.Object projectFinanceArrangementFulfillmentReference;
 
     /*The type of Project Finance Arrangement Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceArrangementFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

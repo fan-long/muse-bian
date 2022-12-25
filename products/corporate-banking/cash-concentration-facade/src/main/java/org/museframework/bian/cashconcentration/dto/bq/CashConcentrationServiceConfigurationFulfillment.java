@@ -11,7 +11,7 @@ public class CashConcentrationServiceConfigurationFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Cash Concentration Service Configuration Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class CashConcentrationServiceConfigurationFulfillment {
     private org.museframework.bian.classes.Object cashConcentrationServiceConfigurationFulfillmentReference;
 
     /*The type of Cash Concentration Service Configuration Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String cashConcentrationServiceConfigurationFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

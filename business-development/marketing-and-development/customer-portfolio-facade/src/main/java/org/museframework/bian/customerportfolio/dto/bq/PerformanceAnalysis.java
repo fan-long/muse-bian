@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PerformanceAnalysis {
     /*Defines the type of analysis/algorithm used to evaluate and compare the customer segment performance to prevailing market measures*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceAnalysisType;
 
     /*Record of a task to perform a selected type of performance analysis on a customer segment*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceAnalysisTask;
 
     /*The specific details of the performance analysis (can be a default/standard analysis or a specialist/ad-hoc request)*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceRequestSpecification;
 
     /*Reference to the performance analysis model used*/
@@ -25,19 +25,19 @@ public class PerformanceAnalysis {
     private org.museframework.bian.classes.Object customerSegmentPerformanceModelReference;
 
     /*The data file, report of customer related transaction details used in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceProductandServiceActivityReport;
 
     /*The content of selected financial market research report or market transaction database in any suitable form used for comparisons when appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceFinancialMarketResearchReport;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceWorkProducts;
 
     /*The output from executing the selected performance analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerSegmentPerformanceRequestResult;
 
     public void setCustomerSegmentPerformanceAnalysisType(String customerSegmentPerformanceAnalysisType) {

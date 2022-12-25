@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradedPositionOperatingSession {
     /*Timetable to operate Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionSchedule;
 
     /*The status of Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Traded Position Operating Session*/
@@ -20,23 +20,23 @@ public class TradedPositionOperatingSession {
     private org.museframework.bian.classes.Log tradedPositionOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Traded Position Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String tradedPositionOperatingSessionServiceType;
 
     /*The configuration of Traded Position Operating Session*/

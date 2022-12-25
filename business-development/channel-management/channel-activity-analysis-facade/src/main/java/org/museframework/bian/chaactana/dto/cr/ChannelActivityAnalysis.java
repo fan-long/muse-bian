@@ -11,27 +11,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ChannelActivityAnalysis {
     /*The type of channel for which the analysis is performed*/
-    @MetaField
+    @MetaField(0)
     private String channelType;
 
     /*The period covered by the analysis (from to date time)*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityAnalysisPeriod;
 
     /*The type of analysis, can combine multiple (e.g. customer fraud, merchant fraud)*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityAnalysisType;
 
     /*The result of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityAnalysisResult;
 
     /*A report combining the results of the analysis in a consumable format*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityAnalysisRecord;
 
     /*The raw data used in the analysis (retrieved from Channel Activity History)*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityHistoryReport;
 
     public void setChannelType(String channelType) {

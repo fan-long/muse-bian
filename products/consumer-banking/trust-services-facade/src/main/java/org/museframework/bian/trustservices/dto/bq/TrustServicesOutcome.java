@@ -11,7 +11,7 @@ public class TrustServicesOutcome {
     private org.museframework.bian.classes.FinancialFacility trustServicesFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String trustServicesWorkProduct;
 
     public void setTrustServicesFinancialFacility(org.museframework.bian.classes.FinancialFacility trustServicesFinancialFacility) {

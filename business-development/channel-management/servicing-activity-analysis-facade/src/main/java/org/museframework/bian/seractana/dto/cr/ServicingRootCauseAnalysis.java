@@ -11,31 +11,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServicingRootCauseAnalysis {
     /*The type of servicing activity for which the analysis is performed (e.g. self service, contact center assisted,  ATM access)*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityType;
 
     /*The period covered by the analysis (from to date time)*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityAnalysisPeriod;
 
     /*The type of root cause analysis - defines the scope and type of root cause issue that is being detected (e.g. service dialogue, click-stream, product processing issues, servicing representative performance)*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityAnalysisType;
 
     /*The result of the servicing activity analysis - typically the consolidated view from applying multiple underlying root cause algorithms to highlight patterns that indicate potential root cause issues*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityAnalysisResult;
 
     /*An analysis of the root causes for the detected service anomalies*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityAnalysisDetermination;
 
     /*Proposed changes to procedures/organization etc that can mitigate the detected servicing issues*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityAnalysisRecommendation;
 
     /*The raw data used in the analysis (retrieved from Servicing Activity History)*/
-    @MetaField
+    @MetaField(0)
     private String servicingActivityHistoryReport;
 
     public void setServicingActivityType(String servicingActivityType) {

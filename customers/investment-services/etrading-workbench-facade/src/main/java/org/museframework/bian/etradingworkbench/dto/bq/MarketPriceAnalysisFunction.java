@@ -11,7 +11,7 @@ public class MarketPriceAnalysisFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Market Price Analysis Function specific Business Service*/
@@ -27,7 +27,7 @@ public class MarketPriceAnalysisFunction {
     private org.museframework.bian.classes.Function marketPriceAnalysisFunctionReference;
 
     /*The type of Market Price Analysis Function*/
-    @MetaField
+    @MetaField(0)
     private String marketPriceAnalysisFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

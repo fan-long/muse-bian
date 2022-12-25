@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductTrainingOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String productTrainingWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedure;
 
     public void setProductTrainingWorkProduct(String productTrainingWorkProduct) {

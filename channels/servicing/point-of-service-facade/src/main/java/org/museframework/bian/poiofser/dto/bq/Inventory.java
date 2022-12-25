@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Inventory {
     /*The type of non-cash inventory (e.g. documents/forms, brochures)*/
-    @MetaField
+    @MetaField(0)
     private String servicingInventoryType;
 
     /*Used to track inventory holdings at the position*/
-    @MetaField
+    @MetaField(0)
     private String servicingPositionInventoryRecord;
 
     /*Details of the transfer of inventory (e.g. documents issued)*/
-    @MetaField
+    @MetaField(0)
     private String servicingInventoryTransactionRecord;
 
     public void setServicingInventoryType(String servicingInventoryType) {

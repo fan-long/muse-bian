@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PasswordAssignment {
     /*The required format or minimum requirements for the password (e.g. 8 chars)*/
-    @MetaField
+    @MetaField(0)
     private String formatRules;
 
     /*Recent values maintained to eliminate repeated values*/
-    @MetaField
+    @MetaField(0)
     private String recentValues;
 
     /*The stored value possibly in suitably encrypted form*/
-    @MetaField
+    @MetaField(0)
     private String passwordValue;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
-    @MetaField
+    @MetaField(0)
     private String usageLog;
 
     public void setFormatRules(String formatRules) {

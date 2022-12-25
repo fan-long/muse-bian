@@ -13,7 +13,7 @@ public class Payment {
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Payment transaction details*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransaction;
 
     public void setPaymentTransactionReference(org.museframework.bian.classes.Object paymentTransactionReference) {

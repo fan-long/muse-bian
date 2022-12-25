@@ -10,15 +10,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Audit {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String auditPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String auditAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String auditVersionNumber;
 
     /*The Internal Audit Assessment specific  Business Service*/
@@ -26,23 +26,23 @@ public class Audit {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String serviceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String serviceName;
 
     public void setAuditPreconditions(String auditPreconditions) {

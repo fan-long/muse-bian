@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BrandManagementPlan {
     /*Definition of the brand, including how it is to be represented in different media and contexts*/
-    @MetaField
+    @MetaField(0)
     private String brandDefinition;
 
     /*An analysis of the brand value based on comparative market research*/
-    @MetaField
+    @MetaField(0)
     private String brandValueAssessment;
 
     /*An inventory of situations where the brand is incorporated or exposed in business development activity - these situations may require on-going exposure monitoring or assessment*/
-    @MetaField
+    @MetaField(0)
     private String brandUsage;
 
     /*Schedule of any brand development related activities, includes usage and exposure tracking and impact analysis activities*/
-    @MetaField
+    @MetaField(0)
     private String brandDevelopmentSchedule;
 
     public void setBrandDefinition(String brandDefinition) {

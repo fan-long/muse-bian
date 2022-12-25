@@ -12,11 +12,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Use {
     /*The planning or zoning status (e.g. residential, commercial, industrial)*/
-    @MetaField
+    @MetaField(0)
     private String locationZoningType;
 
     /*The allowed usage for the property at the location (e.g. domestic residence, manufacturing, retail)*/
-    @MetaField
+    @MetaField(0)
     private String locationUsage;
 
     public void setLocationZoningType(String locationZoningType) {

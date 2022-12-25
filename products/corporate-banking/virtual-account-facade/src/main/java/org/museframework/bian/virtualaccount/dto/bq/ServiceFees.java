@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServiceFees {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String feePreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String feeFeatureSchedule;
 
     /*The Fee specific  Business Service*/
@@ -19,27 +19,27 @@ public class ServiceFees {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String feePostconditions;
 
     /*Reference to the specific [BS] business service type*/
-    @MetaField
+    @MetaField(0)
     private String feeServiceType;
 
     /*Description of the performed [BS] business service*/
-    @MetaField
+    @MetaField(0)
     private String feeServiceDescription;
 
     /*Mandatory and optional inputs and output information for the BS business service*/
-    @MetaField
+    @MetaField(0)
     private String feeServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the [BS] business service*/
-    @MetaField
+    @MetaField(0)
     private String feeServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String feeServiceName;
 
     public void setFeePreconditions(String feePreconditions) {

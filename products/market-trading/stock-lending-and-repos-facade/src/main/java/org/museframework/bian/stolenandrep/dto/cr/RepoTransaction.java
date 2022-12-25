@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RepoTransaction {
     /*A Classification value that distinguishes between business service transaction within Repo Transaction*/
-    @MetaField
+    @MetaField(0)
     private String repoTransactionParameterType;
 
     /*A selected optional business service as subject matter of Repo Transaction*/
@@ -16,7 +16,7 @@ public class RepoTransaction {
     private org.museframework.bian.classes.Service repoTransactionSelectedOption;
 
     /*The status of Repo Transaction*/
-    @MetaField
+    @MetaField(0)
     private String repoTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Repo Transaction*/
@@ -32,7 +32,7 @@ public class RepoTransaction {
     private org.museframework.bian.classes.RepurchaseAgreement repurchaseAgreementReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String repurchaseAgreementInvolvedPartyReference;
 
     /**/

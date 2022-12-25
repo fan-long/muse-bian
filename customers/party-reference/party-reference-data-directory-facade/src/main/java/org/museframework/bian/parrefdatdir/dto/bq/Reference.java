@@ -16,7 +16,7 @@ public class Reference {
     private org.museframework.bian.classes.Object partyLegalEntityReference;
 
     /*The preferred salutation to be used*/
-    @MetaField
+    @MetaField(0)
     private String partyNameSalutation;
 
     /*Reference to government or agency issued identification (e.g. social security number)*/
@@ -24,7 +24,7 @@ public class Reference {
     private org.museframework.bian.classes.Object governmentIssuedIdentityReference;
 
     /*Details about and extracted from government issued documents (e.g. driving license/passport details)*/
-    @MetaField
+    @MetaField(0)
     private String governmentIssuedDocumentDetails;
 
     /*The document reference for associated documents*/
@@ -32,39 +32,39 @@ public class Reference {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The residency status and history as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String residencyStatus;
 
     /*Give DoB*/
-    @MetaField
+    @MetaField(0)
     private String dateofBirth;
 
     /*The customer nationality and history as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String nationality;
 
     /*Their given residential address*/
-    @MetaField
+    @MetaField(0)
     private String residentialAddress;
 
     /*The given email address*/
-    @MetaField
+    @MetaField(0)
     private String eMailAddress;
 
     /*Any given phone contact numbers*/
-    @MetaField
+    @MetaField(0)
     private String cellPhoneNumber;
 
     /*Any given social network identifiers*/
-    @MetaField
+    @MetaField(0)
     private String socialNetworkContacts;
 
     /*A politically exposed person indicator (PEP) (e.g. senior public figure, political position/exposure)*/
-    @MetaField
+    @MetaField(0)
     private String politicalExposureType;
 
     /*Detail of the customer's political exposure*/
-    @MetaField
+    @MetaField(0)
     private String politicalExposureDescriptionRecord;
 
     /*Reference to the corporate entity (Company for company customers)*/
@@ -76,7 +76,7 @@ public class Reference {
     private org.museframework.bian.classes.Object corporateCustomerLegalEntityReference;
 
     /*The company registered address*/
-    @MetaField
+    @MetaField(0)
     private String corporateAddress;
 
     /*Reference to one or more identified company officers for a corporate customer*/
@@ -84,11 +84,11 @@ public class Reference {
     private org.museframework.bian.classes.Object companyOfficerReference;
 
     /*The specific role played by the identified officer/employee*/
-    @MetaField
+    @MetaField(0)
     private String companyOfficerRole;
 
     /*The start date for the relationship*/
-    @MetaField
+    @MetaField(0)
     private String customerSinceDate;
 
     public void setPartyLegalEntityReference(org.museframework.bian.classes.Object partyLegalEntityReference) {

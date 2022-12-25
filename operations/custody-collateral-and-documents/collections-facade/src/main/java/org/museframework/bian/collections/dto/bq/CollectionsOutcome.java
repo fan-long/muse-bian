@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CollectionsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String collectionsWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String collectionsProcedure;
 
     public void setCollectionsWorkProduct(String collectionsWorkProduct) {

@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FXConversion {
     /*The FX rates and fees that are applied to the transactions*/
-    @MetaField
+    @MetaField(0)
     private String FXConversionRatesandFees;
 
     /*Details of the transaction FX conversion*/
-    @MetaField
+    @MetaField(0)
     private String FXConversionTaskResult;
 
     public void setFXConversionRatesandFees(String FXConversionRatesandFees) {

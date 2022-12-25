@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Reconciliation {
     /*Details of the reconciliation resolution*/
-    @MetaField
+    @MetaField(0)
     private String ACHReconciliationTaskResult;
 
     public void setACHReconciliationTaskResult(String ACHReconciliationTaskResult) {

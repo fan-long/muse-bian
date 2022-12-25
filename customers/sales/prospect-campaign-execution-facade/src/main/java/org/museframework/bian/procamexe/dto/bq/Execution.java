@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Execution {
     /*The type of work task (e.g. execute campaign through mailshot)*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureWorkTaskType;
 
     /*Description of the task performed, includes summary of activities as necessary for reference*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents for the work task*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
@@ -25,11 +25,11 @@ public class Execution {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of the outcome or result of the work task - can be the identification of prospects that have expressed an interest in becoming a customer*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureWorkTaskResult;
 
     /*The date-time the prospect campaign execution task is processed*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignProcedureWorkTaskDate_Time;
 
     public void setProspectCampaignProcedureWorkTaskType(String prospectCampaignProcedureWorkTaskType) {

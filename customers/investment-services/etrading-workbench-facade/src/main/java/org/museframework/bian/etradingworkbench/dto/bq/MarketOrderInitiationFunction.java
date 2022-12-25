@@ -11,7 +11,7 @@ public class MarketOrderInitiationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Market Order Initiation Function specific Business Service*/
@@ -27,7 +27,7 @@ public class MarketOrderInitiationFunction {
     private org.museframework.bian.classes.Function marketOrderInitiationFunctionReference;
 
     /*The type of Market Order Initiation Function*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderInitiationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

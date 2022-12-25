@@ -13,7 +13,7 @@ public class CardAuthentication {
     private org.museframework.bian.classes.Object eCommerceTransactionInstanceReference;
 
     /*The result of the card authentication request*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionAuthenticationResponse;
 
     public void seteCommerceTransactionInstanceReference(org.museframework.bian.classes.Object eCommerceTransactionInstanceReference) {

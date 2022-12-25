@@ -11,7 +11,7 @@ public class TradeDealBlotterFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trade Deal Blotter Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TradeDealBlotterFunction {
     private org.museframework.bian.classes.Function tradeDealBlotterFunctionReference;
 
     /*The type of Trade Deal Blotter Function*/
-    @MetaField
+    @MetaField(0)
     private String tradeDealBlotterFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

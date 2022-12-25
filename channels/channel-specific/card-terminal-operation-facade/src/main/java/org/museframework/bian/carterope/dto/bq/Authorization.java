@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Authorization {
     /*The date time the authorization is obtained*/
-    @MetaField
+    @MetaField(0)
     private String authorizationTransactionDateTime;
 
     public void setAuthorizationTransactionDateTime(String authorizationTransactionDateTime) {

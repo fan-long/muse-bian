@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ImpactAssessment {
     /*The type of work task (e.g. track market response to promotional event participation)*/
-    @MetaField
+    @MetaField(0)
     private String impactAssessmentWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research*/
-    @MetaField
+    @MetaField(0)
     private String impactAssessmentWorkTask;
 
     /*File of consolidated notes, evaluations and findings for the work task*/
-    @MetaField
+    @MetaField(0)
     private String impactAssessmentWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - indication of the need to redirect and/or expand promotional event activity*/
-    @MetaField
+    @MetaField(0)
     private String impactAssessmentWorkTaskResult;
 
     /*The date-time the performance assessment task is performed*/
-    @MetaField
+    @MetaField(0)
     private String impactAssessmentWorkTaskDate_Time;
 
     public void setImpactAssessmentWorkTaskType(String impactAssessmentWorkTaskType) {

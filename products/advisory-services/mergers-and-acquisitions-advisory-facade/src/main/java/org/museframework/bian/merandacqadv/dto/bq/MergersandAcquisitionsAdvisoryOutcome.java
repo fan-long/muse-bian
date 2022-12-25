@@ -11,7 +11,7 @@ public class MergersandAcquisitionsAdvisoryOutcome {
     private org.museframework.bian.classes.Project mergersandAcquisitionsAdvisoryProject;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String mergersandAcquisitionsAdvisoryWorkProduct;
 
     /**/

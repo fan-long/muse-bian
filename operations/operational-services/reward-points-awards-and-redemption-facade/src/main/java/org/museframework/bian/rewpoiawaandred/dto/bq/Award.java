@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Award {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String awardPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String awardTaskSchedule;
 
     /*The Reward Points Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class Award {
     private org.museframework.bian.classes.BusinessService awards;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String awardPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String awardAwardsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String awardAwardsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String awardAwardsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String awardAwardsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String awardAwardsServiceName;
 
     public void setAwardPreconditions(String awardPreconditions) {

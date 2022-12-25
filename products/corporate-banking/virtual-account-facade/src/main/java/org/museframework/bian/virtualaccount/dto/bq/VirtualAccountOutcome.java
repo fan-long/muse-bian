@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class VirtualAccountOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String virtualAccountWorkProduct;
 
     public void setVirtualAccountFinancialFacility(String virtualAccountFinancialFacility) {

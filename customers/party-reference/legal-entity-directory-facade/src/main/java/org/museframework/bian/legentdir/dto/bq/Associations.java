@@ -16,11 +16,11 @@ public class Associations {
     private org.museframework.bian.classes.Object legalEntityAssociationReference;
 
     /*Nature or type of association (e.g. corporate or familial)*/
-    @MetaField
+    @MetaField(0)
     private String legalEntityAssociationType;
 
     /*Description of the association and applicable obligations  (e.g. shareholder, director, guardian, guarantor)*/
-    @MetaField
+    @MetaField(0)
     private String legalEntityAssociationObligation;
 
     /*Reference the parent entity if applicable*/
@@ -32,7 +32,7 @@ public class Associations {
     private org.museframework.bian.classes.Object subsidiaryLegalEntityReference;
 
     /*List of major shareholders and shareholdings of significance*/
-    @MetaField
+    @MetaField(0)
     private String shareholdingProfile;
 
     public void setLegalEntityAssociationReference(org.museframework.bian.classes.Object legalEntityAssociationReference) {

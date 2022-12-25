@@ -13,11 +13,11 @@ public class ExecutionInitiation {
     private org.museframework.bian.classes.Object paymentExecutionProcedureInstanceReference;
 
     /*The returned status of the payment execution processing*/
-    @MetaField
+    @MetaField(0)
     private String paymentExecutionProcedureInstanceStatus;
 
     /*Details of the execution initiation task*/
-    @MetaField
+    @MetaField(0)
     private String executionInitiationTaskResult;
 
     public void setPaymentExecutionProcedureInstanceReference(org.museframework.bian.classes.Object paymentExecutionProcedureInstanceReference) {

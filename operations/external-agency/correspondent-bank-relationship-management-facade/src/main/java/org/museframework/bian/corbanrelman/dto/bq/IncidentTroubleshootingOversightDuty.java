@@ -11,11 +11,11 @@ public class IncidentTroubleshootingOversightDuty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Incident Troubleshooting Oversight Duty specific Business Service*/
@@ -35,7 +35,7 @@ public class IncidentTroubleshootingOversightDuty {
     private org.museframework.bian.classes.PlannedAction incidentTroubleshootingOversightDutyReference;
 
     /*The type of Incident Troubleshooting Oversight Duty*/
-    @MetaField
+    @MetaField(0)
     private String incidentTroubleshootingOversightDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

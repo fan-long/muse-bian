@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assignment {
     /*Defines the type of assignment (e.g. to schedule, ad-hoc inventory request)*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryAssignmentRequestType;
 
     /*Contains details of the product inventory request, in particular the item type, amount and delivery arrangements*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryAssignmentRequestRecord;
 
     /*Details of the distribution of product inventory to a location*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryAssignmentDeliveryRecord;
 
     /*Details of inventory and delivery related costs*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryAssignmentCosts;
 
     /*Key dates associated with the assignment (e.g. order date, confirmation date, delivery date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInventoryAssignmentRequestType(String productInventoryAssignmentRequestType) {

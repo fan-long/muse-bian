@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Agreement {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String agreementPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String agreementFeatureSchedule;
 
     /*The Fiduciary Relationship Arrangement specific Business Service*/
@@ -21,27 +21,27 @@ public class Agreement {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String agreementPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String agreementServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String agreementServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String agreementServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String agreementServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String agreementServiceName;
 
     public void setAgreementPreconditions(String agreementPreconditions) {

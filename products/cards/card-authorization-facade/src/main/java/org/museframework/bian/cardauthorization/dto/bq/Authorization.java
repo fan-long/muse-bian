@@ -13,11 +13,11 @@ public class Authorization {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The <BQ> specific Business Service*/
@@ -33,7 +33,7 @@ public class Authorization {
     private org.museframework.bian.classes.Test authorizationReference;
 
     /*The type of Authorization*/
-    @MetaField
+    @MetaField(0)
     private String authorizationType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RuleSetsandDecisionTrees {
     /*The production transaction assessment test results, including reference to any potential fraud transactions - note this can be a real-time dataset*/
-    @MetaField
+    @MetaField(0)
     private String ruleSetsAndDecisionTreesTestResult;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment task*/
-    @MetaField
+    @MetaField(0)
     private String ruleSetsAndDecisionTreesTestWorkProduct;
 
     public void setRuleSetsAndDecisionTreesTestResult(String ruleSetsAndDecisionTreesTestResult) {

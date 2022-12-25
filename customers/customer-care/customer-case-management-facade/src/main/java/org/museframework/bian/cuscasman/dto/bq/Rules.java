@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Rules {
     /*Definition of the basis for customer case evaluation*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseDecisionCriterion;
 
     /*Definition of the applicable subject/criterion to be considered in case evaluation (e.g. documentary evidence, customer/merchant history, projected relationship impact, financial cost/projected revenue impact, reputational impact)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseDecisionCriterionDefinition;
 
     /*Specific rules, thresholds and parameter values to be applied in case evaluation for the criterion*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseDecisionCriterionRules;
 
     /*Record of the sensitivity/tuning evaluations and adjustments made to the rule settings for the criterion*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseDecisionCriterionAnalysis;
 
     /*Sample case examples that apply the criterion that are used to evaluate the impact and re-calibrate the associated rules as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseDecisionCriterionHistory;
 
     public void setCustomerCaseDecisionCriterion(String customerCaseDecisionCriterion) {

@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assessment {
     /*The outcome of the assessment of the delinquent product account based on billing/payment and transaction history*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountAssessmentWorkProduct;
 
     /*The task to contact the customer and request/negotiate payment*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountAssessmentRecord;
 
     public void setDelinquentAccountAssessmentWorkProduct(String delinquentAccountAssessmentWorkProduct) {

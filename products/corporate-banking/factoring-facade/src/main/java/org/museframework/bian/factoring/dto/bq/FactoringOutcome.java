@@ -11,7 +11,7 @@ public class FactoringOutcome {
     private org.museframework.bian.classes.FinancialFacility factoringFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String factoringWorkProduct;
 
     public void setFactoringFinancialFacility(org.museframework.bian.classes.FinancialFacility factoringFinancialFacility) {

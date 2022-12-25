@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SyndicatedLoanOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String syndicatedLoanWorkProduct;
 
     public void setSyndicatedLoanFinancialFacility(String syndicatedLoanFinancialFacility) {

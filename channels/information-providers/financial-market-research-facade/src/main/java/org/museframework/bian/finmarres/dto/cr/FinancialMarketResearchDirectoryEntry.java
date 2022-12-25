@@ -8,39 +8,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialMarketResearchDirectoryEntry {
     /*The type of financial market research view provided by the research (e.g. common stock comparison)*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchViewpointType;
 
     /*A description of the available market research consolidated for this maintained viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchViewpointDescription;
 
     /*The externally sourced reports that are used to assemble the research viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String referencedFinancialMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchReport;
 
     /*Usage record of the research viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchViewpointUsage;
 
     /*Details of the research request*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketResearchReportRequest;
 
     /*The employee/business unit requesting the research*/

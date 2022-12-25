@@ -11,11 +11,11 @@ public class AccessControlServicingProperties {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Access Control Servicing Properties specific  Business Service*/
@@ -31,7 +31,7 @@ public class AccessControlServicingProperties {
     private org.museframework.bian.classes.Object accessControlServicingPropertiesReference;
 
     /*The type of Access Control Servicing Properties*/
-    @MetaField
+    @MetaField(0)
     private String accessControlServicingPropertiesType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

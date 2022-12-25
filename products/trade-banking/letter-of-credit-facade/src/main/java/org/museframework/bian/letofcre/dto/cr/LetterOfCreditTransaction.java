@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LetterOfCreditTransaction {
     /*A Classification value that distinguishes between business service transaction within Letter Of Credit Transaction*/
-    @MetaField
+    @MetaField(0)
     private String letterOfCreditTransactionParameterType;
 
     /*A selected optional business service as subject matter of Letter Of Credit Transaction*/
@@ -16,7 +16,7 @@ public class LetterOfCreditTransaction {
     private org.museframework.bian.classes.Service letterOfCreditTransactionSelectedOption;
 
     /*The status of Letter Of Credit Transaction*/
-    @MetaField
+    @MetaField(0)
     private String letterOfCreditTransactionStatus;
 
     /*A Classification value that specifies type of transaction for this  Letter Of Credit Transaction*/
@@ -36,7 +36,7 @@ public class LetterOfCreditTransaction {
     private org.museframework.bian.classes.LetterOfCreditAgreement letterOfCreditAgreementReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterOfCreditInvolvedPartyReference;
 
     /**/

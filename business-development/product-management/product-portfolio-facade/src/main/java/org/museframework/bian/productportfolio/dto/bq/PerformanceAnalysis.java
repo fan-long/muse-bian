@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PerformanceAnalysis {
     /*Defines the type of analysis/algorithm used to evaluate and compare the product performance to prevailing market measures*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceAnalysisType;
 
     /*Record of a task to perform a selected type of performance analysis on a product within the portfolio*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceAnalysisTask;
 
     /*The specific details of the performance analysis (can be a default/standard scheduled analysis or a specialist/ad-hoc request)*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceRequestSpecification;
 
     /*Reference to the performance analysis model used*/
@@ -25,19 +25,19 @@ public class PerformanceAnalysis {
     private org.museframework.bian.classes.Object productPerformanceModelReference;
 
     /*The data file, report of product related transaction details used in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceProductandServiceActivityReport;
 
     /*The content of selected financial market research report or market transaction database in any suitable form used for comparisons when appropriate*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceFinancialMarketResearchReport;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceWorkProducts;
 
     /*The output from executing the selected product performance analysis*/
-    @MetaField
+    @MetaField(0)
     private String productPerformanceRequestResult;
 
     public void setProductPerformanceAnalysisType(String productPerformanceAnalysisType) {

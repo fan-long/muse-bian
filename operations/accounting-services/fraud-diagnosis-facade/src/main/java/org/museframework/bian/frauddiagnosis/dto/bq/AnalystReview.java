@@ -17,15 +17,15 @@ public class AnalystReview {
     private org.museframework.bian.classes.Object outboundContactReference;
 
     /*The result of the economic model, including the recommended response*/
-    @MetaField
+    @MetaField(0)
     private String analystReviewAnalysisResult;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis (for future reference)*/
-    @MetaField
+    @MetaField(0)
     private String analystReviewWorkProduct;
 
     /*The recommended action resulting from the analysts review*/
-    @MetaField
+    @MetaField(0)
     private String analystReviewRecommendedAction;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

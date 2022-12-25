@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MergersAndAcquisitionAdvice {
     /*A Classification value that distinguishes between the subject matters of Mergers And Acquisition Advice*/
-    @MetaField
+    @MetaField(0)
     private String mergersAndAcquisitionAdviceSubjectAreaType;
 
     /*A Classification value that distinguishes between Options defined within Mergers And Acquisition Advice*/
-    @MetaField
+    @MetaField(0)
     private String mergersAndAcquisitionAdviceParameterType;
 
     /*A selected option, identified by Parameter Type*/
@@ -27,7 +27,7 @@ public class MergersAndAcquisitionAdvice {
     private org.museframework.bian.classes.Log mergersAndAcquisitionAdviceUsageLog;
 
     /*Information about reactions to an Advise which is used as a basis for improvement for the Mergers And Acquisition Advice.*/
-    @MetaField
+    @MetaField(0)
     private String mergersAndAcquisitionAdviceFeedback;
 
     /*An unique reference to an item or an occurrence of Mergers And Acquisition Advice*/

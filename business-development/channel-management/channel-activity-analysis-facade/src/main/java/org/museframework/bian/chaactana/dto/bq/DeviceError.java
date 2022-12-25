@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DeviceError {
     /*Defines the intended analytical insights and required input data and outputs*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityDeviceErrorDetectionAnalysisAlgorithmSpecification;
 
     /*Reference to output from the applied algorithm*/
@@ -17,7 +17,7 @@ public class DeviceError {
     private org.museframework.bian.classes.Object channelActivityDeviceErrorDetectionAnalysisReference;
 
     /*The output record from the analysis*/
-    @MetaField
+    @MetaField(0)
     private String channelActivityDeviceErrorDetectionAnalysisResult;
 
     public void setChannelActivityDeviceErrorDetectionAnalysisAlgorithmSpecification(String channelActivityDeviceErrorDetectionAnalysisAlgorithmSpecification) {

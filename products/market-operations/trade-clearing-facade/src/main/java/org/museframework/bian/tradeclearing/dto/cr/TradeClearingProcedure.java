@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradeClearingProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureParameterType;
 
     /*A selected optional business service as subject matter of Trade Clearing Procedure*/
@@ -19,23 +19,23 @@ public class TradeClearingProcedure {
     private org.museframework.bian.classes.Instruction tradeClearingProcedureRequest;
 
     /*Timetable to process Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureSchedule;
 
     /*The status of Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureStatus;
 
     /*Reference to the party who is involved in Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Trade Clearing Procedure*/
@@ -43,23 +43,23 @@ public class TradeClearingProcedure {
     private org.museframework.bian.classes.FinancialFacility tradeClearingProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureType;
 
     /*The schedule according to which the service provider will process the Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Trade Clearing Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeClearingProcedureServiceType;
 
     /*Reference to the product or service that is related to Trade Clearing Procedure*/

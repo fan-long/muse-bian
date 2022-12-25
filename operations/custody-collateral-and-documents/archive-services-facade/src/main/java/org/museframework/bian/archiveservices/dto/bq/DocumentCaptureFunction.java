@@ -11,7 +11,7 @@ public class DocumentCaptureFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Document Capture Function specific Business Service*/
@@ -27,7 +27,7 @@ public class DocumentCaptureFunction {
     private org.museframework.bian.classes.Function documentCaptureFunctionReference;
 
     /*The type of Document Capture Function*/
-    @MetaField
+    @MetaField(0)
     private String documentCaptureFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

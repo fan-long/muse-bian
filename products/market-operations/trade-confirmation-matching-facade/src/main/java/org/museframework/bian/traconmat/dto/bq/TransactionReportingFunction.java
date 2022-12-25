@@ -11,7 +11,7 @@ public class TransactionReportingFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Transaction Reporting Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TransactionReportingFunction {
     private org.museframework.bian.classes.Function transactionReportingFunctionReference;
 
     /*The type of Transaction Reporting Function*/
-    @MetaField
+    @MetaField(0)
     private String transactionReportingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

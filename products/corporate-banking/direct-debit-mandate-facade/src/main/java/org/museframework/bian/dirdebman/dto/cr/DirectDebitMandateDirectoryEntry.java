@@ -12,11 +12,11 @@ public class DirectDebitMandateDirectoryEntry {
     private org.museframework.bian.classes.Object mandatedCustomerReference;
 
     /*Description of the purpose for this collection of customer mandates*/
-    @MetaField
+    @MetaField(0)
     private String mandateDescription;
 
     /*The date and time the mandate collection is valid from to (allows for duration limits)*/
-    @MetaField
+    @MetaField(0)
     private String mandateCollectionValidPeriod;
 
     public void setMandatedCustomerReference(org.museframework.bian.classes.Object mandatedCustomerReference) {

@@ -15,7 +15,7 @@ public class MACandidateSelectionandEvaluationTopic {
     private org.museframework.bian.classes.Object MACandidateSelectionandEvaluationTopicReference;
 
     /*The type of M&A Candidate Selection and Evaluation Topic*/
-    @MetaField
+    @MetaField(0)
     private String MACandidateSelectionandEvaluationTopicType;
 
     /*The M&A Candidate Selection and Evaluation Topic specific Business Service*/
@@ -23,7 +23,7 @@ public class MACandidateSelectionandEvaluationTopic {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for providing the advice/recommendation*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The completion status once the advice/recommendation has been provided*/
@@ -35,7 +35,7 @@ public class MACandidateSelectionandEvaluationTopic {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in providing the advice/recommendation*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     public void setMergersAndAcquisitionAdviceReference(org.museframework.bian.classes.Object mergersAndAcquisitionAdviceReference) {

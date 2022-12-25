@@ -27,15 +27,15 @@ public class ECMAndDCMFacility {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Definition of the involved parties or associations to the issuance project*/
-    @MetaField
+    @MetaField(0)
     private String associations;
 
     /*The type of association (e.g. co-investor, legal)*/
-    @MetaField
+    @MetaField(0)
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
-    @MetaField
+    @MetaField(0)
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
@@ -43,19 +43,19 @@ public class ECMAndDCMFacility {
     private org.museframework.bian.classes.Object associationReference;
 
     /*The schedule for work tasks performed and to be performed through the issuing process*/
-    @MetaField
+    @MetaField(0)
     private String ECMAndDCMFulfillmentSchedule;
 
     /*Key dates associated with the issuance process (e.g. engagement date, prospectus date, offering date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*The consolidated record of the developed investment vehicle. Combines the output of the development and issuance activities, participant details, investment transaction records as appropriate (details not included at this time)*/
-    @MetaField
+    @MetaField(0)
     private String ECMAndDCMInstrumentRecord;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

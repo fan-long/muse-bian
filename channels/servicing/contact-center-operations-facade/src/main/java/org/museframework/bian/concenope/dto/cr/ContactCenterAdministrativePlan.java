@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ContactCenterAdministrativePlan {
     /*The default contact center operational configuration as defined by Contact Center Management (Note this can include some latitude for position assignment changes to be made during day to day operations by this service domain)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceOperatingConfiguration;
 
     /*Maintains the allocation records of available customer service representatives to the servicing positions defined in the contact center configuration. This includes past and future booking arrangements*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeAllocationSchedule;
 
     /*Reference to a customer servicing representative*/
@@ -21,27 +21,27 @@ public class ContactCenterAdministrativePlan {
     private org.museframework.bian.classes.Object customerServicingRepresentativeReference;
 
     /*Details about a registered customer servicing representative*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeRecord;
 
     /*Details the qualification, expertise and level of experience of the servicing representative*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeQualificationProfile;
 
     /*Reference to the locations the customer servicing representative can work from (can include remote working arrangements and time zone availability)*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeLocation;
 
     /*Details the time the customer servicing representative plans to be and is actually available for assignments which covers times for shift working and temporary/overtime assignments as may be necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeAvailabilitySchedule;
 
     /*Tracks the current status indicating availability for assignment to a servicing position (where  the representative will coordinate with contact routing for customer contacts)*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeStatus;
 
     /*Reference to a consolidated record of assignments. This is used to track utilization and performance*/
-    @MetaField
+    @MetaField(0)
     private String customerServicingRepresentativeAssignmentRecord;
 
     public void setContactCenterServiceOperatingConfiguration(String contactCenterServiceOperatingConfiguration) {

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Enquiries {
     /*The description of the requested information for the regulatory enquiry*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryEnquiry;
 
     /*The business unit being assessed for enquiry if appropriate*/
@@ -25,15 +25,15 @@ public class Enquiries {
     private org.museframework.bian.classes.Object enquiryCustomerReference;
 
     /*The possibly extensive collection of production transaction records assembled for the enquiry*/
-    @MetaField
+    @MetaField(0)
     private String enquiryTransactionRecords;
 
     /*Work documentation, forms and schedules produced and referenced during the enquiry*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryEnquiryWorkProducts;
 
     /*The record or report that is the outcome/result of the enquiry*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryEnquiryResult;
 
     /*The document reference for all classified/archived documents from the enquiry*/

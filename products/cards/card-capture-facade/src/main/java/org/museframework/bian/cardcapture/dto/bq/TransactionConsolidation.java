@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TransactionConsolidation {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationTaskSchedule;
 
     /*The Credit/Charge Card Financial Capture Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class TransactionConsolidation {
     private org.museframework.bian.classes.BusinessService cardTransactionConsolidation;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationCardTransactionConsolidationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationCardTransactionConsolidationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationCardTransactionConsolidationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationCardTransactionConsolidationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String transactionConsolidationCardTransactionConsolidationServiceName;
 
     public void setTransactionConsolidationPreconditions(String transactionConsolidationPreconditions) {

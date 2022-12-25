@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class HedgeFundAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Hedge Fund Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Hedge Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Hedge Fund Administrative Plan*/
@@ -20,11 +20,11 @@ public class HedgeFundAdministrativePlan {
     private org.museframework.bian.classes.Arrangement hedgeFundAdministrativePlanDuty;
 
     /*Party who is involved in Hedge Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Hedge Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanBudgetBalance;
 
     /*The subject matter of Hedge Fund Administrative Plan*/
@@ -32,7 +32,7 @@ public class HedgeFundAdministrativePlan {
     private org.museframework.bian.classes.Object hedgeFundAdministrativePlanSubjectMatter;
 
     /*The type of Hedge Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Hedge Fund Administrative Plan*/
@@ -40,7 +40,7 @@ public class HedgeFundAdministrativePlan {
     private org.museframework.bian.classes.Plan hedgeFundAdministrativePlanReference;
 
     /*Documentation of Hedge Fund Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String hedgeFundAdministrativePlanDescription;
 
     public void setHedgeFundAdministrativePlanBudgetType(String hedgeFundAdministrativePlanBudgetType) {

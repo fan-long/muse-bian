@@ -13,11 +13,11 @@ public class Distribution {
     private org.museframework.bian.classes.Object marketDataSwitchUserAccessRightsRecordReference;
 
     /*The users are registered to access different services/information made available through the switch - it is used to control information distribution*/
-    @MetaField
+    @MetaField(0)
     private String marketDataSwitchUserAccessRightsRecord;
 
     /*This tracks the switch service content that the user will receive for this session - reflecting their user access rights*/
-    @MetaField
+    @MetaField(0)
     private String marketDataSwitchServiceUserSessionRecord;
 
     public void setMarketDataSwitchUserAccessRightsRecordReference(org.museframework.bian.classes.Object marketDataSwitchUserAccessRightsRecordReference) {

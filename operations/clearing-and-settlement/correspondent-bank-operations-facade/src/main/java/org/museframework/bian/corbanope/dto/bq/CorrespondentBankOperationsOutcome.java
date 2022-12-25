@@ -11,7 +11,7 @@ public class CorrespondentBankOperationsOutcome {
     private org.museframework.bian.classes.Event correspondentBankOperationsIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankOperationsProvision;
 
     public void setCorrespondentBankOperationsIncident(org.museframework.bian.classes.Event correspondentBankOperationsIncident) {

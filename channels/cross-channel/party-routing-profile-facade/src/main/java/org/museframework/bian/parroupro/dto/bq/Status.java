@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Status {
     /*Defines the type of status (e.g. account in distress)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipStatusType;
 
     /*The maintained state value (historical values may be retained as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipStatus;
 
     /*Explanation/description for given status value if necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipStatusNarrative;
 
     /*Indication when the status value is updated and time until given value applies/is relevant as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipStatusValidFromToDate;
 
     public void setCustomerRelationshipStatusType(String customerRelationshipStatusType) {

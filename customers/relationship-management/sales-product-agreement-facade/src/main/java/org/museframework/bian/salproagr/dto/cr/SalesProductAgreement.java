@@ -18,7 +18,7 @@ public class SalesProductAgreement {
     private org.museframework.bian.classes.Object legalEntityReference;
 
     /*Reference to the type of product/service covered by the agreement*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to the specific product instance covered by the sales product agreement*/
@@ -26,19 +26,19 @@ public class SalesProductAgreement {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of customer agreement (e.g. individual, corporate)*/
-    @MetaField
+    @MetaField(0)
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
-    @MetaField
+    @MetaField(0)
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
-    @MetaField
+    @MetaField(0)
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
-    @MetaField
+    @MetaField(0)
     private String agreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents*/

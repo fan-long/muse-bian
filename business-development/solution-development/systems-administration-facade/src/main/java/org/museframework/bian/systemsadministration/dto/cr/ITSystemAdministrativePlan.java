@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ITSystemAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within ITSystem Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String ITSystemAdministrativePlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for ITSystem Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String ITSystemAdministrativePlanBudget;
 
     /*The allocation of someone or something which is specified for ITSystem Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String ITSystemAdministrativePlanAssignment;
 
     /*A plan that defines clerical support for ITSystem*/
-    @MetaField
+    @MetaField(0)
     private String ITSystemAdministrativePlanPlan;
 
     /*Party who is involved in  ITSystem Administrative Plan*/

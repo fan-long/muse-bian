@@ -11,7 +11,7 @@ public class OperationalGatewayOutcome {
     private org.museframework.bian.classes.Event operationalGatewayIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String operationalGatewayProvision;
 
     public void setOperationalGatewayIncident(org.museframework.bian.classes.Event operationalGatewayIncident) {

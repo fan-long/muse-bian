@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorporateFinanceServicesAdvice {
     /*A Classification value that distinguishes between the subject matters of Corporate Finance Services Advice*/
-    @MetaField
+    @MetaField(0)
     private String corporateFinanceServicesAdviceSubjectAreaType;
 
     /*A Classification value that distinguishes between Options defined within Corporate Finance Services Advice*/
-    @MetaField
+    @MetaField(0)
     private String corporateFinanceServicesAdviceParameterType;
 
     /*A selected option, identified by Parameter Type*/
@@ -27,7 +27,7 @@ public class CorporateFinanceServicesAdvice {
     private org.museframework.bian.classes.Log corporateFinanceServicesAdviceUsageLog;
 
     /*Information about reactions to an Advise which is used as a basis for improvement for the Corporate Finance Services Advice.*/
-    @MetaField
+    @MetaField(0)
     private String corporateFinanceServicesAdviceFeedback;
 
     /*An unique reference to an item or an occurrence of Corporate Finance Services Advice*/

@@ -11,7 +11,7 @@ public class DocumentMaintenanceFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Document Maintenance Function specific Business Service*/
@@ -27,7 +27,7 @@ public class DocumentMaintenanceFunction {
     private org.museframework.bian.classes.Function documentMaintenanceFunctionReference;
 
     /*The type of Document Maintenance Function*/
-    @MetaField
+    @MetaField(0)
     private String documentMaintenanceFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

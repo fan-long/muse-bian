@@ -11,7 +11,7 @@ public class PrivatePlacementOutcome {
     private org.museframework.bian.classes.FinancialFacility privatePlacementFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementWorkProduct;
 
     public void setPrivatePlacementFinancialFacility(org.museframework.bian.classes.FinancialFacility privatePlacementFinancialFacility) {

@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ResiliencyandPerformanceChecks {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
@@ -25,23 +25,23 @@ public class ResiliencyandPerformanceChecks {
     private org.museframework.bian.classes.BusinessService resiliencyandPerformanceChecks;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String resiliencyandPerformanceChecksServiceName;
 
     public void setResiliencyandPerformanceChecksPreconditions(String resiliencyandPerformanceChecksPreconditions) {

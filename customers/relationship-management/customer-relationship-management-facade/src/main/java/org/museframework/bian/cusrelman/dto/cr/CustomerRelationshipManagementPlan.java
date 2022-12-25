@@ -16,43 +16,43 @@ public class CustomerRelationshipManagementPlan {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*A type of rating referenced and perhaps maintained by the relationship manager  (e.g. credit, financial, collateral)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRatingType;
 
     /*The rating value (and explanation)*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipRating;
 
     /*A type of insight referenced and perhaps maintained by the relationship manager  (e.g. retention candidate, sales propensity, life events)*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightType;
 
     /*Description of the insight*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightDescription;
 
     /*The target and actual budget covering income and allowed expenses/discounts*/
-    @MetaField
+    @MetaField(0)
     private String customerBudget;
 
     /*Covers current and near term target product/service coverage as per the judgment of the Relationship Manager*/
-    @MetaField
+    @MetaField(0)
     private String customerProductCoverage;
 
     /*Extracted analysis from production activity used to detect trends and key events (product activity/turnover summaries)*/
-    @MetaField
+    @MetaField(0)
     private String customerProductUsage;
 
     /*Obtained from the appropriate Service Domain, this provides an automated/rules based analysis of unsold/eligible products and associated terms that can be refined by the manager*/
-    @MetaField
+    @MetaField(0)
     private String customerProductEligibilityProfile;
 
     /*The sales plan details specific actions taken and planned to address sales opportunities (i.e. target product sales and associated contact schedule)*/
-    @MetaField
+    @MetaField(0)
     private String customerSalesPlan;
 
     /*A maintained perspective of the profitability of the relationship to date and projected*/
-    @MetaField
+    @MetaField(0)
     private String customerProfitability;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

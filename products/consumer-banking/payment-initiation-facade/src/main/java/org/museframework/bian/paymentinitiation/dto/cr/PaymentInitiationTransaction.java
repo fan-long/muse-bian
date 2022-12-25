@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PaymentInitiationTransaction {
     /*The type of payment transaction (e.g. over the counter-OTC, intra-account, overseas)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionType;
 
     /*Details of the recurring payment. Can be used to pre-populate the payment request*/
-    @MetaField
+    @MetaField(0)
     private String recurringPaymentRecord;
 
     /*Reference for a customer that uses recurring payments facility*/
@@ -27,7 +27,7 @@ public class PaymentInitiationTransaction {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The details of the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransaction;
 
     /*Reference to the payer*/
@@ -55,31 +55,31 @@ public class PaymentInitiationTransaction {
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Currency for the amounts*/
-    @MetaField
+    @MetaField(0)
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Processing and exchange fees as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String paymentFeesCharges;
 
     /*Selection of the preferred mechanism (e.g. SWIFT, ACH, Intra account)*/
-    @MetaField
+    @MetaField(0)
     private String paymentMechanism;
 
     /*Details captured for reference and compliance reporting purposes*/
-    @MetaField
+    @MetaField(0)
     private String paymentPurpose;
 
     /*Payer identification document for OTC payment transactions*/
@@ -87,7 +87,7 @@ public class PaymentInitiationTransaction {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The copy of the identification document used*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     public void setPaymentTransactionType(String paymentTransactionType) {

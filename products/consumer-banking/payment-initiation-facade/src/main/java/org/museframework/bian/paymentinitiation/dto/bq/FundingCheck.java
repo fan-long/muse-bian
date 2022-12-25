@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FundingCheck {
     /*The outcome of the funds available check*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionFundingCheckResult;
 
     public void setPaymentTransactionFundingCheckResult(String paymentTransactionFundingCheckResult) {

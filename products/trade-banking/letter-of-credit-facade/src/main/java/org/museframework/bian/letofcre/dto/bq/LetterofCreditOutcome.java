@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LetterofCreditOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditDividend;
 
     /**/
@@ -23,27 +23,27 @@ public class LetterofCreditOutcome {
     private org.museframework.bian.classes.InterestTransaction letterofCreditInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditWorkProduct;
 
     public void setLetterofCreditCounterparty(String letterofCreditCounterparty) {

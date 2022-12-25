@@ -11,11 +11,11 @@ public class OrderInitiation {
     private org.museframework.bian.classes.Object consumerSecuritiesOrderTransactionInstanceReference;
 
     /*The returned status of the customer securities order*/
-    @MetaField
+    @MetaField(0)
     private String consumerSecuritiesOrderTransactionInstanceStatus;
 
     /*Details of the market order initiation task*/
-    @MetaField
+    @MetaField(0)
     private String consumerSecuritiesOrderInitiationTaskResult;
 
     public void setConsumerSecuritiesOrderTransactionInstanceReference(org.museframework.bian.classes.Object consumerSecuritiesOrderTransactionInstanceReference) {

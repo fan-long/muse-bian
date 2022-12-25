@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TrackingandReminders {
     /*Reference to an outbound contact established with the customer*/
-    @MetaField
+    @MetaField(0)
     private String customerReminderContactRecord;
 
     /*Content of the reminder message*/
-    @MetaField
+    @MetaField(0)
     private String contactMessage;
 
     /*The date and time of the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactDate;
 
     /*Any response arising from the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactResult;
 
     /*The result of the tracking and reminder activity*/
-    @MetaField
+    @MetaField(0)
     private String trackingandRemindersResult;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String trackingandRemindersWorkProduct;
 
     public void setCustomerReminderContactRecord(String customerReminderContactRecord) {

@@ -8,47 +8,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AssetSecuritizationOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationCalendar;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationDividend;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationFees;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationWorkProduct;
 
     public void setAssetSecuritizationCalendar(String assetSecuritizationCalendar) {

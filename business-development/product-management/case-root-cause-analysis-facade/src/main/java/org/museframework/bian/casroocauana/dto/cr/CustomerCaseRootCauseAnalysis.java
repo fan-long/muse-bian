@@ -11,27 +11,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerCaseRootCauseAnalysis {
     /*A Classification value that distinguishes between Analysis according to the type of business services and/or type of concern defined within Customer Case Root Cause Analysis . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisParameterType;
 
     /*A selected optional business service as subject matter of analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisSelectedOption;
 
     /*Request to perform Customer Case Root Cause Analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisRequest;
 
     /*Timetable to perform Customer Case Root Cause Analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisSchedule;
 
     /*The status of Customer Case Root Cause Analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisStatus;
 
     /*Reference to the log of (usage) ativities/events of Customer Case Root Cause Analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseRootCauseAnalysisUsageLog;
 
     /*Reference to the party who has requested Customer Case Root Cause Analysis*/

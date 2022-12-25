@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountsReceivableOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedure;
 
     public void setAccountsReceivableWorkProduct(String accountsReceivableWorkProduct) {

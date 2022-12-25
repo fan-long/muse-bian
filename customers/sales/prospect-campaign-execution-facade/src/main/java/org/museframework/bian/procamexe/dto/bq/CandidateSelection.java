@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CandidateSelection {
     /*Details the selection criteria used to identify candidate prospects*/
-    @MetaField
+    @MetaField(0)
     private String prospectCampaignSelectionCriteria;
 
     /*Reference to the employee or business unit that confirms eligibility of the prospect list (e.g. confirming not current customer checks)*/

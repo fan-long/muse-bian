@@ -11,7 +11,7 @@ public class ProductionServiceReportingFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Production Service Reporting Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class ProductionServiceReportingFulfillment {
     private org.museframework.bian.classes.Object productionServiceReportingFulfillmentReference;
 
     /*The type of Production Service Reporting Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String productionServiceReportingFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

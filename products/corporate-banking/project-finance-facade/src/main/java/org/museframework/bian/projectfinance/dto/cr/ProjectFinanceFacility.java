@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProjectFinanceFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Project Finance Facility*/
@@ -15,15 +15,15 @@ public class ProjectFinanceFacility {
     private org.museframework.bian.classes.Feature projectFinanceFacilitySelectedOption;
 
     /*The status of Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityStatus;
 
     /*Reference to the party who is involved in Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityAssociatedParty;
 
     /*The curreny which is arranged in Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityCurrency;
 
     /*Reference to the regulation which is defined in Project Finance Facility*/
@@ -31,7 +31,7 @@ public class ProjectFinanceFacility {
     private org.museframework.bian.classes.RuleSet projectFinanceFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Project Finance Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class ProjectFinanceFacility {
     private org.museframework.bian.classes.Account projectFinanceFacilityAccountReference;
 
     /*Reference to the customer who is involved in Project Finance Facility*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceFacilityCustomerReference;
 
     /*The position of Project Finance Facility*/

@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class GuidelineComplianceAssessment {
     /*The type and make-up of guideline compliance tests referenced in the assessment*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceAssessmentType;
 
     /*The business function or unit assessed for compliance if appropriate*/
@@ -27,11 +27,11 @@ public class GuidelineComplianceAssessment {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceAssessmentWorkProducts;
 
     /*Outcome/result of the assessment, can include remedial actions*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceAssessmentResult;
 
     public void setGuidelineComplianceAssessmentType(String guidelineComplianceAssessmentType) {

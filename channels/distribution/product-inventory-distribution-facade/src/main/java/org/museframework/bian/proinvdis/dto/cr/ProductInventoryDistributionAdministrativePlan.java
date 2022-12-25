@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductInventoryDistributionAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Product Inventory Distribution AdministrativePlan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrativePlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Product Inventory Distribution AdministrativePlan*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrativePlanBudget;
 
     /*The allocation of someone or something which is specified for Product Inventory Distribution AdministrativePlan*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrativePlanAssignment;
 
     /*A plan that defines clerical support for ProductInventoryDistribution*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryDistributionAdministrativePlanPlan;
 
     /*Party who is involved in  Product Inventory Distribution AdministrativePlan*/

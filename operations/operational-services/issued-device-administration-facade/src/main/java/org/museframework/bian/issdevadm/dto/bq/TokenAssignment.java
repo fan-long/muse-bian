@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TokenAssignment {
     /**/
-    @MetaField
+    @MetaField(0)
     private String tokenIdentificationCode;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String tokenServiceProviderReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String requestorReference;
 
     /**/
@@ -23,7 +23,7 @@ public class TokenAssignment {
     private org.museframework.bian.classes.Instruction requestReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String requestReasonDescription;
 
     /**/
@@ -35,11 +35,11 @@ public class TokenAssignment {
     private org.museframework.bian.classes.PaymentCard cardReference;
 
     /*Enumeration: Active, Expired, Cancelled*/
-    @MetaField
+    @MetaField(0)
     private String tokenStatus;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String tokenStatusDate;
 
     public void setTokenIdentificationCode(String tokenIdentificationCode) {

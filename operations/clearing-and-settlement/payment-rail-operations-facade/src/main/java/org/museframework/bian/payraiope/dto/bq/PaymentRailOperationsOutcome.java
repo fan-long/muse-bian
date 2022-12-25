@@ -11,7 +11,7 @@ public class PaymentRailOperationsOutcome {
     private org.museframework.bian.classes.Event paymentRailOperationsIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperationsProvision;
 
     public void setPaymentRailOperationsIncident(org.museframework.bian.classes.Event paymentRailOperationsIncident) {

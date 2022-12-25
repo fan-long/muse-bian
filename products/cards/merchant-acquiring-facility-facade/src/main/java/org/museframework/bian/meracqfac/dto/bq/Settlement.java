@@ -16,15 +16,15 @@ public class Settlement {
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Details the individual participant Issuer or Acquirer payments calculated to be due for this settlement window - covers only the instructions specific to the participant Merchant Acquirer*/
-    @MetaField
+    @MetaField(0)
     private String cardFinancialSettlementServicePaymentAdviceRecord;
 
     /*Details the payment made, typically from Issuer to Acquirer participant bank*/
-    @MetaField
+    @MetaField(0)
     private String participantPaymentTransaction;
 
     /*The settlement account statement for the processing window - used to confirm payments*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankSettlementAccountStatement;
 
     public void setParticipantMerchantAcquirerBankReference(org.museframework.bian.classes.Object participantMerchantAcquirerBankReference) {

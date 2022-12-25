@@ -11,7 +11,7 @@ public class DebtTrusteeFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Debt Trustee Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class DebtTrusteeFulfillment {
     private org.museframework.bian.classes.Object debtTrusteeFulfillmentReference;
 
     /*The type of Debt Trustee Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String debtTrusteeFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

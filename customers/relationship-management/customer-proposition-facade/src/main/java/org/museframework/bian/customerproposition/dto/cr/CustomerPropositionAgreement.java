@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerPropositionAgreement {
     /*A Classification value that distinguishes between Options defined within Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
@@ -30,19 +30,19 @@ public class CustomerPropositionAgreement {
     private org.museframework.bian.classes.Instruction customerPropositionAgreementDischargeRequest;
 
     /*Timetable to discharge Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementDischargeSchedule;
 
     /*The status of Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementStatus;
 
     /*Party who is involved in Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Customer Proposition Agreement*/
@@ -58,7 +58,7 @@ public class CustomerPropositionAgreement {
     private org.museframework.bian.classes.RuleSet customerPropositionAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Customer Proposition Agreement*/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Customer Proposition Agreement in case of legal dispute.*/

@@ -19,7 +19,7 @@ public class CreditPricingAssessment {
     private org.museframework.bian.classes.Object sectorReference;
 
     /*The product type/category of the proposed transaction for the credit pricing assessment*/
-    @MetaField
+    @MetaField(0)
     private String productType;
 
     /*Reference to proposed transaction submitted for assessment*/
@@ -27,27 +27,27 @@ public class CreditPricingAssessment {
     private org.museframework.bian.classes.Object proposedTransactionReference;
 
     /*Key details of the proposed transaction*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionRecord;
 
     /*The type of credit instrument being considered*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionType;
 
     /*The financial structure of the proposed transaction*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionAmount;
 
     /*One or more key dates associated with the transaction*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionRecordDate;
 
     /*The booking entity within the bank that the proposed transaction would impact*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionBookingEntity;
 
     /*Details of the credit pricing assessment, permitting or adjusting terms as necessary*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionCreditPricingAssessment;
 
     public void setBusinessUnitReference(org.museframework.bian.classes.Object businessUnitReference) {

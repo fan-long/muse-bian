@@ -7,27 +7,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ParticipantService {
     /*Reference to the service request made by the network participant*/
-    @MetaField
+    @MetaField(0)
     private String participantServiceRecord;
 
     /*The type of request  (e.g. merchant alert, chargeback arbitration, chargeback reduction)*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceType;
 
     /*Details of service charge levied against the Network Participant Facility*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceCharge;
 
     /*Key dates and times associated with the provision of the service (e.g. initiation of service fulfillment)*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceDateTime;
 
     /*Work documentation, forms and schedules produced and referenced during the network service delivery (includes charges, service activity log and results etc.)*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantNetworkServiceRequestWorkProduct;
 
     /*The result of the request in whatever form appropriate*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantNetworkServiceRequestResult;
 
     public void setParticipantServiceRecord(String participantServiceRecord) {

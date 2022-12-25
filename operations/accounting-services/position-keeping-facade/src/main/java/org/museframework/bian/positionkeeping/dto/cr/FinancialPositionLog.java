@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialPositionLog {
     /*The type of financial transaction log (e.g. customer transactions)*/
-    @MetaField
+    @MetaField(0)
     private String transactionLogType;
 
     /*The product/service for which this is a financial transaction log*/
@@ -23,75 +23,75 @@ public class FinancialPositionLog {
     private org.museframework.bian.classes.Object counterpartyReference;
 
     /*The currency for the logged  transactions*/
-    @MetaField
+    @MetaField(0)
     private String baseCurrency;
 
     /*The record of applied interest if interest calculations are supported*/
-    @MetaField
+    @MetaField(0)
     private String interestApplicationRecord;
 
     /*A record of applied interest*/
-    @MetaField
+    @MetaField(0)
     private String interestTransaction;
 
     /*General description of the interest transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionDescription;
 
     /*Applicable rate type*/
-    @MetaField
+    @MetaField(0)
     private String transactionRateType;
 
     /*The derived interest amount to be applied*/
-    @MetaField
+    @MetaField(0)
     private String transactionInterestCharge;
 
     /*Basic position limits that are maintained as an aspect of the log*/
-    @MetaField
+    @MetaField(0)
     private String managedPositionLimits;
 
     /*The type of position maintained for the log (e.g. cumulative balance)*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitSettings;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitValue;
 
     /*Support for recording blocks on the log position (handling is by the associated fulfillment service domain)*/
-    @MetaField
+    @MetaField(0)
     private String amountBlock;
 
     /*The type of block applied to the tracked position (e.g. pending, final)*/
-    @MetaField
+    @MetaField(0)
     private String amountBlockType;
 
     /*Priority classification for the block*/
-    @MetaField
+    @MetaField(0)
     private String priority;
 
     /*The amount of the block*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*The type of key dates associated with the block  (e.g. start, expiry)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*The date and time the log was initiated. Note the log will have a complex internal calendar structure for extract and reporting*/
-    @MetaField
+    @MetaField(0)
     private String initiationDate;
 
     /*The status of the log entry (e.g. active, in-suspense etc.)*/
-    @MetaField
+    @MetaField(0)
     private String status;
 
     public void setTransactionLogType(String transactionLogType) {

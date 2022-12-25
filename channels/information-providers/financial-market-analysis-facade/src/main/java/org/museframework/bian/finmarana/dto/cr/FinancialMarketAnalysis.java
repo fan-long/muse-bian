@@ -11,27 +11,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialMarketAnalysis {
     /*A Classification value that distinguishes between Analysis according to the type of business services and/or type of concern defined within Financial Market Analysis . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisParameterType;
 
     /*A selected optional business service as subject matter of analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisSelectedOption;
 
     /*Request to perform Financial Market Analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisRequest;
 
     /*Timetable to perform Financial Market Analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisSchedule;
 
     /*The status of Financial Market Analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisStatus;
 
     /*Reference to the log of (usage) ativities/events of Financial Market Analysis*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisUsageLog;
 
     /*Reference to the party who has requested Financial Market Analysis*/

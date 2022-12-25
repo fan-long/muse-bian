@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InternalBankAccountLog {
     /*A Classification value that distinguishes between business service events logged within Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogParameterType;
 
     /*A selected optional business service as subject matter of Internal Bank Account Log*/
@@ -15,11 +15,11 @@ public class InternalBankAccountLog {
     private org.museframework.bian.classes.Service internalBankAccountLogSelectedOption;
 
     /*The type of Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogType;
 
     /*Timetable to track Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogSchedule;
 
     /*Reference to the log of (usage) ativities/events  of Internal Bank Account Log*/
@@ -31,7 +31,7 @@ public class InternalBankAccountLog {
     private org.museframework.bian.classes.Log internalBankAccountLogUpdateLog;
 
     /*Reference to the party who is involved in Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogAssociatedParty;
 
     /*Reference to the business unit which is involved in Internal Bank Account Log*/
@@ -39,11 +39,11 @@ public class InternalBankAccountLog {
     private org.museframework.bian.classes.BusinessUnit internalBankAccountLogBusinessUnitReference;
 
     /*Reference to the customer who is involved in Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogCustomerReference;
 
     /*The configuration of Internal Bank Account Log*/
-    @MetaField
+    @MetaField(0)
     private String internalBankAccountLogServiceConfiguration;
 
     /*The position of Internal Bank Account Log*/

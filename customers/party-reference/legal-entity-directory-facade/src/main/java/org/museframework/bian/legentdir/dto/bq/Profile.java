@@ -13,27 +13,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Profile {
     /*The estimated capitalization of the entity*/
-    @MetaField
+    @MetaField(0)
     private String organizationCapitalization;
 
     /*The estimated debt level for the entity*/
-    @MetaField
+    @MetaField(0)
     private String organizationDebtLevel;
 
     /*The projected economic performance for the entity*/
-    @MetaField
+    @MetaField(0)
     private String organizationEconomicIntent;
 
     /*Past and projected growth rates*/
-    @MetaField
+    @MetaField(0)
     private String organizationGrowthRate;
 
     /*Analysis of past performance  (a summary description)*/
-    @MetaField
+    @MetaField(0)
     private String organizationProfitabilityStocks;
 
     /*Description of revenues, production volumes and staff turnover  a summary description)*/
-    @MetaField
+    @MetaField(0)
     private String organizationRevenueTurnover;
 
     public void setOrganizationCapitalization(String organizationCapitalization) {

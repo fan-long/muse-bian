@@ -17,15 +17,15 @@ public class Alerts {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The type of alert (e.g. missed payment, limit breach)*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditAlertType;
 
     /*Details of the event behind the notification*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditAlertDescription;
 
     /*The date and time of the notification*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

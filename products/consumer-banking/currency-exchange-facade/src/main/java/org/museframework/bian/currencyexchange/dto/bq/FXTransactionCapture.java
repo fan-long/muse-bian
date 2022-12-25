@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FXTransactionCapture {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCapturePreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureTaskSchedule;
 
     /*The Currency Exchange Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class FXTransactionCapture {
     private org.museframework.bian.classes.BusinessService FXTransactionCapture;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCapturePostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureFXTransactionCaptureServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureFXTransactionCaptureServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureFXTransactionCaptureServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureFXTransactionCaptureServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String FXTransactionCaptureFXTransactionCaptureServiceName;
 
     public void setFXTransactionCapturePreconditions(String FXTransactionCapturePreconditions) {

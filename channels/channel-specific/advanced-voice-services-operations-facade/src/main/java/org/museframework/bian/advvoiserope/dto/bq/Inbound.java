@@ -13,15 +13,15 @@ public class Inbound {
     private org.museframework.bian.classes.Object VChannelDeviceReference;
 
     /*Property of the device that can be used in identification ( e.g. ANI phone number)*/
-    @MetaField
+    @MetaField(0)
     private String VChannelDevicePropertyValue;
 
     /*Detail used for statistics*/
-    @MetaField
+    @MetaField(0)
     private String VChannelInboundConnectionStartTime;
 
     /*Detain used for statistics*/
-    @MetaField
+    @MetaField(0)
     private String VChannelInboundConnectionDuration;
 
     /*Internal reference retuned by Service Domain-Contact Handler for routing*/

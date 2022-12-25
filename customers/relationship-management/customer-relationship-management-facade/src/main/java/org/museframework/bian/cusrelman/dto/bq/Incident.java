@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Incident {
     /*Record of an incident*/
-    @MetaField
+    @MetaField(0)
     private String relationshipIncidentRecord;
 
     /*Reference to involved employees in the original incident or the resolution as appropriate*/
@@ -21,15 +21,15 @@ public class Incident {
     private org.museframework.bian.classes.Object productandServiceActivityReference;
 
     /*The type of incident (e.g. product error, servicing issue)*/
-    @MetaField
+    @MetaField(0)
     private String customerIncidentType;
 
     /*Description of the incident in whatever form appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerIncidentDescription;
 
     /*Narrative of the resolution actions made or committed*/
-    @MetaField
+    @MetaField(0)
     private String customerIncidentResolution;
 
     public void setRelationshipIncidentRecord(String relationshipIncidentRecord) {

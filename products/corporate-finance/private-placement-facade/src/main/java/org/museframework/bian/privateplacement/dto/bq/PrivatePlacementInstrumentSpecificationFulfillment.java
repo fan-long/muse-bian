@@ -11,7 +11,7 @@ public class PrivatePlacementInstrumentSpecificationFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Private Placement Instrument Specification Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class PrivatePlacementInstrumentSpecificationFulfillment {
     private org.museframework.bian.classes.Object privatePlacementInstrumentSpecificationFulfillmentReference;
 
     /*The type of Private Placement Instrument Specification Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementInstrumentSpecificationFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

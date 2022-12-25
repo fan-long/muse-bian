@@ -12,19 +12,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Servicing {
     /*Selectable product or service feature associated with servicing a product or service*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeature;
 
     /*Explanation/guidelines for the product or service feature (can be assisted or self serve)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeatureGuideline;
 
     /*Diagnosis guide for addressing reported issues with a product or service feature*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeatureProblemDiagnosis;
 
     /*Resolution guide for resolving reported issue with a product or service feature*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceFeatureProblemResolution;
 
     public void setProductandServiceFeature(String productandServiceFeature) {

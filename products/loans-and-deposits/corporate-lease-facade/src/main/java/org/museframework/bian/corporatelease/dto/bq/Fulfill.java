@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Fulfill {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String fulfillPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String fulfillFeatureSchedule;
 
     /*The Corporate Lease Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class Fulfill {
     private org.museframework.bian.classes.BusinessService corporateLeaseFulfillment;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String fulfillPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String fulfillCorporateLeaseFulfillmentServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String fulfillCorporateLeaseFulfillmentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String fulfillCorporateLeaseFulfillmentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String fulfillCorporateLeaseFulfillmentServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String fulfillCorporateLeaseFulfillmentServiceName;
 
     public void setFulfillPreconditions(String fulfillPreconditions) {

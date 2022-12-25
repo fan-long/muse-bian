@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustodyFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityParameterType;
 
     /*A selected optional business service as subject matter of Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilitySelectedOption;
 
     /*The type of Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityType;
 
     /*Reference to Custody Arrangement*/
@@ -24,15 +24,15 @@ public class CustodyFacility {
     private org.museframework.bian.classes.Object custodyFacilityReference;
 
     /*Timetable to fulfill Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilitySchedule;
 
     /*The status of Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityStatus;
 
     /*The curreny which is arranged in Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityCurrency;
 
     /*Reference to the regulation which is defined in Custody Arrangement*/
@@ -40,19 +40,19 @@ public class CustodyFacility {
     private org.museframework.bian.classes.Object custodyFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Custody Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Custody Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityBookingLocation;
 
     /*The type of account which is linked to Custody Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String custodyFacilityAccountType;
 
     /*Reference to the account which is linked to Custody Arrangement*/

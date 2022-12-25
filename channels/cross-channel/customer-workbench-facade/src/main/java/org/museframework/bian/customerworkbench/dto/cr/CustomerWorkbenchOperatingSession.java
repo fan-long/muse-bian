@@ -11,35 +11,35 @@ public class CustomerWorkbenchOperatingSession {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of user device (e.g. mobile, laptop, workstation )*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchDeviceType;
 
     /*Reference to device properties used to identify the device  (e.g. URL, ANI, serial number)*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchDeviceRegistration;
 
     /*The make of the device if known*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchDeviceManufacturer;
 
     /*The operating system type and version (use to match downloaded software)*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchDeviceOperatingSystemVersionNumber;
 
     /*The bank's access permissions (e.g. local storage access, administrator permissions, system download permission)*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchDeviceAccessPermissions;
 
     /*Details of the local bank applications*/
-    @MetaField
+    @MetaField(0)
     private String installedBankApplicationType;
 
     /*The version number(s) of device resident bank software*/
-    @MetaField
+    @MetaField(0)
     private String installedBankApplicationVersionNumber;
 
     /*The last update date time stamp for local bank software*/
-    @MetaField
+    @MetaField(0)
     private String lastUpdateDateTime;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

@@ -9,35 +9,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assignment {
     /*Defines the type of assignment (e.g. in person, phone conference)*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentRequestType;
 
     /*Contains details of the product specialist support request, in particular the product or service of interest and the specific topics to be covered*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentRequestRecord;
 
     /*File of any meeting notes, work products and administrative documentation generated during the assignment*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentSessionWorkProducts;
 
     /*The location of the customer interaction (e.g. branch, phone, customer site)*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentLocation;
 
     /*Details of time and expenses booked and fees associated with the assignment and if appropriate reference to charges made to the customer*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentFee;
 
     /*The result of the customer interaction, including any suggested follow-up tasks*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportAssignmentResult;
 
     /*Key dates associated with the assignment (e.g. booking date, confirmation date, execution date, follow-up/evaluation date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setSalesSpecialistSupportAssignmentRequestType(String salesSpecialistSupportAssignmentRequestType) {

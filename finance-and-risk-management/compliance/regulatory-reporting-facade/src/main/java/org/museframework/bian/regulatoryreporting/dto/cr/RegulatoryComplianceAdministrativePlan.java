@@ -13,7 +13,7 @@ public class RegulatoryComplianceAdministrativePlan {
     private org.museframework.bian.classes.Object regulatoryAuthorityReference;
 
     /*The details of all regulatory reporting requirements and scheduled reporting tasks*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryReportingSchedule;
 
     /*Reference to the regulation for which content is being collected*/
@@ -21,7 +21,7 @@ public class RegulatoryComplianceAdministrativePlan {
     private org.museframework.bian.classes.Object regulationReference;
 
     /*The types of report, included in the reporting schedule*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryReportType;
 
     public void setRegulatoryAuthorityReference(org.museframework.bian.classes.Object regulatoryAuthorityReference) {

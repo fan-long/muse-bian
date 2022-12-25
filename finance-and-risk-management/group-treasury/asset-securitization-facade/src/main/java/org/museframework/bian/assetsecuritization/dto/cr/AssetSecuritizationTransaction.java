@@ -9,27 +9,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AssetSecuritizationTransaction {
     /*A Classification value that distinguishes between business service transaction within Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionParameterType;
 
     /*A selected optional business service as subject matter of Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionSelectedOption;
 
     /*The status of Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionTransactionType;
 
     /*Reference to Asset Securitization Transaction*/
-    @MetaField
+    @MetaField(0)
     private String assetSecuritizationTransactionTransaction;
 
     public void setAssetSecuritizationTransactionParameterType(String assetSecuritizationTransactionParameterType) {

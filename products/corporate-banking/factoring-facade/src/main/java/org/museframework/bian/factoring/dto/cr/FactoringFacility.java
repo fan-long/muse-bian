@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FactoringFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Factoring Facility*/
@@ -15,15 +15,15 @@ public class FactoringFacility {
     private org.museframework.bian.classes.Feature factoringFacilitySelectedOption;
 
     /*The status of Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityStatus;
 
     /*Reference to the party who is involved in Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityAssociatedParty;
 
     /*The curreny which is arranged in Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityCurrency;
 
     /*Reference to the regulation which is defined in Factoring Facility*/
@@ -31,7 +31,7 @@ public class FactoringFacility {
     private org.museframework.bian.classes.RuleSet factoringFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Factoring Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class FactoringFacility {
     private org.museframework.bian.classes.Account factoringFacilityAccountReference;
 
     /*Reference to the customer who is involved in Factoring Facility*/
-    @MetaField
+    @MetaField(0)
     private String factoringFacilityCustomerReference;
 
     /*The position of Factoring Facility*/

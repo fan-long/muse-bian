@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assignment {
     /*Reference to the servicing representative*/
-    @MetaField
+    @MetaField(0)
     private String assignmentCustomerServicingRepresentative;
 
     /*Reference to the assigned servicing position/desk within the contact center*/
@@ -17,11 +17,11 @@ public class Assignment {
     private org.museframework.bian.classes.Object assignmentCustomerServicingPositionReference;
 
     /*Details any specific properties for the assigned servicing position (e.g. type of product/service covered, required qualifications/certifications/experience)*/
-    @MetaField
+    @MetaField(0)
     private String assignmentCustomerServicingPositionProfile;
 
     /*Planned and actual servicing activity at the position during the session (records inbound contact details and allows for pre-assigned servicing actions e.g. outbound customer contacts for issue resolution/sales)*/
-    @MetaField
+    @MetaField(0)
     private String assignmentCustomerServicingPositionSchedule;
 
     /*Reference to the customer contact record for customer interactions during the servicing session*/

@@ -11,11 +11,11 @@ public class RelationshipDevelopmentDuty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Relationship Development Duty specific Business Service*/
@@ -35,7 +35,7 @@ public class RelationshipDevelopmentDuty {
     private org.museframework.bian.classes.PlannedAction relationshipDevelopmentDutyReference;
 
     /*The type of Relationship Development Duty*/
-    @MetaField
+    @MetaField(0)
     private String relationshipDevelopmentDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

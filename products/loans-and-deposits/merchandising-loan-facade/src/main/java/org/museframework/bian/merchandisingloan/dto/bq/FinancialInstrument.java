@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialInstrument {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFeatureSchedule;
 
     /*The Merchandising Loan Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class FinancialInstrument {
     private org.museframework.bian.classes.BusinessService financialInstrument;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFinancialInstrumentServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFinancialInstrumentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFinancialInstrumentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFinancialInstrumentServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentFinancialInstrumentServiceName;
 
     public void setFinancialInstrumentPreconditions(String financialInstrumentPreconditions) {

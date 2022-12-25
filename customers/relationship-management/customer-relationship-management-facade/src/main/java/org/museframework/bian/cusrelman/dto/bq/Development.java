@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Development {
     /*A specific task undertaken to develop the relationship*/
-    @MetaField
+    @MetaField(0)
     private String relationshipDevelopmentTask;
 
     /*The type of relationship development activity (e.g. sales, product explanation, financial advice)*/
-    @MetaField
+    @MetaField(0)
     private String customerDevelopmentTaskType;
 
     /*A description of the task, including any intelligence gathered and follow up actions agreed*/
-    @MetaField
+    @MetaField(0)
     private String customerDevelopmentTaskDescription;
 
     /*A plan outlining longer term relationship goals and performance/profitability both target and actual*/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipDevelopmentPlan;
 
     /*Reference to relationship managers and product specialists linked to the plan*/
@@ -29,11 +29,11 @@ public class Development {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String customerDevelopmentWorkProduct;
 
     /*The outcomes of customer development activity*/
-    @MetaField
+    @MetaField(0)
     private String customerDevelopmentTaskResult;
 
     public void setRelationshipDevelopmentTask(String relationshipDevelopmentTask) {

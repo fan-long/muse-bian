@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InformationArchitecture {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitecturePreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureVersionNumber;
 
     /*The Business Architecture Specification specific  Business Service*/
@@ -24,23 +24,23 @@ public class InformationArchitecture {
     private org.museframework.bian.classes.BusinessService informationArchitecture;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String informationArchitectureServiceName;
 
     public void setInformationArchitecturePreconditions(String informationArchitecturePreconditions) {

@@ -13,7 +13,7 @@ public class StandIn {
     private org.museframework.bian.classes.Object negativeFileReference;
 
     /*The result of the stand in authorization check*/
-    @MetaField
+    @MetaField(0)
     private String cardAccountStandInAuthorizationResult;
 
     public void setNegativeFileReference(org.museframework.bian.classes.Object negativeFileReference) {

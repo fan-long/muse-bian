@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Writedown {
     /*Booking to the appropriate asset/liability account required to reflect anticipated loss*/
-    @MetaField
+    @MetaField(0)
     private String accountwrite_downtransaction;
 
     /*Processing record for the write-down task within the account recovery process*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseWrite_downTaskRecord;
 
     public void setAccountwrite_downtransaction(String accountwrite_downtransaction) {

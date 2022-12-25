@@ -12,15 +12,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Production {
     /*List and description of locations where the product or service is supported*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceLocationAvailability;
 
     /*The schedule for when the product or service can be accessed*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceTimeAvailability;
 
     /*The access channels and devices that are supported by the product or service*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceAccessAvailability;
 
     public void setProductandServiceLocationAvailability(String productandServiceLocationAvailability) {

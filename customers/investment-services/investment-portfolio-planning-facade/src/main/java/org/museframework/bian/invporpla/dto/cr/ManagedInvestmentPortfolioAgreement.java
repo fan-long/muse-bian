@@ -22,19 +22,19 @@ public class ManagedInvestmentPortfolioAgreement {
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*The type of investment portfolio agreement (e.g. discretionary, trust )*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAgreementType;
 
     /*The contractual jurisdiction or coverage of the investment portfolio agreement (e.g. "governed by State")*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAgreementJurisdiction;
 
     /*The term of the agreement*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAgreementValidFromToDate;
 
     /*Reference to signatories*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioAgreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents, (e.g. signed agreement document, disclosures)*/
@@ -50,7 +50,7 @@ public class ManagedInvestmentPortfolioAgreement {
     private org.museframework.bian.classes.Object partyRelationshipProcedureInstanceReference;
 
     /*The consolidated view of all of the constituent investment policy terms and conditions in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String managedInvestmentPortfolioAgreement;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

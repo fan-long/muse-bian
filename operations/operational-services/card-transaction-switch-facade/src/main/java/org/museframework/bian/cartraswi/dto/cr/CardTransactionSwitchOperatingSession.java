@@ -15,7 +15,7 @@ public class CardTransactionSwitchOperatingSession {
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines transaction routing details - referenced by the Network*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBanktransactionRoutingDetails;
 
     /*Reference to the Issuing bank for which the Network orchestrates transaction routing*/
@@ -23,7 +23,7 @@ public class CardTransactionSwitchOperatingSession {
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines transaction routing details - referenced by the Network*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankTransactionRoutingDetails;
 
     public void setNetworkReference(org.museframework.bian.classes.Object networkReference) {

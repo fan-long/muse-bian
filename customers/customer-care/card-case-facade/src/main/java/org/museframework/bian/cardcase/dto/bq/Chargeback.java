@@ -13,7 +13,7 @@ public class Chargeback {
     private org.museframework.bian.classes.Object chargebackCardTransactionRecordReference;
 
     /*The instruction to book chargeback for the transaction - could be partial chargeback*/
-    @MetaField
+    @MetaField(0)
     private String chargebackInstruction;
 
     public void setChargebackCardTransactionRecordReference(org.museframework.bian.classes.Object chargebackCardTransactionRecordReference) {

@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProcessingOrderProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureParameterType;
 
     /*A selected optional business service as subject matter of Processing Order Procedure.*/
@@ -19,23 +19,23 @@ public class ProcessingOrderProcedure {
     private org.museframework.bian.classes.Instruction processingOrderProcedureRequest;
 
     /*Timetable to process the Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureSchedule;
 
     /*The status of Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureStatus;
 
     /*Reference to the party who is involved in Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Processing Order Procedure.*/
@@ -43,23 +43,23 @@ public class ProcessingOrderProcedure {
     private org.museframework.bian.classes.FinancialFacility processingOrderProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureType;
 
     /*The schedule according to which the service provider will process the Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Processing Order Procedure.*/
-    @MetaField
+    @MetaField(0)
     private String processingOrderProcedureServiceType;
 
     /*Reference to the product or service that is related to Processing Order Procedure.*/

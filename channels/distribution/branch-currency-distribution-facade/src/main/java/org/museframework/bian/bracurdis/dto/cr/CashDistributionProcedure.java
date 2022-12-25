@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CashDistributionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureParameterType;
 
     /*A selected optional business service as subject matter of Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureSelectedOption;
 
     /*Request to process CashDistribution*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureRequest;
 
     /*Timetable to process CashDistribution*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureSchedule;
 
     /*The status of Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureStatus;
 
     /*Reference to the party who is involved in Cash Distribution Procedure*/
@@ -53,35 +53,35 @@ public class CashDistributionProcedure {
     private org.museframework.bian.classes.Object cashDistributionProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureType;
 
     /*The schedule according to which the service provider will process the Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Cash Distribution Procedure */
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Cash Distribution Procedure */
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Cash Distribution Procedure*/
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Cash Distribution Procedure */
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Cash Distribution Procedure */
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Cash Distribution Procedure */
-    @MetaField
+    @MetaField(0)
     private String cashDistributionProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Cash Distribution Procedure */

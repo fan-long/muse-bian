@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ComplianceReportingAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Compliance Reporting Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrativePlanBudgetType;
 
     /*An estimate of costs, revenues, and resources  over a specified period which is defined for Compliance Reporting Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrativePlanBudget;
 
     /*The allocation of someone or something which is specified for Compliance Reporting Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrativePlanAssignment;
 
     /*A plan that defines clerical support for ComplianceReporting*/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrativePlanPlan;
 
     /*Party who is involved in  Compliance Reporting Administrative Plan*/

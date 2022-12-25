@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditPlan {
     /*The type of credit plan (e.g. cash, credit, charge, balance transfer, promotions, securitized, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String creditPlanType;
 
     /*The range of terms applied to the pan (e.g. minimum payment, payment grace period, interest rate reference, installment plans, …)*/
-    @MetaField
+    @MetaField(0)
     private String creditPlanTerms;
 
     /*Reference to the account where the credit plan is linked*/

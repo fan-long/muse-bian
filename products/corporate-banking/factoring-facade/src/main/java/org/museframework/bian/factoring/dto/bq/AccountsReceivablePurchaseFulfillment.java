@@ -11,7 +11,7 @@ public class AccountsReceivablePurchaseFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Accounts Receivable Purchase Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class AccountsReceivablePurchaseFulfillment {
     private org.museframework.bian.classes.Object accountsReceivablePurchaseFulfillmentReference;
 
     /*The type of Accounts Receivable Purchase Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivablePurchaseFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

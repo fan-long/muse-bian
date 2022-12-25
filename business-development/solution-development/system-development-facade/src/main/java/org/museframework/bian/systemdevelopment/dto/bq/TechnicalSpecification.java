@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TechnicalSpecification {
     /*Details the technical specification tasks and deliverables of system development project*/
-    @MetaField
+    @MetaField(0)
     private String technicalSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the definition of technical requirements*/
-    @MetaField
+    @MetaField(0)
     private String technicalSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
@@ -21,7 +21,7 @@ public class TechnicalSpecification {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The technical specification as a suitably structured and formatted document*/
-    @MetaField
+    @MetaField(0)
     private String systemTechnicalSpecification;
 
     public void setTechnicalSpecificationTaskDefinition(String technicalSpecificationTaskDefinition) {

@@ -11,11 +11,11 @@ public class DocumentAmendmentProperties {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Document Amendment Properties specific  Business Service*/
@@ -31,7 +31,7 @@ public class DocumentAmendmentProperties {
     private org.museframework.bian.classes.Object documentAmendmentPropertiesReference;
 
     /*The type of Document Amendment Properties*/
-    @MetaField
+    @MetaField(0)
     private String documentAmendmentPropertiesType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

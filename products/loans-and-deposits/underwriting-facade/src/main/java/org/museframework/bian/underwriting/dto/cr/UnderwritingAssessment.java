@@ -8,35 +8,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class UnderwritingAssessment {
     /*Guidelines provided for applying for an underwriting decision - list submission requirements*/
-    @MetaField
+    @MetaField(0)
     private String underwritingGuidelines;
 
     /*Outlines the employment details required*/
-    @MetaField
+    @MetaField(0)
     private String requiredCustomerEmploymentHistoryDetails;
 
     /*Outlines the type of debt/asset details required*/
-    @MetaField
+    @MetaField(0)
     private String requiredCustomerDebtAssetStatement;
 
     /*Outlines the required credit assessment details required*/
-    @MetaField
+    @MetaField(0)
     private String requiredCustomerCreditAssessment;
 
     /*Outlines the details of collateral required*/
-    @MetaField
+    @MetaField(0)
     private String requiredCollateralCoverage;
 
     /*Outlines the extent of the product usage history required*/
-    @MetaField
+    @MetaField(0)
     private String requiredCustomerProductandServicePaymentHistory;
 
     /*Lists required documentation (e.g. for proof of identity, assets, collateral)*/
-    @MetaField
+    @MetaField(0)
     private String requiredCustomerDocuments;
 
     /*…*/
-    @MetaField
+    @MetaField(0)
     private String proposedTransactionDetails;
 
     /*The associated product instance for the underwriting decision*/
@@ -44,15 +44,15 @@ public class UnderwritingAssessment {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The proposed loan terms*/
-    @MetaField
+    @MetaField(0)
     private String proposedLoanTerms;
 
     /*The proposed loan amount*/
-    @MetaField
+    @MetaField(0)
     private String proposedLoanAmount;
 
     /*The purpose for the loan  (e.g. mortgage for primary residence/rental)*/
-    @MetaField
+    @MetaField(0)
     private String loanPurpose;
 
     /*Reference to the applying customer*/
@@ -64,31 +64,31 @@ public class UnderwritingAssessment {
     private org.museframework.bian.classes.Object customerReferenceDetails;
 
     /*Definition of the terms under which the customer eligible for the loan*/
-    @MetaField
+    @MetaField(0)
     private String customerProductEligibilityTerms;
 
     /*The customer's employment record*/
-    @MetaField
+    @MetaField(0)
     private String customerEmploymentHistory;
 
     /*The customers historical income statement (for individuals)*/
-    @MetaField
+    @MetaField(0)
     private String customerIncomeStatement;
 
     /*Covers bank and known non-bank managed debts*/
-    @MetaField
+    @MetaField(0)
     private String customerDebtStatement;
 
     /*Covers bank and known non-bank managed assets*/
-    @MetaField
+    @MetaField(0)
     private String customerAssetStatement;
 
     /*Reference to the bank's credit assessment of the customer*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditAssessment;
 
     /*Reference to product reports covering payment history*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServicePaymentHistory;
 
     /*Reference to the customers collateral holdings that are available*/
@@ -96,11 +96,11 @@ public class UnderwritingAssessment {
     private org.museframework.bian.classes.Object collateralItemReference;
 
     /*The type of collateral*/
-    @MetaField
+    @MetaField(0)
     private String collateralItemType;
 
     /*The valuation of the collateral (applying the required loan to asset ratio)*/
-    @MetaField
+    @MetaField(0)
     private String collateralItemValuation;
 
     /*Reference to associated documents of significance*/
@@ -108,11 +108,11 @@ public class UnderwritingAssessment {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Details of the underwriting decision*/
-    @MetaField
+    @MetaField(0)
     private String underwritingAssessmentDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String underwritingAssessmentWorkProduct;
 
     public void setUnderwritingGuidelines(String underwritingGuidelines) {

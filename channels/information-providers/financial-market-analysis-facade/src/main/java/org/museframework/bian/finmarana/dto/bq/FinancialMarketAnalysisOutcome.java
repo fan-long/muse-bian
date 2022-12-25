@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialMarketAnalysisOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String financialMarketAnalysisAnalysisType;
 
     public void setFinancialMarketAnalysisWorkProduct(String financialMarketAnalysisWorkProduct) {

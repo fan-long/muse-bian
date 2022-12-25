@@ -11,7 +11,7 @@ public class SubCustodianAgreementOutcome {
     private org.museframework.bian.classes.Agreement subCustodianAgreementAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementWorkProduct;
 
     public void setSubCustodianAgreementAgreement(org.museframework.bian.classes.Agreement subCustodianAgreementAgreement) {

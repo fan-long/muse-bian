@@ -17,11 +17,11 @@ public class ClearingandSettlement {
     private org.museframework.bian.classes.Object correspondentBankClearingAgreementReference;
 
     /*Customer specific default clearing instructions*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingAgreementClearingInstructions;
 
     /*Customer specific default settlement instruction e.g. to handle netting arrangements*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingAgreementSettlementInstructions;
 
     /*Account used central bank clearing reconciliations*/

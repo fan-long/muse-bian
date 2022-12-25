@@ -14,27 +14,27 @@ public class TransactionApplication {
     private org.museframework.bian.classes.Object transactionReference;
 
     /*The type of transaction that would be applied to the managed position*/
-    @MetaField
+    @MetaField(0)
     private String transactionType;
 
     /*Key details of the trial transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionRecord;
 
     /*The make up of the values of the transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionAmount;
 
     /*Key dates and times associated with the trial transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionDate;
 
     /*The booking entity where the trial transaction would be made*/
-    @MetaField
+    @MetaField(0)
     private String transactionBookingEntity;
 
     /*The projected impact the trial transaction will have on the managed position*/
-    @MetaField
+    @MetaField(0)
     private String transactionPositionImpactAssessment;
 
     public void setTransactionReference(org.museframework.bian.classes.Object transactionReference) {

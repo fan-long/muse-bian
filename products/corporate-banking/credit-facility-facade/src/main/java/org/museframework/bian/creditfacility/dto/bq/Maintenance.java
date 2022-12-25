@@ -7,27 +7,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Maintenance {
     /*The type of maintenance action and report processed (e.g. tax, regulatory, accounting)*/
-    @MetaField
+    @MetaField(0)
     private String maintenanceReportType;
 
     /*A report summarizing tax considerations*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityTaxReport;
 
     /*The type of fee applied*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityFeeType;
 
     /*A report detailing fees applied to the loan account (range of fees possible for different actions)*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityFees;
 
     /*A report detailing penalties incurred as booked against loan account*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityPenalties;
 
     /*A report detailing the current applied collateral valuation (value confirmed as of date)*/
-    @MetaField
+    @MetaField(0)
     private String creditFacilityCollateralValuation;
 
     public void setMaintenanceReportType(String maintenanceReportType) {

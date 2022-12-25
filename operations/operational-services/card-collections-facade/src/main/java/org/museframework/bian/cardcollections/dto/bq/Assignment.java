@@ -13,7 +13,7 @@ public class Assignment {
     private org.museframework.bian.classes.Object customerCreditRatingAssessmentInstanceReference;
 
     /*The internal bank credit rating/assessment*/
-    @MetaField
+    @MetaField(0)
     private String customerCreditRatingAssessment;
 
     /*Reference to an established external collections service agency*/
@@ -21,15 +21,15 @@ public class Assignment {
     private org.museframework.bian.classes.Object collectionAgencyReference;
 
     /*The terms and conditions governing the use of the collections agency*/
-    @MetaField
+    @MetaField(0)
     private String collectionAgencyAgreement;
 
     /*Details of the assignment decision*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsAssignmentDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsAssignmentWorkProduct;
 
     public void setCustomerCreditRatingAssessmentInstanceReference(org.museframework.bian.classes.Object customerCreditRatingAssessmentInstanceReference) {

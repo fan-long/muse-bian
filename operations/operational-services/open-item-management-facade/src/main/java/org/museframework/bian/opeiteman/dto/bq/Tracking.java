@@ -13,23 +13,23 @@ public class Tracking {
     private org.museframework.bian.classes.Object customerBillingProcedureInstanceReference;
 
     /*The billed customer*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingParty;
 
     /*The address the bill was sent to (can be electronic)*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingAddress;
 
     /*The billing period is applicable*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingPeriod;
 
     /*The content of the billing statement used in the bill*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingStatement;
 
     /*The amount of the customer bill*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingAmount;
 
     public void setCustomerBillingProcedureInstanceReference(org.museframework.bian.classes.Object customerBillingProcedureInstanceReference) {

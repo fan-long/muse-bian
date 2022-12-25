@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class OperationalSecurityProceduresandGuidelines {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesVersionNumber;
 
     /*The Management Manual Specification specific  Business Service*/
@@ -24,23 +24,23 @@ public class OperationalSecurityProceduresandGuidelines {
     private org.museframework.bian.classes.BusinessService operationalSecurityProceduresandGuidelines;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String operationalSecurityProceduresandGuidelinesServiceName;
 
     public void setOperationalSecurityProceduresandGuidelinesPreconditions(String operationalSecurityProceduresandGuidelinesPreconditions) {

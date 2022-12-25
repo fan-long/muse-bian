@@ -9,31 +9,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DeviceCheck {
     /*The security code associated with the issued device*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceSecurityCode;
 
     /*The cryptogram associated with issued device*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceCryptogram;
 
     /*The CVV number is a further mechanism for authenticating the device*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceCVV;
 
     /*The Bank Identification Number (BIN) is verified to be valid*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceBIN;
 
     /*A property of the device checked using a specific algorithm (e.g. the Luhn algorithm)*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceCheckDigit;
 
     /*A check of the expiry date*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceValidThrough;
 
     /*The result of the device properties check*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceCheckResult;
 
     public void setIssuedDeviceSecurityCode(String issuedDeviceSecurityCode) {

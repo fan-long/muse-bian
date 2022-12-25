@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TestingSpecification {
     /*Details the testing tasks and deliverables of system development project*/
-    @MetaField
+    @MetaField(0)
     private String testingSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the testing of the developed system*/
-    @MetaField
+    @MetaField(0)
     private String testingSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
@@ -21,7 +21,7 @@ public class TestingSpecification {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The testing specification and results as a suitably structured and formatted document*/
-    @MetaField
+    @MetaField(0)
     private String systemTestingSpecification;
 
     public void setTestingSpecificationTaskDefinition(String testingSpecificationTaskDefinition) {

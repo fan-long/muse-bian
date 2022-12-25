@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SubCustodianAgreement {
     /*A Classification value that distinguishes between Options defined within Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
@@ -30,19 +30,19 @@ public class SubCustodianAgreement {
     private org.museframework.bian.classes.Instruction subCustodianAgreementDischargeRequest;
 
     /*Timetable to discharge Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementDischargeSchedule;
 
     /*The status of Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementStatus;
 
     /*Party who is involved in Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Sub Custodian Agreement*/
@@ -58,7 +58,7 @@ public class SubCustodianAgreement {
     private org.museframework.bian.classes.RuleSet subCustodianAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Sub Custodian Agreement*/
-    @MetaField
+    @MetaField(0)
     private String subCustodianAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Sub Custodian Agreement in case of legal dispute.*/

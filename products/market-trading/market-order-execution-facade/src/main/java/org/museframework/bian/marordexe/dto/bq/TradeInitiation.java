@@ -11,11 +11,11 @@ public class TradeInitiation {
     private org.museframework.bian.classes.Object wholesaleTradeReference;
 
     /*The tracked and returned processing status of the market trade (e.g. pending, partially complete, complete)*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeTransactionInstanceProcessingStatus;
 
     /*Details of the market trade initiation task*/
-    @MetaField
+    @MetaField(0)
     private String marketTradeInitiationTaskResult;
 
     public void setWholesaleTradeReference(org.museframework.bian.classes.Object wholesaleTradeReference) {

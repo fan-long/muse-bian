@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LeasingFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityParameterType;
 
     /*A selected optional business service as subject matter of Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilitySelectedOption;
 
     /*The type of Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityType;
 
     /*Reference to Leasing Arrangement*/
@@ -24,15 +24,15 @@ public class LeasingFacility {
     private org.museframework.bian.classes.Object leasingFacilityReference;
 
     /*Timetable to fulfill Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilitySchedule;
 
     /*The status of Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityStatus;
 
     /*The curreny which is arranged in Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityCurrency;
 
     /*Reference to the regulation which is defined in Leasing Arrangement*/
@@ -40,19 +40,19 @@ public class LeasingFacility {
     private org.museframework.bian.classes.Object leasingFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Leasing Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Leasing Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityBookingLocation;
 
     /*The type of account which is linked to Leasing Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String leasingFacilityAccountType;
 
     /*Reference to the account which is linked to Leasing Arrangement*/

@@ -13,15 +13,15 @@ public class Determination {
     private org.museframework.bian.classes.Object customerAgreementInstanceReference;
 
     /*The agreement is accessed to support the determination of the resolution approach*/
-    @MetaField
+    @MetaField(0)
     private String customerAgreement;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String caseDeterminationWorkProduct;
 
     /*The outcome of the determination and resolution planning task*/
-    @MetaField
+    @MetaField(0)
     private String caseDeterminationWorkTaskResult;
 
     public void setCustomerAgreementInstanceReference(org.museframework.bian.classes.Object customerAgreementInstanceReference) {

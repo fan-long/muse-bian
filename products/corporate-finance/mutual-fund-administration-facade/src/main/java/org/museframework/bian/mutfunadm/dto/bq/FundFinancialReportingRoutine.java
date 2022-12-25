@@ -11,11 +11,11 @@ public class FundFinancialReportingRoutine {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Fund Financial Reporting Routine specific Business Service*/
@@ -35,7 +35,7 @@ public class FundFinancialReportingRoutine {
     private org.museframework.bian.classes.PlannedAction fundFinancialReportingRoutineReference;
 
     /*The type of Fund Financial Reporting Routine*/
-    @MetaField
+    @MetaField(0)
     private String fundFinancialReportingRoutineType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Withdrawal {
     /*The general payment transaction with all major attributes - some optional depending on type*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransaction;
 
     /*The type of payment transaction (e.g. customer payment, standing order, direct debit, bill pay)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionType;
 
     /*Reference to the party to whom the payment is made*/
@@ -27,27 +27,27 @@ public class Withdrawal {
     private org.museframework.bian.classes.Object paymentTransactionPayeeBankReference;
 
     /*The amount (and currency if applicable) of the payment*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionAmount;
 
     /*The fee type applied to the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionFeeType;
 
     /*The fee charge applied to the transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionFeeCharge;
 
     /*The various key dates and times associated with the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionDate;
 
     /*Requested payment mechanism (e.g. Wire, ACH)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionPaymentMechanism;
 
     /*Description of the purpose including any external reference to the transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionPaymentPurpose;
 
     /*Reference to the location the payment transaction is initiated from*/
@@ -55,7 +55,7 @@ public class Withdrawal {
     private org.museframework.bian.classes.Object paymentTransactionBankBranchLocationReference;
 
     /*The processing status of the transaction (e.g. captured, approved, initiated, confirmed, settled)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionStatus;
 
     public void setPaymentTransaction(String paymentTransaction) {

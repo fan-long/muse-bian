@@ -9,31 +9,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Performance {
     /*Record of the contact center position target and actual utilization*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterPositionUtilization;
 
     /*Estimated projected contact center resource requirements and utilization and loading based on historical patterns and anticipated activity*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterLoadingProjections;
 
     /*Tracked activity and performance statistics used to manage the contact center set-up and to inform staff training*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatistics;
 
     /*The type of activity that is tracked and analyzed (e.g. wait time, average handle time, dropped call ratio, resolution rate)*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatisticType;
 
     /*The statistical analysis that can include historical and trended views of the activity*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatisticValue;
 
     /*The evaluation of the root cause or comparative assessments of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatisticInterpretation;
 
     /*Service/configuration amendment recommendations arising from the statistical analysis*/
-    @MetaField
+    @MetaField(0)
     private String contactCenterServiceStatisticRecommendation;
 
     public void setContactCenterPositionUtilization(String contactCenterPositionUtilization) {

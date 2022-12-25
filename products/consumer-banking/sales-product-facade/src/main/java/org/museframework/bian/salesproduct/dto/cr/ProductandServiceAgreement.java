@@ -30,55 +30,55 @@ public class ProductandServiceAgreement {
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option  (note the corresponding attribute for the base product instance will cross reference the sales product instance for applicable entitlements terms)*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option (note the corresponding attribute for the base product instance will cross reference the sales product instance for applicable restrictions terms)*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the sales product - this is in addition to the base product if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String linkedAccounts;
 
     /*The type and purpose for the link (e.g. guarantor, sweep)*/
-    @MetaField
+    @MetaField(0)
     private String linkType;
 
     /*Details of the linked account*/
-    @MetaField
+    @MetaField(0)
     private String accountDetails;
 
     /*Position limits that are maintained for the sales product as an aspect of the operational terms*/
-    @MetaField
+    @MetaField(0)
     private String positionLimits;
 
     /*The type of position maintained for the sales product (e.g. transaction credit/debit, netting, position)*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitSettings;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitValue;
 
     /*Key dates associated with the sales product (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

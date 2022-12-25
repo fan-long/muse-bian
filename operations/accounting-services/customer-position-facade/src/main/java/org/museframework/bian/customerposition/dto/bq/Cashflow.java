@@ -13,31 +13,31 @@ public class Cashflow {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The types of product fulfillment reports available - in this case transaction details used for different measures or position analyses*/
-    @MetaField
+    @MetaField(0)
     private String productArrangementInstanceReportType;
 
     /*The product/service activity report - transactional activity used for financial analysis*/
-    @MetaField
+    @MetaField(0)
     private String productArrangementInstanceReport;
 
     /*Defines content/transaction types to be included in the report extract*/
-    @MetaField
+    @MetaField(0)
     private String reportOptionsSelectionCriteria;
 
     /*The from-to dates covered by the report for analysis*/
-    @MetaField
+    @MetaField(0)
     private String reportPeriod;
 
     /*Defines presentation format*/
-    @MetaField
+    @MetaField(0)
     private String reportFormatTemplate;
 
     /*The requested product/service activity report used in the position measurements*/
-    @MetaField
+    @MetaField(0)
     private String report;
 
     /*The customer cashflow analysis - past, current position and projected cash flows as derived from all active product/service activity reports*/
-    @MetaField
+    @MetaField(0)
     private String customerCashflowPositionAnalysisRecord;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

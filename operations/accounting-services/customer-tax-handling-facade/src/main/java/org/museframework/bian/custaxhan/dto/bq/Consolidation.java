@@ -11,31 +11,31 @@ public class Consolidation {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The types of product fulfillment reports available - in this case transaction details used for tax obligations and reporting*/
-    @MetaField
+    @MetaField(0)
     private String productArrangementInstanceReportType;
 
     /*The product/service activity report - transactional activity used for taxation and reporting*/
-    @MetaField
+    @MetaField(0)
     private String productArrangementInstanceReport;
 
     /*Defines content/transaction types to be included in the report extract*/
-    @MetaField
+    @MetaField(0)
     private String reportOptionsSelectionCriteria;
 
     /*The from-to dates covered by the report for tax reporting*/
-    @MetaField
+    @MetaField(0)
     private String reportPeriod;
 
     /*Defines presentation format*/
-    @MetaField
+    @MetaField(0)
     private String reportFormatTemplate;
 
     /*The requested product/service activity report used in the taxation consolidation task*/
-    @MetaField
+    @MetaField(0)
     private String report;
 
     /*Work documentation, forms and schedules produced and referenced during the consolidation*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxHandlingConsolidationWorkProducts;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

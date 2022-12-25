@@ -11,7 +11,7 @@ public class MarketMakingQuoteFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Market Making Quote Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class MarketMakingQuoteFulfillment {
     private org.museframework.bian.classes.Object marketMakingQuoteFulfillmentReference;
 
     /*The type of Market Making Quote Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String marketMakingQuoteFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

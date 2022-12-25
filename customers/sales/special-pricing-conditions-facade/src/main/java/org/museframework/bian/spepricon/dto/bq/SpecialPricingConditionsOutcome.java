@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SpecialPricingConditionsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String specialPricingConditionsWorkProduct;
 
     public void setSpecialPricingConditionsEntry(String specialPricingConditionsEntry) {

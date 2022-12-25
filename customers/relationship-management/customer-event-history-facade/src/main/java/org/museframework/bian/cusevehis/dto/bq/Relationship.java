@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Relationship {
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipEventType;
 
     /**/
@@ -17,15 +17,15 @@ public class Relationship {
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipEventRecord;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerRelationshipEventAction;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setCustomerRelationshipEventType(String customerRelationshipEventType) {

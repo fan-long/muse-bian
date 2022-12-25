@@ -13,7 +13,7 @@ public class Testing {
     private org.museframework.bian.classes.Object fraudModelTestReference;
 
     /*Defines the type of test (e.g. unit, integration, load, user acceptance etc.)*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelTestType;
 
     /*Reference to the testing environment used to apply the test*/
@@ -21,7 +21,7 @@ public class Testing {
     private org.museframework.bian.classes.Object fraudModelTestHarnessReference;
 
     /*Record of testing applied to the model*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelTestResult;
 
     /*Reference to a type of testing activity*/
@@ -29,7 +29,7 @@ public class Testing {
     private org.museframework.bian.classes.Object fraudModelTestingTaskReference;
 
     /*The record of work products used for this testing activity*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelTestingTaskRecord;
 
     /*Reference to compliance conformance check for the specification*/
@@ -37,7 +37,7 @@ public class Testing {
     private org.museframework.bian.classes.Object fraudModelComplianceTaskReference;
 
     /*Record of the compliance conformance check for the specification*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelComplianceTaskRecord;
 
     /*Reference to a compliance task performed against the specification*/
@@ -45,7 +45,7 @@ public class Testing {
     private org.museframework.bian.classes.Object fraudModelComplianceTestReference;
 
     /*Record of the compliance test applied to the specification*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelComplianceTestType;
 
     public void setFraudModelTestReference(org.museframework.bian.classes.Object fraudModelTestReference) {

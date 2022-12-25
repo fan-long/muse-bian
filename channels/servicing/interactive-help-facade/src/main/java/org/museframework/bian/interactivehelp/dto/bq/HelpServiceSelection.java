@@ -9,39 +9,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class HelpServiceSelection {
     /*The type of session provides context for filtering content (e.g. employee, self-service customer)*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionInteractionType;
 
     /*The type of product or service that is in context for the help request*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionProductandServiceType;
 
     /*The specific product feature being accessed at the time of the help request*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionProductFeatureType;
 
     /*The session dialogue log of actions during the contact to this point can be mined for key words that might improve the help selection*/
-    @MetaField
+    @MetaField(0)
     private String sessionDialogueRecord;
 
     /*An interactive exchange can be supported where the service presents a menu of selection options or key words to narrow the search*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionKeyWordMenu;
 
     /*The selected keyword or menu option*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionKeyWordSelection;
 
     /*The returned interactive help in any suitable form*/
-    @MetaField
+    @MetaField(0)
     private String interactiveHelp;
 
     /*The user provided result of the interactive help service, including interaction statistics such as exchange frequency and duration*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionTaskResult;
 
     /*User provided commentary on the service provided*/
-    @MetaField
+    @MetaField(0)
     private String helpSelectionFeedback;
 
     /*Reference to the employee, business unit providing service feedback*/
@@ -49,7 +49,7 @@ public class HelpServiceSelection {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The date, time (and duration) of the service usage*/
-    @MetaField
+    @MetaField(0)
     private String dateTime;
 
     public void setHelpSelectionInteractionType(String helpSelectionInteractionType) {

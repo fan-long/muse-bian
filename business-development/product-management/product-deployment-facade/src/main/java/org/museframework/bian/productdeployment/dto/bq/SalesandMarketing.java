@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SalesandMarketing {
     /*The consolidated aspects of the sales and marketing deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSalesandMarketingRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSalesandMarketingRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class SalesandMarketing {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the sales and marketing needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSalesandMarketingRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentSalesandMarketingRequirements(String productandServiceDeploymentSalesandMarketingRequirements) {

@@ -11,15 +11,15 @@ public class CardFinancialSettlementProcedure {
     private org.museframework.bian.classes.Object networkReference;
 
     /*Defines the type of settlement process (e.g. scheduled processing, ad-hoc processing)*/
-    @MetaField
+    @MetaField(0)
     private String cardFinancialSettlementProcessType;
 
     /*The scheduled time for the process - likely initiation time*/
-    @MetaField
+    @MetaField(0)
     private String cardFinancialSettlementProcessDateTime;
 
     /*Defines the type and scheduling of card settlement processing, includes Issuer and Acquirer involvement/scheduling details as necessary*/
-    @MetaField
+    @MetaField(0)
     private String cardFinancialSettlementServiceSchedule;
 
     /*Refers to the Acquiring bank for which the Network orchestrates settlement processing*/

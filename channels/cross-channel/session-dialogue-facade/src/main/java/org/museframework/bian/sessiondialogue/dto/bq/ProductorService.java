@@ -13,7 +13,7 @@ public class ProductorService {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The result of the invoked product or service fulfillment service domain (e.g. balance provided, payment initiated, reference details updated)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceTaskResult;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialInstrumentDirectoryEntry {
     /*Documentation of Financial Instrument Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentDirectoryEntryDescription;
 
     /*The timetable to capture and maintain Financial Instrument Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentDirectoryEntrySchedule;
 
     /*The version of Financial Instrument Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentDirectoryEntryVersion;
 
     /*The status of Financial Instrument Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentDirectoryEntryStatus;
 
     /*Reference to the log of (usage) ativities/events  of Financial Instrument Directory Entry*/
@@ -32,7 +32,7 @@ public class FinancialInstrumentDirectoryEntry {
     private org.museframework.bian.classes.Log financialInstrumentDirectoryEntryUpdateLog;
 
     /*The configuration of Financial Instrument Directory Entry*/
-    @MetaField
+    @MetaField(0)
     private String financialInstrumentDirectoryEntryServiceConfiguration;
 
     /*An unique reference to an item or an occurrence of Financial Instrument Directory Entry*/

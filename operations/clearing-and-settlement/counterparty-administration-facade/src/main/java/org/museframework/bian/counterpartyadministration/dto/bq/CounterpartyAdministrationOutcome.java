@@ -11,7 +11,7 @@ public class CounterpartyAdministrationOutcome {
     private org.museframework.bian.classes.DirectoryEntry counterpartyAdministrationEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String counterpartyAdministrationWorkProduct;
 
     public void setCounterpartyAdministrationEntry(org.museframework.bian.classes.DirectoryEntry counterpartyAdministrationEntry) {

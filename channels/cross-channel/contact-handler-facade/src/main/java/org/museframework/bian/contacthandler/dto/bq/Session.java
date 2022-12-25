@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Session {
     /*The task updates the contact record activity record fields and handles the interaction with the Contact Dialogue service domain to initiate the servicing session*/
-    @MetaField
+    @MetaField(0)
     private String sessionTaskRecord;
 
     /*An indicator of how the session was concluded (e.g. customer completed, hang-up, further servicing required)*/
-    @MetaField
+    @MetaField(0)
     private String sessionResult;
 
     public void setSessionTaskRecord(String sessionTaskRecord) {

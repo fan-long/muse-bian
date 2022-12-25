@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class UnitTrustAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Unit Trust Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Unit Trust Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Unit Trust Administrative Plan*/
@@ -20,11 +20,11 @@ public class UnitTrustAdministrativePlan {
     private org.museframework.bian.classes.Arrangement unitTrustAdministrativePlanDuty;
 
     /*Party who is involved in Unit Trust Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Unit Trust Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanBudgetBalance;
 
     /*The subject matter of Unit Trust Administrative Plan*/
@@ -32,7 +32,7 @@ public class UnitTrustAdministrativePlan {
     private org.museframework.bian.classes.Object unitTrustAdministrativePlanSubjectMatter;
 
     /*The type of Unit Trust Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Unit Trust Administrative Plan*/
@@ -40,7 +40,7 @@ public class UnitTrustAdministrativePlan {
     private org.museframework.bian.classes.Plan unitTrustAdministrativePlanReference;
 
     /*Documentation of Unit Trust Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String unitTrustAdministrativePlanDescription;
 
     public void setUnitTrustAdministrativePlanBudgetType(String unitTrustAdministrativePlanBudgetType) {

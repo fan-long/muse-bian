@@ -11,11 +11,11 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated account number in any suitable format (e.g. IBAN)*/
-    @MetaField
+    @MetaField(0)
     private String productAccountNumber;
 
     /*The type of product*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to the account primary party/owner*/
@@ -27,11 +27,11 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Reference to an issued device associated with the facility (such as a card or key fob)*/
-    @MetaField
+    @MetaField(0)
     private String issuedDevice;
 
     /*The primary account currency*/
-    @MetaField
+    @MetaField(0)
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -39,15 +39,15 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Definition of the associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
-    @MetaField
+    @MetaField(0)
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
-    @MetaField
+    @MetaField(0)
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
@@ -55,31 +55,31 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object associationReference;
 
     /*Definition of the associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String linkedAccounts;
 
     /*The type and purpose for the link*/
-    @MetaField
+    @MetaField(0)
     private String linkType;
 
     /*Details of the linked account*/
-    @MetaField
+    @MetaField(0)
     private String accountDetails;
 
     /*Position limits that are maintained by the account*/
-    @MetaField
+    @MetaField(0)
     private String positionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitSettings;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitValue;
 
     /*Reference to the customer's collateral holdings and allocations*/
@@ -87,19 +87,19 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object collateralAssetAllocationInstanceReference;
 
     /*Record of collateral applied to the customer products*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetAllocationProfile;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Customer billing transactions (and associated payments)*/
-    @MetaField
+    @MetaField(0)
     private String billingTransactions;
 
     /*Reference to individual transactions*/
@@ -107,7 +107,7 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object billingTransactionReference;
 
     /*Payments deposited to the account*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactions;
 
     /*Reference to individual transactions*/
@@ -115,7 +115,7 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object paymentTransactionReference;
 
     /*Product execution transactions (payments)*/
-    @MetaField
+    @MetaField(0)
     private String productTransactions;
 
     /*Reference to individual transactions*/
@@ -123,7 +123,7 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object productTransactionReference;
 
     /*Interest accrued against the account*/
-    @MetaField
+    @MetaField(0)
     private String interestTransactions;
 
     /*Reference to individual transactions*/
@@ -131,7 +131,7 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object interestTransactionReference;
 
     /*Fees applied against the account*/
-    @MetaField
+    @MetaField(0)
     private String feeTransactions;
 
     /*Reference to individual transactions*/
@@ -143,11 +143,11 @@ public class DelinquentAccountProcedure {
     private org.museframework.bian.classes.Object creditPlanReference;
 
     /*The credit plan type (e.g. (Cash, Credit, Charge, Balance Transfer, Promotions, Securitized, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String creditPlanType;
 
     /*Details the schedule of actions to be applied to the delinquent account*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountProcessingSchedule;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class History {
     /*Confirmation that the contact session is captured*/
-    @MetaField
+    @MetaField(0)
     private String historyTaskResult;
 
     public void setHistoryTaskResult(String historyTaskResult) {

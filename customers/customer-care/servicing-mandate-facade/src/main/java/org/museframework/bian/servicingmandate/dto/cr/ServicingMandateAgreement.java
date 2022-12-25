@@ -14,19 +14,19 @@ public class ServicingMandateAgreement {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of third party mandates (e.g. PSD2)*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementType;
 
     /*The defines any limitation on the geographic coverage/scope of the mandate*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementJurisdiction;
 
     /*The term for the mandate to be in force*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementValidFromToDate;
 
     /*Reference to any involved authorities and interested parties*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementResponsibleParties;
 
     /*Reference to any supporting documents*/
@@ -38,15 +38,15 @@ public class ServicingMandateAgreement {
     private org.museframework.bian.classes.Object servicingMandateAgreementProductandServiceProfileReference;
 
     /*The record of the overarching product/service access profile permitted under the servicing mandate*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementProductandServiceProfile;
 
     /*A type of product or service covered by the mandate*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Defines if and under what terms a product/service is accessible under the mandate*/
-    @MetaField
+    @MetaField(0)
     private String servicingMandateAgreementProductandServiceTypeEligibility;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

@@ -11,7 +11,7 @@ public class InboundMessageFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Inbound Message Function specific Business Service*/
@@ -27,7 +27,7 @@ public class InboundMessageFunction {
     private org.museframework.bian.classes.Function inboundMessageFunctionReference;
 
     /*The type of Inbound Message Function*/
-    @MetaField
+    @MetaField(0)
     private String inboundMessageFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

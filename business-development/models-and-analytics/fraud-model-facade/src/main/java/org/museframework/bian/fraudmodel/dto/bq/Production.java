@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Production {
     /*Specification of the operational and technical requirements*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelOperationalRequirements;
 
     /*Defines rules and suitability for model usage*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelAllowedUsage;
 
     /*Provides guidance on the use of the model*/
-    @MetaField
+    @MetaField(0)
     private String fraudModelUsageGuidelines;
 
     public void setFraudModelOperationalRequirements(String fraudModelOperationalRequirements) {

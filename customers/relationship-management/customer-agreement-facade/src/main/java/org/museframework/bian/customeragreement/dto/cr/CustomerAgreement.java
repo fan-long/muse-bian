@@ -19,19 +19,19 @@ public class CustomerAgreement {
     private org.museframework.bian.classes.Object legalEntityReference;
 
     /*The type of customer agreement (e.g. individual, corporate)*/
-    @MetaField
+    @MetaField(0)
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
-    @MetaField
+    @MetaField(0)
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
-    @MetaField
+    @MetaField(0)
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
-    @MetaField
+    @MetaField(0)
     private String agreementSignatoriesResponsibleParties;
 
     /*Reference to any associated documents*/

@@ -13,7 +13,7 @@ public class Resolution {
     private org.museframework.bian.classes.Object resolutionCardTransactionRecordReference;
 
     /*The record of a specific resolution task*/
-    @MetaField
+    @MetaField(0)
     private String resolutionTaskRecord;
 
     /*Reference to the correspondence generated and received*/
@@ -21,7 +21,7 @@ public class Resolution {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
@@ -29,7 +29,7 @@ public class Resolution {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Business unit responsible for the card case resolution actions*/
@@ -41,11 +41,11 @@ public class Resolution {
     private org.museframework.bian.classes.Object paymentOrderReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String resolutionTaskWorkProducts;
 
     /*The outcome of the authentication workstep*/
-    @MetaField
+    @MetaField(0)
     private String resolutionTaskResult;
 
     public void setResolutionCardTransactionRecordReference(org.museframework.bian.classes.Object resolutionCardTransactionRecordReference) {

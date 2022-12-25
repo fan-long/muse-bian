@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BusinessUnitManagementPlan {
     /*The time period addressed by the management plan (typically this will include setting the default daily operating goals and arrangements for the business unit that is periodically updated)*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitManagementPlanPeriod;
 
     /*The policies and guidelines for business unit employees and service users*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitUsagePoliciesAndGuidelines;
 
     /*The target and actual business unit performance goals that are tracked by business unit management*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceGoals;
 
     /*The target and actual business unit operating schedule - recording planned and actual business activity*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitOperatingSchedule;
 
     /*The assigned roles and responsibilities and associated work/delivery responsibilities for the staff making up the business unit*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitOperatingOrganization;
 
     /*Details the number and skill profile of the business unit staff (target and actual)*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitResourcePlan;
 
     /*Details of staff training and certification as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitTrainingPlan;
 
     public void setBusinessUnitManagementPlanPeriod(String businessUnitManagementPlanPeriod) {

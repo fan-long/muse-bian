@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Maintenance {
     /*The schedule for maintenance tasks performed and to be performed (e.g. patent renewals)*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceSchedule;
 
     /*Reference to the intellectual property protection mechanism employed (e.g. copyright, trademark or patent reference number)*/
@@ -21,19 +21,19 @@ public class Maintenance {
     private org.museframework.bian.classes.Object intellectualPropertyAssetRegistrationReference;
 
     /*A record of payments and other actions taken to maintain the asset*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceTaskRecord;
 
     /*The type of maintenance task (e.g. annual renewal)*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceTaskType;
 
     /*Description of the task performed*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceTaskDescription;
 
     /*File of consolidated notes, forms and documents for the maintenance task*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceTaskWorkProducts;
 
     /*Reference to associated documents*/
@@ -41,7 +41,7 @@ public class Maintenance {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details of any payments made as part of maintenance*/
-    @MetaField
+    @MetaField(0)
     private String intellectualPropertyAssetMaintenanceTransaction;
 
     public void setIntellectualPropertyAssetMaintenanceSchedule(String intellectualPropertyAssetMaintenanceSchedule) {

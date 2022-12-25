@@ -24,7 +24,7 @@ public class GlobalReferenceData {
     private org.museframework.bian.classes.BusinessService externalReferenceData;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String externalReferenceDataServiceType;
 
     /*Description of the performed business service*/

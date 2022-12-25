@@ -11,7 +11,7 @@ public class TradeandPriceReportingOutcome {
     private org.museframework.bian.classes.Event tradeandPriceReportingIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String tradeandPriceReportingProvision;
 
     public void setTradeandPriceReportingIncident(org.museframework.bian.classes.Event tradeandPriceReportingIncident) {

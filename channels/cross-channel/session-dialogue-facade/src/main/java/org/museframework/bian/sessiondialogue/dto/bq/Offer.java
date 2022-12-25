@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Offer {
     /*The selected product/service*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*The result of the invoked offer procedure (e.g. abandoned, in process/pending, offer accepted)*/
-    @MetaField
+    @MetaField(0)
     private String offerTaskResult;
 
     public void setProductandServiceType(String productandServiceType) {

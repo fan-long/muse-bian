@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServiceProviderAgreement {
     /*A Classification value that distinguishes between Options defined within Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
@@ -30,19 +30,19 @@ public class ServiceProviderAgreement {
     private org.museframework.bian.classes.Instruction serviceProviderAgreementDischargeRequest;
 
     /*Timetable to discharge Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementDischargeSchedule;
 
     /*The status of Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementStatus;
 
     /*Party who is involved in Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Service Provider Agreement*/
@@ -58,7 +58,7 @@ public class ServiceProviderAgreement {
     private org.museframework.bian.classes.RuleSet serviceProviderAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Service Provider Agreement*/
-    @MetaField
+    @MetaField(0)
     private String serviceProviderAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Service Provider Agreement in case of legal dispute.*/

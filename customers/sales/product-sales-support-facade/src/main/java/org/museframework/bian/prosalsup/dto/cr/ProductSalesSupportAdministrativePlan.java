@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductSalesSupportAdministrativePlan {
     /*A Classification value that distinguishes between Budgets within Product Sales Support Administrative Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanBudgetType;
 
     /*Amount of budget which is arranged whitin Product Sales Support Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanBudget;
 
     /*The set of administrative responsibilities defined in Product Sales Support Administrative Plan*/
@@ -20,11 +20,11 @@ public class ProductSalesSupportAdministrativePlan {
     private org.museframework.bian.classes.Arrangement productSalesSupportAdministrativePlanDuty;
 
     /*Party who is involved in Product Sales Support Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanAssociatedParty;
 
     /*Balance of budget which is arranged whitin Product Sales Support Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanBudgetBalance;
 
     /*The subject matter of Product Sales Support Administrative Plan*/
@@ -32,7 +32,7 @@ public class ProductSalesSupportAdministrativePlan {
     private org.museframework.bian.classes.Object productSalesSupportAdministrativePlanSubjectMatter;
 
     /*The type of Product Sales Support Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanType;
 
     /*An unique reference to an item or an occurrence of Product Sales Support Administrative Plan*/
@@ -40,7 +40,7 @@ public class ProductSalesSupportAdministrativePlan {
     private org.museframework.bian.classes.Plan productSalesSupportAdministrativePlanReference;
 
     /*Documentation of Product Sales Support Administrative Plan*/
-    @MetaField
+    @MetaField(0)
     private String productSalesSupportAdministrativePlanDescription;
 
     public void setProductSalesSupportAdministrativePlanBudgetType(String productSalesSupportAdministrativePlanBudgetType) {

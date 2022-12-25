@@ -11,7 +11,7 @@ public class TraderSecurityPositionManagementandAnalysisFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trader Security Position Management and Analysis Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TraderSecurityPositionManagementandAnalysisFunction {
     private org.museframework.bian.classes.Function traderSecurityPositionManagementandAnalysisFunctionReference;
 
     /*The type of Trader Security Position Management and Analysis Function*/
-    @MetaField
+    @MetaField(0)
     private String traderSecurityPositionManagementandAnalysisFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

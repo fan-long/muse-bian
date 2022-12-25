@@ -11,7 +11,7 @@ public class CheckClearingandSettlementFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Check Clearing and Settlement Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class CheckClearingandSettlementFulfillment {
     private org.museframework.bian.classes.Object checkClearingandSettlementFulfillmentReference;
 
     /*The type of Check Clearing and Settlement Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String checkClearingandSettlementFulfillmentType;
 
     /*An unique reference to an item or an occurance (data type is Object)*/
@@ -43,11 +43,11 @@ public class CheckClearingandSettlementFulfillment {
     private org.museframework.bian.classes.Object correspondentBankClearingArrangementReference;
 
     /*Customer specific default clearing instructions*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingArrangementClearingInstructions;
 
     /*Customer specific default settlement instructions (e.g. to handle netting arrangements)*/
-    @MetaField
+    @MetaField(0)
     private String correspondentBankClearingArrangementSettlementInstructions;
 
     /*Used for central bank clearing reconciliations*/
@@ -55,11 +55,11 @@ public class CheckClearingandSettlementFulfillment {
     private org.museframework.bian.classes.Object mirrorNostroAccountReference;
 
     /*A record of a clearing transaction*/
-    @MetaField
+    @MetaField(0)
     private String clearingTransaction;
 
     /*A record of a settlement transaction*/
-    @MetaField
+    @MetaField(0)
     private String settlementTransaction;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

@@ -11,7 +11,7 @@ public class PublicPlacementRoadshowandMarketingFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Public Placement Roadshow and Marketing Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class PublicPlacementRoadshowandMarketingFulfillment {
     private org.museframework.bian.classes.Object publicPlacementRoadshowandMarketingFulfillmentReference;
 
     /*The type of Public Placement Roadshow and Marketing Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String publicPlacementRoadshowandMarketingFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

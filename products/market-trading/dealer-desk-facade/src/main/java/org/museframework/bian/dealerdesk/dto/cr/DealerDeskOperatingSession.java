@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DealerDeskOperatingSession {
     /*Timetable to operate Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionSchedule;
 
     /*The status of Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Dealer Desk Operating Session*/
@@ -19,23 +19,23 @@ public class DealerDeskOperatingSession {
     private org.museframework.bian.classes.Log dealerDeskOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Dealer Desk Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskOperatingSessionServiceType;
 
     /*The configuration of Dealer Desk Operating Session*/

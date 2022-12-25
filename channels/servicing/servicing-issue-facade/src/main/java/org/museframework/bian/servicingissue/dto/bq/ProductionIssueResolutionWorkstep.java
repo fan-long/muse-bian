@@ -11,11 +11,11 @@ public class ProductionIssueResolutionWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Production Issue Resolution Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class ProductionIssueResolutionWorkstep {
     private org.museframework.bian.classes.Workstep productionIssueResolutionWorkstepReference;
 
     /*The type of Production Issue Resolution Workstep*/
-    @MetaField
+    @MetaField(0)
     private String productionIssueResolutionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

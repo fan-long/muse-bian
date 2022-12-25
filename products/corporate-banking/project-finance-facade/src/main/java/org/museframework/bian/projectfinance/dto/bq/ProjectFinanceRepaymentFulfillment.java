@@ -11,7 +11,7 @@ public class ProjectFinanceRepaymentFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Project Finance Repayment Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class ProjectFinanceRepaymentFulfillment {
     private org.museframework.bian.classes.Object projectFinanceRepaymentFulfillmentReference;
 
     /*The type of Project Finance Repayment Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceRepaymentFulfillmentType;
 
     /*An unique reference to an item or an occurance (data type is Object)*/
@@ -39,7 +39,7 @@ public class ProjectFinanceRepaymentFulfillment {
     private org.museframework.bian.classes.Object reaymentFulfillmentInstanceReference;
 
     /*The type of repayment (e.g. scheduled repayment, balloon/early termination)*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionType;
 
     /*Reference to the payer*/
@@ -55,15 +55,15 @@ public class ProjectFinanceRepaymentFulfillment {
     private org.museframework.bian.classes.Object repaymentTransactionPayerBankReference;
 
     /*The amount of the repayment*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionAmount;
 
     /*The currency used for the repayment*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionCurrency;
 
     /*The value date for the repayment transaction*/
-    @MetaField
+    @MetaField(0)
     private String repaymentTransactionValueDate;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

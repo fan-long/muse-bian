@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Warehousing {
     /*The schedule for handling the warehoused transaction batch*/
-    @MetaField
+    @MetaField(0)
     private String scheduleReleaseDateTime;
 
     public void setScheduleReleaseDateTime(String scheduleReleaseDateTime) {

@@ -9,39 +9,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductInventoryAllocation {
     /*Maintains the distribution schedule for all managed product inventory items. This includes all past distribution records and future scheduled deliveries*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryAllocationServiceSchedule;
 
     /*The collection of product inventory items*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryHoldings;
 
     /*The type or category of product or service for which inventory items are held (e.g. specialized consumer loan, relocation services)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to a specific type of product inventory item*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryItemType;
 
     /*Details about a product inventory type holding*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryItemRecord;
 
     /*Description of the inventory item used for selection/reference purposes*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryItemDescription;
 
     /*Details as to the supplier details for obtaining additional items when required (includes ordering details, volumes and frequency, pricing, delivery timelines etc.)*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryItemSupplierDetails;
 
     /*Details the locations where the inventory item is distributed to and the minimum and maximum holding amounts and inventory renewal cycles (used to trigger/schedule renewal deliveries)*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryUsedLocations;
 
     /*The current and projected holding and holding targets/limits by location - taking into account scheduled distribution plans*/
-    @MetaField
+    @MetaField(0)
     private String productInventoryHolding;
 
     public void setProductInventoryAllocationServiceSchedule(String productInventoryAllocationServiceSchedule) {

@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class EnterpriseArchitectureSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Business Architecture Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationSelectedOption;
 
     /*Documentation of Business Architecture Specification*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationDescription;
 
     /*The version of Business Architecture Specification*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationVersion;
 
     /*The status of Business Architecture Specification*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Business Architecture Specification*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Business Architecture Specification.*/
-    @MetaField
+    @MetaField(0)
     private String enterpriseArchitectureSpecificationFeedback;
 
     /*Reference to the party who has provided Business Architecture Specification*/

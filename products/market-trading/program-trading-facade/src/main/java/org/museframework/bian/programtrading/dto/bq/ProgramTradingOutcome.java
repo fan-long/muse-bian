@@ -11,7 +11,7 @@ public class ProgramTradingOutcome {
     private org.museframework.bian.classes.Event programTradingIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String programTradingProvision;
 
     public void setProgramTradingIncident(org.museframework.bian.classes.Event programTradingIncident) {

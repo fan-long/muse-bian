@@ -10,15 +10,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Analysis {
     /*The contact record contains all details of the initial case submission*/
-    @MetaField
+    @MetaField(0)
     private String customerContactRecord;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String caseAnalysisWorkProduct;
 
     /*The outcome of the case root cause analysis*/
-    @MetaField
+    @MetaField(0)
     private String caseAnalysisWorkTaskResult;
 
     public void setCustomerContactRecord(String customerContactRecord) {

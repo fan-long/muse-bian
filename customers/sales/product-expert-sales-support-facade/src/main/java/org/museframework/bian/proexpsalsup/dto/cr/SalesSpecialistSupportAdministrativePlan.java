@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SalesSpecialistSupportAdministrativePlan {
     /*Maintains the allocation records of available sales specialist service resources. This includes all past and future booking commitments*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceAllocationServiceSchedule;
 
     /*Reference to a sales specialist support resource*/
@@ -17,11 +17,11 @@ public class SalesSpecialistSupportAdministrativePlan {
     private org.museframework.bian.classes.Object salesSpecialistSupportResourceReference;
 
     /*Details about a registered sales specialist support resource*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceRecord;
 
     /*Details the qualification, expertise and level of experience of a servicing specialist*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceQualificationProfile;
 
     /*Reference to the locations service by the resource where face to face meetings are required*/
@@ -29,15 +29,15 @@ public class SalesSpecialistSupportAdministrativePlan {
     private org.museframework.bian.classes.Object salesSpecialistSupportLocationReference;
 
     /*Details the time the resource plans to be and is actually available for assignments*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceAvailabilitySchedule;
 
     /*Tracks the current status indicating availability for assignment*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceStatus;
 
     /*Reference to a consolidated record of assignment instances handled by the support resource. This is used to track utilization and performance*/
-    @MetaField
+    @MetaField(0)
     private String salesSpecialistSupportResourceAssignmentRecord;
 
     public void setSalesSpecialistSupportResourceAllocationServiceSchedule(String salesSpecialistSupportResourceAllocationServiceSchedule) {

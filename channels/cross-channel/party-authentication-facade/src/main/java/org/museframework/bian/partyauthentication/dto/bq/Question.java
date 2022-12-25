@@ -13,15 +13,15 @@ public class Question {
     private org.museframework.bian.classes.Object authenticationSecretQuestionReference;
 
     /*Template includes the question text and provided customer response - given value is compared to the stored value*/
-    @MetaField
+    @MetaField(0)
     private String authenticationSecretQuestionTemplate;
 
     /*This is the stored value, the provided value is compared to this*/
-    @MetaField
+    @MetaField(0)
     private String authenticationSecretQuestionValue;
 
     /*The result of the secret question check*/
-    @MetaField
+    @MetaField(0)
     private String secretQuestionTestResult;
 
     public void setAuthenticationSecretQuestionReference(org.museframework.bian.classes.Object authenticationSecretQuestionReference) {

@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountsReceivableProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureParameterType;
 
     /*A selected optional business service as subject matter of Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureSelectedOption;
 
     /*Request to process AccountsReceivable*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureRequest;
 
     /*Timetable to process AccountsReceivable*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureSchedule;
 
     /*The status of Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureStatus;
 
     /*Reference to the party who is involved in Accounts Receivable Procedure*/
@@ -53,35 +53,35 @@ public class AccountsReceivableProcedure {
     private org.museframework.bian.classes.Object accountsReceivableProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureType;
 
     /*The schedule according to which the service provider will process the Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Accounts Receivable Procedure */
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Accounts Receivable Procedure */
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Accounts Receivable Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Accounts Receivable Procedure */
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Accounts Receivable Procedure */
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Accounts Receivable Procedure */
-    @MetaField
+    @MetaField(0)
     private String accountsReceivableProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Accounts Receivable Procedure */

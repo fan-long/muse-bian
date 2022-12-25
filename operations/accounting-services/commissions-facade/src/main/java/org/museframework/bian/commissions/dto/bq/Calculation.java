@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Calculation {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String calculationPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String calculationTaskSchedule;
 
     /*The Commission Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class Calculation {
     private org.museframework.bian.classes.BusinessService commissionCalculation;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String calculationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String calculationCommissionCalculationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String calculationCommissionCalculationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String calculationCommissionCalculationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String calculationCommissionCalculationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String calculationCommissionCalculationServiceName;
 
     public void setCalculationPreconditions(String calculationPreconditions) {

@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradingPositionManagementPlan {
     /*The type of Trading Position Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Trading Position Management Plan*/
@@ -16,11 +16,11 @@ public class TradingPositionManagementPlan {
     private org.museframework.bian.classes.Plan tradingPositionManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Trading Position Management Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Trading Position Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanBudget;
 
     /*The set of management responsibilities defined in Trading Position Management Plan*/
@@ -28,15 +28,15 @@ public class TradingPositionManagementPlan {
     private org.museframework.bian.classes.Arrangement tradingPositionManagementPlanDuty;
 
     /*Documentation of Trading Position Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Trading Position Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanBudgetBalance;
 
     /*Party who is involved in Trading Position Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String tradingPositionManagementPlanAssociatedParty;
 
     /*The subject matter of Trading Position Management Plan*/

@@ -16,15 +16,15 @@ public class Occupancy {
     private org.museframework.bian.classes.Object customerReference;
 
     /*Registered owner or title holder(s) of the property*/
-    @MetaField
+    @MetaField(0)
     private String locationOwnerTitle;
 
     /*The estimated (book) value of the property at the location - rental and purchase as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String locationValue;
 
     /*The type of occupancy (e.g. residency, business, retail, entertainment)*/
-    @MetaField
+    @MetaField(0)
     private String locationOccupierType;
 
     /*Known contact reference details of occupier (e.g. family name, company, retailer)*/
@@ -32,7 +32,7 @@ public class Occupancy {
     private org.museframework.bian.classes.Object locationOccupierReference;
 
     /*Nature of the access terms or entitlement of the occupier (e.g. leasehold, rental, public access)*/
-    @MetaField
+    @MetaField(0)
     private String locationOccupierTerms;
 
     /*Reference to a bank alliance partner with some kind of link association to the location (used for location based marketing)*/

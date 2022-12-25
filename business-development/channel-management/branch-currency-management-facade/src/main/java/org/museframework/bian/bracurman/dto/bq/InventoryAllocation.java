@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InventoryAllocation {
     /*The required status/situation before the allocation can be made*/
-    @MetaField
+    @MetaField(0)
     private String inventoryAllocationPreconditions;
 
     /*The schedule and timing of allocation decisions*/
-    @MetaField
+    @MetaField(0)
     private String inventoryAllocationAllocationSchedule;
 
     /*The Branch Cash Allocation specific  Business Service*/
@@ -21,23 +21,23 @@ public class InventoryAllocation {
     private org.museframework.bian.classes.BusinessService cashInventoryAllocation;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryAllocationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryAllocationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryAllocationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryAllocationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cashInventoryAllocationServiceName;
 
     public void setInventoryAllocationPreconditions(String inventoryAllocationPreconditions) {

@@ -14,15 +14,15 @@ public class CustomerAccessProfileAgreement {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The overall access profile, combining the restrictions and preferences from subordinate qualifiers*/
-    @MetaField
+    @MetaField(0)
     private String customerChannelAccessProfileRecord;
 
     /*The duration that the agreement is in force*/
-    @MetaField
+    @MetaField(0)
     private String customerAccessAgreementValidFromToDate;
 
     /*Reference to signatories as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerAccessAgreementSignaturesResponsibleParties;
 
     /*Reference to any associated documents*/

@@ -13,7 +13,7 @@ public class Collateral {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of asset (e.g. building, machinery, inventory, financial instrument, art)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetType;
 
     /*Reference to the collateral item (e.g. address, account reference)*/
@@ -21,7 +21,7 @@ public class Collateral {
     private org.museframework.bian.classes.Object collateralAssetReference;
 
     /*Description of significant details and properties of the asset*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetDescription;
 
     /*Reference to the administration record of the asset item*/
@@ -29,27 +29,27 @@ public class Collateral {
     private org.museframework.bian.classes.Object collateralAssetAdministrationInstanceReference;
 
     /*A general status indicator for the asset (can cover multiple properties as needed)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetStatus;
 
     /*The current and historical valuation of the asset*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetValuation;
 
     /*A record of past and current allocations of the collateral asset*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetAllocationProfile;
 
     /*The date of the last valuation (and next planned valuation)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetValuationDate;
 
     /*The ratio of the valuation that can be used as collateral (depends on liquidity, title, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetLoantoValueRatio;
 
     /*The customer collateral position analysis - combines collateral valuation, allocation and associated product utilization)*/
-    @MetaField
+    @MetaField(0)
     private String customerCollateralPositionAnalysisRecord;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Resolution {
     /*Details of the resolution decision*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsResolutionDecision;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String cardCollectionsResolutionWorkProduct;
 
     public void setCardCollectionsResolutionDecision(String cardCollectionsResolutionDecision) {

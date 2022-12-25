@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FunctionalRisk {
     /*The type of functional test being performed (e.g. functional coverage/integrity, usability, application integration)*/
-    @MetaField
+    @MetaField(0)
     private String functionalRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
-    @MetaField
+    @MetaField(0)
     private String functionalRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
-    @MetaField
+    @MetaField(0)
     private String functionalRiskSystemTestWorkProduct;
 
     /*The result of the functional risk test (including required remedial actions/fixes where appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String functionalRiskSystemTestResult;
 
     public void setFunctionalRiskSystemTestType(String functionalRiskSystemTestType) {

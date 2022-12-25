@@ -10,15 +10,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class GeneralMarketResearchAnalysis {
     /*The type of research view provided by the research (e.g. competitor analysis)*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisType;
 
     /*The definition of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisSpecification;
 
     /*Guidance on usage and interpretation of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisGuidance;
 
     /*Reference to the algorithm used to generate the analysis*/
@@ -26,11 +26,11 @@ public class GeneralMarketResearchAnalysis {
     private org.museframework.bian.classes.Object generalMarketResearchAnalysisAlgorithmReference;
 
     /*Request record of the general market analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisRequestRecord;
 
     /*The specific details of the request*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisRequest;
 
     /*The employee/business unit requesting the analysis*/
@@ -38,23 +38,23 @@ public class GeneralMarketResearchAnalysis {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String marketAnalysisRequestWorkProducts;
 
     /*The output from performing the analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisRequestResult;
 
     /*Usage record of the general market analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisUsageRecord;
 
     /*A record of the usage of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisUsage;
 
     /*A record of reported impact/accuracy of the analysis*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchAnalysisImpact;
 
     public void setGeneralMarketResearchAnalysisType(String generalMarketResearchAnalysisType) {

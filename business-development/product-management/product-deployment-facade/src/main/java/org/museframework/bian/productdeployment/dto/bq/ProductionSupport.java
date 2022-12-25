@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductionSupport {
     /*The consolidated aspects of the production support deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProductionSupportRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProductionSupportRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class ProductionSupport {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the production support needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProductionSupportRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentProductionSupportRequirements(String productandServiceDeploymentProductionSupportRequirements) {

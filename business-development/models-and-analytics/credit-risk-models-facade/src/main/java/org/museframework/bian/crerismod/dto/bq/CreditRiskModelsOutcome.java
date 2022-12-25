@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditRiskModelsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditRiskModelsTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditRiskModelsDesign;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditRiskModelsWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditRiskModelsImpactAnalysis;
 
     public void setCreditRiskModelsTask(String creditRiskModelsTask) {

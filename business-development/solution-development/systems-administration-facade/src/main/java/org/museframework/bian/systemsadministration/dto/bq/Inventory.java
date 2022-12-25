@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Inventory {
     /*The required status/situation before the routine can be undertaken*/
-    @MetaField
+    @MetaField(0)
     private String inventoryPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
@@ -16,7 +16,7 @@ public class Inventory {
     private org.museframework.bian.classes.Object inventoryBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String inventoryWorkSchedule;
 
     /*The ITSystem Administrative Plan specific Business Service*/
@@ -24,27 +24,27 @@ public class Inventory {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String inventoryPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String inventoryServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String inventoryServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String inventoryServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String inventoryServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String inventoryServiceName;
 
     public void setInventoryPreconditions(String inventoryPreconditions) {

@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorporateActionProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureParameterType;
 
     /*A selected optional business service as subject matter of Corporate Action Procedure*/
@@ -20,23 +20,23 @@ public class CorporateActionProcedure {
     private org.museframework.bian.classes.Instruction corporateActionProcedureRequest;
 
     /*Timetable to process Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureSchedule;
 
     /*The status of Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureStatus;
 
     /*Reference to the party who is involved in Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Corporate Action Procedure*/
@@ -44,23 +44,23 @@ public class CorporateActionProcedure {
     private org.museframework.bian.classes.FinancialFacility corporateActionProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureType;
 
     /*The schedule according to which the service provider will process the Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Corporate Action Procedure*/
-    @MetaField
+    @MetaField(0)
     private String corporateActionProcedureServiceType;
 
     /*Reference to the product or service that is related to Corporate Action Procedure*/

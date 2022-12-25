@@ -11,7 +11,7 @@ public class MarketMakingOutcome {
     private org.museframework.bian.classes.FinancialFacility marketMakingFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String marketMakingWorkProduct;
 
     public void setMarketMakingFinancialFacility(org.museframework.bian.classes.FinancialFacility marketMakingFinancialFacility) {

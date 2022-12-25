@@ -11,7 +11,7 @@ public class StandingOrderPayment {
     private org.museframework.bian.classes.Condition standingOrderPaymentPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentFeatureSchedule;
 
     /*The Standing Order Arrangement specific Business Service*/
@@ -23,43 +23,43 @@ public class StandingOrderPayment {
     private org.museframework.bian.classes.Condition standingOrderPaymentPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String standingOrderPaymentServiceName;
 
     /*Date on which a standing order is actually executed*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderExecutionDate;
 
     /*Result of the execition instruction, e.g. executed or not excuted*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderExecutionResultType;
 
     /*Description of the reason for not excuting a standing order, e.g. insufficient balance, account blocked, AML flag, ……*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderExecutionNotExecutedReasonDescription;
 
     /*Actual principal amount of the this execution of the standing order*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderExecutionPrincipalAmount;
 
     /*Actual fee amount of the this execution of the standing order*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderExecutionFeeAmount;
 
     public void setStandingOrderPaymentPreconditions(org.museframework.bian.classes.Condition standingOrderPaymentPreconditions) {

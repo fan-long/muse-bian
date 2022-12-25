@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Broadcast {
     /*Text of the broadcast message*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchBroadcastRecord;
 
     /*The timestamp for the broadcast*/
-    @MetaField
+    @MetaField(0)
     private String customerWorkbenchBroadcastRecordDateTime;
 
     public void setCustomerWorkbenchBroadcastRecord(String customerWorkbenchBroadcastRecord) {

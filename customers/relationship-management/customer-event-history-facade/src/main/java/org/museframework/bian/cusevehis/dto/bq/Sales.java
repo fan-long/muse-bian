@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Sales {
     /*The type of event (e.g. campaign, unsolicited, solicited, development)*/
-    @MetaField
+    @MetaField(0)
     private String customerSalesEventType;
 
     /*Employees involved in recording the event*/
@@ -17,7 +17,7 @@ public class Sales {
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /*The type of product or service being sold*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Reference to the recorded lead/opportunity if sale progresses*/
@@ -25,7 +25,7 @@ public class Sales {
     private org.museframework.bian.classes.Object leadandOpportunityReference;
 
     /*The details of the event (in a suitable format)*/
-    @MetaField
+    @MetaField(0)
     private String customerSalesEventRecord;
 
     /*Reference to any commission agreement if appropriate*/
@@ -33,7 +33,7 @@ public class Sales {
     private org.museframework.bian.classes.Object commissionAgreementReference;
 
     /*Date and time and the location the event was captured*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setCustomerSalesEventType(String customerSalesEventType) {

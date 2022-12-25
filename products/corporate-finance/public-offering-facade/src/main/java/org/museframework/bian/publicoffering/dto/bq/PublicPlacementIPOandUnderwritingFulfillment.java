@@ -11,7 +11,7 @@ public class PublicPlacementIPOandUnderwritingFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Public Placement IPO and Underwriting Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class PublicPlacementIPOandUnderwritingFulfillment {
     private org.museframework.bian.classes.Object publicPlacementIPOandUnderwritingFulfillmentReference;
 
     /*The type of Public Placement IPO and Underwriting Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String publicPlacementIPOandUnderwritingFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

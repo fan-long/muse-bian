@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class InformationFeedOperatingSession {
     /*Timetable to operate Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionSchedule;
 
     /*The status of Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Information Feed Operating Session*/
@@ -19,23 +19,23 @@ public class InformationFeedOperatingSession {
     private org.museframework.bian.classes.Log informationFeedOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Information Feed Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String informationFeedOperatingSessionServiceType;
 
     /*The configuration of Information Feed Operating Session*/

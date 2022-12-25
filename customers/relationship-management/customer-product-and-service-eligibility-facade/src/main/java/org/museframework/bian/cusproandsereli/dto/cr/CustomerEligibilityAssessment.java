@@ -11,23 +11,23 @@ public class CustomerEligibilityAssessment {
     private org.museframework.bian.classes.Object customerReference;
 
     /*This is the is the eligibility profile including in-force product terms*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServiceProfile;
 
     /*Defines the product/service type - note: the profile will reference all available products/services*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Defines if and under what terms a product/service is available to this customer - this detail is maintained by the service domain and referenced by this evaluation*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServiceTypeEligibility;
 
     /*Records the sold/in-force status of a product/service with the customer. Again this detail is maintained by the service domain and referenced by this evaluation*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServiceTypeUsage;
 
     /*The date time of the assessment*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

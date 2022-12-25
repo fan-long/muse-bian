@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class StockLendingandReposOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposDividend;
 
     /**/
@@ -23,27 +23,27 @@ public class StockLendingandReposOutcome {
     private org.museframework.bian.classes.InterestTransaction stockLendingandReposInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String stockLendingandReposWorkProduct;
 
     public void setStockLendingandReposCounterparty(String stockLendingandReposCounterparty) {

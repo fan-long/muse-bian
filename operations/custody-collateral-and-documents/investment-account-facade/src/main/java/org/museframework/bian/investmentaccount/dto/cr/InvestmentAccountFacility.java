@@ -11,7 +11,7 @@ public class InvestmentAccountFacility {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated investment account number in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String investmentAccountNumber;
 
     /*Reference to the account primary party/owner*/
@@ -23,31 +23,31 @@ public class InvestmentAccountFacility {
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*Definition of the linked cash account used as the source or target of cash to support securities deposits and withdrawals*/
-    @MetaField
+    @MetaField(0)
     private String linkedCashAccount;
 
     /*The type and purpose for the link (e.g. funding/margin account)*/
-    @MetaField
+    @MetaField(0)
     private String linkType;
 
     /*Details of the linked cash account*/
-    @MetaField
+    @MetaField(0)
     private String accountDetails;
 
     /*The type of investment account (e.g. discretionary, retirement, margin, restricted instrument category - securities, off-balance sheet)*/
-    @MetaField
+    @MetaField(0)
     private String investmentAccountType;
 
     /*Details the range of instruments that are tracked by the facility (each instrument has its own transaction record/holding position*/
-    @MetaField
+    @MetaField(0)
     private String investmentAccountInstrumentProfile;
 
     /*Details for an individual tracked instrument type - the investment account can track the holdings for multiple securities*/
-    @MetaField
+    @MetaField(0)
     private String investmentAccountInstrumentRecord;
 
     /*Reference to the type of investment instrument being tracked (e.g. equity, commodity, FX/MM, derivative)*/
-    @MetaField
+    @MetaField(0)
     private String instrumentType;
 
     /*The specific instrument trading identifier (e.g. NASDAQ Id)*/
@@ -59,35 +59,35 @@ public class InvestmentAccountFacility {
     private org.museframework.bian.classes.Object tradingMarketplaceReference;
 
     /*Position limits and holding position that are tracked by the account*/
-    @MetaField
+    @MetaField(0)
     private String instrumentPositionRecord;
 
     /*The type of position maintained for the account (e.g. min/max holdings,)*/
-    @MetaField
+    @MetaField(0)
     private String instrumentPositionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String instrumentPositionLimitSettings;
 
     /*The current calculated holding/position*/
-    @MetaField
+    @MetaField(0)
     private String instrumentPositionHolding;
 
     /*Details of known scheduled events related to the instrument (e.g. dividend payment date)*/
-    @MetaField
+    @MetaField(0)
     private String instrumentProcessingSchedule;
 
     /*The type of event impacting the state of the instrument (e.g. corporate actions)*/
-    @MetaField
+    @MetaField(0)
     private String instrumentEventType;
 
     /*Details of the event associated actions or impact*/
-    @MetaField
+    @MetaField(0)
     private String instrumentEventDescription;
 
     /*The date/time the event is anticipated/occurs*/
-    @MetaField
+    @MetaField(0)
     private String instrumentEventDate;
 
     /*Reference identifier linking the investment account to appropriate tax handling*/
@@ -95,31 +95,31 @@ public class InvestmentAccountFacility {
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String linkedAccounts;
 
     /*Key dates associated with the investment account (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

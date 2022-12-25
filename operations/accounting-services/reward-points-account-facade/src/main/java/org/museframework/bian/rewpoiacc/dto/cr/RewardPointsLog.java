@@ -8,27 +8,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RewardPointsLog {
     /*A Classification value that distinguishes between business service events logged within Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogParameterType;
 
     /*A selected optional business service as subject matter of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogSelectedOption;
 
     /*The type of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogType;
 
     /*Timetable to track RewardPoints*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogSchedule;
 
     /*Reference to the log of (usage) ativities/events  of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogUsageLog;
 
     /*Reference to the log of (update) ativities/events of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogUpdateLog;
 
     /*Reference to the party who is involved in Reward Points Log*/
@@ -44,19 +44,19 @@ public class RewardPointsLog {
     private org.museframework.bian.classes.Object rewardPointsLogCustomerReference;
 
     /*The configuration of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogServiceConfiguration;
 
     /*The position of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogPosition;
 
     /*A classification value expressing the kind of position withing the Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogPositionType;
 
     /*Reference to the time limitation related to the position  of Reward Points Log*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsLogPositionLimitTime;
 
     public void setRewardPointsLogParameterType(String rewardPointsLogParameterType) {

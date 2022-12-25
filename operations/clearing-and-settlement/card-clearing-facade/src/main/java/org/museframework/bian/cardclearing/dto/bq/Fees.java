@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Fees {
     /*Defines intercharge rates and fees to be applied to card transactions*/
-    @MetaField
+    @MetaField(0)
     private String interchargeFees;
 
     /*Details of the transaction fee processing*/
-    @MetaField
+    @MetaField(0)
     private String feeTaskResult;
 
     public void setInterchargeFees(String interchargeFees) {

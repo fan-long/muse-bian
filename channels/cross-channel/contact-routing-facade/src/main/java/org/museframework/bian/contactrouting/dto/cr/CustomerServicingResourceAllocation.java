@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerServicingResourceAllocation {
     /*Maintains the allocation status of available service resources. Can include future booking commitments*/
-    @MetaField
+    @MetaField(0)
     private String servicingResourceAllocationServiceSchedule;
 
     /*Reference to a servicing resource*/
@@ -16,11 +16,11 @@ public class CustomerServicingResourceAllocation {
     private org.museframework.bian.classes.Object servicingResourceReference;
 
     /*Details about a registered servicing resource/specialist*/
-    @MetaField
+    @MetaField(0)
     private String servicingResourceRecord;
 
     /*Details the qualification, expertise and level of experience of a servicing specialist*/
-    @MetaField
+    @MetaField(0)
     private String servicingResourceQualificationProfile;
 
     /*Reference to the assigned servicing position for the resource for the current session*/
@@ -28,11 +28,11 @@ public class CustomerServicingResourceAllocation {
     private org.museframework.bian.classes.Object servicingPositionReference;
 
     /*Details the time the resource plans to be and is actually available for allocations*/
-    @MetaField
+    @MetaField(0)
     private String servicingResourceAvailabilitySchedule;
 
     /*Tracks the current status indicating availability for assignment*/
-    @MetaField
+    @MetaField(0)
     private String servicingResourceStatus;
 
     /*Reference to a servicing session assignments made*/

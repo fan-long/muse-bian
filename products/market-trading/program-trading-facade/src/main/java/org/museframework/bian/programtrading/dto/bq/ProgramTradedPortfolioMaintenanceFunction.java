@@ -11,7 +11,7 @@ public class ProgramTradedPortfolioMaintenanceFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Program Traded Portfolio Maintenance Function specific Business Service*/
@@ -27,7 +27,7 @@ public class ProgramTradedPortfolioMaintenanceFunction {
     private org.museframework.bian.classes.Function programTradedPortfolioMaintenanceFunctionReference;
 
     /*The type of Program Traded Portfolio Maintenance Function*/
-    @MetaField
+    @MetaField(0)
     private String programTradedPortfolioMaintenanceFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

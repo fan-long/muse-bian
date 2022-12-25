@@ -11,7 +11,7 @@ public class LetterofCreditDefinitionandPricingTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Letter of Credit Definition and Pricing Task specific Business Service*/
@@ -27,7 +27,7 @@ public class LetterofCreditDefinitionandPricingTask {
     private org.museframework.bian.classes.Transaction letterOfCreditTransactionReference;
 
     /*The type of Letter of Credit Definition and Pricing Task*/
-    @MetaField
+    @MetaField(0)
     private String letterofCreditDefinitionandPricingTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

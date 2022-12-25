@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Restructuring {
     /*Description of the restructuring required*/
-    @MetaField
+    @MetaField(0)
     private String restructuringTask;
 
     /*Definition of issue to resolve and the restructuring solution with associated changes to loan terms and the assessed impact*/
-    @MetaField
+    @MetaField(0)
     private String restructuringEvaluation;
 
     /*Calculated loss/costs of restructuring*/
-    @MetaField
+    @MetaField(0)
     private String restructuringWriteDown;
 
     public void setRestructuringTask(String restructuringTask) {

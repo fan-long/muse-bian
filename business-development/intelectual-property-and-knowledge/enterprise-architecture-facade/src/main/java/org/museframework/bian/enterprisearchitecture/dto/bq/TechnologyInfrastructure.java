@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TechnologyInfrastructure {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructurePreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureVersionNumber;
 
     /*The Business Architecture Specification specific  Business Service*/
@@ -24,23 +24,23 @@ public class TechnologyInfrastructure {
     private org.museframework.bian.classes.BusinessService technologyInfrastructure;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String technologyInfrastructureServiceName;
 
     public void setTechnologyInfrastructurePreconditions(String technologyInfrastructurePreconditions) {

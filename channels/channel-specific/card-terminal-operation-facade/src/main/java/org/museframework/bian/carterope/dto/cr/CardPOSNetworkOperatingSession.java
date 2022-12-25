@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CardPOSNetworkOperatingSession {
     /*Defines the service availability through the session*/
-    @MetaField
+    @MetaField(0)
     private String cardPOSTerminalOperatingSchedule;
 
     public void setCardPOSTerminalOperatingSchedule(String cardPOSTerminalOperatingSchedule) {

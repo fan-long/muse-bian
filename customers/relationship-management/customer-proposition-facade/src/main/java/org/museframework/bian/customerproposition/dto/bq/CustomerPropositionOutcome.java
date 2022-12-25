@@ -11,7 +11,7 @@ public class CustomerPropositionOutcome {
     private org.museframework.bian.classes.Agreement customerPropositionAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String customerPropositionWorkProduct;
 
     public void setCustomerPropositionAgreement(org.museframework.bian.classes.Agreement customerPropositionAgreement) {

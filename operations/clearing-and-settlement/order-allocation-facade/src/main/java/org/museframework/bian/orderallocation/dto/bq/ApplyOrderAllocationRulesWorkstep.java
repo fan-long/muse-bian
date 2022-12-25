@@ -11,11 +11,11 @@ public class ApplyOrderAllocationRulesWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Apply Order Allocation Rules Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class ApplyOrderAllocationRulesWorkstep {
     private org.museframework.bian.classes.Workstep applyOrderAllocationRulesWorkstepReference;
 
     /*The type of Apply Order Allocation Rules Workstep*/
-    @MetaField
+    @MetaField(0)
     private String applyOrderAllocationRulesWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

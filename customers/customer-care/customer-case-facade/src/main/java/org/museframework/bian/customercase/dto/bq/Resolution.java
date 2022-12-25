@@ -13,7 +13,7 @@ public class Resolution {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
@@ -21,7 +21,7 @@ public class Resolution {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Business unit responsible for the customer case resolution actions*/

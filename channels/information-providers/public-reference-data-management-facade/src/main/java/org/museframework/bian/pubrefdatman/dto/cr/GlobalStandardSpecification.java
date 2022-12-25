@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class GlobalStandardSpecification {
     /*A Classification value that distinguishes between designs according to the type of business services and/or aspect within Global Standard Specification . Eg Product Design, Campaign Design, Risk Model Design etc. */
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationParameterType;
 
     /*A selected optional business service as subject matter of design*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationSelectedOption;
 
     /*Documentation of Global Standard Specification*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationDescription;
 
     /*The version of Global Standard Specification*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationVersion;
 
     /*The status of Global Standard Specification*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationStatus;
 
     /*Reference to the log of (usage) ativities/events of Global Standard Specification*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationUsageLog;
 
     /*Information about reactions to a design which is used as a basis for improvement for the Global Standard Specification.*/
-    @MetaField
+    @MetaField(0)
     private String globalStandardSpecificationFeedback;
 
     /*Reference to the party who has provided Global Standard Specification*/

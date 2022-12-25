@@ -15,7 +15,7 @@ public class StrategicFundingTopic {
     private org.museframework.bian.classes.Object strategicFundingTopicReference;
 
     /*The type of Strategic Funding Topic*/
-    @MetaField
+    @MetaField(0)
     private String strategicFundingTopicType;
 
     /*The Strategic Funding Topic specific Business Service*/
@@ -23,7 +23,7 @@ public class StrategicFundingTopic {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The operating unit/employee responsible for providing the advice/recommendation*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The completion status once the advice/recommendation has been provided*/
@@ -35,7 +35,7 @@ public class StrategicFundingTopic {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in providing the advice/recommendation*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     public void setCorporateFinanceServicesAdviceReference(org.museframework.bian.classes.Object corporateFinanceServicesAdviceReference) {

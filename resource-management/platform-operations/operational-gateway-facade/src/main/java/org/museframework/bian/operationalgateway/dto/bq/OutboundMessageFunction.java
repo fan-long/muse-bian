@@ -11,7 +11,7 @@ public class OutboundMessageFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Outbound Message Function specific Business Service*/
@@ -27,7 +27,7 @@ public class OutboundMessageFunction {
     private org.museframework.bian.classes.Function outboundMessageFunctionReference;
 
     /*The type of Outbound Message Function*/
-    @MetaField
+    @MetaField(0)
     private String outboundMessageFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

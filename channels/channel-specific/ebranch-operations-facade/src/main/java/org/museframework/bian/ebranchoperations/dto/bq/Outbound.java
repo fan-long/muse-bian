@@ -17,7 +17,7 @@ public class Outbound {
     private org.museframework.bian.classes.Object customerContactRecordReference;
 
     /*This is the payload of the exchange - it is the specific session within the contact that handles the customer interaction. Content passes through the E-Branch facility transparently*/
-    @MetaField
+    @MetaField(0)
     private String customerSessionDialogueRecord;
 
     /*Reference to the device being connected to*/
@@ -25,11 +25,11 @@ public class Outbound {
     private org.museframework.bian.classes.Object EBranchCustomerDeviceReference;
 
     /*Log of the initial connection*/
-    @MetaField
+    @MetaField(0)
     private String EBranchOutboundConnectionStartTime;
 
     /*Connection duration for capacity planning purposes*/
-    @MetaField
+    @MetaField(0)
     private String EBranchOutboundConnectionDuration;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

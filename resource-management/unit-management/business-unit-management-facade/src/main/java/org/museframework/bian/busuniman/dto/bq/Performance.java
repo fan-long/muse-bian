@@ -9,31 +9,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Performance {
     /*Record of the business unit employee target and actual utilization/productivity*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitResourceUtilization;
 
     /*Estimated projected business unit product/service delivery and work volume targets as appropriate for the type of unit*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitOutputWorkProjections;
 
     /*Tracked business unit activity and performance statistics used to manage the business unit*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceStatistics;
 
     /*The type of activity that is tracked and analyzed (e.g. delivery rate, utilization)*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceStatisticType;
 
     /*The statistical analysis that can include historical and trended views of the activity*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceStatisticValue;
 
     /*Narrative that might explain any divergence from expected performance/delivery*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceStatisticInterpretation;
 
     /*Proposed operational changes/recommendations arising from the performance tracking and analysis*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitPerformanceStatisticRecommendation;
 
     public void setBusinessUnitResourceUtilization(String businessUnitResourceUtilization) {

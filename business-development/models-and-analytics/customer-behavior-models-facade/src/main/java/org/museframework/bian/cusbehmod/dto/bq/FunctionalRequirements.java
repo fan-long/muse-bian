@@ -13,7 +13,7 @@ public class FunctionalRequirements {
     private org.museframework.bian.classes.Object customerBehaviorModelDesignTaskReference;
 
     /*The record of work products used for the design task*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelDesignTaskRecord;
 
     /*Reference to external service information provider used to obtain example production data for design*/
@@ -21,15 +21,15 @@ public class FunctionalRequirements {
     private org.museframework.bian.classes.Object customerMarketDataServiceReference;
 
     /*Record of example production data file*/
-    @MetaField
+    @MetaField(0)
     private String customerMarketDataRecord;
 
     /*User provided and solicited feedback, suggestions for model refinement*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelFeedbackRecord;
 
     /*The model functional requirements specification (with versioning as appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String customerBehaviorModelRequirementsSpecification;
 
     public void setCustomerBehaviorModelDesignTaskReference(org.museframework.bian.classes.Object customerBehaviorModelDesignTaskReference) {

@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AccountReconciliationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Account Reconciliation Procedure*/
@@ -19,23 +19,23 @@ public class AccountReconciliationProcedure {
     private org.museframework.bian.classes.Instruction accountReconciliationProcedureRequest;
 
     /*Timetable to process Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureSchedule;
 
     /*The status of Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureStatus;
 
     /*Reference to the party who is involved in Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Account Reconciliation Procedure*/
@@ -43,23 +43,23 @@ public class AccountReconciliationProcedure {
     private org.museframework.bian.classes.FinancialFacility accountReconciliationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureType;
 
     /*The schedule according to which the service provider will process the Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Account Reconciliation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String accountReconciliationProcedureServiceType;
 
     /*Reference to the product or service that is related to Account Reconciliation Procedure*/

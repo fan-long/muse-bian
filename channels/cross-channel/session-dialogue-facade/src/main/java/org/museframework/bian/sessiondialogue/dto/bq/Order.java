@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Order {
     /*Reference to a specific type of customer order (e.g. consolidated balance, change of address, simple product/service guidance)*/
-    @MetaField
+    @MetaField(0)
     private String orderType;
 
     /*The type of case being processed including any supporting narrative (e.g. disputed charges, suspected account fraud, stolen device, change of status)*/
-    @MetaField
+    @MetaField(0)
     private String orderTaskRecord;
 
     /*Forms and actions agreed and registered during the order*/
-    @MetaField
+    @MetaField(0)
     private String orderTaskWorkProducts;
 
     /*The result of the order task (e.g. order completed, actions pending)*/
-    @MetaField
+    @MetaField(0)
     private String orderTaskWorkResult;
 
     public void setOrderType(String orderType) {

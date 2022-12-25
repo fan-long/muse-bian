@@ -23,7 +23,7 @@ public class MerchantAcquiringFacility {
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*The billing currency for the merchant acquiring facility account*/
-    @MetaField
+    @MetaField(0)
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -31,23 +31,23 @@ public class MerchantAcquiringFacility {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Operational terms governing the merchant facility*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringFacilityOperationalTerms;
 
     /*Merchant acquiring facility limits (e.g. spend limits and credit limits for the merchant facility)*/
-    @MetaField
+    @MetaField(0)
     private String merchantAcquiringFacilityPositionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
-    @MetaField
+    @MetaField(0)
     private String merchantPositionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String merchantPositionLimitSettings;
 
     /*The savings calculated position*/
-    @MetaField
+    @MetaField(0)
     private String merchantPositionLimitValue;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

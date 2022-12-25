@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerProcessing {
     /*Details of any customer specific processing requirements applied to the market order*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderCustomerProcessingCheckResult;
 
     public void setMarketOrderCustomerProcessingCheckResult(String marketOrderCustomerProcessingCheckResult) {

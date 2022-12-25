@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AnalysisFeedback {
     /*The result of the analysis of the performance of the campaign for the current cycle*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignProcedureAnalysisResult;
 
     /*Description of the feedback provided to the campaign design team*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignProcedureAnalysisFeedbackResult;
 
     public void setCustomerCampaignProcedureAnalysisResult(String customerCampaignProcedureAnalysisResult) {

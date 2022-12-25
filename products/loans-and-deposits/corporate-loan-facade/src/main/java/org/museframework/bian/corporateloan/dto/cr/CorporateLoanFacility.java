@@ -11,7 +11,7 @@ public class CorporateLoanFacility {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated loan account number in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String corporateLoanNumber;
 
     /*Reference to the account primary party/owner*/
@@ -47,43 +47,43 @@ public class CorporateLoanFacility {
     private org.museframework.bian.classes.Object bankAccountingUnitReference;
 
     /*The specific type of loan (e.g. term, revolving, evergreen)*/
-    @MetaField
+    @MetaField(0)
     private String loanType;
 
     /*The amount of the loan*/
-    @MetaField
+    @MetaField(0)
     private String loanAmount;
 
     /*The currency for the loan account*/
-    @MetaField
+    @MetaField(0)
     private String loanCurrency;
 
     /*The rate type to be applied to the loan*/
-    @MetaField
+    @MetaField(0)
     private String loanRateType;
 
     /*The applicable rate for the loan*/
-    @MetaField
+    @MetaField(0)
     private String loanApplicableRate;
 
     /*The type of repayment arrangement in place (e.g. structured)*/
-    @MetaField
+    @MetaField(0)
     private String repaymentType;
 
     /*The type of interest to be applied (e.g. prime plus)*/
-    @MetaField
+    @MetaField(0)
     private String interestType;
 
     /*The accrual method applied to interest calculations*/
-    @MetaField
+    @MetaField(0)
     private String interestAccrualMethod;
 
     /*The origination date for the loan*/
-    @MetaField
+    @MetaField(0)
     private String loanOriginationDate;
 
     /*The planned maturity date of the loan*/
-    @MetaField
+    @MetaField(0)
     private String loanMaturityDate;
 
     /*Reference to allocated collateral*/
@@ -91,7 +91,7 @@ public class CorporateLoanFacility {
     private org.museframework.bian.classes.Object collateralReference;
 
     /*The collateral value applied to the loan*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocation;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -99,35 +99,35 @@ public class CorporateLoanFacility {
     private org.museframework.bian.classes.Object taxReference;
 
     /*Access terms that apply (e.g. allowed payments/withdrawals)*/
-    @MetaField
+    @MetaField(0)
     private String loanAccessTerms;
 
     /*The definition of an applicable entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionSetting;
 
     /*Definition of the involved parties or associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
-    @MetaField
+    @MetaField(0)
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
-    @MetaField
+    @MetaField(0)
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
@@ -135,27 +135,27 @@ public class CorporateLoanFacility {
     private org.museframework.bian.classes.Object associationReference;
 
     /*The schedule for loan repayments*/
-    @MetaField
+    @MetaField(0)
     private String loanRepaymentSchedule;
 
     /*A statement maintained tracking repayments*/
-    @MetaField
+    @MetaField(0)
     private String stagedRepaymentStatement;
 
     /*A record of customer correspondence/feedback*/
-    @MetaField
+    @MetaField(0)
     private String customerCommentary;
 
     /*The outstanding balance*/
-    @MetaField
+    @MetaField(0)
     private String loanOutstandingBalance;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

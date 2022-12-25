@@ -11,11 +11,11 @@ public class DocumentArchivingProperties {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing for which the property value is valid*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The version reference for the property value*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Document Archiving Properties specific  Business Service*/
@@ -31,7 +31,7 @@ public class DocumentArchivingProperties {
     private org.museframework.bian.classes.Object documentArchivingPropertiesReference;
 
     /*The type of Document Archiving Properties*/
-    @MetaField
+    @MetaField(0)
     private String documentArchivingPropertiesType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

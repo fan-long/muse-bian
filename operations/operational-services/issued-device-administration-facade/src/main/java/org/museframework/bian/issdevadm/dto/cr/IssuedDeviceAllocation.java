@@ -17,19 +17,19 @@ public class IssuedDeviceAllocation {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of device allocated (used to reference assignment type)*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceType;
 
     /*Access/usage entitlements, can be by product instance (e.g. value, location, frequency and duration access constraints)*/
-    @MetaField
+    @MetaField(0)
     private String associatedPermissions;
 
     /*The date the issued device is registered*/
-    @MetaField
+    @MetaField(0)
     private String issueDate;
 
     /*The refresh period for the issued device*/
-    @MetaField
+    @MetaField(0)
     private String validFrom_ToDate;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

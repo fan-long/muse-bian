@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class OperationalRisk {
     /*The type of operational risk test being performed (e.g. operator error recovery, major IT component failure recovery/continuity)*/
-    @MetaField
+    @MetaField(0)
     private String operationalRiskSystemTestType;
 
     /*Detailed description of the test, including expected results*/
-    @MetaField
+    @MetaField(0)
     private String operationalRiskSystemTestDescription;
 
     /*Reference to testing materials, results, assessments and other documents*/
-    @MetaField
+    @MetaField(0)
     private String operationalRiskSystemTestWorkProduct;
 
     /*The result of the operational risk test (including required remedial actions/fixes where appropriate)*/
-    @MetaField
+    @MetaField(0)
     private String operationalRiskSystemTestResult;
 
     public void setOperationalRiskSystemTestType(String operationalRiskSystemTestType) {

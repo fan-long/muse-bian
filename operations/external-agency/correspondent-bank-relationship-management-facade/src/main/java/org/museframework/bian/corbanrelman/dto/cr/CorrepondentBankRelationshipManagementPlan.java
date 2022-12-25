@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorrepondentBankRelationshipManagementPlan {
     /*The type of Correpondent Bank Relationship Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanType;
 
     /*An unique reference to an item or an occurrence of Correpondent Bank Relationship Management Plan*/
@@ -15,11 +15,11 @@ public class CorrepondentBankRelationshipManagementPlan {
     private org.museframework.bian.classes.Plan correpondentBankRelationshipManagementPlanReference;
 
     /*A Classification value that distinguishes between Budgets within Correpondent Bank Relationship Management Plan according to the type of resource and/or activity that is budgetted*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanBudgetType;
 
     /*Amount of budget which is arranged whitin Correpondent Bank Relationship Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanBudget;
 
     /*The set of management responsibilities defined in Correpondent Bank Relationship Management Plan*/
@@ -27,15 +27,15 @@ public class CorrepondentBankRelationshipManagementPlan {
     private org.museframework.bian.classes.Arrangement correpondentBankRelationshipManagementPlanDuty;
 
     /*Documentation of Correpondent Bank Relationship Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanDescription;
 
     /*Balance of budget which is arranged whitin Correpondent Bank Relationship Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanBudgetBalance;
 
     /*Party who is involved in Correpondent Bank Relationship Management Plan*/
-    @MetaField
+    @MetaField(0)
     private String correpondentBankRelationshipManagementPlanAssociatedParty;
 
     /*The subject matter of Correpondent Bank Relationship Management Plan*/

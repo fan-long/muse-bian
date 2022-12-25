@@ -11,7 +11,7 @@ public class RepoTransactionCashTransferTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Repo Transaction Cash Transfer Task specific Business Service*/
@@ -27,7 +27,7 @@ public class RepoTransactionCashTransferTask {
     private org.museframework.bian.classes.Transaction repoTransactionReference;
 
     /*The type of Repo Transaction Cash Transfer Task*/
-    @MetaField
+    @MetaField(0)
     private String repoTransactionCashTransferTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

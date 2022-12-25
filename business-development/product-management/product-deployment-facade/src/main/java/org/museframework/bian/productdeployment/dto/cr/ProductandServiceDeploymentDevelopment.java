@@ -8,39 +8,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductandServiceDeploymentDevelopment {
     /*The reference to and descriptive name of the deployment project*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProjectName;
 
     /*The type of deployment project (e.g. service update, new product release)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProjectType;
 
     /*A description of the scope, goal and make-up of the product deployment project*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentProjectDescription;
 
     /*The derived deployment execution plan, covering tasks from the completion and acceptance of the deployment plan through to completion of the deployment including post deployment analysis tasks if required. Consolidates the different aspects of the plan. (Captures both planned and actual results)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentImplementationPlan;
 
     /*The financial considerations for the deployment (includes planning and execution)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentBudget;
 
     /*The organizational aspects of the deployment effort (includes planning and execution)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentOrganization;
 
     /*The deployment schedule of events, planned and actual (includes planning and execution tasks)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentSchedule;
 
     /*Key dates associated with the development of the deployment plan (e.g. planning start date, deployment plan approval, deployment plan sign-off)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductandServiceDeploymentProjectName(String productandServiceDeploymentProjectName) {

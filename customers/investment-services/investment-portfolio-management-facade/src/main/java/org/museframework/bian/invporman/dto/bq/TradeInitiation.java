@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradeInitiation {
     /*The trading request record used to initiate and track the trade*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioTradeRequest;
 
     /*The type of security being traded*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioTradeSecurityType;
 
     /*A description of the trade, including all key trading details (e.g. amount/volume, pricing/terms, clearing and settlement dates)*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioTradeSecurityTradeDescription;
 
     public void setInvestmentPortfolioTradeRequest(String investmentPortfolioTradeRequest) {

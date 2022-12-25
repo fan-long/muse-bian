@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Negotiation {
     /*Defines bank's policies and guidelines for account recovery/write down handling*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryGuidelines;
 
     /*Reference to negotiation/confirmation messages sent to involved parties, includes internal and external legal/law enforcement authorities*/
@@ -17,7 +17,7 @@ public class Negotiation {
     private org.museframework.bian.classes.Object correspondenceReference;
 
     /*Copies of correspondence content as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*Reference to legal documents created & referenced during the account recovery negotiation process*/
@@ -25,11 +25,11 @@ public class Negotiation {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Copies of document copy/content as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Processing record for the negotiation task within the account recovery process*/
-    @MetaField
+    @MetaField(0)
     private String accountRecoveryCaseNegotiationTaskRecord;
 
     public void setAccountRecoveryGuidelines(String accountRecoveryGuidelines) {

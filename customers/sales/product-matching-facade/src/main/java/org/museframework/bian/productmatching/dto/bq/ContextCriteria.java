@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ContextCriteria {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaVersionNumber;
 
     /*The Product/Customer Combination Assessment specific  Business Service*/
@@ -25,23 +25,23 @@ public class ContextCriteria {
     private org.museframework.bian.classes.BusinessService contextCriteria;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String contextCriteriaServiceName;
 
     public void setContextCriteriaPreconditions(String contextCriteriaPreconditions) {

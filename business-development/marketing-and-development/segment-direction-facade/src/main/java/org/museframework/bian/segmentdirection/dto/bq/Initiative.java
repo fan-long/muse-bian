@@ -13,23 +13,23 @@ public class Initiative {
     private org.museframework.bian.classes.Object segmentInitiativeBusinessUnitReference;
 
     /*The type of initiative (e.g. development project, acquisition, campaign, media communications)*/
-    @MetaField
+    @MetaField(0)
     private String segmentInitiativeType;
 
     /*Definition of the initiative, including planned actions, deliverables and intended outcomes*/
-    @MetaField
+    @MetaField(0)
     private String segmentInitiativeDescription;
 
     /*Planned and actual dates for activities making up the initiative. Any necessary details describing the purpose or reference properties of the transaction*/
-    @MetaField
+    @MetaField(0)
     private String segmentInitiativeSchedule;
 
     /*File of consolidated notes, assessments etc. arising from the work*/
-    @MetaField
+    @MetaField(0)
     private String segmentInitiativeWorkProducts;
 
     /*An assessment of the results/impact of the segment initiative*/
-    @MetaField
+    @MetaField(0)
     private String segmentInitiativeResult;
 
     /*Reference to associated documents (when appropriate)*/
@@ -41,11 +41,11 @@ public class Initiative {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Key dates and times associated with the execution of the segment initiative (e.g. start, review, completion)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setSegmentInitiativeBusinessUnitReference(org.museframework.bian.classes.Object segmentInitiativeBusinessUnitReference) {

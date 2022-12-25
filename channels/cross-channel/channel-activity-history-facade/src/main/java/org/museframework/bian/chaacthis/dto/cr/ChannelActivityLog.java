@@ -12,7 +12,7 @@ public class ChannelActivityLog {
     private org.museframework.bian.classes.Object customerReference;
 
     /*Key dates associated with the log (e.g. start time)*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

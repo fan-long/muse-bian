@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ExternalReporting {
     /*The schedule for the upload of the data file/report from the external agency (can be ad-hoc)*/
-    @MetaField
+    @MetaField(0)
     private String ratingAgencyReportSchedule;
 
     /*Defines the type of credit assessment report provided  (e.g. reference check, credit score, long/short form credit report)*/
-    @MetaField
+    @MetaField(0)
     private String ratingAgencyCreditReportType;
 
     /*Reference to the report provided by the agency*/
-    @MetaField
+    @MetaField(0)
     private String referencetotheratingagencycreditreport;
 
     /*The customer's credit report from the agency*/
-    @MetaField
+    @MetaField(0)
     private String ratingAgencyCreditReport;
 
     /*The date time the credit report was downloaded (content will define refresh history)*/
-    @MetaField
+    @MetaField(0)
     private String ratingAgencyCreditReportDate;
 
     public void setRatingAgencyReportSchedule(String ratingAgencyReportSchedule) {

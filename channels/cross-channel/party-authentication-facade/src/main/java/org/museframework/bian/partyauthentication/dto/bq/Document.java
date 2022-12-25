@@ -14,7 +14,7 @@ public class Document {
     private org.museframework.bian.classes.Object authenticationDocumentReference;
 
     /*The submitted document content in any appropriate format/media (e.g. scan)*/
-    @MetaField
+    @MetaField(0)
     private String authenticationDocumentContent;
 
     /*The document reference for the authentication document*/
@@ -22,11 +22,11 @@ public class Document {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The stored document - available in any suitable media for comparison*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*The result of comparing the presented document to the stored value*/
-    @MetaField
+    @MetaField(0)
     private String authenticationDocumentComparisonTestResult;
 
     public void setAuthenticationDocumentReference(org.museframework.bian.classes.Object authenticationDocumentReference) {

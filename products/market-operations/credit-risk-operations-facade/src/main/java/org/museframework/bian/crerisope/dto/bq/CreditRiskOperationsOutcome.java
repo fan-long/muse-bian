@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CreditRiskOperationsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String creditRiskOperationsDashboard;
 
     public void setCreditRiskOperationsDashboard(String creditRiskOperationsDashboard) {

@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Allocation {
     /*Defines  the requested action (e.g. earmark for future allocation, allocate or recall an allocation of a collateral asset)*/
-    @MetaField
+    @MetaField(0)
     private String requestedAllocationRequestType;
 
     /*Reference to the product to which the collateral is allocated*/
@@ -22,39 +22,39 @@ public class Allocation {
     private org.museframework.bian.classes.Object customerOfferReference;
 
     /*Applies for initial earmarking of collateral during an offer process*/
-    @MetaField
+    @MetaField(0)
     private String collateralEarmarkAmount;
 
     /*Time for which the earmarking is enforced*/
-    @MetaField
+    @MetaField(0)
     private String collateralEarmarkDuration;
 
     /*The amount of the overall asset value that is allocated in this instance*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationAmount;
 
     /*The intended duration of the allocation (can be finite or open ended)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationDuration;
 
     /*Applies when part or all of the allocation is recalled (e.g. due to revaluation of the asset)*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationRecallAmount;
 
     /*The schedule for processing allocation recall*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationRecallTimetable;
 
     /*The result of the allocation recall*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationRecallResult;
 
     /*State of the allocation as there can be different states for the allocation of a single asset to several products*/
-    @MetaField
+    @MetaField(0)
     private String collateralAssetAllocationState;
 
     /*Record of the workstep and result of the allocation process*/
-    @MetaField
+    @MetaField(0)
     private String collateralAllocationRequestResult;
 
     public void setRequestedAllocationRequestType(String requestedAllocationRequestType) {

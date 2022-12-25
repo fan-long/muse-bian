@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Quote {
     /*The security for which the quote is provided*/
-    @MetaField
+    @MetaField(0)
     private String quoteSecurityType;
 
     /*The type of quote being provided (e.g. current market, bank committed)*/
-    @MetaField
+    @MetaField(0)
     private String quoteType;
 
     /*The buy/sell quote by trade type and volume as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String quote;
 
     public void setQuoteSecurityType(String quoteSecurityType) {

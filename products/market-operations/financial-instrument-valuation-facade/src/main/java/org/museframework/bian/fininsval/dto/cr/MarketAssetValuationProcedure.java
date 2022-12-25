@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketAssetValuationProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureParameterType;
 
     /*A selected optional business service as subject matter of Market Asset Valuation Procedure*/
@@ -19,23 +19,23 @@ public class MarketAssetValuationProcedure {
     private org.museframework.bian.classes.Instruction marketAssetValuationProcedureRequest;
 
     /*Timetable to process Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureSchedule;
 
     /*The status of Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureStatus;
 
     /*Reference to the party who is involved in Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Market Asset Valuation Procedure*/
@@ -43,23 +43,23 @@ public class MarketAssetValuationProcedure {
     private org.museframework.bian.classes.FinancialFacility marketAssetValuationProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureType;
 
     /*The schedule according to which the service provider will process the Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Market Asset Valuation Procedure*/
-    @MetaField
+    @MetaField(0)
     private String marketAssetValuationProcedureServiceType;
 
     /*Reference to the product or service that is related to Market Asset Valuation Procedure*/

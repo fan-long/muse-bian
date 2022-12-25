@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BranchCurrencyManagementOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchCurrencyManagementAllocation;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String branchCurrencyManagementWorkProduct;
 
     public void setBranchCurrencyManagementAllocation(String branchCurrencyManagementAllocation) {

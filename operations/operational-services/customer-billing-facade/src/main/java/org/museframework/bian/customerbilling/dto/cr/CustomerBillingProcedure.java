@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerBillingProcedure {
     /*The type of customer billing (e.g. product fees, penalties)*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingTransactionType;
 
     /*Description that annotates the bill as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingTransactionDescription;
 
     /*Reference to the customer for the billing*/
@@ -27,39 +27,39 @@ public class CustomerBillingProcedure {
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Breakdown and description of the billed service or activities*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingProductandServiceActionDescription;
 
     /*The legal entity being charged (will usually be the customer)*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingParty;
 
     /*The billing address (can be an electronic location*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingAddress;
 
     /*The billing period is appropriate (e.g. for an on-going service)*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingPeriod;
 
     /*The itemized breakdown of the charges with references*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingStatement;
 
     /*The total amount due*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingAmount;
 
     /*The due date for payment*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingPaymentDueDate;
 
     /*The payment details (e.g. payment account)*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingPaymentDetails;
 
     /*The target and actual billing activities and dates*/
-    @MetaField
+    @MetaField(0)
     private String customerBillingPaymentSchedule;
 
     public void setCustomerBillingTransactionType(String customerBillingTransactionType) {

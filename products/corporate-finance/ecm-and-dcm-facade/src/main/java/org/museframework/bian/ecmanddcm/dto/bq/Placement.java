@@ -11,27 +11,27 @@ public class Placement {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*List of target investors for private placement*/
-    @MetaField
+    @MetaField(0)
     private String prospectList;
 
     /*The schedule and details of investor presentations*/
-    @MetaField
+    @MetaField(0)
     private String placementRoadshowSchedule;
 
     /*A record of the work done to place the instrument in the private or public markets as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String placementWorkTaskRecord;
 
     /*The type of work task (e.g. prospect scheduling, presentation, negotiation)*/
-    @MetaField
+    @MetaField(0)
     private String placementWorkTaskType;
 
     /*Description of the task performed*/
-    @MetaField
+    @MetaField(0)
     private String placementWorkTaskDescription;
 
     /*File of consolidated notes, forms and documents used and generated through the work task*/
-    @MetaField
+    @MetaField(0)
     private String placementWorkTaskWorkProducts;
 
     /*Reference to associated documents*/
@@ -39,7 +39,7 @@ public class Placement {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The consolidated details of the investments obtained for the issuance - details investor participation for private placement and primary market transaction references for public offerings*/
-    @MetaField
+    @MetaField(0)
     private String placementTransaction;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

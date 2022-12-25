@@ -11,7 +11,7 @@ public class ProjectFinanceOutcome {
     private org.museframework.bian.classes.FinancialFacility projectFinanceFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String projectFinanceWorkProduct;
 
     public void setProjectFinanceFinancialFacility(org.museframework.bian.classes.FinancialFacility projectFinanceFinancialFacility) {

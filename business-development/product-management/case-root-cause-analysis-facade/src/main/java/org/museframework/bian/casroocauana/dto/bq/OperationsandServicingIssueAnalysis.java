@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class OperationsandServicingIssueAnalysis {
     /*The required status/situation before the algorithm can be applied*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisPreconditions;
 
     /*The schedule and timing of the analysis performed using the algorithm*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisAnalysisSchedule;
 
     /*The algorithm version employed in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisVersionNumber;
 
     /*The Customer Case Root Cause Analysis specific  Business Service*/
@@ -25,23 +25,23 @@ public class OperationsandServicingIssueAnalysis {
     private org.museframework.bian.classes.BusinessService operationsandServicingIssueAnalysis;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String operationsandServicingIssueAnalysisServiceName;
 
     public void setOperationsandServicingIssueAnalysisPreconditions(String operationsandServicingIssueAnalysisPreconditions) {

@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SyndicateMembership {
     /*A Classification value that distinguishes between enrollments according to the type of business services and/or type of concern defined within Syndicate Membership*/
-    @MetaField
+    @MetaField(0)
     private String syndicateMembershipParameterType;
 
     /*A selected optional business service as subject matter of Syndicate Membership*/

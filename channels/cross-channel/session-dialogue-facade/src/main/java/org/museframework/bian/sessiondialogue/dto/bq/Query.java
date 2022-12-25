@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Query {
     /*The type of question/answer addressed in the session - e.g. branch location/hours*/
-    @MetaField
+    @MetaField(0)
     private String queryType;
 
     /*Details the response and any customer reaction*/
-    @MetaField
+    @MetaField(0)
     private String queryTaskResult;
 
     public void setQueryType(String queryType) {

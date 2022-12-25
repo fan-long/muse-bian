@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CampaignDirection {
     /*Schedule of planned and actual customer campaign design development and refinement activity*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignDevelopmentSchedule;
 
     /*Schedule of planned and actual customer campaign execution activities*/
-    @MetaField
+    @MetaField(0)
     private String customerCampaignExecutionSchedule;
 
     public void setCustomerCampaignDevelopmentSchedule(String customerCampaignDevelopmentSchedule) {

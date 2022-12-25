@@ -13,15 +13,15 @@ public class Inbound {
     private org.museframework.bian.classes.Object EBranchDeviceReference;
 
     /*Property of the Device e.g. URL if available*/
-    @MetaField
+    @MetaField(0)
     private String EBranchDevicePropertyValue;
 
     /*Log of the initial connection*/
-    @MetaField
+    @MetaField(0)
     private String EBranchInboundConnectionStartTime;
 
     /*Connection duration for capacity planning purposes*/
-    @MetaField
+    @MetaField(0)
     private String EBranchInboundConnectionDuration;
 
     /*This is returned by SD-Contact Handler for reference if the connection leads to a log-in session*/

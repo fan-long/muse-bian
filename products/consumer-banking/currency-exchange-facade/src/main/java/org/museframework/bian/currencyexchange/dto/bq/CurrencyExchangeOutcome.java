@@ -8,47 +8,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CurrencyExchangeOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeCalendar;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeDividend;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeFees;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String currencyExchangeWorkProduct;
 
     public void setCurrencyExchangeCalendar(String currencyExchangeCalendar) {

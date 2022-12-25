@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Contact {
     /*Reference to a contact established with the customer*/
-    @MetaField
+    @MetaField(0)
     private String customerDelinquentAccountContactRecord;
 
     /*Content of the reminder message*/
-    @MetaField
+    @MetaField(0)
     private String contactMessage;
 
     /*The date and time of the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactDate;
 
     /*Any response arising from the contact*/
-    @MetaField
+    @MetaField(0)
     private String contactResult;
 
     /*The document reference for associated documents*/
@@ -29,7 +29,7 @@ public class Contact {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Reference to the correspondence generated and received*/
@@ -37,15 +37,15 @@ public class Contact {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The result of the tracking and reminder activity*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountContactResult;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountContactWorkProduct;
 
     public void setCustomerDelinquentAccountContactRecord(String customerDelinquentAccountContactRecord) {

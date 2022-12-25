@@ -12,11 +12,11 @@ public class WorkforceAdministration {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The <BQ> specific Business Service*/
@@ -36,7 +36,7 @@ public class WorkforceAdministration {
     private org.museframework.bian.classes.PlannedAction workforceAdministrationReference;
 
     /*The type of Workforce Administration*/
-    @MetaField
+    @MetaField(0)
     private String workforceAdministrationType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

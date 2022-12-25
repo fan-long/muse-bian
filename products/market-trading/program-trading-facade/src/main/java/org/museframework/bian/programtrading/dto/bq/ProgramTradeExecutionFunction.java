@@ -11,7 +11,7 @@ public class ProgramTradeExecutionFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Program Trade Execution Function specific Business Service*/
@@ -27,7 +27,7 @@ public class ProgramTradeExecutionFunction {
     private org.museframework.bian.classes.Function programTradeExecutionFunctionReference;
 
     /*The type of Program Trade Execution Function*/
-    @MetaField
+    @MetaField(0)
     private String programTradeExecutionFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

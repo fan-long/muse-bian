@@ -11,7 +11,7 @@ public class TaxOptimization {
     private org.museframework.bian.classes.Object productandServiceReference;
 
     /*Summary recommendations arising from the advice that is added to the consolidated record*/
-    @MetaField
+    @MetaField(0)
     private String taxOptimizationAdviceResult;
 
     public void setProductandServiceReference(org.museframework.bian.classes.Object productandServiceReference) {

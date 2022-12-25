@@ -8,47 +8,47 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RewardPointsAwardsAndRedemptionOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionCalendar;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionDividend;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionFees;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAwardsAndRedemptionWorkProduct;
 
     public void setRewardPointsAwardsAndRedemptionCalendar(String rewardPointsAwardsAndRedemptionCalendar) {

@@ -16,19 +16,19 @@ public class CustomerOfferProcedure {
     private org.museframework.bian.classes.Object partyReference;
 
     /*The type of product or service that is being offered*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*Defines scheduled update/review tasks covering all tracked properties*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferProcessingSchedule;
 
     /*Tasks performed to maintain/verify the life-cycle status*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferProcessingTask;
 
     /*The type of task performed (each BQ constitutes an optional task instance)*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferProcessingTaskType;
 
     /*Employees involved in completing the offer task*/
@@ -36,11 +36,11 @@ public class CustomerOfferProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferProcessingTaskWorkProducts;
 
     /*The outcome of the task  (will be used to update the Customer Offer Procedure Instance Record)*/
-    @MetaField
+    @MetaField(0)
     private String customerOfferProcessingTaskResult;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

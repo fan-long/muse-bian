@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Resolution {
     /*The result of the resolution planning activity (e.g.. account recovered, passed to collections)*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountResolutionTaskResult;
 
     /*The recommended processing for the delinquent account - details passed on to associated function for execution as necessary*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountResolutionActionPlan;
 
     /*Work documentation, forms and schedules produced and referenced during the task*/
-    @MetaField
+    @MetaField(0)
     private String delinquentAccountResolutionWorkProduct;
 
     public void setDelinquentAccountResolutionTaskResult(String delinquentAccountResolutionTaskResult) {

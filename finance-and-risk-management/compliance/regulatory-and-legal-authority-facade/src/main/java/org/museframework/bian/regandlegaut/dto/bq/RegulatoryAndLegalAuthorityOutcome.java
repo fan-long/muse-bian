@@ -8,23 +8,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RegulatoryAndLegalAuthorityOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityPerformanceAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityActivityAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityCharter;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAndLegalAuthorityProject;
 
     public void setRegulatoryAndLegalAuthorityPerformanceAnalysis(String regulatoryAndLegalAuthorityPerformanceAnalysis) {

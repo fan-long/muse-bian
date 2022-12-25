@@ -11,7 +11,7 @@ public class TradeCaptureandReportingFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trade Capture and Reporting Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TradeCaptureandReportingFunction {
     private org.museframework.bian.classes.Function tradeCaptureandReportingFunctionReference;
 
     /*The type of Trade Capture and Reporting Function*/
-    @MetaField
+    @MetaField(0)
     private String tradeCaptureandReportingFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

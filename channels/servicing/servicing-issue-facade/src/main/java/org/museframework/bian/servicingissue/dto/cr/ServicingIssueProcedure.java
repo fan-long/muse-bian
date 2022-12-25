@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServicingIssueProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureParameterType;
 
     /*A selected optional business service as subject matter of Servicing Issue Procedure*/
@@ -19,23 +19,23 @@ public class ServicingIssueProcedure {
     private org.museframework.bian.classes.Instruction servicingIssueProcedureRequest;
 
     /*Timetable to process Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureSchedule;
 
     /*The status of Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureStatus;
 
     /*Reference to the party who is involved in Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Servicing Issue Procedure*/
@@ -43,23 +43,23 @@ public class ServicingIssueProcedure {
     private org.museframework.bian.classes.FinancialFacility servicingIssueProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureType;
 
     /*The schedule according to which the service provider will process the Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Servicing Issue Procedure*/
-    @MetaField
+    @MetaField(0)
     private String servicingIssueProcedureServiceType;
 
     /*Reference to the product or service that is related to Servicing Issue Procedure*/

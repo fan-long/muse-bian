@@ -14,19 +14,19 @@ public class BrokerAgreement {
     private org.museframework.bian.classes.Object partyReference;
 
     /*The type of agreement (e.g. service provider, product alliance)*/
-    @MetaField
+    @MetaField(0)
     private String agreementType;
 
     /*The contractual jurisdiction or coverage of the agreement (e.g. "governed by State")*/
-    @MetaField
+    @MetaField(0)
     private String agreementJurisdiction;
 
     /*The term of the agreement*/
-    @MetaField
+    @MetaField(0)
     private String agreementValidFromToDate;
 
     /*Reference to signatories*/
-    @MetaField
+    @MetaField(0)
     private String agreementSignaturesResponsibleParties;
 
     /*Reference to any associated documents*/

@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DistributionPlanning {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningPreconditions;
 
     /*The operating unit/employee responsible for the workstep*/
@@ -17,7 +17,7 @@ public class DistributionPlanning {
     private org.museframework.bian.classes.Object distributionPlanningBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningWorkSchedule;
 
     /*The Cash Distribution Procedure specific Business Service*/
@@ -25,27 +25,27 @@ public class DistributionPlanning {
     private org.museframework.bian.classes.BusinessService distributionPlanning;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningDistributionPlanningServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningDistributionPlanningServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningDistributionPlanningServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningDistributionPlanningServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String distributionPlanningDistributionPlanningServiceName;
 
     public void setDistributionPlanningPreconditions(String distributionPlanningPreconditions) {

@@ -11,7 +11,7 @@ public class TradeConfirmationMatchingOutcome {
     private org.museframework.bian.classes.Event tradeConfirmationMatchingIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String tradeConfirmationMatchingProvision;
 
     public void setTradeConfirmationMatchingIncident(org.museframework.bian.classes.Event tradeConfirmationMatchingIncident) {

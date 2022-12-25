@@ -11,7 +11,7 @@ public class CustomerTaxObligationFacility {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The consolidated record of the customer tax reporting position - basis for generating tax reports*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxHandlingArrangementRecord;
 
     /*Reference to the applicable tax authority/jurisdiction that applies for the customer - can be multiple for the customer*/
@@ -23,11 +23,11 @@ public class CustomerTaxObligationFacility {
     private org.museframework.bian.classes.Object applicableTaxationRuleReference;
 
     /*Covers all tax reporting guidelines, schedule and position reporting requirements for the customer*/
-    @MetaField
+    @MetaField(0)
     private String applicableTaxationRuleDefinition;
 
     /*Defines the customer tax reporting obligations, recording target and actual dates*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxReportingSchedule;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

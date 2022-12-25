@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Disclosures {
     /*The type of disclosure (e.g. verbal, requiring signature)*/
-    @MetaField
+    @MetaField(0)
     private String disclosureType;
 
     /*The presented disclosure for customer review in any suitable format*/
-    @MetaField
+    @MetaField(0)
     private String disclosureTextDescription;
 
     /*An indicator that the disclosure has been accepted (indicates signature obtained as necessary)*/
-    @MetaField
+    @MetaField(0)
     private String customerAcceptanceIndicator;
 
     /*The customer signature/acceptance record*/

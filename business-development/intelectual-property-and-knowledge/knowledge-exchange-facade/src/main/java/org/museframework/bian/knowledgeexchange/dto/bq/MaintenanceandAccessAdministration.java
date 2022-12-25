@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MaintenanceandAccessAdministration {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String maintenanceandAccessAdministrationPreconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String maintenanceandAccessAdministrationFunctionSchedule;
 
     /*The Intellectual Property Exchange Operating Session specific Business Service*/
@@ -20,23 +20,23 @@ public class MaintenanceandAccessAdministration {
     private org.museframework.bian.classes.BusinessService contentMaintenanceandAccessAdministration;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String contentMaintenanceandAccessAdministrationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String contentMaintenanceandAccessAdministrationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String contentMaintenanceandAccessAdministrationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String contentMaintenanceandAccessAdministrationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String contentMaintenanceandAccessAdministrationServiceName;
 
     public void setMaintenanceandAccessAdministrationPreconditions(String maintenanceandAccessAdministrationPreconditions) {

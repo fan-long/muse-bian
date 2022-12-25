@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class IssuedDevice {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String issuedDevicePreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceFeatureSchedule;
 
     /*The Mortgage Loan Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class IssuedDevice {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String issuedDevicePostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceServiceName;
 
     public void setIssuedDevicePreconditions(String issuedDevicePreconditions) {

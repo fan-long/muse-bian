@@ -8,27 +8,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RewardPointsTransaction {
     /*A Classification value that distinguishes between business service transaction within Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionParameterType;
 
     /*A selected optional business service as subject matter of Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionSelectedOption;
 
     /*The status of Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionStatus;
 
     /*A Classification value that specifies type of business action for this  Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionType;
 
     /*A Classification value that specifies type of transaction for this  Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionTransactionType;
 
     /*Reference to Reward Points Transaction*/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsTransactionTransaction;
 
     public void setRewardPointsTransactionParameterType(String rewardPointsTransactionParameterType) {

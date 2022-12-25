@@ -14,11 +14,11 @@ public class Authentication {
     private org.museframework.bian.classes.Object cardTransactionProductInstanceReference;
 
     /*The password may be held at the customer or account level*/
-    @MetaField
+    @MetaField(0)
     private String cardHolderAccountPassword;
 
     /*The PIN may be held at device or customer level*/
-    @MetaField
+    @MetaField(0)
     private String issuedDevicePIN;
 
     /*Use if customer details/questions used to verify identity*/
@@ -26,15 +26,15 @@ public class Authentication {
     private org.museframework.bian.classes.Object authenticationSecretQuestionReference;
 
     /*Question text and expected customer response - given value is compared*/
-    @MetaField
+    @MetaField(0)
     private String authenticationSecretQuestionTemplate;
 
     /*Provided value is compared to expected response*/
-    @MetaField
+    @MetaField(0)
     private String authenticationSecretQuestionValue;
 
     /*The result of the card holder's authentication check*/
-    @MetaField
+    @MetaField(0)
     private String authenticationCheckResult;
 
     public void setCardTransactionProductInstanceReference(org.museframework.bian.classes.Object cardTransactionProductInstanceReference) {

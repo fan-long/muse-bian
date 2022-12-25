@@ -15,19 +15,19 @@ public class PartyAuthenticationAssessment {
     private org.museframework.bian.classes.Object partyReference;
 
     /*Details the types of authentication assessments that are combined into the overall evaluation*/
-    @MetaField
+    @MetaField(0)
     private String partyAuthenticationAssessmentProfile;
 
     /*Reference to the different types of authentication assessment*/
-    @MetaField
+    @MetaField(0)
     private String authenticationType;
 
     /*The combination of the different assessment results used in the authentication determination*/
-    @MetaField
+    @MetaField(0)
     private String partyAuthenticationConsolidationRecord;
 
     /*The required value and value returned as a result of the authentication task, defining the level of identity assurance achieved - valid for the duration of the current contact*/
-    @MetaField
+    @MetaField(0)
     private String customerContactAuthenticationLevel;
 
     public void setCustomerReference(org.museframework.bian.classes.Object customerReference) {

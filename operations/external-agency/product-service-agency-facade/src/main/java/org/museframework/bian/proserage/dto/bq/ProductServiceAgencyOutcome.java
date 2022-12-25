@@ -11,7 +11,7 @@ public class ProductServiceAgencyOutcome {
     private org.museframework.bian.classes.Agreement productServiceAgencyAgreement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productServiceAgencyWorkProduct;
 
     public void setProductServiceAgencyAgreement(org.museframework.bian.classes.Agreement productServiceAgencyAgreement) {

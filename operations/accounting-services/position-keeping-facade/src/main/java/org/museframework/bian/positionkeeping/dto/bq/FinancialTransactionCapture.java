@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialTransactionCapture {
     /*The description of purpose of the financial transaction*/
-    @MetaField
+    @MetaField(0)
     private String postingDescription;
 
     /*The logged financial transaction. Note the log can be structured with double entry representations (i.e. capture credit/debit pair)*/
-    @MetaField
+    @MetaField(0)
     private String postingTransaction;
 
     /*The date of the transaction*/
-    @MetaField
+    @MetaField(0)
     private String postingValueDate;
 
     public void setPostingDescription(String postingDescription) {

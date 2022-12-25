@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketTracking {
     /*The type of work task (e.g. track promotional event activity, assess participation impact)*/
-    @MetaField
+    @MetaField(0)
     private String marketTrackingWorkTaskType;
 
     /*The make-up of the market tracking task performed, includes consolidation and analysis of market research to assess brand awareness and  the impact of promotional events*/
-    @MetaField
+    @MetaField(0)
     private String marketTrackingWorkTask;
 
     /*Reference to an internally maintained market research viewpoint*/
@@ -21,15 +21,15 @@ public class MarketTracking {
     private org.museframework.bian.classes.Object generalMarketResearchDirectoryEntryInstanceReference;
 
     /*File of consolidated notes, evaluations and findings for the market tracking work task*/
-    @MetaField
+    @MetaField(0)
     private String marketTrackingWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - typically points of view drawn from the market research*/
-    @MetaField
+    @MetaField(0)
     private String marketTrackingWorkTaskResult;
 
     /*The date-time the market tracking task is performed*/
-    @MetaField
+    @MetaField(0)
     private String marketTrackingWorkTaskDate_Time;
 
     public void setMarketTrackingWorkTaskType(String marketTrackingWorkTaskType) {

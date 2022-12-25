@@ -8,23 +8,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Audit {
     /*The required compliance check*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceCheckType;
 
     /*Description of the compliance requirements*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceCheckRequirement;
 
     /*The submitted offer related materials*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceCheckSubmission;
 
     /*Any required changes to the offer needed to comply*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceAdjustmentRequirement;
 
     /*The result of the compliance assessment*/
-    @MetaField
+    @MetaField(0)
     private String guidelineComplianceCheckAssessment;
 
     public void setGuidelineComplianceCheckType(String guidelineComplianceCheckType) {

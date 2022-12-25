@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DirectDebitFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityParameterType;
 
     /*A selected optional business service as subject matter of Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilitySelectedOption;
 
     /*The type of Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityType;
 
     /*Reference to Direct Debit Arrangement*/
@@ -24,15 +24,15 @@ public class DirectDebitFacility {
     private org.museframework.bian.classes.Object directDebitFacilityReference;
 
     /*Timetable to fulfill Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilitySchedule;
 
     /*The status of Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityStatus;
 
     /*The curreny which is arranged in Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityCurrency;
 
     /*Reference to the regulation which is defined in Direct Debit Arrangement*/
@@ -40,19 +40,19 @@ public class DirectDebitFacility {
     private org.museframework.bian.classes.Object directDebitFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Direct Debit Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Direct Debit Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityBookingLocation;
 
     /*The type of account which is linked to Direct Debit Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String directDebitFacilityAccountType;
 
     /*Reference to the account which is linked to Direct Debit Arrangement*/

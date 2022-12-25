@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ComplianceAssessment {
     /*The required status/situation before the routine can be undertaken*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentPreconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
@@ -16,7 +16,7 @@ public class ComplianceAssessment {
     private org.museframework.bian.classes.Object complianceAssessmentBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentWorkSchedule;
 
     /*The Compliance Reporting Administrative Plan specific Business Service*/
@@ -24,27 +24,27 @@ public class ComplianceAssessment {
     private org.museframework.bian.classes.BusinessService auditandReporting;
 
     /*The completion status once the routine has been completed (note the need to fulfill a routine may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentAuditandReportingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentAuditandReportingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentAuditandReportingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentAuditandReportingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String complianceAssessmentAuditandReportingServiceName;
 
     public void setComplianceAssessmentPreconditions(String complianceAssessmentPreconditions) {

@@ -23,7 +23,7 @@ public class CorporateTaxAdvisoryFacility {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the advisory sessions*/
-    @MetaField
+    @MetaField(0)
     private String corporateTaxAdvisoryWorkProducts;
 
     /*The document reference for associated documents such as disclosures and acceptance records*/
@@ -31,19 +31,19 @@ public class CorporateTaxAdvisoryFacility {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Target and actual dates for tasks performed (includes any specialist sessions)*/
-    @MetaField
+    @MetaField(0)
     private String corporateTaxAdviceSessionSchedule;
 
     /*The combination of the different tax advisory sessions and assessments provided to the customer*/
-    @MetaField
+    @MetaField(0)
     private String corporateTaxAdviceConsolidationRecord;
 
     /*Key dates and times associated with the advisory sessions (e.g. booking date, start date/time)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

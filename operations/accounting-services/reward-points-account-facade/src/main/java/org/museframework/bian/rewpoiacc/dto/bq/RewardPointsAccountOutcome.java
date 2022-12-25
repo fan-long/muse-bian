@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RewardPointsAccountOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAccountIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String rewardPointsAccountLog;
 
     public void setRewardPointsAccountIncident(String rewardPointsAccountIncident) {

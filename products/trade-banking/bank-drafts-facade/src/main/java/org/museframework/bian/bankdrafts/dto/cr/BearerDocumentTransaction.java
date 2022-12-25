@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BearerDocumentTransaction {
     /*A Classification value that distinguishes between business service transaction within Bearer Document Transaction*/
-    @MetaField
+    @MetaField(0)
     private String bearerDocumentTransactionParameterType;
 
     /*A selected optional business service as subject matter of Bearer Document Transaction*/
@@ -15,7 +15,7 @@ public class BearerDocumentTransaction {
     private org.museframework.bian.classes.Service bearerDocumentTransactionSelectedOption;
 
     /*The status of Bearer Document Transaction*/
-    @MetaField
+    @MetaField(0)
     private String bearerDocumentTransactionStatus;
 
     /*An unique reference to an item or an occurrence of Bearer Document Transaction*/
@@ -31,7 +31,7 @@ public class BearerDocumentTransaction {
     private org.museframework.bian.classes.PaymentInstruction bearerDocumentInstructionReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bearerDocumentInvolvedPartyReference;
 
     public void setBearerDocumentTransactionParameterType(String bearerDocumentTransactionParameterType) {

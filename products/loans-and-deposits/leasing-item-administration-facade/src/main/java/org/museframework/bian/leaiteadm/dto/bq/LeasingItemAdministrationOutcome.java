@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class LeasingItemAdministrationOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String leasingItemAdministrationPerformanceAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String leasingItemAdministrationActivityAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String leasingItemAdministrationAdministrativePlan;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String leasingItemAdministrationAdministrationTask;
 
     public void setLeasingItemAdministrationPerformanceAnalysis(String leasingItemAdministrationPerformanceAnalysis) {

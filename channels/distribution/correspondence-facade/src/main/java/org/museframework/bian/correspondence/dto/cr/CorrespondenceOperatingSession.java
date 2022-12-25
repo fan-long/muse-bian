@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CorrespondenceOperatingSession {
     /*Service activity statistics that are maintained during the session*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceServiceSessionStatistics;
 
     /*Session reports that can be accessed during the session (e.g. real-time status, session statistics)*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceServiceSessionReportType;
 
     /*The session activity report*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceServiceSessionReport;
 
     /*Key dates and times for the session*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceServiceSessionDate;
 
     public void setCorrespondenceServiceSessionStatistics(String correspondenceServiceSessionStatistics) {

@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PaymentRailOperatingSession {
     /*Timetable to operate Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionSchedule;
 
     /*The status of Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Payment Rail Operating Session*/
@@ -20,23 +20,23 @@ public class PaymentRailOperatingSession {
     private org.museframework.bian.classes.Log paymentRailOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Payment Rail Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String paymentRailOperatingSessionServiceType;
 
     /*The configuration of Payment Rail Operating Session*/

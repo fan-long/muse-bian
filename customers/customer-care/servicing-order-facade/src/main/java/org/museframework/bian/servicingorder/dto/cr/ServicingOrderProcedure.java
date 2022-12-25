@@ -16,7 +16,7 @@ public class ServicingOrderProcedure {
     private org.museframework.bian.classes.Object thirdPartyServicingMandateReference;
 
     /*The servicing mandate for a third party defines the customers and service access allowed*/
-    @MetaField
+    @MetaField(0)
     private String thirdPartyServicingMandate;
 
     /*The customer requesting the servicing order directly or the customer that is being serviced indirectly by the third party*/
@@ -28,19 +28,19 @@ public class ServicingOrderProcedure {
     private org.museframework.bian.classes.Object customerEligibilityAssessmentInstanceReference;
 
     /*The type of servicing order being processed (e.g. change of address, change of employment…)*/
-    @MetaField
+    @MetaField(0)
     private String servicingOrderType;
 
     /*The record for the servicing task*/
-    @MetaField
+    @MetaField(0)
     private String servicingOrderTaskRecord;
 
     /*Defines the processing tasks and their sequencing followed by the servicing order*/
-    @MetaField
+    @MetaField(0)
     private String servicingOrderDescription;
 
     /*The date and time that the servicing order is processed*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Employees involved in the servicing order*/
@@ -48,11 +48,11 @@ public class ServicingOrderProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String servicingOrderWorkProduct;
 
     /*The outcome of the servicing order*/
-    @MetaField
+    @MetaField(0)
     private String servicingOrderWorkTaskResult;
 
     public void setThirdPartyReference(org.museframework.bian.classes.Object thirdPartyReference) {

@@ -12,19 +12,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Operations {
     /*The intended schedule of operational tasks and product service availability*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceOperatingSchedule;
 
     /*Parameter used to configuring operations*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceConfigurationParameterType;
 
     /*Description describing the purpose, options and impact of the parameter*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceConfigurationParameterDescription;
 
     /*The default parameter setting and possible value range*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceConfigurationParameterSetting;
 
     public void setProductandServiceOperatingSchedule(String productandServiceOperatingSchedule) {

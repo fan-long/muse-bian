@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CaseAnalysis {
     /*The result of the case analysis*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseRootCause;
 
     public void setFraudCaseRootCause(String fraudCaseRootCause) {

@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Selection {
     /*The required status/situation prior to the execution of the task*/
-    @MetaField
+    @MetaField(0)
     private String selectionPreconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String selectionTaskSchedule;
 
     /*The Asset Securitization Transaction specific Business Service*/
@@ -20,27 +20,27 @@ public class Selection {
     private org.museframework.bian.classes.BusinessService assetSelection;
 
     /*The completion status and any triggered/dependent actions once the task has been completed*/
-    @MetaField
+    @MetaField(0)
     private String selectionPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String selectionAssetSelectionServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String selectionAssetSelectionServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String selectionAssetSelectionServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String selectionAssetSelectionServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String selectionAssetSelectionServiceName;
 
     public void setSelectionPreconditions(String selectionPreconditions) {

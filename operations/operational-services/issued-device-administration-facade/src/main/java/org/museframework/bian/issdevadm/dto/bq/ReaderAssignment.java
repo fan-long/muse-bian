@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ReaderAssignment {
     /*Serial number or other unique identifier*/
-    @MetaField
+    @MetaField(0)
     private String issuedReaderDeviceSerialNumber;
 
     /*Operating system version for smart devices*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The delivery address or tracked location if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String issueLocation;
 
     /*The reader configuration or set-up details as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceConfiguration;
 
     /*The timing and frequency of access/use - includes errors for fraud detection*/
-    @MetaField
+    @MetaField(0)
     private String usageLog;
 
     public void setIssuedReaderDeviceSerialNumber(String issuedReaderDeviceSerialNumber) {

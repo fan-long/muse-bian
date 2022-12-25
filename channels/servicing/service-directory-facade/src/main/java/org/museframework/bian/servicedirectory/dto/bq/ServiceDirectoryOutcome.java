@@ -11,7 +11,7 @@ public class ServiceDirectoryOutcome {
     private org.museframework.bian.classes.DirectoryEntry serviceDirectoryEntry;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String serviceDirectoryWorkProduct;
 
     public void setServiceDirectoryEntry(org.museframework.bian.classes.DirectoryEntry serviceDirectoryEntry) {

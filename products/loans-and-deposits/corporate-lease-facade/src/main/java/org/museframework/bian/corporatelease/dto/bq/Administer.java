@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Administer {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String administerPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String administerFeatureSchedule;
 
     /*The Corporate Lease Arrangement specific Business Service*/
@@ -20,27 +20,27 @@ public class Administer {
     private org.museframework.bian.classes.BusinessService corporateLeaseAdministration;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String administerPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String administerCorporateLeaseAdministrationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String administerCorporateLeaseAdministrationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String administerCorporateLeaseAdministrationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String administerCorporateLeaseAdministrationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String administerCorporateLeaseAdministrationServiceName;
 
     public void setAdministerPreconditions(String administerPreconditions) {

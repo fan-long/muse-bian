@@ -11,7 +11,7 @@ public class CashManagementAndAccountServicesFacility {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The associated cash management & account services account number in any suitable format (e.g. IBAN)*/
-    @MetaField
+    @MetaField(0)
     private String cashManagementAndAccountServicesAccountNumber;
 
     /*Reference to the account primary party/owner*/
@@ -23,11 +23,11 @@ public class CashManagementAndAccountServicesFacility {
     private org.museframework.bian.classes.Object bankBranchLocationReference;
 
     /*The type of cash management and account services account (e.g. corporate, small business)*/
-    @MetaField
+    @MetaField(0)
     private String accountType;
 
     /*The primary account currency*/
-    @MetaField
+    @MetaField(0)
     private String accountCurrency;
 
     /*Reference identifier linking the account to appropriate tax handling*/
@@ -35,31 +35,31 @@ public class CashManagementAndAccountServicesFacility {
     private org.museframework.bian.classes.Object taxReference;
 
     /*The definition of an applicable entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionDefinition;
 
     /*The setting for the entitlement option*/
-    @MetaField
+    @MetaField(0)
     private String entitlementOptionSetting;
 
     /*The definition of an applicable restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionDefinition;
 
     /*The setting for the restriction option*/
-    @MetaField
+    @MetaField(0)
     private String restrictionOptionSetting;
 
     /*Definition of the associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String associations;
 
     /*The type of association (e.g. guarantor, co-signer)*/
-    @MetaField
+    @MetaField(0)
     private String associationType;
 
     /*Description of the role, obligations or entitlements of the associated party*/
-    @MetaField
+    @MetaField(0)
     private String associationObligationEntitlement;
 
     /*Reference to the associated party*/
@@ -67,39 +67,39 @@ public class CashManagementAndAccountServicesFacility {
     private org.museframework.bian.classes.Object associationReference;
 
     /*Definition of the associations to the account*/
-    @MetaField
+    @MetaField(0)
     private String linkedAccounts;
 
     /*The type and purpose for the link*/
-    @MetaField
+    @MetaField(0)
     private String linkType;
 
     /*Details of the linked account*/
-    @MetaField
+    @MetaField(0)
     private String accountDetails;
 
     /*Position limits that are maintained by the account*/
-    @MetaField
+    @MetaField(0)
     private String positionLimits;
 
     /*The type of position maintained for the account (e.g. transaction credit/debit, netting, position)*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitType;
 
     /*The position definition, associated limit settings and rules*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitSettings;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String positionLimitValue;
 
     /*Key dates associated with the account (e.g. opening date, closing date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

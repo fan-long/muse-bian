@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradingCreditPositionMeasurement {
     /*A Classification value that distinguishes between states according to the type of business services and/or type of concern defined within Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementParameterType;
 
     /*A selected optional business service as subject matter of Trading Credit Position Measurement*/
@@ -15,7 +15,7 @@ public class TradingCreditPositionMeasurement {
     private org.museframework.bian.classes.BusinessService tradingCreditPositionMeasurementSelectedOption;
 
     /*The type of Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementType;
 
     /*An unique reference to an item or an occurrence of Trading Credit Position Measurement*/
@@ -23,15 +23,15 @@ public class TradingCreditPositionMeasurement {
     private org.museframework.bian.classes.Object tradingCreditPositionMeasurementReference;
 
     /*Documentation of Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementDescription;
 
     /*Timetable to monitor Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementSchedule;
 
     /*The status of Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementStatus;
 
     /*Reference to the log of (usage) ativities/events  of Trading Credit Position Measurement*/
@@ -43,7 +43,7 @@ public class TradingCreditPositionMeasurement {
     private org.museframework.bian.classes.Log tradingCreditPositionMeasurementUpdateLog;
 
     /*Reference to the customer who is involved in Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementCustomerReference;
 
     /*Reference to the product which is the subject matter of Trading Credit Position Measurement*/
@@ -51,7 +51,7 @@ public class TradingCreditPositionMeasurement {
     private org.museframework.bian.classes.BankingProduct tradingCreditPositionMeasurementProductReference;
 
     /*The configuration of Trading Credit Position Measurement*/
-    @MetaField
+    @MetaField(0)
     private String tradingCreditPositionMeasurementServiceConfiguration;
 
     /*Reference to Tresholds and Limits for monitoring Trading Credit Position Measurement*/

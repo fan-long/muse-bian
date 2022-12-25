@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductDirectoryEntry {
     /*The current version of the product referenced in the directory*/
-    @MetaField
+    @MetaField(0)
     private String productVersion;
 
     /*Any configuration settings for the directory entry (e.g. generally available, provisional)*/
-    @MetaField
+    @MetaField(0)
     private String productDirectoryEntryConfiguration;
 
     public void setProductVersion(String productVersion) {

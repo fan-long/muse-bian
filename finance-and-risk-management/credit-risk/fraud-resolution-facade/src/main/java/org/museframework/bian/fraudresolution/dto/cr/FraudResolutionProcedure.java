@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FraudResolutionProcedure {
     /*Type of case (e.g.  disputed charge, merchant fraud, stolen/fake device)*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseType;
 
     /*Reference to the product/service associated with case*/
@@ -35,15 +35,15 @@ public class FraudResolutionProcedure {
     private org.museframework.bian.classes.Object transactionReference;
 
     /*Record contains all details of the transaction (not itemized)*/
-    @MetaField
+    @MetaField(0)
     private String transactionRecord;
 
     /*Record of a physical address or electronic venue the fraud was detected*/
-    @MetaField
+    @MetaField(0)
     private String caseLocation;
 
     /*Specific dates and ties of significance to the case*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Business unit and or employee reference where the case was raised*/
@@ -51,15 +51,15 @@ public class FraudResolutionProcedure {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*File of consolidated notes, forms and documents for the case*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseWorkProducts;
 
     /*Target and actual dates for case processing/resolution*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseResolutionSchedule;
 
     /*The processing status for the case*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseStatus;
 
     public void setFraudCaseType(String fraudCaseType) {

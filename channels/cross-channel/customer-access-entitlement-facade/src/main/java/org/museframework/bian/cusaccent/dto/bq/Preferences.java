@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Preferences {
     /*Assembles a number of channel access preferences*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessPreferencesRecord;
 
     /*Reference to one of possibly several preferences*/
@@ -17,23 +17,23 @@ public class Preferences {
     private org.museframework.bian.classes.Object channelAccessPreferenceReference;
 
     /*The type of preference (e.g. for correspondence)*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessPreferenceType;
 
     /*Consolidates details of the preference*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessPreferenceProfile;
 
     /*Details the specific device or channel with the preference*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessChannelDeviceType;
 
     /*Details the preference (e.g. no paper correspondence, no solicitations)*/
-    @MetaField
+    @MetaField(0)
     private String channelAccessChannelDeviceTypePreference;
 
     /*The types of product and service to which this preference applies*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     public void setChannelAccessPreferencesRecord(String channelAccessPreferencesRecord) {

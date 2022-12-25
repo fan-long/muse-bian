@@ -7,51 +7,51 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Interest {
     /*Applicable rate type*/
-    @MetaField
+    @MetaField(0)
     private String interestRateType;
 
     /*The processing schedule for applying interest rates to the account*/
-    @MetaField
+    @MetaField(0)
     private String interestRateApplicationSchedule;
 
     /*The collection of applicable rates*/
-    @MetaField
+    @MetaField(0)
     private String interestRateConfiguration;
 
     /*The rate value to be applied*/
-    @MetaField
+    @MetaField(0)
     private String rate;
 
     /*The record of applied interest*/
-    @MetaField
+    @MetaField(0)
     private String interestApplicationRecord;
 
     /*A record of applied interest*/
-    @MetaField
+    @MetaField(0)
     private String interestTransaction;
 
     /*General description of the interest transaction*/
-    @MetaField
+    @MetaField(0)
     private String transactionDescription;
 
     /*Applicable rate type*/
-    @MetaField
+    @MetaField(0)
     private String transactionRateType;
 
     /*The derived interest amount to be applied*/
-    @MetaField
+    @MetaField(0)
     private String transactionInterestCharge;
 
     /*Record of accrued interest*/
-    @MetaField
+    @MetaField(0)
     private String interestAccrualAmount;
 
     /*The interest type being tracked*/
-    @MetaField
+    @MetaField(0)
     private String interestAccrualType;
 
     /*The accrued amount of applied interest*/
-    @MetaField
+    @MetaField(0)
     private String interestAccrualCharge;
 
     public void setInterestRateType(String interestRateType) {

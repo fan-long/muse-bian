@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class AdvertisingCampaignManagementPlan {
     /*The collection of advertising campaigns that is used to assess performance and coverage and direct development and execution activity*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignPortfolio;
 
     /*The type of advertising campaign (e.g. media, mailshot, web-based)*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignType;
 
     /*A description of the campaign that clarifies the content and media to be used in the advertising campaign and outlines the target audience*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignDescription;
 
     /*Metrics that are defined to assess the target and actual impact of the campaign*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignMetrics;
 
     /*A description of the metric, defining how it is to be measured in deployment*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignMetricDefinition;
 
     /*A description of the target performance for the metric that can be defined for different usage scenarios as appropriate*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignMetricGoal;
 
     /*Maintains a record of the use and impact of the advertising campaign*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignPerformanceRecord;
 
     /*Reference to the advertising campaign execution*/
@@ -40,7 +40,7 @@ public class AdvertisingCampaignManagementPlan {
     private org.museframework.bian.classes.Object advertisingCampaignProcedureInstanceReference;
 
     /*The execution plan for the advertising campaign, including external agencies employed, content development and execution tasks*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignExecutionPlan;
 
     /*Reference to the business unit responsible for the campaign execution*/
@@ -48,11 +48,11 @@ public class AdvertisingCampaignManagementPlan {
     private org.museframework.bian.classes.Object employeeBusinessUnitReference;
 
     /*The period over which the advertising is executed*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignDuration;
 
     /*The result/impact of the overall advertising campaign event (can refer to any detected up-tick in sales or servicing activity)*/
-    @MetaField
+    @MetaField(0)
     private String advertisingCampaignProcedureResult;
 
     public void setAdvertisingCampaignPortfolio(String advertisingCampaignPortfolio) {

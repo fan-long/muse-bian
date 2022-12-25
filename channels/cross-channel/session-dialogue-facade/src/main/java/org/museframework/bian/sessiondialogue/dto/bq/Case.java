@@ -14,11 +14,11 @@ public class Case {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of case being processed including any supporting narrative (e.g. disputed charges, suspected account fraud, stolen device, change of status)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseType;
 
     /*The result of the invocation (e.g. case active)*/
-    @MetaField
+    @MetaField(0)
     private String caseTaskResult;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

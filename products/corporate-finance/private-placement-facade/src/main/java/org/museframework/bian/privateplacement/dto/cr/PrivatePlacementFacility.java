@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class PrivatePlacementFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Private Placement Facility*/
@@ -15,15 +15,15 @@ public class PrivatePlacementFacility {
     private org.museframework.bian.classes.Feature privatePlacementFacilitySelectedOption;
 
     /*The status of Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityStatus;
 
     /*Reference to the party who is involved in Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityAssociatedParty;
 
     /*The curreny which is arranged in Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityCurrency;
 
     /*Reference to the regulation which is defined in Private Placement Facility*/
@@ -31,7 +31,7 @@ public class PrivatePlacementFacility {
     private org.museframework.bian.classes.RuleSet privatePlacementFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Private Placement Facility in case of legal dispute.*/
@@ -47,7 +47,7 @@ public class PrivatePlacementFacility {
     private org.museframework.bian.classes.Account privatePlacementFacilityAccountReference;
 
     /*Reference to the customer who is involved in Private Placement Facility*/
-    @MetaField
+    @MetaField(0)
     private String privatePlacementFacilityCustomerReference;
 
     /*The position of Private Placement Facility*/

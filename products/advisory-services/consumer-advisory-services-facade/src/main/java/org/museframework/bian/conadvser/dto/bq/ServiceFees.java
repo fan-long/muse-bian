@@ -7,23 +7,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ServiceFees {
     /*The record of applied fees for the specialist advice*/
-    @MetaField
+    @MetaField(0)
     private String feeApplicationRecord;
 
     /*A record of an applied fee*/
-    @MetaField
+    @MetaField(0)
     private String feeTransaction;
 
     /*General description of the fee*/
-    @MetaField
+    @MetaField(0)
     private String feeTransactionDescription;
 
     /*The fee type applied*/
-    @MetaField
+    @MetaField(0)
     private String feeTransactionType;
 
     /*The derived fee amount to be charged*/
-    @MetaField
+    @MetaField(0)
     private String feeTransactionCharge;
 
     public void setFeeApplicationRecord(String feeApplicationRecord) {

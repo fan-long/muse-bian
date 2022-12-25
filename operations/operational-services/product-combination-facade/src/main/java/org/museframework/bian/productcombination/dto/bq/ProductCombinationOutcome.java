@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductCombinationOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String productCombinationWorkProduct;
 
     public void setProductCombinationFinancialFacility(String productCombinationFinancialFacility) {

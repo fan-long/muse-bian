@@ -11,11 +11,11 @@ public class FundInvestor_MiddleandBackOfficeServiceRoutine {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for performing the routine*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in completing the routine*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Fund Investor, Middle and Back Office Service Routine specific Business Service*/
@@ -35,7 +35,7 @@ public class FundInvestor_MiddleandBackOfficeServiceRoutine {
     private org.museframework.bian.classes.PlannedAction fundInvestor_MiddleandBackOfficeServiceRoutineReference;
 
     /*The type of Fund Investor, Middle and Back Office Service Routine*/
-    @MetaField
+    @MetaField(0)
     private String fundInvestor_MiddleandBackOfficeServiceRoutineType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

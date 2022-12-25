@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class HROperations {
     /*The consolidated aspects of the staffing operations deployment tasks*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentHROperationsRequirements;
 
     /*File of consolidated deployment planning and deliverable specifications for the task*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentHROperationsRequirementsWorkProducts;
 
     /*Reference to associated documents*/
@@ -21,7 +21,7 @@ public class HROperations {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Details the tasks and deliverables needed to handle the staffing operations needs of the deployment*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceDeploymentHROperationsRequirementsTaskSpecification;
 
     public void setProductandServiceDeploymentHROperationsRequirements(String productandServiceDeploymentHROperationsRequirements) {

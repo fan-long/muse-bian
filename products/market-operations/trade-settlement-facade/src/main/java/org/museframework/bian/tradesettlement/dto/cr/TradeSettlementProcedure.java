@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TradeSettlementProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureParameterType;
 
     /*A selected optional business service as subject matter of Trade Settlement Procedure*/
@@ -19,23 +19,23 @@ public class TradeSettlementProcedure {
     private org.museframework.bian.classes.Instruction tradeSettlementProcedureRequest;
 
     /*Timetable to process Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureSchedule;
 
     /*The status of Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureStatus;
 
     /*Reference to the party who is involved in Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureAssociatedPartyReference;
 
     /*Reference to the business unit which is involved in Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureBusinessUnitReference;
 
     /*Reference to the party who is the service provider of Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureServiceProviderReference;
 
     /*Reference to the Financial Facility related to Trade Settlement Procedure*/
@@ -43,23 +43,23 @@ public class TradeSettlementProcedure {
     private org.museframework.bian.classes.FinancialFacility tradeSettlementProcedureFinancialFacilityReference;
 
     /*Reference to the employee who is involved in Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureEmployeeReference;
 
     /*Reference to the customer who is involved in Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureType;
 
     /*The schedule according to which the service provider will process the Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Trade Settlement Procedure*/
-    @MetaField
+    @MetaField(0)
     private String tradeSettlementProcedureServiceType;
 
     /*Reference to the product or service that is related to Trade Settlement Procedure*/

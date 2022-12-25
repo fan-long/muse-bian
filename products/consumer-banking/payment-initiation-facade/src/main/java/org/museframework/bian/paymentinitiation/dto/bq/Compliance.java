@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Compliance {
     /*The type of compliance check performed (e.g. AML, Watchlists)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionComplianceCheckType;
 
     /*The outcome of the compliance check*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionComplianceCheckResult;
 
     /*Details of the overall compliance checking process*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionComplianceTaskResult;
 
     public void setPaymentTransactionComplianceCheckType(String paymentTransactionComplianceCheckType) {

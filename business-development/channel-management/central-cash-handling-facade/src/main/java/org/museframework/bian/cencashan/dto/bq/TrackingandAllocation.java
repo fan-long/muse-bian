@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class TrackingandAllocation {
     /*The required status/situation before the allocation can be made*/
-    @MetaField
+    @MetaField(0)
     private String trackingandAllocationPreconditions;
 
     /*The schedule and timing of allocation decisions*/
-    @MetaField
+    @MetaField(0)
     private String trackingandAllocationAllocationSchedule;
 
     /*The Central Cash Allocation specific  Business Service*/
@@ -21,23 +21,23 @@ public class TrackingandAllocation {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String serviceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String serviceName;
 
     public void setTrackingandAllocationPreconditions(String trackingandAllocationPreconditions) {

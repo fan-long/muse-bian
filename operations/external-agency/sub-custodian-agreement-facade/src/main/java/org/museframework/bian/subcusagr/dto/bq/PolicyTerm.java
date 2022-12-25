@@ -11,7 +11,7 @@ public class PolicyTerm {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*Any timing/duration considerations applying to the Policy Term*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Policy Term specific Business Service*/
@@ -27,11 +27,11 @@ public class PolicyTerm {
     private org.museframework.bian.classes.Arrangement policyTermReference;
 
     /*The type of Policy Term*/
-    @MetaField
+    @MetaField(0)
     private String policyTermType;
 
     /*The type of bank policy referenced (e.g. staff certification)*/
-    @MetaField
+    @MetaField(0)
     private String bankPolicy_RuleType;
 
     /*Reference to the bank's policies or rules*/
@@ -39,7 +39,7 @@ public class PolicyTerm {
     private org.museframework.bian.classes.Object applicableBankPolicy_RuleReference;
 
     /*Explanation or interpretation of the policy or rule as applied*/
-    @MetaField
+    @MetaField(0)
     private String applicableBankPolicy_RuleInterpretation;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

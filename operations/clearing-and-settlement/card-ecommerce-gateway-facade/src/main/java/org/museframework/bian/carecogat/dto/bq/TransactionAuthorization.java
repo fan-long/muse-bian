@@ -14,7 +14,7 @@ public class TransactionAuthorization {
     private org.museframework.bian.classes.Object eCommerceTransactionInstanceReference;
 
     /*The result of the transaction authorization request*/
-    @MetaField
+    @MetaField(0)
     private String eCommerceTransactionAuthorizationResponse;
 
     public void seteCommerceTransactionInstanceReference(org.museframework.bian.classes.Object eCommerceTransactionInstanceReference) {

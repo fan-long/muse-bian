@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Troubleshooting {
     /*The required status/situation before the duty/obligation can be met*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
@@ -17,7 +17,7 @@ public class Troubleshooting {
     private org.museframework.bian.classes.Object troubleshootingBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingWorkSchedule;
 
     /*The Branch Location Management Plan specific Business Service*/
@@ -25,27 +25,27 @@ public class Troubleshooting {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String troubleshootingServiceName;
 
     public void setTroubleshootingPreconditions(String troubleshootingPreconditions) {

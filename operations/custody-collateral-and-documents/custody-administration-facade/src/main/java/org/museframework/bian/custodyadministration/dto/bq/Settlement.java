@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Settlement {
     /*The required status/situation prior to the implementation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String settlementPreconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String settlementFeatureSchedule;
 
     /*The Custody Arrangement specific Business Service*/
@@ -21,27 +21,27 @@ public class Settlement {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status and any triggered/dependent actions once the feature instance has been fulfilled*/
-    @MetaField
+    @MetaField(0)
     private String settlementPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String settlementServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String settlementServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String settlementServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String settlementServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String settlementServiceName;
 
     public void setSettlementPreconditions(String settlementPreconditions) {

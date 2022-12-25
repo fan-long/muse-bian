@@ -11,7 +11,7 @@ public class SellerObligationConfirmationTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Seller Obligation Confirmation Task specific Business Service*/
@@ -27,7 +27,7 @@ public class SellerObligationConfirmationTask {
     private org.museframework.bian.classes.Transaction letterOfCreditTransactionReference;
 
     /*The type of Seller Obligation Confirmation Task*/
-    @MetaField
+    @MetaField(0)
     private String sellerObligationConfirmationTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

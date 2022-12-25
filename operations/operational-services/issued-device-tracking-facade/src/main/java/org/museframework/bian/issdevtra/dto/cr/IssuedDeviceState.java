@@ -15,7 +15,7 @@ public class IssuedDeviceState {
     private org.museframework.bian.classes.Object issuedDeviceAllocationInstanceReference;
 
     /*Is the status of the issued device that is updated*/
-    @MetaField
+    @MetaField(0)
     private String issuedDeviceAllocationStatus;
 
     public void setInformationFeedProviderReference(org.museframework.bian.classes.Object informationFeedProviderReference) {

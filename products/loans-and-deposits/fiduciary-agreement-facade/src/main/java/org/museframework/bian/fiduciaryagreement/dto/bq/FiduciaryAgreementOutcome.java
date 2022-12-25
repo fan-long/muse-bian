@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FiduciaryAgreementOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryAgreementFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String fiduciaryAgreementWorkProduct;
 
     public void setFiduciaryAgreementFinancialFacility(String fiduciaryAgreementFinancialFacility) {

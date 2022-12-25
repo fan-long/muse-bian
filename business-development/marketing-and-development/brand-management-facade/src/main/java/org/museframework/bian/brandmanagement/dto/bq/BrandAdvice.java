@@ -10,23 +10,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BrandAdvice {
     /*The type of work task (e.g. assess brand exposure, incorporate brand in design)*/
-    @MetaField
+    @MetaField(0)
     private String brandAdviceWorkTaskType;
 
     /*The make-up of the advice task performed, includes schedule of meetings/working sessions and provision of guidance materials*/
-    @MetaField
+    @MetaField(0)
     private String brandAdviceWorkTask;
 
     /*File of consolidated notes, evaluations and recommendations for the work task*/
-    @MetaField
+    @MetaField(0)
     private String brandAdviceWorkTaskWorkProducts;
 
     /*Details of the outcome or result of the work task - capturing any use of brand that might requires tracking*/
-    @MetaField
+    @MetaField(0)
     private String brandAdviceWorkTaskResult;
 
     /*The date-time associated with the delivery of brand advice task*/
-    @MetaField
+    @MetaField(0)
     private String brandAdviceWorkTaskDate_Time;
 
     public void setBrandAdviceWorkTaskType(String brandAdviceWorkTaskType) {

@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MerchandisingLoanOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String merchandisingLoanWorkProduct;
 
     public void setMerchandisingLoanFinancialFacility(String merchandisingLoanFinancialFacility) {

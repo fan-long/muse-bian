@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Matching {
     /*Details of the transaction matching processing*/
-    @MetaField
+    @MetaField(0)
     private String matchingTaskResult;
 
     public void setMatchingTaskResult(String matchingTaskResult) {

@@ -11,11 +11,11 @@ public class StockSplitorReversalActionWorkstep {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for the workstep*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Stock Split or Reversal Action Workstep specific Business Service*/
@@ -35,7 +35,7 @@ public class StockSplitorReversalActionWorkstep {
     private org.museframework.bian.classes.Workstep stockSplitorReversalActionWorkstepReference;
 
     /*The type of Stock Split or Reversal Action Workstep*/
-    @MetaField
+    @MetaField(0)
     private String stockSplitorReversalActionWorkstepType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

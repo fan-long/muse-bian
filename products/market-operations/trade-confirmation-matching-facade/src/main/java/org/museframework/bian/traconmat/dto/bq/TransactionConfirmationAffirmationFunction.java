@@ -11,7 +11,7 @@ public class TransactionConfirmationAffirmationFunction {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Transaction Confirmation/Affirmation Function specific Business Service*/
@@ -27,7 +27,7 @@ public class TransactionConfirmationAffirmationFunction {
     private org.museframework.bian.classes.Function transactionConfirmationorAffirmationFunctionReference;
 
     /*The type of Transaction Confirmation/Affirmation Function*/
-    @MetaField
+    @MetaField(0)
     private String transactionConfirmationorAffirmationFunctionType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

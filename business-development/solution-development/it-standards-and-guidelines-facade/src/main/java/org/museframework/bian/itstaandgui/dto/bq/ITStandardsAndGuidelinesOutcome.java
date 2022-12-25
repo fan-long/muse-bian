@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ITStandardsAndGuidelinesOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String ITStandardsAndGuidelinesTask;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String ITStandardsAndGuidelinesDesign;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String ITStandardsAndGuidelinesWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String ITStandardsAndGuidelinesImpactAnalysis;
 
     public void setITStandardsAndGuidelinesTask(String ITStandardsAndGuidelinesTask) {

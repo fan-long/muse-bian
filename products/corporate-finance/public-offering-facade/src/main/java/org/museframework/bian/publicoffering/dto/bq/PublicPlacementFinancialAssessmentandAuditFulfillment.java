@@ -11,7 +11,7 @@ public class PublicPlacementFinancialAssessmentandAuditFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Public Placement Financial Assessment and Audit Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class PublicPlacementFinancialAssessmentandAuditFulfillment {
     private org.museframework.bian.classes.Object publicPlacementFinancialAssessmentandAuditFulfillmentReference;
 
     /*The type of Public Placement Financial Assessment and Audit Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String publicPlacementFinancialAssessmentandAuditFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

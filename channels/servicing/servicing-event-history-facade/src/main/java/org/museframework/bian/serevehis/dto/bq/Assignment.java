@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Assignment {
     /*Key dates and times associated with the assignment (e.g. start, end, break duration, available/idle time)*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     /*Log of servicing activity at that position during the session (e.g. contacts, sales, issues, breaks)*/
-    @MetaField
+    @MetaField(0)
     private String servicingPositionActivityReport;
 
     /*Accumulated statistics during the session (e.g. average contact time, wait time, service utilization, facility usage)*/
-    @MetaField
+    @MetaField(0)
     private String servicingPositionActivityStatistics;
 
     public void setDateTimeLocation(String dateTimeLocation) {

@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class MarketOpportunities {
     /*Description of the detected market opportunity (e.g. projected movement of an eligible security that is not currently held)*/
-    @MetaField
+    @MetaField(0)
     private String marketOpportunityDescription;
 
     /*Evaluation of the comparative performance of identified security and that in the investment portfolio that would be replaced/adjusted*/
-    @MetaField
+    @MetaField(0)
     private String securitiesComparison;
 
     public void setMarketOpportunityDescription(String marketOpportunityDescription) {

@@ -12,7 +12,7 @@ public class PaymentExecutionProcedure {
     private org.museframework.bian.classes.Object ACHAccessServiceSessionReference;
 
     /*The published gateway service availability*/
-    @MetaField
+    @MetaField(0)
     private String ACHAccessSchedule;
 
     /*Reference to the SWIFT gateway service used to execute correspondent payments*/
@@ -20,7 +20,7 @@ public class PaymentExecutionProcedure {
     private org.museframework.bian.classes.Object correspondentServiceSessionReference;
 
     /*The published gateway service availability*/
-    @MetaField
+    @MetaField(0)
     private String correspondentServiceAccessSchedule;
 
     /*Reference to the initiator of the transaction*/
@@ -56,19 +56,19 @@ public class PaymentExecutionProcedure {
     private org.museframework.bian.classes.Object payeeProductInstanceReference;
 
     /*Key amounts included in the transaction*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Currency for the amounts*/
-    @MetaField
+    @MetaField(0)
     private String currency;
 
     /*Key dates associated with the transaction (e.g. order, booking, execution, value date, interest bearing)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*….*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*Reference to any internal accounts used in processing*/
@@ -80,7 +80,7 @@ public class PaymentExecutionProcedure {
     private org.museframework.bian.classes.Object intermediaryAccountReference;
 
     /*Requested and actual payment mechanism used*/
-    @MetaField
+    @MetaField(0)
     private String paymentMechanismType;
 
     public void setACHAccessServiceSessionReference(org.museframework.bian.classes.Object ACHAccessServiceSessionReference) {

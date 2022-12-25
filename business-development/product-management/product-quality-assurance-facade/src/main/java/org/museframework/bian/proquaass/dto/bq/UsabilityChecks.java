@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class UsabilityChecks {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
@@ -25,23 +25,23 @@ public class UsabilityChecks {
     private org.museframework.bian.classes.BusinessService usabilityChecks;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String usabilityChecksServiceName;
 
     public void setUsabilityChecksPreconditions(String usabilityChecksPreconditions) {

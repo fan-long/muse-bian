@@ -7,27 +7,27 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Payments {
     /*The type of payment transaction (e.g. customer payment, standing order, direct debit, bill pay)*/
-    @MetaField
+    @MetaField(0)
     private String paymentType;
 
     /*Definition of the type of payment including processing rules and guidelines*/
-    @MetaField
+    @MetaField(0)
     private String paymentDefinition;
 
     /*Definition of the processing option and impact (e.g. frequency and cumulative amount constraints)*/
-    @MetaField
+    @MetaField(0)
     private String paymentProcessingOptionDefinition;
 
     /*The option setting*/
-    @MetaField
+    @MetaField(0)
     private String paymentProcessingOptionSetting;
 
     /*Configuration setting for various payment transaction types*/
-    @MetaField
+    @MetaField(0)
     private String paymentConfiguration;
 
     /*Processing schedule for repeating payments for standing orders (e.g. start date, end, period, number/cycles). Note this triggers an internal execution call as necessary*/
-    @MetaField
+    @MetaField(0)
     private String paymentSchedule;
 
     /*Reference to the applicable mandate for direct debits*/
@@ -35,7 +35,7 @@ public class Payments {
     private org.museframework.bian.classes.Object directDebitMandateReference;
 
     /*Processing settings governing direct debits*/
-    @MetaField
+    @MetaField(0)
     private String directDebitMandateSettings;
 
     /*Reference to the applicable mandate for bill pay transactions*/
@@ -43,15 +43,15 @@ public class Payments {
     private org.museframework.bian.classes.Object billPayMandateReference;
 
     /*Processing settings governing bill pay transactions*/
-    @MetaField
+    @MetaField(0)
     private String billPayMandateSettings;
 
     /*The general payment transaction with all major attributes - some optional depending on type*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransaction;
 
     /*The type of payment transaction (e.g. customer payment, standing order, direct debit, bill pay)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionType;
 
     /*Reference to the party to whom the payment is made*/
@@ -67,27 +67,27 @@ public class Payments {
     private org.museframework.bian.classes.Object paymentTransactionPayeeBankReference;
 
     /*The amount (and currency if applicable) of the payment*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionAmount;
 
     /*The fee type applied to the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionFeeType;
 
     /*The fee charge applied to the transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionFeeCharge;
 
     /*The various key dates and times associated with the payment transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionDate;
 
     /*Requested payment mechanism (e.g. Wire, ACH)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionPaymentMechanism;
 
     /*Description of the purpose including any external reference to the transaction*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionPaymentPurpose;
 
     /*Reference to the location the payment transaction is initiated from*/
@@ -95,7 +95,7 @@ public class Payments {
     private org.museframework.bian.classes.Object paymentTransactionBankBranchLocationReference;
 
     /*The processing status of the transaction (e.g. captured, approved, initiated, confirmed, settled)*/
-    @MetaField
+    @MetaField(0)
     private String paymentTransactionStatus;
 
     public void setPaymentType(String paymentType) {

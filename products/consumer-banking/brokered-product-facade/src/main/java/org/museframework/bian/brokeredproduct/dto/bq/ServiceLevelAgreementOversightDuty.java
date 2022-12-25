@@ -11,11 +11,11 @@ public class ServiceLevelAgreementOversightDuty {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
-    @MetaField
+    @MetaField(0)
     private String businessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Service Level Agreement Oversight Duty specific Business Service*/
@@ -35,7 +35,7 @@ public class ServiceLevelAgreementOversightDuty {
     private org.museframework.bian.classes.PlannedAction serviceLevelAgreementOversightDutyReference;
 
     /*The type of Service Level Agreement Oversight Duty*/
-    @MetaField
+    @MetaField(0)
     private String serviceLevelAgreementOversightDutyType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

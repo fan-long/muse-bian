@@ -11,11 +11,11 @@ public class AssetandLiabilityValuationTest {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String versionNumber;
 
     /*The Asset and Liability Valuation Test specific Business Service*/
@@ -31,7 +31,7 @@ public class AssetandLiabilityValuationTest {
     private org.museframework.bian.classes.Test assetandLiabilityValuationTestReference;
 
     /*The type of Asset and Liability Valuation Test*/
-    @MetaField
+    @MetaField(0)
     private String assetandLiabilityValuationTestType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

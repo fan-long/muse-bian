@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FinancialBookingLog {
     /*The type of accounting facility (e.g. journal, sub-ledger)*/
-    @MetaField
+    @MetaField(0)
     private String financialAccountType;
 
     /*Reference to the associated product or service for which this is the underlying accounting*/
@@ -19,15 +19,15 @@ public class FinancialBookingLog {
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*Reference to applicable account booking rules*/
-    @MetaField
+    @MetaField(0)
     private String chartofAccountBookingRules;
 
     /*The currency for the postings*/
-    @MetaField
+    @MetaField(0)
     private String baseCurrency;
 
     /*Status of the financial log (e.g. active, in-suspense)*/
-    @MetaField
+    @MetaField(0)
     private String status;
 
     public void setFinancialAccountType(String financialAccountType) {

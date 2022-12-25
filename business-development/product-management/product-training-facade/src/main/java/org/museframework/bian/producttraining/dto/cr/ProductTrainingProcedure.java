@@ -9,23 +9,23 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductTrainingProcedure {
     /*A Classification value that distinguishes between Procedures according to the type of business services and/or type of concern defined within Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureParameterType;
 
     /*A selected optional business service as subject matter of Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureSelectedOption;
 
     /*Request to process ProductTraining*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureRequest;
 
     /*Timetable to process ProductTraining*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureSchedule;
 
     /*The status of Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureStatus;
 
     /*Reference to the party who is involved in Product Training Procedure*/
@@ -53,35 +53,35 @@ public class ProductTrainingProcedure {
     private org.museframework.bian.classes.Object productTrainingProcedureCustomerReference;
 
     /*A Classification value that distinguishes between the type of process undertaken within Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureType;
 
     /*The schedule according to which the service provider will process the Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services in Product Training Procedure */
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureServiceType;
 
     /*A Classification value that distinguishes between the type of products/services related to Product Training Procedure */
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureProductandServiceType;
 
     /*Reference to the product or service that is related to  Product Training Procedure*/
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureProductandServiceInstance;
 
     /*A Classification value that distinguishes between the type of transactions in Product Training Procedure */
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureTransactionType;
 
     /*Reference to the transaction that is related to  Product Training Procedure */
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureTransaction;
 
     /*Reference to the Financial Transaction Arrangement that is related to  Product Training Procedure */
-    @MetaField
+    @MetaField(0)
     private String productTrainingProcedureFinancialTransactionArrangement;
 
     /*Reference to the Customer Agreement that is related to  Product Training Procedure */

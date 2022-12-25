@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ChequeProcessingOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String chequeProcessingProvision;
 
     public void setChequeProcessingIncident(String chequeProcessingIncident) {

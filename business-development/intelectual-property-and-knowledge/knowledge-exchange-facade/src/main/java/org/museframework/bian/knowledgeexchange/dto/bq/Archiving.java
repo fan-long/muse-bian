@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Archiving {
     /*The required status/situation and or tasks that need to be completed prior to the invocation of the feature*/
-    @MetaField
+    @MetaField(0)
     private String archivingPreconditions;
 
     /*The schedule and timing of the function*/
-    @MetaField
+    @MetaField(0)
     private String archivingFunctionSchedule;
 
     /*The Intellectual Property Exchange Operating Session specific Business Service*/
@@ -20,23 +20,23 @@ public class Archiving {
     private org.museframework.bian.classes.BusinessService contentArchiving;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String contentArchivingServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String contentArchivingServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String contentArchivingServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String contentArchivingServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String contentArchivingServiceName;
 
     public void setArchivingPreconditions(String archivingPreconditions) {

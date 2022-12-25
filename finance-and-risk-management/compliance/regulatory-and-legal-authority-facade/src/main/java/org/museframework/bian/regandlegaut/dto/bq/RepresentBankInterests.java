@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RepresentBankInterests {
     /*The required status/situation before the duty/obligation can be met*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsPreconditions;
 
     /*The operating unit/employee responsible for undertaking the duty*/
@@ -16,7 +16,7 @@ public class RepresentBankInterests {
     private org.museframework.bian.classes.Object representBankInterestsBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones involved in fulfilling the duty*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsWorkSchedule;
 
     /*The Regulatory&Legal Authority Relationship ManagementPlan specific Business Service*/
@@ -24,27 +24,27 @@ public class RepresentBankInterests {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*The completion status once the duty has been complied with (note the need to fulfill a duty may recur frequently)*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String representBankInterestsServiceName;
 
     public void setRepresentBankInterestsPreconditions(String representBankInterestsPreconditions) {

@@ -19,7 +19,7 @@ public class CardNetworkParticipantFacility {
     private org.museframework.bian.classes.Object partyReference;
 
     /*The operational configuration terms/options that govern the participant facility arrangement*/
-    @MetaField
+    @MetaField(0)
     private String facilityTerms;
 
     /*Reference to the Acquiring bank for which the Network orchestrates clearing and settlement processing*/
@@ -27,11 +27,11 @@ public class CardNetworkParticipantFacility {
     private org.museframework.bian.classes.Object participantAcquirerBankReference;
 
     /*Defines the card clearing fees/terms in force*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankClearingandSettlementTerms;
 
     /*Defines the tasks and processing schedule for the participant*/
-    @MetaField
+    @MetaField(0)
     private String participantAcquirerBankServiceSchedule;
 
     /*Reference to the Issuing bank for which the Network orchestrates clearing and settlement processing*/
@@ -39,11 +39,11 @@ public class CardNetworkParticipantFacility {
     private org.museframework.bian.classes.Object participantIssuerBankReference;
 
     /*Defines the card clearing fees/terms in force*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankClearingandSettlementTerms;
 
     /*Defines the tasks and processing schedule for the participant)*/
-    @MetaField
+    @MetaField(0)
     private String participantIssuerBankServiceSchedule;
 
     public void setProductandServiceReference(org.museframework.bian.classes.Object productandServiceReference) {

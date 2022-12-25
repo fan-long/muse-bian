@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ArchiveOperatingSession {
     /*Timetable to operate Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionSchedule;
 
     /*The status of Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of Archive Operating Session*/
@@ -20,23 +20,23 @@ public class ArchiveOperatingSession {
     private org.museframework.bian.classes.Log archiveOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within Archive Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String archiveOperatingSessionServiceType;
 
     /*The configuration of Archive Operating Session*/

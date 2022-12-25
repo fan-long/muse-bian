@@ -7,7 +7,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class RegulatoryComplianceAssessment {
     /*The type and make-up of regulatory tests referenced in the assessment*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAssessmentType;
 
     /*The business function or unit assessed for compliance if appropriate*/
@@ -31,23 +31,23 @@ public class RegulatoryComplianceAssessment {
     private org.museframework.bian.classes.Object regulationReference;
 
     /*A definition of the goals/required actions addressed by the regulation*/
-    @MetaField
+    @MetaField(0)
     private String regulationDefinition;
 
     /*Description of the measurements and reporting required to demonstrate compliance*/
-    @MetaField
+    @MetaField(0)
     private String regulationComplianceandReportingRequirements;
 
     /*Explanation of the business context, responsibility and accountability for compliance*/
-    @MetaField
+    @MetaField(0)
     private String regulationAccountability;
 
     /*Outline of the possible implications of non-compliance*/
-    @MetaField
+    @MetaField(0)
     private String regulationPenalties;
 
     /*Guidelines and requirements for compliance*/
-    @MetaField
+    @MetaField(0)
     private String regulationGuideline;
 
     /*Reference to any documentation classified/archived as appropriate*/
@@ -55,11 +55,11 @@ public class RegulatoryComplianceAssessment {
     private org.museframework.bian.classes.Object documentReference;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAssessmentWorkProducts;
 
     /*Outcome/result of the assessment, can include remedial actions*/
-    @MetaField
+    @MetaField(0)
     private String regulatoryAssessmentResult;
 
     public void setRegulatoryAssessmentType(String regulatoryAssessmentType) {

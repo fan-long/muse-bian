@@ -7,15 +7,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class DepositsandWithdrawals {
     /*The type of securities deposit transaction that can be applied to the investment account (e.g. immediate, scheduled, earmarked)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositType;
 
     /*The type of securities withdrawal transaction that can be applied to the account (e.g. immediate, scheduled, earmarked)*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalType;
 
     /*Details of the securities deposit transaction*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositTransaction;
 
     /*Identifies the source of the deposit*/
@@ -23,23 +23,23 @@ public class DepositsandWithdrawals {
     private org.museframework.bian.classes.Object securitiesDepositTransactionSourceReference;
 
     /*The type of securities deposit made with the transaction*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositTransactionDepositType;
 
     /*Any necessary details describing the purpose or reference properties of the deposit*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositTransactionDescription;
 
     /*The volume or value of securities deposited*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositTransactionAmount;
 
     /*The date and time the deposit was initiated*/
-    @MetaField
+    @MetaField(0)
     private String securitiesDepositTransactionDate;
 
     /*Details of the securities withdrawal transaction*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalTransaction;
 
     /*Identifies the target for the withdrawal*/
@@ -47,19 +47,19 @@ public class DepositsandWithdrawals {
     private org.museframework.bian.classes.Object securitiesWithdrawalTransactionSourceReference;
 
     /*The type of securities withdrawal made with the transaction*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalTransactionWithdrawalType;
 
     /*Any necessary details describing the purpose or reference properties of the withdrawal*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalTransactionDescription;
 
     /*The volume or value of the withdrawn securities*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalTransactionAmount;
 
     /*The date and time the withdrawal was initiated*/
-    @MetaField
+    @MetaField(0)
     private String securitiesWithdrawalTransactionDate;
 
     public void setSecuritiesDepositType(String securitiesDepositType) {

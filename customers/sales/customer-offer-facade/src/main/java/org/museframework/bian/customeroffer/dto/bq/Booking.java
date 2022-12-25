@@ -11,11 +11,11 @@ public class Booking {
     private org.museframework.bian.classes.Object businessUnitReference;
 
     /*Defines the booking rules (e.g. booking  value ratios)*/
-    @MetaField
+    @MetaField(0)
     private String assetLiabilityType;
 
     /*The principle amount for booking*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     public void setBusinessUnitReference(org.museframework.bian.classes.Object businessUnitReference) {

@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Sales {
     /*A description of the type of product of interest (e.g. lending or deposit products)*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceType;
 
     /*A description of the selected product's features and options desired*/
-    @MetaField
+    @MetaField(0)
     private String productandServiceProperties;
 
     /*The result of the sales attempt (can be an identified lead/opportunity registered for future action or may lead to the invocation of Customer Offer within this dialogue. It may also provide insights into the customer's preferences)*/
-    @MetaField
+    @MetaField(0)
     private String salesTaskResult;
 
     public void setProductandServiceType(String productandServiceType) {

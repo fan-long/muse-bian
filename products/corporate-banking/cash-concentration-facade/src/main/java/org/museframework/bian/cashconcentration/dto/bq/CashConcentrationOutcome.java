@@ -11,7 +11,7 @@ public class CashConcentrationOutcome {
     private org.museframework.bian.classes.FinancialFacility cashConcentrationFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String cashConcentrationWorkProduct;
 
     public void setCashConcentrationFinancialFacility(org.museframework.bian.classes.FinancialFacility cashConcentrationFinancialFacility) {

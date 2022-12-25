@@ -9,35 +9,35 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class OperationalTerm {
     /*Type of term (e.g. fee waiver, rate discount, linked service)*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermType;
 
     /*Description of the term, including servicing and fulfillment details*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermDescription;
 
     /*Parameters that govern the execution of the term (e.g. rate discounted by, fee reduced by)*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermParameterType;
 
     /*The value of the parameter for this instance*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermParameterSetting;
 
     /*Details of cash flows associated with fulfillment instances of the term (can be charges made to the customer or compensating transfers to the base product profit center)*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermTransactionRecord;
 
     /*The type of transaction and the resulting cash adjustment (e.g. interest forgiveness, fee reduction)*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermTransactionType;
 
     /*Description of the transaction detailing amounts and source and the creditor of transfers*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermTransactionDescription;
 
     /*The actual cash flows associated with the fulfillment of the term*/
-    @MetaField
+    @MetaField(0)
     private String operationalTermAugmentedCashFlows;
 
     /*Reference to the underlying funds transfer transaction*/

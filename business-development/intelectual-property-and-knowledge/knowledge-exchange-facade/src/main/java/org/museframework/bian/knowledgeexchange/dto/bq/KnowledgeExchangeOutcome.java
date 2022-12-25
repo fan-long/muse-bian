@@ -8,11 +8,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class KnowledgeExchangeOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String knowledgeExchangeIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String knowledgeExchangeProvision;
 
     public void setKnowledgeExchangeIncident(String knowledgeExchangeIncident) {

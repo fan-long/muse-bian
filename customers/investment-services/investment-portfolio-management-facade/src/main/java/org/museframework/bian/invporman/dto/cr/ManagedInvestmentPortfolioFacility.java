@@ -7,19 +7,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ManagedInvestmentPortfolioFacility {
     /*Interpretation of the investment portfolio policies as they impact securities selection and investment decisioning*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioTradingPolicies;
 
     /*The type of policy applied to the portfolio (e.g. risk appetite, allowed sectors/instrument types, timeframes)*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioPolicyType;
 
     /*A narrative explaining the interpretation of the portfolio policies as they govern trading decisions*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioPolicyDescription;
 
     /*Specific trading constraints (e.g. stocks or sectors that are out of bounds and acceptable risk levels)*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioPolicyLimitsandConstraints;
 
     /*Reference to the investment portfolio record of all holdings*/
@@ -27,15 +27,15 @@ public class ManagedInvestmentPortfolioFacility {
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*Maintains the current security holdings*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioHoldings;
 
     /*The type of security held in the portfolio*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioSecurityType;
 
     /*Record of past and projected and current holding for the security*/
-    @MetaField
+    @MetaField(0)
     private String investmentPortfolioSecurityHolding;
 
     public void setInvestmentPortfolioTradingPolicies(String investmentPortfolioTradingPolicies) {

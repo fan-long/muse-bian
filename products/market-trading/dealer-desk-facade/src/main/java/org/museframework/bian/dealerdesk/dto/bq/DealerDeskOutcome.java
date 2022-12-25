@@ -11,7 +11,7 @@ public class DealerDeskOutcome {
     private org.museframework.bian.classes.Event dealerDeskIncident;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String dealerDeskProvision;
 
     public void setDealerDeskIncident(org.museframework.bian.classes.Event dealerDeskIncident) {

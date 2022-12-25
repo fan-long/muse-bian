@@ -21,7 +21,7 @@ public class Development {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Correspondence content - messages sent to and received from involved parties*/
-    @MetaField
+    @MetaField(0)
     private String correspondenceContent;
 
     /*The document reference for associated documents*/
@@ -29,19 +29,19 @@ public class Development {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*Document copy/content - legal or significant documents created & referenced*/
-    @MetaField
+    @MetaField(0)
     private String documentContent;
 
     /*Work documentation, forms and schedules produced and referenced during the lead development*/
-    @MetaField
+    @MetaField(0)
     private String leadDevelopmentWorkProducts;
 
     /*The outcome of the lead development workstep*/
-    @MetaField
+    @MetaField(0)
     private String leadDevelopmentTaskResult;
 
     /*Date and time and the location the lead/opportunity was developed*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

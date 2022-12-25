@@ -10,11 +10,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Troubleshooting {
     /*A record of any production issues arising during the session (see E-Branch Operations for detailed content)*/
-    @MetaField
+    @MetaField(0)
     private String eBranchChannelProductionIssueRecord;
 
     /*A record of the root cause analysis for recurring issues and suggested remedial action*/
-    @MetaField
+    @MetaField(0)
     private String eBranchChannelIssueAnalysisAndRecommendedResponse;
 
     public void seteBranchChannelProductionIssueRecord(String eBranchChannelProductionIssueRecord) {

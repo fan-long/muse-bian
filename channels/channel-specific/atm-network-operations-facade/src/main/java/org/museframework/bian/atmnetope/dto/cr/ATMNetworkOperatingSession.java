@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ATMNetworkOperatingSession {
     /*The timetable of ATMNetwork Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionSchedule;
 
     /*The status of ATMNetwork Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of ATMNetwork Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in ATMNetwork Operating Session*/
@@ -28,19 +28,19 @@ public class ATMNetworkOperatingSession {
     private org.museframework.bian.classes.Object ATMNetworkOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within ATMNetwork Operating Session */
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the ATMNetwork Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within ATMNetwork Operating Session */
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionServiceType;
 
     /*The configuration of ATMNetwork Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String ATMNetworkOperatingSessionServiceConfiguration;
 
     public void setATMNetworkOperatingSessionSchedule(String ATMNetworkOperatingSessionSchedule) {

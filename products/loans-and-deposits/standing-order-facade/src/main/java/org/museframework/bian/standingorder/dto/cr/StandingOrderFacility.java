@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class StandingOrderFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityParameterType;
 
     /*A selected optional product feature as subject matter of Standing Order Arrangement*/
@@ -16,19 +16,19 @@ public class StandingOrderFacility {
     private org.museframework.bian.classes.Feature standingOrderFacilitySelectedOption;
 
     /*Timetable to fulfill Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityCalendar;
 
     /*The status of Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityStatus;
 
     /*Reference to the party who is involved in Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityAssociatedParty;
 
     /*The curreny which is arranged in Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityCurrency;
 
     /*Reference to the regulation which is defined in Standing Order Arrangement*/
@@ -48,11 +48,11 @@ public class StandingOrderFacility {
     private org.museframework.bian.classes.Account standingOrderFacilityAccountReference;
 
     /*Reference to the customer who is involved in Standing Order Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityCustomerReference;
 
     /*The current calculated position*/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityPosition;
 
     /*Reference to the product which is linked to Standing Order Arrangement*/
@@ -60,51 +60,51 @@ public class StandingOrderFacility {
     private org.museframework.bian.classes.BankingProduct standingOrderFacilityProductReference;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String standingOrderFacilityPositionLimit;
 
     /*Reference to account that has to be debited for the standing order fee*/
-    @MetaField
+    @MetaField(0)
     private String feeAccountReference;
 
     /*Reference to counterparty if this is a customer of the bank*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyCustomerReference;
 
     /*Reference to the counterparty account if it is in this bank*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyAccountReference;
 
     /*External number of the account (could be internal or external account) that has to be credited (credit transfer) of debited (request to pay) for the principal amount*/
-    @MetaField
+    @MetaField(0)
     private String counterpartyExternalAccountCode;
 
     /*Principal amount of the standing order*/
-    @MetaField
+    @MetaField(0)
     private String principalAmount;
 
     /*Fee amount charged for the execution of the standing order*/
-    @MetaField
+    @MetaField(0)
     private String feeAmount;
 
     /*Payment details that will be added to the credit transfer or request to pay during execution of the standing order*/
-    @MetaField
+    @MetaField(0)
     private String paymentDetailsDescription;
 
     /*First date on which the standing order will be executed*/
-    @MetaField
+    @MetaField(0)
     private String startDate;
 
     /*Last date on which the standing order will be executed*/
-    @MetaField
+    @MetaField(0)
     private String endDate;
 
     /*Periodicity with which the standing order will be executed, e.g. yearly, quarterly, monthly, weekly, every XX days,…….*/
-    @MetaField
+    @MetaField(0)
     private String periodicityDescription;
 
     /*Day number within the periodicity interval on whch the standing order will be executed, e.g. First, Last, XX*/
-    @MetaField
+    @MetaField(0)
     private String dayNumberInPeriodicityDescription;
 
     public void setStandingOrderFacilityParameterType(String standingOrderFacilityParameterType) {

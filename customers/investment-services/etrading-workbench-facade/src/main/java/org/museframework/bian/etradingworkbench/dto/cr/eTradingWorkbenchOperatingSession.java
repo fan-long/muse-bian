@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class eTradingWorkbenchOperatingSession {
     /*Timetable to operate eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionSchedule;
 
     /*The status of eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionStatus;
 
     /*Reference to the log of (usage) ativities/events  of eTrading Workbench Operating Session*/
@@ -19,23 +19,23 @@ public class eTradingWorkbenchOperatingSession {
     private org.museframework.bian.classes.Log eTradingWorkbenchOperatingSessionUsageLog;
 
     /*Reference to the party who is involved in eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionAssociatedPartyReference;
 
     /*Reference to the party who provides the services of eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionServiceProviderReference;
 
     /*A Classification value that distinguishes between the type of operations within eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionType;
 
     /*The schedule according to which the service provider will operate the eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionServiceProviderSchedule;
 
     /*A Classification value that distinguishes between the type of services within eTrading Workbench Operating Session*/
-    @MetaField
+    @MetaField(0)
     private String eTradingWorkbenchOperatingSessionServiceType;
 
     /*The configuration of eTrading Workbench Operating Session*/

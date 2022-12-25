@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FunctionalRequirements {
     /*The required status/situation before the specification aspect can be defined*/
-    @MetaField
+    @MetaField(0)
     private String functionalRequirementsPreconditions;
 
     /*The schedule and timing of the definition and update/revisions of the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String functionalRequirementsSpecificationSchedule;
 
     /*The current version, and version history as appropriate for the specification aspect*/
-    @MetaField
+    @MetaField(0)
     private String functionalRequirementsVersionNumber;
 
     /*The Credit Risk Model Specification specific  Business Service*/
@@ -25,23 +25,23 @@ public class FunctionalRequirements {
     private org.museframework.bian.classes.BusinessService businessService;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String serviceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String serviceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String serviceName;
 
     public void setFunctionalRequirementsPreconditions(String functionalRequirementsPreconditions) {

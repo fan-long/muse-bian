@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FunctionalConsistencyChecks {
     /*The required status/situation before the test can be applied*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksPreconditions;
 
     /*The schedule and timing of the testing performed*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksAnalysisSchedule;
 
     /*The test version employed*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksVersionNumber;
 
     /*The Product and  Service Assessment specific  Business Service*/
@@ -25,23 +25,23 @@ public class FunctionalConsistencyChecks {
     private org.museframework.bian.classes.BusinessService functionalConsistencyChecks;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String functionalConsistencyChecksServiceName;
 
     public void setFunctionalConsistencyChecksPreconditions(String functionalConsistencyChecksPreconditions) {

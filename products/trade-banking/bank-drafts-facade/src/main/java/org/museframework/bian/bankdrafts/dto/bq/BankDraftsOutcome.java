@@ -7,11 +7,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class BankDraftsOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsCounterparty;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsDividend;
 
     /**/
@@ -23,27 +23,27 @@ public class BankDraftsOutcome {
     private org.museframework.bian.classes.InterestTransaction bankDraftsInterest;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsMargining;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsNotionalPrincipal;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsOptions;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsRates;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsSettlement;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String bankDraftsWorkProduct;
 
     public void setBankDraftsCounterparty(String bankDraftsCounterparty) {

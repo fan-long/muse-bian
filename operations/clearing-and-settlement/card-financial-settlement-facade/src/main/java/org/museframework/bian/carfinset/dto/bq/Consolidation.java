@@ -13,7 +13,7 @@ public class Consolidation {
     private org.museframework.bian.classes.Object cardTransactionRecordReference;
 
     /*Card transaction details referenced in settlement processing*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionRecord;
 
     /*The account number associated with the card transaction*/
@@ -29,19 +29,19 @@ public class Consolidation {
     private org.museframework.bian.classes.Object cardTransactionMerchantAcquiringBankReference;
 
     /*The type of transaction (purchase, cash advance, etc.)*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionType;
 
     /*The currency that the transaction is made in*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionCurrency;
 
     /*Type of amount (e.g. original amount, billing currency amount, conversion rate, FX Mark-up)*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionAmountType;
 
     /*The amount corresponding to the type*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionAmount;
 
     /*Refers to the merchant initiating settlement*/
@@ -57,7 +57,7 @@ public class Consolidation {
     private org.museframework.bian.classes.Object cardTransactionProductandServiceReference;
 
     /*Significant dates and times associated with the transaction*/
-    @MetaField
+    @MetaField(0)
     private String cardTransactionDateTime;
 
     public void setCardTransactionRecordReference(org.museframework.bian.classes.Object cardTransactionRecordReference) {

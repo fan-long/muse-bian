@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductCustomerCombinationAssessment {
     /*A Classification value that distinguishes between Assessments according to type of concern defined within Product/Customer Combination Assessment . Eg Market Analysis, Risk Analysis, Perfomance Analysis, etc.*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentParameterType;
 
     /*A selected optional business service as subject matter of assessment*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentSelectedOption;
 
     /*The type of Product/Customer Combination Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentType;
 
     /*Reference to Product/Customer Combination Assessment*/
@@ -25,23 +25,23 @@ public class ProductCustomerCombinationAssessment {
     private org.museframework.bian.classes.Object productCustomerCombinationAssessmentReference;
 
     /*Request to assess Product/CustomerCombination*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentRequest;
 
     /*Timetable to assess Product/CustomerCombination*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentSchedule;
 
     /*The status of Product/Customer Combination Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentStatus;
 
     /*Reference to the log of (usage) ativities/events of Product/Customer Combination Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentUsageLog;
 
     /*Party who is involved in Product/Customer Combination Assessment*/
-    @MetaField
+    @MetaField(0)
     private String productCustomerCombinationAssessmentAssociatedParty;
 
     /*Reference to the party who has provided Product/Customer Combination Assessment*/

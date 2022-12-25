@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CentralCashAllocation {
     /*A Classification value that distinguishes between allocation Options according to the optional business services defined within Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationParameterType;
 
     /*A selected optional business service for which resources are allocated*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationSelectedOption;
 
     /*A Classification value, that distinguishes between the the type of resource allocated withing the Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationType;
 
     /*Documentation of Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationDescription;
 
     /*Request to allocate CentralCash*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationRequest;
 
     /*Timetable to allocate CentralCash*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationSchedule;
 
     /*The status of Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationStatus;
 
     /*Reference to the party who is involved in Central Cash Allocation*/
@@ -44,7 +44,7 @@ public class CentralCashAllocation {
     private org.museframework.bian.classes.Object centralCashAllocationCustomerReference;
 
     /*The curreny which is arranged/used for Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationCurrency;
 
     /*Reference to the regulation which is defined for Central Cash Allocation*/
@@ -52,19 +52,19 @@ public class CentralCashAllocation {
     private org.museframework.bian.classes.Object centralCashAllocationRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Central Cash Allocation in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationBookingLocation;
 
     /*The type of account which is linked to Central Cash Allocation*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationAccountType;
 
     /*Reference to the account which is linked to Central Cash Allocation*/
@@ -72,7 +72,7 @@ public class CentralCashAllocation {
     private org.museframework.bian.classes.Object centralCashAllocationAccountReference;
 
     /*Reference to Central Cash Allocation Instance*/
-    @MetaField
+    @MetaField(0)
     private String centralCashAllocationInstance;
 
     public void setCentralCashAllocationParameterType(String centralCashAllocationParameterType) {

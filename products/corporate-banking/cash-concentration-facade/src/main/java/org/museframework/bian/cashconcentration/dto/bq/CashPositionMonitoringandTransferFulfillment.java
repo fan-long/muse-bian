@@ -11,7 +11,7 @@ public class CashPositionMonitoringandTransferFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Cash Position Monitoring and Transfer Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class CashPositionMonitoringandTransferFulfillment {
     private org.museframework.bian.classes.Object cashPositionMonitoringandTransferFulfillmentReference;
 
     /*The type of Cash Position Monitoring and Transfer Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String cashPositionMonitoringandTransferFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

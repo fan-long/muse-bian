@@ -10,7 +10,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class SupplierAgreement {
     /*A Classification value that distinguishes between Options defined within Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementParameterType;
 
     /*A selected optional feature in a product, identified by Parameter Type*/
@@ -30,19 +30,19 @@ public class SupplierAgreement {
     private org.museframework.bian.classes.Instruction supplierAgreementDischargeRequest;
 
     /*Timetable to discharge Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementDischargeSchedule;
 
     /*The status of Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementStatus;
 
     /*Party who is involved in Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementAssociatedParty;
 
     /*Reference to the customer who is involved in Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementCustomerReference;
 
     /*Liability or duty to do something under the terms of Supplier Agreement*/
@@ -58,7 +58,7 @@ public class SupplierAgreement {
     private org.museframework.bian.classes.RuleSet supplierAgreementRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Supplier Agreement*/
-    @MetaField
+    @MetaField(0)
     private String supplierAgreementRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Supplier Agreement in case of legal dispute.*/

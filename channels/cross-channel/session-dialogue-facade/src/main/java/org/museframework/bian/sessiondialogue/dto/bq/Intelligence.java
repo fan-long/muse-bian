@@ -9,19 +9,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Intelligence {
     /*An optional interaction within the session - to capture customer insights such as detected life events and or product and service preferences or concerns*/
-    @MetaField
+    @MetaField(0)
     private String intelligenceRecord;
 
     /*Defines a type of maintained customer insight (e.g. retention candidate, cross-sell candidate)*/
-    @MetaField
+    @MetaField(0)
     private String customerInsightType;
 
     /*The derived value of the specific insight for the customer and past values if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String customerInsight;
 
     /*The result of the task (e.g. customer insight detected)*/
-    @MetaField
+    @MetaField(0)
     private String insightTaskResult;
 
     public void setIntelligenceRecord(String intelligenceRecord) {

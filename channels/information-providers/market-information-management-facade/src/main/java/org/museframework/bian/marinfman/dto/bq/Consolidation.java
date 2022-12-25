@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Consolidation {
     /*Refers to the content record provided by the external service provider in whatever form suitable*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationServiceReport;
 
     /*Key properties of the report used in its improvement (e.g. date created, qualifications of integrity)*/
-    @MetaField
+    @MetaField(0)
     private String financialMarketInformationServiceReportProperties;
 
     public void setFinancialMarketInformationServiceReport(String financialMarketInformationServiceReport) {

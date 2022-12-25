@@ -8,15 +8,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ProductCombinationFacility {
     /*A Classification value that distinguishes between arrangements according to the type of business services within Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityParameterType;
 
     /*A selected optional business service as subject matter of Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilitySelectedOption;
 
     /*The type of Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityType;
 
     /*Reference to Product Combination Arrangement*/
@@ -24,15 +24,15 @@ public class ProductCombinationFacility {
     private org.museframework.bian.classes.Object productCombinationFacilityReference;
 
     /*Timetable to fulfill Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilitySchedule;
 
     /*The status of Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityStatus;
 
     /*The curreny which is arranged in Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityCurrency;
 
     /*Reference to the regulation which is defined in Product Combination Arrangement*/
@@ -40,19 +40,19 @@ public class ProductCombinationFacility {
     private org.museframework.bian.classes.Object productCombinationFacilityRegulationReference;
 
     /*A Classification that distinguishes between the regularity domains of Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityRegulationType;
 
     /*Reference to the jurisdiction that is assigned to Product Combination Arrangement in case of legal dispute.*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityJurisdiction;
 
     /*The financial accounting unit into which the financial events, with regard to the origination and fulfillment of the agreement in the context of Product Combination Arrangement, are entered.*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityBookingLocation;
 
     /*The type of account which is linked to Product Combination Arrangement*/
-    @MetaField
+    @MetaField(0)
     private String productCombinationFacilityAccountType;
 
     /*Reference to the account which is linked to Product Combination Arrangement*/

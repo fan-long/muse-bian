@@ -7,39 +7,39 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class GeneralMarketResearchDirectoryEntry {
     /*The type of research view provided by the research (e.g. competitor research)*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchViewpointType;
 
     /*A description of the available market research consolidated for this maintained viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchViewpointDescription;
 
     /*The externally sourced reports that are used to assemble the research viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String referencedMarketResearchRecord;
 
     /*Reference to a specific type of predefined market research report or database*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportTypeReference;
 
     /*Describes the available market research report content (e.g. customer social network usage analysis)*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportTypeDefinition;
 
     /*Defines the version and period covered by the research*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportVersionPeriod;
 
     /*Is the content of the report or database in any suitable form*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReport;
 
     /*Usage record of the research viewpoint*/
-    @MetaField
+    @MetaField(0)
     private String generalMarketResearchViewpointUsage;
 
     /*Details of the research request*/
-    @MetaField
+    @MetaField(0)
     private String marketResearchReportRequest;
 
     /*The employee/business unit requesting the research*/

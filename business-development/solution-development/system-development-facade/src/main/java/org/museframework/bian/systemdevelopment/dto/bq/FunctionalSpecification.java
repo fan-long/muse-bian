@@ -9,11 +9,11 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class FunctionalSpecification {
     /*Details the functional specification tasks and deliverables of system development project*/
-    @MetaField
+    @MetaField(0)
     private String functionalSpecificationTaskDefinition;
 
     /*Collection of design and development work products used in the definition of functional requirements*/
-    @MetaField
+    @MetaField(0)
     private String functionalSpecificationTaskWorkProducts;
 
     /*Reference to associated project documents*/
@@ -21,7 +21,7 @@ public class FunctionalSpecification {
     private org.museframework.bian.classes.Object documentDirectoryEntryInstanceReference;
 
     /*The functional specification as a suitably structured and formatted document*/
-    @MetaField
+    @MetaField(0)
     private String systemFunctionalSpecification;
 
     public void setFunctionalSpecificationTaskDefinition(String functionalSpecificationTaskDefinition) {

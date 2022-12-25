@@ -13,15 +13,15 @@ public class ProductProcessing {
     private org.museframework.bian.classes.Object productInstanceReference;
 
     /*The type of event (e.g. payment initiation, statement request)*/
-    @MetaField
+    @MetaField(0)
     private String productActionEventType;
 
     /*Details of the processing activity if available*/
-    @MetaField
+    @MetaField(0)
     private String productActionEventDescription;
 
     /*Outcome of the processing action if available*/
-    @MetaField
+    @MetaField(0)
     private String productActionEventResult;
 
     /*Employees involved in recording the event*/
@@ -29,11 +29,11 @@ public class ProductProcessing {
     private org.museframework.bian.classes.Object employeeUnitReference;
 
     /*The details of the event (in a suitable format)*/
-    @MetaField
+    @MetaField(0)
     private String customerProductandServiceEventRecord;
 
     /*Date and time and the location the event was captured*/
-    @MetaField
+    @MetaField(0)
     private String dateTimeLocation;
 
     public void setProductInstanceReference(org.museframework.bian.classes.Object productInstanceReference) {

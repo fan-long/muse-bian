@@ -11,7 +11,7 @@ public class PublicOfferingOutcome {
     private org.museframework.bian.classes.FinancialFacility publicOfferingFinancialFacility;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String publicOfferingWorkProduct;
 
     public void setPublicOfferingFinancialFacility(org.museframework.bian.classes.FinancialFacility publicOfferingFinancialFacility) {

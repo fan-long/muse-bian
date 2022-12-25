@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CollateralLiquidation {
     /*The required status/situation and or tasks that need to be completed prior to the initiation of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationPreconditions;
 
     /*The operating unit/employee responsible for the workstep*/
@@ -16,7 +16,7 @@ public class CollateralLiquidation {
     private org.museframework.bian.classes.Object collateralLiquidationBusinessUnitEmployeeReference;
 
     /*The timing and key actions/milestones making up the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationWorkSchedule;
 
     /*The Collateral Asset Liquidation Procedure specific Business Service*/
@@ -24,27 +24,27 @@ public class CollateralLiquidation {
     private org.museframework.bian.classes.BusinessService collateralLiquidation;
 
     /*The completion status and reference to subsequent actions that may be triggered on completion of the workstep*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationPostconditions;
 
     /*Reference to the specific business service type*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationCollateralLiquidationServiceType;
 
     /*Description of the performed business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationCollateralLiquidationServiceDescription;
 
     /*Mandatory and optional inputs and output information for the business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationCollateralLiquidationServiceInputsandOuputs;
 
     /*Documentation, meeting schedules, notes, reasearch. calculations and any other work products produced by the business service*/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationCollateralLiquidationServiceWorkProduct;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String collateralLiquidationCollateralLiquidationServiceName;
 
     public void setCollateralLiquidationPreconditions(String collateralLiquidationPreconditions) {

@@ -8,31 +8,31 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class CustomerCaseManagementPlan {
     /*The time period addressed by the management plan. This may define required actions and target performance over a fixed period or can be a 'rolling' plan that is continually refined based on experience*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseManagementPlanPeriod;
 
     /*The specific policies and guidelines for case resolution employees*/
-    @MetaField
+    @MetaField(0)
     private String customerCasePoliciesAndGuidelines;
 
     /*The target and actual service performance goals that are tracked by customer case management*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServicePerformanceGoals;
 
     /*The target and actual customer case service schedule - recording planned and actual service availability and expected throughput/productivity*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceSchedule;
 
     /*The set-up/organization for the customer case business function (covers operational and management/oversight roles and responsibilities)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseServiceOperatingConfiguration;
 
     /*Details the number and skill/qualification profile of the customer case handling staff (target and actual)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseResourcePlan;
 
     /*Details of staff training and certification activity (planned and actual)*/
-    @MetaField
+    @MetaField(0)
     private String customerCaseTrainingPlan;
 
     public void setCustomerCaseManagementPlanPeriod(String customerCaseManagementPlanPeriod) {

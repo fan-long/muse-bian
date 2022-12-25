@@ -16,7 +16,7 @@ public class SuitabilityAssessment {
     private org.museframework.bian.classes.Object customerReference;
 
     /*The type of market order (e.g. Day Order. Order on Open/Close, Fill or Kill, Limit Order)*/
-    @MetaField
+    @MetaField(0)
     private String marketOrderType;
 
     /*Reference to the associated investment portfolio record of all holdings (referenced to check securities availability if necessary)*/
@@ -24,11 +24,11 @@ public class SuitabilityAssessment {
     private org.museframework.bian.classes.Object investmentPortfolioInstanceReference;
 
     /*Any customer specific processing preferences or requirements*/
-    @MetaField
+    @MetaField(0)
     private String customerMarketOrderProcessingInstruction;
 
     /*The details of the market order transaction that is to undergo suitability checks*/
-    @MetaField
+    @MetaField(0)
     private String proposedMarketOrderTransaction;
 
     /*Reference to the underlying cash account supporting the transaction*/
@@ -36,23 +36,23 @@ public class SuitabilityAssessment {
     private org.museframework.bian.classes.Object investmentAccountArrangementInstanceReference;
 
     /*The security to be traded*/
-    @MetaField
+    @MetaField(0)
     private String securityType;
 
     /*The volume of shares to be bought or sold*/
-    @MetaField
+    @MetaField(0)
     private String amount;
 
     /*Key dates associated with the proposed transaction (e.g. opportunity identification, proposal/pitch, suitability evaluation initiated)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*Value of the specific date type*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     /*The type and make-up of suitability compliance tests referenced in the assessment*/
-    @MetaField
+    @MetaField(0)
     private String suitabilityAssessmentType;
 
     /*The document reference for any documents accessed and generated (e.g. disclosures)*/
@@ -64,11 +64,11 @@ public class SuitabilityAssessment {
     private org.museframework.bian.classes.Object correspondenceInstanceReference;
 
     /*Work documentation, forms and schedules produced and referenced during the assessment*/
-    @MetaField
+    @MetaField(0)
     private String suitabilityComplianceAssessmentWorkProducts;
 
     /*Outcome/result of the suitability assessment, can include reported details if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String suitabilityComplianceAssessmentResult;
 
     public void setEmployeeBusinessUnitReference(org.museframework.bian.classes.Object employeeBusinessUnitReference) {

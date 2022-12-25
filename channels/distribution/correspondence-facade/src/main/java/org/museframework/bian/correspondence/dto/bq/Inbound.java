@@ -13,19 +13,19 @@ public class Inbound {
     private org.museframework.bian.classes.Object inboundCorrespondenceInstanceReference;
 
     /*The inbound correspondence message*/
-    @MetaField
+    @MetaField(0)
     private String inboundCorrespondenceRecord;
 
     /*The interpreted type of correspondence (e.g. unsolicited message, product/service related, complaint)*/
-    @MetaField
+    @MetaField(0)
     private String inboundCorrespondenceType_eDotgDotunsolicitedmessage_productservicerelated_complaint_;
 
     /*The inbound message content in whatever format appropriate*/
-    @MetaField
+    @MetaField(0)
     private String inboundCorrespondenceContent;
 
     /*The identified source of inbound message (extracted from the content)*/
-    @MetaField
+    @MetaField(0)
     private String inboundCorrespondenceAddressee;
 
     /*Matched bank customer (from reference details extracted from the content where possible)*/
@@ -37,11 +37,11 @@ public class Inbound {
     private org.museframework.bian.classes.Object inboundCorrespondenceEmployeeBusinessUnitReference;
 
     /*Key dates used for tracking internal delivery (e.g. receipt date, internal distribution, receipt confirmation date, re-route date)*/
-    @MetaField
+    @MetaField(0)
     private String dateType;
 
     /*The value of the date and time*/
-    @MetaField
+    @MetaField(0)
     private String date;
 
     public void setInboundCorrespondenceInstanceReference(org.museframework.bian.classes.Object inboundCorrespondenceInstanceReference) {

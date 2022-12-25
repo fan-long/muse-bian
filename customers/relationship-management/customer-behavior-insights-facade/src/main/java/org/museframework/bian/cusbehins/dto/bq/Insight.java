@@ -9,15 +9,15 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Insight {
     /*The type of customer insight developed in this evaluation (e.g. retention candidate, cross-sell candidate)*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationCustomerInsightType;
 
     /*Record of a task to develop the customer insight*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationTask;
 
     /*The specific details of the analysis (can be a default/standard and scheduled refresh)*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationRequestSpecification;
 
     /*Reference to the behavior model used to develop the insight*/
@@ -25,31 +25,31 @@ public class Insight {
     private org.museframework.bian.classes.Object insightEvaluationCustomerBehaviorModelReference;
 
     /*The data file, report of production activity used in the analysis*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationProductandServiceActivityReport;
 
     /*The Record containing the selected event records from the log*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationCustomerEventLogReport;
 
     /*The Record containing the selected event records from the log*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationServicingEventLogReport;
 
     /*The Record containing the selected event records from the log*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationChannelEventLogReport;
 
     /*The content of a specific market research report or database in any suitable form*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationMarketResearchReport;
 
     /*Work documentation, forms and schedules produced and referenced during the analysis*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationWorkProducts;
 
     /*The output from executing the assessment*/
-    @MetaField
+    @MetaField(0)
     private String insightEvaluationRequestResult;
 
     public void setInsightEvaluationCustomerInsightType(String insightEvaluationCustomerInsightType) {

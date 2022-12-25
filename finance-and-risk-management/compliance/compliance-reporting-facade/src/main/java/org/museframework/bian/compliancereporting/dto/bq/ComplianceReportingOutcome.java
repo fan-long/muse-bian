@@ -8,19 +8,19 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class ComplianceReportingOutcome {
     /**/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingPerformanceAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingActivityAnalysis;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrativePlan;
 
     /**/
-    @MetaField
+    @MetaField(0)
     private String complianceReportingAdministrationTask;
 
     public void setComplianceReportingPerformanceAnalysis(String complianceReportingPerformanceAnalysis) {

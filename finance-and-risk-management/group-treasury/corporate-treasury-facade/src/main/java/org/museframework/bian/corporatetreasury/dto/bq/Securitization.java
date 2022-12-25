@@ -9,7 +9,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Securitization {
     /*Policies and guidelines that determine when and how asset securitization will be considered*/
-    @MetaField
+    @MetaField(0)
     private String bankSecuritizationPoliciesandguidelines;
 
     /*Reference to a selected group of bank balance sheet assets that are bundled into a tranche for securitization*/
@@ -17,11 +17,11 @@ public class Securitization {
     private org.museframework.bian.classes.Object securitizationTrancheReference;
 
     /*The record of the bundled balance sheet items that are to be securitized*/
-    @MetaField
+    @MetaField(0)
     private String securitizationTrancheRecord;
 
     /*Description of a response initiated by corporate treasury*/
-    @MetaField
+    @MetaField(0)
     private String securitizationTask;
 
     public void setBankSecuritizationPoliciesandguidelines(String bankSecuritizationPoliciesandguidelines) {

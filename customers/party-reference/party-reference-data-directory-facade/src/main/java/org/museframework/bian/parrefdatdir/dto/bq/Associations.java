@@ -20,15 +20,15 @@ public class Associations {
     private org.museframework.bian.classes.Object associateReference;
 
     /*The type of association with the customer (e.g. familial or corporate, includes household associations, for corporations allowed users/buyers)*/
-    @MetaField
+    @MetaField(0)
     private String associateType;
 
     /*Description of the rights or obligations granted to the associate*/
-    @MetaField
+    @MetaField(0)
     private String associateObligationDependencyDescription;
 
     /*The start and end dates for the association if appropriate*/
-    @MetaField
+    @MetaField(0)
     private String associationValidFromToDate;
 
     /*Reference to a product or service where the association is linked in some manner (e.g. guarantor)*/

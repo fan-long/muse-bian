@@ -11,7 +11,7 @@ public class BankGuaranteeIssuanceandBookingTask {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the transaction task*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Bank Guarantee Issuance and Booking Task specific Business Service*/
@@ -27,7 +27,7 @@ public class BankGuaranteeIssuanceandBookingTask {
     private org.museframework.bian.classes.Transaction bankGuaranteeTransactionReference;
 
     /*The type of Bank Guarantee Issuance and Booking Task*/
-    @MetaField
+    @MetaField(0)
     private String bankGuaranteeIssuanceandBookingTaskType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

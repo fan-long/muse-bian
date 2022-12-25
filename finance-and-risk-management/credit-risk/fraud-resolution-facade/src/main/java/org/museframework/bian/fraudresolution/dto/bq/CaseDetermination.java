@@ -13,7 +13,7 @@ public class CaseDetermination {
     private org.museframework.bian.classes.Object customerAgreementReference;
 
     /*Customer agreement accessed to determine constraints on resolution approach*/
-    @MetaField
+    @MetaField(0)
     private String customerAgreement;
 
     /*Reference to the involved merchant's agreement*/
@@ -21,7 +21,7 @@ public class CaseDetermination {
     private org.museframework.bian.classes.Object merchantAgreementReference;
 
     /*Merchant agreement accessed to determine constraints on resolution approach*/
-    @MetaField
+    @MetaField(0)
     private String merchantAgreement;
 
     /*Reference to the interested party's agreement*/
@@ -29,11 +29,11 @@ public class CaseDetermination {
     private org.museframework.bian.classes.Object interestedPartyAgreementReference;
 
     /*Interested party agreement accessed to determine constraints on resolution approach*/
-    @MetaField
+    @MetaField(0)
     private String interestedPartyAgreement;
 
     /*Record of rules and guidelines applied to determine fraud case resolution*/
-    @MetaField
+    @MetaField(0)
     private String fraudCaseDeterminationRecord;
 
     public void setCustomerAgreementReference(org.museframework.bian.classes.Object customerAgreementReference) {

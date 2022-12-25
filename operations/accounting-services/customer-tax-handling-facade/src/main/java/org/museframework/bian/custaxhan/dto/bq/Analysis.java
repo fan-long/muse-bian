@@ -8,7 +8,7 @@ import org.museframework.common.core.MetaField;
 @MetaDto
 public class Analysis {
     /*Work documentation, forms and schedules produced and referenced to develop the customer tax position/statement that is used for reporting*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxHandlingAnalysisWorkProducts;
 
     public void setCustomerTaxHandlingAnalysisWorkProducts(String customerTaxHandlingAnalysisWorkProducts) {

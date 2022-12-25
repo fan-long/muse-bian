@@ -17,19 +17,19 @@ public class Arbitration {
     private org.museframework.bian.classes.Object networkParticipantNetworkServiceRequestReference;
 
     /*The record for the network service delivery, includes charges, service activity log and results etc.*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantNetworkServiceRequestRecord;
 
     /*The requested service type (e.g. merchant alert, chargeback arbitration, chargeback reduction, arbitration)*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceType;
 
     /*The time the service was requested*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceDateTime;
 
     /*The outcome of the arbitration service request*/
-    @MetaField
+    @MetaField(0)
     private String networkParticipantServiceResult;
 
     public void setArbitrationCardTransactionRecordReference(org.museframework.bian.classes.Object arbitrationCardTransactionRecordReference) {

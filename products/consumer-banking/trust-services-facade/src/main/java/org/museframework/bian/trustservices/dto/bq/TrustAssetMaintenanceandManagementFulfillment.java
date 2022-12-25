@@ -11,7 +11,7 @@ public class TrustAssetMaintenanceandManagementFulfillment {
     private org.museframework.bian.classes.Condition preconditions;
 
     /*The timing and key actions/milestones involved in completing the fulfillment feature instance*/
-    @MetaField
+    @MetaField(0)
     private String schedule;
 
     /*The Trust Asset Maintenance and Management Fulfillment specific Business Service*/
@@ -31,7 +31,7 @@ public class TrustAssetMaintenanceandManagementFulfillment {
     private org.museframework.bian.classes.Object trustAssetMaintenanceandManagementFulfillmentReference;
 
     /*The type of Trust Asset Maintenance and Management Fulfillment*/
-    @MetaField
+    @MetaField(0)
     private String trustAssetMaintenanceandManagementFulfillmentType;
 
     public void setPreconditions(org.museframework.bian.classes.Condition preconditions) {

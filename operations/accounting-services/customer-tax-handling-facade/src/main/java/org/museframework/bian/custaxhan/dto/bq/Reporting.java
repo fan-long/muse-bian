@@ -11,19 +11,19 @@ public class Reporting {
     private org.museframework.bian.classes.Object customerTaxReportInstanceReference;
 
     /*The type of tax report, includes products/services covered and the tax jurisdiction/authority reference as necessary*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxReportType;
 
     /*The reporting period, detailing from-to dates covered by the tax report*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxReportPeriod;
 
     /*The customer's consolidated product/service tax report*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxReportReport;
 
     /*Work documentation, forms and schedules produced and referenced during the reporting task*/
-    @MetaField
+    @MetaField(0)
     private String customerTaxHandlingReportingWorkProducts;
 
     public void setCustomerTaxReportInstanceReference(org.museframework.bian.classes.Object customerTaxReportInstanceReference) {
